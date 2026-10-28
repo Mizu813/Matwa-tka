@@ -66,3 +66,23 @@
 .interactive-hover:hover {
   transform: translateY(-1px);
 }
+
+/* Print-friendly PDF Export styles */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+
+  article {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    border: 1px solid #e2e8f0 !important;
+    margin-bottom: 2rem !important;
+    box-shadow: none !important;
+  }
+}

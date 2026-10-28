@@ -1,0 +1,207 @@
+import React from 'react';
+import { ModuleCategory } from '../types/quiz';
+import {
+  FileText,
+  Printer,
+  Sun,
+  Moon,
+  ZoomIn,
+  ZoomOut,
+  Maximize2,
+  CheckCircle,
+  Eye,
+  EyeOff,
+  BookOpen,
+  Layers,
+} from 'lucide-react';
+
+export type ViewDisplayMode = 'continuous' | 'single';
+
+interface PdfTopNavbarProps {
+  selectedModule: ModuleCategory | 'Semua';
+  onSelectModule: (moduleName: ModuleCategory | 'Semua') => void;
+  displayMode: ViewDisplayMode;
+  onToggleDisplayMode: () => void;
+  zoomLevel: number; // e.g. 100, 110, 125
+  onZoomIn: () => void;
+  onZoomOut: () => void;
+  isDarkMode: boolean;
+  onToggleDarkMode: () => void;
+  allExpanded: boolean;
+  onToggleAllExpanded: () => void;
+  onOpenEvaluation: () => void;
+  totalAnswered: number;
+  totalQuestions: number;
+}
+
+export const SUB_BAB_MODULES: { id: ModuleCategory | 'Semua'; label: string; range: string }[] = [
+  { id: 'Semua', label: 'Semua Sub-Bab', range: 'Soal 1–28' },
+  { id: 'Aljabar & Sistem Persamaan/Pertidaksamaan', label: '1. Aljabar & SPtLDV', range: 'Soal 1–4' },
+  { id: 'Fungsi & Relasi', label: '2. Fungsi & Relasi', range: 'Soal 5–8' },
+  { id: 'Barisan & Deret', label: '3. Barisan & Deret', range: 'Soal 9–12' },
+  { id: 'Geometri & Pengukuran', label: '4. Geometri & Dimensi 3', range: 'Soal 13–16' },
+  { id: 'Trigonometri', label: '5. Trigonometri', range: 'Soal 17–20' },
+  { id: 'Statistika & Analisis Data', label: '6. Statistika & Data', range: 'Soal 21–24' },
+  { id: 'Peluang & Kombinatorika', label: '7. Peluang & Kombinasi', range: 'Soal 25–28' },
+];
+
+export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
+  selectedModule,
+  onSelectModule,
+  displayMode,
+  onToggleDisplayMode,
+  zoomLevel,
+  onZoomIn,
+  onZoomOut,
+  isDarkMode,
+  onToggleDarkMode,
+  allExpanded,
+  onToggleAllExpanded,
+  onOpenEvaluation,
+  totalAnswered,
+  totalQuestions,
+}) => {
+  return (
+    <header className="sticky top-0 z-40 bg-white/95 dark:bg-[#0B0F19]/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm transition-colors print:hidden">
+      {/* Baris 1: Main Reader Header & Document Controls */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800/60">
+        {/* Left: Branding & PDF Document Title */}
+        <div className="flex items-center gap-3">
+          <div className="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold text-sm shadow-sm flex-shrink-0">
+            <FileText className="w-4 h-4" />
+          </div>
+          <div className="truncate">
+            <div className="flex items-center gap-2">
+              <span className="font-extrabold text-sm sm:text-base text-slate-900 dark:text-white tracking-tight">
+                Matwa-TKA <span className="text-indigo-600 dark:text-indigo-400 font-semibold text-xs sm:text-sm">| PDF Document Edition</span>
+              </span>
+              <span className="hidden sm:inline-flex px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 font-mono">
+                HOTS UTBK
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Right: Reader Toolbar */}
+        <div className="flex items-center gap-1.5 sm:gap-2">
+          {/* Display Mode: Continuous Document vs Single Question */}
+          <button
+            onClick={onToggleDisplayMode}
+            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+            title={
+              displayMode === 'continuous'
+                ? 'Beralih ke Mode Lembar Per Soal'
+                : 'Beralih ke Mode Dokumen Bersambung (Full PDF)'
+            }
+          >
+            {displayMode === 'continuous' ? (
+              <>
+                <Layers className="w-3.5 h-3.5 text-indigo-500" />
+                <span className="hidden md:inline">Mode Dokumen Utuh</span>
+              </>
+            ) : (
+              <>
+                <FileText className="w-3.5 h-3.5 text-indigo-500" />
+                <span className="hidden md:inline">Mode Per Soal</span>
+              </>
+            )}
+          </button>
+
+          {/* Toggle All Hints & Solutions */}
+          <button
+            onClick={onToggleAllExpanded}
+            className="hidden sm:flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-semibold border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+            title={allExpanded ? 'Tutup Seluruh Pembahasan' : 'Buka Seluruh Pembahasan'}
+          >
+            {allExpanded ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
+            <span className="hidden lg:inline">{allExpanded ? 'Tutup Solusi' : 'Buka Solusi'}</span>
+          </button>
+
+          {/* Font Scaling / Zoom */}
+          <div className="hidden xs:flex items-center border border-slate-200 dark:border-slate-700 rounded-lg overflow-hidden bg-slate-50 dark:bg-slate-800 text-xs">
+            <button
+              onClick={onZoomOut}
+              className="p-1.5 px-2 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300"
+              title="Perkecil Ukuran Teks (A-)"
+            >
+              <ZoomOut className="w-3.5 h-3.5" />
+            </button>
+            <span className="px-2 py-1 font-mono text-[11px] font-bold text-slate-600 dark:text-slate-300 select-none">
+              {zoomLevel}%
+            </span>
+            <button
+              onClick={onZoomIn}
+              className="p-1.5 px-2 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300"
+              title="Perbesar Ukuran Teks (A+)"
+            >
+              <ZoomIn className="w-3.5 h-3.5" />
+            </button>
+          </div>
+
+          {/* Print / Save to PDF */}
+          <button
+            onClick={() => window.print()}
+            className="p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+            title="Cetak atau Simpan sebagai PDF"
+          >
+            <Printer className="w-4 h-4" />
+          </button>
+
+          {/* Theme Toggle */}
+          <button
+            onClick={onToggleDarkMode}
+            className="p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+            title={isDarkMode ? 'Kertas Terang (White Paper)' : 'Kertas Gelap (Night Reading)'}
+          >
+            {isDarkMode ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-slate-600" />}
+          </button>
+
+          {/* Evaluation / Scoring Trigger */}
+          <button
+            onClick={onOpenEvaluation}
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold shadow-sm transition-all"
+          >
+            <CheckCircle className="w-3.5 h-3.5" />
+            <span className="hidden sm:inline">Rekap Nilai</span>
+            <span className="font-mono text-[11px] bg-indigo-700 px-1.5 py-0.2 rounded ml-0.5">
+              {totalAnswered}/{totalQuestions}
+            </span>
+          </button>
+        </div>
+      </div>
+
+      {/* Baris 2: STATIC STICKY SUB-BAB NAVBAR TABS */}
+      <div className="bg-slate-50/90 dark:bg-[#0E1424]/90 border-b border-slate-200 dark:border-slate-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <nav className="flex items-center gap-1 overflow-x-auto py-2 scrollbar-none">
+            {SUB_BAB_MODULES.map((tab) => {
+              const isSelected = selectedModule === tab.id;
+              return (
+                <button
+                  key={tab.id}
+                  onClick={() => onSelectModule(tab.id)}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap transition-all flex items-center gap-1.5 ${
+                    isSelected
+                      ? 'bg-indigo-600 text-white shadow-sm'
+                      : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-800/60'
+                  }`}
+                >
+                  <span>{tab.label}</span>
+                  <span
+                    className={`text-[10px] font-mono font-normal px-1.5 py-0.5 rounded ${
+                      isSelected
+                        ? 'bg-indigo-700/80 text-white'
+                        : 'bg-slate-200 dark:bg-slate-800 text-slate-500 dark:text-slate-400'
+                    }`}
+                  >
+                    {tab.range}
+                  </span>
+                </button>
+              );
+            })}
+          </nav>
+        </div>
+      </div>
+    </header>
+  );
+};
