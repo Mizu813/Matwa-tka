@@ -3,13 +3,17 @@ export type QuestionType = 'pg_single' | 'pgk_mcma' | 'pgk_kategori';
 export type CognitiveLevel = 'Pengetahuan & Pemahaman' | 'Aplikasi' | 'Penalaran (HOTS)';
 
 export type ModuleCategory =
-  | 'Aljabar & Sistem Persamaan/Pertidaksamaan'
-  | 'Fungsi & Relasi'
-  | 'Barisan & Deret'
-  | 'Geometri & Pengukuran'
+  | 'Aljabar & Bilangan'
+  | 'Pemodelan Linear & Sistem Persamaan'
+  | 'Barisan & Pemodelan Eksponensial'
+  | 'Geometri Bidang & Terapan'
+  | 'Geometri Ruang (Dimensi Tiga)'
+  | 'Transformasi Geometri'
   | 'Trigonometri'
-  | 'Statistika & Analisis Data'
-  | 'Peluang & Kombinatorika';
+  | 'Statistika & Peluang'
+  | 'Kecukupan Data (Data Sufficiency)';
+
+export type PackageCategory = 'Semua' | 'Paket 1' | 'Paket 2' | 'Paket 3';
 
 export interface OptionItem {
   id: string; // 'A' | 'B' | 'C' | 'D' | 'E'
@@ -40,6 +44,8 @@ export interface QuestionExplanation {
 export interface Question {
   id: string;
   number: number;
+  package: 'Paket 1' | 'Paket 2' | 'Paket 3';
+  packageQuestionNumber: number; // Nomor asli di lembar soal paket (misal 1 - 25)
   module: ModuleCategory;
   competency: string;
   subCompetency: string;
@@ -48,7 +54,7 @@ export interface Question {
   title: string;
   scenario: string;
   questionPrompt: string;
-  svgComponentId: string;
+  svgComponentId?: string;
   options?: OptionItem[]; // For pg_single and pgk_mcma
   categoryStatements?: CategoryStatement[]; // For pgk_kategori
   correctAnswer: string | string[] | Record<string, boolean>; // e.g. 'C', ['p1', 'p4'], { A: false, B: false, C: true }

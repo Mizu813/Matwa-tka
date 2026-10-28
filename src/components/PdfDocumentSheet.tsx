@@ -1,5 +1,5 @@
 import React from 'react';
-import { Question, UserAnswerRecord, ModuleCategory } from '../types/quiz';
+import { Question, UserAnswerRecord, ModuleCategory, PackageCategory } from '../types/quiz';
 import { PdfQuestionCard } from './PdfQuestionCard';
 import { ViewDisplayMode } from './PdfTopNavbar';
 import {
@@ -14,6 +14,7 @@ import {
 interface PdfDocumentSheetProps {
   questions: Question[];
   selectedModule: ModuleCategory | 'Semua';
+  selectedPackage: PackageCategory;
   userAnswers: Record<string, UserAnswerRecord>;
   onSelectOption: (questionId: string, optionId: string) => void;
   onToggleMcmaOption: (questionId: string, optionId: string) => void;
@@ -30,6 +31,7 @@ interface PdfDocumentSheetProps {
 export const PdfDocumentSheet: React.FC<PdfDocumentSheetProps> = ({
   questions,
   selectedModule,
+  selectedPackage,
   userAnswers,
   onSelectOption,
   onToggleMcmaOption,
@@ -51,7 +53,7 @@ export const PdfDocumentSheet: React.FC<PdfDocumentSheetProps> = ({
       <div className="w-full p-5 sm:p-8 rounded-2xl bg-white dark:bg-[#111827] border border-slate-200 dark:border-slate-800 shadow-sm transition-all text-center space-y-3 relative overflow-hidden print:border-none print:shadow-none">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-mono font-bold uppercase tracking-wider border border-slate-200 dark:border-slate-700">
           <Award className="w-3.5 h-3.5 text-indigo-500" />
-          Naskah Soal Latihan &amp; Asesmen Mandiri
+          Bank Data Soal Matematika (Non-Lanjut) TKA SMA 2025
         </div>
 
         <h1 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight uppercase">
@@ -59,14 +61,14 @@ export const PdfDocumentSheet: React.FC<PdfDocumentSheetProps> = ({
         </h1>
 
         <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
-          Dokumen asesmen terstandarisasi dengan visualisasi diagram teknis SVG presisi, rendering rumus KaTeX terintegrasi, serta tab bantuan konsep dan pembahasan langkah demi langkah.
+          Dataset asesmen terstandarisasi yang dipisahkan berdasarkan 9 domain materi resmi, dilengkapi visualisasi diagram vektor SVG presisi, rendering rumus KaTeX terintegrasi, dan pembahasan langkah demi langkah.
         </p>
 
         {/* Double Border Line khas dokumen resmi */}
         <div className="pt-3 border-t-2 border-b border-slate-900 dark:border-slate-100 flex flex-wrap items-center justify-between gap-2 text-[11px] font-mono text-slate-600 dark:text-slate-400 py-1.5 px-2">
-          <span>SUB-BAB: <strong className="text-slate-900 dark:text-white">{selectedModule.toUpperCase()}</strong></span>
+          <span>DOMAIN: <strong className="text-slate-900 dark:text-white">{selectedModule.toUpperCase()}</strong></span>
+          <span>PAKET: <strong className="text-emerald-600 dark:text-emerald-400">{selectedPackage.toUpperCase()}</strong></span>
           <span>TOTAL: <strong className="text-slate-900 dark:text-white">{totalQuestions} BUTIR SOAL</strong></span>
-          <span className="hidden sm:inline">FORMAT: <strong className="text-slate-900 dark:text-white">A4 / PDF READY</strong></span>
         </div>
       </div>
 

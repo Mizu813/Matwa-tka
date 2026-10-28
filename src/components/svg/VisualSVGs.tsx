@@ -1,4 +1,23 @@
 import React from 'react';
+import {
+  P1Soal10AnglesSVG,
+  P1Soal11KandangAyamSVG,
+  P1Soal12TrapesiumSebangunSVG,
+  P1Soal13RakBukuRumahSVG,
+  P1Soal15KabelLampuSVG,
+  P1Soal16TetesAirSVG,
+  P1Soal18BoksAirMineralSVG,
+  P1Soal20SegitigaTrigSVG,
+  P1Soal21LineKarirSVG,
+  P2Soal9SptldvCartesianSVG,
+  P2Soal10AnglesSuppSVG,
+  P2Soal12TiangGedungSVG,
+  P2Soal13KebunTrapesiumSVG,
+  P2Soal17JamDindingSVG,
+  P2Soal20SegitigaTrig2SVG,
+  P2Soal21LineEkskulSVG,
+  P3Soal3KipasTanganSVG,
+} from './NewBankSVGs';
 
 // Common SVG container wrapper props
 export interface VisualProps {
@@ -1399,11 +1418,12 @@ export const IoTTokenPermutationSVG: React.FC<VisualProps> = ({ className = '', 
 /**
  * Dispatcher for question visual SVGs
  */
-export const QuestionVisual: React.FC<{ svgId: string; className?: string; mode?: 'question' | 'solution' }> = ({
+export const QuestionVisual: React.FC<{ svgId?: string; className?: string; mode?: 'question' | 'solution' }> = ({
   svgId,
   className = '',
   mode = 'question',
 }) => {
+  if (!svgId) return null;
   switch (svgId) {
     case 'datacenter_rack':
       return <DataCenterRackSVG className={className} mode={mode} />;
@@ -1459,6 +1479,45 @@ export const QuestionVisual: React.FC<{ svgId: string; className?: string; mode?
       return <CockpitHUDProjectionSVG className={className} mode={mode} />;
     case 'iot_token':
       return <IoTTokenPermutationSVG className={className} mode={mode} />;
+    // New Bank 2025 Cases
+    case 'p1_soal_10_angles':
+      return <P1Soal10AnglesSVG className={className} mode={mode} />;
+    case 'p1_soal_11_kandang':
+      return <P1Soal11KandangAyamSVG className={className} mode={mode} />;
+    case 'p1_soal_12_trapesium':
+      return <P1Soal12TrapesiumSebangunSVG className={className} mode={mode} />;
+    case 'p1_soal_13_rak_rumah':
+      return <P1Soal13RakBukuRumahSVG className={className} mode={mode} />;
+    case 'p1_soal_15_kabel_lampu':
+      return <P1Soal15KabelLampuSVG className={className} mode={mode} />;
+    case 'p1_soal_16_tetes_air':
+      return <P1Soal16TetesAirSVG className={className} mode={mode} />;
+    case 'p1_soal_18_boks_air':
+      return <P1Soal18BoksAirMineralSVG className={className} mode={mode} />;
+    case 'p1_soal_20_segitiga_trig':
+      return <P1Soal20SegitigaTrigSVG className={className} mode={mode} />;
+    case 'p1_soal_21_line_karir':
+      return <P1Soal21LineKarirSVG className={className} mode={mode} />;
+    case 'p2_soal_9_sptldv':
+      return <P2Soal9SptldvCartesianSVG className={className} mode={mode} />;
+    case 'p2_soal_10_angles_supp':
+      return <P2Soal10AnglesSuppSVG className={className} mode={mode} />;
+    case 'p2_soal_12_tiang_gedung':
+      return <P2Soal12TiangGedungSVG className={className} mode={mode} />;
+    case 'p2_soal_13_kebun_trapesium':
+      return <P2Soal13KebunTrapesiumSVG className={className} mode={mode} />;
+    case 'p2_soal_17_jam_dinding':
+      return <P2Soal17JamDindingSVG className={className} mode={mode} />;
+    case 'p2_soal_20_segitiga_trig2':
+      return <P2Soal20SegitigaTrig2SVG className={className} mode={mode} />;
+    case 'p2_soal_21_line_ekskul':
+      return <P2Soal21LineEkskulSVG className={className} mode={mode} />;
+    case 'p3_soal_1_segitiga_trig3':
+      return <P2Soal20SegitigaTrig2SVG className={className} mode={mode} />;
+    case 'p3_soal_2_kotak_terbuka':
+      return <P1Soal11KandangAyamSVG className={className} mode={mode} />;
+    case 'p3_soal_3_kipas_tangan':
+      return <P3Soal3KipasTanganSVG className={className} mode={mode} />;
     default:
       return null;
   }

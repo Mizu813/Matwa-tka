@@ -95,10 +95,14 @@ export const PdfQuestionCard: React.FC<PdfQuestionCardProps> = ({
                 {question.title}
               </h3>
             </div>
-            <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-              <span>{question.subCompetency}</span>
+            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+              <span className="font-semibold text-indigo-600 dark:text-indigo-400 font-mono bg-indigo-50 dark:bg-indigo-950/40 px-1.5 py-0.2 rounded border border-indigo-200 dark:border-indigo-800">
+                {question.package} • Soal #{question.packageQuestionNumber}
+              </span>
               <span>•</span>
-              <span className="font-semibold text-indigo-600 dark:text-indigo-400">
+              <span className="font-medium">{question.module}</span>
+              <span>•</span>
+              <span className="font-semibold text-emerald-600 dark:text-emerald-400">
                 {question.cognitiveLevel}
               </span>
             </div>
@@ -133,12 +137,14 @@ export const PdfQuestionCard: React.FC<PdfQuestionCardProps> = ({
       </div>
 
       {/* 3. Technical SVG Visualization (Figure Container) */}
-      <div className="my-5 p-3 rounded-xl bg-slate-50 dark:bg-[#080C14] border border-slate-200 dark:border-slate-800/80 flex flex-col items-center justify-center">
-        <QuestionVisual svgId={question.svgComponentId} mode="question" />
-        <span className="text-[11px] font-mono font-medium text-slate-500 dark:text-slate-400 mt-2 text-center">
-          Gambar {question.number}: Representasi Teknis Pemodelan Matematis (Soal)
-        </span>
-      </div>
+      {question.svgComponentId && (
+        <div className="my-5 p-3 rounded-xl bg-slate-50 dark:bg-[#080C14] border border-slate-200 dark:border-slate-800/80 flex flex-col items-center justify-center">
+          <QuestionVisual svgId={question.svgComponentId} mode="question" />
+          <span className="text-[11px] font-mono font-medium text-slate-500 dark:text-slate-400 mt-2 text-center">
+            Gambar {question.number}: Representasi Teknis Pemodelan Matematis ({question.package})
+          </span>
+        </div>
+      )}
 
       {/* 4. Target Pertanyaan Soal */}
       <div className="my-4 p-3.5 rounded-xl bg-indigo-50/60 dark:bg-indigo-950/20 border-l-4 border-indigo-500 text-slate-900 dark:text-slate-100">
@@ -385,13 +391,15 @@ export const PdfQuestionCard: React.FC<PdfQuestionCardProps> = ({
             </div>
 
             {/* Visualisasi Solusi Grafis & Penjelasan Kunci */}
-            <div className="my-3 p-3 rounded-xl bg-slate-100 dark:bg-[#080C14] border border-emerald-500/30 flex flex-col items-center justify-center">
-              <span className="text-[11px] font-mono font-bold text-emerald-600 dark:text-emerald-400 mb-2 flex items-center gap-1.5 self-start">
-                <Sparkles className="w-3.5 h-3.5 text-emerald-500" />
-                Grafik Analisis Solusi &amp; Penjelasan Visual:
-              </span>
-              <QuestionVisual svgId={question.svgComponentId} mode="solution" />
-            </div>
+            {question.svgComponentId && (
+              <div className="my-3 p-3 rounded-xl bg-slate-100 dark:bg-[#080C14] border border-emerald-500/30 flex flex-col items-center justify-center">
+                <span className="text-[11px] font-mono font-bold text-emerald-600 dark:text-emerald-400 mb-2 flex items-center gap-1.5 self-start">
+                  <Sparkles className="w-3.5 h-3.5 text-emerald-500" />
+                  Grafik Analisis Solusi &amp; Penjelasan Visual ({question.package}):
+                </span>
+                <QuestionVisual svgId={question.svgComponentId} mode="solution" />
+              </div>
+            )}
 
             {/* Tahapan Rinci Bernomor */}
             <div className="space-y-3">

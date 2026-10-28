@@ -1,5 +1,5 @@
 import React from 'react';
-import { ModuleCategory } from '../types/quiz';
+import { ModuleCategory, PackageCategory } from '../types/quiz';
 import {
   FileText,
   Printer,
@@ -20,6 +20,8 @@ export type ViewDisplayMode = 'continuous' | 'single';
 interface PdfTopNavbarProps {
   selectedModule: ModuleCategory | 'Semua';
   onSelectModule: (moduleName: ModuleCategory | 'Semua') => void;
+  selectedPackage: PackageCategory;
+  onSelectPackage: (pkg: PackageCategory) => void;
   displayMode: ViewDisplayMode;
   onToggleDisplayMode: () => void;
   zoomLevel: number; // e.g. 100, 110, 125
@@ -35,19 +37,30 @@ interface PdfTopNavbarProps {
 }
 
 export const SUB_BAB_MODULES: { id: ModuleCategory | 'Semua'; label: string; range: string }[] = [
-  { id: 'Semua', label: 'Semua Sub-Bab', range: 'Soal 1–28' },
-  { id: 'Aljabar & Sistem Persamaan/Pertidaksamaan', label: '1. Aljabar & SPtLDV', range: 'Soal 1–4' },
-  { id: 'Fungsi & Relasi', label: '2. Fungsi & Relasi', range: 'Soal 5–8' },
-  { id: 'Barisan & Deret', label: '3. Barisan & Deret', range: 'Soal 9–12' },
-  { id: 'Geometri & Pengukuran', label: '4. Geometri & Dimensi 3', range: 'Soal 13–16' },
-  { id: 'Trigonometri', label: '5. Trigonometri', range: 'Soal 17–20' },
-  { id: 'Statistika & Analisis Data', label: '6. Statistika & Data', range: 'Soal 21–24' },
-  { id: 'Peluang & Kombinatorika', label: '7. Peluang & Kombinasi', range: 'Soal 25–28' },
+  { id: 'Semua', label: 'Semua Materi', range: '54 Soal' },
+  { id: 'Aljabar & Bilangan', label: '1. Aljabar & Bilangan', range: '6 Soal' },
+  { id: 'Pemodelan Linear & Sistem Persamaan', label: '2. Pemodelan Linear & SPL', range: '8 Soal' },
+  { id: 'Barisan & Pemodelan Eksponensial', label: '3. Barisan & Eksponensial', range: '4 Soal' },
+  { id: 'Geometri Bidang & Terapan', label: '4. Geometri Bidang', range: '9 Soal' },
+  { id: 'Geometri Ruang (Dimensi Tiga)', label: '5. Dimensi Tiga', range: '9 Soal' },
+  { id: 'Transformasi Geometri', label: '6. Transformasi Geometri', range: '2 Soal' },
+  { id: 'Trigonometri', label: '7. Trigonometri', range: '3 Soal' },
+  { id: 'Statistika & Peluang', label: '8. Statistika & Peluang', range: '10 Soal' },
+  { id: 'Kecukupan Data (Data Sufficiency)', label: '9. Kecukupan Data', range: '3 Soal' },
+];
+
+export const PAKET_MODULES: { id: PackageCategory; label: string; count: string }[] = [
+  { id: 'Semua', label: 'Semua Paket', count: '54' },
+  { id: 'Paket 1', label: 'Paket 1', count: '25' },
+  { id: 'Paket 2', label: 'Paket 2', count: '25' },
+  { id: 'Paket 3', label: 'Paket 3', count: '4' },
 ];
 
 export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
   selectedModule,
   onSelectModule,
+  selectedPackage,
+  onSelectPackage,
   displayMode,
   onToggleDisplayMode,
   zoomLevel,
@@ -74,10 +87,10 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
             <div className="flex items-center gap-1.5 sm:gap-2">
               <span className="font-extrabold text-sm sm:text-base text-slate-900 dark:text-white tracking-tight truncate">
                 Matwa-TKA
-                <span className="hidden sm:inline text-indigo-600 dark:text-indigo-400 font-semibold text-xs sm:text-sm"> | PDF Document Edition</span>
+                <span className="hidden sm:inline text-indigo-600 dark:text-indigo-400 font-semibold text-xs sm:text-sm"> | Bank Soal 2025</span>
               </span>
               <span className="hidden md:inline-flex px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 font-mono flex-shrink-0">
-                HOTS UTBK
+                54 BUTIR SOAL
               </span>
             </div>
           </div>
@@ -171,38 +184,71 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
         </div>
       </div>
 
-      {/* Baris 2: STATIC STICKY SUB-BAB NAVBAR TABS */}
+      {/* Baris 2: SUB-BAB DOMAIN MATERI & FILTER PAKET */}
       <div className="bg-slate-50/90 dark:bg-[#0E1424]/90 border-b border-slate-200 dark:border-slate-800 w-full overflow-hidden">
-        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full">
-          <nav className="flex items-center gap-1.5 overflow-x-auto py-2 scrollbar-none w-full min-w-0">
-            {SUB_BAB_MODULES.map((tab) => {
-              const isSelected = selectedModule === tab.id;
-              return (
-                <button
-                  key={tab.id}
-                  onClick={() => onSelectModule(tab.id)}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap transition-all flex items-center gap-1.5 ${
-                    isSelected
-                      ? 'bg-indigo-600 text-white shadow-sm'
-                      : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-800/60'
-                  }`}
-                >
-                  <span>{tab.label}</span>
-                  <span
-                    className={`text-[10px] font-mono font-normal px-1.5 py-0.5 rounded ${
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full flex flex-col gap-1.5 py-2">
+          {/* Baris 2A: 9 Domain Materi Tabs */}
+          <div className="flex items-center justify-between gap-2">
+            <span className="hidden md:inline-flex text-[11px] font-mono font-bold text-slate-500 uppercase flex-shrink-0">
+              Domain Materi:
+            </span>
+            <nav className="flex items-center gap-1.5 overflow-x-auto py-0.5 scrollbar-none w-full min-w-0">
+              {SUB_BAB_MODULES.map((tab) => {
+                const isSelected = selectedModule === tab.id;
+                return (
+                  <button
+                    key={tab.id}
+                    onClick={() => onSelectModule(tab.id)}
+                    className={`px-2.5 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap transition-all flex items-center gap-1.5 flex-shrink-0 ${
                       isSelected
-                        ? 'bg-indigo-700/80 text-white'
-                        : 'bg-slate-200 dark:bg-slate-800 text-slate-500 dark:text-slate-400'
+                        ? 'bg-indigo-600 text-white shadow-sm'
+                        : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-800/60'
                     }`}
                   >
-                    {tab.range}
-                  </span>
-                </button>
-              );
-            })}
-          </nav>
+                    <span>{tab.label}</span>
+                    <span
+                      className={`text-[10px] font-mono font-normal px-1.5 py-0.5 rounded ${
+                        isSelected
+                          ? 'bg-indigo-700/80 text-white'
+                          : 'bg-slate-200 dark:bg-slate-800 text-slate-500 dark:text-slate-400'
+                      }`}
+                    >
+                      {tab.range}
+                    </span>
+                  </button>
+                );
+              })}
+            </nav>
+          </div>
+
+          {/* Baris 2B: Filter Paket Soal */}
+          <div className="flex items-center gap-2 pt-1 border-t border-slate-200/60 dark:border-slate-800/60">
+            <span className="text-[11px] font-mono font-bold text-slate-500 uppercase flex-shrink-0">
+              Filter Paket:
+            </span>
+            <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none">
+              {PAKET_MODULES.map((pkg) => {
+                const isSelected = selectedPackage === pkg.id;
+                return (
+                  <button
+                    key={pkg.id}
+                    onClick={() => onSelectPackage(pkg.id)}
+                    className={`px-2.5 py-0.5 rounded-md text-[11px] font-bold font-mono transition-all flex items-center gap-1 ${
+                      isSelected
+                        ? 'bg-emerald-600 text-white shadow-xs'
+                        : 'bg-slate-100 dark:bg-slate-800/80 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700'
+                    }`}
+                  >
+                    <span>{pkg.label}</span>
+                    <span className="text-[10px] opacity-80">({pkg.count})</span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </header>
   );
 };
+

@@ -5,6 +5,7 @@ import {
   AnswerStatus,
   Question,
   ModuleCategory,
+  PackageCategory,
 } from './types/quiz';
 import { PdfTopNavbar, ViewDisplayMode } from './components/PdfTopNavbar';
 import { PdfDocumentSheet } from './components/PdfDocumentSheet';
@@ -12,14 +13,18 @@ import { EvaluationModal } from './components/EvaluationModal';
 import { FormulaCheatsheetModal } from './components/FormulaCheatsheetModal';
 
 export const App: React.FC = () => {
-  // 1. Sub-Bab Filter State (Controlled by Sticky Top Navbar)
+  // 1. Sub-Bab & Paket Filter State (Controlled by Sticky Top Navbar)
   const [selectedModule, setSelectedModule] = useState<ModuleCategory | 'Semua'>('Semua');
+  const [selectedPackage, setSelectedPackage] = useState<PackageCategory>('Semua');
 
-  // Filtered questions based on selected Sub-Bab
+  // Filtered questions based on selected Sub-Bab and selected Paket
   const activeQuestions = useMemo(() => {
-    if (selectedModule === 'Semua') return questionsData;
-    return questionsData.filter((q) => q.module === selectedModule);
-  }, [selectedModule]);
+    return questionsData.filter((q) => {
+      const matchModule = selectedModule === 'Semua' || q.module === selectedModule;
+      const matchPackage = selectedPackage === 'Semua' || q.package === selectedPackage;
+      return matchModule && matchPackage;
+    });
+  }, [selectedModule, selectedPackage]);
 
   // 2. Display Mode: 'continuous' (Full PDF Document) vs 'single' (Page-by-page)
   const [displayMode, setDisplayMode] = useState<ViewDisplayMode>('continuous');
@@ -203,6 +208,12 @@ export const App: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
+  const handleSelectPackage = useCallback((pkg: PackageCategory) => {
+    setSelectedPackage(pkg);
+    setCurrentIndex(0);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   const handleZoomIn = () => {
     setZoomLevel((prev) => Math.min(120, prev + 10));
   };
@@ -223,6 +234,8 @@ export const App: React.FC = () => {
       <PdfTopNavbar
         selectedModule={selectedModule}
         onSelectModule={handleSelectModule}
+        selectedPackage={selectedPackage}
+        onSelectPackage={handleSelectPackage}
         displayMode={displayMode}
         onToggleDisplayMode={() =>
           setDisplayMode((prev) => (prev === 'continuous' ? 'single' : 'continuous'))
@@ -244,6 +257,7 @@ export const App: React.FC = () => {
         <PdfDocumentSheet
           questions={activeQuestions}
           selectedModule={selectedModule}
+          selectedPackage={selectedPackage}
           userAnswers={userAnswers}
           onSelectOption={handleSelectOption}
           onToggleMcmaOption={handleToggleMcmaOption}

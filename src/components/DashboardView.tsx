@@ -90,13 +90,15 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
 
   // Group stats by module
   const modulesList: ModuleCategory[] = [
-    'Aljabar & Sistem Persamaan/Pertidaksamaan',
-    'Fungsi & Relasi',
-    'Barisan & Deret',
-    'Geometri & Pengukuran',
+    'Aljabar & Bilangan',
+    'Pemodelan Linear & Sistem Persamaan',
+    'Barisan & Pemodelan Eksponensial',
+    'Geometri Bidang & Terapan',
+    'Geometri Ruang (Dimensi Tiga)',
+    'Transformasi Geometri',
     'Trigonometri',
-    'Statistika & Analisis Data',
-    'Peluang & Kombinatorika',
+    'Statistika & Peluang',
+    'Kecukupan Data (Data Sufficiency)',
   ];
 
   const moduleStats = modulesList.map((modName) => {
