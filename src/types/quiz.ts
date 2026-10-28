@@ -53,7 +53,14 @@ export interface Question {
   categoryStatements?: CategoryStatement[]; // For pgk_kategori
   correctAnswer: string | string[] | Record<string, boolean>; // e.g. 'C', ['p1', 'p4'], { A: false, B: false, C: true }
   explanation: QuestionExplanation;
+  hint1?: string; // Petunjuk 1: Konsep Inti / Teorema
+  hint2?: string; // Petunjuk 2: Langkah Awal / Persamaan
+  trap?: string; // Jebakan Umum TKA (Common Trap)
+  optionExplanations?: Record<string, string>; // Penjelasan spesifik per pilihan A/B/C/D/E
 }
+
+export type AppView = 'dashboard' | 'drill' | 'concepts' | 'bookmarks' | 'exam';
+export type TimerMode = 'stopwatch' | 'pomodoro';
 
 export type AnswerStatus = 'unanswered' | 'doubt' | 'answered';
 

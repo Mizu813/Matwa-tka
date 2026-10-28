@@ -1,56 +1,101 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { questionsData } from './data/questionsData';
-import { UserAnswerRecord, AnswerStatus, Question } from './types/quiz';
+import {
+  UserAnswerRecord,
+  AnswerStatus,
+  Question,
+  ModuleCategory,
+  AppView,
+} from './types/quiz';
 import { Header } from './components/Header';
+import { Sidebar } from './components/Sidebar';
+import { DashboardView } from './components/DashboardView';
 import { QuestionView } from './components/QuestionView';
+import { ConceptsView } from './components/ConceptsView';
+import { BookmarksView } from './components/BookmarksView';
+import { SearchModal } from './components/SearchModal';
 import { BottomMobileBar } from './components/BottomMobileBar';
 import { QuestionPalette } from './components/QuestionPalette';
 import { EvaluationModal } from './components/EvaluationModal';
 import { FormulaCheatsheetModal } from './components/FormulaCheatsheetModal';
-import { Filter, Sparkles, BookOpen, Layers } from 'lucide-react';
+import { X, Maximize2, Minimize2 } from 'lucide-react';
 
 export const App: React.FC = () => {
-  // Module / Batch filter state
-  const [selectedBatch, setSelectedBatch] = useState<string>('Semua');
-
-  // Filtered questions based on selected batch
-  const activeQuestions = useMemo(() => {
-    if (selectedBatch === 'Semua') return questionsData;
-    if (selectedBatch === 'Batch 1: Aljabar') {
-      return questionsData.filter((q) => q.module === 'Aljabar & Sistem Persamaan/Pertidaksamaan');
-    }
-    if (selectedBatch === 'Batch 2: Fungsi & Deret') {
-      return questionsData.filter(
-        (q) => q.module === 'Fungsi & Relasi' || q.module === 'Barisan & Deret'
-      );
-    }
-    if (selectedBatch === 'Batch 3: Geometri & Trig') {
-      return questionsData.filter(
-        (q) => q.module === 'Geometri & Pengukuran' || q.module === 'Trigonometri'
-      );
-    }
-    if (selectedBatch === 'Batch 4: Statistika & Peluang') {
-      return questionsData.filter(
-        (q) => q.module === 'Statistika & Analisis Data' || q.module === 'Peluang & Kombinatorika'
-      );
-    }
-    return questionsData;
-  }, [selectedBatch]);
-
-  // Index inside the active questions array
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
-  const [userAnswers, setUserAnswers] = useState<Record<string, UserAnswerRecord>>({});
-  const [isExamMode, setIsExamMode] = useState<boolean>(false);
-  const [timerSeconds, setTimerSeconds] = useState<number>(90 * 60);
-  const [timeSpentSeconds, setTimeSpentSeconds] = useState<number>(0);
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
-    return (
-      localStorage.getItem('sim_tka_theme') === 'dark' ||
-      window.matchMedia('(prefers-color-scheme: dark)').matches
-    );
+  // Navigation View: 'dashboard' | 'drill' | 'concepts' | 'bookmarks' | 'exam'
+  const [currentView, setCurrentView] = useState<AppView>(() => {
+    if (window.location.hash.startsWith('#/soal/')) return 'drill';
+    if (window.location.hash === '#/teorema') return 'concepts';
+    if (window.location.hash === '#/bookmark') return 'bookmarks';
+    if (window.location.hash === '#/ujian') return 'exam';
+    return 'dashboard';
   });
 
-  // Modals state
+  // Selected module filter for drilling
+  const [selectedModule, setSelectedModule] = useState<ModuleCategory | 'Semua'>('Semua');
+
+  // Filtered questions based on selected module
+  const activeQuestions = useMemo(() => {
+    if (selectedModule === 'Semua') return questionsData;
+    return questionsData.filter((q) => q.module === selectedModule);
+  }, [selectedModule]);
+
+  // Current question index within activeQuestions
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+
+  // User answers state with localStorage persistence
+  const [userAnswers, setUserAnswers] = useState<Record<string, UserAnswerRecord>>(() => {
+    try {
+      const saved = localStorage.getItem('matwa_tka_answers');
+      return saved ? JSON.parse(saved) : {};
+    } catch {
+      return {};
+    }
+  });
+
+  // Bookmarked questions state with localStorage persistence
+  const [bookmarkedIds, setBookmarkedIds] = useState<string[]>(() => {
+    try {
+      const saved = localStorage.getItem('matwa_tka_bookmarks');
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
+  });
+
+  // Last visited question number
+  const [lastQuestionNumber, setLastQuestionNumber] = useState<number>(() => {
+    try {
+      const saved = localStorage.getItem('matwa_tka_last_q');
+      return saved ? parseInt(saved, 10) : 1;
+    } catch {
+      return 1;
+    }
+  });
+
+  // Timer & Exam states
+  const [isExamMode, setIsExamMode] = useState<boolean>(() => currentView === 'exam');
+  const [timerSeconds, setTimerSeconds] = useState<number>(90 * 60);
+  const [timeSpentSeconds, setTimeSpentSeconds] = useState<number>(() => {
+    try {
+      const saved = localStorage.getItem('matwa_tka_time_spent');
+      return saved ? parseInt(saved, 10) : 0;
+    } catch {
+      return 0;
+    }
+  });
+
+  // Theme state (Default: High-contrast Dark Mode)
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
+    const saved = localStorage.getItem('matwa_tka_theme');
+    if (saved) return saved === 'dark';
+    return true; // Default Dark Mode as requested
+  });
+
+  // Layout & UI states
+  const [isSidebarCollapsed, setIsSidebarCollapsed] = useState<boolean>(false);
+  const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState<boolean>(false);
+  const [isZenMode, setIsZenMode] = useState<boolean>(false);
+  const [isSearchModalOpen, setIsSearchModalOpen] = useState<boolean>(false);
   const [isEvaluationModalOpen, setIsEvaluationModalOpen] = useState<boolean>(false);
   const [isFormulaModalOpen, setIsFormulaModalOpen] = useState<boolean>(false);
   const [isMobilePaletteOpen, setIsMobilePaletteOpen] = useState<boolean>(false);
@@ -59,29 +104,84 @@ export const App: React.FC = () => {
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add('dark');
-      localStorage.setItem('sim_tka_theme', 'dark');
+      localStorage.setItem('matwa_tka_theme', 'dark');
     } else {
       document.documentElement.classList.remove('dark');
-      localStorage.setItem('sim_tka_theme', 'light');
+      localStorage.setItem('matwa_tka_theme', 'light');
     }
   }, [isDarkMode]);
 
-  // Safe boundary check for currentIndex when activeQuestions change
+  // Persist answers
   useEffect(() => {
-    if (currentIndex >= activeQuestions.length) {
+    try {
+      localStorage.setItem('matwa_tka_answers', JSON.stringify(userAnswers));
+    } catch (e) {
+      console.error(e);
+    }
+  }, [userAnswers]);
+
+  // Persist bookmarks
+  useEffect(() => {
+    try {
+      localStorage.setItem('matwa_tka_bookmarks', JSON.stringify(bookmarkedIds));
+    } catch (e) {
+      console.error(e);
+    }
+  }, [bookmarkedIds]);
+
+  // Persist time spent
+  useEffect(() => {
+    try {
+      localStorage.setItem('matwa_tka_time_spent', timeSpentSeconds.toString());
+    } catch (e) {
+      console.error(e);
+    }
+  }, [timeSpentSeconds]);
+
+  // Safe boundary check for currentIndex
+  useEffect(() => {
+    if (currentIndex >= activeQuestions.length && activeQuestions.length > 0) {
       setCurrentIndex(0);
     }
   }, [activeQuestions, currentIndex]);
 
-  // Sync URL hash when question changes
+  // Sync current question number & URL hash
   useEffect(() => {
-    const q = activeQuestions[currentIndex];
-    if (q) {
-      window.history.replaceState(null, '', `#/soal/${q.number}`);
+    if (currentView === 'drill' || currentView === 'exam') {
+      const q = activeQuestions[currentIndex];
+      if (q) {
+        setLastQuestionNumber(q.number);
+        localStorage.setItem('matwa_tka_last_q', q.number.toString());
+        window.history.replaceState(null, '', `#/soal/${q.number}`);
+      }
+    } else if (currentView === 'dashboard') {
+      window.history.replaceState(null, '', `#/dashboard`);
+    } else if (currentView === 'concepts') {
+      window.history.replaceState(null, '', `#/teorema`);
+    } else if (currentView === 'bookmarks') {
+      window.history.replaceState(null, '', `#/bookmark`);
     }
-  }, [currentIndex, activeQuestions]);
+  }, [currentIndex, activeQuestions, currentView]);
 
-  // Timer countdown in exam mode
+  // Global Keyboard shortcuts: Ctrl+K, Esc, Z
+  useEffect(() => {
+    const handleGlobalKeyDown = (e: KeyboardEvent) => {
+      // Ctrl + K or Meta + K -> Search
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        setIsSearchModalOpen((prev) => !prev);
+      }
+      // Esc -> exit Zen mode or close modal
+      if (e.key === 'Escape' && isZenMode) {
+        setIsZenMode(false);
+      }
+    };
+
+    window.addEventListener('keydown', handleGlobalKeyDown);
+    return () => window.removeEventListener('keydown', handleGlobalKeyDown);
+  }, [isZenMode]);
+
+  // Exam timer interval
   useEffect(() => {
     if (!isExamMode || isEvaluationModalOpen) return;
 
@@ -101,16 +201,15 @@ export const App: React.FC = () => {
   }, [isExamMode, isEvaluationModalOpen]);
 
   // Current active question
-  const currentQuestion = activeQuestions[currentIndex] || activeQuestions[0] || questionsData[0];
+  const currentQuestion =
+    activeQuestions[currentIndex] || activeQuestions[0] || questionsData[0];
 
-  // Helper to count answered
-  const totalAnswered = useMemo(() => {
-    return Object.values(userAnswers).filter(
-      (a) => a.status === 'answered' || a.status === 'doubt'
-    ).length;
-  }, [userAnswers]);
+  // Bookmarked questions list
+  const bookmarkedQuestions = useMemo(() => {
+    return questionsData.filter((q) => bookmarkedIds.includes(q.id));
+  }, [bookmarkedIds]);
 
-  // Handlers for single selection (Radio)
+  // Handlers for selection
   const handleSelectOption = useCallback(
     (optionId: string) => {
       const qId = currentQuestion.id;
@@ -130,7 +229,6 @@ export const App: React.FC = () => {
     [currentQuestion.id]
   );
 
-  // Handlers for MCMA multi selection (Checkbox)
   const handleToggleMcmaOption = useCallback(
     (optionId: string) => {
       const qId = currentQuestion.id;
@@ -161,7 +259,6 @@ export const App: React.FC = () => {
     [currentQuestion.id]
   );
 
-  // Handlers for PGK Kategori (Benar / Salah table)
   const handleSelectCategoryAnswer = useCallback(
     (statementId: string, value: boolean) => {
       const qId = currentQuestion.id;
@@ -208,6 +305,22 @@ export const App: React.FC = () => {
     });
   }, [currentQuestion.id]);
 
+  // Toggle Bookmark status
+  const handleToggleBookmark = useCallback((qId?: string) => {
+    const targetId = qId || currentQuestion.id;
+    setBookmarkedIds((prev) => {
+      if (prev.includes(targetId)) {
+        return prev.filter((id) => id !== targetId);
+      } else {
+        return [...prev, targetId];
+      }
+    });
+  }, [currentQuestion.id]);
+
+  const handleClearAllBookmarks = useCallback(() => {
+    setBookmarkedIds([]);
+  }, []);
+
   // Navigation handlers
   const handlePrev = useCallback(() => {
     setCurrentIndex((prev) => Math.max(0, prev - 1));
@@ -224,12 +337,40 @@ export const App: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
-  // Mode Toggle
-  const handleToggleMode = useCallback(() => {
-    setIsExamMode((prev) => !prev);
+  const handleNavigateToQuestionNumber = useCallback(
+    (questionNumber: number) => {
+      // Set filter to 'Semua' so all questions are reachable
+      setSelectedModule('Semua');
+      const targetIdx = questionsData.findIndex((q) => q.number === questionNumber);
+      if (targetIdx !== -1) {
+        setCurrentIndex(targetIdx);
+        setCurrentView('drill');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    },
+    []
+  );
+
+  const handleSelectTopicToDrill = useCallback((moduleName: ModuleCategory) => {
+    setSelectedModule(moduleName);
+    setCurrentIndex(0);
+    setCurrentView('drill');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
-  // Reset exam
+  const handleToggleExamMode = useCallback(() => {
+    setIsExamMode((prev) => {
+      const next = !prev;
+      if (next) {
+        setCurrentView('exam');
+        setSelectedModule('Semua');
+      } else {
+        setCurrentView('drill');
+      }
+      return next;
+    });
+  }, []);
+
   const handleResetExam = useCallback(() => {
     setUserAnswers({});
     setCurrentIndex(0);
@@ -237,113 +378,185 @@ export const App: React.FC = () => {
     setTimeSpentSeconds(0);
   }, []);
 
-  const batches = [
-    { id: 'Semua', label: 'Semua Soal (28 Butir)' },
-    { id: 'Batch 1: Aljabar', label: 'Bagian 1: Aljabar & Prog. Linear' },
-    { id: 'Batch 2: Fungsi & Deret', label: 'Bagian 2: Fungsi, Relasi & Deret' },
-    { id: 'Batch 3: Geometri & Trig', label: 'Bagian 3: Geometri & Trigonometri' },
-    { id: 'Batch 4: Statistika & Peluang', label: 'Bagian 4: Statistika & Peluang' },
-  ];
+  const totalAnswered = useMemo(() => {
+    return Object.values(userAnswers).filter(
+      (a) => a.status === 'answered' || a.status === 'doubt'
+    ).length;
+  }, [userAnswers]);
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors">
-      {/* Top Header */}
-      <Header
-        isExamMode={isExamMode}
-        onToggleMode={handleToggleMode}
-        timerSeconds={timerSeconds}
-        isDarkMode={isDarkMode}
-        onToggleDarkMode={() => setIsDarkMode((prev) => !prev)}
-        onOpenFormulaModal={() => setIsFormulaModalOpen(true)}
-        onFinishExam={() => setIsEvaluationModalOpen(true)}
-        totalAnswered={totalAnswered}
-        totalQuestions={activeQuestions.length}
-      />
-
-      {/* Module / Batch Selector Bar */}
-      <section className="bg-slate-100/90 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-800 py-2.5 px-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between gap-3 overflow-x-auto scrollbar-none">
-          <div className="flex items-center gap-2 text-xs font-bold text-slate-600 dark:text-slate-400 whitespace-nowrap">
-            <Layers className="w-4 h-4 text-teal-600 dark:text-teal-400" />
-            <span className="hidden sm:inline">Paket Modul Latihan:</span>
-          </div>
-          <div className="flex items-center gap-1.5 flex-nowrap">
-            {batches.map((b) => (
-              <button
-                key={b.id}
-                onClick={() => {
-                  setSelectedBatch(b.id);
-                  setCurrentIndex(0);
-                }}
-                className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all ${
-                  selectedBatch === b.id
-                    ? 'bg-teal-600 text-white shadow-sm shadow-teal-500/20 scale-[1.02]'
-                    : 'bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700 hover:border-teal-400 hover:text-slate-900 dark:hover:text-white'
-                }`}
-              >
-                {b.label}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Main Single Question View */}
-      <main className="flex-1">
-        <QuestionView
-          question={currentQuestion}
-          currentIndex={currentIndex}
-          totalQuestions={activeQuestions.length}
+    <div className="min-h-screen bg-[#0B0F19] text-slate-100 flex font-sans selection:bg-indigo-500 selection:text-white transition-colors">
+      {/* 1. Collapsible Sidebar Navigation (Hidden in Zen Mode) */}
+      {!isZenMode && (
+        <Sidebar
+          currentView={currentView}
+          onSelectView={(v) => {
+            setCurrentView(v);
+            if (v === 'exam') setIsExamMode(true);
+            else setIsExamMode(false);
+          }}
+          isCollapsed={isSidebarCollapsed}
+          onToggleCollapse={() => setIsSidebarCollapsed((prev) => !prev)}
+          isMobileOpen={isMobileSidebarOpen}
+          onCloseMobile={() => setIsMobileSidebarOpen(false)}
+          onOpenSearch={() => setIsSearchModalOpen(true)}
+          questions={questionsData}
           userAnswers={userAnswers}
-          onSelectOption={handleSelectOption}
-          onToggleMcmaOption={handleToggleMcmaOption}
-          onSelectCategoryAnswer={handleSelectCategoryAnswer}
-          onPrev={handlePrev}
-          onNext={handleNext}
-          onToggleDoubt={handleToggleDoubt}
-          onFinishExam={() => setIsEvaluationModalOpen(true)}
-          isExamMode={isExamMode}
-          onSelectQuestion={handleSelectQuestion}
-          questions={activeQuestions}
+          bookmarkedIds={bookmarkedIds}
+          onSelectTopic={handleSelectTopicToDrill}
+          selectedModule={selectedModule}
         />
-      </main>
+      )}
 
-      {/* Floating Bottom Bar on Mobile */}
-      <BottomMobileBar
-        currentIndex={currentIndex}
-        totalQuestions={activeQuestions.length}
-        currentStatus={userAnswers[currentQuestion.id]?.status || 'unanswered'}
-        onPrev={handlePrev}
-        onNext={handleNext}
-        onToggleDoubt={handleToggleDoubt}
-        onOpenPalette={() => setIsMobilePaletteOpen(true)}
-        onFinish={() => setIsEvaluationModalOpen(true)}
-      />
+      {/* Main Content Area */}
+      <div className="flex-1 flex flex-col min-w-0 min-h-screen overflow-x-hidden">
+        {/* 2. Top Header (Minimalist in Zen Mode) */}
+        {!isZenMode ? (
+          <Header
+            isExamMode={isExamMode}
+            onToggleMode={handleToggleExamMode}
+            timerSeconds={timerSeconds}
+            isDarkMode={isDarkMode}
+            onToggleDarkMode={() => setIsDarkMode((prev) => !prev)}
+            onOpenFormulaModal={() => setIsFormulaModalOpen(true)}
+            onFinishExam={() => setIsEvaluationModalOpen(true)}
+            totalAnswered={totalAnswered}
+            totalQuestions={questionsData.length}
+            isZenMode={isZenMode}
+            onToggleZenMode={() => setIsZenMode(true)}
+            onOpenMobileSidebar={() => setIsMobileSidebarOpen(true)}
+            onOpenSearch={() => setIsSearchModalOpen(true)}
+          />
+        ) : (
+          /* Floating Zen Mode Top Control */
+          <div className="sticky top-0 z-40 p-3 flex justify-between items-center max-w-5xl mx-auto w-full backdrop-blur-md bg-[#0B0F19]/80 border-b border-[#1F2937]/50 px-4">
+            <div className="flex items-center gap-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping" />
+              <span className="text-xs font-bold text-slate-300">
+                Mode Fokus (Zen Mode) Aktif
+              </span>
+            </div>
+            <button
+              onClick={() => setIsZenMode(false)}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#151D2F] hover:bg-[#1F2937] text-white text-xs font-semibold border border-slate-700 transition-colors shadow-sm"
+            >
+              <Minimize2 className="w-3.5 h-3.5" />
+              Keluar Zen (Esc)
+            </button>
+          </div>
+        )}
 
-      {/* Mobile Drawer / Modal for Question Palette */}
-      {isMobilePaletteOpen && (
-        <div className="lg:hidden fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4 bg-slate-950/70 backdrop-blur-sm animate-fade-in">
-          <div className="w-full sm:max-w-md bg-white dark:bg-slate-900 rounded-t-3xl sm:rounded-3xl border border-slate-200 dark:border-slate-800 p-4 max-h-[85vh] flex flex-col">
-            <QuestionPalette
-              questions={activeQuestions}
-              currentIndex={currentIndex}
+        {/* 3. Dynamic App View Rendering */}
+        <main className="flex-1">
+          {currentView === 'dashboard' && (
+            <DashboardView
+              questions={questionsData}
               userAnswers={userAnswers}
-              onSelectQuestion={handleSelectQuestion}
-              isMobileModal={true}
-              onCloseMobileModal={() => setIsMobilePaletteOpen(false)}
+              bookmarkedIds={bookmarkedIds}
+              lastQuestionNumber={lastQuestionNumber}
+              timeSpentSeconds={timeSpentSeconds}
+              onNavigateToQuestion={handleNavigateToQuestionNumber}
+              onSelectView={setCurrentView}
+              onSelectTopic={handleSelectTopicToDrill}
             />
+          )}
+
+          {(currentView === 'drill' || currentView === 'exam') && (
+            <QuestionView
+              question={currentQuestion}
+              currentIndex={currentIndex}
+              totalQuestions={activeQuestions.length}
+              userAnswers={userAnswers}
+              onSelectOption={handleSelectOption}
+              onToggleMcmaOption={handleToggleMcmaOption}
+              onSelectCategoryAnswer={handleSelectCategoryAnswer}
+              onPrev={handlePrev}
+              onNext={handleNext}
+              onToggleDoubt={handleToggleDoubt}
+              onFinishExam={() => setIsEvaluationModalOpen(true)}
+              isExamMode={isExamMode}
+              onSelectQuestion={handleSelectQuestion}
+              questions={activeQuestions}
+              isBookmarked={bookmarkedIds.includes(currentQuestion.id)}
+              onToggleBookmark={() => handleToggleBookmark(currentQuestion.id)}
+              isZenMode={isZenMode}
+              onToggleZenMode={() => setIsZenMode((prev) => !prev)}
+            />
+          )}
+
+          {currentView === 'concepts' && (
+            <ConceptsView onSelectTopicToDrill={handleSelectTopicToDrill} />
+          )}
+
+          {currentView === 'bookmarks' && (
+            <BookmarksView
+              bookmarkedQuestions={bookmarkedQuestions}
+              userAnswers={userAnswers}
+              onNavigateToQuestion={handleNavigateToQuestionNumber}
+              onToggleBookmark={handleToggleBookmark}
+              onClearAllBookmarks={handleClearAllBookmarks}
+            />
+          )}
+        </main>
+
+        {/* 4. Bottom Mobile Bar (Only in Question Drilling & Zen Mode off) */}
+        {!isZenMode && (currentView === 'drill' || currentView === 'exam') && (
+          <BottomMobileBar
+            currentIndex={currentIndex}
+            totalQuestions={activeQuestions.length}
+            currentStatus={userAnswers[currentQuestion.id]?.status || 'unanswered'}
+            onPrev={handlePrev}
+            onNext={handleNext}
+            onToggleDoubt={handleToggleDoubt}
+            onOpenPalette={() => setIsMobilePaletteOpen(true)}
+            onFinish={() => setIsEvaluationModalOpen(true)}
+          />
+        )}
+      </div>
+
+      {/* 5. Modals */}
+      {/* Mobile Question Palette Modal Drawer */}
+      {isMobilePaletteOpen && (
+        <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/60 backdrop-blur-sm lg:hidden animate-fadeIn">
+          <div className="w-full max-w-lg bg-[#111827] rounded-t-3xl border-t border-[#1F2937] p-4 max-h-[80vh] flex flex-col">
+            <div className="flex justify-between items-center mb-3">
+              <h3 className="text-sm font-bold text-white">Daftar Nomor Soal</h3>
+              <button
+                onClick={() => setIsMobilePaletteOpen(false)}
+                className="p-1.5 rounded-lg bg-[#1F2937] text-slate-400 hover:text-white"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+            <div className="flex-1 overflow-y-auto">
+              <QuestionPalette
+                questions={activeQuestions}
+                currentIndex={currentIndex}
+                userAnswers={userAnswers}
+                onSelectQuestion={(idx) => {
+                  handleSelectQuestion(idx);
+                  setIsMobilePaletteOpen(false);
+                }}
+                isMobileModal={true}
+                onCloseMobileModal={() => setIsMobilePaletteOpen(false)}
+              />
+            </div>
           </div>
         </div>
       )}
 
-      {/* Evaluation and Score Modal */}
+      {/* Evaluation / Scoring Modal */}
       <EvaluationModal
         isOpen={isEvaluationModalOpen}
         onClose={() => setIsEvaluationModalOpen(false)}
-        questions={activeQuestions}
+        questions={questionsData}
         userAnswers={userAnswers}
         timeSpentSeconds={timeSpentSeconds}
-        onSelectQuestion={handleSelectQuestion}
+        onSelectQuestion={(idx) => {
+          handleSelectQuestion(idx);
+          setIsEvaluationModalOpen(false);
+          setCurrentView('drill');
+        }}
         onResetExam={handleResetExam}
       />
 
@@ -351,6 +564,14 @@ export const App: React.FC = () => {
       <FormulaCheatsheetModal
         isOpen={isFormulaModalOpen}
         onClose={() => setIsFormulaModalOpen(false)}
+      />
+
+      {/* Quick Search Modal */}
+      <SearchModal
+        isOpen={isSearchModalOpen}
+        onClose={() => setIsSearchModalOpen(false)}
+        questions={questionsData}
+        onSelectQuestion={(qNum) => handleNavigateToQuestionNumber(qNum)}
       />
     </div>
   );

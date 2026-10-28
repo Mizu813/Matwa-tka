@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Question, UserAnswerRecord, AnswerStatus } from '../types/quiz';
-import { Flag, Check, Circle, Filter, X } from 'lucide-react';
+import { Flag, Check, X } from 'lucide-react';
 
 interface QuestionPaletteProps {
   questions: Question[];
@@ -47,22 +47,22 @@ export const QuestionPalette: React.FC<QuestionPaletteProps> = ({
   });
 
   return (
-    <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-4 shadow-sm flex flex-col h-full">
+    <div className="bg-[#111827] rounded-3xl border border-[#1F2937] p-4 shadow-sm flex flex-col h-full">
       {/* Header */}
-      <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800">
+      <div className="flex items-center justify-between pb-3 border-b border-[#1F2937]">
         <div>
-          <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-teal-500 animate-pulse"></span>
-            Navigasi Nomor Soal
+          <h3 className="text-xs font-bold uppercase tracking-wider text-white flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse" />
+            Palet Nomor Soal
           </h3>
-          <p className="text-xs text-slate-500 dark:text-slate-400">
-            Total {questions.length} Butir Soal Terstandar
+          <p className="text-[11px] text-slate-400 mt-0.5">
+            {answeredCount} dari {questions.length} terjawab
           </p>
         </div>
         {isMobileModal && onCloseMobileModal && (
           <button
             onClick={onCloseMobileModal}
-            className="p-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-slate-900 dark:hover:text-white"
+            className="p-1.5 rounded-lg bg-[#1F2937] text-slate-400 hover:text-white"
           >
             <X className="w-5 h-5" />
           </button>
@@ -70,74 +70,64 @@ export const QuestionPalette: React.FC<QuestionPaletteProps> = ({
       </div>
 
       {/* Filter Tabs */}
-      <div className="flex items-center gap-1.5 my-3 p-1 rounded-xl bg-slate-100 dark:bg-slate-800/80 text-xs">
+      <div className="flex items-center gap-1 my-3 p-1 rounded-xl bg-[#0B0F19] border border-[#1F2937] text-[11px]">
         <button
           onClick={() => setFilter('all')}
-          className={`flex-1 py-1.5 px-2 rounded-lg font-medium transition-all ${
+          className={`flex-1 py-1 px-1.5 rounded-lg font-bold transition-all ${
             filter === 'all'
-              ? 'bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-sm font-semibold'
-              : 'text-slate-500 dark:text-slate-400 hover:text-slate-800'
+              ? 'bg-indigo-600 text-white shadow-sm'
+              : 'text-slate-400 hover:text-white'
           }`}
         >
           Semua ({questions.length})
         </button>
         <button
           onClick={() => setFilter('answered')}
-          className={`py-1.5 px-2 rounded-lg font-medium transition-all ${
+          className={`py-1 px-2 rounded-lg font-bold transition-all ${
             filter === 'answered'
-              ? 'bg-teal-600 text-white shadow-sm font-semibold'
-              : 'text-slate-500 dark:text-slate-400 hover:text-teal-600'
+              ? 'bg-emerald-600 text-white shadow-sm'
+              : 'text-slate-400 hover:text-emerald-400'
           }`}
         >
-          Terjawab ({answeredCount})
+          Dijawab ({answeredCount})
         </button>
         <button
           onClick={() => setFilter('doubt')}
-          className={`py-1.5 px-2 rounded-lg font-medium transition-all ${
+          className={`py-1 px-2 rounded-lg font-bold transition-all ${
             filter === 'doubt'
-              ? 'bg-amber-500 text-white shadow-sm font-semibold'
-              : 'text-slate-500 dark:text-slate-400 hover:text-amber-500'
+              ? 'bg-amber-600 text-white shadow-sm'
+              : 'text-slate-400 hover:text-amber-400'
           }`}
         >
           Ragu ({doubtCount})
         </button>
-        <button
-          onClick={() => setFilter('unanswered')}
-          className={`py-1.5 px-2 rounded-lg font-medium transition-all ${
-            filter === 'unanswered'
-              ? 'bg-slate-300 dark:bg-slate-600 text-slate-900 dark:text-white shadow-sm font-semibold'
-              : 'text-slate-500 dark:text-slate-400 hover:text-slate-800'
-          }`}
-        >
-          Belum ({unansweredCount})
-        </button>
       </div>
 
       {/* Grid of Question Numbers */}
-      <div className="flex-1 overflow-y-auto max-h-[340px] pr-1 py-1">
-        <div className="grid grid-cols-5 sm:grid-cols-5 gap-2">
+      <div className="flex-1 overflow-y-auto max-h-[320px] pr-1 py-1">
+        <div className="grid grid-cols-5 gap-2">
           {filteredQuestions.map((q) => {
             const originalIndex = questions.findIndex((item) => item.id === q.id);
             const isCurrent = originalIndex === currentIndex;
             const status: AnswerStatus = userAnswers[q.id]?.status || 'unanswered';
 
             let btnStyle =
-              'border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/60 text-slate-700 dark:text-slate-300 hover:border-teal-400';
+              'border-[#1F2937] bg-[#151D2F] text-slate-300 hover:border-indigo-500 hover:text-white';
             let icon = null;
 
             if (status === 'answered') {
               btnStyle =
-                'border-teal-500 bg-teal-50 dark:bg-teal-950/60 text-teal-700 dark:text-teal-300 font-bold';
-              icon = <Check className="w-2.5 h-2.5 stroke-[3]" />;
+                'border-emerald-500/60 bg-emerald-950/40 text-emerald-300 font-bold';
+              icon = <Check className="w-2.5 h-2.5 stroke-[3] text-emerald-400" />;
             } else if (status === 'doubt') {
               btnStyle =
-                'border-amber-500 bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 font-bold';
-              icon = <Flag className="w-2.5 h-2.5 fill-amber-500" />;
+                'border-amber-500/60 bg-amber-950/40 text-amber-300 font-bold';
+              icon = <Flag className="w-2.5 h-2.5 fill-amber-400 text-amber-400" />;
             }
 
             if (isCurrent) {
               btnStyle +=
-                ' ring-2 ring-teal-500 ring-offset-2 dark:ring-offset-slate-900 scale-105 shadow-sm';
+                ' ring-2 ring-indigo-500 ring-offset-2 ring-offset-[#0B0F19] scale-105 shadow-md shadow-indigo-600/20';
             }
 
             return (
@@ -147,7 +137,7 @@ export const QuestionPalette: React.FC<QuestionPaletteProps> = ({
                   onSelectQuestion(originalIndex);
                   if (onCloseMobileModal) onCloseMobileModal();
                 }}
-                className={`relative h-11 rounded-xl border text-sm flex flex-col items-center justify-center transition-all ${btnStyle}`}
+                className={`relative h-10 rounded-xl border text-xs font-mono font-bold flex flex-col items-center justify-center transition-all ${btnStyle}`}
               >
                 <span>{q.number}</span>
                 {icon && <div className="absolute top-1 right-1">{icon}</div>}
@@ -158,31 +148,27 @@ export const QuestionPalette: React.FC<QuestionPaletteProps> = ({
       </div>
 
       {/* Legend Footer */}
-      <div className="pt-3 mt-3 border-t border-slate-100 dark:border-slate-800 text-[11px] text-slate-500 dark:text-slate-400 space-y-1.5">
+      <div className="pt-3 mt-3 border-t border-[#1F2937] text-[11px] text-slate-400 space-y-1.5">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-1.5">
-            <div className="w-3 h-3 rounded bg-teal-50 border border-teal-500 flex items-center justify-center text-teal-700">
-              <Check className="w-2 h-2" />
-            </div>
-            <span>Sudah Terjawab</span>
+            <div className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
+            <span>Sudah Dijawab</span>
           </div>
-          <span className="font-semibold text-teal-600">{answeredCount}</span>
+          <span className="font-mono font-bold text-emerald-400">{answeredCount}</span>
         </div>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-1.5">
-            <div className="w-3 h-3 rounded bg-amber-50 border border-amber-500 flex items-center justify-center text-amber-700">
-              <Flag className="w-2 h-2 fill-amber-500" />
-            </div>
+            <div className="w-2.5 h-2.5 rounded-full bg-amber-500" />
             <span>Ragu-Ragu</span>
           </div>
-          <span className="font-semibold text-amber-600">{doubtCount}</span>
+          <span className="font-mono font-bold text-amber-400">{doubtCount}</span>
         </div>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-1.5">
-            <div className="w-3 h-3 rounded bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700"></div>
+            <div className="w-2.5 h-2.5 rounded-full bg-slate-700" />
             <span>Belum Terjawab</span>
           </div>
-          <span className="font-semibold text-slate-600">{unansweredCount}</span>
+          <span className="font-mono font-bold text-slate-400">{unansweredCount}</span>
         </div>
       </div>
     </div>

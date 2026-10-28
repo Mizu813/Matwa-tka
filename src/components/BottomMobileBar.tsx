@@ -28,7 +28,7 @@ export const BottomMobileBar: React.FC<BottomMobileBarProps> = ({
   const isDoubt = currentStatus === 'doubt';
 
   return (
-    <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 p-2.5 px-4 shadow-lg safe-area-bottom">
+    <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#0B0F19]/95 backdrop-blur-md border-t border-[#1F2937] p-2.5 px-4 shadow-2xl safe-area-bottom">
       <div className="flex items-center justify-between gap-2 max-w-lg mx-auto">
         {/* Tombol Sebelumnya */}
         <button
@@ -36,12 +36,12 @@ export const BottomMobileBar: React.FC<BottomMobileBarProps> = ({
           disabled={isFirst}
           className={`flex-1 flex items-center justify-center gap-1 py-2.5 px-3 rounded-xl text-xs font-bold border transition-all ${
             isFirst
-              ? 'opacity-40 cursor-not-allowed border-slate-200 dark:border-slate-800 text-slate-400'
-              : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 active:scale-95'
+              ? 'opacity-40 cursor-not-allowed border-[#1F2937] text-slate-600 bg-transparent'
+              : 'border-slate-700 bg-[#151D2F] text-slate-300 hover:text-white active:scale-95'
           }`}
         >
           <ChevronLeft className="w-4 h-4" />
-          <span>Sebelumnya</span>
+          <span>Sebelum</span>
         </button>
 
         {/* Tombol Ragu-Ragu */}
@@ -49,30 +49,30 @@ export const BottomMobileBar: React.FC<BottomMobileBarProps> = ({
           onClick={onToggleDoubt}
           className={`flex items-center justify-center gap-1 py-2.5 px-3 rounded-xl text-xs font-bold border transition-all ${
             isDoubt
-              ? 'bg-amber-500 text-white border-amber-500 shadow-sm'
-              : 'border-amber-300 dark:border-amber-700/60 text-amber-600 dark:text-amber-400 bg-amber-50/50 dark:bg-amber-950/20 active:scale-95'
+              ? 'bg-amber-600 text-white border-amber-500 shadow-sm'
+              : 'border-amber-500/40 text-amber-400 bg-amber-950/20 active:scale-95'
           }`}
           title="Tandai ragu-ragu"
         >
-          <Flag className={`w-3.5 h-3.5 ${isDoubt ? 'fill-white' : 'fill-amber-500'}`} />
+          <Flag className={`w-3.5 h-3.5 ${isDoubt ? 'fill-white' : 'fill-amber-400'}`} />
           <span className="hidden xs:inline">Ragu</span>
         </button>
 
         {/* Tombol Daftar Nomor Soal */}
         <button
           onClick={onOpenPalette}
-          className="flex items-center justify-center gap-1 py-2.5 px-3 rounded-xl text-xs font-bold border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 active:scale-95"
+          className="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl text-xs font-bold border border-slate-700 bg-[#151D2F] text-slate-300 active:scale-95"
           title="Buka daftar nomor soal"
         >
-          <Grid className="w-4 h-4 text-teal-600 dark:text-teal-400" />
-          <span>{currentIndex + 1}/{totalQuestions}</span>
+          <Grid className="w-4 h-4 text-indigo-400" />
+          <span className="font-mono">{currentIndex + 1}/{totalQuestions}</span>
         </button>
 
         {/* Tombol Berikutnya / Selesai */}
         {isLast ? (
           <button
             onClick={onFinish}
-            className="flex-1 flex items-center justify-center gap-1 py-2.5 px-3 rounded-xl text-xs font-bold bg-gradient-to-r from-emerald-600 to-teal-600 text-white shadow-md shadow-emerald-500/20 active:scale-95"
+            className="flex-1 flex items-center justify-center gap-1 py-2.5 px-3 rounded-xl text-xs font-bold bg-emerald-600 text-white shadow-md shadow-emerald-600/30 active:scale-95"
           >
             <CheckCircle className="w-4 h-4" />
             <span>Selesai</span>
@@ -80,9 +80,9 @@ export const BottomMobileBar: React.FC<BottomMobileBarProps> = ({
         ) : (
           <button
             onClick={onNext}
-            className="flex-1 flex items-center justify-center gap-1 py-2.5 px-3 rounded-xl text-xs font-bold bg-teal-600 hover:bg-teal-700 text-white shadow-md shadow-teal-500/20 active:scale-95"
+            className="flex-1 flex items-center justify-center gap-1 py-2.5 px-3 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-500 text-white shadow-md shadow-indigo-600/30 active:scale-95"
           >
-            <span>Berikutnya</span>
+            <span>Lanjut</span>
             <ChevronRight className="w-4 h-4" />
           </button>
         )}

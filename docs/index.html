@@ -5,16 +5,28 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SIM-TKA Matematika Interaktif | Platform Asesmen Berbasis HOTS & SVG Teknis</title>
-    <!-- Fonts -->
+    <!-- Fonts: Plus Jakarta Sans, Inter, JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- KaTeX CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGExxAU4wnIj74GXifcxZxBlJa1450" crossorigin="anonymous">
-    <script type="module" crossorigin src="./assets/index-BXSZuD32.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/vendor-rSynrLIg.js">
+    <script>
+      // Otomatis redirect ke /docs/ jika diakses langsung melalui root GitHub Pages
+      (function() {
+        if (window.location.hostname.includes('github.io')) {
+          var p = window.location.pathname;
+          if (!p.endsWith('/docs') && !p.endsWith('/docs/')) {
+            var target = p.replace(/\/?$/, '/docs/') + window.location.search + window.location.hash;
+            window.location.replace(target);
+          }
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-5Sf5squQ.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/vendor-B72w_wB9.js">
     <link rel="modulepreload" crossorigin href="./assets/katex-Dc8nsIP1.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-BbkzlmlP.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-Bo7s1Fp8.css">
   </head>
   <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 antialiased min-h-screen selection:bg-teal-500 selection:text-white">
     <div id="root"></div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Question, UserAnswerRecord } from '../types/quiz';
 import { MathView } from './MathView';
-import { Check, CheckSquare, Square, CheckCircle2, XCircle } from 'lucide-react';
+import { Check, CheckSquare, Square, CheckCircle2, XCircle, AlertCircle } from 'lucide-react';
 
 interface AnswerOptionsProps {
   question: Question;
@@ -10,6 +10,7 @@ interface AnswerOptionsProps {
   onToggleMcmaOption: (optionId: string) => void;
   onSelectCategoryAnswer: (statementId: string, value: boolean) => void;
   showSolutionPreview?: boolean;
+  instantFeedback?: boolean;
 }
 
 export const AnswerOptions: React.FC<AnswerOptionsProps> = ({
@@ -19,69 +20,100 @@ export const AnswerOptions: React.FC<AnswerOptionsProps> = ({
   onToggleMcmaOption,
   onSelectCategoryAnswer,
   showSolutionPreview = false,
+  instantFeedback = false,
 }) => {
   // 1. Tipe Soal: Pilihan Ganda Tunggal (pg_single)
   if (question.type === 'pg_single' && question.options) {
     const selected = userAnswer?.selectedOption;
+    const isAnswered = !!selected;
+    const isSelectionCorrect = selected === question.correctAnswer;
 
     return (
       <div className="space-y-3">
-        <div className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2">
-          Pilihan Jawaban (Pilih Satu)
+        <div className="flex items-center justify-between mb-2">
+          <span className="text-xs font-bold uppercase tracking-wider text-slate-400">
+            Pilihan Jawaban (Pilih Satu)
+          </span>
+          {instantFeedback && isAnswered && (
+            <span
+              className={`text-[11px] font-bold px-2.5 py-0.5 rounded-full flex items-center gap-1 ${
+                isSelectionCorrect
+                  ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
+                  : 'bg-rose-500/20 text-rose-400 border border-rose-500/30'
+              }`}
+            >
+              {isSelectionCorrect ? (
+                <>
+                  <CheckCircle2 className="w-3.5 h-3.5" /> Jawaban Tepat
+                </>
+              ) : (
+                <>
+                  <XCircle className="w-3.5 h-3.5" /> Belum Tepat
+                </>
+              )}
+            </span>
+          )}
         </div>
+
         <div className="grid grid-cols-1 gap-2.5">
           {question.options.map((opt) => {
             const isSelected = selected === opt.id;
-            const isCorrect = showSolutionPreview && opt.id === question.correctAnswer;
-            const isWrongSelected = showSolutionPreview && isSelected && !isCorrect;
+            const isCorrectOption = opt.id === question.correctAnswer;
+
+            // In instant feedback mode (after selection) or solution preview
+            const showFeedback = instantFeedback && isAnswered;
+            const highlightCorrect = (showFeedback || showSolutionPreview) && isCorrectOption;
+            const highlightWrongSelected = (showFeedback || showSolutionPreview) && isSelected && !isCorrectOption;
 
             let cardStyle =
-              'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/90 hover:border-teal-400 dark:hover:border-teal-500 hover:shadow-sm';
+              'border-[#1F2937] bg-[#111827] text-slate-200 hover:border-indigo-500/60 hover:bg-[#151D2F]';
             let badgeStyle =
-              'border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300';
+              'border-slate-700 bg-[#1F2937] text-slate-300 group-hover:border-indigo-500/50';
 
-            if (isSelected) {
+            if (isSelected && !showFeedback && !showSolutionPreview) {
               cardStyle =
-                'border-teal-500 bg-teal-50/70 dark:bg-teal-950/40 ring-2 ring-teal-500/30 shadow-sm';
-              badgeStyle = 'bg-teal-600 text-white border-teal-600 font-bold';
+                'border-indigo-500 bg-indigo-950/30 text-white ring-2 ring-indigo-500/30 shadow-md shadow-indigo-600/10';
+              badgeStyle = 'bg-indigo-600 text-white border-indigo-500 font-bold';
             }
 
-            if (isCorrect) {
+            if (highlightCorrect) {
               cardStyle =
-                'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/40 ring-2 ring-emerald-500/40';
-              badgeStyle = 'bg-emerald-600 text-white border-emerald-600 font-bold';
-            } else if (isWrongSelected) {
+                'border-emerald-500/80 bg-emerald-950/30 text-white ring-2 ring-emerald-500/30 shadow-sm';
+              badgeStyle = 'bg-emerald-600 text-white border-emerald-500 font-bold';
+            } else if (highlightWrongSelected) {
               cardStyle =
-                'border-rose-500 bg-rose-50 dark:bg-rose-950/40 ring-2 ring-rose-500/40';
-              badgeStyle = 'bg-rose-600 text-white border-rose-600 font-bold';
+                'border-rose-500/80 bg-rose-950/30 text-white ring-2 ring-rose-500/30 shadow-sm';
+              badgeStyle = 'bg-rose-600 text-white border-rose-500 font-bold';
             }
 
             return (
               <button
                 key={opt.id}
                 onClick={() => onSelectOption(opt.id)}
-                className={`w-full flex items-center text-left p-3.5 rounded-xl border transition-all duration-200 group relative ${cardStyle}`}
+                className={`w-full flex items-center text-left p-3.5 rounded-2xl border transition-all duration-150 group relative interactive-hover ${cardStyle}`}
               >
                 <div
-                  className={`w-8 h-8 rounded-lg flex items-center justify-center border text-sm flex-shrink-0 transition-transform group-hover:scale-105 ${badgeStyle}`}
+                  className={`w-8 h-8 rounded-xl flex items-center justify-center border text-sm font-mono flex-shrink-0 transition-transform group-hover:scale-105 ${badgeStyle}`}
                 >
                   {opt.label}
                 </div>
                 <div className="ml-3.5 flex-1 pr-2">
                   <MathView content={opt.text} className="text-sm font-medium" />
                 </div>
-                {isSelected && !showSolutionPreview && (
-                  <div className="w-5 h-5 rounded-full bg-teal-600 text-white flex items-center justify-center flex-shrink-0">
+
+                {/* State Badges */}
+                {isSelected && !showFeedback && !showSolutionPreview && (
+                  <div className="w-5 h-5 rounded-full bg-indigo-600 text-white flex items-center justify-center flex-shrink-0">
                     <Check className="w-3.5 h-3.5 stroke-[3]" />
                   </div>
                 )}
-                {isCorrect && (
-                  <div className="text-xs font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1 bg-emerald-100 dark:bg-emerald-900/40 px-2 py-0.5 rounded-full">
-                    <CheckCircle2 className="w-3.5 h-3.5" /> Kunci
+                {highlightCorrect && (
+                  <div className="text-[11px] font-bold text-emerald-400 flex items-center gap-1 bg-emerald-500/20 px-2 py-0.5 rounded-full border border-emerald-500/30">
+                    <CheckCircle2 className="w-3.5 h-3.5" /> Kunci Jawaban
                   </div>
                 )}
-                {isWrongSelected && (
-                  <div className="text-xs font-bold text-rose-600 dark:text-rose-400 flex items-center gap-1 bg-rose-100 dark:bg-rose-900/40 px-2 py-0.5 rounded-full">
+                {highlightWrongSelected && (
+                  <div className="text-[11px] font-bold text-rose-400 flex items-center gap-1 bg-rose-500/20 px-2 py-0.5 rounded-full border border-rose-500/30">
                     <XCircle className="w-3.5 h-3.5" /> Jawaban Anda
                   </div>
                 )}
@@ -89,6 +121,34 @@ export const AnswerOptions: React.FC<AnswerOptionsProps> = ({
             );
           })}
         </div>
+
+        {/* Instant Feedback Explanation Bar */}
+        {instantFeedback && isAnswered && (
+          <div
+            className={`p-3.5 rounded-xl border text-xs leading-relaxed flex items-start gap-2.5 mt-2 animate-fadeIn ${
+              isSelectionCorrect
+                ? 'bg-emerald-950/20 border-emerald-500/30 text-emerald-200'
+                : 'bg-rose-950/20 border-rose-500/30 text-rose-200'
+            }`}
+          >
+            {isSelectionCorrect ? (
+              <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
+            ) : (
+              <AlertCircle className="w-4 h-4 text-rose-400 flex-shrink-0 mt-0.5" />
+            )}
+            <div>
+              <span className="font-bold">
+                {isSelectionCorrect
+                  ? 'Kombinasi penalaran tepat!'
+                  : `Pilihan ${selected} belum sesuai dengan kunci penyelesaian (${question.correctAnswer}).`}
+              </span>{' '}
+              {question.optionExplanations?.[selected] ||
+                (isSelectionCorrect
+                  ? 'Perhitungan numerik dan pemodelan aljabar Anda konsisten dengan konsep kurikulum.'
+                  : 'Buka petunjuk bertahap atau lihat pembahasan langkah di bawah untuk memeriksa letak kekeliruan perhitungan.')}
+            </div>
+          </div>
+        )}
       </div>
     );
   }
@@ -97,37 +157,39 @@ export const AnswerOptions: React.FC<AnswerOptionsProps> = ({
   if (question.type === 'pgk_mcma' && question.options) {
     const selectedList = userAnswer?.selectedOptions || [];
     const correctAnswers = Array.isArray(question.correctAnswer) ? question.correctAnswer : [];
+    const isAnswered = selectedList.length > 0;
 
     return (
       <div className="space-y-3">
         <div className="flex items-center justify-between mb-2">
-          <span className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+          <span className="text-xs font-bold uppercase tracking-wider text-slate-400">
             Pilihan Ganda Kompleks (Multi-Pilihan)
           </span>
-          <span className="text-xs font-medium px-2 py-0.5 rounded bg-amber-500/10 text-amber-600 dark:text-amber-400">
-            Pilih semua yang benar
+          <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/30">
+            Pilih semua pernyataan yang benar
           </span>
         </div>
+
         <div className="grid grid-cols-1 gap-2.5">
           {question.options.map((opt) => {
             const isChecked = selectedList.includes(opt.id);
-            const isShouldBeChecked = showSolutionPreview && correctAnswers.includes(opt.id);
+            const isShouldBeChecked = correctAnswers.includes(opt.id);
 
             let cardStyle =
-              'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/90 hover:border-teal-400 dark:hover:border-teal-500 hover:shadow-sm';
+              'border-[#1F2937] bg-[#111827] text-slate-200 hover:border-indigo-500/60 hover:bg-[#151D2F]';
 
-            if (isChecked) {
+            if (isChecked && !showSolutionPreview && !instantFeedback) {
               cardStyle =
-                'border-teal-500 bg-teal-50/70 dark:bg-teal-950/40 ring-2 ring-teal-500/30';
+                'border-indigo-500 bg-indigo-950/30 text-white ring-2 ring-indigo-500/30 shadow-md';
             }
 
-            if (showSolutionPreview) {
+            if (showSolutionPreview || (instantFeedback && isAnswered)) {
               if (isShouldBeChecked && isChecked) {
-                cardStyle = 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/40';
+                cardStyle = 'border-emerald-500 bg-emerald-950/30 text-white ring-2 ring-emerald-500/30';
               } else if (isShouldBeChecked && !isChecked) {
-                cardStyle = 'border-amber-500 bg-amber-50 dark:bg-amber-950/40';
+                cardStyle = 'border-amber-500 bg-amber-950/30 text-amber-200 ring-2 ring-amber-500/30';
               } else if (!isShouldBeChecked && isChecked) {
-                cardStyle = 'border-rose-500 bg-rose-50 dark:bg-rose-950/40';
+                cardStyle = 'border-rose-500 bg-rose-950/30 text-rose-200 ring-2 ring-rose-500/30';
               }
             }
 
@@ -135,26 +197,21 @@ export const AnswerOptions: React.FC<AnswerOptionsProps> = ({
               <button
                 key={opt.id}
                 onClick={() => onToggleMcmaOption(opt.id)}
-                className={`w-full flex items-start text-left p-3.5 rounded-xl border transition-all duration-200 group ${cardStyle}`}
+                className={`w-full flex items-start text-left p-3.5 rounded-2xl border transition-all duration-150 group interactive-hover ${cardStyle}`}
               >
-                <div className="mt-0.5 mr-3 text-teal-600 dark:text-teal-400 flex-shrink-0">
+                <div className="mt-0.5 mr-3 text-indigo-400 flex-shrink-0">
                   {isChecked ? (
-                    <CheckSquare className="w-5 h-5 fill-teal-600 text-white" />
+                    <CheckSquare className="w-5 h-5 fill-indigo-600 text-white" />
                   ) : (
-                    <Square className="w-5 h-5 text-slate-400 dark:text-slate-600 group-hover:text-teal-500" />
+                    <Square className="w-5 h-5 text-slate-500 group-hover:text-indigo-400" />
                   )}
                 </div>
                 <div className="flex-1 pr-2">
-                  <div className="text-xs font-bold text-slate-500 dark:text-slate-400 mb-0.5">
+                  <div className="text-xs font-bold text-slate-400 mb-0.5 font-mono">
                     Pernyataan {opt.label}
                   </div>
                   <MathView content={opt.text} className="text-sm font-medium" />
                 </div>
-                {showSolutionPreview && isShouldBeChecked && (
-                  <span className="text-xs px-2 py-0.5 rounded bg-emerald-100 text-emerald-700 dark:bg-emerald-900/50 dark:text-emerald-300 font-bold">
-                    Kunci Benar
-                  </span>
-                )}
               </button>
             );
           })}
@@ -163,108 +220,71 @@ export const AnswerOptions: React.FC<AnswerOptionsProps> = ({
     );
   }
 
-  // 3. Tipe Soal: PGK Kategori (Tabel Interaktif Benar / Salah per Pernyataan)
+  // 3. Tipe Soal: PGK Kategori (Tabel Benar / Salah)
   if (question.type === 'pgk_kategori' && question.categoryStatements) {
-    const answers = userAnswer?.categoryAnswers || {};
-    const correctMap =
-      typeof question.correctAnswer === 'object' && !Array.isArray(question.correctAnswer)
-        ? (question.correctAnswer as Record<string, boolean>)
-        : {};
+    const categoryAnswers = userAnswer?.categoryAnswers || {};
 
     return (
       <div className="space-y-3">
         <div className="flex items-center justify-between mb-2">
-          <span className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
-            Tabel Evaluasi Pernyataan
+          <span className="text-xs font-bold uppercase tracking-wider text-slate-400">
+            Tabel Evaluasi Kebenaran Pernyataan
           </span>
-          <span className="text-xs font-medium px-2 py-0.5 rounded bg-purple-500/10 text-purple-600 dark:text-purple-400">
-            Tentukan Benar / Salah
+          <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/30">
+            Tentukan Benar / Salah per butir
           </span>
         </div>
 
-        <div className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/90 overflow-hidden shadow-sm">
-          {/* Table Header */}
-          <div className="grid grid-cols-12 gap-2 p-3 bg-slate-100/80 dark:bg-slate-800/80 text-xs font-bold text-slate-600 dark:text-slate-300 uppercase tracking-wider border-b border-slate-200 dark:border-slate-800">
-            <div className="col-span-8 sm:col-span-8">Pernyataan Analisis</div>
-            <div className="col-span-2 text-center">Benar</div>
-            <div className="col-span-2 text-center">Salah</div>
+        <div className="rounded-2xl border border-[#1F2937] overflow-hidden bg-[#111827]">
+          <div className="grid grid-cols-12 bg-[#151D2F] px-4 py-3 border-b border-[#1F2937] text-xs font-bold uppercase tracking-wider text-slate-400">
+            <div className="col-span-8">Pernyataan Ilmiah / Analisis</div>
+            <div className="col-span-2 text-center text-emerald-400">Benar</div>
+            <div className="col-span-2 text-center text-rose-400">Salah</div>
           </div>
 
-          {/* Statement Rows */}
-          <div className="divide-y divide-slate-100 dark:divide-slate-800">
+          <div className="divide-y divide-[#1F2937]">
             {question.categoryStatements.map((stmt) => {
-              const currentChoice = answers[stmt.id];
-              const isAnswered = currentChoice !== undefined;
-              const isCorrectRow =
-                showSolutionPreview && currentChoice === correctMap[stmt.id];
+              const currentVal = categoryAnswers[stmt.id];
 
               return (
                 <div
                   key={stmt.id}
-                  className={`grid grid-cols-12 gap-2 p-3.5 items-center transition-colors ${
-                    isAnswered ? 'bg-slate-50/50 dark:bg-slate-850' : ''
-                  }`}
+                  className="grid grid-cols-12 items-center px-4 py-3 hover:bg-[#151D2F]/50 transition-colors"
                 >
-                  <div className="col-span-8 sm:col-span-8 pr-2">
-                    <div className="flex items-start gap-2">
-                      <span className="w-5 h-5 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">
-                        {stmt.label}
-                      </span>
-                      <MathView content={stmt.statement} className="text-sm font-medium flex-1" />
+                  <div className="col-span-8 pr-3">
+                    <div className="text-xs font-bold text-indigo-400 mb-0.5 font-mono">
+                      Butir {stmt.label}
                     </div>
+                    <MathView content={stmt.statement} className="text-xs sm:text-sm text-slate-200" />
                   </div>
 
-                  {/* Tombol BENAR */}
+                  {/* Radio Benar */}
                   <div className="col-span-2 flex justify-center">
                     <button
                       onClick={() => onSelectCategoryAnswer(stmt.id, true)}
-                      className={`px-3 py-1.5 rounded-lg text-xs font-bold border transition-all ${
-                        currentChoice === true
-                          ? 'bg-emerald-600 text-white border-emerald-600 shadow-sm scale-105'
-                          : 'border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:border-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/30'
+                      className={`w-9 h-9 rounded-xl border flex items-center justify-center font-bold text-xs transition-all ${
+                        currentVal === true
+                          ? 'bg-emerald-600 text-white border-emerald-500 shadow-md shadow-emerald-600/20'
+                          : 'border-slate-700 bg-[#1F2937] text-slate-400 hover:text-white hover:border-emerald-500'
                       }`}
                     >
-                      Benar
+                      B
                     </button>
                   </div>
 
-                  {/* Tombol SALAH */}
+                  {/* Radio Salah */}
                   <div className="col-span-2 flex justify-center">
                     <button
                       onClick={() => onSelectCategoryAnswer(stmt.id, false)}
-                      className={`px-3 py-1.5 rounded-lg text-xs font-bold border transition-all ${
-                        currentChoice === false
-                          ? 'bg-rose-600 text-white border-rose-600 shadow-sm scale-105'
-                          : 'border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:border-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/30'
+                      className={`w-9 h-9 rounded-xl border flex items-center justify-center font-bold text-xs transition-all ${
+                        currentVal === false
+                          ? 'bg-rose-600 text-white border-rose-500 shadow-md shadow-rose-600/20'
+                          : 'border-slate-700 bg-[#1F2937] text-slate-400 hover:text-white hover:border-rose-500'
                       }`}
                     >
-                      Salah
+                      S
                     </button>
                   </div>
-
-                  {showSolutionPreview && (
-                    <div className="col-span-12 text-xs pt-1.5 text-slate-500 dark:text-slate-400 flex items-center justify-between border-t border-dashed border-slate-200 dark:border-slate-800 mt-2">
-                      <span>
-                        Kunci Jawaban:{' '}
-                        <strong
-                          className={
-                            correctMap[stmt.id] ? 'text-emerald-600' : 'text-rose-600'
-                          }
-                        >
-                          {correctMap[stmt.id] ? 'BENAR' : 'SALAH'}
-                        </strong>
-                      </span>
-                      {isCorrectRow ? (
-                        <span className="text-emerald-600 font-semibold flex items-center gap-1">
-                          <CheckCircle2 className="w-3.5 h-3.5" /> Jawaban Tepat
-                        </span>
-                      ) : (
-                        <span className="text-rose-600 font-semibold flex items-center gap-1">
-                          <XCircle className="w-3.5 h-3.5" /> Belum Tepat
-                        </span>
-                      )}
-                    </div>
-                  )}
                 </div>
               );
             })}

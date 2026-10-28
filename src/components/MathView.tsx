@@ -26,7 +26,7 @@ export const MathView: React.FC<MathViewProps> = ({ content, className = '', inl
           displayMode: true,
           throwOnError: false,
         });
-        return `<div class="my-2.5 overflow-x-auto py-1.5 scrollbar-thin flex justify-center text-slate-800 dark:text-slate-100">${rendered}</div>`;
+        return `<div class="my-3 overflow-x-auto overflow-y-hidden py-2 px-1 scrollbar-thin flex justify-center text-slate-900 dark:text-slate-100">${rendered}</div>`;
       } catch (e) {
         return `<div class="text-rose-500 font-mono text-xs my-1">[Math Error: ${math}]</div>`;
       }
