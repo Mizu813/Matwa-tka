@@ -11,6 +11,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- KaTeX CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGExxAU4wnIj74GXifcxZxBlJa1450" crossorigin="anonymous">
+    <script>
+      // Otomatis redirect ke /docs/ jika diakses langsung melalui root GitHub Pages
+      (function() {
+        if (window.location.hostname.includes('github.io')) {
+          var p = window.location.pathname;
+          if (!p.endsWith('/docs') && !p.endsWith('/docs/')) {
+            var target = p.replace(/\/?$/, '/docs/') + window.location.search + window.location.hash;
+            window.location.replace(target);
+          }
+        }
+      })();
+    </script>
   </head>
   <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 antialiased min-h-screen selection:bg-teal-500 selection:text-white">
     <div id="root"></div>
