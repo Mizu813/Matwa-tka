@@ -62,20 +62,21 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
   totalQuestions,
 }) => {
   return (
-    <header className="sticky top-0 z-40 bg-white/95 dark:bg-[#0B0F19]/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm transition-colors print:hidden">
+    <header className="sticky top-0 z-40 w-full max-w-full bg-white/95 dark:bg-[#0B0F19]/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm transition-colors print:hidden overflow-hidden">
       {/* Baris 1: Main Reader Header & Document Controls */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800/60">
+      <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 flex items-center justify-between gap-2 sm:gap-4 border-b border-slate-100 dark:border-slate-800/60">
         {/* Left: Branding & PDF Document Title */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-shrink">
           <div className="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold text-sm shadow-sm flex-shrink-0">
             <FileText className="w-4 h-4" />
           </div>
-          <div className="truncate">
-            <div className="flex items-center gap-2">
-              <span className="font-extrabold text-sm sm:text-base text-slate-900 dark:text-white tracking-tight">
-                Matwa-TKA <span className="text-indigo-600 dark:text-indigo-400 font-semibold text-xs sm:text-sm">| PDF Document Edition</span>
+          <div className="min-w-0 truncate">
+            <div className="flex items-center gap-1.5 sm:gap-2">
+              <span className="font-extrabold text-sm sm:text-base text-slate-900 dark:text-white tracking-tight truncate">
+                Matwa-TKA
+                <span className="hidden sm:inline text-indigo-600 dark:text-indigo-400 font-semibold text-xs sm:text-sm"> | PDF Document Edition</span>
               </span>
-              <span className="hidden sm:inline-flex px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 font-mono">
+              <span className="hidden md:inline-flex px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 font-mono flex-shrink-0">
                 HOTS UTBK
               </span>
             </div>
@@ -83,11 +84,11 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
         </div>
 
         {/* Right: Reader Toolbar */}
-        <div className="flex items-center gap-1.5 sm:gap-2">
+        <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
           {/* Display Mode: Continuous Document vs Single Question */}
           <button
             onClick={onToggleDisplayMode}
-            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+            className="flex items-center gap-1.5 p-1.5 sm:px-2.5 sm:py-1.5 rounded-lg text-xs font-semibold border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
             title={
               displayMode === 'continuous'
                 ? 'Beralih ke Mode Lembar Per Soal'
@@ -96,12 +97,12 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
           >
             {displayMode === 'continuous' ? (
               <>
-                <Layers className="w-3.5 h-3.5 text-indigo-500" />
+                <Layers className="w-4 h-4 sm:w-3.5 sm:h-3.5 text-indigo-500" />
                 <span className="hidden md:inline">Mode Dokumen Utuh</span>
               </>
             ) : (
               <>
-                <FileText className="w-3.5 h-3.5 text-indigo-500" />
+                <FileText className="w-4 h-4 sm:w-3.5 sm:h-3.5 text-indigo-500" />
                 <span className="hidden md:inline">Mode Per Soal</span>
               </>
             )}
@@ -118,7 +119,7 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
           </button>
 
           {/* Font Scaling / Zoom */}
-          <div className="hidden xs:flex items-center border border-slate-200 dark:border-slate-700 rounded-lg overflow-hidden bg-slate-50 dark:bg-slate-800 text-xs">
+          <div className="hidden md:flex items-center border border-slate-200 dark:border-slate-700 rounded-lg overflow-hidden bg-slate-50 dark:bg-slate-800 text-xs">
             <button
               onClick={onZoomOut}
               className="p-1.5 px-2 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300"
@@ -141,7 +142,7 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
           {/* Print / Save to PDF */}
           <button
             onClick={() => window.print()}
-            className="p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+            className="hidden sm:flex p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
             title="Cetak atau Simpan sebagai PDF"
           >
             <Printer className="w-4 h-4" />
@@ -150,7 +151,7 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
           {/* Theme Toggle */}
           <button
             onClick={onToggleDarkMode}
-            className="p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+            className="p-1.5 sm:p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
             title={isDarkMode ? 'Kertas Terang (White Paper)' : 'Kertas Gelap (Night Reading)'}
           >
             {isDarkMode ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-slate-600" />}
@@ -159,7 +160,7 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
           {/* Evaluation / Scoring Trigger */}
           <button
             onClick={onOpenEvaluation}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold shadow-sm transition-all"
+            className="flex items-center gap-1 px-2.5 py-1.5 sm:px-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold shadow-sm transition-all"
           >
             <CheckCircle className="w-3.5 h-3.5" />
             <span className="hidden sm:inline">Rekap Nilai</span>
@@ -171,9 +172,9 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
       </div>
 
       {/* Baris 2: STATIC STICKY SUB-BAB NAVBAR TABS */}
-      <div className="bg-slate-50/90 dark:bg-[#0E1424]/90 border-b border-slate-200 dark:border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="flex items-center gap-1 overflow-x-auto py-2 scrollbar-none">
+      <div className="bg-slate-50/90 dark:bg-[#0E1424]/90 border-b border-slate-200 dark:border-slate-800 w-full overflow-hidden">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full">
+          <nav className="flex items-center gap-1.5 overflow-x-auto py-2 scrollbar-none w-full min-w-0">
             {SUB_BAB_MODULES.map((tab) => {
               const isSelected = selectedModule === tab.id;
               return (

@@ -46,9 +46,9 @@ export const PdfDocumentSheet: React.FC<PdfDocumentSheetProps> = ({
   const totalQuestions = questions.length;
 
   return (
-    <div className="w-full max-w-4xl mx-auto px-2 sm:px-4 py-6 sm:py-8 space-y-6">
+    <div className="w-full max-w-4xl mx-auto px-3 sm:px-6 lg:px-8 py-5 sm:py-8 space-y-6 flex flex-col items-center">
       {/* Lembar Sampul / Kop Dokumen Ujian Cetak Resmi */}
-      <div className="p-6 sm:p-8 rounded-2xl bg-white dark:bg-[#111827] border border-slate-200 dark:border-slate-800 shadow-sm transition-all text-center space-y-3 relative overflow-hidden print:border-none print:shadow-none">
+      <div className="w-full p-5 sm:p-8 rounded-2xl bg-white dark:bg-[#111827] border border-slate-200 dark:border-slate-800 shadow-sm transition-all text-center space-y-3 relative overflow-hidden print:border-none print:shadow-none">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-mono font-bold uppercase tracking-wider border border-slate-200 dark:border-slate-700">
           <Award className="w-3.5 h-3.5 text-indigo-500" />
           Naskah Soal Latihan &amp; Asesmen Mandiri
@@ -63,7 +63,7 @@ export const PdfDocumentSheet: React.FC<PdfDocumentSheetProps> = ({
         </p>
 
         {/* Double Border Line khas dokumen resmi */}
-        <div className="pt-3 border-t-2 border-b border-slate-900 dark:border-slate-100 flex flex-wrap items-center justify-between text-[11px] font-mono text-slate-600 dark:text-slate-400 py-1.5 px-2">
+        <div className="pt-3 border-t-2 border-b border-slate-900 dark:border-slate-100 flex flex-wrap items-center justify-between gap-2 text-[11px] font-mono text-slate-600 dark:text-slate-400 py-1.5 px-2">
           <span>SUB-BAB: <strong className="text-slate-900 dark:text-white">{selectedModule.toUpperCase()}</strong></span>
           <span>TOTAL: <strong className="text-slate-900 dark:text-white">{totalQuestions} BUTIR SOAL</strong></span>
           <span className="hidden sm:inline">FORMAT: <strong className="text-slate-900 dark:text-white">A4 / PDF READY</strong></span>
@@ -73,7 +73,7 @@ export const PdfDocumentSheet: React.FC<PdfDocumentSheetProps> = ({
       {/* Render Questions List */}
       {displayMode === 'continuous' ? (
         /* Mode Dokumen Bersambung (Full PDF View) */
-        <div className="space-y-6">
+        <div className="w-full space-y-6 flex flex-col items-center">
           {questions.map((q) => (
             <PdfQuestionCard
               key={q.id}
@@ -91,7 +91,7 @@ export const PdfDocumentSheet: React.FC<PdfDocumentSheetProps> = ({
         </div>
       ) : (
         /* Mode Lembar Tunggal Per-Soal (Single-Question View) */
-        <div className="space-y-6">
+        <div className="w-full space-y-6 flex flex-col items-center">
           {currentQuestion && (
             <PdfQuestionCard
               question={currentQuestion}
@@ -145,7 +145,7 @@ export const PdfDocumentSheet: React.FC<PdfDocumentSheetProps> = ({
       )}
 
       {/* Dokumen Footer Catatan Akademik */}
-      <footer className="text-center py-6 text-xs text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-800/60 print:block">
+      <footer className="w-full text-center py-6 text-xs text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-800/60 print:block">
         <p className="font-mono">
           © SIM-TKA Matematika Wajib | Asesmen HOTS &amp; SVG Teknis
         </p>

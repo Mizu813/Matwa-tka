@@ -218,7 +218,7 @@ export const App: React.FC = () => {
   }, [userAnswers]);
 
   return (
-    <div className="min-h-screen bg-slate-100 dark:bg-[#070B12] text-slate-900 dark:text-slate-100 font-sans selection:bg-indigo-500 selection:text-white transition-colors">
+    <div className="min-h-screen w-full max-w-full overflow-x-hidden bg-slate-100 dark:bg-[#070B12] text-slate-900 dark:text-slate-100 font-sans selection:bg-indigo-500 selection:text-white transition-colors flex flex-col items-stretch">
       {/* 1. STICKY TOP NAVBAR (Document Controls & Sub-Bab Tabs) */}
       <PdfTopNavbar
         selectedModule={selectedModule}
@@ -240,7 +240,7 @@ export const App: React.FC = () => {
       />
 
       {/* 2. MAIN CENTERED PDF DOCUMENT SHEET */}
-      <main className="pb-16">
+      <main className="w-full max-w-full pb-16 flex flex-col items-center">
         <PdfDocumentSheet
           questions={activeQuestions}
           selectedModule={selectedModule}

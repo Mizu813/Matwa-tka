@@ -79,7 +79,7 @@ export const PdfQuestionCard: React.FC<PdfQuestionCardProps> = ({
   return (
     <article
       id={`soal-${question.number}`}
-      className="p-6 sm:p-8 rounded-2xl bg-white dark:bg-[#111827] border border-slate-200 dark:border-slate-800 shadow-sm transition-all relative overflow-hidden"
+      className="w-full p-4 sm:p-7 md:p-8 rounded-2xl bg-white dark:bg-[#111827] border border-slate-200 dark:border-slate-800 shadow-sm transition-all relative overflow-hidden"
     >
       {/* 1. Header Nomor Soal & Metadata Akademik */}
       <div className="flex flex-wrap items-center justify-between gap-3 pb-4 mb-4 border-b border-slate-100 dark:border-slate-800">

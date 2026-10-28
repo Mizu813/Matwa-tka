@@ -62,7 +62,7 @@ export const MathView: React.FC<MathViewProps> = ({ content, className = '', inl
 
   return (
     <div
-      className={`math-content leading-relaxed text-slate-700 dark:text-slate-200 ${className}`}
+      className={`math-content leading-relaxed text-slate-700 dark:text-slate-200 break-words [overflow-wrap:anywhere] max-w-full ${className}`}
       dangerouslySetInnerHTML={{ __html: renderedHtml }}
     />
   );
