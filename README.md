@@ -7,16 +7,42 @@
 
 **SIM-TKA Matematika Interaktif** dirancang dan dibangun dengan standar **Senior Frontend Engineer** dan **Educational Technology Specialist**. Aplikasi ini merealisasikan dokumen blueprint asesmen TKA Matematika ke dalam bentuk web interaktif modern dengan pendekatan **mobile-first & desktop-optimized**, rendering notasi ilmiah presisi tinggi via **KaTeX**, serta ilustrasi teknis berbasis **Native SVG Vector**.
 
-### 🎯 Prinsip Transformasi Konten (Anti-Repetisi & Paraphrasing Logis)
-Sesuai arahan transformasi tingkat lanjut:
+### 🎯 Prinsip Transformasi Konten & Strict Non-Spoiler SVG Engineering
+Sesuai arahan evaluasi pedagogis tingkat lanjut:
 * **Presisi Matematis 1:1**: Mempertahankan esensi logika, tingkat kognitif (LOTS & HOTS), dan metode penyelesaian (SPLDV, SPLTV, SPtLDV, deret geometri bertingkat, optimasi fungsi objektif program linear, perbandingan trigonometri sudut tumpul, kombinatorika kode unik, dsb.).
-* **Konteks & Narasi Modern**:
-  * Studi kasus perhotelan dialihkan menjadi **alokasi rak server cloud data center dengan pendingin cair & jaringan 100 Gbps**.
-  * Kasus tabungan kafe/bisnis kue dialihkan menjadi **perencanaan modal produksi bengkel robotik mekatronika dan manufaktur mikro**.
-  * Sambungan pipa air dialihkan menjadi **pemasangan modul tiang antena komposit & panel surya ber-overlap**.
-  * Pembebanan jembatan dialihkan menjadi **pengujian ketahanan dinamis komposit sayap drone dan batas tekanan bejana kedap udara**.
-  * Pengujian kualitas kue dialihkan menjadi **pengujian mutu sel baterai litium-titanat susulan**.
-* **Presisi Numerik**: Angka dirancang proporsional, rasional, dan menghasilkan solusi akhir yang elegan tanpa desimal tak terhingga.
+* **Pemisahan Grafis Soal vs Pembahasan (Dual-Mode Anti-Spoiler)**:
+  * **Question Graphic (`mode="question"`)**: Murni menampilkan visualisasi teknis, diagram masalah, dan parameter skenario TANPA membocorkan rumus, daerah arsiran solusi, titik optimum, atau kunci jawaban.
+  * **Solution Graphic (`mode="solution"`)**: Ditampilkan eksklusif di dalam tab Pembahasan/Accordion Solusi, memuat visualisasi analitis terperinci (arsiran *feasible region*, penanda titik optimum, diagram pohon peluang, uraian aljabar).
+* **Konteks Nyata & Narasi Modern Berkualitas Tinggi**:
+  * Pengadaan nutrisi tanaman makro & mikro pada **Smart Greenhouse Hortikultura Presisi (SPLDV)**.
+  * Batasan debit pompa sistem **Instalasi Desalinasi Air Bersih Pesisir (SPtLDV)**.
+  * Pengadaan paket panel surya monokristalin, MPPT, dan baterai LiFePO4 pada **PLTS Mikrohidro Komunitas (SPLTV)**.
+  * Optimasi produksi **Robot Otonom Rover Kurir & Kargo** dengan kendala baterai solid-state dan jam kalibrasi sensor AI (**Program Linear**).
+  * Akumulasi dana cadangan peremajaan bilah **Turbin Angin Lepas Pantai (Bunga Majemuk 10%)**.
+  * Waktu kompresi transmisi **Citra Satelit Penginderaan Jauh (Invers Fungsi Rasional)**.
+  * Pipeline filter akustik **Active Noise Cancellation (ANC) Dua Tingkat (Komposisi Fungsi)**.
+  * Manajemen daya dan fotometri radiasi foton **Detektor Inframerah Teleskop Observatorium (Eksponen)**.
+  * Formasi konsentris cermin heliostat pada **Pembangkit Surya Termal CSP (Deret Geometri)**.
+  * Peredam getaran seismik hidrolik **Jembatan Kabel Pancang (Merasionalkan Bentuk Akar)**.
+  * Kultur mikroalga penghasil bio-avtur di **Fotobioreaktor Berkelanjutan (Pertumbuhan & Panen Diskrit)**.
+  * Pemasangan pipa bawah tanah transmisi **Energi Panas Bumi Geothermal (Deret Aritmetika Overlap)**.
+  * Perencanaan modal ventura **Startup Satelit Maritim Otonom (Deret Aritmetika Bertahap & Hambatan Diskrit)**.
+  * Uji ketahanan tarik kabel sling derek komposit **Pelabuhan Peti Kemas Otonom (Barisan Geometri Beban)**.
+  * Tekanan termal modul perisai kapsul antariksa saat **Re-Entry Atmosfer (Karakteristik Fungsi Kuadrat)**.
+  * Fabrikasi bak penampung cairan pendingin **Baterai Kendaraan Listrik EV (Optimasi Turunan Pertama)**.
+  * Rangka penopang busur baja **Jembatan Kereta Cepat (Kesebangunan Segitiga Bertingkat)**.
+  * Kotak pelindung prisma segitiga baterai drone pada **Lembaran Karton Laminasi Anti-Statis (Optimasi Tata Letak Kemasan)**.
+  * Sudut simpangan pendulum **Seismograf Digital Kuadran II (Trigonometri Parameter Aljabar)**.
+  * Jarak antena transmisi ke sensor kalibrasi pada **Kamar Uji Anechoic EMC Kubus (Dimensi Tiga)**.
+  * Panel fasad komposit isolasi termal **Gedung Riset Nol Emisi (Luas Bangun Datar Komposit)**.
+  * Rangka pelindung bawah lambung **Kapal Selam Riset Terumbu Karang (Sudut Trapesium Sama Kaki)**.
+  * Elevasi lengan artikulasi teleskopik **Robot Bedah Mikro Presisi Tinggi (Trigonometri Sudut Istimewa 60°)**.
+  * Proyeksi citra grid sonar pada **Layar Navigasi Pameran Kapal Eksplorasi (Transformasi Dilatasi Skala)**.
+  * Alokasi armada bus listrik ramah lingkungan koridor metropolitan (**Peluang Gabungan Inklusi-Eksklusi**).
+  * Pengujian mutu sampel batch **Sel Fotovoltaik Panel Surya Generasi Baru (Peluang Sederhana & Komplemen)**.
+  * Rekonstruksi kapasitas daya pembangkit listrik mikrohidro **7 Daerah Aliran Sungai (Statistika Nilai Hilang)**.
+  * Pembuatan kode penanda RFID peti kemas dingin maritim internasional (**Kaidah Pencacahan Filling Slots Alfanumerik**).
+* **Presisi Numerik**: Angka dirancang proporsional, rasional, dan menghasilkan solusi akhir yang bulat dan elegan tanpa desimal tak terhingga.
 
 ---
 

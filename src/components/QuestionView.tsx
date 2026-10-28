@@ -148,7 +148,7 @@ export const QuestionView: React.FC<QuestionViewProps> = ({
             {/* Technical SVG Visualization */}
             <div className="py-2">
               <div className="p-3 rounded-2xl bg-[#0B0F19] border border-[#1F2937] flex items-center justify-center">
-                <QuestionVisual svgId={question.svgComponentId} />
+                <QuestionVisual svgId={question.svgComponentId} mode="question" />
               </div>
             </div>
 
@@ -171,6 +171,7 @@ export const QuestionView: React.FC<QuestionViewProps> = ({
             hint2={question.hint2}
             trap={question.trap}
             isExamMode={isExamMode}
+            svgComponentId={question.svgComponentId}
           />
         </div>
 

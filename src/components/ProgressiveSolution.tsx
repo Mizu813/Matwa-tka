@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { QuestionExplanation } from '../types/quiz';
 import { MathView } from './MathView';
+import { QuestionVisual } from './svg/VisualSVGs';
 import {
   Lightbulb,
   ArrowRight,
@@ -19,6 +20,7 @@ interface ProgressiveSolutionProps {
   hint2?: string;
   trap?: string;
   isExamMode?: boolean;
+  svgComponentId?: string;
 }
 
 export const ProgressiveSolution: React.FC<ProgressiveSolutionProps> = ({
@@ -27,6 +29,7 @@ export const ProgressiveSolution: React.FC<ProgressiveSolutionProps> = ({
   hint2,
   trap,
   isExamMode = false,
+  svgComponentId,
 }) => {
   // Stages: 0 = none, 1 = hint1, 2 = hint2, 3 = full solution
   const [disclosureStage, setDisclosureStage] = useState<number>(0);
@@ -159,6 +162,17 @@ export const ProgressiveSolution: React.FC<ProgressiveSolutionProps> = ({
                 </div>
                 <MathView content={explanation.summary} className="text-xs sm:text-sm text-slate-300" />
               </div>
+
+              {/* Solution Graphic Analysis */}
+              {svgComponentId && (
+                <div className="p-4 rounded-xl bg-[#0B0F19] border border-emerald-500/30 flex flex-col items-center justify-center">
+                  <div className="text-[11px] font-bold text-emerald-400 mb-2 uppercase tracking-wider flex items-center gap-1.5 self-start">
+                    <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
+                    Grafik Analisis Solusi &amp; Penjelasan Visual
+                  </div>
+                  <QuestionVisual svgId={svgComponentId} mode="solution" />
+                </div>
+              )}
 
               {/* Numbered Step Cards */}
               <div className="space-y-3">
