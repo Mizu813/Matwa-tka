@@ -7,11 +7,26 @@
     "difficulty": "STANDAR",
     "question_text": "Hasil perhitungan operasi pecahan campuran berikut:\n$$3\\frac{1}{2} - 1\\frac{3}{4} \\div 2\\frac{1}{3} + \\frac{5}{8}$$\nadalah ...",
     "options": [
-      { "id": "A", "text": "$3\\frac{3}{8}$" },
-      { "id": "B", "text": "$3\\frac{1}{4}$" },
-      { "id": "C", "text": "$2\\frac{7}{8}$" },
-      { "id": "D", "text": "$3\\frac{5}{8}$" },
-      { "id": "E", "text": "$4\\frac{1}{8}$" }
+      {
+        "id": "A",
+        "text": "$3\\frac{3}{8}$"
+      },
+      {
+        "id": "B",
+        "text": "$3\\frac{1}{4}$"
+      },
+      {
+        "id": "C",
+        "text": "$2\\frac{7}{8}$"
+      },
+      {
+        "id": "D",
+        "text": "$3\\frac{5}{8}$"
+      },
+      {
+        "id": "E",
+        "text": "$4\\frac{1}{8}$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Ubah seluruh pecahan campuran menjadi pecahan biasa dan dahulukan operasi pembagian sebelum pengurangan dan penjumlahan.",
@@ -25,15 +40,299 @@
     "difficulty": "STANDAR",
     "question_text": "Dengan memanfaatkan sifat distributif dan asosiatif bilangan real, nilai dari:\n$$2024 \\times 175 - 2024 \\times 75 + 1012 \\times 200$$\nadalah ...",
     "options": [
-      { "id": "A", "text": "$404.800$" },
-      { "id": "B", "text": "$202.400$" },
-      { "id": "C", "text": "$607.200$" },
-      { "id": "D", "text": "$809.600$" },
-      { "id": "E", "text": "$303.600$" }
+      {
+        "id": "A",
+        "text": "$404.800$"
+      },
+      {
+        "id": "B",
+        "text": "$202.400$"
+      },
+      {
+        "id": "C",
+        "text": "$607.200$"
+      },
+      {
+        "id": "D",
+        "text": "$809.600$"
+      },
+      {
+        "id": "E",
+        "text": "$303.600$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Faktorkan angka persekutuan 2024 dari dua suku pertama menggunakan sifat distributif a(b-c), lalu ubah 1012 x 200 menjadi bentuk 2024 x 100.",
     "explanation": "Langkah-langkah efisiensi perhitungan menggunakan sifat-sifat bilangan real:\n\n1. Terapkan sifat distributif $a \\times b - a \\times c = a \\times (b - c)$ pada dua suku pertama:\n   $$2024 \\times 175 - 2024 \\times 75 = 2024 \\times (175 - 75) = 2024 \\times 100$$\n\n2. Sederhanakan suku ketiga menggunakan manipulasi faktor pengali:\n   $$1012 \\times 200 = 1012 \\times (2 \\times 100) = (1012 \\times 2) \\times 100 = 2024 \\times 100$$\n\n3. Jumlahkan hasil keduanya:\n   $$2024 \\times 100 + 2024 \\times 100 = 2024 \\times (100 + 100) = 2024 \\times 200 = 404.800$$\n\nJadi, jawaban yang benar adalah **A**."
+  },
+  {
+    "id": "matwa-operasi-bilangan-real-05",
+    "chapter_id": "bilangan-real",
+    "sub_chapter_id": "operasi-bilangan-real",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Perhatikan beberapa konsep dan aksioma aljabar mengenai sistem bilangan real $\\mathbb{R}$. Pilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR**!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Elemen identitas penjumlahan adalah 0 dan elemen identitas perkalian adalah 1."
+      },
+      {
+        "id": "B",
+        "text": "Operasi pengurangan dan pembagian pada bilangan real tidak memenuhi sifat komutatif maupun asosiatif."
+      },
+      {
+        "id": "C",
+        "text": "Pembagian bilangan real bukan nol dengan nol menghasilkan bilangan real yang terdefinisi."
+      },
+      {
+        "id": "D",
+        "text": "Invers perkalian dari setiap bilangan real $a \\neq 0$ adalah $\\frac{1}{a}$ sehingga $a \\times \\frac{1}{a} = 1$."
+      },
+      {
+        "id": "E",
+        "text": "Himpunan bilangan real bersifat tertutup terhadap operasi penjumlahan, pengurangan, dan perkalian."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "hint": "Cermati sifat aksioma bilangan real: keberadaan elemen netral/identitas, sifat ketertutupan, ketidakterdefinisian pembagian dengan nol, dan sifat komutatif/asosiatif.",
+    "explanation": "Evaluasi keabsahan pernyataan sistem bilangan real:\n\n- **Pernyataan A (BENAR):** Untuk setiap $a \\in \\mathbb{R}$, $a + 0 = a$ (0 adalah identitas penjumlahan) dan $a \\times 1 = a$ (1 adalah identitas perkalian).\n- **Pernyataan B (BENAR):** Pengurangan ($a - b \\neq b - a$) dan pembagian ($a \\div b \\neq b \\div a$) tidak bersifat komutatif maupun asosiatif.\n- **Pernyataan C (SALAH):** Pembagian dengan nol ($a \\div 0$) tidak terdefinisi pada sistem bilangan real.\n- **Pernyataan D (BENAR):** Aksioma invers perkalian menyatakan setiap $a \\neq 0$ memiliki invers perkalian $\\frac{1}{a}$ sedemikian hingga $a \\times \\frac{1}{a} = 1$.\n- **Pernyataan E (BENAR):** Untuk setiap $a, b \\in \\mathbb{R}$, hasil dari $a + b$, $a - b$, dan $a \\times b$ senantiasa menghasilkan bilangan real kembali (sifat ketertutupan/closure).\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, D, dan E**."
+  },
+  {
+    "id": "matwa-operasi-bilangan-real-11",
+    "chapter_id": "bilangan-real",
+    "sub_chapter_id": "operasi-bilangan-real",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dalam pengujian deviasi ketebalan pelat baja tahan karat, toleransi ketebalan $x$ (dalam milimeter) terhadap standar ditentukan oleh persamaan nilai mutlak:\n$$|2x - 7| = 9$$\nHasil kali semua nilai $x$ real yang memenuhi persamaan tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$-8$"
+      },
+      {
+        "id": "B",
+        "text": "$-16$"
+      },
+      {
+        "id": "C",
+        "text": "$8$"
+      },
+      {
+        "id": "D",
+        "text": "$-4$"
+      },
+      {
+        "id": "E",
+        "text": "$12$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Definisi nilai mutlak |f(x)| = c menghasilkan dua kasus: f(x) = c atau f(x) = -c.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Sesuai sifat nilai mutlak $|u| = c$ ($c \\ge 0$):\n   - Kasus 1: $2x - 7 = 9 \\implies 2x = 16 \\implies x_1 = 8$\n   - Kasus 2: $2x - 7 = -9 \\implies 2x = -2 \\implies x_2 = -1$\n\n2. Hitung hasil kali kedua nilai penyelesaian:\n   $$x_1 \\cdot x_2 = 8 \\cdot (-1) = -8$$\n\nJadi, hasil kali semua nilai $x$ yang memenuhi adalah **A** ($-8$)."
+  },
+  {
+    "id": "matwa-operasi-bilangan-real-12",
+    "chapter_id": "bilangan-real",
+    "sub_chapter_id": "operasi-bilangan-real",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah toko perlengkapan laboratorium memberikan promo diskon bertingkat sebesar $20\\%$ kemudian diberikan potongan tambahan member sebesar $10\\%$ dari harga setelah diskon pertama. Jika seorang pembeli membayar sebesar $\\text{Rp}576.000$ untuk sebuah alat ukur, harga awal alat ukur tersebut sebelum diskon adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\text{Rp}720.000$"
+      },
+      {
+        "id": "B",
+        "text": "$\\text{Rp}750.000$"
+      },
+      {
+        "id": "C",
+        "text": "$\\text{Rp}800.000$"
+      },
+      {
+        "id": "D",
+        "text": "$\\text{Rp}820.000$"
+      },
+      {
+        "id": "E",
+        "text": "$\\text{Rp}850.000$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Harga akhir = Harga awal * (1 - 0,20) * (1 - 0,10). Cari harga awal dengan membagi harga akhir dengan 0,72.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Misalkan harga awal alat adalah $P$.\n\n2. Hitung faktor pengali diskon bertingkat:\n   - Diskon pertama $20\\%$: sisa pembayaran $= 100\\% - 20\\% = 80\\% = 0{,}80$\n   - Diskon kedua $10\\%$: sisa pembayaran $= 100\\% - 10\\% = 90\\% = 0{,}90$\n\n3. Hubungan harga akhir dan harga awal:\n   $$\\text{Harga Akhir} = P \\times 0{,}80 \\times 0{,}90$$\n   $$576.000 = P \\times 0{,}72$$\n\n4. Hitung harga awal $P$:\n   $$P = \\frac{576.000}{0{,}72} = \\frac{57.600.000}{72} = \\text{Rp}800.000$$\n\nJadi, harga awal alat ukur tersebut adalah **C** ($\\text{Rp}800.000$)."
+  },
+  {
+    "id": "matwa-operasi-bilangan-real-13",
+    "chapter_id": "bilangan-real",
+    "sub_chapter_id": "operasi-bilangan-real",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dua kendaraan patroli $A$ dan $B$ bergerak saling mendekat pada lintasan jalan raya lurus dengan jarak mula-mula $240\\text{ km}$. Kecepatan rata-rata kendaraan $A$ adalah $70\\text{ km/jam}$ dan kecepatan rata-rata kendaraan $B$ adalah $50\\text{ km/jam}$. Jika kedua kendaraan berangkat bersamaan pada pukul $08.15$, kedua kendaraan akan berpapasan pada pukul ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$09.45$"
+      },
+      {
+        "id": "B",
+        "text": "$10.00$"
+      },
+      {
+        "id": "C",
+        "text": "$10.15$"
+      },
+      {
+        "id": "D",
+        "text": "$10.30$"
+      },
+      {
+        "id": "E",
+        "text": "$10.45$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Waktu berpapasan saling mendekat t = Jarak / (v_A + v_B). Tambahkan waktu t ke jam keberangkatan.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Karena kedua kendaraan bergerak saling mendekat, kecepatan relatifnya adalah penjumlahan kedua kecepatan:\n   $$v_{\\text{relatif}} = v_A + v_B = 70\\text{ km/jam} + 50\\text{ km/jam} = 120\\text{ km/jam}$$\n\n2. Hitung waktu yang dibutuhkan hingga berpapasan:\n   $$t = \\frac{s}{v_{\\text{relatif}}} = \\frac{240\\text{ km}}{120\\text{ km/jam}} = 2\\text{ jam}$$\n\n3. Tentukan waktu berpapasan:\n   $$\\text{Pukul } 08.15 + 2\\text{ jam} = \\text{Pukul } 10.15$$\n\nJadi, kedua kendaraan berpapasan pada pukul **C** ($10.15$)."
+  },
+  {
+    "id": "matwa-operasi-bilangan-real-14",
+    "chapter_id": "bilangan-real",
+    "sub_chapter_id": "operasi-bilangan-real",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dalam pemrosesan data numerik floating-point, hasil penjumlahan desimal berulang tak hingga dan desimal berhingga dihitung melalui ekspresi pecahan:\n$$0{,}363636\\dots + 0{,}25$$\nBentuk pecahan biasa paling sederhana dari hasil operasi tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{27}{44}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{31}{44}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{61}{100}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{25}{44}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{13}{22}$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Ubah desimal periodik 0,3636... menjadi pecahan 36/99 = 4/11, dan 0,25 menjadi 1/4.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Konversikan desimal berulang $x = 0{,}363636\\dots$ ke bentuk pecahan:\n   - $100x = 36{,}3636\\dots$\n   - $x = 0{,}3636\\dots$\n   - $99x = 36 \\implies x = \\frac{36}{99} = \\frac{4}{11}$\n\n2. Konversikan $0{,}25$ ke pecahan biasa:\n   $$0{,}25 = \\frac{25}{100} = \\frac{1}{4}$$\n\n3. Jumlahkan kedua pecahan dengan menyamakan penyebut (KPK dari 11 dan 4 adalah 44):\n   $$\\frac{4}{11} + \\frac{1}{4} = \\frac{4 \\times 4 + 1 \\times 11}{44} = \\frac{16 + 11}{44} = \\frac{27}{44}$$\n\nJadi, bentuk pecahan paling sederhananya adalah **A** ($\\frac{27}{44}$)."
+  },
+  {
+    "id": "matwa-operasi-bilangan-real-15",
+    "chapter_id": "bilangan-real",
+    "sub_chapter_id": "operasi-bilangan-real",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah tangki penampungan instalasi pengolahan air limbah dilengkapi dua pompa penguras. Pompa $A$ mampu mengosongkan tangki penuh dalam waktu $6\\text{ jam}$, sedangkan pompa $B$ mampu mengosongkannya dalam waktu $4\\text{ jam}$. Jika kedua pompa dioperasikan secara bersama-sama sejak awal, waktu yang dibutuhkan hingga tangki kosong seluruhnya adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$2\\text{ jam } 15\\text{ menit}$"
+      },
+      {
+        "id": "B",
+        "text": "$2\\text{ jam } 24\\text{ menit}$"
+      },
+      {
+        "id": "C",
+        "text": "$2\\text{ jam } 30\\text{ menit}$"
+      },
+      {
+        "id": "D",
+        "text": "$2\\text{ jam } 40\\text{ menit}$"
+      },
+      {
+        "id": "E",
+        "text": "$3\\text{ jam } 00\\text{ menit}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Laju bersama = 1/t_A + 1/t_B = 1/6 + 1/4. Waktu bersama t = 1 / Laju bersama.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Tentukan laju kerja masing-masing pompa per jam:\n   - Laju pompa $A$: $r_A = \\frac{1}{6}\\text{ tangki/jam}$\n   - Laju pompa $B$: $r_B = \\frac{1}{4}\\text{ tangki/jam}$\n\n2. Tentukan laju gabungan saat kedua pompa bekerja serempak:\n   $$r_{\\text{gabungan}} = \\frac{1}{6} + \\frac{1}{4} = \\frac{2 + 3}{12} = \\frac{5}{12}\\text{ tangki/jam}$$\n\n3. Waktu yang diperlukan untuk mengosongkan $1$ tangki penuh:\n   $$t = \\frac{1}{r_{\\text{gabungan}}} = \\frac{12}{5}\\text{ jam} = 2{,}4\\text{ jam}$$\n\n4. Ubah desimal jam ke menit:\n   $$2{,}4\\text{ jam} = 2\\text{ jam} + (0{,}4 \\times 60)\\text{ menit} = 2\\text{ jam } 24\\text{ menit}$$\n\nJadi, waktu yang dibutuhkan adalah **B** ($2\\text{ jam } 24\\text{ menit}$)."
+  },
+  {
+    "id": "matwa-operasi-bilangan-real-16",
+    "chapter_id": "bilangan-real",
+    "sub_chapter_id": "operasi-bilangan-real",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Seorang karyawan menyisihkan sebagian pendapatannya ke dalam rekening tabungan rencana setiap bulan. Pada bulan pertama ia menyetor $\\text{Rp}300.000$, dan setiap bulan berikutnya setoran bertambah secara konstan sebesar $\\text{Rp}50.000$ dari bulan sebelumnya. Total akumulasi uang yang berhasil disetorkan selama $1\\text{ tahun}$ pertama ($12\\text{ bulan}$) adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\text{Rp}6.600.000$"
+      },
+      {
+        "id": "B",
+        "text": "$\\text{Rp}6.900.000$"
+      },
+      {
+        "id": "C",
+        "text": "$\\text{Rp}7.200.000$"
+      },
+      {
+        "id": "D",
+        "text": "$\\text{Rp}7.500.000$"
+      },
+      {
+        "id": "E",
+        "text": "$\\text{Rp}6.750.000$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Gunakan rumus deret aritmetika S_n = n/2 * (2a + (n - 1)b) dengan a = 300.000, b = 50.000, dan n = 12.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Pola tabungan membentuk deret aritmetika dengan:\n   - Suku pertama ($a$) $= 300.000$\n   - Beda ($b$) $= 50.000$\n   - Jumlah bulan ($n$) $= 12$\n\n2. Gunakan rumus jumlah $n$ suku pertama deret aritmetika:\n   $$S_n = \\frac{n}{2} [2a + (n - 1)b]$$\n   $$S_{12} = \\frac{12}{2} [2(300.000) + (12 - 1)(50.000)]$$\n   $$S_{12} = 6 [600.000 + 11(50.000)]$$\n   $$S_{12} = 6 [600.000 + 550.000] = 6 [1.150.000] = 6.900.000$$\n\nJadi, total tabungan karyawan tersebut adalah **B** ($\\text{Rp}6.900.000$)."
+  },
+  {
+    "id": "matwa-operasi-bilangan-real-17",
+    "chapter_id": "bilangan-real",
+    "sub_chapter_id": "operasi-bilangan-real",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dalam kalibrasi sensor suhu ruangan server, batas toleransi fluktuasi suhu $x$ (dalam derajad Celcius) memenuhi pertidaksamaan nilai mutlak:\n$$|3x - 2| \\le 7$$\nHimpunan semua nilai $x$ real yang memenuhi pertidaksamaan tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$-\\frac{5}{3} \\le x \\le 3$"
+      },
+      {
+        "id": "B",
+        "text": "$-3 \\le x \\le \\frac{5}{3}$"
+      },
+      {
+        "id": "C",
+        "text": "$x \\le -\\frac{5}{3}$ atau $x \\ge 3$"
+      },
+      {
+        "id": "D",
+        "text": "$-\\frac{7}{3} \\le x \\le 3$"
+      },
+      {
+        "id": "E",
+        "text": "$-2 \\le x \\le 3$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Sifat pertidaksamaan nilai mutlak |u| <= c (dengan c > 0) ekuivalen dengan -c <= u <= c.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Terapkan sifat pertidaksamaan nilai mutlak $|u| \\le c \\iff -c \\le u \\le c$:\n   $$-7 \\le 3x - 2 \\le 7$$\n\n2. Tambahkan $2$ pada ketiga ruas:\n   $$-7 + 2 \\le 3x \\le 7 + 2$$\n   $$-5 \\le 3x \\le 9$$\n\n3. Bagi ketiga ruas dengan $3$ ($3 > 0$, tanda pertidaksamaan tetap):\n   $$-\\frac{5}{3} \\le x \\le 3$$\n\nJadi, himpunan penyelesaiannya adalah **A** ($-\\frac{5}{3} \\le x \\le 3$)."
   },
   {
     "id": "matwa-operasi-bilangan-real-03",
@@ -43,11 +342,26 @@
     "difficulty": "HOTS",
     "question_text": "Sebuah instalasi gardu transmisi daya listrik mengalirkan energi dengan formula dasar:\n$$E_{\\text{ideal}} = V \\times I \\times t$$\nDiketahui tegangan transmisi $V = 2^8 \\times 5^2\\text{ Volt}$, kuat arus $I = 2^4 \\times 5^1\\text{ Ampere}$, dan durasi pengaliran $t = 2^3 \\times 5^2\\text{ detik}$. Selama proses transmisi, terjadi disipasi daya (rugi daya/losses) sebesar $20\\%$ dari energi ideal sehingga energi efektif yang berhasil diterima stasiun hilir adalah $80\\%$ dari $E_{\\text{ideal}}$.\n\nBesar energi listrik efektif yang tersampaikan (dalam Joule) jika dinyatakan dalam bentuk faktorisasi prima $2^a \\times 5^b$ adalah ...",
     "options": [
-      { "id": "A", "text": "$2^{17} \\times 5^4\\text{ Joule}$" },
-      { "id": "B", "text": "$2^{16} \\times 5^5\\text{ Joule}$" },
-      { "id": "C", "text": "$2^{18} \\times 5^3\\text{ Joule}$" },
-      { "id": "D", "text": "$2^{15} \\times 5^4\\text{ Joule}$" },
-      { "id": "E", "text": "$2^{17} \\times 5^5\\text{ Joule}$" }
+      {
+        "id": "A",
+        "text": "$2^{17} \\times 5^4\\text{ Joule}$"
+      },
+      {
+        "id": "B",
+        "text": "$2^{16} \\times 5^5\\text{ Joule}$"
+      },
+      {
+        "id": "C",
+        "text": "$2^{18} \\times 5^3\\text{ Joule}$"
+      },
+      {
+        "id": "D",
+        "text": "$2^{15} \\times 5^4\\text{ Joule}$"
+      },
+      {
+        "id": "E",
+        "text": "$2^{17} \\times 5^5\\text{ Joule}$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Gunakan aturan perkalian eksponen basis sama a^m x a^n = a^(m+n), lalu kalikan hasilnya dengan 80% yang senilai 4/5 = 2^2 x 5^(-1).",
@@ -61,38 +375,30 @@
     "difficulty": "HOTS",
     "question_text": "Sebuah industri pengolahan kopi menerima kiriman awal $1.200\\text{ kg}$ buah kopi basah. Biji kopi diproses melalui tiga tahapan penyusutan bobot:\n1. **Tahap Pengeringan:** Bobot menyusut sebesar $25\\%$ akibat penguapan kadar air.\n2. **Tahap Pengupasan & Sortasi:** Dari bobot kering yang tersisa, terjadi penyusutan sebesar $\\frac{1}{6}$ bagian karena kulit tanduk dan biji cacat dibuang.\n3. **Tahap Pemanggangan (Roasting):** Biji kopi beras yang siap sangrai menyusut kembali sebesar $20\\%$.\n\nSeluruh kopi sangrai yang dihasilkan dikemas ke dalam dua varian, yaitu kemasan *Premium* dan *Reguler*, dengan rasio perbandingan bobot $2 : 3$. Total berat kopi kemasan *Reguler* yang dihasilkan adalah ...",
     "options": [
-      { "id": "A", "text": "$360\\text{ kg}$" },
-      { "id": "B", "text": "$240\\text{ kg}$" },
-      { "id": "C", "text": "$300\\text{ kg}$" },
-      { "id": "D", "text": "$400\\text{ kg}$" },
-      { "id": "E", "text": "$450\\text{ kg}$" }
+      {
+        "id": "A",
+        "text": "$360\\text{ kg}$"
+      },
+      {
+        "id": "B",
+        "text": "$240\\text{ kg}$"
+      },
+      {
+        "id": "C",
+        "text": "$300\\text{ kg}$"
+      },
+      {
+        "id": "D",
+        "text": "$400\\text{ kg}$"
+      },
+      {
+        "id": "E",
+        "text": "$450\\text{ kg}$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Hitung bobot sisa secara berurutan setelah dikurangi persentase penyusutan tiap tahap, lalu kalikan sisa akhir dengan fraksi 3/(2+3).",
     "explanation": "Langkah-langkah perhitungan bertahap:\n\n1. **Sisa setelah Tahap Pengeringan (penyusutan 25%):**\n   $$W_1 = 1.200 \\times (1 - 0,25) = 1.200 \\times \\frac{3}{4} = 900\\text{ kg}$$\n\n2. **Sisa setelah Tahap Pengupasan & Sortasi (penyusutan $\\frac{1}{6}$):**\n   $$W_2 = 900 \\times \\left(1 - \\frac{1}{6}\\right) = 900 \\times \\frac{5}{6} = 750\\text{ kg}$$\n\n3. **Sisa setelah Tahap Pemanggangan (penyusutan 20%):**\n   $$W_3 = 750 \\times (1 - 0,20) = 750 \\times \\frac{4}{5} = 600\\text{ kg}$$\n\n4. **Alokasi Pembagian Rasio Kopi Kemasan:**\n   Rasio *Premium* : *Reguler* = $2 : 3$, sehingga total proporsi bagian adalah $2 + 3 = 5$ bagian.\n   Total berat varian *Reguler*:\n   $$W_{\\text{Reguler}} = \\frac{3}{5} \\times 600\\text{ kg} = 3 \\times 120\\text{ kg} = 360\\text{ kg}$$\n\nJadi, jawaban yang benar adalah **A**."
-  },
-  {
-    "id": "matwa-operasi-bilangan-real-05",
-    "chapter_id": "bilangan-real",
-    "sub_chapter_id": "operasi-bilangan-real",
-    "question_type": "MCMA",
-    "difficulty": "STANDAR",
-    "question_text": "Perhatikan beberapa konsep dan aksioma aljabar mengenai sistem bilangan real $\\mathbb{R}$. Pilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR**!",
-    "options": [
-      { "id": "A", "text": "Elemen identitas penjumlahan adalah 0 dan elemen identitas perkalian adalah 1." },
-      { "id": "B", "text": "Operasi pengurangan dan pembagian pada bilangan real tidak memenuhi sifat komutatif maupun asosiatif." },
-      { "id": "C", "text": "Pembagian bilangan real bukan nol dengan nol menghasilkan bilangan real yang terdefinisi." },
-      { "id": "D", "text": "Invers perkalian dari setiap bilangan real $a \\neq 0$ adalah $\\frac{1}{a}$ sehingga $a \\times \\frac{1}{a} = 1$." },
-      { "id": "E", "text": "Himpunan bilangan real bersifat tertutup terhadap operasi penjumlahan, pengurangan, dan perkalian." }
-    ],
-    "correct_answer": [
-      "A",
-      "B",
-      "D",
-      "E"
-    ],
-    "hint": "Cermati sifat aksioma bilangan real: keberadaan elemen netral/identitas, sifat ketertutupan, ketidakterdefinisian pembagian dengan nol, dan sifat komutatif/asosiatif.",
-    "explanation": "Evaluasi keabsahan pernyataan sistem bilangan real:\n\n- **Pernyataan A (BENAR):** Untuk setiap $a \\in \\mathbb{R}$, $a + 0 = a$ (0 adalah identitas penjumlahan) dan $a \\times 1 = a$ (1 adalah identitas perkalian).\n- **Pernyataan B (BENAR):** Pengurangan ($a - b \\neq b - a$) dan pembagian ($a \\div b \\neq b \\div a$) tidak bersifat komutatif maupun asosiatif.\n- **Pernyataan C (SALAH):** Pembagian dengan nol ($a \\div 0$) tidak terdefinisi pada sistem bilangan real.\n- **Pernyataan D (BENAR):** Aksioma invers perkalian menyatakan setiap $a \\neq 0$ memiliki invers perkalian $\\frac{1}{a}$ sedemikian hingga $a \\times \\frac{1}{a} = 1$.\n- **Pernyataan E (BENAR):** Untuk setiap $a, b \\in \\mathbb{R}$, hasil dari $a + b$, $a - b$, dan $a \\times b$ senantiasa menghasilkan bilangan real kembali (sifat ketertutupan/closure).\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, D, dan E**."
   },
   {
     "id": "matwa-operasi-bilangan-real-06",
@@ -102,11 +408,26 @@
     "difficulty": "HOTS",
     "question_text": "Diberikan dua bilangan desimal berulang tak hingga yang diperoleh dari rasio frekuensi gelombang akustik:\n$$x = 0,272727\\dots \\quad \\text{dan} \\quad y = 0,41666\\dots$$\n(dengan angka 6 berulang tanpa henti). Pilihlah **SEMUA** pernyataan matematika berikut yang bernilai **BENAR**!",
     "options": [
-      { "id": "A", "text": "Nilai $x$ setara dengan pecahan rasional $\\frac{3}{11}$" },
-      { "id": "B", "text": "Nilai $y$ setara dengan pecahan rasional $\\frac{5}{12}$" },
-      { "id": "C", "text": "Hasil penjumlahan $x + y = \\frac{91}{132}$" },
-      { "id": "D", "text": "Hasil perkalian $x \\times y = \\frac{1}{8}$" },
-      { "id": "E", "text": "Hasil pengurangan $y - x = \\frac{19}{132}$" }
+      {
+        "id": "A",
+        "text": "Nilai $x$ setara dengan pecahan rasional $\\frac{3}{11}$"
+      },
+      {
+        "id": "B",
+        "text": "Nilai $y$ setara dengan pecahan rasional $\\frac{5}{12}$"
+      },
+      {
+        "id": "C",
+        "text": "Hasil penjumlahan $x + y = \\frac{91}{132}$"
+      },
+      {
+        "id": "D",
+        "text": "Hasil perkalian $x \\times y = \\frac{1}{8}$"
+      },
+      {
+        "id": "E",
+        "text": "Hasil pengurangan $y - x = \\frac{19}{132}$"
+      }
     ],
     "correct_answer": [
       "A",
@@ -125,11 +446,26 @@
     "difficulty": "HOTS",
     "question_text": "Sebuah mobil logistik menempuh rute pengiriman dari Kota A ke Kota B sejauh $S\\text{ km}$ dengan laju konstan $v_1 = 60\\text{ km/jam}$. Pada saat kembali dari Kota B menuju Kota A menempuh rute yang sama persis, laju rata-rata kendaraan adalah $v_2 = 40\\text{ km/jam}$.\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR**!",
     "options": [
-      { "id": "A", "text": "Waktu tempuh perjalanan kembali (B ke A) adalah 1,5 kali waktu tempuh perjalanan pergi (A ke B)" },
-      { "id": "B", "text": "Kecepatan rata-rata untuk seluruh perjalanan pergi-pulang adalah $48\\text{ km/jam}$" },
-      { "id": "C", "text": "Kecepatan rata-rata seluruh perjalanan identik dengan rata-rata harmonik dari kedua kecepatan" },
-      { "id": "D", "text": "Kecepatan rata-rata seluruh perjalanan adalah $50\\text{ km/jam}$" },
-      { "id": "E", "text": "Perbandingan laju $v_1 : v_2$ berbanding terbalik dengan perbandingan waktu tempuhnya $t_1 : t_2$" }
+      {
+        "id": "A",
+        "text": "Waktu tempuh perjalanan kembali (B ke A) adalah 1,5 kali waktu tempuh perjalanan pergi (A ke B)"
+      },
+      {
+        "id": "B",
+        "text": "Kecepatan rata-rata untuk seluruh perjalanan pergi-pulang adalah $48\\text{ km/jam}$"
+      },
+      {
+        "id": "C",
+        "text": "Kecepatan rata-rata seluruh perjalanan identik dengan rata-rata harmonik dari kedua kecepatan"
+      },
+      {
+        "id": "D",
+        "text": "Kecepatan rata-rata seluruh perjalanan adalah $50\\text{ km/jam}$"
+      },
+      {
+        "id": "E",
+        "text": "Perbandingan laju $v_1 : v_2$ berbanding terbalik dengan perbandingan waktu tempuhnya $t_1 : t_2$"
+      }
     ],
     "correct_answer": [
       "A",

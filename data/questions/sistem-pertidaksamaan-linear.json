@@ -66,6 +66,275 @@
     "explanation": "Langkah-langkah rekonstruksi sistem pertidaksamaan dari titik sudut:\n\n1. Tentukan garis batas miring yang melalui titik $(4, 0)$ dan $(2, 3)$:\n   $$m = \\frac{3 - 0}{2 - 4} = \\frac{3}{-2} = -\\frac{3}{2}$$\n   Persamaan garis melalui $(4, 0)$:\n   $$y - 0 = -\\frac{3}{2}(x - 4) \\implies 2y = -3x + 12 \\implies 3x + 2y = 12$$\n\n2. Karena daerah memuat titik $(0, 0)$ sebagai salah satu titik sudutnya, uji $(0, 0)$:\n   $$3(0) + 2(0) = 0 \\le 12 \\implies 3x + 2y \\le 12$$\n\n3. Tentukan batas atas horizontal yang melalui titik $(0, 3)$ dan $(2, 3)$:\n   Garis mendatar adalah $y = 3$. Karena daerah berada di bawahnya, maka $y \\le 3$.\n\n4. Batas sumbu koordinat di Kuadran I adalah $x \\ge 0$ dan $y \\ge 0$.\n\nJadi, sistem pertidaksamaan yang tepat adalah **A**."
   },
   {
+    "id": "matwa-sistem-pertidaksamaan-linear-05",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-pertidaksamaan-linear",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan sistem pertidaksamaan linear:\n$$\\begin{cases} 3x + 4y \\le 24 \\\\ x - 2y \\ge -4 \\\\ x \\ge 0, \\quad y \\ge 0 \\end{cases}$$\nPilihlah **SEMUA** titik koordinat di bawah ini yang berada di dalam atau pada batas daerah penyelesaian (DHP) sistem tersebut!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Titik $(2, 3)$"
+      },
+      {
+        "id": "B",
+        "text": "Titik $(4, 2)$"
+      },
+      {
+        "id": "C",
+        "text": "Titik $(0, 2)$"
+      },
+      {
+        "id": "D",
+        "text": "Titik $(2, 5)$"
+      },
+      {
+        "id": "E",
+        "text": "Titik koordinat $(2, 2)$ terletak di dalam daerah himpunan penyelesaian."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "hint": "Substitusikan nilai $(x, y)$ pada setiap opsi ke dalam seluruh pertidaksamaan pada sistem untuk memeriksa apakah semua syarat terpenuhi sekaligus.",
+    "explanation": "Uji titik ke dalam sistem pertidaksamaan:\n\n- **Opsi A: Titik $(2, 3)$**\n  - $3(2) + 4(3) = 6 + 12 = 18 \\le 24$ (Memenuhi)\n  - $2 - 2(3) = 2 - 6 = -4 \\ge -4$ (Memenuhi)\n  - $x \\ge 0, y \\ge 0$ (Memenuhi)\n  $\\implies$ Titik $(2, 3)$ berada di dalam DHP. (Opsi A **BENAR**)\n\n- **Opsi B: Titik $(4, 2)$**\n  - $3(4) + 4(2) = 12 + 8 = 20 \\le 24$ (Memenuhi)\n  - $4 - 2(2) = 4 - 4 = 0 \\ge -4$ (Memenuhi)\n  - $x \\ge 0, y \\ge 0$ (Memenuhi)\n  $\\implies$ Titik $(4, 2)$ berada di dalam DHP. (Opsi B **BENAR**)\n\n- **Opsi C: Titik $(0, 2)$**\n  - $3(0) + 4(2) = 8 \\le 24$ (Memenuhi)\n  - $0 - 2(2) = -4 \\ge -4$ (Memenuhi)\n  - $x \\ge 0, y \\ge 0$ (Memenuhi)\n  $\\implies$ Titik $(0, 2)$ berada di dalam DHP. (Opsi C **BENAR**)\n\n- **Opsi D: Titik $(2, 5)$**\n  - $3(2) + 4(5) = 6 + 20 = 26 \\le 24$ (Salah, $26 > 24$)\n  $\\implies$ Titik $(2, 5)$ tidak memenuhi DHP. (Opsi D **SALAH**)\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Substitusi $(2, 2)$: $3(2) + 4(2) = 14 \\le 24$, $2 - 2(2) = -2 \\ge -2$, $2 \\ge 0$, $2 \\ge 0$, seluruh pertidaksamaan terpenuhi."
+  },
+  {
+    "id": "matwa-sistem-pertidaksamaan-linear-11",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-pertidaksamaan-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Garis $g_1$ memotong sumbu-$Y$ di titik $(0, 4)$ dan sumbu-$X$ di titik $(6, 0)$. Garis $g_2$ memotong sumbu-$Y$ di titik $(0, 6)$ dan sumbu-$X$ di titik $(3, 0)$. Jika daerah himpunan penyelesaian memuat titik $(1, 1)$ dan berada di kuadran I, sistem pertidaksamaan yang memenuhi adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$2x + 3y \\le 12,\\; 2x + y \\le 6,\\; x \\ge 0,\\; y \\ge 0$"
+      },
+      {
+        "id": "B",
+        "text": "$2x + 3y \\ge 12,\\; 2x + y \\le 6,\\; x \\ge 0,\\; y \\ge 0$"
+      },
+      {
+        "id": "C",
+        "text": "$3x + 2y \\le 12,\\; x + 2y \\le 6,\\; x \\ge 0,\\; y \\ge 0$"
+      },
+      {
+        "id": "D",
+        "text": "$2x + 3y \\le 12,\\; 2x + y \\ge 6,\\; x \\ge 0,\\; y \\ge 0$"
+      },
+      {
+        "id": "E",
+        "text": "$3x + 2y \\ge 12,\\; 2x + y \\le 6,\\; x \\ge 0,\\; y \\ge 0$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Gunakan persamaan garis ax + by = ab untuk garis yang memotong (0, a) dan (b, 0), lalu uji titik (1, 1).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Tentukan persamaan garis $g_1$ yang melalui $(0, 4)$ dan $(6, 0)$:\n   $$4x + 6y = 4 \\times 6 = 24 \\implies 2x + 3y = 12$$\n\n2. Tentukan persamaan garis $g_2$ yang melalui $(0, 6)$ dan $(3, 0)$:\n   $$6x + 3y = 6 \\times 3 = 18 \\implies 2x + y = 6$$\n\n3. Uji titik penyelesaian $(1, 1)$ pada kedua garis:\n   - Untuk $g_1$: $2(1) + 3(1) = 5 \\le 12 \\implies 2x + 3y \\le 12$\n   - Untuk $g_2$: $2(1) + 1 = 3 \\le 6 \\implies 2x + y \\le 6$\n\n4. Batasan kuadran I: $x \\ge 0$ dan $y \\ge 0$.\n\nJadi, sistem pertidaksamaannya adalah **A** ($2x + 3y \\le 12,\\; 2x + y \\le 6,\\; x \\ge 0,\\; y \\ge 0$)."
+  },
+  {
+    "id": "matwa-sistem-pertidaksamaan-linear-12",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-pertidaksamaan-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan sistem pertidaksamaan linear dua variabel:\n$$\\begin{cases} 3x + 2y \\le 18 \\\\ x + 4y \\ge 12 \\\\ x \\ge 0,\\; y \\ge 0 \\end{cases}$$\nTitik koordinat berikut yang terletak di DALAM daerah himpunan penyelesaian sistem pertidaksamaan tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$(2, 1)$"
+      },
+      {
+        "id": "B",
+        "text": "$(4, 3)$"
+      },
+      {
+        "id": "C",
+        "text": "$(6, 2)$"
+      },
+      {
+        "id": "D",
+        "text": "$(1, 2)$"
+      },
+      {
+        "id": "E",
+        "text": "$(0, 10)$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Uji tiap titik koordinat pada opsi ke dalam kedua pertidaksamaan sekaligus.",
+    "explanation": "Langkah-langkah penyelesaian:\n\nMari uji opsi titik ke dalam $3x + 2y \\le 18$ dan $x + 4y \\ge 12$:\n- Titik A $(2, 1)$: $3(2)+2(1) = 8 \\le 18$ (Benar), tetapi $2 + 4(1) = 6 < 12$ (Salah).\n- Titik B $(4, 3)$:\n  - $3(4) + 2(3) = 12 + 6 = 18 \\le 18$ (Memenuhi)\n  - $4 + 4(3) = 4 + 12 = 16 \\ge 12$ (Memenuhi)\n  - $4 \\ge 0$ dan $3 \\ge 0$ (Memenuhi)\n- Titik C $(6, 2)$: $3(6)+2(2) = 22 > 18$ (Salah).\n- Titik D $(1, 2)$: $1 + 4(2) = 9 < 12$ (Salah).\n- Titik E $(0, 10)$: $3(0)+2(10) = 20 > 18$ (Salah).\n\nJadi, titik yang berada di dalam daerah penyelesaian adalah **B** ($(4, 3)$)."
+  },
+  {
+    "id": "matwa-sistem-pertidaksamaan-linear-13",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-pertidaksamaan-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah lift kargo pabrik memiliki daya angkut aman maksimum sebesar $650\\text{ kg}$. Dua orang teknisi pemeliharaan dengan bobot masing-masing $70\\text{ kg}$ dan $80\\text{ kg}$ akan membawa sejumlah boks suku cadang berbobot seragam $25\\text{ kg}$ per boks. Banyak boks maksimum yang dapat diangkut lift dalam sekali jalan adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$18\\text{ boks}$"
+      },
+      {
+        "id": "B",
+        "text": "$19\\text{ boks}$"
+      },
+      {
+        "id": "C",
+        "text": "$20\\text{ boks}$"
+      },
+      {
+        "id": "D",
+        "text": "$21\\text{ boks}$"
+      },
+      {
+        "id": "E",
+        "text": "$22\\text{ boks}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Buat pertidaksamaan beban total: 70 + 80 + 25n <= 650, lalu selesaikan untuk n bilangan bulat.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Misalkan banyaknya boks yang diangkut adalah $n$ (dengan $n$ bilangan cacah).\n\n2. Susun pertidaksamaan kapasitas lift:\n   $$70 + 80 + 25n \\le 650$$\n   $$150 + 25n \\le 650$$\n\n3. Selesaikan pertidaksamaan:\n   $$25n \\le 650 - 150$$\n   $$25n \\le 500$$\n   $$n \\le \\frac{500}{25} = 20$$\n\nJadi, banyak boks maksimum yang dapat diangkut adalah **C** ($20\\text{ boks}$)."
+  },
+  {
+    "id": "matwa-sistem-pertidaksamaan-linear-14",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-pertidaksamaan-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Daerah himpunan penyelesaian dari sistem pertidaksamaan linear:\n$$\\begin{cases} x \\ge 0 \\\\ y \\ge 0 \\\\ x + y \\le 6 \\\\ y \\le 4 \\end{cases}$$\nmembentuk bangun datar trapesium siku-siku pada bidang Cartesius. Luas daerah penyelesaian tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$14\\text{ satuan luas}$"
+      },
+      {
+        "id": "B",
+        "text": "$16\\text{ satuan luas}$"
+      },
+      {
+        "id": "C",
+        "text": "$18\\text{ satuan luas}$"
+      },
+      {
+        "id": "D",
+        "text": "$20\\text{ satuan luas}$"
+      },
+      {
+        "id": "E",
+        "text": "$24\\text{ satuan luas}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Identifikasi titik pojok trapesium: (0,0), (6,0), (2,4), dan (0,4). Alas bawah = 6, alas atas = 2, tinggi = 4.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Tentukan titik-titik sudut daerah penyelesaian:\n   - Titik $O(0, 0)$ pada perpotongan sumbu-$X$ dan sumbu-$Y$.\n   - Titik $A(6, 0)$ pada perpotongan $x + y = 6$ dengan sumbu-$X$ ($y = 0$).\n   - Titik $B(2, 4)$ pada perpotongan $x + y = 6$ dengan $y = 4$ ($x = 6 - 4 = 2$).\n   - Titik $C(0, 4)$ pada perpotongan $y = 4$ dengan sumbu-$Y$ ($x = 0$).\n\n2. Bangun $OABC$ merupakan trapesium siku-siku dengan tinggi sepanjang sumbu-$Y$ ($t = 4$):\n   - Panjang sisi sejajar bawah ($OA$): $a = 6 - 0 = 6$\n   - Panjang sisi sejajar atas ($CB$): $b = 2 - 0 = 2$\n   - Tinggi trapesium ($OC$): $t = 4$\n\n3. Hitung luas trapesium:\n   $$\\text{Luas} = \\frac{a + b}{2} \\times t = \\frac{6 + 2}{2} \\times 4 = 4 \\times 4 = 16\\text{ satuan luas}$$\n\nJadi, luas daerah penyelesaian adalah **B** ($16\\text{ satuan luas}$)."
+  },
+  {
+    "id": "matwa-sistem-pertidaksamaan-linear-15",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-pertidaksamaan-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan sistem pertidaksamaan yang dibatasi oleh dua garis sejajar:\n$$\\begin{cases} -2 \\le x - y \\le 4 \\\\ 0 \\le x \\le 5 \\\\ y \\ge 0 \\end{cases}$$\nNilai ordinat $y$ maksimum yang mungkin dicapai pada daerah penyelesaian tersebut untuk absis $x = 5$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$1$"
+      },
+      {
+        "id": "B",
+        "text": "$3$"
+      },
+      {
+        "id": "C",
+        "text": "$5$"
+      },
+      {
+        "id": "D",
+        "text": "$7$"
+      },
+      {
+        "id": "E",
+        "text": "$9$"
+      }
+    ],
+    "correct_answer": "D",
+    "hint": "Substitusikan x = 5 ke dalam pertidaksamaan -2 <= x - y <= 4, lalu selesaikan batas untuk y.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Substitusikan $x = 5$ ke pertidaksamaan rangkap $-2 \\le x - y \\le 4$:\n   $$-2 \\le 5 - y \\le 4$$\n\n2. Kurangkan $5$ pada ketiga ruas:\n   $$-2 - 5 \\le -y \\le 4 - 5$$\n   $$-7 \\le -y \\le -1$$\n\n3. Kalikan dengan $-1$ (balik tanda pertidaksamaan):\n   $$1 \\le y \\le 7$$\n\n4. Karena $y \\ge 0$, maka rentang nilai $y$ yang memenuhi adalah $[1, 7]$. Nilai $y$ maksimum adalah $7$.\n\nJadi, nilai $y$ maksimum adalah **D** ($7$)."
+  },
+  {
+    "id": "matwa-sistem-pertidaksamaan-linear-16",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-pertidaksamaan-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah truk boks logistik memiliki daya angkut berat maksimum $12\\text{ ton}$ ($12.000\\text{ kg}$) dan volume muatan maksimum $30\\text{ m}^3$. Barang tipe $A$ berbobot $300\\text{ kg}$ per boks dengan volume $0{,}5\\text{ m}^3$, sedangkan barang tipe $B$ berbobot $400\\text{ kg}$ per boks dengan volume $1\\text{ m}^3$. Jika truk mengangkut $x$ boks barang $A$ dan $y$ boks barang $B$, model sistem pertidaksamaan yang sesuai adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$3x + 4y \\le 120,\\; x + 2y \\le 60,\\; x \\ge 0,\\; y \\ge 0$"
+      },
+      {
+        "id": "B",
+        "text": "$4x + 3y \\le 120,\\; 2x + y \\le 60,\\; x \\ge 0,\\; y \\ge 0$"
+      },
+      {
+        "id": "C",
+        "text": "$3x + 4y \\le 120,\\; 2x + y \\le 60,\\; x \\ge 0,\\; y \\ge 0$"
+      },
+      {
+        "id": "D",
+        "text": "$3x + 4y \\ge 120,\\; x + 2y \\ge 60,\\; x \\ge 0,\\; y \\ge 0$"
+      },
+      {
+        "id": "E",
+        "text": "$4x + 3y \\le 120,\\; x + 2y \\le 60,\\; x \\ge 0,\\; y \\ge 0$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Buat kendala berat: 300x + 400y <= 12000 (bagi 100), dan kendala volume: 0,5x + y <= 30 (kali 2).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Kendala daya angkut berat:\n   $$300x + 400y \\le 12.000$$\n   Bagi kedua ruas dengan $100$:\n   $$3x + 4y \\le 120$$\n\n2. Kendala volume ruang muatan:\n   $$0{,}5x + 1y \\le 30$$\n   Kalikan kedua ruas dengan $2$:\n   $$x + 2y \\le 60$$\n\n3. Kendala non-negatif jumlah boks:\n   $$x \\ge 0,\\; y \\ge 0$$\n\nJadi, model matematikanya adalah **A** ($3x + 4y \\le 120,\\; x + 2y \\le 60,\\; x \\ge 0,\\; y \\ge 0$)."
+  },
+  {
+    "id": "matwa-sistem-pertidaksamaan-linear-17",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-pertidaksamaan-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Daerah himpunan penyelesaian dibatasi oleh dua garis perbatasan $3x + 4y = 24$ dan $x - 2y = -2$. Koordinat titik potong persekutuan dari kedua garis batas tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$(2, 2)$"
+      },
+      {
+        "id": "B",
+        "text": "$(4, 3)$"
+      },
+      {
+        "id": "C",
+        "text": "$(3, 4)$"
+      },
+      {
+        "id": "D",
+        "text": "$(4, 4)$"
+      },
+      {
+        "id": "E",
+        "text": "$(6, 1)$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Eliminasi variabel x atau y dari kedua persamaan garis pembatas.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Diberikan dua persamaan garis:\n   - $3x + 4y = 24$ ...(1)\n   - $x - 2y = -2 \\implies x = 2y - 2$ ...(2)\n\n2. Substitusikan pers (2) ke pers (1):\n   $$3(2y - 2) + 4y = 24$$\n   $$6y - 6 + 4y = 24$$\n   $$10y = 30 \\implies y = 3$$\n\n3. Substitusi $y = 3$ ke pers (2):\n   $$x = 2(3) - 2 = 6 - 2 = 4$$\n\n4. Koordinat titik potong adalah $(4, 3)$.\n\nJadi, titik potong persekutuannya adalah **B** ($(4, 3)$)."
+  },
+  {
     "id": "matwa-sistem-pertidaksamaan-linear-03",
     "chapter_id": "aljabar-linear",
     "sub_chapter_id": "sistem-pertidaksamaan-linear",
@@ -130,44 +399,6 @@
     "correct_answer": "A",
     "hint": "Cacah nilai bulat tak-negatif $y$ yang mungkin dari $0$ hingga $4$. Untuk setiap nilai $y$, hitung banyaknya bilangan bulat $x$ yang memenuhi $0 \\le x \\le \\frac{12 - 3y}{2}$.",
     "explanation": "Langkah-langkah pencacahan titik kisi (lattice points):\n\n1. Syarat $x \\ge 0$ dan $y \\ge 0$ dengan $x, y \\in \\mathbb{Z}$ (bilangan bulat tak-negatif).\n\n2. Dari $2x + 3y \\le 12$, batas maksimum nilai $y$ tercapai saat $x = 0$:\n   $$3y \\le 12 \\implies y \\le 4$$\n   Sehingga kemungkinan nilai $y$ adalah $y \\in \\{0, 1, 2, 3, 4\\}$.\n\n3. Hitung banyaknya nilai $x$ untuk tiap kemungkinan nilai $y$ ($x \\le \\frac{12 - 3y}{2}$):\n   - Untuk $y = 0$: $x \\le \\frac{12}{2} = 6 \\implies x \\in \\{0, 1, 2, 3, 4, 5, 6\\} \\implies 7\\text{ titik}$\n   - Untuk $y = 1$: $x \\le \\frac{9}{2} = 4,5 \\implies x \\in \\{0, 1, 2, 3, 4\\} \\implies 5\\text{ titik}$\n   - Untuk $y = 2$: $x \\le \\frac{6}{2} = 3 \\implies x \\in \\{0, 1, 2, 3\\} \\implies 4\\text{ titik}$\n   - Untuk $y = 3$: $x \\le \\frac{3}{2} = 1,5 \\implies x \\in \\{0, 1\\} \\implies 2\\text{ titik}$\n   - Untuk $y = 4$: $x \\le \\frac{0}{2} = 0 \\implies x \\in \\{0\\} \\implies 1\\text{ titik}$\n\n4. Jumlahkan seluruh kemungkinan titik bulat:\n   $$\\text{Total} = 7 + 5 + 4 + 2 + 1 = 19\\text{ pasangan bulat}$$\n\nJadi, jawaban yang benar adalah **A**."
-  },
-  {
-    "id": "matwa-sistem-pertidaksamaan-linear-05",
-    "chapter_id": "aljabar-linear",
-    "sub_chapter_id": "sistem-pertidaksamaan-linear",
-    "question_type": "MCMA",
-    "difficulty": "STANDAR",
-    "question_text": "Diberikan sistem pertidaksamaan linear:\n$$\\begin{cases} 3x + 4y \\le 24 \\\\ x - 2y \\ge -4 \\\\ x \\ge 0, \\quad y \\ge 0 \\end{cases}$$\nPilihlah **SEMUA** titik koordinat di bawah ini yang berada di dalam atau pada batas daerah penyelesaian (DHP) sistem tersebut!",
-    "options": [
-      {
-        "id": "A",
-        "text": "Titik $(2, 3)$"
-      },
-      {
-        "id": "B",
-        "text": "Titik $(4, 2)$"
-      },
-      {
-        "id": "C",
-        "text": "Titik $(0, 2)$"
-      },
-      {
-        "id": "D",
-        "text": "Titik $(2, 5)$"
-      },
-      {
-        "id": "E",
-        "text": "Titik koordinat $(2, 2)$ terletak di dalam daerah himpunan penyelesaian."
-      }
-    ],
-    "correct_answer": [
-      "A",
-      "B",
-      "C",
-      "E"
-    ],
-    "hint": "Substitusikan nilai $(x, y)$ pada setiap opsi ke dalam seluruh pertidaksamaan pada sistem untuk memeriksa apakah semua syarat terpenuhi sekaligus.",
-    "explanation": "Uji titik ke dalam sistem pertidaksamaan:\n\n- **Opsi A: Titik $(2, 3)$**\n  - $3(2) + 4(3) = 6 + 12 = 18 \\le 24$ (Memenuhi)\n  - $2 - 2(3) = 2 - 6 = -4 \\ge -4$ (Memenuhi)\n  - $x \\ge 0, y \\ge 0$ (Memenuhi)\n  $\\implies$ Titik $(2, 3)$ berada di dalam DHP. (Opsi A **BENAR**)\n\n- **Opsi B: Titik $(4, 2)$**\n  - $3(4) + 4(2) = 12 + 8 = 20 \\le 24$ (Memenuhi)\n  - $4 - 2(2) = 4 - 4 = 0 \\ge -4$ (Memenuhi)\n  - $x \\ge 0, y \\ge 0$ (Memenuhi)\n  $\\implies$ Titik $(4, 2)$ berada di dalam DHP. (Opsi B **BENAR**)\n\n- **Opsi C: Titik $(0, 2)$**\n  - $3(0) + 4(2) = 8 \\le 24$ (Memenuhi)\n  - $0 - 2(2) = -4 \\ge -4$ (Memenuhi)\n  - $x \\ge 0, y \\ge 0$ (Memenuhi)\n  $\\implies$ Titik $(0, 2)$ berada di dalam DHP. (Opsi C **BENAR**)\n\n- **Opsi D: Titik $(2, 5)$**\n  - $3(2) + 4(5) = 6 + 20 = 26 \\le 24$ (Salah, $26 > 24$)\n  $\\implies$ Titik $(2, 5)$ tidak memenuhi DHP. (Opsi D **SALAH**)\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Substitusi $(2, 2)$: $3(2) + 4(2) = 14 \\le 24$, $2 - 2(2) = -2 \\ge -2$, $2 \\ge 0$, $2 \\ge 0$, seluruh pertidaksamaan terpenuhi."
   },
   {
     "id": "matwa-sistem-pertidaksamaan-linear-06",

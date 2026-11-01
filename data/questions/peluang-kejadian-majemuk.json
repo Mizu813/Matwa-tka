@@ -66,6 +66,274 @@
     "explanation": "Langkah-langkah penyelesaian:\n1. Pengambilan perwakilan pertama (mahasiswa pria):\n   - Banyak pria: $9\\text{ orang}$\n   - Total anggota mula-mula: $15\\text{ orang}$\n   $$P(\\text{Pria ke-1}) = \\frac{9}{15} = \\frac{3}{5}$$\n2. Pengambilan perwakilan kedua (mahasiswa wanita) tanpa pengembalian:\n   - Banyak wanita tetap: $6\\text{ orang}$\n   - Total anggota tersisa: $15 - 1 = 14\\text{ orang}$\n   $$P(\\text{Wanita ke-2} \\mid \\text{Pria ke-1}) = \\frac{6}{14} = \\frac{3}{7}$$\n3. Menghitung peluang gabungan berurutan:\n   $$P = P(\\text{Pria ke-1}) \\times P(\\text{Wanita ke-2} \\mid \\text{Pria ke-1})$$\n   $$P = \\frac{3}{5} \\times \\frac{3}{7} = \\frac{9}{35}$$\n\nJadi, peluang perwakilan pertama pria dan kedua wanita adalah $\\frac{9}{35}$."
   },
   {
+    "id": "matwa-peluang-kejadian-majemuk-07",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-majemuk",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Dua buah dadu standar enam sisi dilempar undi bersama-sama sebanyak satu kali. Didefinisikan dua kejadian:\n- Kejadian $A$: muncul jumlah kedua mata dadu sama dengan $7$\n- Kejadian $B$: muncul kedua mata dadu bernilai sama (mata dadu kembar)\n\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Peluang terjadinya kejadian $A$ adalah $P(A) = \\frac{1}{6}$."
+      },
+      {
+        "id": "B",
+        "text": "Kejadian $A$ dan kejadian $B$ merupakan dua kejadian yang saling lepas (mutually exclusive)."
+      },
+      {
+        "id": "C",
+        "text": "Peluang muncul jumlah mata dadu sama dengan $7$ ATAU mata dadu kembar adalah $\\frac{1}{3}$."
+      },
+      {
+        "id": "D",
+        "text": "Peluang irisan kejadian $A$ dan $B$ adalah $P(A \\cap B) = \\frac{1}{36}$."
+      },
+      {
+        "id": "E",
+        "text": "Peluang terjadinya kejadian $B$ adalah $P(B) = \\frac{1}{12}$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Ruang sampel dua dadu adalah $n(S) = 36$. Cari anggota himpunan kejadian $A$ dan $B$. Periksa apakah ada titik sampel yang memenuhi kedua syarat secara bersamaan.",
+    "explanation": "Langkah-langkah evaluasi pelemparan dua dadu:\n1. Ruang sampel: $n(S) = 6 \\times 6 = 36$.\n2. Anggota kejadian $A$ (jumlah 7):\n   - $A = \\{(1,6), (2,5), (3,4), (4,3), (5,2), (6,1)\\} \\implies n(A) = 6$\n   - $P(A) = \\frac{6}{36} = \\frac{1}{6}$. (Pernyataan A BENAR).\n3. Anggota kejadian $B$ (mata dadu kembar):\n   - $B = \\{(1,1), (2,2), (3,3), (4,4), (5,5), (6,6)\\} \\implies n(B) = 6$\n   - $P(B) = \\frac{6}{36} = \\frac{1}{6} \\ne \\frac{1}{12}$. (Pernyataan E SALAH).\n4. Evaluasi irisan $A \\cap B$:\n   - Pada pasangan kembar $(x, x)$, jumlah mata dadu adalah $2x$ (selalu bilangan genap: $2, 4, 6, 8, 10, 12$).\n   - Karena $7$ adalah bilangan ganjil, tidak ada pasangan kembar yang berjumlah $7$ ($A \\cap B = \\emptyset$).\n   - Jadi, kejadian $A$ dan $B$ saling lepas (mutually exclusive) dan $P(A \\cap B) = 0 \\ne \\frac{1}{36}$.\n   (Pernyataan B BENAR dan Pernyataan D SALAH).\n5. Peluang gabungan dua kejadian saling lepas:\n   $$P(A \\cup B) = P(A) + P(B) = \\frac{1}{6} + \\frac{1}{6} = \\frac{2}{6} = \\frac{1}{3}$$\n   (Pernyataan C BENAR).\n\nJadi, seluruh pernyataan yang bernilai BENAR adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-peluang-kejadian-majemuk-11",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-majemuk",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dari satu set lengkap kartu bridge ($52\\text{ kartu}$), diambil sebuah kartu secara acak. Peluang terambilnya kartu bernomor As atau kartu bergambar (Jack, Queen, King) adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{1}{13}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{3}{13}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{4}{13}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{5}{13}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{16}{52}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Kejadian As dan kejadian kartu Bergambar merupakan kejadian saling lepas (tidak ada kartu As yang bergambar wajah). Gunakan $P(A \\cup B) = P(A) + P(B)$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Total kartu bridge: $n(S) = 52$.\n2. Menentukan banyak kartu masing-masing kategori:\n   - Banyak kartu As: $n(A) = 4$.\n   - Banyak kartu bergambar (Jack, Queen, King): $n(B) = 4 \\times 3 = 12$.\n3. Karena tidak ada irisan antara kartu As dan Bergambar ($A \\cap B = \\emptyset$):\n   $$n(A \\cup B) = n(A) + n(B) = 4 + 12 = 16$$\n4. Menghitung peluang gabungan kejadian saling lepas:\n   $$P(A \\cup B) = \\frac{16}{52} = \\frac{4}{13}$$\n\nJadi, peluangnya adalah $\\frac{4}{13}$."
+  },
+  {
+    "id": "matwa-peluang-kejadian-majemuk-12",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-majemuk",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah kartu diambil secara acak dari tumpukan $20\\text{ kartu}$ bernomor $1$ sampai dengan $20$. Peluang terambilnya kartu bernomor genap atau kartu bernomor kelipatan $5$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{1}{2}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{3}{5}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{7}{10}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{13}{20}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{4}{5}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Ini adalah kejadian tidak saling lepas karena terdapat bilangan yang sekaligus genap dan kelipatan 5 (yaitu kelipatan 10). Gunakan $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Total kartu $n(S) = 20$.\n2. Kejadian kartu genap ($A$):\n   $$A = \\{2, 4, 6, 8, 10, 12, 14, 16, 18, 20\\} \\implies n(A) = 10$$\n3. Kejadian kartu kelipatan $5$ ($B$):\n   $$B = \\{5, 10, 15, 20\\} \\implies n(B) = 4$$\n4. Irisan kartu genap dan kelipatan $5$ ($A \\cap B$):\n   $$A \\cap B = \\{10, 20\\} \\implies n(A \\cap B) = 2$$\n5. Menerapkan rumus peluang tidak saling lepas:\n   $$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$$\n   $$P(A \\cup B) = \\frac{10}{20} + \\frac{4}{20} - \\frac{2}{20} = \\frac{12}{20} = \\frac{3}{5}$$\n\nJadi, peluang terambilnya kartu bernomor genap atau kelipatan $5$ adalah $\\frac{3}{5}$."
+  },
+  {
+    "id": "matwa-peluang-kejadian-majemuk-13",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-majemuk",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah dadu bersisi enam dan sebuah keping uang logam dilempar undi bersama-sama satu kali. Peluang munculnya mata dadu lebih dari $4$ dan sisi Gambar pada uang logam adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{1}{12}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{1}{6}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{1}{4}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{1}{3}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{1}{2}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Pelemparan dadu dan koin merupakan dua kejadian saling bebas. Gunakan rumus $P(A \\cap B) = P(A) \\times P(B)$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Peluang mata dadu lebih dari $4$ ($A = \\{5, 6\\}$):\n   $$P(A) = \\frac{2}{6} = \\frac{1}{3}$$\n2. Peluang sisi Gambar pada koin ($B = \\{G\\}$):\n   $$P(B) = \\frac{1}{2}$$\n3. Karena kedua kejadian saling bebas:\n   $$P(A \\cap B) = P(A) \\times P(B) = \\frac{1}{3} \\times \\frac{1}{2} = \\frac{1}{6}$$\n\nJadi, peluang kejadian tersebut adalah $\\frac{1}{6}$."
+  },
+  {
+    "id": "matwa-peluang-kejadian-majemuk-14",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-majemuk",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah kotak berisi $4\\text{ bola hijau}$ dan $6\\text{ bola kuning}$. Dilakukan pengambilan dua kali berturut-turut satu per satu dengan pengembalian (setelah bola pertama dicatat warnanya, bola dikembalikan lagi ke dalam kotak sebelum pengambilan kedua). Peluang terambil bola pertama hijau dan bola kedua kuning adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{2}{15}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{6}{25}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{4}{15}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{12}{25}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{3}{5}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Karena ada pengembalian, kondisi ruang sampel pada pengambilan kedua tetap sama (kejadian saling bebas).",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Total bola dalam kotak: $4 + 6 = 10\\text{ bola}$.\n2. Pengambilan pertama menghasilkan bola hijau:\n   $$P(H) = \\frac{4}{10} = \\frac{2}{5}$$\n3. Bola dikembalikan, sehingga total bola tetap $10$.\n4. Pengambilan kedua menghasilkan bola kuning:\n   $$P(K) = \\frac{6}{10} = \\frac{3}{5}$$\n5. Peluang kedua peristiwa terjadi bersamaan:\n   $$P(H \\cap K) = \\frac{2}{5} \\times \\frac{3}{5} = \\frac{6}{25}$$\n\nJadi, peluangnya adalah $\\frac{6}{25}$."
+  },
+  {
+    "id": "matwa-peluang-kejadian-majemuk-15",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-majemuk",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dalam sebuah kotak terdapat $7\\text{ spidol hitam}$ dan $3\\text{ spidol biru}$. Diambil $2\\text{ spidol}$ satu per satu secara acak tanpa pengembalian. Peluang terambilnya spidol pertama hitam dan spidol kedua juga hitam adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{7}{15}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{21}{50}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{7}{10}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{14}{45}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{21}{100}$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Karena tanpa pengembalian, pada pengambilan kedua banyak spidol hitam dan spidol total berkurang 1 (peluang bersyarat).",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Kondisi awal:\n   - Spidol hitam $= 7$\n   - Total spidol $= 7 + 3 = 10$\n   Peluang spidol pertama hitam: $P(H_1) = \\frac{7}{10}$.\n2. Kondisi setelah 1 spidol hitam diambil (tanpa pengembalian):\n   - Sisa spidol hitam $= 6$\n   - Sisa total spidol $= 9$\n   Peluang spidol kedua hitam bersyarat: $P(H_2 | H_1) = \\frac{6}{9} = \\frac{2}{3}$.\n3. Menghitung peluang kedua spidol hitam:\n   $$P(H_1 \\cap H_2) = P(H_1) \\times P(H_2 | H_1) = \\frac{7}{10} \\times \\frac{2}{3} = \\frac{14}{30} = \\frac{7}{15}$$\n\nJadi, peluangnya adalah $\\frac{7}{15}$."
+  },
+  {
+    "id": "matwa-peluang-kejadian-majemuk-16",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-majemuk",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dalam suatu survei konsumen, peluang seorang pelanggan menyukai kopi adalah $0{,}60$ dan peluang seorang pelanggan menyukai teh sekaligus kopi adalah $0{,}24$. Jika seorang pelanggan yang dipilih acak ternyata menyukai kopi, maka peluang bersyarat pelanggan tersebut juga menyukai teh adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$0{,}144$"
+      },
+      {
+        "id": "B",
+        "text": "$0{,}240$"
+      },
+      {
+        "id": "C",
+        "text": "$0{,}360$"
+      },
+      {
+        "id": "D",
+        "text": "$0{,}400$"
+      },
+      {
+        "id": "E",
+        "text": "$0{,}840$"
+      }
+    ],
+    "correct_answer": "D",
+    "hint": "Gunakan definisi rumus peluang bersyarat: $P(T | K) = \\frac{P(T \\cap K)}{P(K)}$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Mengidentifikasi nilai peluang:\n   - $P(K) = 0{,}60$\n   - $P(T \\cap K) = 0{,}24$\n2. Menghitung peluang bersyarat menyukai teh jika diketahui menyukai kopi:\n   $$P(T | K) = \\frac{P(T \\cap K)}{P(K)} = \\frac{0{,}24}{0{,}60} = \\frac{24}{60} = 0{,}40$$\n\nJadi, peluang bersyaratnya adalah $0{,}40$ (atau $0{,}400$)."
+  },
+  {
+    "id": "matwa-peluang-kejadian-majemuk-17",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-majemuk",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dua orang penembak jitu, $A$ dan $B$, menembak sebuah papan target secara independen. Peluang tembakan $A$ mengenai target adalah $\\frac{3}{4}$, sedangkan peluang tembakan $B$ mengenai target adalah $\\frac{2}{3}$. Peluang bahwa papan target tersebut terkena setidaknya satu tembakan adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{1}{12}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{1}{2}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{7}{12}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{5}{6}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{11}{12}$"
+      }
+    ],
+    "correct_answer": "E",
+    "hint": "Gunakan metode komplemen: peluang setidaknya satu tembakan masuk $= 1 - P(\\text{keduanya meleset})$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Menghitung peluang masing-masing penembak meleset (komplemen):\n   - Peluang $A$ meleset: $P(A') = 1 - \\frac{3}{4} = \\frac{1}{4}$.\n   - Peluang $B$ meleset: $P(B') = 1 - \\frac{2}{3} = \\frac{1}{3}$.\n2. Karena tembakan keduanya independen, peluang keduanya meleset:\n   $$P(A' \\cap B') = P(A') \\times P(B') = \\frac{1}{4} \\times \\frac{1}{3} = \\frac{1}{12}$$\n3. Menghitung peluang target terkena setidaknya satu tembakan:\n   $$P(\\text{minimal satu kena}) = 1 - P(A' \\cap B') = 1 - \\frac{1}{12} = \\frac{11}{12}$$\n\nJadi, peluangnya adalah $\\frac{11}{12}$."
+  },
+  {
     "id": "matwa-peluang-kejadian-majemuk-03",
     "chapter_id": "peluang-dan-kombinatorika",
     "sub_chapter_id": "peluang-kejadian-majemuk",
@@ -204,43 +472,6 @@
     ],
     "hint": "Gunakan Hukum Peluang Total $P(P) = P(A)P(P \\mid A) + P(G)P(P \\mid G)$ dan Teorema Bayes $P(A \\mid P) = \\frac{P(A \\cap P)}{P(P)}$.",
     "explanation": "Langkah-langkah penyelesaian:\n1. Peluang pemilihan kotak melalui lemparan koin seimbang:\n   - $P(\\text{Angka}) = P(K_1) = \\frac{1}{2}$\n   - $P(\\text{Gambar}) = P(K_2) = \\frac{1}{2}$\n2. Peluang bersyarat terambilnya bola putih:\n   - Dari Kotak I: $P(P \\mid K_1) = \\frac{4}{6} = \\frac{2}{3}$. (Pernyataan A BENAR).\n   - Dari Kotak II: $P(P \\mid K_2) = \\frac{3}{8} \\ne \\frac{1}{2}$. (Pernyataan E SALAH).\n3. Menghitung Peluang Total bola putih (Pernyataan B):\n   $$P(P) = P(K_1) \\cdot P(P \\mid K_1) + P(K_2) \\cdot P(P \\mid K_2)$$\n   $$P(P) = \\left(\\frac{1}{2} \\times \\frac{2}{3}\\right) + \\left(\\frac{1}{2} \\times \\frac{3}{8}\\right) = \\frac{1}{3} + \\frac{3}{16} = \\frac{16 + 9}{48} = \\frac{25}{48}$$\n   (Pernyataan B BENAR).\n   - Peluang terambil bola hitam adalah komplemennya: $P(H) = 1 - \\frac{25}{48} = \\frac{23}{48} \\ne \\frac{25}{48}$. (Pernyataan D SALAH).\n4. Evaluasi Teorema Bayes (Pernyataan C):\n   - Peluang bola berasal dari Kotak I jika diketahui berwarna putih:\n     $$P(K_1 \\mid P) = \\frac{P(K_1 \\cap P)}{P(P)} = \\frac{\\frac{1}{3}}{\\frac{25}{48}} = \\frac{1}{3} \\times \\frac{48}{25} = \\frac{16}{25} = 0,64$$\n   (Pernyataan C BENAR).\n\nJadi, seluruh pernyataan yang bernilai BENAR adalah A, B, dan C."
-  },
-  {
-    "id": "matwa-peluang-kejadian-majemuk-07",
-    "chapter_id": "peluang-dan-kombinatorika",
-    "sub_chapter_id": "peluang-kejadian-majemuk",
-    "question_type": "MCMA",
-    "difficulty": "STANDAR",
-    "question_text": "Dua buah dadu standar enam sisi dilempar undi bersama-sama sebanyak satu kali. Didefinisikan dua kejadian:\n- Kejadian $A$: muncul jumlah kedua mata dadu sama dengan $7$\n- Kejadian $B$: muncul kedua mata dadu bernilai sama (mata dadu kembar)\n\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
-    "options": [
-      {
-        "id": "A",
-        "text": "Peluang terjadinya kejadian $A$ adalah $P(A) = \\frac{1}{6}$."
-      },
-      {
-        "id": "B",
-        "text": "Kejadian $A$ dan kejadian $B$ merupakan dua kejadian yang saling lepas (mutually exclusive)."
-      },
-      {
-        "id": "C",
-        "text": "Peluang muncul jumlah mata dadu sama dengan $7$ ATAU mata dadu kembar adalah $\\frac{1}{3}$."
-      },
-      {
-        "id": "D",
-        "text": "Peluang irisan kejadian $A$ dan $B$ adalah $P(A \\cap B) = \\frac{1}{36}$."
-      },
-      {
-        "id": "E",
-        "text": "Peluang terjadinya kejadian $B$ adalah $P(B) = \\frac{1}{12}$."
-      }
-    ],
-    "correct_answer": [
-      "A",
-      "B",
-      "C"
-    ],
-    "hint": "Ruang sampel dua dadu adalah $n(S) = 36$. Cari anggota himpunan kejadian $A$ dan $B$. Periksa apakah ada titik sampel yang memenuhi kedua syarat secara bersamaan.",
-    "explanation": "Langkah-langkah evaluasi pelemparan dua dadu:\n1. Ruang sampel: $n(S) = 6 \\times 6 = 36$.\n2. Anggota kejadian $A$ (jumlah 7):\n   - $A = \\{(1,6), (2,5), (3,4), (4,3), (5,2), (6,1)\\} \\implies n(A) = 6$\n   - $P(A) = \\frac{6}{36} = \\frac{1}{6}$. (Pernyataan A BENAR).\n3. Anggota kejadian $B$ (mata dadu kembar):\n   - $B = \\{(1,1), (2,2), (3,3), (4,4), (5,5), (6,6)\\} \\implies n(B) = 6$\n   - $P(B) = \\frac{6}{36} = \\frac{1}{6} \\ne \\frac{1}{12}$. (Pernyataan E SALAH).\n4. Evaluasi irisan $A \\cap B$:\n   - Pada pasangan kembar $(x, x)$, jumlah mata dadu adalah $2x$ (selalu bilangan genap: $2, 4, 6, 8, 10, 12$).\n   - Karena $7$ adalah bilangan ganjil, tidak ada pasangan kembar yang berjumlah $7$ ($A \\cap B = \\emptyset$).\n   - Jadi, kejadian $A$ dan $B$ saling lepas (mutually exclusive) dan $P(A \\cap B) = 0 \\ne \\frac{1}{36}$.\n   (Pernyataan B BENAR dan Pernyataan D SALAH).\n5. Peluang gabungan dua kejadian saling lepas:\n   $$P(A \\cup B) = P(A) + P(B) = \\frac{1}{6} + \\frac{1}{6} = \\frac{2}{6} = \\frac{1}{3}$$\n   (Pernyataan C BENAR).\n\nJadi, seluruh pernyataan yang bernilai BENAR adalah A, B, dan C."
   },
   {
     "id": "matwa-peluang-kejadian-majemuk-08",

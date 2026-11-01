@@ -66,6 +66,275 @@
     "explanation": "Langkah-langkah eliminasi SPLTV:\n\n1. Beri nomor pada masing-masing persamaan:\n   $$\\begin{aligned} x + y + z &= 6 & \\quad \\text{...(1)} \\\\ 2x - y + z &= 3 & \\quad \\text{...(2)} \\\\ x + 2y - z &= 2 & \\quad \\text{...(3)} \\end{aligned}$$\n\n2. Eliminasi variabel $z$ dengan menjumlahkan persamaan (1) dan persamaan (3):\n   $$(x + y + z) + (x + 2y - z) = 6 + 2 \\implies 2x + 3y = 8 \\quad \\text{...(4)}$$\n\n3. Eliminasi variabel $z$ dengan mengurangkan persamaan (1) dari persamaan (2):\n   $$(2x - y + z) - (x + y + z) = 3 - 6 \\implies x - 2y = -3 \\implies x = 2y - 3 \\quad \\text{...(5)}$$\n\n4. Substitusikan persamaan (5) ke dalam persamaan (4):\n   $$2(2y - 3) + 3y = 8 \\implies 4y - 6 + 3y = 8 \\implies 7y = 14 \\implies y = 2$$\n\n5. Tentukan nilai $x$ dan $z$:\n   $$x = 2(2) - 3 = 1$$\n   Dari persamaan (1): $1 + 2 + z = 6 \\implies z = 3$\n\n6. Hitung hasil kali $x \\cdot y \\cdot z$:\n   $$x \\cdot y \\cdot z = 1 \\cdot 2 \\cdot 3 = 6$$\n\nJadi, jawaban yang benar adalah **A**."
   },
   {
+    "id": "matwa-sistem-persamaan-linear-05",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-persamaan-linear",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Perhatikan dua sistem persamaan linear berikut pada bidang koordinat Kartesius:\n\n**Sistem I:**\n$$\\begin{cases} 2x - y = 4 \\\\ 4x - 2y = 8 \\end{cases}$$\n\n**Sistem II:**\n$$\\begin{cases} x + 2y = 5 \\\\ 2x + 4y = 7 \\end{cases}$$\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR**!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sistem I merepresentasikan dua garis lurus yang saling berimpit."
+      },
+      {
+        "id": "B",
+        "text": "Sistem I memiliki tak terhingga banyaknya pasangan solusi penyelesaian $(x, y)$."
+      },
+      {
+        "id": "C",
+        "text": "Sistem II merepresentasikan dua garis lurus yang saling sejajar dan tidak pernah berpotongan."
+      },
+      {
+        "id": "D",
+        "text": "Sistem II memiliki tepat satu pasangan solusi unik $(x, y)$."
+      },
+      {
+        "id": "E",
+        "text": "Kedua garis pembatas pada Sistem II memiliki nilai gradien yang sama persis ($m_1 = m_2 = -\\frac{2}{3}$)."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "hint": "Bandingkan rasio koefisien $\\frac{a_1}{a_2}$ dan $\\frac{b_1}{b_2}$ terhadap rasio konstanta $\\frac{c_1}{c_2}$. Jika ketiga rasio bernilai sama, kedua garis berimpit. Jika hanya rasio koefisien yang sama, kedua garis sejajar.",
+    "explanation": "Analisis geometris kedua sistem persamaan linear:\n\n- **Analisis Sistem I:**\n  Rasio koefisien dan konstanta: $\\frac{2}{4} = \\frac{-1}{-2} = \\frac{4}{8} = \\frac{1}{2}$.\n  Karena semua perbandingan sama, kedua persamaan mendefinisikan garis lurus yang identik (berimpit). Akibatnya, terdapat tak hingga banyaknya titik persekutuan/solusi. (Pernyataan A dan B **BENAR**)\n\n- **Analisis Sistem II:**\n  Rasio koefisien variabel: $\\frac{1}{2} = \\frac{2}{4} = \\frac{1}{2}$.\n  Namun rasio konstanta: $\\frac{5}{7} \\neq \\frac{1}{2}$.\n  Karena gradien kedua garis sama ($m = -\\frac{1}{2}$) tetapi titik potong sumbu-$Y$ berbeda, kedua garis saling sejajar dan tidak pernah berpotongan. Sistem ini tidak memiliki penyelesaian (himpunan kosong). (Pernyataan C **BENAR**, Pernyataan D **SALAH**)\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Dua garis sejajar pada Sistem II memiliki gradien yang sama persis, yaitu $m = -\\frac{a}{b} = -\\frac{2}{3}$."
+  },
+  {
+    "id": "matwa-sistem-persamaan-linear-11",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-persamaan-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dalam pemodelan laju reaksi kimia dua reaktan tak nol $x > 0$ dan $y > 0$, konsentrasi zat memenuhi sistem persamaan pecahan aljabar:\n$$\\begin{cases} \\frac{2}{x} + \\frac{3}{y} = 8 \\\\[2pt] \\frac{5}{x} - \\frac{2}{y} = 1 \\end{cases}$$\nNilai dari $x + y$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$1$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{3}{2}$"
+      },
+      {
+        "id": "C",
+        "text": "$2$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{5}{2}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{4}{3}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Gunakan pemisalan variabel baru u = 1/x dan v = 1/y untuk mengubahnya menjadi SPLDV linear biasa.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Lakukan substitusi variabel $u = \\frac{1}{x}$ dan $v = \\frac{1}{y}$:\n   $$\\begin{cases} 2u + 3v = 8 \\quad \\text{...(1)} \\\\ 5u - 2v = 1 \\quad \\text{...(2)} \\end{cases}$$\n\n2. Samakan koefisien $v$ dengan eliminasi:\n   - Kalikan pers (1) dengan $2$: $4u + 6v = 16$\n   - Kalikan pers (2) dengan $3$: $15u - 6v = 3$\n   - Jumlahkan kedua persamaan:\n     $$19u = 19 \\implies u = 1$$\n\n3. Cari nilai $v$ dengan substitusi $u = 1$ ke pers (1):\n   $$2(1) + 3v = 8 \\implies 3v = 6 \\implies v = 2$$\n\n4. Kembalikan ke variabel semula $x$ dan $y$:\n   $$u = \\frac{1}{x} = 1 \\implies x = 1$$\n   $$v = \\frac{1}{y} = 2 \\implies y = \\frac{1}{2}$$\n\n5. Hitung nilai $x + y$:\n   $$x + y = 1 + \\frac{1}{2} = \\frac{3}{2}$$\n\nJadi, nilai $x + y$ adalah **B** ($\\frac{3}{2}$)."
+  },
+  {
+    "id": "matwa-sistem-persamaan-linear-12",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-persamaan-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Empat tahun yang lalu, umur seorang ayah adalah empat kali umur anaknya. Enam tahun yang akan datang, umur ayah menjadi dua kali umur anaknya ditambah $6\\text{ tahun}$. Umur ayah sekarang adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$32\\text{ tahun}$"
+      },
+      {
+        "id": "B",
+        "text": "$36\\text{ tahun}$"
+      },
+      {
+        "id": "C",
+        "text": "$40\\text{ tahun}$"
+      },
+      {
+        "id": "D",
+        "text": "$44\\text{ tahun}$"
+      },
+      {
+        "id": "E",
+        "text": "$48\\text{ tahun}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Buat model matematika umur ayah A dan anak B sekarang: (A - 4) = 4(B - 4) dan (A + 6) = 2(B + 6) + 6.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Misalkan umur ayah sekarang $= A$ dan umur anak sekarang $= B$.\n\n2. Susun model matematika dari kalimat soal:\n   - Empat tahun lalu: $A - 4 = 4(B - 4) \\implies A - 4 = 4B - 16 \\implies A - 4B = -12$ ...(1)\n   - Enam tahun mendatang: $A + 6 = 2(B + 6) + 6 \\implies A + 6 = 2B + 12 + 6 \\implies A - 2B = 12$ ...(2)\n\n3. Kurangkan pers (2) dengan pers (1):\n   $$(A - 2B) - (A - 4B) = 12 - (-12)$$\n   $$2B = 24 \\implies B = 12\\text{ tahun}$$\n\n4. Substitusikan $B = 12$ ke pers (2) untuk mendapatkan $A$:\n   $$A - 2(12) = 12 \\implies A - 24 = 12 \\implies A = 36\\text{ tahun}$$\n\nJadi, umur ayah sekarang adalah **B** ($36\\text{ tahun}$)."
+  },
+  {
+    "id": "matwa-sistem-persamaan-linear-13",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-persamaan-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah lahan penjemuran hasil pertanian berbentuk persegi panjang memiliki keliling $76\\text{ meter}$. Jika ukuran panjang lahan tersebut $6\\text{ meter}$ lebih panjang daripada lebarnya, luas lahan penjemuran tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$336\\text{ m}^2$"
+      },
+      {
+        "id": "B",
+        "text": "$348\\text{ m}^2$"
+      },
+      {
+        "id": "C",
+        "text": "$352\\text{ m}^2$"
+      },
+      {
+        "id": "D",
+        "text": "$360\\text{ m}^2$"
+      },
+      {
+        "id": "E",
+        "text": "$364\\text{ m}^2$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Keliling persegi panjang K = 2(p + l) = 76 sehingga p + l = 38. Diketahui p - l = 6.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Misalkan panjang lahan $= p$ dan lebar $= l$.\n\n2. Susun sistem persamaan:\n   - Keliling: $2(p + l) = 76 \\implies p + l = 38$ ...(1)\n   - Selisih: $p - l = 6$ ...(2)\n\n3. Jumlahkan kedua persamaan untuk mencari $p$:\n   $$2p = 44 \\implies p = 22\\text{ m}$$\n\n4. Substitusi $p = 22$ ke pers (1) untuk mencari $l$:\n   $$22 + l = 38 \\implies l = 16\\text{ m}$$\n\n5. Hitung luas lahan ($L = p \\times l$):\n   $$L = 22\\text{ m} \\times 16\\text{ m} = 352\\text{ m}^2$$\n\nJadi, luas lahan tersebut adalah **C** ($352\\text{ m}^2$)."
+  },
+  {
+    "id": "matwa-sistem-persamaan-linear-14",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-persamaan-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah gedung pertunjukan teater seni menjual tiga kategori tiket masuk: Reguler ($x$), Deluxe ($y$), dan VIP ($z$).\n- Pembelian $2$ tiket Reguler, $1$ tiket Deluxe, dan $1$ tiket VIP seharga $\\text{Rp}140.000$.\n- Pembelian $1$ tiket Reguler, $2$ tiket Deluxe, dan $1$ tiket VIP seharga $\\text{Rp}160.000$.\n- Pembelian $1$ tiket Reguler, $1$ tiket Deluxe, dan $2$ tiket VIP seharga $\\text{Rp}180.000$.\nHarga satuan untuk satu tiket kategori VIP ($z$) adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\text{Rp}40.000$"
+      },
+      {
+        "id": "B",
+        "text": "$\\text{Rp}50.000$"
+      },
+      {
+        "id": "C",
+        "text": "$\\text{Rp}60.000$"
+      },
+      {
+        "id": "D",
+        "text": "$\\text{Rp}70.000$"
+      },
+      {
+        "id": "E",
+        "text": "$\\text{Rp}80.000$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Jumlahkan ketiga persamaan untuk memperoleh nilai x + y + z, lalu kurangkan persamaan ketiga dengan (x + y + z).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Susun sistem persamaan tiga variabel:\n   $$\\begin{cases} 2x + y + z = 140.000 \\quad \\text{...(1)} \\\\ x + 2y + z = 160.000 \\quad \\text{...(2)} \\\\ x + y + 2z = 180.000 \\quad \\text{...(3)} \\end{cases}$$\n\n2. Jumlahkan ketiga persamaan tersebut:\n   $$(2x + y + z) + (x + 2y + z) + (x + y + 2z) = 140.000 + 160.000 + 180.000$$\n   $$4x + 4y + 4z = 480.000$$\n   Bagi dengan $4$:\n   $$x + y + z = 120.000 \\quad \\text{...(4)}$$\n\n3. Kurangkan pers (3) dengan pers (4):\n   $$(x + y + 2z) - (x + y + z) = 180.000 - 120.000$$\n   $$z = 60.000$$\n\nJadi, harga tiket VIP adalah **C** ($\\text{Rp}60.000$)."
+  },
+  {
+    "id": "matwa-sistem-persamaan-linear-15",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-persamaan-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan sistem persamaan linear dua variabel sebagai berikut:\n$$\\begin{cases} 3x - 2y = 7 \\\\ kx + 4y = 5 \\end{cases}$$\nSistem persamaan linear tersebut tidak memiliki penyelesaian (kedua garis saling sejajar dan tidak berimpit) apabila nilai konstanta $k$ bernilai ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$-6$"
+      },
+      {
+        "id": "B",
+        "text": "$6$"
+      },
+      {
+        "id": "C",
+        "text": "$-4$"
+      },
+      {
+        "id": "D",
+        "text": "$4$"
+      },
+      {
+        "id": "E",
+        "text": "$-3$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Syarat SPLDV tidak memiliki penyelesaian adalah a1/a2 = b1/b2 != c1/c2.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Untuk SPLDV $a_1 x + b_1 y = c_1$ dan $a_2 x + b_2 y = c_2$, syarat kedua garis sejajar (tidak ada penyelesaian) adalah:\n   $$\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$$\n\n2. Identifikasi koefisien:\n   - $a_1 = 3, b_1 = -2, c_1 = 7$\n   - $a_2 = k, b_2 = 4, c_2 = 5$\n\n3. Samakan rasio koefisien variabel:\n   $$\\frac{3}{k} = \\frac{-2}{4}$$\n   $$\\frac{3}{k} = -\\frac{1}{2} \\implies k = 3 \\times (-2) = -6$$\n\n4. Verifikasi syarat konstanta:\n   $$\\frac{c_1}{c_2} = \\frac{7}{5} \\neq -\\frac{1}{2} \\quad (\\text{terpenuhi})$$\n\nJadi, nilai $k$ adalah **A** ($-6$)."
+  },
+  {
+    "id": "matwa-sistem-persamaan-linear-16",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-persamaan-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diketahui sistem persamaan linear tiga variabel:\n$$\\begin{cases} x + 2y - z = 5 \\\\ 2x - y + 3z = 8 \\\\ 3x + y + 2z = a \\end{cases}$$\nJika persamaan ketiga merupakan kombinasi linier hasil penjumlahan langsung dari persamaan pertama dan kedua, maka nilai konstanta $a$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$11$"
+      },
+      {
+        "id": "B",
+        "text": "$12$"
+      },
+      {
+        "id": "C",
+        "text": "$13$"
+      },
+      {
+        "id": "D",
+        "text": "$14$"
+      },
+      {
+        "id": "E",
+        "text": "$15$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Perhatikan ruas kiri persamaan ketiga: (x + 2x) + (2y - y) + (-z + 3z) = 3x + y + 2z.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Cermati ruas kiri persamaan ketiga:\n   $$(x + 2y - z) + (2x - y + 3z) = (1+2)x + (2-1)y + (-1+3)z = 3x + y + 2z$$\n\n2. Karena ruas kiri pers (3) persis merupakan penjumlahan dari ruas kiri pers (1) dan pers (2), maka ruas kanan persamaan ketiga ($a$) harus sama dengan penjumlahan ruas kanan pers (1) dan pers (2):\n   $$a = 5 + 8 = 13$$\n\nJadi, nilai konstanta $a$ adalah **C** ($13$)."
+  },
+  {
+    "id": "matwa-sistem-persamaan-linear-17",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-persamaan-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Seorang teknisi laboratorium farmasi harus meracik $100\\text{ liter}$ larutan antiseptik dengan konsentrasi alkohol $40\\%$. Bahan yang tersedia di laboratorium adalah larutan alkohol dengan konsentrasi $30\\%$ dan $70\\%$. Volume larutan alkohol $70\\%$ yang harus diambil untuk campuran tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$20\\text{ liter}$"
+      },
+      {
+        "id": "B",
+        "text": "$25\\text{ liter}$"
+      },
+      {
+        "id": "C",
+        "text": "$30\\text{ liter}$"
+      },
+      {
+        "id": "D",
+        "text": "$35\\text{ liter}$"
+      },
+      {
+        "id": "E",
+        "text": "$40\\text{ liter}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Gunakan persamaan total volume x + y = 100 dan persamaan zat murni 0,30x + 0,70y = 0,40(100).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Misalkan volume larutan $30\\% = x\\text{ liter}$ dan volume larutan $70\\% = y\\text{ liter}$.\n\n2. Susun sistem persamaan:\n   - Total volume: $x + y = 100 \\implies x = 100 - y$ ...(1)\n   - Total zat alkohol murni: $0{,}30x + 0{,}70y = 0{,}40(100) = 40$ ...(2)\n\n3. Substitusikan pers (1) ke pers (2):\n   $$0{,}30(100 - y) + 0{,}70y = 40$$\n   $$30 - 0{,}30y + 0{,}70y = 40$$\n   $$30 + 0{,}40y = 40$$\n   $$0{,}40y = 10 \\implies y = \\frac{10}{0{,}40} = 25\\text{ liter}$$\n\nJadi, volume larutan alkohol $70\\%$ yang diperlukan adalah **B** ($25\\text{ liter}$)."
+  },
+  {
     "id": "matwa-sistem-persamaan-linear-03",
     "chapter_id": "aljabar-linear",
     "sub_chapter_id": "sistem-persamaan-linear",
@@ -130,44 +399,6 @@
     "correct_answer": "A",
     "hint": "Syarat SPLDV memiliki tak hingga solusi adalah perbandingan koefisien dan konstantanya setara: $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$.",
     "explanation": "Langkah-langkah penentuan syarat solusi tak hingga:\n\n1. Suatu sistem persamaan linear dua variabel $\\begin{cases} a_1 x + b_1 y = c_1 \\\\ a_2 x + b_2 y = c_2 \\end{cases}$ memiliki tak hingga banyak penyelesaian jika dan hanya jika kedua persamaan tersebut saling berkelipatan (kedua garis berimpit), yang memenuhi rasio:\n   $$\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$$\n\n2. Terapkan nilai koefisien dari soal:\n   $$\\frac{k + 1}{6} = \\frac{2}{k} = \\frac{8}{12}$$\n\n3. Sederhanakan rasio konstanta:\n   $$\\frac{8}{12} = \\frac{2}{3}$$\n\n4. Selesaikan persamaan rasio koefisien $y$:\n   $$\\frac{2}{k} = \\frac{2}{3} \\implies 2k = 6 \\implies k = 3$$\n\n5. Uji konsistensi untuk nilai $k = 3$ pada koefisien $x$:\n   $$\\frac{k + 1}{6} = \\frac{3 + 1}{6} = \\frac{4}{6} = \\frac{2}{3}$$\n   Karena ketiga rasio sama persis $\\left(\\frac{2}{3} = \\frac{2}{3} = \\frac{2}{3}\\right)$, maka nilai $k$ yang tepat adalah $3$.\n\nJadi, jawaban yang benar adalah **A**."
-  },
-  {
-    "id": "matwa-sistem-persamaan-linear-05",
-    "chapter_id": "aljabar-linear",
-    "sub_chapter_id": "sistem-persamaan-linear",
-    "question_type": "MCMA",
-    "difficulty": "STANDAR",
-    "question_text": "Perhatikan dua sistem persamaan linear berikut pada bidang koordinat Kartesius:\n\n**Sistem I:**\n$$\\begin{cases} 2x - y = 4 \\\\ 4x - 2y = 8 \\end{cases}$$\n\n**Sistem II:**\n$$\\begin{cases} x + 2y = 5 \\\\ 2x + 4y = 7 \\end{cases}$$\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR**!",
-    "options": [
-      {
-        "id": "A",
-        "text": "Sistem I merepresentasikan dua garis lurus yang saling berimpit."
-      },
-      {
-        "id": "B",
-        "text": "Sistem I memiliki tak terhingga banyaknya pasangan solusi penyelesaian $(x, y)$."
-      },
-      {
-        "id": "C",
-        "text": "Sistem II merepresentasikan dua garis lurus yang saling sejajar dan tidak pernah berpotongan."
-      },
-      {
-        "id": "D",
-        "text": "Sistem II memiliki tepat satu pasangan solusi unik $(x, y)$."
-      },
-      {
-        "id": "E",
-        "text": "Kedua garis pembatas pada Sistem II memiliki nilai gradien yang sama persis ($m_1 = m_2 = -\\frac{2}{3}$)."
-      }
-    ],
-    "correct_answer": [
-      "A",
-      "B",
-      "C",
-      "E"
-    ],
-    "hint": "Bandingkan rasio koefisien $\\frac{a_1}{a_2}$ dan $\\frac{b_1}{b_2}$ terhadap rasio konstanta $\\frac{c_1}{c_2}$. Jika ketiga rasio bernilai sama, kedua garis berimpit. Jika hanya rasio koefisien yang sama, kedua garis sejajar.",
-    "explanation": "Analisis geometris kedua sistem persamaan linear:\n\n- **Analisis Sistem I:**\n  Rasio koefisien dan konstanta: $\\frac{2}{4} = \\frac{-1}{-2} = \\frac{4}{8} = \\frac{1}{2}$.\n  Karena semua perbandingan sama, kedua persamaan mendefinisikan garis lurus yang identik (berimpit). Akibatnya, terdapat tak hingga banyaknya titik persekutuan/solusi. (Pernyataan A dan B **BENAR**)\n\n- **Analisis Sistem II:**\n  Rasio koefisien variabel: $\\frac{1}{2} = \\frac{2}{4} = \\frac{1}{2}$.\n  Namun rasio konstanta: $\\frac{5}{7} \\neq \\frac{1}{2}$.\n  Karena gradien kedua garis sama ($m = -\\frac{1}{2}$) tetapi titik potong sumbu-$Y$ berbeda, kedua garis saling sejajar dan tidak pernah berpotongan. Sistem ini tidak memiliki penyelesaian (himpunan kosong). (Pernyataan C **BENAR**, Pernyataan D **SALAH**)\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Dua garis sejajar pada Sistem II memiliki gradien yang sama persis, yaitu $m = -\\frac{a}{b} = -\\frac{2}{3}$."
   },
   {
     "id": "matwa-sistem-persamaan-linear-06",
