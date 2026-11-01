@@ -78,118 +78,122 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
     currentQuestion?.question_type || currentQuestion?.type || 'PG';
 
   return (
-    <header className="sticky top-0 z-50 w-full max-w-full bg-white/95 dark:bg-[#0B0F19]/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-md transition-colors print:hidden">
-      {/* 1. Main Reader Header Toolbar */}
-      <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 flex items-center justify-between gap-2 sm:gap-4 border-b border-slate-100 dark:border-slate-800/60">
-        {/* Left: Branding & Tagline */}
-        <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-shrink">
-          <div className="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold text-sm shadow-sm flex-shrink-0">
-            <FileText className="w-4 h-4" />
-          </div>
-          <div className="min-w-0 truncate">
-            <div className="flex items-center gap-1.5 sm:gap-2">
-              <span className="font-extrabold text-sm sm:text-base text-slate-900 dark:text-white tracking-tight truncate">
-                Matwa-TKA
-                <span className="hidden sm:inline text-indigo-600 dark:text-indigo-400 font-semibold text-xs sm:text-sm">
-                  {' '}| 8 Bab &amp; 22 Sub-Bab
+    <div className="w-full max-w-full print:hidden">
+      {/* 1. Main Reader Header Toolbar (Non-statis: mengalir alami dan tergulung saat di-scroll) */}
+      <div className="w-full bg-white dark:bg-[#0B0F19] border-b border-slate-200 dark:border-slate-800 transition-colors">
+        <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 flex items-center justify-between gap-2 sm:gap-4">
+          {/* Left: Branding & Tagline */}
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-shrink">
+            <div className="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold text-sm shadow-sm flex-shrink-0">
+              <FileText className="w-4 h-4" />
+            </div>
+            <div className="min-w-0 truncate">
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                <span className="font-extrabold text-sm sm:text-base text-slate-900 dark:text-white tracking-tight truncate">
+                  Matwa-TKA
+                  <span className="hidden sm:inline text-indigo-600 dark:text-indigo-400 font-semibold text-xs sm:text-sm">
+                    {' '}| 8 Bab &amp; 24 Sub-Bab
+                  </span>
                 </span>
-              </span>
-              <span className="hidden md:inline-flex px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 font-mono flex-shrink-0">
-                KURIKULUM RESMI
-              </span>
+                <span className="hidden md:inline-flex px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 font-mono flex-shrink-0">
+                  KURIKULUM RESMI
+                </span>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Right: Reader Toolbar Controls */}
-        <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
-          {/* Display Mode Toggle */}
-          <button
-            onClick={onToggleDisplayMode}
-            className="flex items-center gap-1.5 p-1.5 sm:px-2.5 sm:py-1.5 rounded-lg text-xs font-semibold border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
-            title={
-              displayMode === 'continuous'
-                ? 'Beralih ke Mode Lembar Per Soal'
-                : 'Beralih ke Mode Dokumen Utuh Bersambung'
-            }
-          >
-            {displayMode === 'continuous' ? (
-              <>
-                <Layers className="w-4 h-4 sm:w-3.5 sm:h-3.5 text-indigo-500" />
-                <span className="hidden md:inline">Mode Dokumen Utuh</span>
-              </>
-            ) : (
-              <>
-                <FileText className="w-4 h-4 sm:w-3.5 sm:h-3.5 text-indigo-500" />
-                <span className="hidden md:inline">Mode Per Soal</span>
-              </>
-            )}
-          </button>
-
-          {/* Toggle All Hints & Solutions */}
-          <button
-            onClick={onToggleAllExpanded}
-            className="hidden sm:flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-semibold border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
-            title={allExpanded ? 'Tutup Seluruh Pembahasan' : 'Buka Seluruh Pembahasan'}
-          >
-            {allExpanded ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
-            <span className="hidden lg:inline">{allExpanded ? 'Tutup Solusi' : 'Buka Solusi'}</span>
-          </button>
-
-          {/* Font Scaling / Zoom */}
-          <div className="hidden md:flex items-center border border-slate-200 dark:border-slate-700 rounded-lg overflow-hidden bg-slate-50 dark:bg-slate-800 text-xs">
+          {/* Right: Reader Toolbar Controls */}
+          <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+            {/* Display Mode Toggle */}
             <button
-              onClick={onZoomOut}
-              className="p-1.5 px-2 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300"
-              title="Perkecil Ukuran Teks (A-)"
+              onClick={onToggleDisplayMode}
+              className="flex items-center gap-1.5 p-1.5 sm:px-2.5 sm:py-1.5 rounded-lg text-xs font-semibold border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+              title={
+                displayMode === 'continuous'
+                  ? 'Beralih ke Mode Lembar Per Soal'
+                  : 'Beralih ke Mode Dokumen Utuh Bersambung'
+              }
             >
-              <ZoomOut className="w-3.5 h-3.5" />
+              {displayMode === 'continuous' ? (
+                <>
+                  <Layers className="w-4 h-4 sm:w-3.5 sm:h-3.5 text-indigo-500" />
+                  <span className="hidden md:inline">Mode Dokumen Utuh</span>
+                </>
+              ) : (
+                <>
+                  <FileText className="w-4 h-4 sm:w-3.5 sm:h-3.5 text-indigo-500" />
+                  <span className="hidden md:inline">Mode Per Soal</span>
+                </>
+              )}
             </button>
-            <span className="px-2 py-1 font-mono text-[11px] font-bold text-slate-600 dark:text-slate-300 select-none">
-              {zoomLevel}%
-            </span>
+
+            {/* Toggle All Hints & Solutions */}
             <button
-              onClick={onZoomIn}
-              className="p-1.5 px-2 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300"
-              title="Perbesar Ukuran Teks (A+)"
+              onClick={onToggleAllExpanded}
+              className="hidden sm:flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-semibold border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+              title={allExpanded ? 'Tutup Seluruh Pembahasan' : 'Buka Seluruh Pembahasan'}
             >
-              <ZoomIn className="w-3.5 h-3.5" />
+              {allExpanded ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
+              <span className="hidden lg:inline">{allExpanded ? 'Tutup Solusi' : 'Buka Solusi'}</span>
+            </button>
+
+            {/* Font Scaling / Zoom */}
+            <div className="hidden md:flex items-center border border-slate-200 dark:border-slate-700 rounded-lg overflow-hidden bg-slate-50 dark:bg-slate-800 text-xs">
+              <button
+                onClick={onZoomOut}
+                className="p-1.5 px-2 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300"
+                title="Perkecil Ukuran Teks (A-)"
+              >
+                <ZoomOut className="w-3.5 h-3.5" />
+              </button>
+              <span className="px-2 py-1 font-mono text-[11px] font-bold text-slate-600 dark:text-slate-300 select-none">
+                {zoomLevel}%
+              </span>
+              <button
+                onClick={onZoomIn}
+                className="p-1.5 px-2 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300"
+                title="Perbesar Ukuran Teks (A+)"
+              >
+                <ZoomIn className="w-3.5 h-3.5" />
+              </button>
+            </div>
+
+            {/* Print / Save to PDF */}
+            <button
+              onClick={() => window.print()}
+              className="hidden sm:flex p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              title="Cetak atau Simpan sebagai PDF"
+            >
+              <Printer className="w-4 h-4" />
+            </button>
+
+            {/* Theme Toggle */}
+            <button
+              onClick={onToggleDarkMode}
+              className="p-1.5 sm:p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              title={isDarkMode ? 'Kertas Terang (White Paper)' : 'Kertas Gelap (Night Reading)'}
+            >
+              {isDarkMode ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-slate-600" />}
+            </button>
+
+            {/* Evaluation / Scoring Trigger */}
+            <button
+              onClick={onOpenEvaluation}
+              className="flex items-center gap-1 px-2.5 py-1.5 sm:px-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold shadow-sm transition-all"
+            >
+              <CheckCircle className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Rekap Nilai</span>
+              <span className="font-mono text-[11px] bg-indigo-700 px-1.5 py-0.2 rounded ml-0.5">
+                {totalAnswered}
+              </span>
             </button>
           </div>
-
-          {/* Print / Save to PDF */}
-          <button
-            onClick={() => window.print()}
-            className="hidden sm:flex p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-            title="Cetak atau Simpan sebagai PDF"
-          >
-            <Printer className="w-4 h-4" />
-          </button>
-
-          {/* Theme Toggle */}
-          <button
-            onClick={onToggleDarkMode}
-            className="p-1.5 sm:p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-            title={isDarkMode ? 'Kertas Terang (White Paper)' : 'Kertas Gelap (Night Reading)'}
-          >
-            {isDarkMode ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-slate-600" />}
-          </button>
-
-          {/* Evaluation / Scoring Trigger */}
-          <button
-            onClick={onOpenEvaluation}
-            className="flex items-center gap-1 px-2.5 py-1.5 sm:px-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold shadow-sm transition-all"
-          >
-            <CheckCircle className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">Rekap Nilai</span>
-            <span className="font-mono text-[11px] bg-indigo-700 px-1.5 py-0.2 rounded ml-0.5">
-              {totalAnswered}
-            </span>
-          </button>
         </div>
       </div>
 
-      {/* 2. BARIS ATAS (BAB BESAR): Horizontal Scrollable Pills/Tabs */}
+      {/* 2. STICKY TOPBAR: HANYA BAB, SUB-BAB, DAN SOAL (STATIS DI ATAS SAAT SCROLL) */}
+      <header className="sticky top-0 z-40 w-full max-w-full bg-white/95 dark:bg-[#0B0F19]/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-md transition-colors">
+        {/* 2.1 BARIS ATAS (BAB BESAR): Horizontal Scrollable Pills/Tabs */}
       <div className="bg-slate-50/90 dark:bg-[#0E1424]/90 border-b border-slate-200 dark:border-slate-800 w-full">
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full flex items-center gap-2 py-1.5">
           <span className="hidden lg:inline-flex text-[11px] font-mono font-bold text-slate-500 uppercase flex-shrink-0">
@@ -310,5 +314,6 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
         </div>
       </div>
     </header>
-  );
+  </div>
+);
 };
