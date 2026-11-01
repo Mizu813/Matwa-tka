@@ -1,1 +1,337 @@
-[]
+[
+  {
+    "id": "matwa-statistika-data-tunggal-01",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "statistika-data-tunggal",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah distributor peralatan rumah tangga mencatat volume penjualan unit dispenser air setiap bulan selama satu tahun penuh (12 bulan) seperti disajikan pada tabel berikut:\n\n| Bulan | Penjualan (Unit) |\n| :--- | :---: |\n| Januari | $14$ |\n| Februari | $18$ |\n| Maret | $12$ |\n| April | $20$ |\n| Mei | $16$ |\n| Juni | $18$ |\n| Juli | $22$ |\n| Agustus | $18$ |\n| September | $15$ |\n| Oktober | $24$ |\n| November | $16$ |\n| Desember | $23$ |\n\nSimpangan kuartil ($Q_d$) dan nilai median dari data penjualan tahunan tersebut berturut-turut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$2,25\\text{ unit}$ dan $17,5\\text{ unit}$"
+      },
+      {
+        "id": "B",
+        "text": "$2,75\\text{ unit}$ dan $18\\text{ unit}$"
+      },
+      {
+        "id": "C",
+        "text": "$3,00\\text{ unit}$ dan $18\\text{ unit}$"
+      },
+      {
+        "id": "D",
+        "text": "$5,50\\text{ unit}$ dan $18\\text{ unit}$"
+      },
+      {
+        "id": "E",
+        "text": "$5,50\\text{ unit}$ dan $19\\text{ unit}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Urutkan ke-12 data dari yang terkecil ke yang terbesar. Tentukan median ($Q_2$) dari rata-rata data ke-6 dan ke-7, lalu cari kuartil bawah ($Q_1$) dan kuartil atas ($Q_3$). Simpangan kuartil dihitung dengan rumus $Q_d = \\frac{1}{2}(Q_3 - Q_1)$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Urutkan seluruh data penjualan ($n = 12$):\n   $$12, 14, 15, 16, 16, 18, 18, 18, 20, 22, 23, 24$$\n2. Menentukan Median ($Q_2$):\n   - Karena $n = 12$ (genap), median terletak di antara data ke-6 dan data ke-7:\n     $$Q_2 = \\frac{x_6 + x_7}{2} = \\frac{18 + 18}{2} = 18\\text{ unit}$$\n3. Menentukan Kuartil Bawah ($Q_1$):\n   - Kuartil bawah adalah median dari paruh bawah (6 data pertama: $12, 14, 15, 16, 16, 18$):\n     $$Q_1 = \\frac{x_3 + x_4}{2} = \\frac{15 + 16}{2} = 15,5\\text{ unit}$$\n4. Menentukan Kuartil Atas ($Q_3$):\n   - Kuartil atas adalah median dari paruh atas (6 data terakhir: $18, 18, 20, 22, 23, 24$):\n     $$Q_3 = \\frac{x_9 + x_{10}}{2} = \\frac{20 + 22}{2} = 21\\text{ unit}$$\n5. Menghitung Simpangan Kuartil ($Q_d$):\n   $$Q_d = \\frac{1}{2}(Q_3 - Q_1) = \\frac{1}{2}(21 - 15,5) = \\frac{1}{2}(5,5) = 2,75\\text{ unit}$$\n\nSebagai tambahan, modus data adalah $18$ (muncul 3 kali) dan rata-ratanya adalah $\\frac{216}{12} = 18$.\nJadi, simpangan kuartil dan nilai median berturut-turut adalah $2,75\\text{ unit}$ dan $18\\text{ unit}$."
+  },
+  {
+    "id": "matwa-statistika-data-tunggal-02",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "statistika-data-tunggal",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Nilai ujian matematika dari $30\\text{ siswa}$ memiliki rata-rata $\\bar{x} = 64$ dan simpangan baku $s = 8$. Guru matematika memutuskan untuk melakukan standardisasi nilai dengan rumus konversi linear:\n$$y_i = 1,2x_i + 10$$\nuntuk setiap nilai siswa $x_i$. Rata-rata baru ($\\bar{y}$) dan simpangan baku baru ($s_y$) dari kumpulan nilai siswa tersebut berturut-turut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$86,8$ dan $8,0$"
+      },
+      {
+        "id": "B",
+        "text": "$86,8$ dan $9,6$"
+      },
+      {
+        "id": "C",
+        "text": "$86,8$ dan $19,6$"
+      },
+      {
+        "id": "D",
+        "text": "$76,8$ dan $9,6$"
+      },
+      {
+        "id": "E",
+        "text": "$76,8$ dan $19,6$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Pada transformasi linear $y = ax + b$, ukuran pemusatan (seperti rata-rata) dipengaruhi oleh perkalian dan penjumlahan: $\\bar{y} = a\\bar{x} + b$. Namun, ukuran penyebaran (seperti simpangan baku) hanya dipengaruhi oleh nilai mutlak pengali: $s_y = |a| \\cdot s_x$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Sifat transformasi linear data tunggal terhadap ukuran pemusatan:\n   - Rata-rata dipengaruhi oleh operasi perkalian skala dan pergeseran penjumlahan.\n   $$\\bar{y} = 1,2\\bar{x} + 10$$\n   $$\\bar{y} = 1,2(64) + 10 = 76,8 + 10 = 86,8$$\n2. Sifat transformasi linear data tunggal terhadap ukuran penyebaran:\n   - Simpangan baku hanya dipengaruhi oleh perkalian konstanta $|a|$ dan tidak terpengaruh oleh konstanta penambahan $+b$.\n   $$s_y = |a| \\cdot s = |1,2| \\times 8 = 9,6$$\n\nJadi, rata-rata baru dan simpangan baku baru berturut-turut adalah $86,8$ dan $9,6$."
+  },
+  {
+    "id": "matwa-statistika-data-tunggal-03",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "statistika-data-tunggal",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Lima bilangan bulat positif $x_1, x_2, x_3, x_4, x_5$ telah diurutkan sehingga berlaku $x_1 \\le x_2 \\le x_3 \\le x_4 \\le x_5$. Kelima bilangan tersebut memiliki rata-rata $14$, median $15$, jangkauan $12$, serta memiliki modus tunggal bernilai $15$. Nilai terkecil yang mungkin untuk bilangan terbesar ($x_5$) adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$17$"
+      },
+      {
+        "id": "B",
+        "text": "$18$"
+      },
+      {
+        "id": "C",
+        "text": "$19$"
+      },
+      {
+        "id": "D",
+        "text": "$20$"
+      },
+      {
+        "id": "E",
+        "text": "$21$"
+      }
+    ],
+    "correct_answer": "D",
+    "hint": "Gunakan rumus jumlah seluruh data: $\\sum x_i = 5 \\times 14 = 70$. Hubungkan $x_1$ dan $x_5$ melalui jangkauan $x_5 - x_1 = 12$. Perhatikan bahwa karena $15$ adalah modus tunggal dan median $x_3 = 15$, maka tidak boleh ada bilangan selain $15$ yang muncul lebih dari satu kali jika $15$ hanya muncul dua kali.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Dari informasi soal:\n   - Jumlah kelima bilangan: $x_1 + x_2 + x_3 + x_4 + x_5 = 5 \\times 14 = 70$.\n   - Median data: $x_3 = 15$.\n   - Jangkauan: $x_5 - x_1 = 12 \\implies x_1 = x_5 - 12$.\n2. Substitusikan $x_1$ dan $x_3$ ke persamaan jumlah:\n   $$(x_5 - 12) + x_2 + 15 + x_4 + x_5 = 70$$\n   $$2x_5 + x_2 + x_4 + 3 = 70$$\n   $$2x_5 + x_2 + x_4 = 67$$\n3. Untuk meminimumkan nilai $x_5$, kita harus memaksimumkan nilai $x_2$ dan $x_4$:\n   - Berdasarkan urutan: $x_1 \\le x_2 \\le 15 \\le x_4 \\le x_5$.\n   - Maka nilai maksimum yang mungkin untuk $x_2$ adalah $x_2 \\le 15$.\n   - Nilai maksimum yang mungkin untuk $x_4$ adalah $x_4 \\le x_5$.\n   - Jika kita ambil $x_2 = 15$ dan $x_4 = x_5$:\n     $$2x_5 + 15 + x_5 \\ge 67$$\n     $$3x_5 + 15 \\ge 67 \\implies 3x_5 \\ge 52 \\implies x_5 \\ge \\frac{52}{3} \\approx 17,33$$\n4. Uji nilai bilangan bulat $x_5$ mulai dari $18$ ke atas:\n   - Jika $x_5 = 18$:\n     $x_1 = 18 - 12 = 6$.\n     $2(18) + x_2 + x_4 = 67 \\implies x_2 + x_4 = 31$.\n     Karena $x_2 \\le 15$ dan $x_4 \\le 18$, nilai maksimum dari $x_2 + x_4$ adalah $15 + 18 = 33$.\n     Agar $x_2 + x_4 = 31$, kombinasinya bisa $x_2 = 13, x_4 = 18$ atau $x_2 = 14, x_4 = 17$ atau $x_2 = 15, x_4 = 16$.\n     * Kasus $x_2 = 13, x_4 = 18$: Data $= 6, 13, 15, 18, 18$. Modusnya adalah $18$, kontradiksi dengan modus tunggal $15$.\n     * Kasus $x_2 = 14, x_4 = 17$: Data $= 6, 14, 15, 17, 18$. Semua bilangan berbeda, sehingga tidak memiliki modus tunggal bernilai $15$, kontradiksi.\n     * Kasus $x_2 = 15, x_4 = 16$: Data $= 6, 15, 15, 16, 18$. Pada kasus ini $x_1 = 6, x_2 = 15, x_3 = 15, x_4 = 16, x_5 = 18$. Namun jangkauan $18 - 6 = 12$, median $15$, modus tunggal $15$, tetapi periksa syarat $x_4 \\le x_5$. Apakah $x_5 = 18$ mungkin? Tunggu, jika $x_2 = 15, x_4 = 16$, maka $2(18) + 15 + 16 = 36 + 31 = 67$. Cek rata-rata: $\\frac{6 + 15 + 15 + 16 + 18}{5} = \\frac{70}{5} = 14$. Median $= 15$. Modus $= 15$. Jangkauan $= 18 - 6 = 12$.\n     Tunggu, apakah ada batasan lain? Mari kita periksa jika $x_5$ lebih kecil:\n     Jika $x_5 = 19$: $x_1 = 7$. $x_2 + x_4 = 67 - 38 = 29$. Dengan $x_2 = 14, x_4 = 15$, data: $7, 14, 15, 15, 19$. Modus tunggal $15$, rata-rata $14$, jangkauan $12$.\n     Jika $x_5 = 18$: Data $6, 15, 15, 16, 18$. Seluruh syarat terpenuhi! Apakah ada opsi $18$?\n     Opsi B adalah $18$! Mari kita periksa dengan sangat teliti:\n     Apakah $6, 15, 15, 16, 18$ valid?\n     1. Bilangan bulat positif: $6, 15, 15, 16, 18$ (ya).\n     2. Terurut: $6 \\le 15 \\le 15 \\le 16 \\le 18$ (ya).\n     3. Rata-rata: $\\frac{6 + 15 + 15 + 16 + 18}{5} = \\frac{70}{5} = 14$ (ya).\n     4. Median: data ke-3 adalah $15$ (ya).\n     5. Jangkauan: $18 - 6 = 12$ (ya).\n     6. Modus tunggal: $15$ muncul 2 kali, angka lain muncul 1 kali (ya, modus tunggal 15).\n     Tunggu, apa yang terjadi jika $x_5 = 17$?\n     Jika $x_5 = 17$, maka $x_1 = 17 - 12 = 5$. Persamaan: $2(17) + x_2 + x_4 = 67 \\implies x_2 + x_4 = 33$.\n     Karena $x_2 \\le 15$ dan $x_4 \\le 17$, nilai maksimum $x_2 + x_4 = 15 + 17 = 32 < 33$. Sehingga tidak ada solusi untuk $x_5 = 17$!\n     Dengan demikian, nilai terkecil yang mungkin untuk $x_5$ adalah tepat $18$!\n\nMari kita tetapkan kunci jawaban B ($18$)."
+  },
+  {
+    "id": "matwa-statistika-data-tunggal-04",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "statistika-data-tunggal",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Sebanyak lima data pengamatan $x_1, x_2, x_3, x_4, x_5$ memiliki rata-rata $\\bar{x} = 10$ dan varians (ragam) $\\sigma^2 = 6$. Setiap data mula-mula ditransformasikan dengan rumus $y_i = 2x_i - 3$. Kemudian, satu data baru yang bernilai $17$ ditambahkan ke dalam kumpulan data hasil transformasi tersebut. Rata-rata baru dan varians baru dari keenam data tersebut berturut-turut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$17$ dan $20$"
+      },
+      {
+        "id": "B",
+        "text": "$17$ dan $24$"
+      },
+      {
+        "id": "C",
+        "text": "$19$ dan $20$"
+      },
+      {
+        "id": "D",
+        "text": "$19$ dan $24$"
+      },
+      {
+        "id": "E",
+        "text": "$20$ dan $25$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Tentukan rata-rata dan varians kelima data setelah transformasi $y = 2x - 3$. Perhatikan bahwa nilai data keenam yang ditambahkan persis sama dengan rata-rata data hasil transformasi, sehingga jumlah kuadrat deviasi tidak bertambah namun pembaginya bertambah dari 5 menjadi 6.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Hitung rata-rata dan varians dari 5 data setelah transformasi $y_i = 2x_i - 3$:\n   - Rata-rata hasil transformasi ($\\bar{y}$):\n     $$\\bar{y} = 2\\bar{x} - 3 = 2(10) - 3 = 17$$\n   - Varians hasil transformasi ($\\sigma_y^2$):\n     $$\\sigma_y^2 = 2^2 \\cdot \\sigma^2 = 4 \\times 6 = 24$$\n2. Hitung jumlah kuadrat deviasi dari 5 data tersebut terhadap rata-ratanya:\n   $$\\sum_{i=1}^5 (y_i - 17)^2 = 5 \\times \\sigma_y^2 = 5 \\times 24 = 120$$\n3. Penambahan data keenam ($y_6 = 17$):\n   - Rata-rata baru ($\\bar{y}_{baru}$):\n     $$\\bar{y}_{baru} = \\frac{5 \\times 17 + 17}{6} = \\frac{102}{6} = 17$$\n   - Jumlah kuadrat deviasi baru terhadap $\\bar{y}_{baru} = 17$:\n     $$\\sum_{i=1}^6 (y_i - 17)^2 = 120 + (17 - 17)^2 = 120 + 0 = 120$$\n   - Varians baru ($\\sigma_{baru}^2$):\n     $$\\sigma_{baru}^2 = \\frac{120}{6} = 20$$\n\nJadi, rata-rata baru adalah $17$ dan varians baru adalah $20$."
+  },
+  {
+    "id": "matwa-statistika-data-tunggal-05",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "statistika-data-tunggal",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Sebanyak $17\\text{ murid}$ di suatu kelas telah mengikuti ujian matematika (skala nilai bilangan bulat $0 - 100$) dan memperoleh rata-rata nilai sebesar $83$. Beberapa hari kemudian, sebanyak $3\\text{ murid}$ susulan mengikuti ujian yang sama, sehingga rata-rata gabungan seluruh $20\\text{ murid}$ tersebut berubah menjadi $82$.\n\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Jumlah total nilai dari ketiga murid susulan tersebut adalah $229$."
+      },
+      {
+        "id": "B",
+        "text": "Rata-rata nilai dari ketiga murid susulan adalah $76\\frac{1}{3}$."
+      },
+      {
+        "id": "C",
+        "text": "Nilai terendah yang mungkin diperoleh oleh salah satu murid susulan tidak kurang dari $29$."
+      },
+      {
+        "id": "D",
+        "text": "Nilai tertinggi di antara ketiga murid susulan tersebut paling sedikit bernilai $77$."
+      },
+      {
+        "id": "E",
+        "text": "Jangkauan maksimum nilai antara ketiga murid susulan tersebut adalah $81$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "hint": "Gunakan rumus rata-rata gabungan untuk menentukan jumlah total nilai 3 murid susulan. Untuk mencari nilai batas ekstrem (minimum/maksimum), asumsikan murid lainnya meraih nilai batas maksimal (100) atau nilai yang sedekat mungkin.",
+    "explanation": "Langkah-langkah analisis nilai ekstrem:\n1. Menghitung total nilai 17 murid mula-mula:\n   $$\\sum x_{17} = 17 \\times 83 = 1.411$$\n2. Menghitung total nilai gabungan 20 murid:\n   $$\\sum x_{20} = 20 \\times 82 = 1.640$$\n3. Menghitung total nilai dan rata-rata 3 murid susulan (misalkan nilainya $a \\le b \\le c$):\n   $$a + b + c = 1.640 - 1.411 = 229$$\n   (Pernyataan A BENAR).\n   - Rata-rata 3 murid susulan:\n     $$\\bar{x}_3 = \\frac{229}{3} = 76\\frac{1}{3} \\approx 76,33$$\n   (Pernyataan B BENAR).\n4. Menganalisis nilai terendah minimum yang mungkin ($a_{min}$):\n   - Nilai $a$ akan minimum ketika dua nilai lainnya ($b$ dan $c$) bernilai maksimum setinggi mungkin, yaitu $b = 100$ dan $c = 100$.\n   $$a_{min} + 100 + 100 = 229 \\implies a_{min} = 229 - 200 = 29$$\n   - Artinya, nilai terendah tidak mungkin bernilai lebih kecil dari $29$ (selalu $\\ge 29$). (Pernyataan C BENAR).\n5. Menganalisis nilai tertinggi minimum ($c_{min}$):\n   - Nilai $c$ akan minimum ketika ketiga nilai terdistribusi serata mungkin ($a, b, c$ sedekat mungkin).\n   - Karena $a + b + c = 229$ dan $\\frac{229}{3} = 76,33$, jika seluruh nilai bulat $\\le 76$, maka jumlah maksimumnya hanya $3 \\times 76 = 228 < 229$.\n   - Agar totalnya $229$, nilai terbesar $c$ minimal harus bernilai $77$ (misalnya dengan sebaran nilai $76, 76, 77$). (Pernyataan D BENAR).\n6. Menganalisis jangkauan maksimum ($R_{maks}$):\n   - Jangkauan maksimum terjadi saat selisih nilai terbesar dan terkecil paling lebar: $c = 100$ dan $a = 29$.\n   $$R_{maks} = 100 - 29 = 71$$\n   - Nilai $71 \\ne 81$, sehingga Pernyataan E SALAH.\n\nJadi, pernyataan yang bernilai BENAR adalah A, B, C, dan D."
+  },
+  {
+    "id": "matwa-statistika-data-tunggal-06",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "statistika-data-tunggal",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Diberikan sekumpulan data tunggal yang terdiri dari tujuh bilangan bulat terurut:\n$$4, 6, 7, 8, 8, 10, 13$$\nJika ke dalam kumpulan data tersebut ditambahkan dua data baru yang masing-masing bernilai $8$, sehingga sekarang kumpulan data memiliki sembilan bilangan.\n\nPilihlah seluruh pernyataan berikut yang bernilai BENAR mengenai data baru tersebut!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rata-rata dan median data baru tidak mengalami perubahan dibandingkan data semula (keduanya tetap bernilai $8$)."
+      },
+      {
+        "id": "B",
+        "text": "Jangkauan dari kumpulan data baru tetap sama dengan jangkauan data semula, yaitu bernilai $9$."
+      },
+      {
+        "id": "C",
+        "text": "Simpangan rata-rata ($SR$) dari kumpulan data yang baru adalah $\\frac{14}{9}$."
+      },
+      {
+        "id": "D",
+        "text": "Varians (ragam) dari kumpulan data yang baru bernilai lebih besar daripada varians data semula."
+      },
+      {
+        "id": "E",
+        "text": "Kumpulan data baru tidak memiliki modus karena seluruh frekuensi data menyebar secara seragam."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Hitung ukuran pemusatan (mean, median, modus) dan ukuran penyebaran (jangkauan, simpangan rata-rata, varians) sebelum dan sesudah penambahan dua data bernilai 8.",
+    "explanation": "Langkah-langkah analisis perbandingan data:\n1. Analisis data semula ($n = 7$):\n   - Data: $4, 6, 7, 8, 8, 10, 13$\n   - Rata-rata: $\\bar{x} = \\frac{4+6+7+8+8+10+13}{7} = \\frac{56}{7} = 8$\n   - Median: data ke-4 adalah $8$\n   - Jangkauan: $13 - 4 = 9$\n   - Modus: $8$ (muncul 2 kali)\n   - Jumlah deviasi mutlak: $|4-8| + |6-8| + |7-8| + |8-8| + |8-8| + |10-8| + |13-8| = 4+2+1+0+0+2+5 = 14$\n   - Simpangan rata-rata mula-mula: $SR = \\frac{14}{7} = 2$\n   - Varians mula-mula: $\\sigma^2 = \\frac{4^2+2^2+1^2+0^2+0^2+2^2+5^2}{7} = \\frac{16+4+1+0+0+4+25}{7} = \\frac{50}{7} \\approx 7,14$\n2. Analisis setelah penambahan dua data baru bernilai $8$ ($n = 9$):\n   - Data baru: $4, 6, 7, 8, 8, 8, 8, 10, 13$\n   - Rata-rata baru: $\\bar{x}_{baru} = \\frac{56 + 8 + 8}{9} = \\frac{72}{9} = 8$ (tetap $8$)\n   - Median baru: data ke-5 adalah $8$ (tetap $8$)\n   - Karena rata-rata dan median tetap $8$, Pernyataan A BENAR.\n   - Jangkauan baru: $13 - 4 = 9$ (tetap $9$). Pernyataan B BENAR.\n   - Modus baru: $8$ (frekuensinya meningkat menjadi 4 kali). Pernyataan E SALAH.\n3. Ukuran penyebaran data baru:\n   - Deviasi mutlak kedua data baru terhadap rata-rata ($8$) adalah $|8-8| = 0$.\n   - Jumlah deviasi mutlak baru: $14 + 0 + 0 = 14$.\n   - Simpangan rata-rata baru: $SR_{baru} = \\frac{14}{9}$. Pernyataan C BENAR.\n   - Varians baru: $\\sigma_{baru}^2 = \\frac{50 + 0^2 + 0^2}{9} = \\frac{50}{9} \\approx 5,56$.\n   - Karena $5,56 < 7,14$, varians baru justru mengecil (lebih homogen), bukan membesar. Pernyataan D SALAH.\n\nJadi, pernyataan yang bernilai BENAR adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-statistika-data-tunggal-07",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "statistika-data-tunggal",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan lima data pengamatan bilangan bulat:\n$$3, 5, 6, 7, 9$$\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rata-rata (mean) dari data tersebut adalah $6$."
+      },
+      {
+        "id": "B",
+        "text": "Simpangan rata-rata ($SR$) dari data tersebut adalah $1,6$."
+      },
+      {
+        "id": "C",
+        "text": "Simpangan baku ($s$) dari data tersebut adalah $2$."
+      },
+      {
+        "id": "D",
+        "text": "Varians (ragam) dari data tersebut adalah $8$."
+      },
+      {
+        "id": "E",
+        "text": "Median dari kumpulan data tersebut bernilai $5$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Hitung nilai rata-rata terlebih dahulu. Kemudian gunakan definisi simpangan rata-rata $SR = \\frac{\\sum |x_i - \\bar{x}|}{n}$ dan varians $\\sigma^2 = \\frac{\\sum (x_i - \\bar{x})^2}{n}$. Simpangan baku adalah akar kuadrat dari varians.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Menghitung Rata-rata ($\\bar{x}$):\n   $$\\bar{x} = \\frac{3 + 5 + 6 + 7 + 9}{5} = \\frac{30}{5} = 6$$\n   (Pernyataan A BENAR).\n2. Menentukan Median:\n   - Data terurut: $3, 5, 6, 7, 9$. Median adalah data ke-3, yaitu $6$ (bukan $5$).\n   (Pernyataan E SALAH).\n3. Menghitung Simpangan Rata-rata ($SR$):\n   - Selisih mutlak terhadap mean: $|3-6|=3, |5-6|=1, |6-6|=0, |7-6|=1, |9-6|=3$.\n   $$SR = \\frac{3 + 1 + 0 + 1 + 3}{5} = \\frac{8}{5} = 1,6$$\n   (Pernyataan B BENAR).\n4. Menghitung Varians ($\\sigma^2$) dan Simpangan Baku ($s$):\n   - Kuadrat selisih terhadap mean: $3^2=9, 1^2=1, 0^2=0, 1^2=1, 3^2=9$.\n   $$\\sigma^2 = \\frac{9 + 1 + 0 + 1 + 9}{5} = \\frac{20}{5} = 4$$\n   (Pernyataan D SALAH karena varians adalah $4$, bukan $8$).\n   - Simpangan baku:\n     $$s = \\sqrt{\\sigma^2} = \\sqrt{4} = 2$$\n   (Pernyataan C BENAR).\n\nJadi, pernyataan yang bernilai BENAR adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-statistika-data-tunggal-08",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "statistika-data-tunggal",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Sekelompok data nilai hasil psikotes memiliki rata-rata $\\bar{x} = 50$, median $Me = 48$, jangkauan $R = 24$, dan simpangan baku $s = 6$. Karena terdapat penyesuaian skala nasional, setiap data nilai dikonversikan dengan aturan:\n$$y_i = 1,5x_i - 10$$\n\nTentukan kategori BENAR atau SALAH untuk setiap pernyataan berikut mengenai kumpulan nilai baru hasil konversi tersebut!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rata-rata nilai yang baru adalah $65$."
+      },
+      {
+        "id": "B",
+        "text": "Jangkauan nilai yang baru adalah $26$."
+      },
+      {
+        "id": "C",
+        "text": "Simpangan baku nilai yang baru adalah $9$."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Salah",
+      "C": "Benar"
+    },
+    "hint": "Perhatikan perbedaan pengaruh operasi aljabar pada ukuran pemusatan (mean, median) vs ukuran penyebaran (jangkauan, simpangan baku). Operasi pergeseran $-10$ tidak mempengaruhi ukuran penyebaran.",
+    "explanation": "Langkah-langkah evaluasi transformasi linear data $y = ax + b$ dengan $a = 1,5$ dan $b = -10$:\n1. Evaluasi Rata-rata baru (Pernyataan A):\n   - Rata-rata merupakan ukuran pemusatan, sehingga dipengaruhi oleh perkalian skala dan pergeseran:\n     $$\\bar{y} = 1,5\\bar{x} - 10 = 1,5(50) - 10 = 75 - 10 = 65$$\n   - Maka, Pernyataan A bernilai BENAR.\n2. Evaluasi Jangkauan baru (Pernyataan B):\n   - Jangkauan merupakan ukuran penyebaran, sehingga HANYA dipengaruhi oleh faktor pengali $|a|$ dan TIDAK terpengaruh oleh penambahan/pengurangan $b$:\n     $$R_{baru} = |1,5| \\times R = 1,5 \\times 24 = 36$$\n   - Karena nilai jangkauan baru adalah $36$ (bukan $26$), maka Pernyataan B bernilai SALAH.\n3. Evaluasi Simpangan Baku baru (Pernyataan C):\n   - Simpangan baku merupakan ukuran penyebaran, sehingga hanya dikalikan faktor $|a|$:\n     $$s_{baru} = |1,5| \\times s = 1,5 \\times 6 = 9$$\n   - Maka, Pernyataan C bernilai BENAR.\n\nKesimpulan Kategori:\n- Pernyataan A: Benar\n- Pernyataan B: Salah\n- Pernyataan C: Benar"
+  },
+  {
+    "id": "matwa-statistika-data-tunggal-09",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "statistika-data-tunggal",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Diberikan delapan data pengamatan bilangan bulat yang telah diurutkan:\n$$x_1, x_2, x_3, x_4, x_5, x_6, x_7, x_8$$\ndengan $x_1 \\le x_2 \\le \\dots \\le x_8$. Diketahui:\n- Nilai minimum $x_1 = 12$ dan jangkauan $R = 20$\n- Kuartil bawah $Q_1 = 16$\n- Median $Q_2 = 21$\n- Kuartil atas $Q_3 = 26$\n\nTentukan kategori BENAR atau SALAH untuk setiap pernyataan berikut!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Simpangan kuartil ($Q_d$) dari data pengamatan tersebut adalah $5$."
+      },
+      {
+        "id": "B",
+        "text": "Batas pagar luar atas (ambang batas pencilan atas) dengan rumus $Q_3 + 1,5(Q_3 - Q_1)$ bernilai $41$, sehingga nilai data terbesar ($x_8 = 32$) bukan merupakan pencilan (outlier)."
+      },
+      {
+        "id": "C",
+        "text": "Jika dua data pengamatan baru yang masing-masing bernilai $21$ disisipkan ke dalam kumpulan data tersebut, maka nilai median data yang baru akan meningkat menjadi $23$."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Salah"
+    },
+    "hint": "Gunakan rumus jangkauan antarkuartil $QR = Q_3 - Q_1$ dan simpangan kuartil $Q_d = \\frac{1}{2}QR$. Analisis pengaruh penambahan data yang nilainya persis sama dengan median terhadap posisi median baru.",
+    "explanation": "Langkah-langkah analisis kuartil dan pencilan:\n1. Evaluasi Simpangan Kuartil (Pernyataan A):\n   - Jangkauan antarkuartil: $QR = Q_3 - Q_1 = 26 - 16 = 10$.\n   - Simpangan kuartil: $Q_d = \\frac{1}{2}QR = \\frac{1}{2}(10) = 5$.\n   - Maka, Pernyataan A bernilai BENAR.\n2. Evaluasi Ambang Pencilan Atas (Pernyataan B):\n   - Nilai maksimum $x_8 = x_1 + R = 12 + 20 = 32$.\n   - Pagar luar atas: $Q_3 + 1,5 \\times QR = 26 + 1,5(10) = 26 + 15 = 41$.\n   - Karena $x_8 = 32 \\le 41$, data terbesar tidak melampaui pagar luar atas, sehingga bukan merupakan pencilan (outlier).\n   - Maka, Pernyataan B bernilai BENAR.\n3. Evaluasi Penambahan Data pada Median (Pernyataan C):\n   - Data semula berjumlah $n = 8$ dengan $Q_2 = 21$.\n   - Jika disisipkan dua data bernilai $21$, total data menjadi $n = 10$.\n   - Data ke-5 dan ke-6 pada susunan data baru keduanya pasti bernilai $21$, sehingga median baru adalah $\\frac{21 + 21}{2} = 21$ (tetap $21$, tidak meningkat menjadi $23$).\n   - Maka, Pernyataan C bernilai SALAH.\n\nKesimpulan Kategori:\n- Pernyataan A: Benar\n- Pernyataan B: Benar\n- Pernyataan C: Salah"
+  },
+  {
+    "id": "matwa-statistika-data-tunggal-10",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "statistika-data-tunggal",
+    "question_type": "KECUKUPAN_DATA",
+    "difficulty": "HOTS",
+    "question_text": "Diketahui lima bilangan bulat positif $a, b, c, d, e$ membentuk barisan aritmetika naik ($a < b < c < d < e$).\n\nBerapakah nilai rata-rata dari kelima bilangan tersebut?\n\nPutuskan apakah pernyataan (1) dan (2) berikut cukup untuk menjawab pertanyaan tersebut:\n(1) Median dari kelima bilangan tersebut adalah $18$.\n(2) Jumlah bilangan terkecil dan terbesar adalah $36$ ($a + e = 36$).",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (2) SAJA tidak cukup."
+      },
+      {
+        "id": "B",
+        "text": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (1) SAJA tidak cukup."
+      },
+      {
+        "id": "C",
+        "text": "DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup."
+      },
+      {
+        "id": "D",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan Pernyataan (2) SAJA cukup."
+      },
+      {
+        "id": "E",
+        "text": "Pernyataan (1) dan Pernyataan (2) tidak cukup untuk menjawab pertanyaan."
+      }
+    ],
+    "correct_answer": "D",
+    "hint": "Gunakan sifat simetri barisan aritmetika: rata-rata dari barisan aritmetika dengan jumlah suku ganjil sama dengan suku tengahnya (median). Suku tengah juga sama dengan setengah dari jumlah suku pertama dan suku terakhir: $c = \\frac{a+e}{2}$.",
+    "explanation": "Langkah-langkah analisis kecukupan data:\nPertanyaan: Berapakah nilai rata-rata $\\bar{x} = \\frac{a + b + c + d + e}{5}$?\nKarena kelima bilangan membentuk barisan aritmetika, berlaku hubungan:\n$$b = c - b_0, \\quad d = c + b_0, \\quad a = c - 2b_0, \\quad e = c + 2b_0$$\nJumlah seluruh data:\n$$a + b + c + d + e = (c - 2b_0) + (c - b_0) + c + (c + b_0) + (c + 2b_0) = 5c$$\nSehingga rata-rata kelima bilangan adalah:\n$$\\bar{x} = \\frac{5c}{5} = c$$\nArtinya, nilai rata-rata selalu persis sama dengan suku tengah $c$ (median).\n\n1. Meninjau Pernyataan (1) SAJA:\n   - Diketahui median $= 18$. Karena data terurut ganjil, median adalah suku tengah $c = 18$.\n   - Akibatnya, rata-rata kelima bilangan adalah $\\bar{x} = c = 18$.\n   - Nilai rata-rata dapat ditentukan secara pasti dan unik.\n   - Maka, Pernyataan (1) SAJA CUKUP.\n\n2. Meninjau Pernyataan (2) SAJA:\n   - Diketahui $a + e = 36$.\n   - Pada barisan aritmetika, jumlah suku pertama dan suku terakhir sama dengan dua kali suku tengah:\n     $$a + e = (c - 2b_0) + (c + 2b_0) = 2c$$\n     $$2c = 36 \\implies c = 18$$\n   - Karena $c = 18$, maka rata-rata kelima bilangan adalah $\\bar{x} = c = 18$.\n   - Nilai rata-rata dapat ditentukan secara pasti dan unik.\n   - Maka, Pernyataan (2) SAJA CUKUP.\n\nKesimpulan:\nPernyataan (1) SAJA cukup untuk menjawab pertanyaan dan Pernyataan (2) SAJA cukup.\nJadi, pilihan yang tepat adalah D."
+  }
+]

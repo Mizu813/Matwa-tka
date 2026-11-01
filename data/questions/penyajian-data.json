@@ -1,1 +1,336 @@
-[]
+[
+  {
+    "id": "matwa-penyajian-data-01",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "penyajian-data",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Tabel berikut menyajikan data jumlah penduduk di lima kota penyangga kawasan metropolitan (Kota A, Kota B, Kota C, Kota D, dan Kota E) berdasarkan hasil sensus kependudukan. Namun, data populasi untuk Kota C terhapus akibat kendala teknis sistem pengarsipan.\n\n| Kota | Jumlah Penduduk (Jiwa) |\n| :--- | :--- |\n| Kota A | $280.000$ |\n| Kota B | $310.000$ |\n| Kota C | $x$ (terhapus) |\n| Kota D | $240.000$ |\n| Kota E | $170.000$ |\n\nJika total populasi kelima kota tersebut adalah $1.250.000\\text{ jiwa}$, maka jumlah penduduk Kota C dan persentasenya terhadap total populasi kelima kota berturut-turut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$200.000\\text{ jiwa}$ dan $16\\%$"
+      },
+      {
+        "id": "B",
+        "text": "$225.000\\text{ jiwa}$ dan $18\\%$"
+      },
+      {
+        "id": "C",
+        "text": "$250.000\\text{ jiwa}$ dan $20\\%$"
+      },
+      {
+        "id": "D",
+        "text": "$275.000\\text{ jiwa}$ dan $22\\%$"
+      },
+      {
+        "id": "E",
+        "text": "$300.000\\text{ jiwa}$ dan $24\\%$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Jumlahkan data populasi empat kota yang telah diketahui, lalu kurangkan total populasi kelima kota dengan jumlah tersebut untuk mendapatkan nilai $x$. Hitung persentase dengan rumus $\\frac{x}{\\text{Total Populasi}} \\times 100\\%$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Hitung jumlah populasi dari empat kota yang diketahui:\n   $$\\text{Jumlah} = 280.000 + 310.000 + 240.000 + 170.000 = 1.000.000\\text{ jiwa}$$\n2. Menentukan populasi Kota C ($x$):\n   $$x = \\text{Total Populasi} - 1.000.000$$\n   $$x = 1.250.000 - 1.000.000 = 250.000\\text{ jiwa}$$\n3. Menghitung persentase populasi Kota C terhadap total populasi kelima kota:\n   $$\\text{Persentase} = \\frac{250.000}{1.250.000} \\times 100\\% = \\frac{1}{5} \\times 100\\% = 20\\%$$\n\nJadi, jumlah penduduk Kota C adalah $250.000\\text{ jiwa}$ dan persentasenya adalah $20\\%$."
+  },
+  {
+    "id": "matwa-penyajian-data-02",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "penyajian-data",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah koperasi tani mencatat volume penjualan gabah kering panen (dalam satuan ton) selama semester pertama tahun 2025 seperti disajikan pada tabel berikut:\n\n| Bulan | Volume Penjualan (Ton) |\n| :--- | :--- |\n| Januari | $120$ |\n| Februari | $150$ |\n| Maret | $135$ |\n| April | $180$ |\n| Mei | $144$ |\n| Juni | $216$ |\n\nPeningkatan persentase penjualan terbesar terhadap bulan sebelumnya terjadi pada periode bulan ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "Januari ke Februari (naik $25\\%$)"
+      },
+      {
+        "id": "B",
+        "text": "Februari ke Maret (turun $10\\%$)"
+      },
+      {
+        "id": "C",
+        "text": "Maret ke April (naik $33,33\\%$)"
+      },
+      {
+        "id": "D",
+        "text": "April ke Mei (turun $20\\%$)"
+      },
+      {
+        "id": "E",
+        "text": "Mei ke Juni (naik $50\\%$)"
+      }
+    ],
+    "correct_answer": "E",
+    "hint": "Identifikasi bulan-bulan yang mengalami kenaikan volume penjualan terhadap bulan sebelumnya, lalu hitung persentase kenaikan dengan rumus $\\frac{\\text{Volume Baru} - \\text{Volume Lama}}{\\text{Volume Lama}} \\times 100\\%$.",
+    "explanation": "Langkah-langkah evaluasi perubahan persentase penjualan antar bulan:\n1. Periode Januari ke Februari:\n   - Kenaikan volume: $150 - 120 = 30\\text{ ton}$\n   - Persentase: $\\frac{30}{120} \\times 100\\% = 25\\%$\n2. Periode Februari ke Maret:\n   - Mengalami penurunan: $135 - 150 = -15\\text{ ton}$ (penurunan sebesar $10\\%$)\n3. Periode Maret ke April:\n   - Kenaikan volume: $180 - 135 = 45\\text{ ton}$\n   - Persentase: $\\frac{45}{135} \\times 100\\% = \\frac{1}{3} \\times 100\\% \\approx 33,33\\%$\n4. Periode April ke Mei:\n   - Mengalami penurunan: $144 - 180 = -36\\text{ ton}$ (penurunan sebesar $20\\%$)\n5. Periode Mei ke Juni:\n   - Kenaikan volume: $216 - 144 = 72\\text{ ton}$\n   - Persentase: $\\frac{72}{144} \\times 100\\% = \\frac{1}{2} \\times 100\\% = 50\\%$\n\nBerdasarkan perbandingan di atas, peningkatan persentase penjualan terbesar terjadi pada periode Mei ke Juni, yaitu sebesar $50\\%$."
+  },
+  {
+    "id": "matwa-penyajian-data-03",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "penyajian-data",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Sebuah lembaga penelitian mengalokasikan total dana riset sebesar $\\text{Rp}18.000.000.000,00$ untuk lima bidang fokus. Distribusi alokasi disajikan dalam diagram lingkaran dengan sudut pusat masing-masing bidang sebagai berikut:\n- Bioteknologi: $100^\\circ$\n- Energi Terbarukan: $80^\\circ$\n- Material Maju: $60^\\circ$\n- Robotika Otomasi: $40^\\circ$\n- Kecerdasan Buatan (AI): sisanya ($x^\\circ$)\n\nJika pada pertengahan tahun diputuskan dana riset untuk bidang Kecerdasan Buatan (AI) ditambah sebesar $20\\%$ yang diambil dari realokasi efisiensi pos lain, maka besar alokasi anggaran baru untuk bidang Kecerdasan Buatan adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\text{Rp}4.000.000.000,00$"
+      },
+      {
+        "id": "B",
+        "text": "$\\text{Rp}4.500.000.000,00$"
+      },
+      {
+        "id": "C",
+        "text": "$\\text{Rp}4.800.000.000,00$"
+      },
+      {
+        "id": "D",
+        "text": "$\\text{Rp}5.000.000.000,00$"
+      },
+      {
+        "id": "E",
+        "text": "$\\text{Rp}5.600.000.000,00$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Total sudut satu lingkaran penuh adalah $360^\\circ$. Tentukan sudut bidang AI terlebih dahulu, hitung anggaran mula-mula dari proporsi sudut terhadap $360^\\circ$, kemudian tambahkan kenaikan $20\\%$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Hitung sudut pusat untuk bidang Kecerdasan Buatan (AI):\n   - Total sudut lingkaran: $360^\\circ$.\n   - Jumlah sudut empat bidang lainnya: $100^\\circ + 80^\\circ + 60^\\circ + 40^\\circ = 280^\\circ$.\n   - Sudut bidang AI: $x^\\circ = 360^\\circ - 280^\\circ = 80^\\circ$.\n2. Hitung alokasi dana awal untuk bidang AI:\n   $$\\text{Dana Awal} = \\frac{80^\\circ}{360^\\circ} \\times \\text{Rp}18.000.000.000,00$$\n   $$\\text{Dana Awal} = \\frac{2}{9} \\times \\text{Rp}18.000.000.000,00 = \\text{Rp}4.000.000.000,00$$\n3. Hitung anggaran baru setelah penambahan $20\\%$:\n   $$\\text{Penambahan} = 20\\% \\times \\text{Rp}4.000.000.000,00 = \\text{Rp}800.000.000,00$$\n   $$\\text{Anggaran Baru} = \\text{Rp}4.000.000.000,00 + \\text{Rp}800.000.000,00 = \\text{Rp}4.800.000.000,00$$\n\nJadi, alokasi anggaran baru untuk bidang Kecerdasan Buatan adalah $\\text{Rp}4.800.000.000,00$."
+  },
+  {
+    "id": "matwa-penyajian-data-04",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "penyajian-data",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Dinas Ketahanan Pangan mencatat neraca komoditas beras selama empat kuartal (Q1, Q2, Q3, Q4) dalam setahun di suatu wilayah administratif seperti disajikan pada tabel berikut:\n\n| Kuartal | Produksi (Ribu Ton) | Konsumsi (Ribu Ton) |\n| :---: | :---: | :---: |\n| Q1 | $140$ | $120$ |\n| Q2 | $160$ | $130$ |\n| Q3 | $95$ | $125$ |\n| Q4 | $110$ | $135$ |\n\nSetiap kuartal yang mengalami kelebihan produksi (surplus) disimpan seluruhnya ke dalam lumbung logistik pangan daerah, sedangkan setiap kuartal yang mengalami kekurangan produksi (defisit) ditutup dari stok lumbung tersebut. Jika stok cadangan awal beras di lumbung pada awal tahun (sebelum Q1) adalah $20\\text{ ribu ton}$, maka stok akhir beras yang tersisa di lumbung pada penghujung tahun (setelah Q4) adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$5\\text{ ribu ton}$"
+      },
+      {
+        "id": "B",
+        "text": "$10\\text{ ribu ton}$"
+      },
+      {
+        "id": "C",
+        "text": "$15\\text{ ribu ton}$"
+      },
+      {
+        "id": "D",
+        "text": "$20\\text{ ribu ton}$"
+      },
+      {
+        "id": "E",
+        "text": "$25\\text{ ribu ton}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Hitung neraca tiap kuartal dengan $\\text{Surplus/Defisit} = \\text{Produksi} - \\text{Konsumsi}$. Akumulasikan perubahan neto tersebut mulai dari stok awal $20\\text{ ribu ton}$ hingga kuartal terakhir.",
+    "explanation": "Langkah-langkah analisis neraca beras per kuartal:\n1. Kuartal 1 (Q1):\n   - Produksi: $140$, Konsumsi: $120 \\implies$ Surplus: $+20\\text{ ribu ton}$.\n   - Stok lumbung akhir Q1: $20 + 20 = 40\\text{ ribu ton}$.\n2. Kuartal 2 (Q2):\n   - Produksi: $160$, Konsumsi: $130 \\implies$ Surplus: $+30\\text{ ribu ton}$.\n   - Stok lumbung akhir Q2: $40 + 30 = 70\\text{ ribu ton}$.\n3. Kuartal 3 (Q3):\n   - Produksi: $95$, Konsumsi: $125 \\implies$ Defisit: $95 - 125 = -30\\text{ ribu ton}$.\n   - Stok lumbung akhir Q3: $70 - 30 = 40\\text{ ribu ton}$.\n4. Kuartal 4 (Q4):\n   - Produksi: $110$, Konsumsi: $135 \\implies$ Defisit: $110 - 135 = -25\\text{ ribu ton}$.\n   - Stok lumbung akhir Q4: $40 - 25 = 15\\text{ ribu ton}$.\n\nAlternatif perhitungan total neto setahun:\n- Total Produksi: $140 + 160 + 95 + 110 = 505\\text{ ribu ton}$.\n- Total Konsumsi: $120 + 130 + 125 + 135 = 510\\text{ ribu ton}$.\n- Perubahan neto setahun: $505 - 510 = -5\\text{ ribu ton}$.\n- Stok akhir: $20 + (-5) = 15\\text{ ribu ton}$.\n\nJadi, sisa stok beras di lumbung pada akhir tahun adalah $15\\text{ ribu ton}$."
+  },
+  {
+    "id": "matwa-penyajian-data-05",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "penyajian-data",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Sebuah toko elektronik resmi mencatat volume penjualan unit dua tipe laptop, yaitu Tipe Alpha dan Tipe Beta, selama lima bulan berturut-turut pada semester pertama. Harga jual tetap per unit untuk Tipe Alpha adalah $\\text{Rp}8.000.000,00$ dan untuk Tipe Beta adalah $\\text{Rp}12.000.000,00$.\n\n| Bulan | Penjualan Tipe Alpha (Unit) | Penjualan Tipe Beta (Unit) |\n| :--- | :---: | :---: |\n| Januari | $25$ | $15$ |\n| Februari | $30$ | $20$ |\n| Maret | $20$ | $25$ |\n| April | $35$ | $15$ |\n| Mei | $40$ | $30$ |\n\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rata-rata penjualan bulanan laptop Tipe Alpha selama lima bulan tersebut adalah $30\\text{ unit}$ per bulan."
+      },
+      {
+        "id": "B",
+        "text": "Total pendapatan (omzet) dari penjualan laptop Tipe Beta selama lima bulan lebih besar daripada total pendapatan dari penjualan laptop Tipe Alpha."
+      },
+      {
+        "id": "C",
+        "text": "Bulan dengan total omzet gabungan kedua tipe laptop tertinggi adalah bulan Mei dengan nilai omzet $\\text{Rp}680.000.000,00$."
+      },
+      {
+        "id": "D",
+        "text": "Total seluruh unit laptop Tipe Alpha yang terjual selama lima bulan sama dengan total unit laptop Tipe Beta yang terjual."
+      },
+      {
+        "id": "E",
+        "text": "Selisih volume penjualan unit terbesar antara laptop Tipe Alpha dan Tipe Beta terjadi pada bulan Mei."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Hitung total unit dan rata-rata untuk masing-masing tipe laptop. Kalikan jumlah unit dengan harga jual masing-masing tipe laptop untuk menganalisis pendapatan (omzet) per bulan dan total omzet.",
+    "explanation": "Langkah-langkah analisis komprehensif:\n1. Evaluasi Penjualan Unit dan Rata-rata:\n   - Total unit Alpha: $25 + 30 + 20 + 35 + 40 = 150\\text{ unit}$.\n   - Rata-rata bulanan Alpha: $\\frac{150}{5} = 30\\text{ unit}$. (Pernyataan A BENAR).\n   - Total unit Beta: $15 + 20 + 25 + 15 + 30 = 105\\text{ unit}$.\n   - Karena $150 \\ne 105$, total unit kedua tipe tidak sama. (Pernyataan D SALAH).\n2. Evaluasi Total Omzet Kedua Tipe:\n   - Omzet Alpha: $150 \\times \\text{Rp}8.000.000 = \\text{Rp}1.200.000.000,00$.\n   - Omzet Beta: $105 \\times \\text{Rp}12.000.000 = \\text{Rp}1.260.000.000,00$.\n   - Karena $\\text{Rp}1.260.000.000 > \\text{Rp}1.200.000.000$, total omzet Tipe Beta lebih besar daripada Tipe Alpha. (Pernyataan B BENAR).\n3. Evaluasi Omzet Gabungan Bulanan:\n   - Januari: $(25 \\times 8) + (15 \\times 12) = 200 + 180 = \\text{Rp}380.000.000,00$\n   - Februari: $(30 \\times 8) + (20 \\times 12) = 240 + 240 = \\text{Rp}480.000.000,00$\n   - Maret: $(20 \\times 8) + (25 \\times 12) = 160 + 300 = \\text{Rp}460.000.000,00$\n   - April: $(35 \\times 8) + (15 \\times 12) = 280 + 180 = \\text{Rp}460.000.000,00$\n   - Mei: $(40 \\times 8) + (30 \\times 12) = 320 + 360 = \\text{Rp}680.000.000,00$\n   - Omzet tertinggi gabungan terjadi pada bulan Mei sebesar $\\text{Rp}680.000.000,00$. (Pernyataan C BENAR).\n4. Evaluasi Selisih Unit per Bulan:\n   - Januari: $|25 - 15| = 10\\text{ unit}$\n   - Februari: $|30 - 20| = 10\\text{ unit}$\n   - Maret: $|20 - 25| = 5\\text{ unit}$\n   - April: $|35 - 15| = 20\\text{ unit}$\n   - Mei: $|40 - 30| = 10\\text{ unit}$\n   - Selisih terbesar terjadi pada bulan April ($20\\text{ unit}$), bukan bulan Mei. (Pernyataan E SALAH).\n\nJadi, pernyataan yang bernilai BENAR adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-penyajian-data-06",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "penyajian-data",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Sebuah kawasan industri melakukan survei moda transportasi utama yang digunakan oleh $1.800\\text{ karyawan}$ untuk berangkat kerja. Data disajikan dalam bentuk diagram lingkaran dengan komposisi sektor sebagai berikut:\n- Bus Jemputan Karyawan: sudut pusat $120^\\circ$\n- Kereta Commuter Line: persentase $25\\%$\n- Mobil Pribadi: sudut pusat $40^\\circ$\n- Sepeda Motor: sudut pusat $x^\\circ$\n- Jalan Kaki / Sepeda Non-motor: persentase $5\\%$\n\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Banyak karyawan yang menggunakan Bus Jemputan Karyawan adalah $600\\text{ orang}$."
+      },
+      {
+        "id": "B",
+        "text": "Besar sudut pusat untuk sektor pengguna Kereta Commuter Line adalah $90^\\circ$."
+      },
+      {
+        "id": "C",
+        "text": "Banyak karyawan yang menggunakan Sepeda Motor adalah $460\\text{ orang}$."
+      },
+      {
+        "id": "D",
+        "text": "Selisih banyak pengguna Mobil Pribadi dan pengguna Jalan Kaki / Sepeda Non-motor adalah $150\\text{ orang}$."
+      },
+      {
+        "id": "E",
+        "text": "Persentase karyawan pengguna Bus Jemputan Karyawan terhadap total seluruh karyawan adalah tepat $40\\%$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Konversikan seluruh sektor ke dalam derajat atau jumlah orang. Ingat bahwa $360^\\circ = 100\\% = 1.800\\text{ orang}$. Maka $1^\\circ = 5\\text{ orang}$ dan $1\\% = 18\\text{ orang} = 3,6^\\circ$.",
+    "explanation": "Langkah-langkah konversi dan analisis data diagram lingkaran:\n1. Faktor konversi dasar:\n   - Total populasi: $1.800\\text{ orang} = 360^\\circ = 100\\%$.\n   - Setiap $1^\\circ$ mewakili $\\frac{1.800}{360} = 5\\text{ orang}$.\n   - Setiap $1\\%$ mewakili $\\frac{1.800}{100} = 18\\text{ orang} = 3,6^\\circ$.\n2. Evaluasi Bus Jemputan Karyawan:\n   - Sudut pusat: $120^\\circ$.\n   - Jumlah karyawan: $120 \\times 5 = 600\\text{ orang}$. (Pernyataan A BENAR).\n   - Persentase: $\\frac{120^\\circ}{360^\\circ} \\times 100\\% = 33\\frac{1}{3}\\% \\ne 40\\%$. (Pernyataan E SALAH).\n3. Evaluasi Kereta Commuter Line:\n   - Persentase: $25\\%$.\n   - Sudut pusat: $25\\% \\times 360^\\circ = 90^\\circ$. (Pernyataan B BENAR).\n   - Jumlah karyawan: $25 \\times 18 = 450\\text{ orang}$.\n4. Evaluasi Mobil Pribadi:\n   - Sudut pusat: $40^\\circ$.\n   - Jumlah karyawan: $40 \\times 5 = 200\\text{ orang}$.\n5. Evaluasi Jalan Kaki / Sepeda Non-motor:\n   - Persentase: $5\\%$.\n   - Sudut pusat: $5 \\times 3,6^\\circ = 18^\\circ$.\n   - Jumlah karyawan: $5 \\times 18 = 90\\text{ orang}$.\n6. Evaluasi Sepeda Motor ($x^\\circ$):\n   - Total sudut yang terpakai selain motor: $120^\\circ + 90^\\circ + 40^\\circ + 18^\\circ = 268^\\circ$.\n   - Sudut sektor sepeda motor: $x^\\circ = 360^\\circ - 268^\\circ = 92^\\circ$.\n   - Jumlah karyawan: $92 \\times 5 = 460\\text{ orang}$. (Pernyataan C BENAR).\n7. Evaluasi Pernyataan D:\n   - Selisih pengguna Mobil Pribadi ($200$) dan Jalan Kaki ($90$): $200 - 90 = 110\\text{ orang} \\ne 150\\text{ orang}$. (Pernyataan D SALAH).\n\nJadi, pernyataan yang bernilai BENAR adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-penyajian-data-07",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "penyajian-data",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Dinas Pertanian mencatat hasil panen jagung (dalam satuan ton) dari enam desa binaan di satu kecamatan pada musim panen raya:\n\n| Desa | Hasil Panen (Ton) |\n| :--- | :---: |\n| Desa Sukamaju | $48$ |\n| Desa Sukamulya | $42$ |\n| Desa Mekarsari | $55$ |\n| Desa Cibening | $35$ |\n| Desa Karangtanjung | $60$ |\n| Desa Wargamekar | $30$ |\n\nTarget rata-rata hasil panen yang ditetapkan oleh dinas adalah $45\\text{ ton}$ per desa.\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rata-rata aktual hasil panen dari keenam desa tersebut adalah tepat $45\\text{ ton}$ per desa."
+      },
+      {
+        "id": "B",
+        "text": "Terdapat tepat 3 desa yang berhasil mencapai atau melampaui target rata-rata panen $45\\text{ ton}$."
+      },
+      {
+        "id": "C",
+        "text": "Selisih antara hasil panen tertinggi dan terendah dari keenam desa tersebut adalah $30\\text{ ton}$."
+      },
+      {
+        "id": "D",
+        "text": "Total hasil panen dari keenam desa binaan tersebut adalah $300\\text{ ton}$."
+      },
+      {
+        "id": "E",
+        "text": "Desa Sukamulya merupakan desa dengan hasil panen paling rendah."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Hitung jumlah total panen dan bagi dengan banyak desa ($6$) untuk mencari rata-rata aktual. Bandingkan hasil panen tiap desa terhadap ambang batas $45\\text{ ton}$.",
+    "explanation": "Langkah-langkah evaluasi data:\n1. Hitung total hasil panen keenam desa:\n   $$\\text{Total} = 48 + 42 + 55 + 35 + 60 + 30 = 270\\text{ ton}$$\n   (Pernyataan D SALAH karena total adalah $270\\text{ ton}$, bukan $300\\text{ ton}$).\n2. Hitung rata-rata hasil panen aktual:\n   $$\\bar{x} = \\frac{270}{6} = 45\\text{ ton}$$\n   (Pernyataan A BENAR karena rata-rata aktual tepat $45\\text{ ton}$ per desa).\n3. Identifikasi desa yang mencapai atau melampaui target ($\\ge 45\\text{ ton}$):\n   - Desa Sukamaju ($48\\text{ ton}$)\n   - Desa Mekarsari ($55\\text{ ton}$)\n   - Desa Karangtanjung ($60\\text{ ton}$)\n   Terdapat tepat 3 desa. (Pernyataan B BENAR).\n4. Evaluasi panen tertinggi dan terendah:\n   - Panen tertinggi: Desa Karangtanjung ($60\\text{ ton}$).\n   - Panen terendah: Desa Wargamekar ($30\\text{ ton}$), bukan Sukamulya ($42\\text{ ton}$). (Pernyataan E SALAH).\n   - Selisih tertinggi dan terendah: $60 - 30 = 30\\text{ ton}$. (Pernyataan C BENAR).\n\nJadi, pernyataan yang bernilai BENAR adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-penyajian-data-08",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "penyajian-data",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Kementerian Pariwisata menganalisis data kunjungan wisatawan mancanegara dari empat negara asal utama (Australia, Jepang, Malaysia, dan Korea Selatan) selama satu semester. Diagram batang mencatat total volume wisatawan sebagai berikut:\n- Australia: $200.000\\text{ wisatawan}$\n- Jepang: $150.000\\text{ wisatawan}$\n- Malaysia: $250.000\\text{ wisatawan}$\n- Korea Selatan: $100.000\\text{ wisatawan}$\n\nSementara itu, riset preferensi aktivitas utama para wisatawan dari masing-masing negara disajikan dalam tabel persentase berikut:\n\n| Negara Asal | Kuliner & Belanja | Wisata Alam & Bahari | Seni, Budaya & Sejarah |\n| :--- | :---: | :---: | :---: |\n| Australia | $25\\%$ | $50\\%$ | $25\\%$ |\n| Jepang | $30\\%$ | $40\\%$ | $30\\%$ |\n| Malaysia | $40\\%$ | $30\\%$ | $30\\%$ |\n| Korea Selatan | $35\\%$ | $45\\%$ | $20\\%$ |\n\nCatatan: Setiap wisatawan hanya memilih tepat 1 kategori aktivitas utama.\nTentukan kategori BENAR atau SALAH untuk setiap pernyataan berikut!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Volume wisatawan peminat Wisata Alam & Bahari asal Australia adalah $100.000\\text{ orang}$, yang merupakan volume tertinggi dibandingkan peminat aktivitas tersebut dari tiga negara lainnya."
+      },
+      {
+        "id": "B",
+        "text": "Banyaknya wisatawan asal Malaysia yang memilih aktivitas Kuliner & Belanja sama banyaknya dengan wisatawan asal Australia yang memilih aktivitas Wisata Alam & Bahari."
+      },
+      {
+        "id": "C",
+        "text": "Jumlah keseluruhan wisatawan peminat Seni, Budaya & Sejarah dari gabungan keempat negara tersebut melebihi $200.000\\text{ orang}$."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Salah"
+    },
+    "hint": "Kalikan total populasi wisatawan masing-masing negara dengan persentase aktivitas yang bersangkutan untuk memperoleh volume riil peminat (dalam jumlah orang).",
+    "explanation": "Langkah-langkah komputasi data silang:\n1. Hitung volume wisatawan per aktivitas untuk setiap negara:\n   - Australia ($200.000$ orang):\n     * Kuliner: $25\\% \\times 200.000 = 50.000$\n     * Alam: $50\\% \\times 200.000 = 100.000$\n     * Budaya: $25\\% \\times 200.000 = 50.000$\n   - Jepang ($150.000$ orang):\n     * Kuliner: $30\\% \\times 150.000 = 45.000$\n     * Alam: $40\\% \\times 150.000 = 60.000$\n     * Budaya: $30\\% \\times 150.000 = 45.000$\n   - Malaysia ($250.000$ orang):\n     * Kuliner: $40\\% \\times 250.000 = 100.000$\n     * Alam: $30\\% \\times 250.000 = 75.000$\n     * Budaya: $30\\% \\times 250.000 = 75.000$\n   - Korea Selatan ($100.000$ orang):\n     * Kuliner: $35\\% \\times 100.000 = 35.000$\n     * Alam: $45\\% \\times 100.000 = 45.000$\n     * Budaya: $20\\% \\times 100.000 = 20.000$\n2. Evaluasi Pernyataan A:\n   - Peminat Wisata Alam: Australia ($100.000$), Malaysia ($75.000$), Jepang ($60.000$), Korea ($45.000$).\n   - Benar bahwa Australia mencapai $100.000$ orang dan merupakan volume tertinggi. (Pernyataan A: BENAR).\n3. Evaluasi Pernyataan B:\n   - Malaysia Kuliner: $100.000$ orang.\n   - Australia Alam: $100.000$ orang.\n   - Keduanya bernilai sama persis ($100.000 = 100.000$). (Pernyataan B: BENAR).\n4. Evaluasi Pernyataan C:\n   - Total peminat Seni, Budaya & Sejarah: $50.000 + 45.000 + 75.000 + 20.000 = 190.000\\text{ orang}$.\n   - Nilai $190.000$ tidak melebihi $200.000$ orang ($190.000 \\le 200.000$). (Pernyataan C: SALAH).\n\nKesimpulan Kategori:\n- Pernyataan A: Benar\n- Pernyataan B: Benar\n- Pernyataan C: Salah"
+  },
+  {
+    "id": "matwa-penyajian-data-09",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "penyajian-data",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Sebuah lembaga survei merilis hasil riset preferensi metode pembayaran utama dari $500\\text{ responden}$ konsumen digital yang dikelompokkan menurut rentang usia:\n\n| Kelompok Usia | Dompet Digital (E-Wallet) | Transfer Bank | Paylater / Kredit | Total |\n| :--- | :---: | :---: | :---: | :---: |\n| Gen Z ($< 25\\text{ tahun}$) | $120$ | $30$ | $50$ | $200$ |\n| Milenial ($25 - 40\\text{ tahun}$) | $90$ | $70$ | $40$ | $200$ |\n| Gen X ($> 40\\text{ tahun}$) | $30$ | $60$ | $10$ | $100$ |\n| **Total** | **$240$** | **$160$** | **$100$** | **$500$** |\n\nTentukan kategori BENAR atau SALAH untuk setiap pernyataan berikut!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Persentase responden yang memilih Dompet Digital (E-Wallet) sebagai metode pembayaran utama dari seluruh responden adalah tepat $48\\%$."
+      },
+      {
+        "id": "B",
+        "text": "Di antara responden kelompok Gen Z, proporsi pengguna Paylater / Kredit mencapai $25\\%$."
+      },
+      {
+        "id": "C",
+        "text": "Peluang bersyarat seorang responden memilih Transfer Bank jika diketahui ia berasal dari kelompok Gen X lebih rendah daripada jika ia berasal dari kelompok Milenial."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Salah"
+    },
+    "hint": "Perhatikan basis pembagi (penyebut): apakah dihitung terhadap seluruh responden ($500$) ataukah dihitung bersyarat terhadap sub-kelompok baris usia tertentu.",
+    "explanation": "Langkah-langkah analisis tabel kontingensi dua arah:\n1. Evaluasi Pernyataan A:\n   - Total responden pemilih E-Wallet: $240\\text{ orang}$.\n   - Total seluruh responden: $500\\text{ orang}$.\n   - Persentase: $\\frac{240}{500} \\times 100\\% = \\frac{48}{100} = 48\\%$.\n   - Maka, Pernyataan A bernilai BENAR.\n2. Evaluasi Pernyataan B:\n   - Total responden kelompok Gen Z: $200\\text{ orang}$.\n   - Pengguna Paylater di kelompok Gen Z: $50\\text{ orang}$.\n   - Proporsi di kelompok Gen Z: $\\frac{50}{200} \\times 100\\% = 25\\%$.\n   - Maka, Pernyataan B bernilai BENAR.\n3. Evaluasi Pernyataan C:\n   - Peluang bersyarat Transfer Bank jika responden berasal dari Gen X:\n     $$P(\\text{Transfer} \\mid \\text{Gen X}) = \\frac{60}{100} = 60\\% = 0,60$$\n   - Peluang bersyarat Transfer Bank jika responden berasal dari Milenial:\n     $$P(\\text{Transfer} \\mid \\text{Milenial}) = \\frac{70}{200} = 35\\% = 0,35$$\n   - Karena $60\\% > 35\\%$, proporsi responden yang memilih Transfer Bank pada Gen X justru lebih tinggi daripada kelompok Milenial.\n   - Maka, Pernyataan C bernilai SALAH.\n\nKesimpulan Kategori:\n- Pernyataan A: Benar\n- Pernyataan B: Benar\n- Pernyataan C: Salah"
+  },
+  {
+    "id": "matwa-penyajian-data-10",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "penyajian-data",
+    "question_type": "KECUKUPAN_DATA",
+    "difficulty": "HOTS",
+    "question_text": "Diagram batang hasil pemilihan ketua organisasi menampilkan perolehan suara dari empat orang kandidat: Kandidat $A$, Kandidat $B$, Kandidat $C$, dan Kandidat $D$. Namun, batang grafik untuk Kandidat $C$ dan Kandidat $D$ belum selesai digambar (nilainya belum diketahui). Diketahui dari diagram bahwa Kandidat $A$ memperoleh $320\\text{ suara}$ dan Kandidat $B$ memperoleh $240\\text{ suara}$. Seluruh suara sah dan tidak ada pemilih yang abstain.\n\nApakah Kandidat $A$ memenangkan pemilihan dengan memperoleh suara terbanyak mutlak (memperoleh suara lebih banyak daripada masing-masing kandidat lainnya)?\n\nPutuskan apakah pernyataan (1) dan (2) berikut cukup untuk menjawab pertanyaan tersebut:\n(1) Total seluruh suara yang masuk dari keempat kandidat adalah $800\\text{ suara}$.\n(2) Selisih perolehan suara antara Kandidat $C$ dan Kandidat $D$ adalah $60\\text{ suara}$, dengan perolehan suara Kandidat $C$ lebih tinggi daripada Kandidat $D$.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (2) SAJA tidak cukup."
+      },
+      {
+        "id": "B",
+        "text": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (1) SAJA tidak cukup."
+      },
+      {
+        "id": "C",
+        "text": "DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup."
+      },
+      {
+        "id": "D",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan Pernyataan (2) SAJA cukup."
+      },
+      {
+        "id": "E",
+        "text": "Pernyataan (1) dan Pernyataan (2) tidak cukup untuk menjawab pertanyaan."
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Kandidat $A$ ($320\\text{ suara}$) menang jika $A > B$, $A > C$, dan $A > D$. Selidiki batas nilai maksimum perolehan suara yang mungkin diraih oleh Kandidat $C$ dan $D$ berdasarkan jumlah suara yang tersisa.",
+    "explanation": "Langkah-langkah analisis kecukupan data:\nPertanyaan: Apakah Kandidat $A$ memperoleh suara terbanyak mutlak?\nDiketahui: Suara $A = 320$, Suara $B = 240$. Karena $320 > 240$, maka $A > B$ sudah pasti terpenuhi. Syarat agar $A$ memenangkan pemilihan adalah $C < 320$ dan $D < 320$.\n\n1. Meninjau Pernyataan (1) SAJA:\n   - Total suara: $A + B + C + D = 800$.\n   - $320 + 240 + C + D = 800 \\implies 560 + C + D = 800 \\implies C + D = 240\\text{ suara}$.\n   - Karena perolehan suara bersifat non-negatif ($C \\ge 0$ dan $D \\ge 0$), maka nilai maksimum yang mungkin diperoleh oleh $C$ adalah saat $D = 0$, yaitu $C \\le 240$.\n   - Demikian pula untuk $D$, nilai maksimumnya adalah $D \\le 240$.\n   - Karena perolehan suara Kandidat $A$ adalah $320\\text{ suara}$ dan $320 > 240$, maka sudah dapat dipastikan secara mutlak bahwa $A > C$ dan $A > D$ dalam seluruh kemungkinan pembagian suara antara $C$ dan $D$.\n   - Dengan demikian, Kandidat $A$ PASTI memenangkan pemilihan.\n   - Jadi, Pernyataan (1) SAJA CUKUP untuk menjawab pertanyaan secara pasti.\n\n2. Meninjau Pernyataan (2) SAJA:\n   - Diketahui $C - D = 60 \\implies C = D + 60$.\n   - Tanpa informasi total suara yang masuk:\n     * Kemungkinan 1: Jika $D = 100$, maka $C = 160$. Dalam hal ini $A = 320$ lebih besar dari $C$ dan $D$, sehingga $A$ menang (Jawaban: YA).\n     * Kemungkinan 2: Jika $D = 300$, maka $C = 360$. Dalam hal ini $C = 360 > A = 320$, sehingga $A$ kalah dari $C$ (Jawaban: TIDAK).\n   - Karena menghasilkan jawaban yang tidak pasti (bisa YA atau TIDAK), maka Pernyataan (2) SAJA TIDAK CUKUP.\n\nKesimpulan:\nPernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (2) SAJA tidak cukup.\nJadi, pilihan yang tepat adalah A."
+  }
+]
