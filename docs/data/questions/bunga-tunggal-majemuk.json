@@ -1,1 +1,228 @@
-[]
+[
+  {
+    "id": "matwa-bunga-tunggal-majemuk-01",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "bunga-tunggal-majemuk",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Seorang nasabah menginvestasikan modal sebesar **Rp20.000.000,00** di sebuah bank komersial dengan skema suku bunga majemuk sebesar **10% per tahun**. Jika bunga dihitung dan dikapitalisasikan ke dalam pokok simpanan pada setiap akhir tahun, maka total saldo nilai akhir investasi nasabah tersebut setelah 3 tahun adalah ...",
+    "options": [
+      { "id": "A", "text": "Rp26.620.000,00" },
+      { "id": "B", "text": "Rp26.000.000,00" },
+      { "id": "C", "text": "Rp26.400.000,00" },
+      { "id": "D", "text": "Rp27.280.000,00" },
+      { "id": "E", "text": "Rp25.920.000,00" }
+    ],
+    "correct_answer": "A",
+    "hint": "Gunakan rumus nilai akhir modal bunga majemuk tahunan $M_n = M_0(1 + i)^n$ dengan $M_0 = 20.000.000$, $i = 0,10$, dan $n = 3$.",
+    "explanation": "Langkah-langkah menghitung nilai akhir bunga majemuk:\n\n1. Identifikasi parameter investasi:\n   - Modal awal: $M_0 = \\text{Rp}20.000.000,00$\n   - Suku bunga majemuk per tahun: $i = 10\\% = 0,10$\n   - Jangka waktu: $n = 3\\text{ tahun}$\n\n2. Gunakan rumus saldo modal bunga majemuk:\n   $$M_n = M_0 (1 + i)^n$$\n   $$M_3 = 20.000.000 \\times (1 + 0,10)^3 = 20.000.000 \\times (1,10)^3$$\n\n3. Hitung faktor pemajemukan $(1,10)^3$:\n   $$(1,10)^3 = 1,331$$\n   $$M_3 = 20.000.000 \\times 1,331 = \\text{Rp}26.620.000,00$$\n\n*(Rincian pertumbuhan tiap tahun:\n - Tahun 1: $20.000.000 \\times 1,1 = 22.000.000$\n - Tahun 2: $22.000.000 \\times 1,1 = 24.200.000$\n - Tahun 3: $24.200.000 \\times 1,1 = 26.620.000$).\n\nJadi, total saldo akhir investasi setelah 3 tahun adalah **Rp26.620.000,00** (Opsi **A**)."
+  },
+  {
+    "id": "matwa-bunga-tunggal-majemuk-02",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "bunga-tunggal-majemuk",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Pak Budi meminjam dana modal usaha di koperasi simpan pinjam sebesar **Rp15.000.000,00** dengan kesepakatan suku bunga tunggal sebesar **1,2% per bulan**. Jika pinjaman tersebut akan dilunasi secara sekaligus beserta seluruh bunganya pada akhir bulan ke-10, maka total uang pengembalian yang harus dibayarkan Pak Budi adalah ...",
+    "options": [
+      { "id": "A", "text": "Rp16.800.000,00" },
+      { "id": "B", "text": "Rp16.500.000,00" },
+      { "id": "C", "text": "Rp17.200.000,00" },
+      { "id": "D", "text": "Rp16.200.000,00" },
+      { "id": "E", "text": "Rp17.500.000,00" }
+    ],
+    "correct_answer": "A",
+    "hint": "Gunakan rumus total pengembalian bunga tunggal: $M_t = M_0(1 + b \\cdot t)$ dengan $b = 1,2\\% = 0,012$ dan $t = 10\\text{ bulan}$.",
+    "explanation": "Langkah-langkah menghitung pinjaman dengan bunga tunggal:\n\n1. Identifikasi parameter pinjaman:\n   - Modal pinjaman awal: $M_0 = \\text{Rp}15.000.000,00$\n   - Suku bunga tunggal per bulan: $b = 1,2\\% = 0,012$\n   - Jangka waktu peminjaman: $t = 10\\text{ bulan}$\n\n2. Hitung total bunga tunggal selama 10 bulan:\n   $$B = M_0 \\times b \\times t$$\n   $$B = 15.000.000 \\times 0,012 \\times 10 = 15.000.000 \\times 0,12 = \\text{Rp}1.800.000,00$$\n\n3. Hitung total pengembalian pinjaman ($M_t$):\n   $$M_t = M_0 + B = 15.000.000 + 1.800.000 = \\text{Rp}16.800.000,00$$\n\nJadi, total dana yang harus dibayarkan Pak Budi adalah **Rp16.800.000,00** (Opsi **A**)."
+  },
+  {
+    "id": "matwa-bunga-tunggal-majemuk-03",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "bunga-tunggal-majemuk",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Dua orang investor, Anton dan Budi, masing-masing menanamkan modal awal yang sama besar, yaitu **Rp50.000.000,00** selama jangka waktu 2 tahun:\n- Anton memilih instrumen investasi dengan skema **bunga tunggal** sebesar 8% per tahun.\n- Budi memilih instrumen investasi dengan skema **bunga majemuk** sebesar 8% per tahun (dikapitalisasikan setahun sekali).\n\nSelisih keuntungan bunga yang diterima oleh Budi dibandingkan dengan keuntungan bunga yang diterima Anton pada akhir tahun ke-2 adalah ...",
+    "options": [
+      { "id": "A", "text": "Rp320.000,00" },
+      { "id": "B", "text": "Rp300.000,00" },
+      { "id": "C", "text": "Rp350.000,00" },
+      { "id": "D", "text": "Rp400.000,00" },
+      { "id": "E", "text": "Rp280.000,00" }
+    ],
+    "correct_answer": "A",
+    "hint": "Hitung bunga tunggal Anton dengan $B_A = M_0 \\times i \\times 2$ dan bunga majemuk Budi dengan $B_B = M_0[(1 + i)^2 - 1]$. Selisih keuntungan bunga dapat dihitung cepat dengan rumus $\\Delta = M_0 \\cdot i^2$.",
+    "explanation": "Langkah-langkah membandingkan keuntungan bunga majemuk dan bunga tunggal:\n\n1. **Keuntungan bunga tunggal Anton ($B_A$):**\n   $$B_A = M_0 \\times i \\times t = 50.000.000 \\times 0,08 \\times 2 = \\text{Rp}8.000.000,00$$\n\n2. **Keuntungan bunga majemuk Budi ($B_B$):**\n   $$M_2 = M_0(1 + i)^2 = 50.000.000 \\times (1 + 0,08)^2 = 50.000.000 \\times 1,1664 = \\text{Rp}58.320.000,00$$\n   $$B_B = M_2 - M_0 = 58.320.000 - 50.000.000 = \\text{Rp}8.320.000,00$$\n\n3. **Menghitung selisih keuntungan bunga:**\n   $$\\Delta = B_B - B_A = 8.320.000 - 8.000.000 = \\text{Rp}320.000,00$$\n\n*(Secara analitis, selisih bunga pada tahun ke-2 timbul dari bunga atas bunga tahun pertama: $\\Delta = M_0 \\cdot i^2 = 50.000.000 \\times (0,08)^2 = 50.000.000 \\times 0,0064 = \\text{Rp}320.000,00$)*.\n\nJadi, selisih keuntungan bunga keduanya adalah **Rp320.000,00** (Opsi **A**)."
+  },
+  {
+    "id": "matwa-bunga-tunggal-majemuk-04",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "bunga-tunggal-majemuk",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Ibu Rina menaruh simpanan modal sebesar **Rp20.000.000,00** di bank yang menerapkan suku bunga majemuk sebesar **20% per tahun** yang dikapitalisasikan setiap semester (setiap 6 bulan sekali, yaitu 10% per semester).\n\nJika saldo tabungan Ibu Rina berkembang menjadi **Rp29.282.000,00**, berapa lama modal tersebut telah diinvestasikan?",
+    "options": [
+      { "id": "A", "text": "2 tahun (4 semester)" },
+      { "id": "B", "text": "2,5 tahun (5 semester)" },
+      { "id": "C", "text": "3 tahun (6 semester)" },
+      { "id": "D", "text": "1,5 tahun (3 semester)" },
+      { "id": "E", "text": "4 tahun (8 semester)" }
+    ],
+    "correct_answer": "A",
+    "hint": "Gunakan rumus $M_k = M_0(1 + i_{\\text{sem}})^k$ dengan $i_{\\text{sem}} = 10\\% = 0,10$. Tentukan banyak semester $k$ dari $(1,10)^k = \\frac{29.282.000}{20.000.000} = 1,4641$.",
+    "explanation": "Langkah-langkah evaluasi durasi investasi bunga majemuk semesteran:\n\n1. Identifikasi parameter:\n   - Modal awal: $M_0 = \\text{Rp}20.000.000,00$\n   - Saldo akhir: $M_k = \\text{Rp}29.282.000,00$\n   - Suku bunga per semester: $i_{\\text{sem}} = \\frac{20\\%}{2} = 10\\% = 0,10$\n\n2. Bentuk persamaan nilai akhir:\n   $$M_k = M_0 (1 + i_{\\text{sem}})^k$$\n   $$29.282.000 = 20.000.000 \\times (1 + 0,10)^k$$\n   $$(1,10)^k = \\frac{29.282.000}{20.000.000} = 1,4641$$\n\n3. Tentukan nilai eksponen $k$:\n   - $(1,1)^1 = 1,1$\n   - $(1,1)^2 = 1,21$\n   - $(1,1)^3 = 1,331$\n   - $(1,1)^4 = 1,4641$\n   Diperoleh $k = 4\\text{ semester}$.\n\n4. Konversi durasi semester ke dalam tahun:\n   $$t = \\frac{k}{2} = \\frac{4}{2} = 2\\text{ tahun}$$\n\nJadi, modal tersebut telah diinvestasikan selama **2 tahun (4 semester)** (Opsi **A**)."
+  },
+  {
+    "id": "matwa-bunga-tunggal-majemuk-05",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "bunga-tunggal-majemuk",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan modal awal $M_0$ yang diinvestasikan dengan suku bunga tahunan $i > 0$ selama $t$ tahun.\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai sifat aljabar dan perbandingan antara sistem bunga tunggal dan bunga majemuk!",
+    "options": [
+      { "id": "A", "text": "Pada sistem bunga tunggal, akumulasi total saldo modal pada akhir setiap tahun membentuk barisan aritmetika dengan beda tetap $b = M_0 \\times i$." },
+      { "id": "B", "text": "Pada sistem bunga majemuk tahunan, akumulasi total saldo modal pada akhir setiap tahun membentuk barisan geometri dengan rasio $r = 1 + i$." },
+      { "id": "C", "text": "Untuk jangka waktu investasi lebih dari 1 tahun ($t > 1$) dengan suku bunga yang sama ($i > 0$), total bunga yang dihasilkan sistem bunga majemuk selalu lebih besar daripada sistem bunga tunggal." },
+      { "id": "D", "text": "Pada sistem bunga majemuk, nominal rupiah bunga yang diterima investor setiap tahunnya bernilai konstan dan tidak pernah bertambah." }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Pada bunga tunggal, pertambahan bunga tiap tahun bernilai tetap (linier/aritmetika). Pada bunga majemuk, bunga dihitung dari modal yang terus membesar (eksponensial/geometri).",
+    "explanation": "Analisis konsep dasar sistem perbungaan:\n\n1. **Karakteristik Bunga Tunggal (Pernyataan A):**\n   Saldo tahun ke-$t$ adalah $M_t = M_0 + t(M_0 \\cdot i)$. Setiap pertambahan satu tahun, saldo bertambah sebesar konstanta $M_0 \\cdot i$. Karena selisihnya konstan, urutan saldo membentuk barisan aritmetika dengan beda $b = M_0 \\cdot i$.\n   Pernyataan A bernilai **BENAR**.\n\n2. **Karakteristik Bunga Majemuk (Pernyataan B):**\n   Saldo tahun ke-$t$ adalah $M_t = M_0 (1 + i)^t$. Rasio antara dua tahun berurutan adalah $\\frac{M_{t+1}}{M_t} = 1 + i$ (tetap). Karena rasionya konstan, urutan saldo membentuk barisan geometri dengan rasio $r = 1 + i$.\n   Pernyataan B bernilai **BENAR**.\n\n3. **Perbandingan Hasil Investasi (Pernyataan C & D):**\n   - Karena pada bunga majemuk terdapat 'bunga atas bunga' (*compounding effect*), maka nominal bunga tahunan terus membesar setiap tahunnya. Pernyataan D bernilai **SALAH**.\n   - Untuk $t > 1$, $(1 + i)^t > 1 + i \\cdot t$, sehingga saldo dan keuntungan bunga majemuk selalu melampaui bunga tunggal. Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+  },
+  {
+    "id": "matwa-bunga-tunggal-majemuk-06",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "bunga-tunggal-majemuk",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Seorang investor menanamkan modal sebesar **Rp100.000.000,00** pada proyek kemitraan usaha dengan kesepakatan bagi hasil berskema **bunga tunggal 12% per tahun** dari modal pokok aktif. Ketentuan investasi diatur sebagai berikut:\n- Keuntungan laba bagi hasil dibayarkan pada setiap akhir tahun.\n- Setiap laba tahunan dikenakan potongan pajak penghasilan final sebesar **20%**.\n- Pada awal tahun ke-2, investor melakukan penarikan sebagian modal pokok sebesar **Rp40.000.000,00**, sedangkan sisanya tetap diinvestasikan hingga akhir tahun ke-2.\n- Pada akhir tahun ke-2, investor mencairkan seluruh sisa modal beserta laba bersih tahun ke-2, dengan dikenakan biaya administrasi penutupan rekening flat sebesar **Rp150.000,00**.\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai hasil keuangan investasi tersebut!",
+    "options": [
+      { "id": "A", "text": "Laba bersih setelah potongan pajak yang diterima investor pada akhir tahun ke-1 adalah Rp9.600.000,00." },
+      { "id": "B", "text": "Pada akhir tahun ke-2, laba bersih setelah pajak yang dihasilkan dari sisa modal pokok aktif adalah Rp5.760.000,00." },
+      { "id": "C", "text": "Total dana bersih yang diterima investor saat penutupan dan pencairan akhir rekening (sisa pokok + laba bersih tahun ke-2 dikurangi biaya administrasi) adalah Rp65.610.000,00." },
+      { "id": "D", "text": "Total potongan pajak penghasilan atas laba bagi hasil selama 2 tahun periode investasi adalah Rp2.880.000,00." }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Hitung laba kotor tahun ke-1 dari pokok 100 juta lalu kurangkan pajak 20%. Kurangkan pokok 40 juta di awal tahun ke-2 sehingga pokok aktif menjadi 60 juta. Hitung laba bersih tahun ke-2 dan kurangkan biaya admin saat pencairan.",
+    "explanation": "Langkah-langkah evaluasi aliran kas investasi bertahap:\n\n1. **Kinerja Tahun ke-1 (Modal Pokok = Rp100.000.000,00):**\n   - Laba kotor tahun ke-1: $12\\% \\times 100.000.000 = \\text{Rp}12.000.000,00$\n   - Pajak penghasilan final ($20\\%$): $20\\% \\times 12.000.000 = \\text{Rp}2.400.000,00$\n   - Laba bersih tahun ke-1: $12.000.000 - 2.400.000 = \\text{Rp}9.600.000,00$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Kinerja Tahun ke-2 (Modal Pokok Aktif):**\n   - Penarikan awal tahun ke-2: Rp40.000.000,00.\n   - Sisa modal pokok aktif: $100.000.000 - 40.000.000 = \\text{Rp}60.000.000,00$.\n   - Laba kotor tahun ke-2: $12\\% \\times 60.000.000 = \\text{Rp}7.200.000,00$\n   - Pajak penghasilan final ($20\\%$): $20\\% \\times 7.200.000 = \\text{Rp}1.440.000,00$\n   - Laba bersih tahun ke-2: $7.200.000 - 1.440.000 = \\text{Rp}5.760.000,00$\n   Pernyataan B bernilai **BENAR**.\n\n3. **Total Pajak Penghasilan (Pernyataan D):**\n   $$\\text{Total Pajak} = 2.400.000 + 1.440.000 = \\text{Rp}3.840.000,00$$\n   Pernyataan D bernilai **SALAH** (disebutkan Rp2.880.000,00).\n\n4. **Pencairan Akhir Rekening pada Akhir Tahun ke-2:**\n   - Komponen pencairan: Sisa pokok aktif ($60.000.000$) + Laba bersih tahun ke-2 ($5.760.000$)\n   - Subtotal sebelum biaya administrasi: $\\text{Rp}65.760.000,00$\n   - Biaya administrasi penutupan rekening: $\\text{Rp}150.000,00$\n   - Total dana bersih diterima:\n     $$65.760.000 - 150.000 = \\text{Rp}65.610.000,00$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+  },
+  {
+    "id": "matwa-bunga-tunggal-majemuk-07",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "bunga-tunggal-majemuk",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Seorang kepala keluarga mengikuti program tabungan rencana pendidikan dengan menyetorkan uang sebesar **Rp1.000.000,00** secara rutin pada **setiap awal tahun** selama 3 tahun berturut-turut. Lembaga keuangan memberikan bunga majemuk sebesar **10% per tahun** yang dihitung pada setiap akhir tahun.\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai akumulasi nilai tabungan rencana tersebut!",
+    "options": [
+      { "id": "A", "text": "Total akumulasi modal pokok yang telah disetorkan selama 3 tahun adalah Rp3.000.000,00." },
+      { "id": "B", "text": "Total saldo akhir tabungan pendidikan pada akhir tahun ke-3 adalah Rp3.641.000,00." },
+      { "id": "C", "text": "Total keuntungan bunga majemuk yang terhimpun selama 3 tahun adalah Rp641.000,00." },
+      { "id": "D", "text": "Total saldo akhir tabungan pendidikan pada akhir tahun ke-3 adalah Rp3.310.000,00." }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Hitung nilai masa depan masing-masing setoran: setoran ke-1 berbunga selama 3 tahun ($1.000.000 \\times 1,1^3$), setoran ke-2 berbunga selama 2 tahun ($1.000.000 \\times 1,1^2$), dan setoran ke-3 berbunga selama 1 tahun ($1.000.000 \\times 1,1$).",
+    "explanation": "Langkah-langkah evaluasi tabungan anuitas awal periode (*annuity due*):\n\n1. **Total Setoran Pokok (Pernyataan A):**\n   Nasabah menyetor 3 kali sebesar Rp1.000.000,00:\n   $$\\text{Total Pokok} = 3 \\times 1.000.000 = \\text{Rp}3.000.000,00$$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Akumulasi Saldo pada Akhir Tahun ke-3:**\n   Karena setoran dilakukan di awal tahun, setiap setoran mengalami periode pemajemukan yang berbeda hingga akhir tahun ke-3:\n   - Setoran ke-1 (awal th-1) berbunga selama 3 tahun:\n     $$1.000.000 \\times (1,1)^3 = 1.000.000 \\times 1,331 = \\text{Rp}1.331.000,00$$\n   - Setoran ke-2 (awal th-2) berbunga selama 2 tahun:\n     $$1.000.000 \\times (1,1)^2 = 1.000.000 \\times 1,21 = \\text{Rp}1.210.000,00$$\n   - Setoran ke-3 (awal th-3) berbunga selama 1 tahun:\n     $$1.000.000 \\times (1,1)^1 = 1.000.000 \\times 1,10 = \\text{Rp}1.100.000,00$$\n   - Total saldo akhir tabungan:\n     $$FV = 1.331.000 + 1.210.000 + 1.100.000 = \\text{Rp}3.641.000,00$$\n   Pernyataan B bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\n3. **Total Keuntungan Bunga (Pernyataan C):**\n   $$\\text{Total Bunga} = FV - \\text{Total Pokok} = 3.641.000 - 3.000.000 = \\text{Rp}641.000,00$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+  },
+  {
+    "id": "matwa-bunga-tunggal-majemuk-08",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "bunga-tunggal-majemuk",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Tentukan kebenaran dari masing-masing pernyataan matematika mengenai rumus kelipatan modal, suku bunga cawu, dan pelunasan bunga tunggal di bawah ini dengan memilih **Benar** atau **Salah** pada setiap baris:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Jika suatu modal $M$ diinvestasikan dengan skema suku bunga tunggal $i$ per tahun, maka waktu yang dibutuhkan agar modal tersebut berkembang menjadi tepat 2 kali lipat dari modal awal adalah $t = \\frac{1}{i}$ tahun."
+      },
+      {
+        "id": "B",
+        "text": "Modal sebesar Rp10.000.000,00 dibungakan dengan bunga majemuk 6% per cawu (setiap 4 bulan). Dalam jangka waktu 1 tahun (3 periode cawu), saldo akhir modal tersebut bernilai lebih dari Rp11.900.000,00."
+      },
+      {
+        "id": "C",
+        "text": "Suatu pinjaman sebesar Rp20.000.000,00 dengan suku bunga tunggal 15% per tahun dilunasi setelah 8 bulan. Total nominal bunga pinjaman yang harus dibayarkan adalah Rp3.000.000,00."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Salah"
+    },
+    "hint": "Pada pernyataan A, selesaikan persamaan $M(1 + i \\cdot t) = 2M$. Pada pernyataan B, hitung $10.000.000 \\times (1,06)^3$. Pada pernyataan C, gunakan fraksi waktu $t = \\frac{8}{12} = \\frac{2}{3}$ tahun.",
+    "explanation": "Analisis keabsahan tiap pernyataan:\n\n1. **Pernyataan A (Benar):**\n   Persamaan pelipatan modal menjadi dua kali lipat:\n   $$M_t = M(1 + i \\cdot t) = 2M$$\n   Bagi kedua ruas dengan $M$:\n   $$1 + i \\cdot t = 2 \\implies i \\cdot t = 1 \\implies t = \\frac{1}{i}\\text{ tahun}$$\n   Contoh: suku bunga $10\\% = 0,10$ membutuhkan waktu $t = \\frac{1}{0,10} = 10$ tahun.\n\n2. **Pernyataan B (Benar):**\n   1 tahun terdiri dari $\\frac{12}{4} = 3\\text{ cawu}$.\n   $$M_3 = 10.000.000 \\times (1 + 0,06)^3 = 10.000.000 \\times (1,06)^3$$\n   $$(1,06)^3 = 1,191016$$\n   $$M_3 = 10.000.000 \\times 1,191016 = \\text{Rp}11.910.160,00$$\n   Karena $\\text{Rp}11.910.160,00 > \\text{Rp}11.900.000,00$, pernyataan bernilai benar.\n\n3. **Pernyataan C (Salah):**\n   Waktu peminjaman dalam tahun: $t = \\frac{8}{12} = \\frac{2}{3}\\text{ tahun}$.\n   Nominal bunga tunggal:\n   $$B = M_0 \\times i \\times t = 20.000.000 \\times 15\\% \\times \\frac{2}{3} = 20.000.000 \\times 0,10 = \\text{Rp}2.000.000,00$$\n   Total bunga yang benar adalah **Rp2.000.000,00**, bukan Rp3.000.000,00."
+  },
+  {
+    "id": "matwa-bunga-tunggal-majemuk-09",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "bunga-tunggal-majemuk",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Tentukan kebenaran dari masing-masing pernyataan evaluasi suku bunga efektif dan batas pertumbuhan bunga majemuk di bawah ini dengan memilih **Benar** atau **Salah** pada setiap baris:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suku bunga nominal 12% per tahun yang dikapitalisasi secara semesteran (setiap 6 bulan) setara dengan suku bunga efektif tahunan sebesar 12,36%."
+      },
+      {
+        "id": "B",
+        "text": "Jika suatu modal sebesar Rp8.000.000,00 bertumbuh menjadi Rp10.000.000,00 dalam waktu 2 tahun dengan sistem bunga tunggal, maka suku bunga tunggal tahunannya adalah 12,5% per tahun."
+      },
+      {
+        "id": "C",
+        "text": "Pada sistem bunga majemuk, jika frekuensi periode kapitalisasi bunga dibuat semakin rapat tanpa batas menuju tak hingga ($n \\to \\infty$), maka nilai masa depan modal akan bertumbuh tanpa batas menuju nilai tak hingga ($\\infty$)."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Salah"
+    },
+    "hint": "Pada pernyataan A, hitung $(1 + 0,06)^2 - 1$. Pada pernyataan B, cari bunga per tahun $\\frac{2.000.000}{2} = 1.000.000$ lalu bagi dengan modal awal. Pada pernyataan C, ingat konsep bunga majemuk kontinu dengan limit bilangan Euler $e \\approx 2,718$.",
+    "explanation": "Analisis keabsahan tiap pernyataan:\n\n1. **Pernyataan A (Benar):**\n   Suku bunga per semester: $\\frac{12\\%}{2} = 6\\% = 0,06$.\n   Suku bunga efektif tahunan (*Effective Annual Rate*):\n   $$i_{\\text{eff}} = (1 + 0,06)^2 - 1 = 1,1236 - 1 = 0,1236 = 12,36\\%$$\n\n2. **Pernyataan B (Benar):**\n   Total bunga selama 2 tahun: $B = 10.000.000 - 8.000.000 = \\text{Rp}2.000.000,00$.\n   Bunga per tahun: $\\frac{2.000.000}{2} = \\text{Rp}1.000.000,00$.\n   Suku bunga tahunan:\n   $$i = \\frac{1.000.000}{8.000.000} = \\frac{1}{8} = 12,5\\%$$\n\n3. **Pernyataan C (Salah):**\n   Jika frekuensi pemajemukan menuju tak hingga ($n \\to \\infty$), nilai saldo tidak menuju tak terhingga, melainkan konvergen menuju limit eksponensial Euler berhingga (*continuous compounding*):\n   $$\\lim_{n \\to \\infty} M_0 \\left(1 + \\frac{i}{n}\\right)^{nt} = M_0 \\cdot e^{it}$$\n   Karena $e \\approx 2,71828$ adalah bilangan berhingga, maka nilai saldo akhir selalu berhingga."
+  },
+  {
+    "id": "matwa-bunga-tunggal-majemuk-10",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "bunga-tunggal-majemuk",
+    "question_type": "KECUKUPAN_DATA",
+    "difficulty": "HOTS",
+    "question_text": "Modal sebesar **Rp10.000.000,00** disimpan di sebuah lembaga keuangan selama jangka waktu 2 tahun dengan suku bunga tahunan tertentu.\n\n<div class=\"flex justify-center my-3\"><svg viewBox=\"0 0 280 85\" class=\"w-64 h-auto drop-shadow-sm\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"10\" width=\"260\" height=\"65\" rx=\"10\" fill=\"#1E293B\" stroke=\"#06B6D4\" stroke-width=\"2\"/><text x=\"140\" y=\"35\" fill=\"#E2E8F0\" font-size=\"13\" font-family=\"monospace\" text-anchor=\"middle\" font-weight=\"bold\">Target: Saldo Akhir Tahun ke-2 = ?</text><text x=\"140\" y=\"58\" fill=\"#22D3EE\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\">(1) Akhir th-1 = 11 jt  |  (2) Skema bunga majemuk</text></svg></div>\n\nBerapakah total saldo akhir simpanan tersebut pada akhir tahun ke-2?\n\n(1) Pada akhir tahun ke-1, total saldo simpanan berkembang menjadi Rp11.000.000,00.\n(2) Lembaga keuangan menerapkan skema suku bunga majemuk tahunan.\n\nPutuskan apakah pernyataan (1) dan (2) tersebut cukup untuk menjawab pertanyaan.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (2) SAJA tidak cukup."
+      },
+      {
+        "id": "B",
+        "text": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (1) SAJA tidak cukup."
+      },
+      {
+        "id": "C",
+        "text": "DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup."
+      },
+      {
+        "id": "D",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan Pernyataan (2) SAJA cukup."
+      },
+      {
+        "id": "E",
+        "text": "Pernyataan (1) dan Pernyataan (2) tidak cukup untuk menjawab pertanyaan."
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Periksa apakah informasi pada pernyataan (1) sudah memastikan jenis perbungaan (tunggal atau majemuk). Evaluasi perbedaan saldo akhir tahun ke-2 jika menggunakan bunga tunggal (12 juta) dibandingkan bunga majemuk (12,1 juta).",
+    "explanation": "Target pertanyaan: Menentukan nilai eksak saldo simpanan pada akhir tahun ke-2 ($M_2$).\n\n1. **Uji Pernyataan (1) SAJA:**\n   Diketahui saldo akhir tahun ke-1 adalah Rp11.000.000,00.\n   Artinya bunga yang dihasilkan pada tahun pertama adalah Rp1.000.000,00 (suku bunga 10%).\n   Namun, karena belum diketahui apakah bank menerapkan sistem bunga tunggal atau bunga majemuk, terdapat dua kemungkinan nilai saldo akhir tahun ke-2:\n   - Jika bunga tunggal: bunga tahun ke-2 tetap Rp1.000.000, sehingga $M_2 = 11.000.000 + 1.000.000 = \\text{Rp}12.000.000,00$.\n   - Jika bunga majemuk: bunga tahun ke-2 adalah 10% dari Rp11.000.000, sehingga $M_2 = 11.000.000 \\times 1,10 = \\text{Rp}12.100.000,00$.\n   Karena menghasilkan dua jawaban yang berbeda, maka **Pernyataan (1) SAJA TIDAK CUKUP**.\n\n2. **Uji Pernyataan (2) SAJA:**\n   Diketahui bank menerapkan skema bunga majemuk tahunan ($M_t = M_0(1 + i)^t$).\n   Namun persentase suku bunga $i$ tidak diketahui sama sekali.\n   Maka **Pernyataan (2) SAJA TIDAK CUKUP**.\n\n3. **Uji Pernyataan (1) dan (2) BERSAMA-SAMA:**\n   Dari Pernyataan (2), kita mengetahui bahwa sistem yang berlaku adalah bunga majemuk tahunan: $M_1 = M_0(1 + i)$.\n   Dari Pernyataan (1), pada akhir tahun ke-1:\n   $$11.000.000 = 10.000.000(1 + i) \\implies 1 + i = 1,10 \\implies i = 10\\%$$\n   Maka saldo akhir tahun ke-2 dapat ditentukan secara unik dan pasti:\n   $$M_2 = M_1(1 + i) = 11.000.000 \\times 1,10 = \\text{Rp}12.100.000,00$$\n   Maka, **DUA pernyataan BERSAMA-SAMA CUKUP**.\n\nKesimpulan: DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup (**Jawaban C**)."
+  }
+]

@@ -1,1 +1,240 @@
-[]
+[
+  {
+    "id": "matwa-pengukuran-bangun-ruang-01",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-ruang",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah industri kuliner memproduksi camilan keju dalam dua model kemasan wadah bertutup:\n- **Kemasan Tipe I (gabungan tabung dan kerucut):** bagian bawah berupa tabung dengan jari-jari alas $r = 3,5$ cm dan tinggi 7 cm, sedangkan bagian atas berupa kerucut dengan jari-jari alas 3,5 cm dan tinggi 3 cm (volume total wadah $308\\text{ cm}^3$).\n- **Kemasan Tipe II (gabungan balok dan limas segiempat):** bagian bawah berupa balok beralas persegi $6\\text{ cm} \\times 6\\text{ cm}$ dengan tinggi 6 cm, sedangkan bagian atas berupa limas persegi beralas sama dengan tinggi 3 cm (volume total wadah $252\\text{ cm}^3$).\n\nSesuai standar operasional pengemasan, setiap wadah hanya boleh diisi adonan keju cair sebanyak **75% dari kapasitas volume totalnya** agar tidak meluap saat disegel.\n\nJika pabrik menyiapkan persediaan adonan keju cair sebanyak **220 liter** ($220.000\\text{ cm}^3$) dan memproduksi tepat **500 unit kemasan Tipe I** serta **500 unit kemasan Tipe II**, berapakah sisa adonan keju cair yang belum terpakai?",
+    "options": [
+      { "id": "A", "text": "10 liter" },
+      { "id": "B", "text": "12 liter" },
+      { "id": "C", "text": "15 liter" },
+      { "id": "D", "text": "8 liter" },
+      { "id": "E", "text": "5 liter" }
+    ],
+    "correct_answer": "A",
+    "hint": "Hitung volume isi per kemasan untuk masing-masing tipe (75% dari volume total), kalikan dengan 500 unit untuk tiap tipe, jumlahkan keduanya, lalu kurangkan dari total 220 liter ($220.000\\text{ cm}^3$).",
+    "explanation": "Langkah-langkah evaluasi kecukupan adonan keju:\n\n1. **Kebutuhan Adonan Kemasan Tipe I (500 unit):**\n   - Volume total satu kemasan Tipe I: $V_{\\text{total I}} = 308\\text{ cm}^3$\n   - Volume isi (aturan 75%):\n     $$V_{\\text{isi I}} = 75\\% \\times 308 = 0,75 \\times 308 = 231\\text{ cm}^3$$\n   - Total adonan untuk 500 unit kemasan Tipe I:\n     $$500 \\times 231\\text{ cm}^3 = 115.500\\text{ cm}^3 = 115,5\\text{ liter}$$\n\n2. **Kebutuhan Adonan Kemasan Tipe II (500 unit):**\n   - Volume total satu kemasan Tipe II: $V_{\\text{total II}} = 252\\text{ cm}^3$\n   - Volume isi (aturan 75%):\n     $$V_{\\text{isi II}} = 75\\% \\times 252 = 0,75 \\times 252 = 189\\text{ cm}^3$$\n   - Total adonan untuk 500 unit kemasan Tipe II:\n     $$500 \\times 189\\text{ cm}^3 = 94.500\\text{ cm}^3 = 94,5\\text{ liter}$$\n\n3. **Total Adonan yang Terpakai:**\n   $$V_{\\text{terpakai}} = 115,5\\text{ liter} + 94,5\\text{ liter} = 210\\text{ liter}$$\n\n4. **Sisa Adonan Keju Cair:**\n   $$\\text{Sisa} = 220\\text{ liter} - 210\\text{ liter} = 10\\text{ liter}$$\n\nJadi, sisa adonan keju cair yang belum terpakai adalah **10 liter** (Opsi **A**)."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-ruang-02",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-ruang",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah bola pejal tepat menyinggung keenam bidang sisi bagian dalam dari sebuah kotak kubus kayu berongga yang memiliki panjang rusuk $s = 21$ cm.\n\nDengan menggunakan pendekatan $\\pi = \\frac{22}{7}$, volume ruang kosong di dalam kotak kubus yang berada di luar bola adalah ...",
+    "options": [
+      { "id": "A", "text": "$4.410\\text{ cm}^3$" },
+      { "id": "B", "text": "$4.851\\text{ cm}^3$" },
+      { "id": "C", "text": "$4.200\\text{ cm}^3$" },
+      { "id": "D", "text": "$4.620\\text{ cm}^3$" },
+      { "id": "E", "text": "$3.960\\text{ cm}^3$" }
+    ],
+    "correct_answer": "A",
+    "hint": "Karena bola menyinggung sisi dalam kubus, maka diameter bola sama dengan panjang rusuk kubus ($d = s = 21$ cm, sehingga $r = \\frac{21}{2}$ cm). Volume ruang kosong adalah volume kubus dikurangi volume bola.",
+    "explanation": "Langkah-langkah evaluasi bola di dalam kubus:\n\n1. **Menghitung Volume Kubus:**\n   $$V_{\\text{kubus}} = s^3 = 21^3 = 9.261\\text{ cm}^3$$\n\n2. **Menghitung Volume Bola:**\n   Karena bola menyinggung sisi kubus, diameter bola adalah $d = 21$ cm, sehingga jari-jari bola $r = \\frac{21}{2}$ cm.\n   $$V_{\\text{bola}} = \\frac{4}{3} \\pi r^3 = \\frac{4}{3} \\times \\frac{22}{7} \\times \\left(\\frac{21}{2}\\right)^3$$\n   $$V_{\\text{bola}} = \\frac{88}{21} \\times \\frac{9.261}{8} = 11 \\times 441 = 4.851\\text{ cm}^3$$\n\n3. **Menghitung Volume Ruang Kosong:**\n   $$V_{\\text{kosong}} = V_{\\text{kubus}} - V_{\\text{bola}} = 9.261 - 4.851 = 4.410\\text{ cm}^3$$\n\n*(Catatan: rasio volume bola terhadap kubus adalah $\\frac{\\pi}{6} = \\frac{11}{21}$, sehingga volume ruang kosong adalah $\\frac{10}{21}$ dari volume kubus: $\\frac{10}{21} \\times 9.261 = 4.410\\text{ cm}^3$)*.\n\nJadi, volume ruang kosong di dalam kubus adalah **4.410 cm kubik** (Opsi **A**)."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-ruang-03",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-ruang",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Sebuah balok memiliki ukuran panjang, lebar, dan tinggi yang berbanding $p : l : t = 1 : 1 : 2$. Diketahui panjang garis diagonal ruang balok tersebut sama persis dengan panjang garis diagonal ruang sebuah kubus berusuk $s$.\n\nRasio perbandingan volume balok terhadap volume kubus tersebut adalah ...",
+    "options": [
+      { "id": "A", "text": "$\\frac{\\sqrt{2}}{2}$ ($1 : \\sqrt{2}$)" },
+      { "id": "B", "text": "$\\frac{1}{2}$ ($1 : 2$)" },
+      { "id": "C", "text": "$\\frac{\\sqrt{3}}{3}$ ($1 : \\sqrt{3}$)" },
+      { "id": "D", "text": "$\\frac{3}{4}$ ($3 : 4$)" },
+      { "id": "E", "text": "$\\frac{\\sqrt{6}}{3}$ ($1 : \\sqrt{1,5}$)" }
+    ],
+    "correct_answer": "A",
+    "hint": "Nyatakan diagonal ruang balok $D_{\\text{balok}} = \\sqrt{x^2 + x^2 + (2x)^2}$ dan diagonal ruang kubus $D_{\\text{kubus}} = s\\sqrt{3}$. Samakan keduanya untuk menyatakan rusuk kubus $s$ dalam variabel $x$, lalu bandingkan volumenya.",
+    "explanation": "Langkah-langkah menentukan rasio volume balok terhadap kubus:\n\n1. **Menentukan diagonal ruang balok:**\n   Misalkan dimensi balok adalah $p = x, l = x, t = 2x$.\n   $$D_{\\text{balok}} = \\sqrt{p^2 + l^2 + t^2} = \\sqrt{x^2 + x^2 + (2x)^2} = \\sqrt{x^2 + x^2 + 4x^2} = \\sqrt{6x^2} = x\\sqrt{6}$$\n\n2. **Menyamakan dengan diagonal ruang kubus:**\n   Panjang diagonal ruang kubus berusuk $s$ adalah $D_{\\text{kubus}} = s\\sqrt{3}$.\n   $$s\\sqrt{3} = x\\sqrt{6} \\implies s = x \\frac{\\sqrt{6}}{\\sqrt{3}} = x\\sqrt{2}$$\n\n3. **Menghitung volume balok dan volume kubus:**\n   - Volume balok: $V_{\\text{balok}} = p \\times l \\times t = x \\times x \\times 2x = 2x^3$\n   - Volume kubus: $V_{\\text{kubus}} = s^3 = (x\\sqrt{2})^3 = 2\\sqrt{2}x^3$\n\n4. **Menghitung rasio volume:**\n   $$\\frac{V_{\\text{balok}}}{V_{\\text{kubus}}} = \\frac{2x^3}{2\\sqrt{2}x^3} = \\frac{1}{\\sqrt{2}} = \\frac{\\sqrt{2}}{2}$$\n\nJadi, rasio volume balok terhadap volume kubus adalah **1 : akar(2)** atau **akar(2)/2** (Opsi **A**)."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-ruang-04",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-ruang",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Sebuah lembar karton tebal berbentuk bujur sangkar (persegi) memiliki panjang sisi $s = 60$ cm. Pada keempat sudut pojok karton tersebut dipotong persegi identik berukuran $x \\times x$ cm, kemudian bagian tepi sisi-sisinya ditekuk tegak ke atas untuk membentuk wadah kotak terbuka tanpa tutup.\n\nVolume maksimum yang dapat ditampung oleh wadah kotak terbuka tersebut adalah ...",
+    "options": [
+      { "id": "A", "text": "$16.000\\text{ cm}^3$ ($16\\text{ liter}$)" },
+      { "id": "B", "text": "$14.400\\text{ cm}^3$ ($14,4\\text{ liter}$)" },
+      { "id": "C", "text": "$18.000\\text{ cm}^3$ ($18\\text{ liter}$)" },
+      { "id": "D", "text": "$12.800\\text{ cm}^3$ ($12,8\\text{ liter}$)" },
+      { "id": "E", "text": "$20.000\\text{ cm}^3$ ($20\\text{ liter}$)" }
+    ],
+    "correct_answer": "A",
+    "hint": "Ukuran alas kotak adalah $(60 - 2x) \\times (60 - 2x)$ dan tingginya adalah $x$. Fungsi volume $V(x) = x(60 - 2x)^2$. Gunakan turunan pertama $V'(x) = 0$ untuk menemukan nilai $x$ yang memaksimumkan volume.",
+    "explanation": "Langkah-langkah optimasi volume kotak tanpa tutup:\n\n1. **Memodelkan fungsi volume kotak:**\n   - Panjang alas: $60 - 2x$\n   - Lebar alas: $60 - 2x$\n   - Tinggi kotak: $x$\n   $$V(x) = x(60 - 2x)^2 = x(3.600 - 240x + 4x^2) = 4x^3 - 240x^2 + 3.600x$$\n   dengan batas fisis domain $0 < x < 30$.\n\n2. **Mencari titik stasioner dengan turunan pertama ($V'(x) = 0$):**\n   $$V'(x) = 12x^2 - 480x + 3.600 = 0$$\n   Bagi kedua ruas dengan 12:\n   $$x^2 - 40x + 300 = 0$$\n   Faktorkan persamaan kuadrat:\n   $$(x - 10)(x - 30) = 0$$\n   Karena $x < 30$, maka nilai pembuat volume maksimum adalah $x = 10\\text{ cm}$.\n\n3. **Menghitung volume maksimum:**\n   - Sisi alas kotak: $60 - 2(10) = 40\\text{ cm}$\n   - Tinggi kotak: $10\\text{ cm}$\n   $$V_{\\text{maks}} = 40 \\times 40 \\times 10 = 16.000\\text{ cm}^3$$\n   Dalam satuan liter: $16.000\\text{ cm}^3 = 16\\text{ liter}$.\n\nJadi, volume maksimum kotak tersebut adalah **16.000 cm kubik (16 liter)** (Opsi **A**)."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-ruang-05",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-ruang",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah corong minyak berbentuk kerucut lingkaran tegak memiliki diameter lingkaran alas $d = 14$ cm (jari-jari alas $r = 7$ cm) dan tinggi kerucut $t = 24$ cm.\n\nDengan menggunakan pendekatan $\\pi = \\frac{22}{7}$, pilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai sifat dan ukuran kerucut tersebut!",
+    "options": [
+      { "id": "A", "text": "Panjang garis pelukis kerucut adalah $s = 25$ cm." },
+      { "id": "B", "text": "Luas selimut kerucut adalah $550\\text{ cm}^2$ dan luas permukaan totalnya adalah $704\\text{ cm}^2$." },
+      { "id": "C", "text": "Volume ruang di dalam corong kerucut tersebut adalah $1.232\\text{ cm}^3$." },
+      { "id": "D", "text": "Luas selimut kerucut adalah $600\\text{ cm}^2$." }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Garis pelukis dihitung dengan Pythagoras: $s = \\sqrt{r^2 + t^2}$. Luas selimut $L_s = \\pi r s$, luas permukaan total $L = \\pi r (r + s)$, dan volume $V = \\frac{1}{3}\\pi r^2 t$.",
+    "explanation": "Langkah-langkah evaluasi kerucut lingkaran tegak:\n\n1. **Garis Pelukis ($s$):**\n   $$s = \\sqrt{r^2 + t^2} = \\sqrt{7^2 + 24^2} = \\sqrt{49 + 576} = \\sqrt{625} = 25\\text{ cm}$$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Luas Selimut Kerucut ($L_s$):**\n   $$L_s = \\pi r s = \\frac{22}{7} \\times 7 \\times 25 = 22 \\times 25 = 550\\text{ cm}^2$$\n   Pernyataan B bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\n3. **Luas Permukaan Total Kerucut ($L$):**\n   $$L = \\pi r (r + s) = \\frac{22}{7} \\times 7 \\times (7 + 25) = 22 \\times 32 = 704\\text{ cm}^2$$\n\n4. **Volume Kerucut ($V$):**\n   $$V = \\frac{1}{3} \\pi r^2 t = \\frac{1}{3} \\times \\frac{22}{7} \\times 7^2 \\times 24 = \\frac{1}{3} \\times 154 \\times 24 = 154 \\times 8 = 1.232\\text{ cm}^3$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-ruang-06",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-ruang",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Sebuah unit usaha cenderamata mendesain boks kemasan suvenir berbentuk gabungan kubus pada bagian bawah dan limas segiempat beraturan pada bagian atasnya:\n- Bagian kubus memiliki panjang rusuk $s = 10$ cm (terdiri dari 1 bidang alas persegi dan 4 bidang dinding samping).\n- Bagian limas di atasnya memiliki alas persegi $10\\text{ cm} \\times 10\\text{ cm}$ (berimpit terbuka dengan bagian atas kubus) dan 4 bidang atap segitiga sama kaki dengan tinggi sisi tegak segitiga $t_s = 13$ cm.\n- Bentangan pola lembaran jaring-jaring utuh kemasan (termasuk lidah lem perekat) membutuhkan bidang persegi panjang berukuran bersih minimum **$34\\text{ cm} \\times 48\\text{ cm}$**.\n\nPengrajin memiliki anggaran belanja bahan kertas karton cetak sebesar **Rp600.000,00** dan mengevaluasi lembaran kertas berikut:\n- Kertas A3 ($30\\text{ cm} \\times 42\\text{ cm}$)\n- Kertas A3+ ($32\\text{ cm} \\times 48\\text{ cm}$)\n- Kertas Plano Jumbo ($70\\text{ cm} \\times 100\\text{ cm}$) seharga Rp15.000,00 per lembar.\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai tata letak jaring-jaring dan kapasitas produksi kemasan tersebut!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Kertas ukuran A3 ($30\\text{ cm} \\times 42\\text{ cm}$) dan A3+ ($32\\text{ cm} \\times 48\\text{ cm}$) tidak dapat memuat satu jaring-jaring utuh kemasan karena dimensinya lebih kecil dari bentangan pola minimum ($34\\text{ cm} \\times 48\\text{ cm}$)."
+      },
+      {
+        "id": "B",
+        "text": "Setiap lembar kertas Plano Jumbo ($70\\text{ cm} \\times 100\\text{ cm}$) dapat memuat secara optimal sebanyak 4 pola jaring-jaring kemasan suvenir."
+      },
+      {
+        "id": "C",
+        "text": "Dengan anggaran belanja Rp600.000,00 dan pemilihan kertas Plano Jumbo, jumlah maksimum kemasan suvenir yang dapat diproduksi adalah tepat 160 unit kemasan."
+      },
+      {
+        "id": "D",
+        "text": "Setiap lembar kertas Plano Jumbo ($70\\text{ cm} \\times 100\\text{ cm}$) dapat memuat 6 pola jaring-jaring kemasan suvenir secara presisi."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Bandingkan ukuran pola jaring-jaring ($34 \\times 48$ cm) terhadap ukuran kertas A3 dan A3+. Pada lembar Plano ($70 \\times 100$ cm), hitung kapasitas pemotongan kisi: $\\lfloor 70/34 \\rfloor \\times \\lfloor 100/48 \\rfloor$. Kalikan hasil per lembar dengan jumlah lembar yang dapat dibeli.",
+    "explanation": "Langkah-langkah evaluasi tata letak jaring-jaring kemasan dan optimasi anggaran:\n\n1. **Kesesuaian Ukuran Kertas A3 dan A3+ (Pernyataan A):**\n   - Kebutuhan pola bersih minimum adalah $34\\text{ cm} \\times 48\\text{ cm}$.\n   - Ukuran A3: $30\\text{ cm} < 34\\text{ cm}$ dan $42\\text{ cm} < 48\\text{ cm}$ (tidak muat).\n   - Ukuran A3+: lebar $32\\text{ cm} < 34\\text{ cm}$ (tidak muat).\n   Pernyataan A bernilai **BENAR**.\n\n2. **Kapasitas Pemotongan Pola pada Kertas Plano Jumbo ($70\\text{ cm} \\times 100\\text{ cm}$):**\n   - Susunan pola memanjang searah panjang plano:\n     - Sisi 70 cm memuat: $\\lfloor 70 / 34 \\rfloor = 2\\text{ pola}$ (sisa 2 cm)\n     - Sisi 100 cm memuat: $\\lfloor 100 / 48 \\rfloor = 2\\text{ pola}$ (sisa 4 cm)\n     - Total kapasitas: $2 \\times 2 = 4\\text{ pola kemasan per lembar plano}$.\n   - Susunan rotasi 90 derajat: $\\lfloor 70/48 \\rfloor \\times \\lfloor 100/34 \\rfloor = 1 \\times 2 = 2\\text{ pola}$ (kurang efisien).\n   Kapasitas maksimal yang dapat dipotong adalah **4 pola per lembar**. Pernyataan B bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\n3. **Optimasi Anggaran dan Jumlah Produksi (Pernyataan C):**\n   - Anggaran: Rp600.000,00\n   - Harga per lembar plano: Rp15.000,00\n   - Jumlah lembar plano yang dapat dibeli:\n     $$\\frac{600.000}{15.000} = 40\\text{ lembar plano}$$\n   - Total kemasan suvenir yang berhasil diproduksi:\n     $$40\\text{ lembar} \\times 4\\text{ kemasan/lembar} = 160\\text{ unit kemasan}$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-ruang-07",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-ruang",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Sebuah tabung silinder tegak diletakkan di dalam sebuah kerucut pejal sedemikian sehingga lingkaran alas tabung berimpit dengan lingkaran alas kerucut. Kerucut pejal tersebut memiliki jari-jari alas $R = 12$ cm dan tinggi kerucut $H = 18$ cm.\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai dimensi tabung terbesar (volume maksimum) yang dapat dimuat di dalam kerucut tersebut!",
+    "options": [
+      { "id": "A", "text": "Hubungan antara tinggi tabung $t$ dan jari-jari alas tabung $r$ dirumuskan oleh persamaan linear $t = 18 - 1,5r$." },
+      { "id": "B", "text": "Volume tabung mencapai nilai maksimum saat jari-jari alas tabung dipilih $r = 8$ cm dan tingginya $t = 6$ cm." },
+      { "id": "C", "text": "Volume maksimum tabung tersebut adalah $384\\pi\\text{ cm}^3$, yang setara dengan $\\frac{4}{9}$ dari volume total kerucut." },
+      { "id": "D", "text": "Volume tabung maksimum tercapai saat jari-jari alas tabung dipilih tepat setengah dari jari-jari kerucut ($r = 6$ cm)." }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Gunakan kesebangunan penampang segitiga kerucut $\\frac{H - t}{H} = \\frac{r}{R}$ untuk menyatakan $t$ dalam $r$. Substitusikan ke rumus volume tabung $V(r) = \\pi r^2 t$, lalu cari titik puncak dengan turunan pertama $V'(r) = 0$.",
+    "explanation": "Langkah-langkah optimasi tabung di dalam kerucut:\n\n1. **Hubungan Geometri Penampang:**\n   Berdasarkan kesebangunan segitiga siku-siku pada penampang kerucut:\n   $$\\frac{H - t}{H} = \\frac{r}{R}$$\n   Substitusikan $R = 12$ dan $H = 18$:\n   $$\\frac{18 - t}{18} = \\frac{r}{12} \\implies 18 - t = 1,5r \\implies t = 18 - 1,5r$$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Fungsi Volume Tabung dan Nilai Ekstrem:**\n   $$V(r) = \\pi r^2 t = \\pi r^2 (18 - 1,5r) = 18\\pi r^2 - 1,5\\pi r^3$$\n   Turunan pertama untuk mencari volume maksimum ($V'(r) = 0$):\n   $$V'(r) = 36\\pi r - 4,5\\pi r^2 = 0$$\n   $$4,5\\pi r (8 - r) = 0 \\implies r = 8\\text{ cm}$$\n   Tinggi tabung saat volume maksimum:\n   $$t = 18 - 1,5(8) = 18 - 12 = 6\\text{ cm}$$\n   Pernyataan B bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\n3. **Menghitung Volume Maksimum dan Perbandingan terhadap Kerucut:**\n   - Volume tabung maksimum:\n     $$V_{\\text{tabung, maks}} = \\pi (8^2)(6) = 384\\pi\\text{ cm}^3$$\n   - Volume kerucut:\n     $$V_{\\text{kerucut}} = \\frac{1}{3} \\pi R^2 H = \\frac{1}{3} \\pi (12^2)(18) = 864\\pi\\text{ cm}^3$$\n   - Rasio volume:\n     $$\\frac{V_{\\text{tabung, maks}}}{V_{\\text{kerucut}}} = \\frac{384\\pi}{864\\pi} = \\frac{4}{9}$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-ruang-08",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-ruang",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Tentukan kebenaran dari masing-masing pernyataan matematika mengenai pengaruh faktor skala dimensi balok, kapasitas prisma segitiga, dan perbandingan volume Archimedes di bawah ini dengan memilih **Benar** atau **Salah** pada setiap baris:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Jika seluruh ukuran panjang rusuk sebuah balok diperbesar menjadi 2 kali lipat dari ukuran semula, maka luas permukaannya bertambah menjadi 4 kali semula dan volumenya bertambah menjadi 8 kali semula."
+      },
+      {
+        "id": "B",
+        "text": "Sebuah tangki air berbentuk prisma tegak segitiga siku-siku dengan panjang sisi-sisi penyiku alas 60 cm dan 80 cm serta tinggi prisma 150 cm memiliki kapasitas volume tepat 360 liter."
+      },
+      {
+        "id": "C",
+        "text": "Perbandingan volume antara sebuah kerucut, setengah bola, dan tabung yang memiliki jari-jari alas $r$ dan tinggi $r$ yang sama berturut-turut adalah $1 : 3 : 2$."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Salah"
+    },
+    "hint": "Pada pernyataan A, perhatikan rasio luas berbanding $k^2$ dan volume berbanding $k^3$. Pada pernyataan B, hitung luas alas $\\frac{1}{2} \\times 60 \\times 80$ lalu kalikan dengan tinggi 150 cm. Pada pernyataan C, bandingkan rumus $\\frac{1}{3}\\pi r^3$, $\\frac{2}{3}\\pi r^3$, dan $\\pi r^3$.",
+    "explanation": "Analisis keabsahan tiap pernyataan:\n\n1. **Pernyataan A (Benar):**\n   Untuk faktor perbesaran linear $k = 2$:\n   - Luas permukaan berskala $k^2 = 2^2 = 4$ kali semula.\n   - Volume berskala $k^3 = 2^3 = 8$ kali semula.\n\n2. **Pernyataan B (Benar):**\n   - Luas alas prisma segitiga siku-siku: $L_{\\text{alas}} = \\frac{1}{2} \\times 60\\text{ cm} \\times 80\\text{ cm} = 2.400\\text{ cm}^2$.\n   - Volume prisma: $V = L_{\\text{alas}} \\times t = 2.400\\text{ cm}^2 \\times 150\\text{ cm} = 360.000\\text{ cm}^3$.\n   - Konversi ke liter ($1\\text{ liter} = 1.000\\text{ cm}^3$): $360.000 / 1.000 = 360\\text{ liter}$.\n\n3. **Pernyataan C (Salah):**\n   Untuk bangun dengan jari-jari $r$ dan tinggi $r$:\n   - Volume kerucut: $V_1 = \\frac{1}{3} \\pi r^2 (r) = \\frac{1}{3}\\pi r^3$\n   - Volume setengah bola: $V_2 = \\frac{2}{3}\\pi r^3$\n   - Volume tabung: $V_3 = \\pi r^2 (r) = \\frac{3}{3}\\pi r^3$\n   Rasio volume kerucut : setengah bola : tabung yang benar adalah $\\frac{1}{3} : \\frac{2}{3} : 1 = 1 : 2 : 3$, bukan $1 : 3 : 2$."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-ruang-09",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-ruang",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Tentukan kebenaran dari masing-masing pernyataan aljabar geometri mengenai luas permukaan kubus dari diagonal ruang, volume pipa silinder berongga, dan volume limas beraturan di bawah ini dengan memilih **Benar** atau **Salah** pada setiap baris:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Luas permukaan total kubus yang memiliki panjang diagonal ruang $6\\sqrt{3}$ cm adalah tepat $216\\text{ cm}^2$."
+      },
+      {
+        "id": "B",
+        "text": "Sebuah pipa silinder berongga dengan jari-jari luar 5 cm, jari-jari dalam 4 cm, dan panjang pipa 70 cm memiliki volume bahan material pipa sebesar $630\\pi\\text{ cm}^3$."
+      },
+      {
+        "id": "C",
+        "text": "Volume sebuah limas segiempat beraturan dengan panjang rusuk alas 10 cm dan panjang rusuk tegak 13 cm adalah tepat $400\\text{ cm}^3$."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Salah"
+    },
+    "hint": "Pada pernyataan A, diagonal ruang kubus adalah $s\\sqrt{3}$. Pada pernyataan B, volume material adalah $\\pi(R^2 - r^2)t$. Pada pernyataan C, hitung tinggi limas menggunakan setengah diagonal alas $5\\sqrt{2}$ dan rusuk tegak 13 cm.",
+    "explanation": "Analisis keabsahan tiap pernyataan:\n\n1. **Pernyataan A (Benar):**\n   Diagonal ruang kubus: $s\\sqrt{3} = 6\\sqrt{3} \\implies s = 6\\text{ cm}$.\n   Luas permukaan total kubus: $L = 6s^2 = 6(6^2) = 6(36) = 216\\text{ cm}^2$.\n\n2. **Pernyataan B (Benar):**\n   Volume bahan silinder pipa berongga:\n   $$V = \\pi (R^2 - r^2) t = \\pi (5^2 - 4^2) \\times 70 = \\pi (25 - 16) \\times 70 = 9\\pi \\times 70 = 630\\pi\\text{ cm}^3$$\n\n3. **Pernyataan C (Salah):**\n   - Sisi alas persegi $s = 10\\text{ cm}$, panjang diagonal alas $d = 10\\sqrt{2}\\text{ cm}$.\n   - Jarak titik pusat alas ke titik sudut alas adalah setengah diagonal: $\\frac{10\\sqrt{2}}{2} = 5\\sqrt{2}\\text{ cm}$.\n   - Tinggi limas dihitung dengan Pythagoras:\n     $$t = \\sqrt{13^2 - (5\\sqrt{2})^2} = \\sqrt{169 - 50} = \\sqrt{119}\\text{ cm} \\approx 10,91\\text{ cm}$$\n   - Volume limas: $V = \\frac{1}{3} \\times 100 \\times \\sqrt{119} \\approx 363,6\\text{ cm}^3$.\n   Volume yang dihasilkan bukan $400\\text{ cm}^3$."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-ruang-10",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-ruang",
+    "question_type": "KECUKUPAN_DATA",
+    "difficulty": "HOTS",
+    "question_text": "Sebuah tangki penyimpanan cairan dirancang berbentuk gabungan silinder tabung pada bagian bawah dan kubah setengah bola pada bagian atasnya yang berimpit presisi.\n\n<div class=\"flex justify-center my-3\"><svg viewBox=\"0 0 280 85\" class=\"w-64 h-auto drop-shadow-sm\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"10\" width=\"260\" height=\"65\" rx=\"10\" fill=\"#1E293B\" stroke=\"#06B6D4\" stroke-width=\"2\"/><text x=\"140\" y=\"35\" fill=\"#E2E8F0\" font-size=\"13\" font-family=\"monospace\" text-anchor=\"middle\" font-weight=\"bold\">Target: Volume Total Tangki = ?</text><text x=\"140\" y=\"58\" fill=\"#22D3EE\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\">(1) Jari-jari r = 7 cm  |  (2) Tinggi Total = 27 cm</text></svg></div>\n\nBerapakah volume total kapasitas penyimpanan tangki tersebut?\n\n(1) Jari-jari lingkaran alas tabung adalah $r = 7$ cm.\n(2) Tinggi total tangki dari dasar tabung hingga titik puncak kubah setengah bola adalah 27 cm.\n\nPutuskan apakah pernyataan (1) dan (2) tersebut cukup untuk menjawab pertanyaan.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (2) SAJA tidak cukup."
+      },
+      {
+        "id": "B",
+        "text": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (1) SAJA tidak cukup."
+      },
+      {
+        "id": "C",
+        "text": "DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup."
+      },
+      {
+        "id": "D",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan Pernyataan (2) SAJA cukup."
+      },
+      {
+        "id": "E",
+        "text": "Pernyataan (1) dan Pernyataan (2) tidak cukup untuk menjawab pertanyaan."
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Rumus volume tangki gabungan adalah $V_{\\text{total}} = \\pi r^2 t_{\\text{tabung}} + \\frac{2}{3}\\pi r^3$. Perhatikan bahwa tinggi total tangki merupakan jumlahan dari tinggi tabung dan jari-jari setengah bola: $H = t_{\\text{tabung}} + r$.",
+    "explanation": "Target pertanyaan: Menentukan nilai eksak volume total tangki gabungan tabung dan setengah bola.\n\nRumus volume total tangki:\n$$V_{\\text{total}} = V_{\\text{tabung}} + V_{\\text{setengah bola}} = \\pi r^2 t_{\\text{tabung}} + \\frac{2}{3} \\pi r^3$$\n\n1. **Uji Pernyataan (1) SAJA:**\n   Diketahui jari-jari $r = 7$ cm.\n   Namun, tinggi silinder tabung ($t_{\\text{tabung}}$) belum diketahui, sehingga volume tabung belum dapat dihitung.\n   Maka, **Pernyataan (1) SAJA TIDAK CUKUP**.\n\n2. **Uji Pernyataan (2) SAJA:**\n   Diketahui tinggi total tangki adalah 27 cm.\n   Tinggi total merupakan jumlahan tinggi tabung dan jari-jari kubah setengah bola:\n   $$H = t_{\\text{tabung}} + r = 27\\text{ cm}$$\n   Karena nilai jari-jari $r$ belum diketahui, dimensi tangki belum dapat ditentukan.\n   Maka, **Pernyataan (2) SAJA TIDAK CUKUP**.\n\n3. **Uji Pernyataan (1) dan (2) BERSAMA-SAMA:**\n   Dari Pernyataan (1): $r = 7$ cm.\n   Dari Pernyataan (2): $t_{\\text{tabung}} + 7 = 27 \\implies t_{\\text{tabung}} = 20\\text{ cm}$.\n   Dengan $r = 7\\text{ cm}$ dan $t_{\\text{tabung}} = 20\\text{ cm}$, volume tangki dapat dihitung secara pasti:\n   - Volume tabung: $V_{\\text{tabung}} = \\frac{22}{7} \\times 7^2 \\times 20 = 154 \\times 20 = 3.080\\text{ cm}^3$\n   - Volume setengah bola: $V_{\\text{setengah bola}} = \\frac{2}{3} \\times \\frac{22}{7} \\times 7^3 = \\frac{2}{3} \\times 1.078 = 718\\frac{2}{3}\\text{ cm}^3$\n   - Volume total tangki: $V_{\\text{total}} = 3.080 + 718\\frac{2}{3} = 3.798\\frac{2}{3}\\text{ cm}^3$.\n   Maka, **DUA pernyataan BERSAMA-SAMA CUKUP**.\n\nKesimpulan: DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup (**Jawaban C**)."
+  }
+]

@@ -1,1 +1,336 @@
-[]
+[
+  {
+    "id": "matwa-aplikasi-trigonometri-01",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "aplikasi-trigonometri",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah tangga dengan panjang $6\\text{ meter}$ disandarkan pada dinding vertikal sebuah rumah. Kaki tangga diletakkan di atas tanah mendatar sehingga badan tangga membentuk sudut $60^\\circ$ terhadap permukaan tanah. Ujung atas tangga tepat mencapai bibir bawah jendela di lantai dua. Tinggi bibir bawah jendela tersebut dari permukaan tanah adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$3\\text{ meter}$"
+      },
+      {
+        "id": "B",
+        "text": "$3\\sqrt{2}\\text{ meter}$"
+      },
+      {
+        "id": "C",
+        "text": "$3\\sqrt{3}\\text{ meter}$"
+      },
+      {
+        "id": "D",
+        "text": "$6\\sqrt{2}\\text{ meter}$"
+      },
+      {
+        "id": "E",
+        "text": "$6\\sqrt{3}\\text{ meter}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Identifikasi sisi depan, samping, dan miring pada segitiga siku-siku yang dibentuk oleh tangga, dinding vertikal, dan lantai mendatar. Gunakan perbandingan sinus: $\\sin \\theta = \\frac{\\text{sisi depan}}{\\text{sisi miring}}$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Sketsa masalah membentuk segitiga siku-siku:\n   - Sudut antara tangga dan tanah: $\\theta = 60^\\circ$.\n   - Panjang tangga (sisi miring segitiga): $c = 6\\text{ m}$.\n   - Tinggi dinding yang dicapai tangga (sisi depan sudut): $t$.\n2. Gunakan rumus perbandingan sinus:\n   $$\\sin 60^\\circ = \\frac{t}{c}$$\n   $$\\frac{1}{2}\\sqrt{3} = \\frac{t}{6}$$\n   $$t = 6 \\times \\frac{1}{2}\\sqrt{3} = 3\\sqrt{3}\\text{ meter}$$\n\nJadi, tinggi bibir bawah jendela dari permukaan tanah adalah $3\\sqrt{3}\\text{ meter}$."
+  },
+  {
+    "id": "matwa-aplikasi-trigonometri-02",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "aplikasi-trigonometri",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Seorang petugas pengawas berada di puncak mercusuar yang tingginya $45\\text{ meter}$ di atas permukaan air laut. Dari puncak tersebut, petugas melihat sebuah perahu nelayan dengan sudut depresi sebesar $30^\\circ$. Jarak mendatar (horizontal) dari perahu nelayan tersebut ke dasar mercusuar adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$15\\sqrt{3}\\text{ meter}$"
+      },
+      {
+        "id": "B",
+        "text": "$30\\sqrt{3}\\text{ meter}$"
+      },
+      {
+        "id": "C",
+        "text": "$45\\text{ meter}$"
+      },
+      {
+        "id": "D",
+        "text": "$45\\sqrt{3}\\text{ meter}$"
+      },
+      {
+        "id": "E",
+        "text": "$90\\text{ meter}$"
+      }
+    ],
+    "correct_answer": "D",
+    "hint": "Sudut depresi dari pandangan horizontal pengawas sama besarnya dengan sudut elevasi dari perahu nelayan ke puncak mercusuar (sudut dalam berseberangan). Gunakan perbandingan tangen: $\\tan \\theta = \\frac{\\text{sisi depan}}{\\text{sisi samping}}$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Berdasarkan sifat garis sejajar, sudut depresi $30^\\circ$ dari garis horizontal pandangan pengamat sama dengan sudut elevasi $30^\\circ$ dari perahu menuju puncak mercusuar (sudut dalam berseberangan).\n2. Pada segitiga siku-siku yang terbentuk:\n   - Sisi depan (tinggi mercusuar): $h = 45\\text{ m}$.\n   - Sisi samping (jarak horizontal perahu ke dasar mercusuar): $d$.\n3. Gunakan perbandingan tangen:\n   $$\\tan 30^\\circ = \\frac{h}{d}$$\n   $$\\frac{1}{\\sqrt{3}} = \\frac{45}{d}$$\n   $$d = 45\\sqrt{3}\\text{ meter}$$\n\nJadi, jarak mendatar perahu nelayan ke dasar mercusuar adalah $45\\sqrt{3}\\text{ meter}$."
+  },
+  {
+    "id": "matwa-aplikasi-trigonometri-03",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "aplikasi-trigonometri",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Seorang siswa bernama Andi yang memiliki tinggi mata $1,6\\text{ meter}$ dari permukaan tanah mengukur tinggi tiang bendera di lapangan sekolah menggunakan klinometer. Mula-mula, dari titik $A$, Andi melihat puncak tiang bendera dengan sudut elevasi $45^\\circ$. Kemudian, Andi berjalan lurus menjauhi tiang bendera sejauh $12\\text{ meter}$ ke titik $B$ yang segaris dengan tiang bendera dan titik $A$. Dari titik $B$, sudut elevasi ke puncak tiang bendera menjadi $30^\\circ$. Jika nilai pendekatan $\\sqrt{3} \\approx 1,73$, maka tinggi tiang bendera tersebut dari permukaan tanah adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$12,38\\text{ meter}$"
+      },
+      {
+        "id": "B",
+        "text": "$16,38\\text{ meter}$"
+      },
+      {
+        "id": "C",
+        "text": "$17,98\\text{ meter}$"
+      },
+      {
+        "id": "D",
+        "text": "$19,58\\text{ meter}$"
+      },
+      {
+        "id": "E",
+        "text": "$23,98\\text{ meter}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Misalkan tinggi tiang bendera di atas garis mata adalah $y$ dan jarak mendatar dari titik $A$ ke tiang bendera adalah $x$. Buat sistem persamaan dari kedua sudut elevasi, lalu jangan lupa menambahkan tinggi mata Andi ($1,6\\text{ m}$) pada hasil akhir.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Definisikan variabel:\n   - Misalkan $y$ adalah tinggi tiang bendera di atas aras mata pengamat.\n   - Misalkan $x$ adalah jarak mendatar dari titik $A$ ke tiang bendera.\n   - Jarak dari titik $B$ ke tiang bendera adalah $x + 12$.\n2. Dari pengamatan di titik $A$ (sudut elevasi $45^\\circ$):\n   $$\\tan 45^\\circ = \\frac{y}{x} \\implies 1 = \\frac{y}{x} \\implies x = y$$\n3. Dari pengamatan di titik $B$ (sudut elevasi $30^\\circ$):\n   $$\\tan 30^\\circ = \\frac{y}{x + 12}$$\n   $$\\frac{1}{\\sqrt{3}} = \\frac{y}{y + 12}$$\n   $$y + 12 = y\\sqrt{3}$$\n   $$y(\\sqrt{3} - 1) = 12$$\n   $$y = \\frac{12}{\\sqrt{3} - 1} = \\frac{12(\\sqrt{3} + 1)}{(\\sqrt{3} - 1)(\\sqrt{3} + 1)} = \\frac{12(\\sqrt{3} + 1)}{2} = 6(\\sqrt{3} + 1)$$\n4. Substitusikan $\\sqrt{3} \\approx 1,73$:\n   $$y = 6(1,73 + 1) = 6(2,73) = 16,38\\text{ meter}$$\n5. Hitung tinggi total tiang bendera dari permukaan tanah ($H$):\n   $$H = y + \\text{tinggi mata} = 16,38 + 1,60 = 17,98\\text{ meter}$$\n\nJadi, tinggi tiang bendera dari permukaan tanah adalah $17,98\\text{ meter}$."
+  },
+  {
+    "id": "matwa-aplikasi-trigonometri-04",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "aplikasi-trigonometri",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Dari puncak sebuah tebing curam setinggi $120\\text{ meter}$ di atas permukaan laut, seorang penjaga pantai memantau dua kapal penyelamat, yaitu Kapal $A$ dan Kapal $B$. Kedua kapal tersebut dan dasar tebing berada pada satu garis lurus yang sama di perairan, serta kedua kapal berada di sisi yang sama terhadap tebing. Sudut depresi petugas terhadap Kapal $A$ adalah $45^\\circ$ dan sudut depresi terhadap Kapal $B$ adalah $30^\\circ$. Menggunakan pendekatan $\\sqrt{3} \\approx 1,73$, jarak antara Kapal $A$ dan Kapal $B$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$60,0\\text{ meter}$"
+      },
+      {
+        "id": "B",
+        "text": "$87,6\\text{ meter}$"
+      },
+      {
+        "id": "C",
+        "text": "$120,0\\text{ meter}$"
+      },
+      {
+        "id": "D",
+        "text": "$207,6\\text{ meter}$"
+      },
+      {
+        "id": "E",
+        "text": "$327,6\\text{ meter}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Tentukan jarak mendatar masing-masing kapal dari dasar tebing menggunakan fungsi tangen sudut depresi (atau elevasi dari kapal ke puncak tebing), kemudian hitung selisih jarak kedua kapal tersebut.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Misalkan tinggi tebing adalah $h = 120\\text{ meter}$.\n2. Jarak mendatar Kapal $A$ ke dasar tebing ($d_A$):\n   - Sudut depresi ke Kapal $A$ adalah $45^\\circ$, sehingga sudut elevasi dari Kapal $A$ ke puncak tebing adalah $45^\\circ$.\n   $$\\tan 45^\\circ = \\frac{h}{d_A} \\implies 1 = \\frac{120}{d_A} \\implies d_A = 120\\text{ meter}$$\n3. Jarak mendatar Kapal $B$ ke dasar tebing ($d_B$):\n   - Sudut depresi ke Kapal $B$ adalah $30^\\circ$, sehingga sudut elevasi dari Kapal $B$ ke puncak tebing adalah $30^\\circ$.\n   $$\\tan 30^\\circ = \\frac{h}{d_B} \\implies \\frac{1}{\\sqrt{3}} = \\frac{120}{d_B} \\implies d_B = 120\\sqrt{3}\\text{ meter}$$\n4. Menghitung jarak antara Kapal $A$ dan Kapal $B$ ($AB$):\n   $$AB = d_B - d_A = 120\\sqrt{3} - 120 = 120(\\sqrt{3} - 1)$$\n5. Substitusikan pendekatan $\\sqrt{3} \\approx 1,73$:\n   $$AB = 120(1,73 - 1) = 120 \\times 0,73 = 87,6\\text{ meter}$$\n\nJadi, jarak antara Kapal $A$ dan Kapal $B$ adalah $87,6\\text{ meter}$."
+  },
+  {
+    "id": "matwa-aplikasi-trigonometri-05",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "aplikasi-trigonometri",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Dua titik pengamatan $Q$ dan $R$ terletak pada tanah mendatar dan segaris lurus dengan kaki sebuah gedung bertingkat $P$. Puncak gedung tersebut dinamai titik $T$ sehingga ruas garis $PT$ berdiri tegak lurus terhadap tanah. Posisi ketiga titik di tanah berurutan adalah $P - Q - R$ dengan jarak $QR = 60\\text{ meter}$. Dari titik $R$, sudut elevasi ke puncak gedung $T$ selalu terukur tetap, yaitu $\\angle QRT = 30^\\circ$. Seorang pengamat menyelidiki hubungan antara sudut elevasi di titik $Q$ (yaitu $\\angle PQT$), jarak $PQ$, dan tinggi gedung $PT$. Diketahui pendekatan $\\sqrt{2} \\approx 1,41$ dan $\\sqrt{3} \\approx 1,73$.\n\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Jika $\\angle PQT = 45^\\circ$, maka tinggi gedung $PT$ adalah $30(\\sqrt{3} + 1)\\text{ meter} \\approx 81,9\\text{ meter}$."
+      },
+      {
+        "id": "B",
+        "text": "Jika $\\angle PQT = 60^\\circ$, maka jarak dari titik $Q$ ke kaki gedung ($PQ$) adalah tepat $30\\text{ meter}$."
+      },
+      {
+        "id": "C",
+        "text": "Jika $\\angle PQT = 60^\\circ$, maka tinggi gedung $PT$ adalah $60\\sqrt{3}\\text{ meter} \\approx 103,8\\text{ meter}$."
+      },
+      {
+        "id": "D",
+        "text": "Jika sudut elevasi memenuhi interval $45^\\circ < \\angle PQT < 60^\\circ$, maka tinggi gedung $PT$ berada pada interval $51,9\\text{ meter} < PT < 81,9\\text{ meter}$."
+      },
+      {
+        "id": "E",
+        "text": "Jika sudut elevasi memenuhi interval $45^\\circ < \\angle PQT < 60^\\circ$, maka jarak $PQ$ selalu lebih dari $90\\text{ meter}$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "hint": "Gunakan rumus relasi sudut elevasi dua titik segaris: $PT = \\frac{QR}{\\cot 30^\\circ - \\cot \\theta}$ dan $PQ = PT \\cdot \\cot \\theta$. Evaluasi nilai untuk $\\theta = 45^\\circ$, $\\theta = 60^\\circ$, serta sifat kemonotonan fungsi tangen/kotangen pada interval tersebut.",
+    "explanation": "Langkah-langkah analisis matematis:\n1. Model geometri:\n   - Titik $P, Q, R$ segaris di tanah mendatar dengan urutan $P - Q - R$.\n   - Misalkan tinggi gedung $PT = h$ dan jarak $PQ = x$.\n   - Jarak $PR = PQ + QR = x + 60$.\n   - Dari titik $R$, $\\angle PRT = 30^\\circ$:\n     $$\\tan 30^\\circ = \\frac{h}{x + 60} = \\frac{1}{\\sqrt{3}} \\implies x + 60 = h\\sqrt{3} \\implies h = \\frac{x + 60}{\\sqrt{3}}$$\n   - Dari titik $Q$, misalkan sudut elevasi $\\angle PQT = \\theta$, maka $\\tan \\theta = \\frac{h}{x} \\implies h = x\\tan \\theta$.\n   - Menyamakan kedua rumus $h$:\n     $$x\\tan \\theta = \\frac{x + 60}{\\sqrt{3}} \\implies x(\\sqrt{3}\\tan \\theta - 1) = 60 \\implies x = \\frac{60}{\\sqrt{3}\\tan \\theta - 1}$$\n2. Evaluasi Kasus $\\theta = 45^\\circ$ (Pernyataan A):\n   - $\\tan 45^\\circ = 1$\n   - $x = \\frac{60}{\\sqrt{3} - 1} = \\frac{60(\\sqrt{3} + 1)}{2} = 30(\\sqrt{3} + 1)$\n   - Karena $\\tan 45^\\circ = 1$, maka $h = x = 30(\\sqrt{3} + 1) \\approx 30(1,73 + 1) = 30(2,73) = 81,9\\text{ meter}$.\n   - Pernyataan A BENAR.\n3. Evaluasi Kasus $\\theta = 60^\\circ$ (Pernyataan B dan C):\n   - $\\tan 60^\\circ = \\sqrt{3}$\n   - $x = \\frac{60}{\\sqrt{3}(\\sqrt{3}) - 1} = \\frac{60}{3 - 1} = 30\\text{ meter}$. Jadi jarak $PQ = 30\\text{ m}$. (Pernyataan B BENAR).\n   - Tinggi gedung: $h = x\\tan 60^\\circ = 30\\sqrt{3} \\approx 30 \\times 1,73 = 51,9\\text{ meter}$.\n   - Nilai $51,9\\text{ m} \\ne 103,8\\text{ m}$, sehingga Pernyataan C SALAH.\n4. Evaluasi Interval $45^\\circ < \\angle PQT < 60^\\circ$ (Pernyataan D dan E):\n   - Karena fungsi $\\tan \\theta$ naik monoton pada $0^\\circ < \\theta < 90^\\circ$, maka saat $\\theta$ membesar dari $45^\\circ$ ke $60^\\circ$, nilai penyebut $\\sqrt{3}\\tan \\theta - 1$ membesar dari $\\sqrt{3}-1$ ke $2$.\n   - Akibatnya jarak $x = PQ$ berkurang secara monoton dari $81,9\\text{ m}$ menuju $30\\text{ m}$ ($30\\text{ m} < PQ < 81,9\\text{ m}$).\n   - Tinggi gedung $h = \\frac{x+60}{\\sqrt{3}}$ juga berkurang secara monoton dari $81,9\\text{ m}$ menuju $51,9\\text{ m}$ ($51,9\\text{ m} < PT < 81,9\\text{ m}$).\n   - Oleh karena itu, Pernyataan D BENAR dan Pernyataan E SALAH (karena $PQ < 81,9\\text{ m}$, bukan selalu lebih dari $90\\text{ m}$).\n\nJadi, pernyataan yang bernilai BENAR adalah A, B, dan D."
+  },
+  {
+    "id": "matwa-aplikasi-trigonometri-06",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "aplikasi-trigonometri",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Sebuah drone pengawas jalan tol melayang diam pada ketinggian tetap $120\\text{ meter}$ tepat di atas sebuah jalan tol lurus mendatar. Pada suatu saat, kamera drone memantau dua buah mobil, yaitu Mobil Merah ($M_1$) dan Mobil Putih ($M_2$), yang berada di jalur jalan tol tersebut. Kedua mobil berada pada sisi yang berlawanan terhadap titik di jalan tol yang tepat berada di bawah drone. Sudut depresi kamera drone terhadap Mobil Merah adalah $45^\\circ$, sedangkan sudut depresi terhadap Mobil Putih adalah $60^\\circ$. Gunakan pendekatan $\\sqrt{3} \\approx 1,73$.\n\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Jarak mendatar dari Mobil Putih ke titik tepat di bawah drone adalah $40\\sqrt{3}\\text{ meter} \\approx 69,2\\text{ meter}$."
+      },
+      {
+        "id": "B",
+        "text": "Jarak lurus (garis pandang) dari drone ke Mobil Putih adalah $80\\sqrt{3}\\text{ meter} \\approx 138,4\\text{ meter}$."
+      },
+      {
+        "id": "C",
+        "text": "Jarak antara Mobil Merah dan Mobil Putih di jalan tol tersebut adalah $189,2\\text{ meter}$."
+      },
+      {
+        "id": "D",
+        "text": "Jarak lurus dari drone ke Mobil Merah lebih pendek daripada jarak lurus dari drone ke Mobil Putih."
+      },
+      {
+        "id": "E",
+        "text": "Jika kedua mobil berada pada sisi yang sama terhadap drone, maka jarak antara kedua mobil adalah tepat $120\\text{ meter}$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Tentukan jarak mendatar dan jarak pandang lurus (hipotenusa) untuk masing-masing mobil dari segitiga siku-siku yang terbentuk. Karena kedua mobil berada pada sisi berlawanan terhadap titik proyeksi drone, jarak total kedua mobil adalah penjumlahan kedua jarak mendatar.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Misalkan titik kedudukan drone di udara adalah $D$ dan proyeksi tegak lurusnya di permukaan jalan tol adalah titik $O$. Tinggi drone: $DO = 120\\text{ m}$.\n2. Analisis Mobil Merah ($M_1$):\n   - Sudut depresi $45^\\circ \\implies$ sudut elevasi dari $M_1$ ke $D$ adalah $45^\\circ$.\n   - Jarak mendatar $OM_1$: $\\tan 45^\\circ = \\frac{DO}{OM_1} \\implies 1 = \\frac{120}{OM_1} \\implies OM_1 = 120\\text{ meter}$.\n   - Jarak lurus $DM_1$: $\\sin 45^\\circ = \\frac{DO}{DM_1} \\implies DM_1 = \\frac{120}{\\frac{1}{2}\\sqrt{2}} = 120\\sqrt{2} \\approx 120 \\times 1,41 = 169,2\\text{ meter}$.\n3. Analisis Mobil Putih ($M_2$):\n   - Sudut depresi $60^\\circ \\implies$ sudut elevasi dari $M_2$ ke $D$ adalah $60^\\circ$.\n   - Jarak mendatar $OM_2$: $\\tan 60^\\circ = \\frac{DO}{OM_2} \\implies \\sqrt{3} = \\frac{120}{OM_2} \\implies OM_2 = \\frac{120}{\\sqrt{3}} = 40\\sqrt{3} \\approx 40 \\times 1,73 = 69,2\\text{ meter}$. (Pernyataan A BENAR).\n   - Jarak lurus $DM_2$: $\\sin 60^\\circ = \\frac{DO}{DM_2} \\implies DM_2 = \\frac{120}{\\frac{1}{2}\\sqrt{3}} = \\frac{240}{\\sqrt{3}} = 80\\sqrt{3} \\approx 80 \\times 1,73 = 138,4\\text{ meter}$. (Pernyataan B BENAR).\n4. Evaluasi jarak antara kedua mobil (Pernyataan C):\n   - Karena kedua mobil berada pada sisi yang berlawanan terhadap titik $O$:\n     $$M_1M_2 = OM_1 + OM_2 = 120 + 69,2 = 189,2\\text{ meter}$$\n   - Pernyataan C BENAR.\n5. Evaluasi Pernyataan D dan E:\n   - Jarak lurus ke Mobil Merah ($169,2\\text{ m}$) lebih panjang daripada jarak lurus ke Mobil Putih ($138,4\\text{ m}$), sehingga Pernyataan D SALAH.\n   - Jika kedua mobil berada pada sisi yang sama, jaraknya adalah selisihnya: $120 - 69,2 = 50,8\\text{ meter}$, bukan $120\\text{ meter}$, sehingga Pernyataan E SALAH.\n\nJadi, pernyataan yang bernilai BENAR adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-aplikasi-trigonometri-07",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "aplikasi-trigonometri",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah tiang pemancar vertikal setinggi $24\\text{ meter}$ berdiri tegak lurus di atas tanah mendatar. Untuk menstabilkan tiang dari tiupan angin kencang, dipasang dua utas kawat baja lurus yang ditambatkan ke pasak tanah di sisi yang sama:\n- Kawat Baja 1 diikatkan dari puncak tiang (ketinggian $24\\text{ meter}$) ke pasak tanah $P_1$ dan membentuk sudut kemiringan (elevasi) $30^\\circ$ terhadap permukaan tanah.\n- Kawat Baja 2 diikatkan dari titik tengah tiang (ketinggian $12\\text{ meter}$) ke pasak tanah $P_2$ dan membentuk sudut kemiringan (elevasi) $45^\\circ$ terhadap permukaan tanah.\n\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Panjang Kawat Baja 1 adalah tepat $48\\text{ meter}$."
+      },
+      {
+        "id": "B",
+        "text": "Panjang Kawat Baja 2 adalah $12\\sqrt{2}\\text{ meter}$."
+      },
+      {
+        "id": "C",
+        "text": "Jarak pasak $P_2$ ke kaki tiang pemancar adalah $12\\text{ meter}$."
+      },
+      {
+        "id": "D",
+        "text": "Panjang Kawat Baja 1 sama dengan dua kali panjang Kawat Baja 2."
+      },
+      {
+        "id": "E",
+        "text": "Jarak pasak $P_1$ ke kaki tiang pemancar adalah $24\\text{ meter}$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Gunakan definisi perbandingan sinus untuk mencari panjang kawat (sisi miring) dan tangen untuk mencari jarak pasak ke kaki tiang (sisi samping).",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Analisis Kawat Baja 1:\n   - Ketinggian ikatan di tiang: $h_1 = 24\\text{ meter}$.\n   - Sudut elevasi terhadap tanah: $\\theta_1 = 30^\\circ$.\n   - Panjang kawat $L_1$: $\\sin 30^\\circ = \\frac{h_1}{L_1} \\implies \\frac{1}{2} = \\frac{24}{L_1} \\implies L_1 = 48\\text{ meter}$. (Pernyataan A BENAR).\n   - Jarak pasak $P_1$ ke kaki tiang ($d_1$): $\\tan 30^\\circ = \\frac{h_1}{d_1} \\implies \\frac{1}{\\sqrt{3}} = \\frac{24}{d_1} \\implies d_1 = 24\\sqrt{3}\\text{ meter} \\ne 24\\text{ meter}$. (Pernyataan E SALAH).\n2. Analisis Kawat Baja 2:\n   - Ketinggian ikatan di tiang: $h_2 = 12\\text{ meter}$.\n   - Sudut elevasi terhadap tanah: $\\theta_2 = 45^\\circ$.\n   - Panjang kawat $L_2$: $\\sin 45^\\circ = \\frac{h_2}{L_2} \\implies \\frac{1}{2}\\sqrt{2} = \\frac{12}{L_2} \\implies L_2 = \\frac{12}{\\frac{1}{2}\\sqrt{2}} = 12\\sqrt{2}\\text{ meter}$. (Pernyataan B BENAR).\n   - Jarak pasak $P_2$ ke kaki tiang ($d_2$): $\\tan 45^\\circ = \\frac{h_2}{d_2} \\implies 1 = \\frac{12}{d_2} \\implies d_2 = 12\\text{ meter}$. (Pernyataan C BENAR).\n3. Evaluasi perbandingan panjang kawat (Pernyataan D):\n   - Dua kali panjang Kawat Baja 2 adalah $2 \\times 12\\sqrt{2} = 24\\sqrt{2} \\approx 33,94\\text{ m}$.\n   - Nilai ini tidak sama dengan panjang Kawat 1 ($48\\text{ m}$), sehingga Pernyataan D SALAH.\n\nJadi, pernyataan yang bernilai BENAR adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-aplikasi-trigonometri-08",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "aplikasi-trigonometri",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Sebuah bukit memiliki lereng miring yang membentuk sudut $\\alpha = 30^\\circ$ terhadap bidang datar horizontal. Di lereng bukit tersebut, pada jarak miring $40\\text{ meter}$ dari kaki bukit ($O$), terdapat sebuah pohon cemara yang tumbuh tegak lurus vertikal ($PT$) dengan tinggi pohon $10\\text{ meter}$. Titik $P$ adalah pangkal pohon di permukaan lereng dan titik $T$ adalah pucuk tertinggi pohon cemara.\n\nTentukan kategori BENAR atau SALAH untuk setiap pernyataan berikut!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ketinggian vertikal titik $P$ (pangkal pohon) dari bidang datar dasar bukit adalah $20\\text{ meter}$."
+      },
+      {
+        "id": "B",
+        "text": "Jarak horizontal mendatar dari kaki bukit $O$ ke garis vertikal kedudukan pohon cemara adalah $20\\sqrt{3}\\text{ meter}$."
+      },
+      {
+        "id": "C",
+        "text": "Sudut elevasi dari kaki bukit $O$ langsung ke pucuk pohon cemara ($T$) adalah tepat $45^\\circ$."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Salah"
+    },
+    "hint": "Gunakan koordinat kartesius dengan meletakkan kaki bukit di $O(0, 0)$. Tentukan koordinat titik $P$ dengan perbandingan sinus dan kosinus pada segitiga lereng bukit, lalu tambahkan tinggi pohon pada koordinat vertikal untuk menentukan koordinat pucuk $T$.",
+    "explanation": "Langkah-langkah analisis geometri:\n1. Tetapkan sistem koordinat dengan titik asal $O(0, 0)$ pada kaki bukit:\n   - Sudut kemiringan lereng: $\\alpha = 30^\\circ$.\n   - Jarak miring sepanjang lereng ke pangkal pohon: $OP = 40\\text{ meter}$.\n2. Koordinat pangkal pohon $P(x_P, y_P)$:\n   - Ketinggian vertikal: $y_P = OP \\cdot \\sin 30^\\circ = 40 \\times \\frac{1}{2} = 20\\text{ meter}$. (Pernyataan A bernilai BENAR).\n   - Jarak horizontal mendatar: $x_P = OP \\cdot \\cos 30^\\circ = 40 \\times \\frac{1}{2}\\sqrt{3} = 20\\sqrt{3}\\text{ meter}$. (Pernyataan B bernilai BENAR).\n3. Koordinat pucuk pohon $T(x_T, y_T)$:\n   - Karena pohon tumbuh tegak vertikal setinggi $10\\text{ m}$, koordinat horizontal pucuk sama dengan pangkalnya ($x_T = x_P = 20\\sqrt{3}\\text{ m}$).\n   - Ketinggian vertikal pucuk: $y_T = y_P + 10 = 20 + 10 = 30\\text{ meter}$.\n4. Menghitung sudut elevasi dari kaki bukit $O$ ke pucuk pohon $T$ (misalkan sudut $\\beta$):\n   $$\\tan \\beta = \\frac{y_T}{x_T} = \\frac{30}{20\\sqrt{3}} = \\frac{3}{2\\sqrt{3}} = \\frac{\\sqrt{3}}{2} \\approx 0,866$$\n   - Jika sudut elevasi adalah $45^\\circ$, maka haruslah $\\tan 45^\\circ = 1$. Namun di sini $\\tan \\beta = \\frac{\\sqrt{3}}{2} \\ne 1$ (sehingga $\\beta \\approx 40,89^\\circ \\ne 45^\\circ$).\n   - Oleh karena itu, Pernyataan C bernilai SALAH.\n\nKesimpulan Kategori:\n- Pernyataan A: Benar\n- Pernyataan B: Benar\n- Pernyataan C: Salah"
+  },
+  {
+    "id": "matwa-aplikasi-trigonometri-09",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "aplikasi-trigonometri",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Dua pos pemantau kebakaran hutan, yaitu Pos $A$ dan Pos $B$, berada di atas tanah mendatar dan terpisah pada jarak $1.200\\text{ meter}$. Sebuah balon udara pemantau cuaca dan kepulan asap melayang diam di udara tepat di atas garis lurus yang menghubungkan Pos $A$ dan Pos $B$ (di antara kedua pos tersebut). Dari Pos $A$, sudut elevasi ke balon udara teramati sebesar $30^\\circ$, sedangkan dari Pos $B$, sudut elevasi ke balon udara teramati sebesar $60^\\circ$.\n\nTentukan kategori BENAR atau SALAH untuk setiap pernyataan berikut!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Jarak horizontal dari Pos $A$ ke titik di tanah yang tepat berada di bawah balon udara adalah $900\\text{ meter}$."
+      },
+      {
+        "id": "B",
+        "text": "Ketinggian terbang balon udara tersebut di atas permukaan tanah adalah $300\\sqrt{3}\\text{ meter}$."
+      },
+      {
+        "id": "C",
+        "text": "Jarak pandang langsung (garis lurus) dari Pos $A$ ke balon udara adalah $600\\text{ meter}$."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Salah"
+    },
+    "hint": "Misalkan titik proyeksi balon di tanah adalah $H$. Hubungkan tinggi balon $h$ dengan jarak $AH$ dan $BH$ menggunakan $\\tan 30^\\circ$ dan $\\tan 60^\\circ$. Manfaatkan informasi $AH + BH = 1.200\\text{ meter}$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Model geometri:\n   - Misalkan posisi balon udara adalah $T$ dengan ketinggian $h$ dari permukaan tanah.\n   - Misalkan titik tepat di bawah balon udara di tanah adalah $H$.\n   - Pos $A$, titik $H$, dan Pos $B$ terletak pada satu garis lurus dengan $AH + HB = 1.200\\text{ meter}$.\n2. Dari Pos $A$ (sudut elevasi $30^\\circ$):\n   $$\\tan 30^\\circ = \\frac{h}{AH} \\implies \\frac{1}{\\sqrt{3}} = \\frac{h}{AH} \\implies AH = h\\sqrt{3}$$\n3. Dari Pos $B$ (sudut elevasi $60^\\circ$):\n   $$\\tan 60^\\circ = \\frac{h}{HB} \\implies \\sqrt{3} = \\frac{h}{HB} \\implies HB = \\frac{h}{\\sqrt{3}}$$\n4. Gabungkan kedua panjang jarak horizontal:\n   $$AH + HB = 1.200$$\n   $$h\\sqrt{3} + \\frac{h}{\\sqrt{3}} = 1.200$$\n   Kalikan kedua ruas dengan $\\sqrt{3}$:\n   $$3h + h = 1.200\\sqrt{3}$$\n   $$4h = 1.200\\sqrt{3} \\implies h = 300\\sqrt{3}\\text{ meter}$$\n   (Pernyataan B bernilai BENAR).\n5. Hitung jarak mendatar $AH$ dan $HB$:\n   - $AH = h\\sqrt{3} = (300\\sqrt{3})\\sqrt{3} = 300 \\times 3 = 900\\text{ meter}$. (Pernyataan A bernilai BENAR).\n   - $HB = 1.200 - 900 = 300\\text{ meter}$.\n6. Hitung jarak pandang langsung dari Pos $A$ ke balon udara ($AT$):\n   $$\\sin 30^\\circ = \\frac{h}{AT} \\implies \\frac{1}{2} = \\frac{300\\sqrt{3}}{AT} \\implies AT = 600\\sqrt{3}\\text{ meter}$$\n   - Nilai jarak pandang langsung dari Pos $A$ adalah $600\\sqrt{3}\\text{ m} \\approx 1.039,2\\text{ m}$. Adapun $600\\text{ meter}$ adalah jarak langsung dari Pos $B$ ($BT = \\frac{h}{\\sin 60^\\circ} = \\frac{300\\sqrt{3}}{\\frac{1}{2}\\sqrt{3}} = 600\\text{ m}$).\n   - Oleh karena itu, Pernyataan C bernilai SALAH.\n\nKesimpulan Kategori:\n- Pernyataan A: Benar\n- Pernyataan B: Benar\n- Pernyataan C: Salah"
+  },
+  {
+    "id": "matwa-aplikasi-trigonometri-10",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "aplikasi-trigonometri",
+    "question_type": "KECUKUPAN_DATA",
+    "difficulty": "HOTS",
+    "question_text": "Sebuah menara pemancar sinyal $PT$ berdiri tegak lurus di atas tanah mendatar, dengan $P$ sebagai dasar menara di tanah dan $T$ sebagai puncak menara. Seorang pengamat yang berada di titik $A$ pada tanah mendatar ingin menentukan tinggi menara tersebut ($PT$).\n\nBerapakah tinggi menara pemancar sinyal $PT$?\n\nPutuskan apakah pernyataan (1) dan (2) berikut cukup untuk menjawab pertanyaan tersebut:\n(1) Dari titik $A$, sudut elevasi ke puncak menara $T$ adalah $30^\\circ$.\n(2) Jika pengamat berjalan mendekati kaki menara sejauh $40\\text{ meter}$ ke titik $B$ yang segaris dengan $A$ dan $P$, sudut elevasi ke puncak menara $T$ menjadi $60^\\circ$.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (2) SAJA tidak cukup."
+      },
+      {
+        "id": "B",
+        "text": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (1) SAJA tidak cukup."
+      },
+      {
+        "id": "C",
+        "text": "DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup."
+      },
+      {
+        "id": "D",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan Pernyataan (2) SAJA cukup."
+      },
+      {
+        "id": "E",
+        "text": "Pernyataan (1) dan Pernyataan (2) tidak cukup untuk menjawab pertanyaan."
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Analisis apakah tinggi menara dapat dihitung secara tunggal hanya dari salah satu pernyataan, ataukah memerlukan kombinasi sistem persamaan dua sudut elevasi dan selisih jarak pengamatan.",
+    "explanation": "Langkah-langkah analisis kecukupan data:\n1. Meninjau Pernyataan (1) SAJA:\n   - Diketahui sudut elevasi dari $A$ ke $T$ adalah $30^\\circ$.\n   $$\\tan 30^\\circ = \\frac{PT}{AP} \\implies PT = AP \\cdot \\frac{1}{\\sqrt{3}}$$\n   - Karena jarak horizontal $AP$ belum diketahui nilainya, tinggi menara $PT$ tidak dapat ditentukan secara pasti dan unik.\n   - Maka, Pernyataan (1) SAJA TIDAK CUKUP.\n2. Meninjau Pernyataan (2) SAJA:\n   - Diketahui bahwa setelah berjalan mendekat sejauh $40\\text{ meter}$ dari $A$ ke $B$ ($AP - BP = 40\\text{ m}$), sudut elevasi dari $B$ ke $T$ menjadi $60^\\circ$.\n   $$\\tan 60^\\circ = \\frac{PT}{BP} \\implies PT = BP\\sqrt{3} = (AP - 40)\\sqrt{3}$$\n   - Namun, tanpa adanya informasi hubungan sudut mula-mula di titik $A$, nilai $AP$ maupun $BP$ tidak diketahui, sehingga tinggi menara $PT$ tetap belum dapat ditentukan secara pasti dan unik.\n   - Maka, Pernyataan (2) SAJA TIDAK CUKUP.\n3. Meninjau Pernyataan (1) dan Pernyataan (2) BERSAMA-SAMA:\n   - Dari Pernyataan (1): $AP = PT\\sqrt{3}$.\n   - Dari Pernyataan (2): $BP = \\frac{PT}{\\sqrt{3}}$.\n   - Karena selisih jarak $AB = AP - BP = 40\\text{ meter}$, maka kita peroleh persamaan linear berderajat satu dalam variabel $PT$:\n     $$PT\\sqrt{3} - \\frac{PT}{\\sqrt{3}} = 40$$\n     $$PT\\left(\\frac{3 - 1}{\\sqrt{3}}\\right) = 40$$\n     $$\\frac{2\\,PT}{\\sqrt{3}} = 40 \\implies PT = \\frac{40\\sqrt{3}}{2} = 20\\sqrt{3}\\text{ meter}$$\n   - Tinggi menara $PT$ dapat ditentukan secara tunggal dan pasti, yaitu $20\\sqrt{3}\\text{ meter}$.\n   - Maka, DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.\n\nJadi, pilihan yang tepat adalah C."
+  }
+]

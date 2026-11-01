@@ -28,79 +28,79 @@
   - **File Target:** `docs/data/questions/domain-range-grafik-fungsi.json`
   - **Cakupan & Skenario Wajib:** Identifikasi fungsi linear, kuadrat, rasional, dan akar secara analitis & grafis. Wajib memuat: (1) Standar: evaluasi interval fungsi kekentalan pelumas mesin terhadap tabel indikator, dan sifat grafik $f(x)=a(x^2+bx+c)$ (arah terbuka, perpotongan garis, kuadran); (2) HOTS: domain & range fungsi akar-rasional $f(x)=\sqrt{\frac{x^2-8x+12}{x-3}}$; (3) HOTS: rekonstruksi $f(x)=ax^2+bx+c$ dari interval di bawah/atas sumbu-$X$ untuk mencari range pada domain terbatas dan nilai maksimum (Kecukupan Data).
 
-- [ ] **Task 07: `fungsi-komposisi`**
+- [x] **Task 07: `fungsi-komposisi`**
   - **File Target:** `docs/data/questions/fungsi-komposisi.json`
   - **Cakupan & Skenario Wajib:** Komposisi fungsi dan representasinya. Wajib memuat: (1) Standar: menghitung $(g \circ f)(a)$ pada fungsi rasional-linear dan mencari $f(a)$ jika diketahui $g(x)$ serta $(f \circ g)(x)$; (2) HOTS (MCMA): pabrik produksi 2 tahap (Mesin 1 menghasilkan barang setengah jadi $s = f(k) = k^2-4k$, Mesin 2 menghasilkan produk akhir $g(s) = 2s+1$), menguji perhitungan maju dan perhitungan mundur kebutuhan bahan baku.
 
-- [ ] **Task 08: `fungsi-invers`**
+- [x] **Task 08: `fungsi-invers`**
   - **File Target:** `docs/data/questions/fungsi-invers.json`
   - **Cakupan & Skenario Wajib:** Invers fungsi linear, rasional, akar, dan aplikasinya. Wajib memuat: (1) Standar: rumus invers fungsi rasional $f(x)=\frac{ax+b}{cx+d}$ dan nilai invers fungsi akar $f(x)=\sqrt{ax+b}$; (2) HOTS (MCMA): rumus tagihan listrik $f(x)=1.350x+25.000$ dengan informasi tagihan bulan ini Rp160.000,00 lebih tinggi dari pemakaian biasanya, memilih kWh pemakaian normal; (3) HOTS: invers komposisi $(f \circ g)^{-1}(x)$ kontekstual.
 
 ### BAB 4: BARISAN DAN DERET (`barisan-dan-deret`)
-- [ ] **Task 09: `barisan-deret-aritmetika`**
+- [x] **Task 09: `barisan-deret-aritmetika`**
   - **File Target:** `docs/data/questions/barisan-deret-aritmetika.json`
   - **Cakupan & Skenario Wajib:** Barisan dan deret aritmetika. Wajib memuat: (1) Standar: panjang total penyambungan $n$ pipa air yang ujungnya saling masuk (overlap konstan) dan pembagian uang kepada 5 anak dengan selisih tetap; (2) HOTS (Kategori Benar/Salah): simulasi tabungan pembukaan cabang kafe selama 12 bulan dengan modal awal, kenaikan tabungan bulanan tetap, dikombinasikan dengan pengeluaran tak terduga di bulan tertentu dan penurunan persentase kenaikan tabungan di tengah periode.
 
-- [ ] **Task 10: `barisan-deret-geometri`**
+- [x] **Task 10: `barisan-deret-geometri`**
   - **File Target:** `docs/data/questions/barisan-deret-geometri.json`
   - **Cakupan & Skenario Wajib:** Barisan dan deret geometri, pertumbuhan, dan peluruhan. Wajib memuat: (1) Standar: pola susunan buah melingkar dan lanjutan pola uji beban titik tumpuan girder jembatan ($500\text{ kg}, 1.000\text{ kg}, 2.000\text{ kg}, \dots$); (2) HOTS: mencari titik tumpuan ke-$n$ saat beban tunggal melampaui batas retak 128 ton serta evaluasi kecukupan akumulasi tonase beban statis ($S_n$); (3) HOTS: bakteri membelah diri setiap $\frac{1}{2}$ hari dikombinasikan dengan kematian $\frac{1}{4}$ populasi setiap 2 hari.
 
-- [ ] **Task 11: `bunga-tunggal-majemuk`**
+- [x] **Task 11: `bunga-tunggal-majemuk`**
   - **File Target:** `docs/data/questions/bunga-tunggal-majemuk.json`
   - **Cakupan & Skenario Wajib:** Aplikasi barisan pada bunga tunggal dan bunga majemuk. Wajib memuat: (1) Standar: hasil investasi 3 tahun dengan bunga majemuk 10% per tahun; (2) HOTS (MCMA): investasi bagi hasil (bunga tunggal) dengan skenario penarikan sebagian modal di awal tahun ke-2, potongan pajak tahunan atas laba, dan biaya administrasi pencairan akhir.
 
 ### BAB 5: GEOMETRI DAN PENGUKURAN (`geometri-dan-pengukuran`)
-- [ ] **Task 12: `sudut-dan-kesebangunan`**
+- [x] **Task 12: `sudut-dan-kesebangunan`**
   - **File Target:** `docs/data/questions/sudut-dan-kesebangunan.json`
   - **Cakupan & Skenario Wajib:** Hubungan sudut, garis, bidang, kesebangunan, dan Pythagoras. Wajib memuat: (1) Standar: kesebangunan rak buku segitiga bertingkat, hubungan rusuk kubus (sejajar, tegak lurus, memotong), dan sudut garis sejajar dipotong transversal; (2) HOTS (MCMA): trapesium sama kaki $ABCD$ dengan diagonal berpotongan ($\angle BAC = 45^\circ, \angle ABC = 105^\circ$), menguji besar sudut lain, panjang sisi miring, luas, dan keliling sekaligus.
 
-- [ ] **Task 13: `pengukuran-bangun-datar`**
+- [x] **Task 13: `pengukuran-bangun-datar`**
   - **File Target:** `docs/data/questions/pengukuran-bangun-datar.json`
   - **Cakupan & Skenario Wajib:** Keliling dan luas segitiga, segi empat, lingkaran, dan gabungannya. Wajib memuat: (1) Standar: biaya pita emas di sekeliling 180 alas piring lingkaran dan total luas kaca 20 jendela berbentuk gabungan persegi panjang dan segitiga; (2) HOTS (Kecukupan Data): menentukan apakah keliling trapesium siku-siku lebih dari 25 berdasarkan pernyataan (1) luas trapesium dan (2) panjang dua sisinya.
 
-- [ ] **Task 14: `pengukuran-bangun-ruang`**
+- [x] **Task 14: `pengukuran-bangun-ruang`**
   - **File Target:** `docs/data/questions/pengukuran-bangun-ruang.json`
   - **Cakupan & Skenario Wajib:** Volume dan luas permukaan bangun ruang datar, lengkung, dan gabungan. Wajib memuat: (1) Standar: kecukupan 220 liter adonan keju untuk ratusan kemasan gabungan tabung-kerucut dan balok-limas dengan aturan pengisian 75% volume; (2) HOTS: optimasi jumlah maksimum kemasan souvenir (kubus+limas) dari anggaran cetak dengan memilih ukuran kertas laminasi (A3, A3+, Plano) berdasarkan tata letak jaring-jaring; (3) HOTS: volume maksimum kotak tanpa tutup dari karton persegi yang dipotong pojoknya, bola menyinggung sisi dalam kubus, dan rasio volume balok terhadap kubus dari informasi diagonal ruang.
 
-- [ ] **Task 15: `jarak-dimensi-tiga`**
+- [x] **Task 15: `jarak-dimensi-tiga`**
   - **File Target:** `docs/data/questions/jarak-dimensi-tiga.json`
   - **Cakupan & Skenario Wajib:** Jarak dua titik, titik ke garis, titik ke bidang, dua garis, dan dua bidang. Wajib memuat: (1) Standar: jarak titik sudut atas kubus ke titik potong diagonal alas; (2) HOTS (MCMA): kubus rusuk 12 cm dengan titik $P$ membagi rusuk $AB$ ($1:3$) dan titik $Q$ membagi diagonal $FH$ ($3:4$), menguji panjang segmen, proyeksi titik pada rusuk, dan jarak $P$ ke $Q$; (3) HOTS: jarak titik ke garis dan titik ke bidang pada kubus/limas.
 
-- [ ] **Task 16: `transformasi-geometri`**
+- [x] **Task 16: `transformasi-geometri`**
   - **File Target:** `docs/data/questions/transformasi-geometri.json`
   - **Cakupan & Skenario Wajib:** Translasi, refleksi, rotasi, dilatasi, dan komposisinya. Wajib memuat: (1) Standar: dilatasi ukuran proyeksi desain gedung pada layar berdasarkan jarak proyektor dan analisis apakah gambar terpotong layar; (2) HOTS (MCMA): segitiga $ABC$ ditranslasi oleh $T=\binom{a}{b}$ lalu didilatasi skala negatif $k=-2$ berpusat di $(0,0)$, menguji koordinat bayangan, panjang sisi bayangan, dan luas segitiga hasil transformasi.
 
 ### BAB 6: TRIGONOMETRI (`trigonometri`)
-- [ ] **Task 17: `perbandingan-trigonometri`**
+- [x] **Task 17: `perbandingan-trigonometri`**
   - **File Target:** `docs/data/questions/perbandingan-trigonometri.json`
   - **Cakupan & Skenario Wajib:** Sinus, kosinus, tangen, kotangen, sekan, kosekan. Wajib memuat: (1) Standar: menentukan nilai $\cos A$ dalam variabel $a$ jika diketahui $\sin A = \frac{1}{a}$ dan $A$ sudut tumpul; (2) HOTS: ekspresi aljabar yang menggabungkan keenam perbandingan trigonometri dan sudut berelasi di Kuadran II, III, dan IV.
 
-- [ ] **Task 18: `aplikasi-trigonometri`**
+- [x] **Task 18: `aplikasi-trigonometri`**
   - **File Target:** `docs/data/questions/aplikasi-trigonometri.json`
   - **Cakupan & Skenario Wajib:** Aplikasi perbandingan trigonometri pada masalah kontekstual. Wajib memuat: (1) Standar: tinggi dinding yang dicapai tangga bersudut $60^\circ$; (2) HOTS (MCMA): pengukuran tinggi gedung $PT$ dari dua titik pengamatan segaris $Q$ dan $R$ ($QR = 60\text{ m}, \angle QRT = 30^\circ$) dengan pendekatan $\sqrt{2}=1,41$ dan $\sqrt{3}=1,73$, menguji tinggi gedung dan jarak $PQ$ pada berbagai sudut elevasi ($45^\circ, 60^\circ$, dan interval $45^\circ < \angle PQT < 60^\circ$).
 
 ### BAB 7: STATISTIKA (`statistika`)
-- [ ] **Task 19: `penyajian-data`**
+- [x] **Task 19: `penyajian-data`**
   - **File Target:** `docs/data/questions/penyajian-data.json`
   - **Cakupan & Skenario Wajib:** Diagram batang, garis, lingkaran, grafik, dan tabel. Wajib memuat: (1) Standar: mencari data kota yang hilang pada diagram batang dari total populasi, serta mengidentifikasi peningkatan/penurunan tertinggi antar bulan; (2) HOTS (Kategori Benar/Salah): menyilangkan data Diagram Batang (jumlah wisatawan per negara) dengan Tabel Persentase (aktivitas favorit tiap negara) untuk membandingkan volume potensi pasar iklan.
 
-- [ ] **Task 20: `statistika-data-tunggal`**
+- [x] **Task 20: `statistika-data-tunggal`**
   - **File Target:** `docs/data/questions/statistika-data-tunggal.json`
   - **Cakupan & Skenario Wajib:** Ukuran pemusatan dan penyebaran data tunggal. Wajib memuat: (1) Standar: mengevaluasi modus, median, rata-rata, dan simpangan kuartil dari grafik garis penjualan 12 bulan; (2) HOTS (MCMA Analisis Nilai Ekstrem): rata-rata 17 murid (skala 100) adalah 83, ditambah 3 murid susulan menjadi 82; menguji total nilai 3 murid, rata-rata 3 murid, batas nilai terendah minimum yang mungkin (tidak kurang dari 29), nilai tertinggi minimum, dan jangkauan maksimum.
 
-- [ ] **Task 21: `statistika-data-kelompok`**
+- [x] **Task 21: `statistika-data-kelompok`**
   - **File Target:** `docs/data/questions/statistika-data-kelompok.json`
   - **Cakupan & Skenario Wajib:** Ukuran pemusatan dan penyebaran data kelompok (tabel & histogram). Wajib memuat: (1) Standar: menghitung modus dari tabel distribusi frekuensi; (2) HOTS (Reverse Modus & MCMA): diketahui nilai Modus dari tabel gaji atau histogram yang frekuensi kelas modusnya bernilai variabel $p$ (tidak terbaca); siswa harus mencari nilai $p$ terlebih dahulu, lalu menguji tepi bawah, titik tengah, kuartil bawah ($Q_1$), dan rata-rata data kelompok tersebut.
 
 ### BAB 8: PENCACAHAN DAN PELUANG (`peluang-dan-kombinatorika`)
-- [ ] **Task 22: `aturan-pencacahan`**
+- [x] **Task 22: `aturan-pencacahan`**
   - **File Target:** `docs/data/questions/aturan-pencacahan.json`
   - **Cakupan & Skenario Wajib:** Aturan penjumlahan, perkalian, permutasi, dan kombinasi. Wajib memuat: (1) Standar: banyak kode kupon 5 karakter `AXBYC` (3 huruf, 2 angka tanpa pengulangan); (2) HOTS: permutasi berderet 11 pengurus OSIS dengan syarat Ketua di tengah diapit Sekretaris & Bendahara ($2 \cdot 8!$); (3) HOTS: permutasi siklis berkelompok 5 bidang OSIS yang masing-masing terdiri dari 3 anggota duduk melingkar berdampingan per bidang ($4!(3!)^5$).
 
-- [ ] **Task 23: `peluang-kejadian-tunggal`**
+- [x] **Task 23: `peluang-kejadian-tunggal`**
   - **File Target:** `docs/data/questions/peluang-kejadian-tunggal.json`
   - **Cakupan & Skenario Wajib:** Peluang kejadian tunggal dan komplemennya. Wajib memuat: (1) Standar: peluang terpilihnya sampel produk dan komplemennya dalam persen/desimal/pecahan; (2) HOTS (Ruang Sampel Dinamis): undian doorprize untuk orang ke-6 di mana kupon hadiah yang terambil tidak dikembalikan, tetapi voucher kosong yang terambil dimasukkan kembali ke wadah; (3) HOTS: peluang menyusun buku dari 3 mata pelajaran berbeda di rak sehingga buku sejenis tidak bercampur ($\frac{3}{280}$).
 
-- [ ] **Task 24: `peluang-kejadian-majemuk`**
+- [x] **Task 24: `peluang-kejadian-majemuk`**
   - **File Target:** `docs/data/questions/peluang-kejadian-majemuk.json`
   - **Cakupan & Skenario Wajib:** Peluang kejadian majemuk (gabungan, bersyarat, Diagram Venn). Wajib memuat: (1) Standar: peluang gabungan tidak saling lepas memilih kamar hotel (pemandangan laut atau Twin Bed) dan pengambilan 2 perwakilan berurutan tanpa pengembalian; (2) HOTS (MCMA Diagram Venn 3 Himpunan): survei 100 murid terhadap 3 hobi (matematika, menggambar, musik) dengan informasi irisan parsial untuk menguji peluang terpilihnya murid dengan berbagai kriteria.

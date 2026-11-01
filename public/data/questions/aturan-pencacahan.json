@@ -1,1 +1,336 @@
-[]
+[
+  {
+    "id": "matwa-aturan-pencacahan-01",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "aturan-pencacahan",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah platform e-commerce menerbitkan kode kupon promosi yang terdiri dari $5\\text{ karakter}$ dengan susunan berselang-seling mengikuti pola `AXBYC`. Posisi ke-1, ke-3, dan ke-5 diisi oleh huruf kapital berbeda yang dipilih dari himpunan $\\{A, B, C, D, E, F, G\\}$ ($7\\text{ huruf}$), sedangkan posisi ke-2 dan ke-4 diisi oleh angka berbeda yang dipilih dari himpunan $\\{1, 2, 3, 4, 5, 6, 7, 8, 9\\}$ ($9\\text{ angka}$). Jika di dalam satu kupon tidak boleh ada huruf yang berulang dan tidak boleh ada angka yang berulang, maka banyak variasi kode kupon yang dapat dibuat adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$7.560$"
+      },
+      {
+        "id": "B",
+        "text": "$15.120$"
+      },
+      {
+        "id": "C",
+        "text": "$17.010$"
+      },
+      {
+        "id": "D",
+        "text": "$30.240$"
+      },
+      {
+        "id": "E",
+        "text": "$45.360$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Gunakan aturan perkalian (kaidah pengisian tempat). Tentukan banyak cara mengisi 3 slot huruf tanpa pengulangan ($7 \\times 6 \\times 5$) dan 2 slot angka tanpa pengulangan ($9 \\times 8$), lalu kalikan kedua hasil tersebut.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Analisis pola kode kupon `AXBYC` ($5\\text{ karakter}$):\n   - Karakter ke-1, ke-3, dan ke-5 adalah huruf kapital.\n   - Karakter ke-2 dan ke-4 adalah angka.\n2. Menentukan banyak cara memilih $3\\text{ huruf}$ berbeda dari $7\\text{ huruf}$:\n   - Slot huruf ke-1: $7\\text{ pilihan}$\n   - Slot huruf ke-2: $6\\text{ pilihan}$\n   - Slot huruf ke-3: $5\\text{ pilihan}$\n   $$\\text{Banyak susunan huruf} = 7 \\times 6 \\times 5 = 210$$\n3. Menentukan banyak cara memilih $2\\text{ angka}$ berbeda dari $9\\text{ angka}$:\n   - Slot angka ke-1: $9\\text{ pilihan}$\n   - Slot angka ke-2: $8\\text{ pilihan}$\n   $$\\text{Banyak susunan angka} = 9 \\times 8 = 72$$\n4. Menghitung total variasi kode kupon menggunakan kaidah perkalian:\n   $$\\text{Total Variasi} = 210 \\times 72 = 15.120$$\n\nJadi, banyak variasi kode kupon yang dapat dibuat adalah $15.120$."
+  },
+  {
+    "id": "matwa-aturan-pencacahan-02",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "aturan-pencacahan",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah sekolah akan membentuk tim delegasi lomba karya ilmiah yang terdiri dari $3\\text{ siswa laki-laki}$ dan $2\\text{ siswa perempuan}$. Calon peserta yang lolos seleksi awal dan siap dipilih terdiri dari $7\\text{ siswa laki-laki}$ dan $5\\text{ siswa perempuan}$. Banyaknya cara sekolah tersebut menyusun komposisi tim delegasi adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$175\\text{ cara}$"
+      },
+      {
+        "id": "B",
+        "text": "$350\\text{ cara}$"
+      },
+      {
+        "id": "C",
+        "text": "$420\\text{ cara}$"
+      },
+      {
+        "id": "D",
+        "text": "$700\\text{ cara}$"
+      },
+      {
+        "id": "E",
+        "text": "$1.050\\text{ cara}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Karena urutan pemilihan anggota dalam tim delegasi tidak diperhatikan, gunakan rumus kombinasi: $\\binom{n}{r} = \\frac{n!}{r!(n - r)!}$. Hitung kombinasi laki-laki dan kombinasi perempuan lalu kalikan.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Pemilihan siswa tidak memperhatikan urutan jabatan, sehingga menggunakan aturan kombinasi:\n2. Memilih $3\\text{ siswa laki-laki}$ dari $7\\text{ calon}$:\n   $$\\binom{7}{3} = \\frac{7!}{3! \\times (7 - 3)!} = \\frac{7 \\times 6 \\times 5}{3 \\times 2 \\times 1} = 35\\text{ cara}$$\n3. Memilih $2\\text{ siswa perempuan}$ dari $5\\text{ calon}$:\n   $$\\binom{5}{2} = \\frac{5!}{2! \\times (5 - 2)!} = \\frac{5 \\times 4}{2 \\times 1} = 10\\text{ cara}$$\n4. Menghitung total kombinasi tim menggunakan aturan perkalian:\n   $$\\text{Banyak cara} = \\binom{7}{3} \\times \\binom{5}{2} = 35 \\times 10 = 350\\text{ cara}$$\n\nJadi, banyaknya cara menyusun komposisi tim delegasi tersebut adalah $350\\text{ cara}$."
+  },
+  {
+    "id": "matwa-aturan-pencacahan-03",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "aturan-pencacahan",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Sebanyak $11\\text{ pengurus OSIS}$ (termasuk Ketua, Sekretaris, dan Bendahara) akan berfoto bersama dalam satu barisan lurus sejajar yang terdiri dari $11\\text{ kursi}$. Mereka bersepakat bahwa Ketua harus duduk tepat di posisi tengah barisan (kursi ke-6) dan harus diapit langsung oleh Sekretaris dan Bendahara di sisi kanan dan kirinya. Banyak susunan posisi duduk berderet yang mungkin adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$8!$"
+      },
+      {
+        "id": "B",
+        "text": "$2 \\cdot 8!$"
+      },
+      {
+        "id": "C",
+        "text": "$3! \\cdot 8!$"
+      },
+      {
+        "id": "D",
+        "text": "$2 \\cdot 9!$"
+      },
+      {
+        "id": "E",
+        "text": "$11!$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Kursi ke-6 tepat berada di tengah barisan $11$ kursi. Letakkan Ketua di kursi ke-6, lalu tempatkan Sekretaris dan Bendahara pada kursi ke-5 dan ke-7 dengan $2!$ cara. Sisa $8$ anggota menempati $8$ kursi lainnya.",
+    "explanation": "Langkah-langkah analisis permutasi berderet bersyarat:\n1. Posisi barisan terdiri dari $11\\text{ kursi}$ berurutan:\n   $$\\text{Kursi: } 1, 2, 3, 4, 5, \\mathbf{6}, 7, 8, 9, 10, 11$$\n2. Penempatan Ketua:\n   - Posisi tengah tepat adalah kursi ke-6 ($5$ kursi di sebelah kiri dan $5$ kursi di sebelah kanan).\n   - Ketua harus berada di kursi ke-6: terdapat tepat $1\\text{ cara}$.\n3. Penempatan Sekretaris dan Bendahara:\n   - Agar mengapit langsung Ketua, Sekretaris dan Bendahara harus menempati kursi ke-5 dan kursi ke-7.\n   - Susunan keduanya dapat berupa (Sekretaris di kursi 5, Bendahara di kursi 7) atau (Bendahara di kursi 5, Sekretaris di kursi 7):\n     $$\\text{Banyak cara} = 2! = 2\\text{ cara}$$\n4. Penempatan $8\\text{ pengurus lainnya}$:\n   - Tersisa $8\\text{ kursi kosong}$ (kursi 1, 2, 3, 4, 8, 9, 10, 11) untuk $8\\text{ pengurus lainnya}$.\n   - Banyak susunan untuk 8 orang ini adalah permutasi dari 8 unsur:\n     $$\\text{Banyak cara} = 8!$$\n5. Total banyak susunan posisi duduk:\n   $$\\text{Total Susunan} = 1 \\times 2! \\times 8! = 2 \\cdot 8! = 2 \\times 40.320 = 80.640$$\n\nJadi, banyaknya susunan posisi duduk yang mungkin adalah $2 \\cdot 8!$."
+  },
+  {
+    "id": "matwa-aturan-pencacahan-04",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "aturan-pencacahan",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Dalam rapat pleno evaluasi akhir tahun, sebanyak $15\\text{ orang pengurus}$ yang berasal dari $5\\text{ bidang kerja OSIS}$ duduk mengelilingi sebuah meja bundar. Setiap bidang kerja terdiri dari tepat $3\\text{ orang anggota}$. Agar koordinasi internal berjalan efektif, disyaratkan bahwa seluruh anggota dari bidang kerja yang sama harus selalu duduk berdampingan (berkelompok). Banyak variasi susunan posisi duduk melingkar yang dapat dibentuk adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$4! \\cdot (3!)^5$"
+      },
+      {
+        "id": "B",
+        "text": "$5! \\cdot (3!)^5$"
+      },
+      {
+        "id": "C",
+        "text": "$4! \\cdot 3!$"
+      },
+      {
+        "id": "D",
+        "text": "$14!$"
+      },
+      {
+        "id": "E",
+        "text": "$(4!)^5 \\cdot 3!$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Gunakan konsep permutasi siklis kelompok. Anggap masing-masing dari 5 bidang sebagai 1 kesatuan kelompok tunggal, sehingga terdapat 5 kelompok yang duduk melingkar: $(5 - 1)!$. Kemudian kalikan dengan permutasi internal 3 anggota di dalam masing-masing kelompok: $(3!)^5$.",
+    "explanation": "Langkah-langkah analisis permutasi siklis berkelompok:\n1. Pengelompokan unsur:\n   - Terdapat $5\\text{ bidang kerja}$ ($B_1, B_2, B_3, B_4, B_5$), masing-masing beranggotakan $3\\text{ orang}$.\n   - Karena anggota bidang yang sama harus berdampingan, perlakukan setiap bidang sebagai satu kesatuan kelompok tunggal.\n2. Permutasi siklis antar kelompok:\n   - Terdapat $5\\text{ kelompok}$ yang duduk mengelilingi meja bundar.\n   - Rumus permutasi siklis untuk $n$ objek adalah $P_{siklis}(n) = (n - 1)!$.\n   - Untuk $5\\text{ kelompok}$:\n     $$P_{siklis}(5) = (5 - 1)! = 4!$$\n3. Permutasi internal di dalam tiap kelompok:\n   - Di dalam masing-masing kelompok, ketiga anggota dapat saling bertukar posisi secara linear.\n   - Banyak cara susunan internal tiap kelompok adalah $3!$.\n   - Karena terdapat $5\\text{ kelompok}$ yang saling bebas, total permutasi internal seluruh kelompok adalah:\n     $$(3!) \\times (3!) \\times (3!) \\times (3!) \\times (3!) = (3!)^5$$\n4. Menghitung total variasi susunan duduk melingkar:\n   $$\\text{Total Susunan} = 4! \\cdot (3!)^5$$\n   Sebagai kalkulasi numerik: $4! = 24$ dan $(3!)^5 = 6^5 = 7.776$, sehingga totalnya adalah $24 \\times 7.776 = 186.624\\text{ cara}$.\n\nJadi, banyak variasi susunan posisi duduk melingkar yang dapat dibentuk adalah $4! \\cdot (3!)^5$."
+  },
+  {
+    "id": "matwa-aturan-pencacahan-05",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "aturan-pencacahan",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Sebuah laboratorium kriptografi menyusun kode rahasia unik dengan menyusun ulang seluruh huruf pada kata:\n$$\\text{STATISTIKA}$$\nKata tersebut terdiri dari $10\\text{ huruf}$ dengan rincian: huruf S sebanyak $2$, huruf T sebanyak $3$, huruf A sebanyak $2$, huruf I sebanyak $2$, dan huruf K sebanyak $1$.\n\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Banyak seluruh susunan kata berbeda yang dapat dibentuk tanpa syarat adalah $75.600$ susunan."
+      },
+      {
+        "id": "B",
+        "text": "Banyak susunan kata jika kedua huruf S harus selalu berdampingan adalah $15.120$ susunan."
+      },
+      {
+        "id": "C",
+        "text": "Banyak susunan kata jika huruf pertama harus K dan huruf terakhir harus T adalah $2.520$ susunan."
+      },
+      {
+        "id": "D",
+        "text": "Banyak seluruh susunan kata berbeda yang dapat dibentuk tanpa syarat adalah $302.400$ susunan."
+      },
+      {
+        "id": "E",
+        "text": "Banyak susunan kata jika ketiga huruf T harus selalu berdampingan adalah $50.400$ susunan."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Gunakan rumus permutasi dengan unsur yang sama: $P = \\frac{n!}{n_1! \\cdot n_2! \\cdot n_3! \\dots}$. Jika ada huruf yang harus berdampingan, gabungkan huruf-huruf tersebut menjadi satu kesatuan elemen tunggal.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Evaluasi Permutasi Tanpa Syarat (Pernyataan A dan D):\n   - Total huruf: $n = 10$.\n   - Frekuensi huruf: $n_S = 2, n_T = 3, n_A = 2, n_I = 2, n_K = 1$.\n   $$P = \\frac{10!}{2! \\cdot 3! \\cdot 2! \\cdot 2! \\cdot 1!} = \\frac{3.628.800}{2 \\times 6 \\times 2 \\times 2 \\times 1} = \\frac{3.628.800}{48} = 75.600$$\n   - Maka, Pernyataan A BENAR dan Pernyataan D SALAH.\n2. Evaluasi Kedua Huruf S Selalu Berdampingan (Pernyataan B):\n   - Gabungkan kedua huruf S menjadi satu elemen tunggal [SS].\n   - Banyak elemen sekarang: $1\\text{ [SS]} + 3\\text{ T} + 2\\text{ A} + 2\\text{ I} + 1\\text{ K} = 9\\text{ elemen}$.\n   - Permutasi dari 9 elemen ini:\n     $$P_B = \\frac{9!}{3! \\cdot 2! \\cdot 2! \\cdot 1!} = \\frac{362.880}{6 \\times 2 \\times 2 \\times 1} = \\frac{362.880}{24} = 15.120$$\n   - Karena kedua huruf S identik, susunan internal [SS] hanya ada $1\\text{ cara}$.\n   - Maka, Pernyataan B BENAR.\n3. Evaluasi Diawali Huruf K dan Diakhiri Huruf T (Pernyataan C):\n   - Posisi pertama ditempati K ($1\\text{ cara}$) dan posisi terakhir ditempati T ($1\\text{ cara}$).\n   - Tersisa $8\\text{ posisi}$ di tengah yang diisi oleh sisa huruf:\n     $2\\text{ S}, 2\\text{ T}, 2\\text{ A}, 2\\text{ I}$ (total $8\\text{ huruf}$).\n   - Banyak susunannya:\n     $$P_C = \\frac{8!}{2! \\cdot 2! \\cdot 2! \\cdot 2!} = \\frac{40.320}{2 \\times 2 \\times 2 \\times 2} = \\frac{40.320}{16} = 2.520$$\n   - Maka, Pernyataan C BENAR.\n4. Evaluasi Ketiga Huruf T Berdampingan (Pernyataan E):\n   - Gabungkan [TTT] menjadi 1 elemen. Total elemen: $1\\text{ [TTT]} + 2\\text{ S} + 2\\text{ A} + 2\\text{ I} + 1\\text{ K} = 8\\text{ elemen}$.\n   - Banyak susunan: $\\frac{8!}{2! \\cdot 2! \\cdot 2! \\cdot 1!} = \\frac{40.320}{8} = 5.040 \\ne 50.400$. (Pernyataan E SALAH).\n\nJadi, seluruh pernyataan yang bernilai BENAR adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-aturan-pencacahan-06",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "aturan-pencacahan",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Sebuah rumah sakit rujukan bencana akan membentuk Tim Tanggap Darurat Medis yang beranggotakan $4\\text{ orang dokter}$. Tersedia calon yang memenuhi kualifikasi terdiri dari $6\\text{ dokter umum}$ dan $5\\text{ dokter spesialis}$.\n\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Banyak cara membentuk tim tanggap darurat tanpa batasan syarat apa pun adalah $330\\text{ cara}$."
+      },
+      {
+        "id": "B",
+        "text": "Banyak cara membentuk tim yang beranggotakan paling sedikit $2\\text{ dokter spesialis}$ adalah $215\\text{ cara}$."
+      },
+      {
+        "id": "C",
+        "text": "Banyak cara membentuk tim yang beranggotakan tepat $3\\text{ dokter spesialis}$ adalah $60\\text{ cara}$."
+      },
+      {
+        "id": "D",
+        "text": "Banyak cara membentuk tim yang seluruh anggotanya merupakan dokter spesialis adalah $10\\text{ cara}$."
+      },
+      {
+        "id": "E",
+        "text": "Banyak cara membentuk tim yang tidak memuat dokter spesialis sama sekali adalah $30\\text{ cara}$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Gunakan kombinasi untuk setiap kemungkinan kasus komposisi dokter spesialis dan dokter umum. Perhatikan bahwa 'paling sedikit 2 dokter spesialis' mencakup kasus 2 spesialis, 3 spesialis, atau 4 spesialis.",
+    "explanation": "Langkah-langkah evaluasi kombinasi pemilihan tim:\n1. Evaluasi Tanpa Syarat (Pernyataan A):\n   - Total dokter: $6 + 5 = 11\\text{ dokter}$. Memilih $4\\text{ dokter}$:\n     $$\\binom{11}{4} = \\frac{11 \\times 10 \\times 9 \\times 8}{4 \\times 3 \\times 2 \\times 1} = 330\\text{ cara}$$\n   (Pernyataan A BENAR).\n2. Evaluasi Tepat $3\\text{ Dokter Spesialis}$ (Pernyataan C):\n   - Memilih $3\\text{ spesialis}$ dari 5 dan $1\\text{ umum}$ dari 6:\n     $$\\binom{5}{3} \\times \\binom{6}{1} = 10 \\times 6 = 60\\text{ cara}$$\n   (Pernyataan C BENAR).\n3. Evaluasi Paling Sedikit $2\\text{ Dokter Spesialis}$ (Pernyataan B):\n   - Kasus 1 ($2\\text{ spesialis, } 2\\text{ umum}$): $\\binom{5}{2} \\times \\binom{6}{2} = 10 \\times 15 = 150\\text{ cara}$\n   - Kasus 2 ($3\\text{ spesialis, } 1\\text{ umum}$): $\\binom{5}{3} \\times \\binom{6}{1} = 10 \\times 6 = 60\\text{ cara}$\n   - Kasus 3 ($4\\text{ spesialis, } 0\\text{ umum}$): $\\binom{5}{4} \\times \\binom{6}{0} = 5 \\times 1 = 5\\text{ cara}$\n   - Total cara: $150 + 60 + 5 = 215\\text{ cara}$.\n   (Pernyataan B BENAR).\n4. Evaluasi Seluruh Anggota Dokter Spesialis (Pernyataan D):\n   - Memilih $4$ spesialis dari $5$: $\\binom{5}{4} = 5\\text{ cara} \\ne 10\\text{ cara}$. (Pernyataan D SALAH).\n5. Evaluasi Tanpa Dokter Spesialis (Pernyataan E):\n   - Seluruh 4 anggota adalah dokter umum: $\\binom{6}{4} = \\frac{6 \\times 5}{2 \\times 1} = 15\\text{ cara} \\ne 30\\text{ cara}$. (Pernyataan E SALAH).\n\nJadi, seluruh pernyataan yang bernilai BENAR adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-aturan-pencacahan-07",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "aturan-pencacahan",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Jaringan rute antar kota di suatu provinsi dirancang sebagai berikut:\n- Dari Kota A ke Kota B dihubungkan oleh $4\\text{ rute jalan}$.\n- Dari Kota B ke Kota C dihubungkan oleh $3\\text{ rute jalan}$.\n- Dari Kota C ke Kota D dihubungkan oleh $2\\text{ rute jalan}$.\n\nSeorang pengendara mobil hendak melakukan perjalanan dari Kota A menuju Kota D melalui Kota B dan Kota C, lalu kembali lagi ke Kota A melalui rute sebaliknya (D ke C ke B ke A).\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Banyak pilihan rute perjalanan satu arah dari Kota A ke Kota D adalah $24\\text{ rute}$."
+      },
+      {
+        "id": "B",
+        "text": "Banyak pilihan rute perjalanan pergi-pulang (A ke D lalu kembali ke A) tanpa syarat batasan adalah $576\\text{ variasi rute}$."
+      },
+      {
+        "id": "C",
+        "text": "Banyak pilihan rute perjalanan pergi-pulang jika pada saat kembali ke A pengendara tidak boleh melewati satu pun ruas jalan yang telah dilalui saat berangkat adalah $144\\text{ variasi rute}$."
+      },
+      {
+        "id": "D",
+        "text": "Banyak pilihan rute perjalanan satu arah dari Kota A ke Kota D adalah $9\\text{ rute}$."
+      },
+      {
+        "id": "E",
+        "text": "Banyak pilihan rute perjalanan pergi-pulang jika tidak boleh melalui rute yang sama adalah $288\\text{ variasi rute}$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Gunakan aturan perkalian bertahap. Untuk perjalanan satu arah: kalikan rute tiap segmen ($4 \\times 3 \\times 2$). Untuk perjalanan pulang tanpa ruas jalan yang sama: kurangi 1 pilihan pada tiap segmen saat perjalanan pulang.",
+    "explanation": "Langkah-langkah analisis kaidah perkalian rute:\n1. Perjalanan satu arah dari A ke D via B dan C (Pernyataan A dan D):\n   $$\\text{Banyak rute berangkat} = 4 \\times 3 \\times 2 = 24\\text{ rute}$$\n   (Pernyataan A BENAR dan Pernyataan D SALAH).\n2. Perjalanan pergi-pulang tanpa syarat pembatasan (Pernyataan B):\n   - Rute berangkat: $24\\text{ cara}$\n   - Rute pulang: $2 \\times 3 \\times 4 = 24\\text{ cara}$\n   $$\\text{Total variasi rute} = 24 \\times 24 = 576\\text{ variasi}$$\n   (Pernyataan B BENAR).\n3. Perjalanan pulang tidak boleh melewati ruas jalan yang sama (Pernyataan C dan E):\n   - Rute berangkat: $4 \\times 3 \\times 2 = 24\\text{ cara}$\n   - Rute pulang dari D ke C: tersisa $2 - 1 = 1\\text{ pilihan}$\n   - Rute pulang dari C ke B: tersisa $3 - 1 = 2\\text{ pilihan}$\n   - Rute pulang dari B ke A: tersisa $4 - 1 = 3\\text{ pilihan}$\n   - Total rute pulang: $1 \\times 2 \\times 3 = 6\\text{ cara}$\n   $$\\text{Total variasi pergi-pulang} = 24 \\times 6 = 144\\text{ variasi}$$\n   (Pernyataan C BENAR dan Pernyataan E SALAH).\n\nJadi, seluruh pernyataan yang bernilai BENAR adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-aturan-pencacahan-08",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "aturan-pencacahan",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Sebanyak $9\\text{ orang mahasiswa}$ relawan penanggulangan bencana akan dibagi habis ke dalam tiga divisi kerja yang memiliki target kapasitas berbeda: Divisi Logistik membutuhkan $4\\text{ orang}$, Divisi Medis membutuhkan $3\\text{ orang}$, dan Divisi Dapur Umum membutuhkan $2\\text{ orang}$. Dua orang mahasiswa di antaranya adalah Ahmad dan Budi.\n\nTentukan kategori BENAR atau SALAH untuk setiap pernyataan berikut!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Banyak cara pembagian seluruh mahasiswa relawan ke dalam ketiga divisi kerja tersebut tanpa syarat khusus adalah $1.260\\text{ cara}$."
+      },
+      {
+        "id": "B",
+        "text": "Banyak cara pembagian jika Ahmad dan Budi disyaratkan harus selalu ditempatkan bersama-sama pada Divisi Logistik adalah $210\\text{ cara}$."
+      },
+      {
+        "id": "C",
+        "text": "Banyak cara pembagian jika Ahmad dan Budi tidak boleh berada pada divisi kerja yang sama adalah $910\\text{ cara}$."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Benar"
+    },
+    "hint": "Gunakan kombinasi bertahap untuk pembagian kelompok: $\\binom{9}{4} \\times \\binom{5}{3} \\times \\binom{2}{2}$. Untuk kasus Ahmad dan Budi terpisah, kurangkan total cara tanpa syarat dengan semua kemungkinan mereka ditempatkan pada divisi yang sama.",
+    "explanation": "Langkah-langkah analisis partisi kelompok:\n1. Evaluasi Tanpa Syarat (Pernyataan A):\n   - Memilih 4 orang untuk Divisi Logistik dari 9 orang: $\\binom{9}{4} = \\frac{9 \\times 8 \\times 7 \\times 6}{4 \\times 3 \\times 2 \\times 1} = 126\\text{ cara}$.\n   - Memilih 3 orang untuk Divisi Medis dari sisa 5 orang: $\\binom{5}{3} = 10\\text{ cara}$.\n   - Sisa 2 orang untuk Divisi Dapur Umum: $\\binom{2}{2} = 1\\text{ cara}$.\n   $$\\text{Total cara} = 126 \\times 10 \\times 1 = 1.260\\text{ cara}$$\n   - Maka, Pernyataan A bernilai BENAR.\n2. Evaluasi Ahmad dan Budi Keduanya di Divisi Logistik (Pernyataan B):\n   - Ahmad dan Budi sudah ditempatkan di Divisi Logistik (kapasitas terisi 2 orang, sisa 2 kuota).\n   - Sisa 7 relawan lainnya dipilih 2 orang untuk melengkapi Divisi Logistik: $\\binom{7}{2} = \\frac{7 \\times 6}{2} = 21\\text{ cara}$.\n   - Sisa 5 orang dipilih 3 untuk Medis: $\\binom{5}{3} = 10\\text{ cara}$.\n   - Sisa 2 orang untuk Dapur Umum: $\\binom{2}{2} = 1\\text{ cara}$.\n   $$\\text{Banyak cara} = 21 \\times 10 \\times 1 = 210\\text{ cara}$$\n   - Maka, Pernyataan B bernilai BENAR.\n3. Evaluasi Ahmad dan Budi Tidak Berada di Divisi yang Sama (Pernyataan C):\n   - Hitung seluruh kasus di mana Ahmad dan Budi bersama-sama:\n     * Bersama di Logistik: $210\\text{ cara}$.\n     * Bersama di Medis (kapasitas 3 orang, sisa kuota 1): $\\binom{7}{1} \\times \\binom{6}{4} \\times \\binom{2}{2} = 7 \\times 15 \\times 1 = 105\\text{ cara}$.\n     * Bersama di Dapur Umum (kapasitas 2 orang, kuota penuh): $\\binom{7}{4} \\times \\binom{3}{3} = 35 \\times 1 = 35\\text{ cara}$.\n     * Total kasus Ahmad dan Budi satu divisi: $210 + 105 + 35 = 350\\text{ cara}$.\n   - Maka, banyak cara Ahmad dan Budi TIDAK berada pada divisi yang sama adalah:\n     $$\\text{Banyak cara} = 1.260 - 350 = 910\\text{ cara}$$\n   - Maka, Pernyataan C bernilai BENAR.\n\nKesimpulan Kategori:\n- Pernyataan A: Benar\n- Pernyataan B: Benar\n- Pernyataan C: Benar"
+  },
+  {
+    "id": "matwa-aturan-pencacahan-09",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "aturan-pencacahan",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Sebanyak $7\\text{ orang}$ sahabat karib (terdiri dari $4\\text{ orang pria}$ dan $3\\text{ orang wanita}$) sedang mengadakan jamuan makan malam dan duduk mengelilingi meja bundar. Di antara mereka terdapat sepasang sahabat karib bernama Rian (pria) dan Sinta (wanita).\n\nTentukan kategori BENAR atau SALAH untuk setiap pernyataan berikut!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Banyak cara mereka duduk melingkar jika posisi pria dan wanita harus duduk berselang-seling secara sempurna adalah $0\\text{ cara}$ (mustahil dilakukan)."
+      },
+      {
+        "id": "B",
+        "text": "Banyak cara mereka duduk melingkar jika ketiga orang wanita harus selalu duduk berdampingan adalah $144\\text{ cara}$."
+      },
+      {
+        "id": "C",
+        "text": "Banyak cara mereka duduk melingkar jika Rian dan Sinta tidak boleh duduk berdampingan adalah $480\\text{ cara}$."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Benar"
+    },
+    "hint": "Periksa apakah formasi selang-seling dapat terjadi jika banyak pria dan wanita tidak sama. Untuk kasus berdampingan, gunakan konsep penggabungan objek (blok), dan untuk kasus tidak berdampingan gunakan metode komplemen: Total Siklis - Siklis Berdampingan.",
+    "explanation": "Langkah-langkah analisis permutasi siklis:\n1. Evaluasi Duduk Berselang-seling Sempurna (Pernyataan A):\n   - Banyak pria adalah $4$ dan banyak wanita adalah $3$.\n   - Karena jumlah pria dan wanita berbeda ($4 \\ne 3$), berdasarkan prinsip sarang merpati (Pigeonhole Principle), pasti ada minimal dua orang pria yang duduk bersebelahan langsung.\n   - Sehingga susunan melingkar dengan pola pria dan wanita berselang-seling sempurna mustahil dilakukan ($0\\text{ cara}$).\n   - Maka, Pernyataan A bernilai BENAR.\n2. Evaluasi Ketiga Wanita Duduk Berdampingan (Pernyataan B):\n   - Gabungkan $3\\text{ wanita}$ menjadi satu blok tunggal [WWW].\n   - Bersama $4\\text{ pria}$, terdapat total $5\\text{ elemen}$ yang disusun melingkar.\n   - Banyak permutasi siklis 5 elemen: $(5 - 1)! = 4! = 24\\text{ cara}$.\n   - Di dalam blok wanita, $3\\text{ wanita}$ dapat bertukar posisi dengan $3! = 6\\text{ cara}$.\n   $$\\text{Total cara} = 24 \\times 6 = 144\\text{ cara}$$\n   - Maka, Pernyataan B bernilai BENAR.\n3. Evaluasi Rian dan Sinta Tidak Boleh Berdampingan (Pernyataan C):\n   - Total cara duduk melingkar $7\\text{ orang}$ tanpa syarat: $(7 - 1)! = 6! = 720\\text{ cara}$.\n   - Hitung cara di mana Rian dan Sinta duduk berdampingan [RS]:\n     * Gabungkan [RS] menjadi 1 elemen, sehingga ada 6 elemen yang disusun melingkar: $(6 - 1)! = 5! = 120\\text{ cara}$.\n     * Di dalam blok [RS], terdapat $2! = 2\\text{ cara}$.\n     * Susunan Rian dan Sinta berdampingan: $120 \\times 2 = 240\\text{ cara}$.\n   - Banyak susunan di mana Rian dan Sinta TIDAK berdampingan:\n     $$720 - 240 = 480\\text{ cara}$$\n   - Maka, Pernyataan C bernilai BENAR.\n\nKesimpulan Kategori:\n- Pernyataan A: Benar\n- Pernyataan B: Benar\n- Pernyataan C: Benar"
+  },
+  {
+    "id": "matwa-aturan-pencacahan-10",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "aturan-pencacahan",
+    "question_type": "KECUKUPAN_DATA",
+    "difficulty": "HOTS",
+    "question_text": "Dari angka-angka pada himpunan $S$ akan disusun bilangan ratusan ($3\\text{ digit}$) yang terdiri dari angka-angka berbeda (tanpa pengulangan).\n\nBerapa banyak bilangan ratusan genap yang dapat dibentuk?\n\nPutuskan apakah pernyataan (1) dan (2) berikut cukup untuk menjawab pertanyaan tersebut:\n(1) Himpunan $S = \\{1, 2, 3, 4, 5, 6\\}$.\n(2) Nilai bilangan ratusan yang dibentuk harus kurang dari $500$.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (2) SAJA tidak cukup."
+      },
+      {
+        "id": "B",
+        "text": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (1) SAJA tidak cukup."
+      },
+      {
+        "id": "C",
+        "text": "DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup."
+      },
+      {
+        "id": "D",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan Pernyataan (2) SAJA cukup."
+      },
+      {
+        "id": "E",
+        "text": "Pernyataan (1) dan Pernyataan (2) tidak cukup untuk menjawab pertanyaan."
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Suatu bilangan ratusan dikatakan genap apabila angka satuannya merupakan bilangan genap. Periksa apakah anggota himpunan $S$ pada Pernyataan (1) sudah cukup untuk menentukan seluruh variasi bilangan genap 3 digit.",
+    "explanation": "Langkah-langkah analisis kecukupan data:\nPertanyaan: Berapa banyak bilangan ratusan genap (3 digit berbeda) yang dapat dibentuk?\n\n1. Meninjau Pernyataan (1) SAJA ($S = \\{1, 2, 3, 4, 5, 6\\}$):\n   - Angka yang tersedia berjumlah $6$ angka tanpa angka nol: $\\{1, 2, 3, 4, 5, 6\\}$.\n   - Angka genap yang dapat mengisi posisi satuan (digit ke-3): $\\{2, 4, 6\\}$ ($3\\text{ pilihan}$). Karena tidak ada angka 0, semua angka genap di $S$ tidak menimbulkan ambiguitas pada posisi ratusan.\n   - Setelah memilih 1 angka genap untuk satuan, tersisa $5\\text{ angka}$ untuk posisi ratusan ($5\\text{ pilihan}$).\n   - Kemudian tersisa $4\\text{ angka}$ untuk posisi puluhan ($4\\text{ pilihan}$).\n   $$\\text{Banyak bilangan ratusan genap} = 5 \\times 4 \\times 3 = 60$$\n   - Nilai dapat dihitung secara pasti dan tunggal ($60\\text{ bilangan}$). Maka Pernyataan (1) SAJA CUKUP.\n\n2. Meninjau Pernyataan (2) SAJA (bilangan ratusan $< 500$):\n   - Hanya diketahui syarat nilai $< 500$, namun anggota himpunan $S$, banyak angka yang tersedia, dan komposisi angka genap di dalam $S$ sama sekali tidak diketahui.\n   - Akibatnya, banyak bilangan ratusan genap tidak dapat ditentukan nilainya.\n   - Maka Pernyataan (2) SAJA TIDAK CUKUP.\n\nKesimpulan:\nPernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (2) SAJA tidak cukup.\nJadi, pilihan yang tepat adalah A."
+  }
+]

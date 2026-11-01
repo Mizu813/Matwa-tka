@@ -1,1 +1,198 @@
-[]
+[
+  {
+    "id": "matwa-perbandingan-trigonometri-01",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "perbandingan-trigonometri",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diketahui sudut $A$ merupakan sudut tumpul ($90^\\circ < A < 180^\\circ$) dan nilai $\\sin A = \\frac{1}{a}$ dengan $a > 1$. Nilai $\\cos A$ yang dinyatakan dalam variabel $a$ adalah ...",
+    "options": [
+      { "id": "A", "text": "$\\frac{\\sqrt{a^2 - 1}}{a}$" },
+      { "id": "B", "text": "$-\\frac{\\sqrt{a^2 - 1}}{a}$" },
+      { "id": "C", "text": "$-\\frac{\\sqrt{a^2 + 1}}{a}$" },
+      { "id": "D", "text": "$-\\frac{a}{\\sqrt{a^2 - 1}}$" },
+      { "id": "E", "text": "$\\frac{1}{\\sqrt{a^2 - 1}}$" }
+    ],
+    "correct_answer": "B",
+    "hint": "Gunakan identitas dasar $\\sin^2 A + \\cos^2 A = 1$. Perhatikan tanda aljabar nilai cosinus di Kuadran II (sudut tumpul).",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Identifikasi kuadran sudut $A$:\n   - Sudut $A$ adalah sudut tumpul, artinya $90^\\circ < A < 180^\\circ$ (Kuadran II).\n   - Pada Kuadran II, nilai $\\sin A > 0$ (positif) dan nilai $\\cos A < 0$ (negatif).\n2. Menggunakan identitas trigonometri Pythagoras:\n   $$\\sin^2 A + \\cos^2 A = 1$$\n   $$\\cos^2 A = 1 - \\sin^2 A$$\n   $$\\cos^2 A = 1 - \\left(\\frac{1}{a}\\right)^2 = 1 - \\frac{1}{a^2} = \\frac{a^2 - 1}{a^2}$$\n3. Menarik akar dengan memperhatikan tanda kuadran:\n   $$\\cos A = -\\sqrt{\\frac{a^2 - 1}{a^2}} = -\\frac{\\sqrt{a^2 - 1}}{a}$$\n\nJadi, nilai $\\cos A$ dalam variabel $a$ adalah $-\\frac{\\sqrt{a^2 - 1}}{a}$."
+  },
+  {
+    "id": "matwa-perbandingan-trigonometri-02",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "perbandingan-trigonometri",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Nilai dari ekspresi trigonometri sudut berelasi:\n$$\\frac{\\sin 150^\\circ + \\cos 300^\\circ + \\tan 225^\\circ}{\\sin 210^\\circ \\cdot \\cos 180^\\circ}$$\nadalah ...",
+    "options": [
+      { "id": "A", "text": "$-4$" },
+      { "id": "B", "text": "$-2$" },
+      { "id": "C", "text": "$1$" },
+      { "id": "D", "text": "$2$" },
+      { "id": "E", "text": "$4$" }
+    ],
+    "correct_answer": "E",
+    "hint": "Gunakan rumus sudut berelasi untuk mengubah setiap sudut ke sudut lancip di Kuadran I ($30^\\circ, 45^\\circ, 60^\\circ$) dengan memperhatikan tanda kuadrannya.",
+    "explanation": "Langkah-langkah evaluasi tiap suku sudut berelasi:\n1. Pembilang:\n   - $\\sin 150^\\circ = \\sin(180^\\circ - 30^\\circ) = \\sin 30^\\circ = \\frac{1}{2}$ (Kuadran II, sinus positif)\n   - $\\cos 300^\\circ = \\cos(360^\\circ - 60^\\circ) = \\cos 60^\\circ = \\frac{1}{2}$ (Kuadran IV, cosinus positif)\n   - $\\tan 225^\\circ = \\tan(180^\\circ + 45^\\circ) = \\tan 45^\\circ = 1$ (Kuadran III, tangen positif)\n   - Jumlah pembilang:\n     $$\\frac{1}{2} + \\frac{1}{2} + 1 = 1 + 1 = 2$$\n2. Penyebut:\n   - $\\sin 210^\\circ = \\sin(180^\\circ + 30^\\circ) = -\\sin 30^\\circ = -\\frac{1}{2}$ (Kuadran III, sinus negatif)\n   - $\\cos 180^\\circ = -1$\n   - Hasil kali penyebut:\n     $$\\left(-\\frac{1}{2}\\right) \\cdot (-1) = \\frac{1}{2}$$\n3. Menghitung nilai pecahan:\n   $$\\text{Nilai} = \\frac{2}{\\frac{1}{2}} = 2 \\times 2 = 4$$\n\nJadi, nilai dari ekspresi tersebut adalah $4$."
+  },
+  {
+    "id": "matwa-perbandingan-trigonometri-03",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "perbandingan-trigonometri",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Bentuk aljabar yang menggabungkan seluruh perbandingan trigonometri di Kuadran II, III, dan IV berikut:\n$$\\frac{\\sin(180^\\circ - x)\\cos(90^\\circ + x) + \\cos(360^\\circ - x)\\sin(270^\\circ - x)}{\\left[\\csc(180^\\circ + x)\\csc(360^\\circ - x) - \\cot(180^\\circ - x)\\cot(360^\\circ - x)\\right] - \\left[\\sec(180^\\circ - x)\\sec(360^\\circ - x) + \\tan(180^\\circ + x)\\cot(270^\\circ - x)\\right]}$$\ndapat disederhanakan menjadi nilai konstan ...",
+    "options": [
+      { "id": "A", "text": "$-1$" },
+      { "id": "B", "text": "$-\\frac{1}{2}$" },
+      { "id": "C", "text": "$0$" },
+      { "id": "D", "text": "$\\frac{1}{2}$" },
+      { "id": "E", "text": "$1$" }
+    ],
+    "correct_answer": "B",
+    "hint": "Gunakan aturan relasi sudut untuk menyederhanakan tiap suku ke sudut $x$, lalu gunakan identitas dasar $\\sin^2 x + \\cos^2 x = 1$, $\\csc^2 x - \\cot^2 x = 1$, dan $\\sec^2 x - \\tan^2 x = 1$.",
+    "explanation": "Langkah-langkah penyederhanaan:\n1. Menyederhanakan Pembilang:\n   - $\\sin(180^\\circ - x) = \\sin x$\n   - $\\cos(90^\\circ + x) = -\\sin x$\n     Suku pertama: $\\sin x \\cdot (-\\sin x) = -\\sin^2 x$\n   - $\\cos(360^\\circ - x) = \\cos x$\n   - $\\sin(270^\\circ - x) = -\\cos x$\n     Suku kedua: $\\cos x \\cdot (-\\cos x) = -\\cos^2 x$\n   - Jumlah pembilang:\n     $$-\\sin^2 x - \\cos^2 x = -(\\sin^2 x + \\cos^2 x) = -1$$\n2. Menyederhanakan Penyebut:\n   - Bagian kurung siku pertama:\n     $\\csc(180^\\circ + x) = -\\csc x$\n     $\\csc(360^\\circ - x) = -\\csc x$\n     Maka: $(-\\csc x)(-\\csc x) = \\csc^2 x$\n     $\\cot(180^\\circ - x) = -\\cot x$\n     $\\cot(360^\\circ - x) = -\\cot x$\n     Maka: $(-\\cot x)(-\\cot x) = \\cot^2 x$\n     Sehingga bagian pertama: $\\csc^2 x - \\cot^2 x = 1$\n   - Bagian kurung siku kedua:\n     $\\sec(180^\\circ - x) = -\\sec x$\n     $\\sec(360^\\circ - x) = \\sec x$\n     Maka: $(-\\sec x)(\\sec x) = -\\sec^2 x$\n     $\\tan(180^\\circ + x) = \\tan x$\n     $\\cot(270^\\circ - x) = \\tan x$\n     Maka: $\\tan x \\cdot \\tan x = \\tan^2 x$\n     Sehingga bagian kedua: $-\\sec^2 x + \\tan^2 x = -(\\sec^2 x - \\tan^2 x) = -(1) = -1$\n   - Nilai total penyebut:\n     $$\\text{Penyebut} = 1 - (-1) = 1 + 1 = 2$$\n3. Menghitung nilai pecahan:\n   $$\\text{Nilai} = \\frac{-1}{2} = -\\frac{1}{2}$$\n\nJadi, ekspresi tersebut dapat disederhanakan menjadi $-\\frac{1}{2}$."
+  },
+  {
+    "id": "matwa-perbandingan-trigonometri-04",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "perbandingan-trigonometri",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Diberikan persamaan trigonometri $2\\cos^2 x - 3\\cos x - 2 = 0$ untuk interval $90^\\circ \\le x \\le 270^\\circ$. Jika diketahui bahwa $\\tan x > 0$, maka nilai dari $\\sin x + \\sqrt{3}\\cos x$ adalah ...",
+    "options": [
+      { "id": "A", "text": "$-\\sqrt{3}$" },
+      { "id": "B", "text": "$-\\frac{1}{2}\\sqrt{3}$" },
+      { "id": "C", "text": "$0$" },
+      { "id": "D", "text": "$\\frac{1}{2}\\sqrt{3}$" },
+      { "id": "E", "text": "$\\sqrt{3}$" }
+    ],
+    "correct_answer": "A",
+    "hint": "Faktorkan persamaan kuadrat dalam variabel $\\cos x$. Tentukan kuadran dari interval yang diberikan beserta syarat $\\tan x > 0$, lalu hitung nilai ekspresi yang ditanyakan.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Memfaktorkan persamaan kuadrat dalam $\\cos x$:\n   $$2\\cos^2 x - 3\\cos x - 2 = 0$$\n   $$(2\\cos x + 1)(\\cos x - 2) = 0$$\n   - Kemungkinan 1: $\\cos x = 2$ (tidak memenuhi, karena rentang nilai cosinus adalah $-1 \\le \\cos x \\le 1$)\n   - Kemungkinan 2: $2\\cos x + 1 = 0 \\implies \\cos x = -\\frac{1}{2}$ (memenuhi)\n2. Menentukan besar sudut $x$ pada interval $90^\\circ \\le x \\le 270^\\circ$:\n   - Interval ini mencakup Kuadran II dan Kuadran III.\n   - Diketahui syarat tambahan bahwa $\\tan x > 0$.\n   - Karena $\\tan x$ bernilai positif pada interval tersebut hanya di Kuadran III, maka sudut $x$ pasti berada di Kuadran III.\n   - Nilai $\\cos x = -\\frac{1}{2}$ di Kuadran III adalah:\n     $$x = 180^\\circ + 60^\\circ = 240^\\circ$$\n3. Menghitung nilai $\\sin x + \\sqrt{3}\\cos x$:\n   - $\\sin 240^\\circ = -\\sin 60^\\circ = -\\frac{1}{2}\\sqrt{3}$\n   - $\\cos 240^\\circ = -\\cos 60^\\circ = -\\frac{1}{2}$\n   - Maka:\n     $$\\sin x + \\sqrt{3}\\cos x = -\\frac{1}{2}\\sqrt{3} + \\sqrt{3}\\left(-\\frac{1}{2}\\right) = -\\frac{1}{2}\\sqrt{3} - \\frac{1}{2}\\sqrt{3} = -\\sqrt{3}$$\n\nJadi, nilai dari $\\sin x + \\sqrt{3}\\cos x$ adalah $-\\sqrt{3}$."
+  },
+  {
+    "id": "matwa-perbandingan-trigonometri-05",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "perbandingan-trigonometri",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Titik $P(-5, 12)$ terletak pada bidang koordinat Kartesius. Ruas garis $OP$ yang menghubungkan titik asal $O(0,0)$ ke titik $P$ membentuk sudut $\\alpha$ terhadap sumbu-$X$ positif ($90^\\circ < \\alpha < 180^\\circ$, Kuadran II).\n\nTentukan semua pernyataan berikut yang bernilai BENAR! (Pilih semua opsi yang tepat)",
+    "options": [
+      { "id": "A", "text": "Nilai perbandingan $\\sin \\alpha = \\frac{12}{13}$ dan $\\csc \\alpha = \\frac{13}{12}$." },
+      { "id": "B", "text": "Nilai perbandingan $\\cos \\alpha = -\\frac{5}{13}$ dan $\\tan \\alpha = -\\frac{12}{5}$." },
+      { "id": "C", "text": "Hasil penjumlahan $\\sec \\alpha + \\tan \\alpha = -5$." },
+      { "id": "D", "text": "Nilai perbandingan $\\cos \\alpha = \\frac{5}{13}$ karena perbandingan trigonometri selalu bernilai positif." },
+      { "id": "E", "text": "Nilai perbandingan $\\cot \\alpha = \\frac{12}{5}$." }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Gunakan definisi perbandingan trigonometri pada bidang koordinat: $r = \\sqrt{x^2 + y^2}$, $\\sin \\alpha = \\frac{y}{r}$, $\\cos \\alpha = \\frac{x}{r}$, $\\tan \\alpha = \\frac{y}{x}$, dan perhatikan tanda koordinat $x$ yang negatif.",
+    "explanation": "Langkah-langkah analisis geometri koordinat:\n1. Menghitung jarak titik $P(-5, 12)$ ke titik asal $O(0,0)$ ($r$):\n   $$r = \\sqrt{x^2 + y^2} = \\sqrt{(-5)^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13$$\n2. Menentukan nilai keenam perbandingan trigonometri sudut $\\alpha$ di Kuadran II:\n   - $\\sin \\alpha = \\frac{y}{r} = \\frac{12}{13}$\n   - $\\csc \\alpha = \\frac{r}{y} = \\frac{13}{12}$\n     Pernyataan A BENAR.\n   - $\\cos \\alpha = \\frac{x}{r} = \\frac{-5}{13} = -\\frac{5}{13}$\n   - $\\tan \\alpha = \\frac{y}{x} = \\frac{12}{-5} = -\\frac{12}{5}$\n     Pernyataan B BENAR dan pernyataan D SALAH.\n   - $\\sec \\alpha = \\frac{r}{x} = \\frac{13}{-5} = -\\frac{13}{5}$\n   - $\\cot \\alpha = \\frac{x}{y} = \\frac{-5}{12} = -\\frac{5}{12}$\n     Pernyataan E SALAH (tertulis $\\frac{12}{5}$).\n3. Mengevaluasi operasi penjumlahan $\\sec \\alpha + \\tan \\alpha$:\n   $$\\sec \\alpha + \\tan \\alpha = \\left(-\\frac{13}{5}\\right) + \\left(-\\frac{12}{5}\\right) = -\\frac{25}{5} = -5$$\n   Pernyataan C BENAR.\n\nJadi, pernyataan yang bernilai benar adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-perbandingan-trigonometri-06",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "perbandingan-trigonometri",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Sudut $\\theta$ terletak di Kuadran IV ($270^\\circ < \\theta < 360^\\circ$) dan diketahui memiliki nilai $\\cos \\theta = \\frac{3}{5}$.\n\nTentukan semua pernyataan berikut yang bernilai BENAR! (Pilih semua opsi yang tepat)",
+    "options": [
+      { "id": "A", "text": "Nilai $\\sin \\theta = -\\frac{4}{5}$ dan $\\tan \\theta = -\\frac{4}{3}$." },
+      { "id": "B", "text": "Nilai sudut berelasi $\\sin(180^\\circ - \\theta) = -\\frac{4}{5}$." },
+      { "id": "C", "text": "Nilai sudut berelasi $\\tan(360^\\circ - \\theta) = \\frac{4}{3}$." },
+      { "id": "D", "text": "Nilai perbandingan $\\sec \\theta = -\\frac{5}{3}$ karena sudut $\\theta$ terletak di Kuadran IV." },
+      { "id": "E", "text": "Nilai perbandingan $\\sin \\theta = \\frac{4}{5}$." }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Di Kuadran IV, nilai cosinus dan sekan positif, sedangkan sinus dan tangen negatif. Gunakan relasi sudut $\\sin(180^\\circ - \\theta) = \\sin \\theta$ dan $\\tan(360^\\circ - \\theta) = -\\tan \\theta$.",
+    "explanation": "Langkah-langkah evaluasi tiap pernyataan:\n1. Menentukan nilai perbandingan trigonometri sudut $\\theta$ di Kuadran IV:\n   - Diketahui $\\cos \\theta = \\frac{3}{5}$.\n   - Karena $\\theta$ berada di Kuadran IV, maka $\\sin \\theta < 0$:\n     $$\\sin \\theta = -\\sqrt{1 - \\cos^2 \\theta} = -\\sqrt{1 - \\left(\\frac{3}{5}\\right)^2} = -\\sqrt{\\frac{16}{25}} = -\\frac{4}{5}$$\n   - Nilai tangen:\n     $$\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta} = \\frac{-4/5}{3/5} = -\\frac{4}{3}$$\n     Pernyataan A BENAR dan pernyataan E SALAH.\n   - Nilai sekan di Kuadran IV bernilai positif:\n     $$\\sec \\theta = \\frac{1}{\\cos \\theta} = \\frac{5}{3}$$\n     Pernyataan D SALAH (tertulis $-\\frac{5}{3}$).\n2. Evaluasi Pernyataan B:\n   - Berdasarkan rumus sudut berelasi: $\\sin(180^\\circ - \\theta) = \\sin \\theta$.\n   - Karena $\\sin \\theta = -\\frac{4}{5}$, maka $\\sin(180^\\circ - \\theta) = -\\frac{4}{5}$.\n     Pernyataan B BENAR.\n3. Evaluasi Pernyataan C:\n   - Berdasarkan rumus sudut berelasi: $\\tan(360^\\circ - \\theta) = -\\tan \\theta$.\n   - Karena $\\tan \\theta = -\\frac{4}{3}$, maka:\n     $$\\tan(360^\\circ - \\theta) = -\\left(-\\frac{4}{3}\\right) = \\frac{4}{3}$$\n     Pernyataan C BENAR.\n\nJadi, pernyataan yang bernilai benar adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-perbandingan-trigonometri-07",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "perbandingan-trigonometri",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan segitiga siku-siku $ABC$ yang siku-siku di titik $B$. Panjang rusuk tegak $AB = 8\\text{ cm}$ dan panjang rusuk alas $BC = 15\\text{ cm}$. Tinjau perbandingan trigonometri terhadap sudut lancip $\\angle BAC$ (disebut sudut $A$).\n\nTentukan semua pernyataan berikut yang bernilai BENAR! (Pilih semua opsi yang tepat)",
+    "options": [
+      { "id": "A", "text": "Panjang sisi miring (hipotenusa) $AC$ adalah tepat $17\\text{ cm}$." },
+      { "id": "B", "text": "Nilai perbandingan $\\sin A = \\frac{15}{17}$ dan $\\cos A = \\frac{8}{17}$." },
+      { "id": "C", "text": "Nilai perbandingan $\\tan A = \\frac{15}{8}$ dan $\\sec A = \\frac{17}{8}$." },
+      { "id": "D", "text": "Nilai perbandingan $\\cos A = \\frac{15}{17}$." },
+      { "id": "E", "text": "Nilai perbandingan $\\tan A = \\frac{8}{15}$." }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Gunakan teorema Pythagoras untuk mencari hipotenusa $AC$. Terhadap sudut $A$, sisi depan adalah $BC$, sisi samping adalah $AB$, dan sisi miring adalah $AC$.",
+    "explanation": "Langkah-langkah evaluasi:\n1. Menghitung panjang hipotenusa $AC$ dengan teorema Pythagoras:\n   $$AC = \\sqrt{AB^2 + BC^2} = \\sqrt{8^2 + 15^2} = \\sqrt{64 + 225} = \\sqrt{289} = 17\\text{ cm}$$\n   Pernyataan A BENAR.\n2. Mengidentifikasi sisi-sisi relatif terhadap sudut $A$:\n   - Sisi depan (depan sudut $A$) $= BC = 15\\text{ cm}$\n   - Sisi samping (samping sudut $A$) $= AB = 8\\text{ cm}$\n   - Sisi miring (hipotenusa) $= AC = 17\\text{ cm}$\n3. Menghitung nilai perbandingan trigonometri:\n   - $\\sin A = \\frac{\\text{depan}}{\\text{miring}} = \\frac{15}{17}$\n   - $\\cos A = \\frac{\\text{samping}}{\\text{miring}} = \\frac{8}{17}$\n     Pernyataan B BENAR dan pernyataan D SALAH.\n   - $\\tan A = \\frac{\\text{depan}}{\\text{samping}} = \\frac{15}{8}$\n   - $\\sec A = \\frac{\\text{miring}}{\\text{samping}} = \\frac{17}{8}$\n     Pernyataan C BENAR dan pernyataan E SALAH.\n\nJadi, pernyataan yang bernilai benar adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-perbandingan-trigonometri-08",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "perbandingan-trigonometri",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Tinjau tanda aljabar dan sifat-sifat perbandingan trigonometri pada berbagai kuadran.\n\nTentukan kebenaran dari masing-masing pernyataan berikut (Benar / Salah)!",
+    "options": [
+      { "id": "A", "text": "Jika diketahui $\\sin \\theta < 0$ dan $\\tan \\theta > 0$, maka sudut $\\theta$ pasti terletak di Kuadran III dan nilai $\\cos \\theta$ bernilai negatif." },
+      { "id": "B", "text": "Untuk sembarang nilai sudut $x$, hasil penjumlahan $\\cos(180^\\circ - x) + \\cos(180^\\circ + x)$ selalu bernilai $-2\\cos x$." },
+      { "id": "C", "text": "Nilai dari perkalian $\\sin 315^\\circ \\cdot \\cos 225^\\circ$ adalah $-\\frac{1}{2}$." }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Salah"
+    },
+    "hint": "Cek irisan kuadran dari tanda sinus dan tangen. Gunakan relasi $\\cos(180^\\circ - x) = -\\cos x$ dan $\\cos(180^\\circ + x) = -\\cos x$. Hati-hati dengan tanda perkalian dua bilangan negatif.",
+    "explanation": "Langkah-langkah analisis kebenaran:\n1. Evaluasi Pernyataan A:\n   - Nilai $\\sin \\theta < 0$ terjadi di Kuadran III atau Kuadran IV.\n   - Nilai $\\tan \\theta > 0$ terjadi di Kuadran I atau Kuadran III.\n   - Irisan kedua kondisi tersebut menunjukkan bahwa sudut $\\theta$ pasti terletak di Kuadran III.\n   - Di Kuadran III, nilai absis $x$ negatif sehingga $\\cos \\theta < 0$ (negatif).\n   Maka Pernyataan A adalah BENAR.\n2. Evaluasi Pernyataan B:\n   - Menggunakan rumus sudut berelasi:\n     $$\\cos(180^\\circ - x) = -\\cos x$$\n     $$\\cos(180^\\circ + x) = -\\cos x$$\n   - Hasil penjumlahannya:\n     $$\\cos(180^\\circ - x) + \\cos(180^\\circ + x) = (-\\cos x) + (-\\cos x) = -2\\cos x$$\n   Maka Pernyataan B adalah BENAR.\n3. Evaluasi Pernyataan C:\n   - Sudut $315^\\circ$ berada di Kuadran IV:\n     $$\\sin 315^\\circ = \\sin(360^\\circ - 45^\\circ) = -\\sin 45^\\circ = -\\frac{1}{2}\\sqrt{2}$$\n   - Sudut $225^\\circ$ berada di Kuadran III:\n     $$\\cos 225^\\circ = \\cos(180^\\circ + 45^\\circ) = -\\cos 45^\\circ = -\\frac{1}{2}\\sqrt{2}$$\n   - Hasil perkalian dua bilangan negatif menghasilkan nilai positif:\n     $$\\sin 315^\\circ \\cdot \\cos 225^\\circ = \\left(-\\frac{1}{2}\\sqrt{2}\\right) \\times \\left(-\\frac{1}{2}\\sqrt{2}\\right) = +\\frac{1}{4} \\times 2 = +\\frac{1}{2}$$\n   - Pernyataan C menyebutkan $-\\frac{1}{2}$, sehingga bertentangan dengan perhitungan sebenarnya.\n   Maka Pernyataan C adalah SALAH."
+  },
+  {
+    "id": "matwa-perbandingan-trigonometri-09",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "perbandingan-trigonometri",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Tinjau identitas trigonometri dan penyederhanaan ekspresi aljabar trigonometri berikut.\n\nTentukan kebenaran dari masing-masing pernyataan berikut (Benar / Salah)!",
+    "options": [
+      { "id": "A", "text": "Bentuk pecahan $\\frac{\\sin x}{1 + \\cos x}$ ekuivalen secara aljabar dengan $\\frac{1 - \\cos x}{\\sin x}$ untuk semua nilai $x$ yang terdefinisi." },
+      { "id": "B", "text": "Bentuk penjumlahan $\\tan x + \\cot x$ dapat disederhanakan menjadi bentuk perkalian $\\sec x \\cdot \\csc x$." },
+      { "id": "C", "text": "Nilai dari $(\\sin x + \\cos x)^2 + (\\sin x - \\cos x)^2$ selalu sama dengan $1$ untuk sembarang besar sudut $x$." }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Salah"
+    },
+    "hint": "Kalikan pembilang dan penyebut dengan bentuk sekawan $(1 - \\cos x)$. Ubah $\\tan x$ dan $\\cot x$ ke bentuk sinus dan cosinus. Jabarkan bentuk kuadrat binomial.",
+    "explanation": "Langkah-langkah pembuktian identitas:\n1. Evaluasi Pernyataan A:\n   - Kalikan pembilang dan penyebut ruas kiri dengan sekawan penyebutnya $(1 - \\cos x)$:\n     $$\\frac{\\sin x}{1 + \\cos x} = \\frac{\\sin x(1 - \\cos x)}{(1 + \\cos x)(1 - \\cos x)} = \\frac{\\sin x(1 - \\cos x)}{1 - \\cos^2 x}$$\n   - Karena $1 - \\cos^2 x = \\sin^2 x$:\n     $$\\frac{\\sin x(1 - \\cos x)}{\\sin^2 x} = \\frac{1 - \\cos x}{\\sin x}$$\n   Maka Pernyataan A adalah BENAR.\n2. Evaluasi Pernyataan B:\n   - Nyatakan $\\tan x$ dan $\\cot x$ dalam sinus dan cosinus:\n     $$\\tan x + \\cot x = \\frac{\\sin x}{\\cos x} + \\frac{\\cos x}{\\sin x} = \\frac{\\sin^2 x + \\cos^2 x}{\\cos x \\sin x}$$\n   - Karena $\\sin^2 x + \\cos^2 x = 1$:\n     $$\\frac{1}{\\cos x \\sin x} = \\frac{1}{\\cos x} \\cdot \\frac{1}{\\sin x} = \\sec x \\cdot \\csc x$$\n   Maka Pernyataan B adalah BENAR.\n3. Evaluasi Pernyataan C:\n   - Jabarkan kedua bentuk kuadrat sempurna:\n     $$(\\sin x + \\cos x)^2 = \\sin^2 x + 2\\sin x\\cos x + \\cos^2 x = 1 + 2\\sin x\\cos x$$\n     $$(\\sin x - \\cos x)^2 = \\sin^2 x - 2\\sin x\\cos x + \\cos^2 x = 1 - 2\\sin x\\cos x$$\n   - Jumlahkan kedua persamaan:\n     $$(1 + 2\\sin x\\cos x) + (1 - 2\\sin x\\cos x) = 1 + 1 = 2$$\n   - Nilai yang benar adalah $2$, bukan $1$.\n   Maka Pernyataan C adalah SALAH."
+  },
+  {
+    "id": "matwa-perbandingan-trigonometri-10",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "perbandingan-trigonometri",
+    "question_type": "KECUKUPAN_DATA",
+    "difficulty": "HOTS",
+    "question_text": "Diketahui sudut $\\theta$ terletak pada rentang $0^\\circ \\le \\theta \\le 360^\\circ$. Apakah nilai perbandingan $\\tan \\theta$ bernilai negatif?\n\nPutuskan apakah pernyataan (1) dan (2) berikut cukup untuk menjawab pertanyaan tersebut:\n(1) $\\sin \\theta = \\frac{3}{5}$.\n(2) $\\cos \\theta < 0$.",
+    "options": [
+      { "id": "A", "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup." },
+      { "id": "B", "text": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup." },
+      { "id": "C", "text": "DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup." },
+      { "id": "D", "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan pernyataan (2) SAJA cukup." },
+      { "id": "E", "text": "Pernyataan (1) dan pernyataan (2) tidak cukup untuk menjawab pertanyaan." }
+    ],
+    "correct_answer": "C",
+    "hint": "Tentukan posisi kuadran yang mungkin dari sudut $\\theta$ untuk masing-masing pernyataan. Tangen bernilai negatif hanya pada Kuadran II dan Kuadran IV.",
+    "explanation": "Langkah-langkah analisis kecukupan data:\n1. Analisis Pokok Pertanyaan:\n   - Pertanyaan: \"Apakah $\\tan \\theta < 0$ (bernilai negatif)?\"\n   - Nilai $\\tan \\theta$ bernilai negatif jika dan hanya jika sudut $\\theta$ berada di Kuadran II atau Kuadran IV.\n\n2. Evaluasi Pernyataan (1):\n   - Diketahui $\\sin \\theta = \\frac{3}{5} > 0$.\n   - Sinus bernilai positif jika sudut $\\theta$ terletak di Kuadran I atau Kuadran II.\n   - Jika $\\theta$ berada di Kuadran I, maka $\\tan \\theta = \\frac{3}{4} > 0$ (positif, jawabannya \"TIDAK\").\n   - Jika $\\theta$ berada di Kuadran II, maka $\\tan \\theta = -\\frac{3}{4} < 0$ (negatif, jawabannya \"YA\").\n   - Karena memberikan dua jawaban yang berbeda, pertanyaan belum dapat dijawab secara pasti.\n   - Maka pernyataan (1) SAJA TIDAK CUKUP.\n\n3. Evaluasi Pernyataan (2):\n   - Diketahui $\\cos \\theta < 0$.\n   - Cosinus bernilai negatif jika sudut $\\theta$ terletak di Kuadran II atau Kuadran III.\n   - Jika $\\theta$ berada di Kuadran II, maka $\\tan \\theta < 0$ (negatif, jawabannya \"YA\").\n   - Jika $\\theta$ berada di Kuadran III, maka $\\tan \\theta > 0$ (positif, jawabannya \"TIDAK\").\n   - Karena memberikan dua kemungkinan kesimpulan, pertanyaan belum dapat dijawab secara pasti.\n   - Maka pernyataan (2) SAJA TIDAK CUKUP.\n\n4. Evaluasi Bersama-sama (1) dan (2):\n   - Dari pernyataan (1): $\\theta \\in$ Kuadran I atau II.\n   - Dari pernyataan (2): $\\theta \\in$ Kuadran II atau III.\n   - Irisan kedua himpunan kuadran adalah Kuadran II secara tunggal.\n   - Karena $\\theta$ dipastikan berada di Kuadran II, maka nilai $\\tan \\theta = -\\frac{3}{4} < 0$.\n   - Pertanyaan \"Apakah nilai $\\tan \\theta$ bernilai negatif?\" dapat dijawab secara PASTI dengan \"YA\".\n   - Jadi, kedua pernyataan bersama-sama cukup untuk menjawab pertanyaan.\n\nKesimpulan: DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup (Opsi C)."
+  }
+]

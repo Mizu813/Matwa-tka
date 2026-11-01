@@ -1,1 +1,228 @@
-[]
+[
+  {
+    "id": "matwa-pengukuran-bangun-datar-01",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-datar",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah jasa katering dekorasi pernikahan menghias pinggiran sekeliling 180 buah tatakan piring saji berbentuk lingkaran menggunakan pita renda emas. Setiap tatakan piring memiliki diameter $d = 28$ cm. Harga pita renda emas adalah Rp2.500,00 per meter.\n\nDengan menggunakan pendekatan $\\pi = \\frac{22}{7}$, total biaya pembelian pita renda emas yang diperlukan untuk menghias seluruh 180 tatakan piring tersebut adalah ...",
+    "options": [
+      { "id": "A", "text": "Rp396.000,00" },
+      { "id": "B", "text": "Rp392.000,00" },
+      { "id": "C", "text": "Rp400.000,00" },
+      { "id": "D", "text": "Rp384.000,00" },
+      { "id": "E", "text": "Rp412.000,00" }
+    ],
+    "correct_answer": "A",
+    "hint": "Hitung keliling satu tatakan piring dengan $K = \\pi \\cdot d$, lalu kalikan dengan 180 untuk mendapatkan panjang total pita dalam satuan meter, kemudian kalikan dengan harga per meter.",
+    "explanation": "Langkah-langkah menghitung biaya pita renda emas:\n\n1. **Keliling satu tatakan piring lingkaran:**\n   $$K = \\pi \\cdot d = \\frac{22}{7} \\times 28\\text{ cm} = 22 \\times 4\\text{ cm} = 88\\text{ cm}$$\n   Dalam satuan meter: $88\\text{ cm} = 0,88\\text{ meter}$.\n\n2. **Total panjang pita untuk 180 buah tatakan:**\n   $$P_{\\text{total}} = 180 \\times 0,88\\text{ meter} = 158,4\\text{ meter}$$\n\n3. **Total biaya pembelian pita renda:**\n   $$\\text{Biaya} = 158,4\\text{ meter} \\times \\text{Rp}2.500,00/\\text{meter} = \\text{Rp}396.000,00$$\n\nJadi, total biaya yang diperlukan adalah **Rp396.000,00** (Opsi **A**)."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-datar-02",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-datar",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah gedung auditorium memasang 20 unit panel jendela kaca berdesain identik. Setiap unit jendela berbentuk gabungan persegi panjang pada bagian bawah dan segitiga sama kaki pada bagian atasnya:\n- Bagian persegi panjang memiliki ukuran lebar 120 cm (1,2 m) dan tinggi 150 cm (1,5 m).\n- Bagian segitiga sama kaki memiliki alas selebar persegi panjang (120 cm = 1,2 m) dan tinggi segitiga 50 cm (0,5 m).\n\nTotal luas permukaan kaca (dalam meter persegi) yang dibutuhkan untuk memasang seluruh 20 unit jendela tersebut adalah ...",
+    "options": [
+      { "id": "A", "text": "$42\\text{ m}^2$" },
+      { "id": "B", "text": "$40\\text{ m}^2$" },
+      { "id": "C", "text": "$45\\text{ m}^2$" },
+      { "id": "D", "text": "$48\\text{ m}^2$" },
+      { "id": "E", "text": "$36\\text{ m}^2$" }
+    ],
+    "correct_answer": "A",
+    "hint": "Hitung luas satu unit jendela dengan menjumlahkan luas persegi panjang ($p \\times l$) dan luas segitiga ($\\frac{1}{2} \\times a \\times t$), lalu kalikan hasilnya dengan 20.",
+    "explanation": "Langkah-langkah menghitung total luas kaca jendela gabungan:\n\n1. **Luas bagian persegi panjang satu jendela:**\n   $$L_1 = p \\times l = 1,5\\text{ m} \\times 1,2\\text{ m} = 1,8\\text{ m}^2$$\n\n2. **Luas bagian segitiga sama kaki satu jendela:**\n   $$L_2 = \\frac{1}{2} \\times a \\times t = \\frac{1}{2} \\times 1,2\\text{ m} \\times 0,5\\text{ m} = 0,3\\text{ m}^2$$\n\n3. **Luas total satu unit jendela:**\n   $$L_{\\text{unit}} = L_1 + L_2 = 1,8\\text{ m}^2 + 0,3\\text{ m}^2 = 2,1\\text{ m}^2$$\n\n4. **Total luas kaca untuk 20 unit jendela:**\n   $$L_{\\text{total}} = 20 \\times 2,1\\text{ m}^2 = 42\\text{ m}^2$$\n\nJadi, total luas kaca yang dibutuhkan adalah **42 meter persegi** (Opsi **A**)."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-datar-03",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-datar",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah taman kota memiliki area rumput hijau berbentuk juring lingkaran dengan sudut pusat $\\alpha = 60^\\circ$ dan panjang jari-jari $R = 21$ meter.\n\nDengan menggunakan pendekatan $\\pi = \\frac{22}{7}$, luas area rumput juring lingkaran tersebut adalah ...",
+    "options": [
+      { "id": "A", "text": "$231\\text{ m}^2$" },
+      { "id": "B", "text": "$220\\text{ m}^2$" },
+      { "id": "C", "text": "$242\\text{ m}^2$" },
+      { "id": "D", "text": "$198\\text{ m}^2$" },
+      { "id": "E", "text": "$264\\text{ m}^2$" }
+    ],
+    "correct_answer": "A",
+    "hint": "Gunakan rumus luas juring lingkaran: $L = \\frac{\\alpha}{360^\\circ} \\times \\pi R^2$ dengan $\\alpha = 60^\\circ$ dan $R = 21$ meter.",
+    "explanation": "Langkah-langkah evaluasi luas juring lingkaran:\n\n1. Identifikasi parameter juring:\n   - Sudut pusat: $\\alpha = 60^\\circ$\n   - Jari-jari: $R = 21\\text{ meter}$\n   - Pendekatan $\\pi = \\frac{22}{7}$\n\n2. Gunakan rumus perbandingan juring terhadap luas lingkaran penuh:\n   $$L_{\\text{juring}} = \\frac{\\alpha}{360^\\circ} \\times \\pi R^2$$\n   $$L_{\\text{juring}} = \\frac{60^\\circ}{360^\\circ} \\times \\frac{22}{7} \\times 21^2$$\n   $$L_{\\text{juring}} = \\frac{1}{6} \\times \\frac{22}{7} \\times 441$$\n\n3. Sederhanakan perhitungan pecahan:\n   $$\\frac{441}{7} = 63$$\n   $$L_{\\text{juring}} = \\frac{1}{6} \\times 22 \\times 63 = \\frac{1.386}{6} = 231\\text{ m}^2$$\n\nJadi, luas area rumput juring lingkaran adalah **231 meter persegi** (Opsi **A**)."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-datar-04",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-datar",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Di dalam sebuah persegi $ABCD$ dengan panjang sisi $s = 14$ cm, dibuat dua busur seperempat lingkaran:\n- Busur pertama berpusat di titik sudut $B$ dengan jari-jari $r = 14$ cm yang menghubungkan titik sudut $A$ dan $C$.\n- Busur kedua berpusat di titik sudut $D$ dengan jari-jari $r = 14$ cm yang menghubungkan titik sudut $A$ dan $C$.\n\nKedua busur tersebut berpotongan dan membentuk daerah irisan menyerupai kelopak daun di tengah persegi. Dengan menggunakan $\\pi = \\frac{22}{7}$, luas daerah irisan kelopak daun tersebut adalah ...",
+    "options": [
+      { "id": "A", "text": "$112\\text{ cm}^2$" },
+      { "id": "B", "text": "$108\\text{ cm}^2$" },
+      { "id": "C", "text": "$120\\text{ cm}^2$" },
+      { "id": "D", "text": "$98\\text{ cm}^2$" },
+      { "id": "E", "text": "$126\\text{ cm}^2$" }
+    ],
+    "correct_answer": "A",
+    "hint": "Luas irisan kelopak daun diperoleh dari jumlah luas dua buah seperempat lingkaran dikurangi luas persegi, atau menggunakan rumus praktis daun simetris $L = \\frac{4}{7} r^2$.",
+    "explanation": "Langkah-langkah menghitung luas irisan kelopak daun simetris:\n\n**Metode 1: Pengurangan Luas Bidang Geometri**\n1. Luas satu seperempat lingkaran dengan jari-jari $r = 14$ cm:\n   $$L_{\\text{seperempat}} = \\frac{1}{4} \\pi r^2 = \\frac{1}{4} \\times \\frac{22}{7} \\times 14^2 = \\frac{1}{4} \\times \\frac{22}{7} \\times 196 = \\frac{1}{4} \\times 616 = 154\\text{ cm}^2$$\n\n2. Luas persegi $ABCD$:\n   $$L_{\\text{persegi}} = s^2 = 14^2 = 196\\text{ cm}^2$$\n\n3. Daerah daun merupakan daerah persekutuan yang dihitung dua kali saat menjumlahkan kedua seperempat lingkaran:\n   $$L_{\\text{daun}} = 2 \\times L_{\\text{seperempat}} - L_{\\text{persegi}}$$\n   $$L_{\\text{daun}} = 2(154) - 196 = 308 - 196 = 112\\text{ cm}^2$$\n\n**Metode 2: Rumus Praktis Kelopak Daun Persegi**\n$$L_{\\text{daun}} = \\left(\\frac{\\pi}{2} - 1\\right) r^2 = \\left(\\frac{11}{7} - 1\\right) r^2 = \\frac{4}{7} r^2$$\n$$L_{\\text{daun}} = \\frac{4}{7} \\times 14^2 = \\frac{4}{7} \\times 196 = 4 \\times 28 = 112\\text{ cm}^2$$\n\nJadi, luas daerah kelopak daun tersebut adalah **112 cm persegi** (Opsi **A**)."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-datar-05",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-datar",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Sebuah lapangan taman berbentuk belah ketupat $ABCD$ memiliki panjang kedua garis diagonal masing-masing $d_1 = AC = 24$ meter dan $d_2 = BD = 32$ meter. Di bagian tengah lapangan dibuat kolam air mancur berbentuk lingkaran yang menyinggung keempat sisi belah ketupat dari dalam secara presisi.\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai ukuran geometris lapangan dan kolam tersebut!",
+    "options": [
+      { "id": "A", "text": "Panjang sisi belah ketupat adalah 20 meter dan keliling lapangannya adalah 80 meter." },
+      { "id": "B", "text": "Luas total lapangan belah ketupat tersebut adalah $384\\text{ m}^2$." },
+      { "id": "C", "text": "Jari-jari kolam lingkaran yang menyinggung keempat sisi belah ketupat adalah 9,6 meter." },
+      { "id": "D", "text": "Jari-jari kolam lingkaran yang menyinggung keempat sisi belah ketupat adalah 12 meter." }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Gunakan teorema Pythagoras pada segitiga siku-siku seperempat diagonal untuk mencari sisi miring $s = \\sqrt{12^2 + 16^2}$. Jari-jari lingkaran dalam dihitung melalui hubungan luas: $L = \\frac{1}{2} \\times \\text{Keliling} \\times r$.",
+    "explanation": "Langkah-langkah evaluasi belah ketupat dan lingkaran dalamnya:\n\n1. **Menghitung Panjang Sisi dan Keliling Belah Ketupat:**\n   Kedua diagonal berpotongan tegak lurus di titik tengah, membagi belah ketupat menjadi 4 segitiga siku-siku kongruen dengan panjang sisi siku-siku:\n   $$a = \\frac{d_1}{2} = \\frac{24}{2} = 12\\text{ m}, \\quad b = \\frac{d_2}{2} = \\frac{32}{2} = 16\\text{ m}$$\n   Panjang sisi belah ketupat ($s$):\n   $$s = \\sqrt{12^2 + 16^2} = \\sqrt{144 + 256} = \\sqrt{400} = 20\\text{ meter}$$\n   Keliling belah ketupat:\n   $$K = 4s = 4(20) = 80\\text{ meter}$$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Menghitung Luas Belah Ketupat:**\n   $$L = \\frac{1}{2} \\times d_1 \\times d_2 = \\frac{1}{2} \\times 24 \\times 32 = 12 \\times 32 = 384\\text{ m}^2$$\n   Pernyataan B bernilai **BENAR**.\n\n3. **Menghitung Jari-Jari Lingkaran Dalam ($r$):**\n   Lingkaran menyinggung keempat sisi belah ketupat, sehingga tinggi segitiga siku-siku terhadap hipotenusa sisi belah ketupat adalah $r$.\n   Hubungan luas belah ketupat terhadap keliling dan jari-jari lingkaran dalam:\n   $$L = \\frac{1}{2} \\times K \\times r$$\n   $$384 = \\frac{1}{2} \\times 80 \\times r$$\n   $$384 = 40r \\implies r = \\frac{384}{40} = 9,6\\text{ meter}$$\n   Pernyataan C bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-datar-06",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-datar",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Pak Darmawan memiliki kawat pagar pembatas sepanjang 120 meter. Kawat tersebut digunakan untuk memagari sebidang lahan kebun berbentuk persegi panjang yang dibagi menjadi dua petak identik menggunakan satu bentangan kawat sekat di tengahnya (sejajar dengan sisi lebar lahan).\n\nMisalkan $x$ menyatakan lebar lahan (terdapat 3 bentangan kawat vertikal selebar $x$) dan $y$ menyatakan panjang total lahan (terdapat 2 bentangan kawat horizontal sepanjang $y$).\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai optimasi luas kebun tersebut!",
+    "options": [
+      { "id": "A", "text": "Hubungan fungsional antara panjang kebun $y$ dan lebar kebun $x$ dirumuskan oleh persamaan linear $y = 60 - 1,5x$." },
+      { "id": "B", "text": "Luas total kebun mencapai nilai maksimum apabila ukuran lebar pagar dipilih $x = 20$ meter dan panjang $y = 30$ meter." },
+      { "id": "C", "text": "Luas maksimum lahan kebun yang dapat dipagari dengan seluruh kawat tersebut adalah $600\\text{ m}^2$." },
+      { "id": "D", "text": "Luas kebun maksimum tercapai jika kebun dibuat berbentuk bujur sangkar (persegi) berukuran $24\\text{ m} \\times 24\\text{ m}$." }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Persamaan panjang kawat: $3x + 2y = 120$. Substitusikan $y$ ke dalam rumus luas $L(x) = x \\cdot y$ untuk memperoleh fungsi kuadrat, lalu cari titik puncak $x_p = -\\frac{b}{2a}$.",
+    "explanation": "Langkah-langkah optimasi luas lahan persegi panjang dengan sekat tengah:\n\n1. **Persamaan Panjang Kawat Pagar:**\n   Terdapat 3 bentangan sisi lebar ($x$) dan 2 bentangan sisi panjang ($y$):\n   $$3x + 2y = 120$$\n   $$2y = 120 - 3x \\implies y = 60 - 1,5x$$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Fungsi Luas Lahan:**\n   $$L(x) = x \\cdot y = x(60 - 1,5x) = -1,5x^2 + 60x$$\n\n3. **Mencari Nilai Ekstrem Maksimum:**\n   Fungsi kuadrat terbuka ke bawah ($a = -1,5 < 0$). Puncak tercapai pada absis:\n   $$x_p = -\\frac{b}{2a} = -\\frac{60}{2(-1,5)} = \\frac{60}{3} = 20\\text{ meter}$$\n   Substitusikan $x = 20$ ke dalam persamaan $y$:\n   $$y = 60 - 1,5(20) = 60 - 30 = 30\\text{ meter}$$\n   Ukuran optimal adalah lebar $x = 20\\text{ m}$ dan panjang $y = 30\\text{ m}$.\n   Pernyataan B bernilai **BENAR**.\n   Karena $x \\neq y$, bentuk lahan optimal bukan persegi bujur sangkar. Pernyataan D bernilai **SALAH**.\n\n4. **Menghitung Luas Maksimum:**\n   $$L_{\\text{maks}} = x \\times y = 20\\text{ m} \\times 30\\text{ m} = 600\\text{ m}^2$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-datar-07",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-datar",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Diberikan bangun datar layang-layang $ABCD$ dengan diagonal $AC$ sebagai sumbu simetri. Panjang diagonal simetri $AC = 21$ cm dan panjang diagonal $BD = 16$ cm. Titik potong kedua diagonal adalah $E$, di mana panjang segmen $AE = 6$ cm dan $EC = 15$ cm.\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai keliling dan luas layang-layang tersebut!",
+    "options": [
+      { "id": "A", "text": "Luas daerah layang-layang $ABCD$ adalah $168\\text{ cm}^2$." },
+      { "id": "B", "text": "Panjang sisi $AB = AD = 10$ cm dan panjang sisi $BC = CD = 17$ cm." },
+      { "id": "C", "text": "Keliling layang-layang $ABCD$ tersebut adalah 54 cm." },
+      { "id": "D", "text": "Keliling layang-layang $ABCD$ tersebut adalah 74 cm." }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Diagonal simetri membagi diagonal $BD$ menjadi dua sama panjang ($BE = ED = 8$ cm). Gunakan teorema Pythagoras pada segitiga siku-siku $\\triangle ABE$ dan $\\triangle BCE$ untuk mencari panjang sisi-sisi layang-layang.",
+    "explanation": "Langkah-langkah evaluasi layang-layang:\n\n1. **Menghitung Luas Layang-Layang:**\n   $$L = \\frac{1}{2} \\times d_1 \\times d_2 = \\frac{1}{2} \\times 21 \\times 16 = 21 \\times 8 = 168\\text{ cm}^2$$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Menghitung Panjang Sisi-Sisi:**\n   Diagonal simetri $AC$ memotong tegak lurus diagonal $BD$ tepat di tengah:\n   $$BE = ED = \\frac{16}{2} = 8\\text{ cm}$$\n   - Sisi pendek $AB$ dan $AD$ (pada segitiga siku-siku $\\triangle ABE$ dengan $AE = 6\\text{ cm}$ dan $BE = 8\\text{ cm}$):\n     $$AB = \\sqrt{AE^2 + BE^2} = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10\\text{ cm}$$\n   - Sisi panjang $BC$ dan $CD$ (pada segitiga siku-siku $\\triangle BCE$ dengan $CE = 15\\text{ cm}$ dan $BE = 8\\text{ cm}$):\n     $$BC = \\sqrt{CE^2 + BE^2} = \\sqrt{15^2 + 8^2} = \\sqrt{225 + 64} = \\sqrt{289} = 17\\text{ cm}$$\n   Pernyataan B bernilai **BENAR**.\n\n3. **Menghitung Keliling Layang-Layang:**\n   $$K = 2(AB + BC) = 2(10 + 17) = 2(27) = 54\\text{ cm}$$\n   Pernyataan C bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-datar-08",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-datar",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Tentukan kebenaran dari masing-masing pernyataan matematika mengenai pengaruh perubahan skala diagonal, luas segitiga sembarang Heron, dan sifat ketaksamaan isoperimetrik di bawah ini dengan memilih **Benar** atau **Salah** pada setiap baris:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Jika panjang diagonal sisi suatu bidang persegi bertambah panjang sebesar 20%, maka luas daerah persegi tersebut bertambah sebesar 44% dari luas semula."
+      },
+      {
+        "id": "B",
+        "text": "Segitiga sembarang dengan panjang sisi-sisi 13 cm, 14 cm, dan 15 cm memiliki luas daerah tepat $84\\text{ cm}^2$."
+      },
+      {
+        "id": "C",
+        "text": "Untuk keliling total pembatas yang sama panjang, bangun datar lingkaran selalu memiliki luas daerah yang lebih kecil dibandingkan bangun datar persegi."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Salah"
+    },
+    "hint": "Pada pernyataan A, luas persegi adalah $L = \\frac{1}{2}d^2$. Pada pernyataan B, gunakan rumus Heron $L = \\sqrt{s(s-a)(s-b)(s-c)}$ dengan semi-perimeter $s = 21$. Pada pernyataan C, ingat teorema isoperimetrik bahwa lingkaran memaksimumkan luas.",
+    "explanation": "Analisis keabsahan tiap pernyataan:\n\n1. **Pernyataan A (Benar):**\n   Luas persegi dalam bentuk panjang diagonal $d$ adalah $L = \\frac{1}{2}d^2$.\n   Jika diagonal baru $d' = 1,20d$, maka:\n   $$L' = \\frac{1}{2}(1,20d)^2 = 1,44 \\left(\\frac{1}{2}d^2\\right) = 1,44L$$\n   Persentase kenaikan luas adalah $(1,44 - 1) \\times 100\\% = 44\\%$.\n\n2. **Pernyataan B (Benar):**\n   Semi-perimeter segitiga:\n   $$s = \\frac{a + b + c}{2} = \\frac{13 + 14 + 15}{2} = 21\\text{ cm}$$\n   Rumus luas Heron:\n   $$L = \\sqrt{s(s - a)(s - b)(s - c)} = \\sqrt{21(21 - 13)(21 - 14)(21 - 15)}$$\n   $$L = \\sqrt{21 \\times 8 \\times 7 \\times 6} = \\sqrt{7.056} = 84\\text{ cm}^2$$\n\n3. **Pernyataan C (Salah):**\n   Berdasarkan Teorema Ketaksamaan Isoperimetrik (*Isoperimetric Inequality*), di antara semua bangun datar dua dimensi yang memiliki keliling sama panjang, **lingkaran** selalu memiliki luas daerah terbesar (*maksimum*). Contoh keliling 44 cm: lingkaran memiliki luas $154\\text{ cm}^2$, sedangkan persegi hanya $121\\text{ cm}^2$ ($154 > 121$)."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-datar-09",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-datar",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Tentukan kebenaran dari masing-masing pernyataan aljabar geometri mengenai pertambahan luas lingkaran, luas trapesium sama kaki, dan jari-jari lingkaran luar segitiga di bawah ini dengan memilih **Benar** atau **Salah** pada setiap baris:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Jika keliling suatu lingkaran bertambah dari $4\\pi$ menjadi $8\\pi$, maka luas lingkaran tersebut bertambah sebesar $12\\pi$."
+      },
+      {
+        "id": "B",
+        "text": "Sebuah trapesium sama kaki memiliki panjang sisi-sisi sejajar 10 cm dan 22 cm serta panjang sisi miring 10 cm. Luas daerah trapesium tersebut adalah $128\\text{ cm}^2$."
+      },
+      {
+        "id": "C",
+        "text": "Jari-jari lingkaran luar (*circumradius*) dari sebuah segitiga siku-siku dengan panjang sisi 6 cm, 8 cm, dan 10 cm adalah 10 cm."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Salah"
+    },
+    "hint": "Pada pernyataan A, cari jari-jari masing-masing lingkaran dari kelilingnya. Pada pernyataan B, cari tinggi trapesium dengan Pythagoras dari proyeksi alas $\\frac{22-10}{2} = 6$. Pada pernyataan C, jari-jari lingkaran luar segitiga siku-siku adalah setengah dari sisi miringnya.",
+    "explanation": "Analisis keabsahan tiap pernyataan:\n\n1. **Pernyataan A (Benar):**\n   - Lingkaran awal: $K_1 = 4\\pi \\implies 2\\pi r_1 = 4\\pi \\implies r_1 = 2$. Luas $L_1 = \\pi (2^2) = 4\\pi$.\n   - Lingkaran akhir: $K_2 = 8\\pi \\implies 2\\pi r_2 = 8\\pi \\implies r_2 = 4$. Luas $L_2 = \\pi (4^2) = 16\\pi$.\n   - Pertambahan luas: $L_2 - L_1 = 16\\pi - 4\\pi = 12\\pi$.\n\n2. **Pernyataan B (Benar):**\n   Proyeksi sisi miring pada sisi alas terpanjang:\n   $$x = \\frac{22 - 10}{2} = 6\\text{ cm}$$\n   Tinggi trapesium dihitung dengan Pythagoras:\n   $$t = \\sqrt{10^2 - 6^2} = \\sqrt{100 - 36} = \\sqrt{64} = 8\\text{ cm}$$\n   Luas trapesium:\n   $$L = \\frac{1}{2}(10 + 22) \\times 8 = 16 \\times 8 = 128\\text{ cm}^2$$\n\n3. **Pernyataan C (Salah):**\n   Pada segitiga siku-siku, pusat lingkaran luar selalu berada tepat di titik tengah sisi miring (*hipotenusa*). Sehingga jari-jari lingkaran luarnya adalah setengah dari panjang sisi miring:\n   $$R = \\frac{1}{2} c = \\frac{1}{2} \\times 10 = 5\\text{ cm}$$\n   Bukan 10 cm."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-datar-10",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-datar",
+    "question_type": "KECUKUPAN_DATA",
+    "difficulty": "HOTS",
+    "question_text": "Diberikan sebuah trapesium siku-siku dengan panjang sisi-sisinya bernilai bilangan real positif.\n\n<div class=\"flex justify-center my-3\"><svg viewBox=\"0 0 280 85\" class=\"w-64 h-auto drop-shadow-sm\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"10\" width=\"260\" height=\"65\" rx=\"10\" fill=\"#1E293B\" stroke=\"#06B6D4\" stroke-width=\"2\"/><text x=\"140\" y=\"35\" fill=\"#E2E8F0\" font-size=\"13\" font-family=\"monospace\" text-anchor=\"middle\" font-weight=\"bold\">Target: Apakah Keliling K &gt; 25?</text><text x=\"140\" y=\"58\" fill=\"#22D3EE\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\">(1) Luas = 24  |  (2) Dua sisinya bernilai 4 dan 5</text></svg></div>\n\nApakah keliling dari trapesium siku-siku tersebut bernilai lebih dari 25?\n\n(1) Luas daerah trapesium siku-siku tersebut adalah 24.\n(2) Panjang dua sisi dari trapesium siku-siku tersebut adalah 4 dan 5.\n\nPutuskan apakah pernyataan (1) dan (2) tersebut cukup untuk menjawab pertanyaan.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (2) SAJA tidak cukup."
+      },
+      {
+        "id": "B",
+        "text": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (1) SAJA tidak cukup."
+      },
+      {
+        "id": "C",
+        "text": "DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup."
+      },
+      {
+        "id": "D",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan Pernyataan (2) SAJA cukup."
+      },
+      {
+        "id": "E",
+        "text": "Pernyataan (1) dan Pernyataan (2) tidak cukup untuk menjawab pertanyaan."
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Rumus trapesium siku-siku: luas $L = \\frac{1}{2}(a + b)t$ dan keliling $K = a + b + t + \\sqrt{t^2 + (b - a)^2}$. Tinjau berbagai kemungkinan penempatan sisi 4 dan 5 pada pernyataan (2) yang dipadukan dengan luas pada pernyataan (1).",
+    "explanation": "Target pertanyaan: Menjawab dengan tegas apakah keliling trapesium siku-siku bernilai lebih dari 25 ($K > 25$?).\n\nMisalkan sisi-sisi trapesium siku-siku adalah:\n- Sisi sejajar: $a$ dan $b$ ($a \\le b$)\n- Sisi tegak (tinggi): $t$\n- Sisi miring: $c = \\sqrt{t^2 + (b - a)^2}$\n- Keliling: $K = a + b + t + c$\n\n1. **Uji Pernyataan (1) SAJA:**\n   Diketahui luas $L = 24 \\implies \\frac{1}{2}(a + b)t = 24 \\implies (a + b)t = 48$.\n   - Jika $t = 4, a = 5, b = 7 \\implies c = \\sqrt{4^2 + 2^2} = \\sqrt{20} \\approx 4,47 \\implies K = 5 + 7 + 4 + 4,47 = 20,47$ ($K < 25$, jawaban 'Tidak').\n   - Jika $t = 1, a = 23, b = 25 \\implies c = \\sqrt{1^2 + 2^2} = \\sqrt{5} \\approx 2,24 \\implies K = 23 + 25 + 1 + 2,24 = 51,24$ ($K > 25$, jawaban 'Ya').\n   Karena menghasilkan jawaban yang saling bertentangan ('Ya' dan 'Tidak'), maka **Pernyataan (1) SAJA TIDAK CUKUP**.\n\n2. **Uji Pernyataan (2) SAJA:**\n   Hanya diketahui dua sisi bernilai 4 dan 5 tanpa informasi sisi lainnya maupun luasnya.\n   - Keliling dapat dibuat sangat kecil (misal $K = 14 < 25$) atau sangat besar (misal sisi lainnya bernilai 20 dan 23 sehingga $K > 50 > 25$).\n   Maka **Pernyataan (2) SAJA TIDAK CUKUP**.\n\n3. **Uji Pernyataan (1) dan (2) BERSAMA-SAMA:**\n   Diketahui $(a + b)t = 48$ dan dua sisinya bernilai 4 dan 5.\n   Analisis seluruh kemungkinan penempatan sisi 4 dan 5 yang memenuhi syarat geometris:\n   - **Kasus 1:** Tinggi $t = 4$ dan sisi miring $c = 5$.\n     Maka $b - a = \\sqrt{5^2 - 4^2} = 3$.\n     Dari luas: $(a + b) \\times 4 = 48 \\implies a + b = 12$.\n     Maka keliling: $K = (a + b) + t + c = 12 + 4 + 5 = 21$.\n   - **Kasus 2:** Dua sisi sejajar adalah $a = 4$ dan $b = 5$.\n     Maka $a + b = 9 \\implies 9t = 48 \\implies t = \\frac{16}{3} \\approx 5,33$.\n     Sisi miring $c = \\sqrt{\\left(\\frac{16}{3}\\right)^2 + 1^2} = \\frac{\\sqrt{265}}{3} \\approx 5,43$.\n     Maka keliling: $K = 9 + 5,33 + 5,43 = 19,76$.\n   - **Kasus 3:** Tinggi $t = 4$ dan salah satu sisi sejajar $a = 5$.\n     Maka $(5 + b) \\times 4 = 48 \\implies b = 7$.\n     Sisi miring $c = \\sqrt{4^2 + (7 - 5)^2} = \\sqrt{20} \\approx 4,47$.\n     Maka keliling: $K = 5 + 7 + 4 + 4,47 = 20,47$.\n   Pada seluruh konfigurasi geometris yang mungkin terwujud, nilai keliling maksimal adalah $K = 21$, yang secara konsisten dan mutlak **TIDAK PERNAH LEBIH DARI 25** ($K \\le 21 < 25$).\n   Pertanyaan dapat dijawab secara tegas dan tunggal: **TIDAK, keliling tidak lebih dari 25**.\n   Maka, **DUA pernyataan BERSAMA-SAMA CUKUP**.\n\nKesimpulan: DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup (**Jawaban C**)."
+  }
+]

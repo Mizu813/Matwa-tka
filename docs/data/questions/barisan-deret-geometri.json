@@ -1,1 +1,228 @@
-[]
+[
+  {
+    "id": "matwa-barisan-deret-geometri-01",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-geometri",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Seorang penata etalase buah menyusun buah jeruk impor pada sebuah nampan melingkar bertingkat konsentris. Lingkaran paling luar (lapisan ke-1) memuat 96 butir jeruk. Setiap lingkaran di sebelah dalamnya memuat jeruk sebanyak $\\frac{1}{2}$ dari jumlah jeruk pada lingkaran tepat di luarnya ($r = \\frac{1}{2}$).\n\nJika display susunan buah tersebut terdiri dari 5 lapisan lingkaran hingga ke lingkaran terdalam (ke-5), berapakah banyak buah jeruk pada lapisan lingkaran terdalam tersebut?",
+    "options": [
+      { "id": "A", "text": "6 butir" },
+      { "id": "B", "text": "8 butir" },
+      { "id": "C", "text": "12 butir" },
+      { "id": "D", "text": "4 butir" },
+      { "id": "E", "text": "3 butir" }
+    ],
+    "correct_answer": "A",
+    "hint": "Gunakan rumus suku ke-$n$ barisan geometri $U_n = a \\cdot r^{n - 1}$ dengan suku awal $a = 96$, rasio $r = \\frac{1}{2}$, dan $n = 5$.",
+    "explanation": "Langkah-langkah menghitung jumlah buah pada lingkaran terdalam:\n\n1. Identifikasi parameter barisan geometri:\n   - Suku pertama (lingkaran terluar): $a = U_1 = 96$\n   - Rasio per lapisan: $r = \\frac{1}{2}$\n   - Lapisan yang ditanyakan (lingkaran terdalam): $n = 5$\n\n2. Gunakan rumus suku ke-$n$ barisan geometri:\n   $$U_n = a \\cdot r^{n - 1}$$\n   $$U_5 = 96 \\cdot \\left(\\frac{1}{2}\\right)^{5 - 1} = 96 \\cdot \\left(\\frac{1}{2}\\right)^4$$\n\n3. Hitung nilai perpangkatan:\n   $$\\left(\\frac{1}{2}\\right)^4 = \\frac{1}{16}$$\n   $$U_5 = 96 \\cdot \\frac{1}{16} = 6\\text{ butir jeruk}$$\n\n*(Rincian tiap lapisan: Lapisan 1 = 96, Lapisan 2 = 48, Lapisan 3 = 24, Lapisan 4 = 12, Lapisan 5 = 6)*.\n\nJadi, banyak buah jeruk pada lapisan terdalam adalah **6 butir** (Opsi **A**)."
+  },
+  {
+    "id": "matwa-barisan-deret-geometri-02",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-geometri",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dalam pengujian ketahanan struktural *girder* beton jembatan layang, sensor hidrolik memberikan beban tekan bertingkat pada rangkaian titik tumpuan uji. Beban tekan pada titik tumpuan ke-1 adalah $500\\text{ kg}$, pada titik tumpuan ke-2 adalah $1.000\\text{ kg}$, pada titik tumpuan ke-3 adalah $2.000\\text{ kg}$, dan beban terus berlipat ganda secara konstan pada setiap titik tumpuan berikutnya membentuk pola barisan geometri.\n\nBesar beban tekan uji yang diterapkan pada titik tumpuan ke-6 adalah ...",
+    "options": [
+      { "id": "A", "text": "$16.000\\text{ kg}$ ($16\\text{ ton}$)" },
+      { "id": "B", "text": "$12.000\\text{ kg}$ ($12\\text{ ton}$)" },
+      { "id": "C", "text": "$32.000\\text{ kg}$ ($32\\text{ ton}$)" },
+      { "id": "D", "text": "$8.000\\text{ kg}$ ($8\\text{ ton}$)" },
+      { "id": "E", "text": "$24.000\\text{ kg}$ ($24\\text{ ton}$)" }
+    ],
+    "correct_answer": "A",
+    "hint": "Tentukan suku pertama $a = 500\\text{ kg}$ dan rasio $r = \\frac{1.000}{500} = 2$. Gunakan rumus $U_6 = a \\cdot r^5$.",
+    "explanation": "Langkah-langkah evaluasi beban tekan uji:\n\n1. Identifikasi barisan geometri:\n   - Titik ke-1 ($U_1$): $a = 500\\text{ kg}$\n   - Titik ke-2 ($U_2$): $1.000\\text{ kg}$\n   - Rasio ($r$): $\\frac{U_2}{U_1} = \\frac{1.000}{500} = 2$\n\n2. Menentukan beban pada titik tumpuan ke-6 ($U_6$):\n   $$U_n = a \\cdot r^{n - 1}$$\n   $$U_6 = 500 \\cdot 2^{6 - 1} = 500 \\cdot 2^5$$\n\n3. Hitung perpangkatan:\n   $$2^5 = 32$$\n   $$U_6 = 500 \\times 32 = 16.000\\text{ kg}$$\n   Dalam satuan ton: $16.000\\text{ kg} = 16\\text{ ton}$.\n\nJadi, beban pada titik tumpuan ke-6 adalah **16.000 kg (16 ton)** (Opsi **A**)."
+  },
+  {
+    "id": "matwa-barisan-deret-geometri-03",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-geometri",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Berdasarkan protokol keselamatan uji beban *girder* jembatan pada pengujian lanjutan, beban hidrolik terus dilipatgandakan mengikuti barisan geometri awal ($U_1 = 500\\text{ kg} = 0,5\\text{ ton}$, $U_2 = 1\\text{ ton}$, $U_3 = 2\\text{ ton}$, $\\dots$). Tim pengawas menetapkan batas retak kritis struktural beton sebesar **128 ton** untuk satu titik tumpuan tunggal.\n\nPada titik tumpuan ke berapakah beban tekan tunggal **pertama kali melampaui** batas retak kritis 128 ton tersebut, dan berapakah total akumulasi beban uji statis ($S_n$) yang ditanggung girder hingga titik tumpuan tersebut?",
+    "options": [
+      { "id": "A", "text": "Titik tumpuan ke-10 dengan akumulasi beban statis $511,5\\text{ ton}$" },
+      { "id": "B", "text": "Titik tumpuan ke-9 dengan akumulasi beban statis $255,5\\text{ ton}$" },
+      { "id": "C", "text": "Titik tumpuan ke-10 dengan akumulasi beban statis $256,0\\text{ ton}$" },
+      { "id": "D", "text": "Titik tumpuan ke-11 dengan akumulasi beban statis $1.023,5\\text{ ton}$" },
+      { "id": "E", "text": "Titik tumpuan ke-9 dengan akumulasi beban statis $511,5\\text{ ton}$" }
+    ],
+    "correct_answer": "A",
+    "hint": "Cari nilai $n$ terkecil saat $U_n > 128\\text{ ton}$. Perhatikan bahwa $U_n = 0,5 \\cdot 2^{n - 1} = 2^{n - 2}$. Setelah menemukan $n$, hitung akumulasi total tonase menggunakan rumus deret $S_n = \\frac{a(r^n - 1)}{r - 1}$.",
+    "explanation": "Langkah-langkah evaluasi ambang batas beban kritis dan akumulasi deret:\n\n1. **Menentukan rumus suku ke-$n$ beban tunggal (dalam ton):**\n   $$a = 0,5\\text{ ton}, \\quad r = 2$$\n   $$U_n = a \\cdot r^{n - 1} = 0,5 \\cdot 2^{n - 1} = 2^{-1} \\cdot 2^{n - 1} = 2^{n - 2}\\text{ ton}$$\n\n2. **Mencari titik saat beban pertama kali melampaui 128 ton ($U_n > 128$):**\n   $$2^{n - 2} > 128$$\n   Karena $128 = 2^7$, maka:\n   $$2^{n - 2} > 2^7 \\implies n - 2 > 7 \\implies n > 9$$\n   - Pada titik ke-9: $U_9 = 2^{9 - 2} = 2^7 = 128\\text{ ton}$ (tepat menyentuh batas retak, belum melampaui).\n   - Pada titik ke-10: $U_{10} = 2^{10 - 2} = 2^8 = 256\\text{ ton}$ (pertama kali melampaui batas 128 ton).\n   Jadi, ambang batas terlampaui pada **titik tumpuan ke-10**.\n\n3. **Menghitung total akumulasi beban statis hingga titik ke-10 ($S_{10}$):**\n   $$S_n = \\frac{a(r^n - 1)}{r - 1}$$\n   $$S_{10} = \\frac{0,5(2^{10} - 1)}{2 - 1} = 0,5(1.024 - 1) = 0,5(1.023) = 511,5\\text{ ton}$$\n\nJadi, titik tumpuan yang dimaksud adalah **ke-10** dengan akumulasi beban statis sebesar **511,5 ton** (Opsi **A**)."
+  },
+  {
+    "id": "matwa-barisan-deret-geometri-04",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-geometri",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Sebuah bola tenis elastis dijatuhkan vertikal dari atas balkon gedung pada ketinggian 12 meter dari lantai datar keras. Setiap kali membentur lantai, bola memantul kembali ke atas dan mencapai ketinggian $\\frac{3}{5}$ dari tinggi pantulan sebelumnya. Bola terus bergerak memantul berulang kali hingga akhirnya berhenti sempurna di lantai.\n\nPanjang lintasan total yang ditempuh oleh bola tenis tersebut sejak pertama kali dijatuhkan hingga berhenti adalah ...",
+    "options": [
+      { "id": "A", "text": "48 meter" },
+      { "id": "B", "text": "42 meter" },
+      { "id": "C", "text": "54 meter" },
+      { "id": "D", "text": "60 meter" },
+      { "id": "E", "text": "36 meter" }
+    ],
+    "correct_answer": "A",
+    "hint": "Gunakan rumus praktis panjang lintasan pantulan bola $P = h \\cdot \\frac{b + a}{b - a}$ dengan $h = 12$ dan rasio pantulan $r = \\frac{a}{b} = \\frac{3}{5}$.",
+    "explanation": "Langkah-langkah menghitung panjang lintasan pantulan bola:\n\n**Metode 1: Formula Praktis Rasio Pecahan**\nUntuk bola yang dijatuhkan dari ketinggian $h$ dengan rasio pantulan $r = \\frac{a}{b}$:\n$$P = h \\left(\\frac{b + a}{b - a}\\right)$$\nDiketahui $h = 12\\text{ m}$, $a = 3$, dan $b = 5$:\n$$P = 12 \\times \\left(\\frac{5 + 3}{5 - 3}\\right) = 12 \\times \\frac{8}{2} = 12 \\times 4 = 48\\text{ meter}$$\n\n**Metode 2: Deret Geometri Tak Hingga Terurai**\n1. Lintasan turun awal: $h_0 = 12\\text{ m}$.\n2. Setiap pantulan berikutnya memiliki lintasan naik dan turun dua kali lipat:\n   - Pantulan 1: naik $12 \\times \\frac{3}{5} = \\frac{36}{5}$, turun $\\frac{36}{5} \\implies 2 \\times \\frac{36}{5}$\n   - Pantulan 2: naik $\\frac{36}{5} \\times \\frac{3}{5}$, turun $\\dots$\n3. Jumlah deret tak hingga untuk seluruh fase pantulan (naik + turun):\n   $$S_{\\infty} = \\frac{a_1}{1 - r} = \\frac{\\frac{36}{5}}{1 - \\frac{3}{5}} = \\frac{\\frac{36}{5}}{\\frac{2}{5}} = 18\\text{ m}$$\n4. Panjang lintasan total:\n   $$P = h_0 + 2 \\cdot S_{\\infty} = 12 + 2(18) = 12 + 36 = 48\\text{ meter}$$\n\nJadi, panjang lintasan total bola hingga berhenti adalah **48 meter** (Opsi **A**)."
+  },
+  {
+    "id": "matwa-barisan-deret-geometri-05",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-geometri",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan deret geometri dengan suku-suku positif:\n$$3 + 6 + 12 + 24 + \\dots$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai sifat dan rumus deret geometri tersebut!",
+    "options": [
+      { "id": "A", "text": "Rasio deret geometri tersebut adalah $r = 2$ dan rumus suku ke-$n$ adalah $U_n = 3 \\times 2^{n - 1}$." },
+      { "id": "B", "text": "Nilai dari suku ke-8 adalah $U_8 = 384$." },
+      { "id": "C", "text": "Jumlah 6 suku pertama deret tersebut adalah $S_6 = 189$." },
+      { "id": "D", "text": "Rumus jumlah $n$ suku pertama deret tersebut adalah $S_n = 2^{n+1} - 1$." }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Tentukan suku pertama $a = 3$ dan rasio $r = \\frac{6}{3} = 2$. Gunakan rumus $U_n = a \\cdot r^{n - 1}$ dan $S_n = \\frac{a(r^n - 1)}{r - 1}$.",
+    "explanation": "Langkah-langkah evaluasi deret geometri:\n\n1. **Identifikasi parameter deret:**\n   - Suku pertama: $a = 3$\n   - Rasio: $r = \\frac{6}{3} = 2$\n   - Rumus suku ke-$n$: $U_n = a \\cdot r^{n - 1} = 3 \\cdot 2^{n - 1}$.\n   Pernyataan A bernilai **BENAR**.\n\n2. **Evaluasi suku ke-8 (Pernyataan B):**\n   $$U_8 = 3 \\cdot 2^{8 - 1} = 3 \\cdot 2^7 = 3 \\cdot 128 = 384$$\n   Pernyataan B bernilai **BENAR**.\n\n3. **Rumus jumlah $n$ suku pertama (Pernyataan D):**\n   $$S_n = \\frac{a(r^n - 1)}{r - 1} = \\frac{3(2^n - 1)}{2 - 1} = 3(2^n - 1) = 3 \\cdot 2^n - 3$$\n   Rumus yang benar adalah $S_n = 3(2^n - 1)$, bukan $2^{n+1} - 1$.\n   Pernyataan D bernilai **SALAH**.\n\n4. **Evaluasi jumlah 6 suku pertama (Pernyataan C):**\n   $$S_6 = 3(2^6 - 1) = 3(64 - 1) = 3(63) = 189$$\n   *(Cek manual: $3 + 6 + 12 + 24 + 48 + 96 = 189$)*.\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+  },
+  {
+    "id": "matwa-barisan-deret-geometri-06",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-geometri",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Di dalam laboratorium mikrobiologi, suatu biakan awal bakteri berjumlah 1.000 sel diamati pertumbuhannya dalam media kultur steril. Proses biologis biakan tersebut mengikuti pola dinamis berikut:\n- Setiap $\\frac{1}{2}$ hari (12 jam), setiap sel bakteri membelah diri menjadi 2 sel baru (populasi berlipat ganda).\n- Tepat pada akhir setiap 2 hari (setelah pembelahan ke-4 selesai), cairan antibakteri disemprotkan sehingga $\\frac{1}{4}$ dari total populasi bakteri saat itu mati seketika.\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai dinamika populasi bakteri tersebut!",
+    "options": [
+      { "id": "A", "text": "Dalam 2 hari pertama sesaat sebelum cairan antibakteri disemprotkan, populasi bakteri telah tumbuh mencapai 16.000 sel." },
+      { "id": "B", "text": "Pada akhir hari ke-2 setelah perlakuan kematian $\\frac{1}{4}$ populasi, sisa populasi bakteri yang bertahan hidup adalah 12.000 sel." },
+      { "id": "C", "text": "Pada akhir hari ke-4 (setelah melewati dua siklus pembelahan dan dua kali penyemprotan antibakteri), jumlah populasi bakteri mencapai tepat 144.000 sel." },
+      { "id": "D", "text": "Jika tidak ada penyemprotan antibakteri sama sekali, populasi bakteri pada akhir hari ke-4 adalah 144.000 sel." }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Dalam 2 hari terdapat 4 kali periode $\\frac{1}{2}$ hari (pembelahan $2^4 = 16$ kali lipat). Sisa populasi hidup setelah $\\frac{1}{4}$ mati adalah $\\frac{3}{4}$ bagian, sehingga faktor pertumbuhan bersih per 2 hari adalah $16 \\times \\frac{3}{4} = 12$ kali lipat.",
+    "explanation": "Langkah-langkah evaluasi pertumbuhan dan kematian populasi bertahap:\n\n1. **Siklus 2 Hari Pertama (Hari ke-0 s.d. ke-2):**\n   - Populasi awal ($t = 0$): $N_0 = 1.000$ sel.\n   - Dalam 2 hari terdapat $n = \\frac{2}{0,5} = 4$ kali pembelahan.\n   - Populasi sesaat sebelum penyemprotan (akhir hari ke-2):\n     $$N_{2\\text{ (sebelum)}} = 1.000 \\times 2^4 = 1.000 \\times 16 = 16.000\\text{ sel}$$\n     Pernyataan A bernilai **BENAR**.\n   - Kematian $\\frac{1}{4}$ populasi: $\\frac{1}{4} \\times 16.000 = 4.000$ sel mati.\n   - Sisa bakteri hidup di akhir hari ke-2:\n     $$N_2 = 16.000 - 4.000 = 12.000\\text{ sel}$$\n     (Pertumbuhan bersih per 2 hari adalah $12$ kali lipat: $1.000 \\times 12 = 12.000$).\n     Pernyataan B bernilai **BENAR**.\n\n2. **Siklus 2 Hari Kedua (Hari ke-2 s.d. ke-4):**\n   - Dari hari ke-2 ke hari ke-4 terjadi 4 kali pembelahan lagi dari basis 12.000 sel:\n     $$N_{4\\text{ (sebelum)}} = 12.000 \\times 2^4 = 12.000 \\times 16 = 192.000\\text{ sel}$$\n   - Kematian $\\frac{1}{4}$ populasi: $\\frac{1}{4} \\times 192.000 = 48.000$ sel mati.\n   - Sisa bakteri hidup di akhir hari ke-4:\n     $$N_4 = 192.000 - 48.000 = 144.000\\text{ sel}$$\n     (Atau langsung melalui rasio bersih per 2 hari: $N_4 = 1.000 \\times 12^2 = 1.000 \\times 144 = 144.000$).\n     Pernyataan C bernilai **BENAR**.\n\n3. **Analisis Tanpa Kematian (Pernyataan D):**\n   Dalam 4 hari terdapat 8 periode pembelahan tanpa kematian:\n   $$1.000 \\times 2^8 = 1.000 \\times 256 = 256.000\\text{ sel}$$\n   Bukan 144.000 sel. Maka Pernyataan D bernilai **SALAH**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+  },
+  {
+    "id": "matwa-barisan-deret-geometri-07",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-geometri",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Sebuah deret geometri tak hingga konvergen memiliki jumlah seluruh suku sebesar **18**. Diketahui pula bahwa jumlah seluruh suku-suku yang bernomor ganjil ($U_1 + U_3 + U_5 + \\dots$) adalah sebesar **12**.\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai parameter dan suku-suku deret tersebut!",
+    "options": [
+      { "id": "A", "text": "Rasio dari deret geometri tersebut adalah $r = \\frac{1}{2}$ dan suku pertamanya adalah $a = 9$." },
+      { "id": "B", "text": "Jumlah seluruh suku-suku yang bernomor genap ($U_2 + U_4 + U_6 + \\dots$) adalah $S_{\\text{genap}} = 6$." },
+      { "id": "C", "text": "Nilai dari suku ke-3 deret tersebut adalah $U_3 = \\frac{9}{4} = 2,25$." },
+      { "id": "D", "text": "Rasio dari deret geometri tersebut adalah $r = \\frac{2}{3}$." }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Gunakan rumus deret tak hingga $S_{\\infty} = \\frac{a}{1 - r}$ dan deret suku ganjil $S_{\\text{ganjil}} = \\frac{a}{1 - r^2}$. Bagi kedua persamaan tersebut untuk menentukan nilai rasio $r$.",
+    "explanation": "Langkah-langkah evaluasi deret geometri tak hingga suku ganjil dan genap:\n\n1. **Menentukan Rasio $r$:**\n   - Jumlah deret tak hingga total: $S_{\\infty} = \\frac{a}{1 - r} = 18$.\n   - Jumlah suku-suku bernomor ganjil ($a, ar^2, ar^4, \\dots$): suku pertama $a$ dan rasio baru $r^2$:\n     $$S_{\\text{ganjil}} = \\frac{a}{1 - r^2} = 12$$\n   - Bagi $S_{\\text{ganjil}}$ dengan $S_{\\infty}$:\n     $$\\frac{S_{\\text{ganjil}}}{S_{\\infty}} = \\frac{\\frac{a}{1 - r^2}}{\\frac{a}{1 - r}} = \\frac{1 - r}{1 - r^2} = \\frac{1 - r}{(1 - r)(1 + r)} = \\frac{1}{1 + r}$$\n     $$\\frac{1}{1 + r} = \\frac{12}{18} = \\frac{2}{3}$$\n     $$2(1 + r) = 3 \\implies 2 + 2r = 3 \\implies 2r = 1 \\implies r = \\frac{1}{2}$$\n   Pernyataan A bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\n2. **Menentukan Suku Pertama $a$:**\n   $$S_{\\infty} = \\frac{a}{1 - \\frac{1}{2}} = 18 \\implies \\frac{a}{0,5} = 18 \\implies a = 18 \\times 0,5 = 9$$\n\n3. **Menentukan Jumlah Suku Genap ($S_{\\text{genap}}$):**\n   $$S_{\\text{genap}} = S_{\\infty} - S_{\\text{ganjil}} = 18 - 12 = 6$$\n   Pernyataan B bernilai **BENAR**.\n\n4. **Menentukan Nilai Suku ke-3 ($U_3$):**\n   $$U_3 = a \\cdot r^2 = 9 \\cdot \\left(\\frac{1}{2}\\right)^2 = 9 \\cdot \\frac{1}{4} = \\frac{9}{4} = 2,25$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+  },
+  {
+    "id": "matwa-barisan-deret-geometri-08",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-geometri",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Tentukan kebenaran dari masing-masing pernyataan aplikasi peluruhan eksponensial dan deret geometri tak hingga di bawah ini dengan memilih **Benar** atau **Salah** pada setiap baris:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suatu isotop radioaktif memiliki waktu paruh (*half-life*) 6 jam. Jika massa awal sampel adalah 160 gram, maka sisa massa zat radioaktif tersebut setelah meluruh selama 24 jam adalah tepat 10 gram."
+      },
+      {
+        "id": "B",
+        "text": "Sebuah mesin produksi dibeli seharga Rp100.000.000,00 dan mengalami penyusutan nilai sebesar 10% setiap tahun dari nilai tahun sebelumnya. Nilai jual mesin tersebut setelah digunakan selama 3 tahun adalah Rp72.900.000,00."
+      },
+      {
+        "id": "C",
+        "text": "Suatu deret geometri tak hingga dengan suku pertama $a = 8$ dan jumlah deret $S_{\\infty} = 12$ memiliki rasio $r = \\frac{2}{3}$."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Salah"
+    },
+    "hint": "Pada pernyataan A, hitung banyak periode paruh $n = \\frac{24}{6} = 4$. Pada pernyataan B, gunakan faktor peluruhan $r = 1 - 0,10 = 0,90$ selama 3 tahun. Pada pernyataan C, selesaikan persamaan $\\frac{8}{1 - r} = 12$ untuk menguji nilai $r$.",
+    "explanation": "Analisis keabsahan tiap pernyataan:\n\n1. **Pernyataan A (Benar):**\n   - Waktu paruh $T = 6\\text{ jam}$, total waktu $t = 24\\text{ jam}$.\n   - Banyak periode peluruhan: $n = \\frac{t}{T} = \\frac{24}{6} = 4$.\n   - Sisa massa: $M_t = M_0 \\cdot \\left(\\frac{1}{2}\\right)^n = 160 \\cdot \\left(\\frac{1}{2}\\right)^4 = 160 \\cdot \\frac{1}{16} = 10\\text{ gram}$.\n\n2. **Pernyataan B (Benar):**\n   - Nilai awal: $M_0 = 100.000.000$.\n   - Rasio nilai setelah penyusutan 10%: $r = 1 - 0,10 = 0,90$.\n   - Nilai setelah 3 tahun:\n     $$M_3 = 100.000.000 \\times (0,9)^3 = 100.000.000 \\times 0,729 = \\text{Rp}72.900.000,00$$\n\n3. **Pernyataan C (Salah):**\n   - Rumus deret tak hingga: $S_{\\infty} = \\frac{a}{1 - r}$.\n   $$\\frac{8}{1 - r} = 12 \\implies 1 - r = \\frac{8}{12} = \\frac{2}{3} \\implies r = 1 - \\frac{2}{3} = \\frac{1}{3}$$\n   Rasio deret yang benar adalah **1/3**, bukan 2/3."
+  },
+  {
+    "id": "matwa-barisan-deret-geometri-09",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-geometri",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Tentukan kebenaran dari masing-masing pernyataan matematika mengenai sifat rasio dan suku barisan geometri di bawah ini dengan memilih **Benar** atau **Salah** pada setiap baris:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Jika tiga bilangan $(k - 2), (k + 1), (3k + 3)$ membentuk barisan geometri berurutan dengan rasio $r > 1$, maka nilai dari konstanta $k$ yang memenuhi adalah $k = 5$."
+      },
+      {
+        "id": "B",
+        "text": "Diketahui barisan geometri dengan suku ke-2 adalah $U_2 = 6$ dan suku ke-5 adalah $U_5 = 48$. Nilai suku ke-7 barisan tersebut adalah $U_7 = 192$."
+      },
+      {
+        "id": "C",
+        "text": "Jumlah deret geometri tak hingga $a + ar + ar^2 + \\dots$ konvergen (memiliki jumlah berhingga) jika dan hanya jika nilai rasionya berada pada interval terbuka $-1 < r < 1$."
+      }
+    ],
+    "correct_answer": {
+      "A": "Salah",
+      "B": "Benar",
+      "C": "Benar"
+    },
+    "hint": "Pada pernyataan A, gunakan relasi $U_2^2 = U_1 \\cdot U_3$ untuk mencari nilai $k$. Pada pernyataan B, cari rasio dari $\\frac{U_5}{U_2} = r^3$. Pada pernyataan C, ingat definisi konvergensi deret geometri tak hingga.",
+    "explanation": "Analisis keabsahan tiap pernyataan:\n\n1. **Pernyataan A (Salah):**\n   Sifat barisan geometri: $U_2^2 = U_1 \\cdot U_3$.\n   $$(k + 1)^2 = (k - 2)(3k + 3)$$\n   $$k^2 + 2k + 1 = 3k^2 - 3k - 6$$\n   $$2k^2 - 5k - 7 = 0 \\implies (2k - 7)(k + 1) = 0$$\n   - Nilai $k$ yang memberikan barisan tak nol adalah $k = \\frac{7}{2} = 3,5$.\n   *(Untuk $k = 3,5$: suku-sukunya adalah $1,5; 4,5; 13,5$ dengan rasio $r = 3 > 1$)*.\n   Jika $k = 5$: barisannya $3, 6, 18$ dengan rasio $\\frac{6}{3} = 2 \\neq \\frac{18}{6} = 3$ (bukan geometri).\n   Maka nilai $k = 5$ adalah salah.\n\n2. **Pernyataan B (Benar):**\n   $$\\frac{U_5}{U_2} = \\frac{a r^4}{a r} = r^3 = \\frac{48}{6} = 8 \\implies r = 2$$\n   Maka suku ke-7:\n   $$U_7 = U_5 \\cdot r^2 = 48 \\cdot 2^2 = 48 \\cdot 4 = 192$$\n\n3. **Pernyataan C (Benar):**\n   Deret geometri tak hingga konvergen menuju nilai berhingga $\\frac{a}{1 - r}$ jika dan hanya jika limit $r^n \\to 0$ saat $n \\to \\infty$, yang hanya terpenuhi pada interval terbuka $|r| < 1$, yaitu $-1 < r < 1$."
+  },
+  {
+    "id": "matwa-barisan-deret-geometri-10",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-geometri",
+    "question_type": "KECUKUPAN_DATA",
+    "difficulty": "HOTS",
+    "question_text": "Diberikan suatu barisan geometri dengan suku-suku bernilai real positif ($U_n > 0$) yang memiliki suku pertama $a$ dan rasio $r > 0$.\n\n<div class=\"flex justify-center my-3\"><svg viewBox=\"0 0 280 85\" class=\"w-64 h-auto drop-shadow-sm\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"10\" width=\"260\" height=\"65\" rx=\"10\" fill=\"#1E293B\" stroke=\"#06B6D4\" stroke-width=\"2\"/><text x=\"140\" y=\"35\" fill=\"#E2E8F0\" font-size=\"13\" font-family=\"monospace\" text-anchor=\"middle\" font-weight=\"bold\">Target: Nilai Suku U_5 = ?</text><text x=\"140\" y=\"58\" fill=\"#22D3EE\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\">(1) U_2 x U_8 = 144  |  (2) U_3 = 6</text></svg></div>\n\nBerapakah nilai dari suku ke-5 ($U_5$)?\n\n(1) $U_2 \\times U_8 = 144$\n(2) $U_3 = 6$\n\nPutuskan apakah pernyataan (1) dan (2) tersebut cukup untuk menjawab pertanyaan.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (2) SAJA tidak cukup."
+      },
+      {
+        "id": "B",
+        "text": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (1) SAJA tidak cukup."
+      },
+      {
+        "id": "C",
+        "text": "DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup."
+      },
+      {
+        "id": "D",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan Pernyataan (2) SAJA cukup."
+      },
+      {
+        "id": "E",
+        "text": "Pernyataan (1) dan Pernyataan (2) tidak cukup untuk menjawab pertanyaan."
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Gunakan sifat simetri perkalian suku-suku barisan geometri: $U_p \\cdot U_q = a^2 r^{p + q - 2}$. Perhatikan bahwa indeks $2 + 8 = 10$, yang berkaitan langsung dengan $(U_5)^2 = (a r^4)^2 = a^2 r^8$.",
+    "explanation": "Target pertanyaan: Menentukan nilai eksak dari suku ke-5 ($U_5 = a r^4$).\n\n1. **Uji Pernyataan (1) SAJA:**\n   Diketahui $U_2 \\times U_8 = 144$.\n   Nyatakan ke dalam rumus suku ke-$n$:\n   $$U_2 = a r$$\n   $$U_8 = a r^7$$\n   $$U_2 \\times U_8 = (a r)(a r^7) = a^2 r^8 = (a r^4)^2$$\n   Karena $U_5 = a r^4$, maka didapat hubungan langsung:\n   $$(U_5)^2 = 144$$\n   Karena diketahui pada premis soal bahwa seluruh suku bernilai real positif ($U_n > 0$), maka:\n   $$U_5 = \\sqrt{144} = 12$$\n   Nilai $U_5$ dapat ditentukan secara unik dan pasti bernilai 12 tanpa perlu mencari nilai parameter $a$ dan $r$ secara terpisah.\n   Maka, **Pernyataan (1) SAJA CUKUP**.\n\n2. **Uji Pernyataan (2) SAJA:**\n   Diketahui $U_3 = a r^2 = 6$.\n   Nilai $U_5$ dapat dinyatakan sebagai:\n   $$U_5 = a r^4 = (a r^2) \\cdot r^2 = 6r^2$$\n   Karena nilai rasio $r$ belum diketahui, nilai $U_5$ belum dapat ditentukan secara pasti (memiliki tak terhingga kemungkinan nilai tergantung nilai $r$):\n   - Jika $r = 1 \\implies U_5 = 6(1)^2 = 6$\n   - Jika $r = 2 \\implies U_5 = 6(2)^2 = 24$\n   - Jika $r = \\sqrt{2} \\implies U_5 = 6(\\sqrt{2})^2 = 12$\n   Karena menghasilkan nilai yang berbeda-beda, maka **Pernyataan (2) SAJA TIDAK CUKUP**.\n\nKesimpulan: Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (2) SAJA tidak cukup (**Jawaban A**)."
+  }
+]

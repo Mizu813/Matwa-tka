@@ -1,1 +1,336 @@
-[]
+[
+  {
+    "id": "matwa-peluang-kejadian-tunggal-01",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-tunggal",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah pabrik komponen semikonduktor memproduksi satu lot yang berisi $500\\text{ unit mikrocip}$. Melalui pengujian kendali mutu (quality control), ditemukan bahwa terdapat $25\\text{ unit mikrocip}$ yang cacat produksi, sedangkan sisanya berstatus prima (layak jual). Jika satu unit mikrocip diambil secara acak dari lot tersebut untuk pengujian akhir, berapakah peluang mikrocip yang terambil berstatus prima dan peluang komplemennya (mikrocip cacat) berturut-turut dalam bentuk desimal dan persentase?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$0,90$ ($90\\%$) dan $0,10$ ($10\\%$)"
+      },
+      {
+        "id": "B",
+        "text": "$0,92$ ($92\\%$) dan $0,08$ ($8\\%$)"
+      },
+      {
+        "id": "C",
+        "text": "$0,95$ ($95\\%$) dan $0,05$ ($5\\%$)"
+      },
+      {
+        "id": "D",
+        "text": "$0,96$ ($96\\%$) dan $0,04$ ($4\\%$)"
+      },
+      {
+        "id": "E",
+        "text": "$0,98$ ($98\\%$) dan $0,02$ ($2\\%$)"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Hitung banyak mikrocip prima dengan $500 - 25 = 475$. Peluang mikrocip prima adalah $P(A) = \\frac{n(A)}{n(S)}$. Peluang komplemennya (cacat) dihitung dengan $P(A') = 1 - P(A)$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Tentukan jumlah ruang sampel dan banyak kejadian:\n   - Total seluruh mikrocip: $n(S) = 500\\text{ unit}$\n   - Banyak mikrocip cacat: $n(C) = 25\\text{ unit}$\n   - Banyak mikrocip prima (layak jual): $n(P) = 500 - 25 = 475\\text{ unit}$\n2. Hitung peluang terambilnya mikrocip prima:\n   $$P(P) = \\frac{n(P)}{n(S)} = \\frac{475}{500} = \\frac{95}{100} = 0,95 = 95\\%$$\n3. Hitung peluang komplemennya (terambil mikrocip cacat):\n   $$P(P') = 1 - P(P) = 1 - 0,95 = 0,05 = 5\\%$$\n\nJadi, peluang mikrocip berstatus prima dan komplemennya berturut-turut adalah $0,95$ ($95\\%$) dan $0,05$ ($5\\%$)."
+  },
+  {
+    "id": "matwa-peluang-kejadian-tunggal-02",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-tunggal",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Di dalam sebuah kotak tertutup terdapat $8\\text{ bola merah}$, $6\\text{ bola biru}$, dan $10\\text{ bola kuning}$. Jika satu bola diambil secara acak dari kotak tersebut, peluang terambilnya bola yang **bukan** berwarna biru adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{1}{4}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{1}{3}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{5}{12}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{2}{3}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{3}{4}$"
+      }
+    ],
+    "correct_answer": "E",
+    "hint": "Gunakan konsep peluang komplemen: $P(\\text{bukan biru}) = 1 - P(\\text{biru})$, atau hitung langsung jumlah bola merah dan kuning dibagi total seluruh bola.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Hitung total seluruh bola dalam kotak:\n   $$n(S) = 8 + 6 + 10 = 24\\text{ bola}$$\n2. Menghitung peluang terambilnya bola biru:\n   $$P(\\text{biru}) = \\frac{6}{24} = \\frac{1}{4}$$\n3. Menggunakan konsep peluang komplemen:\n   $$P(\\text{bukan biru}) = 1 - P(\\text{biru}) = 1 - \\frac{1}{4} = \\frac{3}{4}$$\n\nCara alternatif (langsung):\n- Jumlah bola bukan biru (merah + kuning): $8 + 10 = 18\\text{ bola}$.\n- $P(\\text{bukan biru}) = \\frac{18}{24} = \\frac{3}{4}$.\n\nJadi, peluang terambilnya bola yang bukan berwarna biru adalah $\\frac{3}{4}$."
+  },
+  {
+    "id": "matwa-peluang-kejadian-tunggal-03",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-tunggal",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Seorang pustakawan memiliki $8\\text{ buah buku}$ dengan judul berbeda yang terdiri dari $3\\text{ buku Matematika}$, $3\\text{ buku Fisika}$, dan $2\\text{ buku Kimia}$. Kedelapan buku tersebut akan disusun berderet dalam satu baris pada sebuah rak buku secara acak. Peluang seluruh buku sejenis tersusun berdampingan sehingga buku dari mata pelajaran yang sama tidak bercampur dengan mata pelajaran lainnya adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{1}{280}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{3}{280}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{3}{140}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{1}{70}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{3}{70}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Hitung total susunan ruang sampel $n(S) = 8!$. Untuk susunan buku sejenis berdampingan, perlakukan masing-masing dari 3 kelompok mapel sebagai satu kesatuan paket, lalu kalikan permutasi antarpaket ($3!$) dengan permutasi internal buku masing-masing mapel ($3! \\cdot 3! \\cdot 2!$).",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Menghitung banyak ruang sampel ($n(S)$):\n   - Menyusun $8\\text{ buku}$ berbeda secara bebas berderet di rak:\n     $$n(S) = 8! = 40.320$$\n2. Menghitung banyak kejadian buku sejenis selalu berdampingan ($n(A)$):\n   - Karena buku sejenis tidak bercampur, satukan buku dari mata pelajaran yang sama menjadi satu blok:\n     * Blok Matematika ($3\\text{ buku}$)\n     * Blok Fisika ($3\\text{ buku}$)\n     * Blok Kimia ($2\\text{ buku}$)\n   - Terdapat $3\\text{ blok}$ mata pelajaran yang dapat saling bertukar susunan: $3!\\text{ cara}$.\n   - Di dalam masing-masing blok:\n     * Buku Matematika bertukar posisi: $3! = 6\\text{ cara}$\n     * Buku Fisika bertukar posisi: $3! = 6\\text{ cara}$\n     * Buku Kimia bertukar posisi: $2! = 2\\text{ cara}$\n   - Banyak susunan mengelompok:\n     $$n(A) = 3! \\times (3! \\times 3! \\times 2!) = 6 \\times (6 \\times 6 \\times 2) = 6 \\times 72 = 432\\text{ cara}$$\n3. Menghitung peluang kejadian ($P(A)$):\n   $$P(A) = \\frac{n(A)}{n(S)} = \\frac{432}{40.320}$$\n   Sederhanakan pecahan dengan membagi pembilang dan penyebut dengan $144$:\n   $$\\frac{432 \\div 144}{40.320 \\div 144} = \\frac{3}{280}$$\n\nJadi, peluang seluruh buku sejenis tersusun berdampingan tanpa bercampur adalah $\\frac{3}{280}$."
+  },
+  {
+    "id": "matwa-peluang-kejadian-tunggal-04",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-tunggal",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Sebuah wadah undian doorprize mula-mula berisi $4\\text{ kupon hadiah}$ dan $6\\text{ voucher kosong}$ (total $10\\text{ kupon}$). Panitia memberlakukan aturan undian dengan mekanisme ruang sampel dinamis berikut:\n- Setiap peserta mengambil tepat satu kupon dari wadah secara acak.\n- Jika peserta mendapatkan kupon hadiah, kupon tersebut **tidak dikembalikan** ke dalam wadah (diserahkan ke panitia untuk klaim hadiah).\n- Jika peserta mendapatkan voucher kosong, voucher tersebut **dimasukkan kembali** ke dalam wadah dan diaduk rata.\n\nSebanyak $5\\text{ orang peserta}$ telah mengambil kupon secara berurutan. Berdasarkan catatan panitia, tepat $2\\text{ orang}$ di antara kelima peserta tersebut berhasil memenangkan kupon hadiah (sehingga $3\\text{ orang}$ lainnya mendapatkan voucher kosong). Ketika giliran peserta ke-6 mengambil satu kupon dari wadah, peluang peserta ke-6 tersebut mendapatkan kupon hadiah adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{1}{5}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{2}{9}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{1}{4}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{1}{3}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{2}{5}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Analisis perubahan komposisi isi wadah setelah 5 giliran pertama: kupon hadiah yang terambil berkurang 2 karena tidak dikembalikan, sedangkan voucher kosong tetap berjumlah 6 karena selalu dimasukkan kembali.",
+    "explanation": "Langkah-langkah analisis ruang sampel dinamis:\n1. Kondisi awal isi wadah undian:\n   - Kupon hadiah: $4\\text{ kupon}$\n   - Voucher kosong: $6\\text{ kupon}$\n   - Total awal: $10\\text{ kupon}$\n2. Pengaruh penarikan $5\\text{ orang pertama}$:\n   - Tepat $2\\text{ orang}$ mendapatkan kupon hadiah. Karena kupon hadiah tidak dikembalikan ke dalam wadah, maka kupon hadiah di wadah berkurang $2$:\n     $$\\text{Sisa kupon hadiah} = 4 - 2 = 2\\text{ kupon}$$\n   - Tepat $3\\text{ orang}$ mendapatkan voucher kosong. Karena voucher kosong selalu dimasukkan kembali ke dalam wadah, maka jumlah voucher kosong di wadah tidak berkurang:\n     $$\\text{Sisa voucher kosong} = 6\\text{ kupon}$$\n3. Kondisi wadah saat giliran orang ke-6:\n   - Kupon hadiah: $2\\text{ kupon}$\n   - Voucher kosong: $6\\text{ kupon}$\n   - Total isi wadah saat ini: $n(S_{dinamis}) = 2 + 6 = 8\\text{ kupon}$\n4. Menghitung peluang orang ke-6 mendapatkan kupon hadiah:\n   $$P = \\frac{n(\\text{hadiah})}{n(S_{dinamis})} = \\frac{2}{8} = \\frac{1}{4}$$\n\nJadi, peluang peserta ke-6 mendapatkan kupon hadiah adalah $\\frac{1}{4}$."
+  },
+  {
+    "id": "matwa-peluang-kejadian-tunggal-05",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-tunggal",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Tiga buah dadu standar enam sisi bersisi angka $1$ sampai $6$ dilempar undi bersama-sama sebanyak satu kali.\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Banyak seluruh anggota ruang sampel dari pelemparan tiga dadu tersebut adalah $n(S) = 216$."
+      },
+      {
+        "id": "B",
+        "text": "Peluang muncul jumlah ketiga mata dadu sama dengan $16$ adalah $\\frac{1}{36}$."
+      },
+      {
+        "id": "C",
+        "text": "Peluang muncul paling sedikit dua mata dadu yang bernilai sama adalah $\\frac{4}{9}$."
+      },
+      {
+        "id": "D",
+        "text": "Peluang muncul jumlah ketiga mata dadu paling sedikit $16$ adalah $\\frac{5}{54}$."
+      },
+      {
+        "id": "E",
+        "text": "Peluang muncul ketiga mata dadu bernilai kembar tiga adalah $\\frac{1}{18}$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Ruang sampel pelemparan 3 dadu adalah $6^3 = 216$. Untuk kejadian 'paling sedikit dua mata dadu sama', gunakan komplemen dari kejadian 'ketiga mata dadu berbeda' ($6 \\times 5 \\times 4 = 120$).",
+    "explanation": "Langkah-langkah evaluasi pelemparan tiga dadu:\n1. Ruang sampel (Pernyataan A):\n   $$n(S) = 6 \\times 6 \\times 6 = 216$$\n   (Pernyataan A BENAR).\n2. Jumlah ketiga mata dadu sama dengan 16 (Pernyataan B):\n   - Kombinasi angka yang menghasilkan jumlah 16:\n     * $(6, 6, 4)$ beserta permutasinya: $\\frac{3!}{2!} = 3\\text{ cara}$ ($(6,6,4), (6,4,6), (4,6,6)$)\n     * $(6, 5, 5)$ beserta permutasinya: $\\frac{3!}{2!} = 3\\text{ cara}$ ($(6,5,5), (5,6,5), (5,5,6)$)\n   - Total cara: $3 + 3 = 6\\text{ cara}$.\n   - Peluang:\n     $$P(\\text{jumlah } 16) = \\frac{6}{216} = \\frac{1}{36}$$\n   (Pernyataan B BENAR).\n3. Paling sedikit dua mata dadu bernilai sama (Pernyataan C):\n   - Gunakan komplemen dari kejadian 'ketiga mata dadu berbeda':\n     $$n(\\text{semua beda}) = 6 \\times 5 \\times 4 = 120$$\n     $$P(\\text{semua beda}) = \\frac{120}{216} = \\frac{5}{9}$$\n   - Peluang paling sedikit dua mata dadu sama:\n     $$P = 1 - P(\\text{semua beda}) = 1 - \\frac{5}{9} = \\frac{4}{9}$$\n   (Pernyataan C BENAR).\n4. Jumlah ketiga mata dadu paling sedikit 16 (Pernyataan D):\n   - Jumlah 16: $6\\text{ cara}$\n   - Jumlah 17: permutasi $(6, 6, 5) \\implies 3\\text{ cara}$\n   - Jumlah 18: $(6, 6, 6) \\implies 1\\text{ cara}$\n   - Total cara jumlah $\\ge 16$: $6 + 3 + 1 = 10\\text{ cara}$.\n   - Peluang: $\\frac{10}{216} = \\frac{5}{108} \\ne \\frac{5}{54}$. (Pernyataan D SALAH).\n5. Ketiga mata dadu bernilai kembar tiga (Pernyataan E):\n   - Ada 6 pasangan: $(1,1,1), (2,2,2), \\dots, (6,6,6)$.\n   - Peluang: $\\frac{6}{216} = \\frac{1}{36} \\ne \\frac{1}{18}$. (Pernyataan E SALAH).\n\nJadi, seluruh pernyataan yang bernilai BENAR adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-peluang-kejadian-tunggal-06",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-tunggal",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Di dalam sebuah toples kaca terdapat $5\\text{ kelereng merah}$, $4\\text{ kelereng hijau}$, dan $3\\text{ kelereng kuning}$ (total $12\\text{ kelereng}$). Dari dalam toples tersebut diambil $3\\text{ kelereng}$ sekaligus secara acak.\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Banyak seluruh titik sampel pengambilan 3 kelereng sekaligus adalah $n(S) = 220$."
+      },
+      {
+        "id": "B",
+        "text": "Peluang terambil tepat 1 kelereng merah, 1 kelereng hijau, dan 1 kelereng kuning adalah $\\frac{3}{11}$."
+      },
+      {
+        "id": "C",
+        "text": "Peluang terambil paling sedikit 1 kelereng merah adalah $\\frac{37}{44}$."
+      },
+      {
+        "id": "D",
+        "text": "Peluang terambil ketiga kelereng berwarna merah seluruhnya adalah $\\frac{1}{44}$."
+      },
+      {
+        "id": "E",
+        "text": "Peluang terambil ketiga kelereng berwarna hijau seluruhnya adalah $\\frac{1}{11}$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Gunakan rumus kombinasi $\\binom{12}{3} = 220$ untuk ruang sampel. Untuk kejadian 'paling sedikit 1 kelereng merah', hitung komplemen dari kejadian 'tidak ada kelereng merah yang terambil' (ketiga kelereng diambil dari 7 kelereng non-merah).",
+    "explanation": "Langkah-langkah evaluasi kombinasi pengambilan kelereng:\n1. Ruang sampel (Pernyataan A):\n   $$n(S) = \\binom{12}{3} = \\frac{12 \\times 11 \\times 10}{3 \\times 2 \\times 1} = 220$$\n   (Pernyataan A BENAR).\n2. Terambil 1 merah, 1 hijau, dan 1 kuning (Pernyataan B):\n   - Banyak cara:\n     $$\\binom{5}{1} \\times \\binom{4}{1} \\times \\binom{3}{1} = 5 \\times 4 \\times 3 = 60$$\n   - Peluang:\n     $$P = \\frac{60}{220} = \\frac{3}{11}$$\n   (Pernyataan B BENAR).\n3. Paling sedikit 1 kelereng merah (Pernyataan C):\n   - Banyak cara tidak ada kelereng merah terambil (ketiganya diambil dari $4\\text{ hijau} + 3\\text{ kuning} = 7\\text{ kelereng}$):\n     $$\\binom{7}{3} = \\frac{7 \\times 6 \\times 5}{3 \\times 2 \\times 1} = 35$$\n   - Peluang tidak ada kelereng merah: $\\frac{35}{220} = \\frac{7}{44}$.\n   - Peluang paling sedikit 1 merah:\n     $$P = 1 - \\frac{7}{44} = \\frac{37}{44}$$\n   (Pernyataan C BENAR).\n4. Evaluasi Pernyataan D dan E:\n   - Ketiga kelereng merah: $\\frac{\\binom{5}{3}}{220} = \\frac{10}{220} = \\frac{1}{22} \\ne \\frac{1}{44}$. (Pernyataan D SALAH).\n   - Ketiga kelereng hijau: $\\frac{\\binom{4}{3}}{220} = \\frac{4}{220} = \\frac{1}{55} \\ne \\frac{1}{11}$. (Pernyataan E SALAH).\n\nJadi, seluruh pernyataan yang bernilai BENAR adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-peluang-kejadian-tunggal-07",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-tunggal",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Satu set lengkap kartu bridge (kartu remi standar) terdiri dari $52\\text{ kartu}$ (tanpa joker) yang terbagi rata ke dalam empat jenis: Sekop (Spade), Hati (Heart), Keriting (Club), dan Wajik (Diamond). Satu kartu diambil secara acak dari tumpukan kartu yang telah dikocok rata.\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Peluang terambil kartu As adalah $\\frac{1}{13}$."
+      },
+      {
+        "id": "B",
+        "text": "Peluang terambil kartu berwarna hitam (Sekop atau Keriting) adalah $\\frac{1}{2}$."
+      },
+      {
+        "id": "C",
+        "text": "Peluang terambil kartu yang bukan kartu bergambar (King, Queen, Jack) adalah $\\frac{10}{13}$."
+      },
+      {
+        "id": "D",
+        "text": "Peluang terambil kartu jenis Hati (Heart) adalah $\\frac{1}{2}$."
+      },
+      {
+        "id": "E",
+        "text": "Peluang terambil kartu King berwarna merah adalah $\\frac{1}{13}$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Total kartu bridge adalah 52. Ada 4 kartu As, 26 kartu hitam, 12 kartu bergambar (King, Queen, Jack), dan 13 kartu untuk setiap jenis lambang.",
+    "explanation": "Langkah-langkah evaluasi kartu bridge:\n1. Kartu As (Pernyataan A):\n   - Terdapat 4 kartu As (As Sekop, Hati, Keriting, Wajik).\n   - $P(\\text{As}) = \\frac{4}{52} = \\frac{1}{13}$. (Pernyataan A BENAR).\n2. Kartu Berwarna Hitam (Pernyataan B):\n   - Kartu hitam terdiri dari 13 Sekop dan 13 Keriting ($26\\text{ kartu}$).\n   - $P(\\text{Hitam}) = \\frac{26}{52} = \\frac{1}{2}$. (Pernyataan B BENAR).\n3. Bukan Kartu Bergambar (Pernyataan C):\n   - Kartu bergambar (face cards) terdiri dari King, Queen, Jack pada 4 jenis lambang: $3 \\times 4 = 12\\text{ kartu}$.\n   - Banyak kartu yang bukan kartu bergambar: $52 - 12 = 40\\text{ kartu}$.\n   - $P(\\text{bukan bergambar}) = \\frac{40}{52} = \\frac{10}{13}$. (Pernyataan C BENAR).\n4. Evaluasi Pernyataan D dan E:\n   - Kartu jenis Hati ada 13 lembar: $P = \\frac{13}{52} = \\frac{1}{4} \\ne \\frac{1}{2}$. (Pernyataan D SALAH).\n   - Kartu King merah ada 2 lembar (King Hati dan King Wajik): $P = \\frac{2}{52} = \\frac{1}{26} \\ne \\frac{1}{13}$. (Pernyataan E SALAH).\n\nJadi, seluruh pernyataan yang bernilai BENAR adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-peluang-kejadian-tunggal-08",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-tunggal",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Dari sebuah kotak undian yang berisi $100\\text{ keping kartu}$ bernomor bilangan bulat dari $1$ sampai $100$ ($S = \\{1, 2, 3, \\dots, 100\\}$), satu kartu diambil secara acak.\n\nTentukan kategori BENAR atau SALAH untuk setiap pernyataan berikut!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Peluang terambil kartu bernomor kelipatan $7$ adalah $0,14$."
+      },
+      {
+        "id": "B",
+        "text": "Peluang terambil kartu bernomor bilangan kuadrat sempurna adalah $\\frac{1}{10}$."
+      },
+      {
+        "id": "C",
+        "text": "Peluang terambil kartu bernomor kelipatan $11$ adalah $0,11$."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Salah"
+    },
+    "hint": "Hitung banyak anggota himpunan untuk tiap kriteria dengan operasi pembagian bilangan bulat: banyak kelipatan $k$ dari $1$ sampai $100$ adalah $\\lfloor \\frac{100}{k} \\rfloor$. Kuadrat sempurna dari 1 sampai 100 adalah $1^2, 2^2, \\dots, 10^2$.",
+    "explanation": "Langkah-langkah analisis peluang keterbagian:\n1. Evaluasi Kelipatan 7 (Pernyataan A):\n   - Bilangan kelipatan 7 antara 1 dan 100:\n     $$7, 14, 21, 28, 35, 42, 49, 56, 63, 70, 77, 84, 91, 98$$\n   - Banyaknya adalah $\\lfloor \\frac{100}{7} \\rfloor = 14\\text{ kartu}$.\n   - Peluang: $P = \\frac{14}{100} = 0,14$.\n   - Maka, Pernyataan A bernilai BENAR.\n2. Evaluasi Bilangan Kuadrat Sempurna (Pernyataan B):\n   - Bilangan kuadrat antara 1 dan 100:\n     $$1^2, 2^2, 3^2, 4^2, 5^2, 6^2, 7^2, 8^2, 9^2, 10^2$$\n   - Banyaknya adalah tepat $10\\text{ kartu}$ ($1, 4, 9, 16, 25, 36, 49, 64, 81, 100$).\n   - Peluang: $P = \\frac{10}{100} = \\frac{1}{10} = 0,10$.\n   - Maka, Pernyataan B bernilai BENAR.\n3. Evaluasi Kelipatan 11 (Pernyataan C):\n   - Bilangan kelipatan 11 antara 1 dan 100:\n     $$11, 22, 33, 44, 55, 66, 77, 88, 99$$\n   - Banyaknya adalah $\\lfloor \\frac{100}{11} \\rfloor = 9\\text{ kartu}$.\n   - Peluang sesungguhnya adalah $P = \\frac{9}{100} = 0,09 \\ne 0,11$.\n   - Maka, Pernyataan C bernilai SALAH.\n\nKesimpulan Kategori:\n- Pernyataan A: Benar\n- Pernyataan B: Benar\n- Pernyataan C: Salah"
+  },
+  {
+    "id": "matwa-peluang-kejadian-tunggal-09",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-tunggal",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Dua orang sahabat, Budi dan Doni, berjanji untuk bertemu di sebuah kafe antara pukul $13.00$ dan $14.00$. Waktu kedatangan masing-masing orang bersifat acak dan bebas (independen) dalam rentang waktu $60\\text{ menit}$ tersebut. Orang yang tiba lebih awal bersepakat hanya akan menunggu paling lama $15\\text{ menit}$ sebelum akhirnya meninggalkan kafe jika sahabatnya belum tiba.\n\nTentukan kategori BENAR atau SALAH untuk setiap pernyataan berikut!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Luas bidang ruang sampel pada bidang koordinat Cartesius yang merepresentasikan seluruh kombinasi waktu kedatangan Budi dan Doni adalah $3.600\\text{ menit}^2$."
+      },
+      {
+        "id": "B",
+        "text": "Peluang kedua sahabat tersebut berhasil bertemu di kafe adalah $\\frac{7}{16}$."
+      },
+      {
+        "id": "C",
+        "text": "Peluang kedua sahabat tersebut gagal bertemu di kafe adalah lebih besar dari $60\\%$."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Salah"
+    },
+    "hint": "Gunakan pendekatan geometri pada bidang persegi $[0, 60] \\times [0, 60]$. Kondisi mereka berhasil bertemu adalah $|x - y| \\le 15$. Hitung luas daerah komplemen (mereka tidak bertemu, $|x - y| > 15$) yang berupa dua segitiga siku-siku sama kaki dengan sisi $45$.",
+    "explanation": "Langkah-langkah analisis peluang geometri waktu tunggu:\n1. Ruang sampel geometri (Pernyataan A):\n   - Misalkan waktu kedatangan Budi adalah $x$ dan Doni adalah $y$ (dalam menit setelah pukul 13.00, $0 \\le x \\le 60$ dan $0 \\le y \\le 60$).\n   - Ruang sampel berupa daerah persegi berukuran $60 \\times 60$ dengan luas:\n     $$L(S) = 60 \\times 60 = 3.600\\text{ satuan luas}$$\n   - Maka, Pernyataan A bernilai BENAR.\n2. Kondisi mereka berhasil bertemu (Pernyataan B):\n   - Mereka bertemu jika selisih waktu tiba tidak lebih dari 15 menit: $|x - y| \\le 15$.\n   - Lebih mudah menghitung daerah komplemen di mana mereka TIDAK bertemu ($|x - y| > 15$):\n     * Daerah $x - y > 15$: segitiga siku-siku di pojok kanan bawah dengan panjang alas dan tinggi $60 - 15 = 45$.\n       $$\\text{Luas}_1 = \\frac{1}{2} \\times 45 \\times 45 = 1.012,5$$\n     * Daerah $y - x > 15$: segitiga siku-siku di pojok kiri atas dengan panjang alas dan tinggi $45$.\n       $$\\text{Luas}_2 = \\frac{1}{2} \\times 45 \\times 45 = 1.012,5$$\n     * Total luas daerah tidak bertemu: $1.012,5 + 1.012,5 = 2.025$.\n   - Peluang gagal bertemu:\n     $$P(\\text{gagal}) = \\frac{2.025}{3.600} = \\frac{45^2}{60^2} = \\left(\\frac{3}{4}\\right)^2 = \\frac{9}{16} = 0,5625 = 56,25\\%$$\n   - Peluang berhasil bertemu:\n     $$P(\\text{bertemu}) = 1 - \\frac{9}{16} = \\frac{7}{16} = 0,4375 = 43,75\\%$$\n   - Maka, Pernyataan B bernilai BENAR.\n3. Evaluasi Peluang Gagal Bertemu (Pernyataan C):\n   - Peluang gagal bertemu adalah $56,25\\%$.\n   - Nilai $56,25\\%$ lebih kecil dari $60\\%$ ($56,25\\% < 60\\%$).\n   - Maka, Pernyataan C bernilai SALAH.\n\nKesimpulan Kategori:\n- Pernyataan A: Benar\n- Pernyataan B: Benar\n- Pernyataan C: Salah"
+  },
+  {
+    "id": "matwa-peluang-kejadian-tunggal-10",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-tunggal",
+    "question_type": "KECUKUPAN_DATA",
+    "difficulty": "HOTS",
+    "question_text": "Di dalam sebuah kantong tertutup terdapat sejumlah bola yang hanya terdiri dari bola hitam dan bola putih. Satu bola diambil secara acak dari kantong tersebut.\n\nBerapakah peluang terambilnya satu bola berwarna putih?\n\nPutuskan apakah pernyataan (1) dan (2) berikut cukup untuk menjawab pertanyaan tersebut:\n(1) Rasio banyak bola hitam terhadap bola putih di dalam kantong adalah $3 : 2$.\n(2) Selisih banyak bola hitam dan bola putih di dalam kantong adalah $6\\text{ bola}$, dengan bola hitam lebih banyak daripada bola putih.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (2) SAJA tidak cukup."
+      },
+      {
+        "id": "B",
+        "text": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (1) SAJA tidak cukup."
+      },
+      {
+        "id": "C",
+        "text": "DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup."
+      },
+      {
+        "id": "D",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan Pernyataan (2) SAJA cukup."
+      },
+      {
+        "id": "E",
+        "text": "Pernyataan (1) dan Pernyataan (2) tidak cukup untuk menjawab pertanyaan."
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Peluang terambilnya bola putih adalah $P(\\text{putih}) = \\frac{n(P)}{n(H) + n(P)}$. Periksa apakah informasi perbandingan rasio saja sudah cukup untuk menentukan nilai peluang tanpa perlu mengetahui jumlah riil bola.",
+    "explanation": "Langkah-langkah analisis kecukupan data:\nPertanyaan: Berapakah nilai peluang $P(\\text{putih}) = \\frac{n(P)}{n(H) + n(P)}$?\n\n1. Meninjau Pernyataan (1) SAJA (Rasio $n(H) : n(P) = 3 : 2$):\n   - Misalkan $n(H) = 3k$ dan $n(P) = 2k$ untuk suatu pengali bilangan bulat positif $k \\ge 1$.\n   - Total bola di dalam kantong: $n(S) = n(H) + n(P) = 3k + 2k = 5k$.\n   - Peluang terambil bola putih:\n     $$P(\\text{putih}) = \\frac{n(P)}{n(S)} = \\frac{2k}{5k} = \\frac{2}{5} = 0,4$$\n   - Variabel $k$ saling meniadakan (tereliminasi), sehingga nilai peluang dapat ditentukan secara pasti dan unik ($P = \\frac{2}{5}$).\n   - Maka, Pernyataan (1) SAJA CUKUP.\n\n2. Meninjau Pernyataan (2) SAJA (Selisih $n(H) - n(P) = 6$):\n   - Diketahui $n(H) = n(P) + 6$.\n   - Peluang terambil bola putih:\n     $$P(\\text{putih}) = \\frac{n(P)}{(n(P) + 6) + n(P)} = \\frac{n(P)}{2n(P) + 6}$$\n   - Nilai peluang bergantung pada nilai riil $n(P)$:\n     * Jika $n(P) = 2$, maka $P = \\frac{2}{10} = 0,2$\n     * Jika $n(P) = 4$, maka $P = \\frac{4}{14} = \\frac{2}{7} \\approx 0,286$\n   - Karena menghasilkan nilai peluang yang berbeda-beda (tidak unik), maka Pernyataan (2) SAJA TIDAK CUKUP.\n\nKesimpulan:\nPernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (2) SAJA tidak cukup.\nJadi, pilihan yang tepat adalah A."
+  }
+]

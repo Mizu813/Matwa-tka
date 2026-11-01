@@ -1,1 +1,336 @@
-[]
+[
+  {
+    "id": "matwa-peluang-kejadian-majemuk-01",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-majemuk",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah hotel resort memiliki total $60\\text{ kamar tamu}$. Berdasarkan data fasilitas yang tersedia:\n- $30\\text{ kamar}$ memiliki pemandangan laut (*Sea View*)\n- $25\\text{ kamar}$ memiliki tipe tempat tidur *Twin Bed*\n- $10\\text{ kamar}$ memiliki kedua fasilitas tersebut (*Sea View* sekaligus *Twin Bed*)\n\nJika seorang tamu melakukan reservasi dan sistem menetapkan satu kamar secara acak, berapakah peluang tamu tersebut mendapatkan kamar dengan pemandangan laut ATAU bertipe *Twin Bed*?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{1}{2}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{7}{12}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{2}{3}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{3}{4}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{11}{12}$"
+      }
+    ],
+    "correct_answer": "D",
+    "hint": "Gunakan rumus peluang gabungan dua kejadian tidak saling lepas: $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Definisikan kejadian dan banyak anggotanya:\n   - Total kamar: $n(S) = 60$\n   - Kamar pemandangan laut ($A$): $n(A) = 30 \\implies P(A) = \\frac{30}{60}$\n   - Kamar tipe Twin Bed ($B$): $n(B) = 25 \\implies P(B) = \\frac{25}{60}$\n   - Kamar memiliki kedua fasilitas ($A \\cap B$): $n(A \\cap B) = 10 \\implies P(A \\cap B) = \\frac{10}{60}$\n2. Gunakan rumus peluang gabungan dua kejadian tidak saling lepas:\n   $$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$$\n   $$P(A \\cup B) = \\frac{30}{60} + \\frac{25}{60} - \\frac{10}{60} = \\frac{45}{60}$$\n3. Sederhanakan pecahan:\n   $$P(A \\cup B) = \\frac{45 \\div 15}{60 \\div 15} = \\frac{3}{4} = 0,75$$\n\nJadi, peluang tamu tersebut mendapatkan kamar dengan pemandangan laut atau bertipe Twin Bed adalah $\\frac{3}{4}$."
+  },
+  {
+    "id": "matwa-peluang-kejadian-majemuk-02",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-majemuk",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dalam suatu divisi organisasi mahasiswa terdapat $15\\text{ orang anggota aktif}$ yang terdiri dari $9\\text{ mahasiswa pria}$ dan $6\\text{ mahasiswa wanita}$. Dua orang anggota akan dipilih secara berurutan satu per satu **tanpa pengembalian** untuk menghadiri konferensi nasional (anggota pertama sebagai delegasi utama, dan anggota kedua sebagai delegasi pendamping). Peluang terpilihnya perwakilan pertama seorang mahasiswa pria dan perwakilan kedua seorang mahasiswa wanita adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{6}{35}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{9}{35}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{18}{35}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{2}{5}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{3}{5}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Gunakan aturan perkalian peluang kejadian bersyarat tanpa pengembalian: $P(A \\cap B) = P(A) \\times P(B \\mid A)$. Ingat bahwa setelah pengambilan pertama, total ruang sampel berkurang dari 15 menjadi 14.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Pengambilan perwakilan pertama (mahasiswa pria):\n   - Banyak pria: $9\\text{ orang}$\n   - Total anggota mula-mula: $15\\text{ orang}$\n   $$P(\\text{Pria ke-1}) = \\frac{9}{15} = \\frac{3}{5}$$\n2. Pengambilan perwakilan kedua (mahasiswa wanita) tanpa pengembalian:\n   - Banyak wanita tetap: $6\\text{ orang}$\n   - Total anggota tersisa: $15 - 1 = 14\\text{ orang}$\n   $$P(\\text{Wanita ke-2} \\mid \\text{Pria ke-1}) = \\frac{6}{14} = \\frac{3}{7}$$\n3. Menghitung peluang gabungan berurutan:\n   $$P = P(\\text{Pria ke-1}) \\times P(\\text{Wanita ke-2} \\mid \\text{Pria ke-1})$$\n   $$P = \\frac{3}{5} \\times \\frac{3}{7} = \\frac{9}{35}$$\n\nJadi, peluang perwakilan pertama pria dan kedua wanita adalah $\\frac{9}{35}$."
+  },
+  {
+    "id": "matwa-peluang-kejadian-majemuk-03",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-majemuk",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Dua penembak jitu, Penembak A dan Penembak B, membidik satu target sasaran yang sama secara simultan. Peluang tembakan Penembak A mengenai sasaran adalah $0,8$, sedangkan peluang tembakan Penembak B mengenai sasaran adalah $0,7$. Jika hasil tembakan kedua penembak tersebut saling bebas (independen), berapakah peluang bahwa target sasaran tersebut dikenai oleh **tepat satu** tembakan?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$0,24$"
+      },
+      {
+        "id": "B",
+        "text": "$0,38$"
+      },
+      {
+        "id": "C",
+        "text": "$0,44$"
+      },
+      {
+        "id": "D",
+        "text": "$0,56$"
+      },
+      {
+        "id": "E",
+        "text": "$0,62$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Kejadian 'tepat satu tembakan mengenai sasaran' terdiri dari dua kasus saling lepas: (Penembak A mengenai sasaran dan Penembak B luput) ATAU (Penembak A luput dan Penembak B mengenai sasaran).",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Definisikan peluang sukses dan komplemen (luput) masing-masing penembak:\n   - Penembak A: $P(A) = 0,8 \\implies P(A') = 1 - 0,8 = 0,2$\n   - Penembak B: $P(B) = 0,7 \\implies P(B') = 1 - 0,7 = 0,3$\n2. Karena kedua kejadian saling bebas, berlaku $P(X \\cap Y) = P(X) \\times P(Y)$:\n   - Kasus 1: Penembak A kena DAN Penembak B luput:\n     $$P(A \\cap B') = P(A) \\times P(B') = 0,8 \\times 0,3 = 0,24$$\n   - Kasus 2: Penembak A luput DAN Penembak B kena:\n     $$P(A' \\cap B) = P(A') \\times P(B) = 0,2 \\times 0,7 = 0,14$$\n3. Jumlahkan kedua kasus saling lepas tersebut:\n   $$P(\\text{tepat satu kena}) = P(A \\cap B') + P(A' \\cap B) = 0,24 + 0,14 = 0,38$$\n\nJadi, peluang sasaran terkena tepat satu tembakan adalah $0,38$."
+  },
+  {
+    "id": "matwa-peluang-kejadian-majemuk-04",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-majemuk",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Dari $100\\text{ orang pelamar kerja}$ pada sebuah perusahaan teknologi, diperoleh data kemahiran bahasa asing sebagai berikut:\n- $60\\text{ pelamar}$ mahir berbahasa Inggris\n- $40\\text{ pelamar}$ mahir berbahasa Mandarin\n- $25\\text{ pelamar}$ mahir kedua bahasa tersebut (Inggris sekaligus Mandarin)\n\nSeorang pelamar dipilih secara acak untuk sesi wawancara. Jika diketahui pelamar yang terpilih tersebut mahir berbahasa Inggris, peluang bahwa ia juga mahir berbahasa Mandarin adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{1}{4}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{5}{12}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{1}{2}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{5}{8}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{3}{4}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Gunakan rumus peluang bersyarat: $P(M \\mid I) = \\frac{n(M \\cap I)}{n(I)}$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Definisikan himpunan dan banyak anggotanya:\n   - Pelamar mahir bahasa Inggris ($I$): $n(I) = 60$\n   - Pelamar mahir bahasa Mandarin ($M$): $n(M) = 40$\n   - Pelamar mahir kedua bahasa ($M \\cap I$): $n(M \\cap I) = 25$\n2. Menghitung peluang bersyarat bahwa pelamar mahir Mandarin dengan syarat ia mahir Inggris:\n   $$P(M \\mid I) = \\frac{n(M \\cap I)}{n(I)}$$\n   $$P(M \\mid I) = \\frac{25}{60}$$\n3. Sederhanakan pecahan dengan membagi $5$ pada pembilang dan penyebut:\n   $$P(M \\mid I) = \\frac{25 \\div 5}{60 \\div 5} = \\frac{5}{12}$$\n\nJadi, peluang pelamar tersebut juga mahir berbahasa Mandarin adalah $\\frac{5}{12}$."
+  },
+  {
+    "id": "matwa-peluang-kejadian-majemuk-05",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-majemuk",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Suatu survei dilakukan terhadap $100\\text{ siswa}$ mengenai minat pada tiga kegiatan ekstrakurikuler: Matematika Terapan ($M$), Seni Lukis/Gambar ($G$), dan Musik Digital ($S$). Data hasil survei mencatat rincian berikut:\n- $8\\text{ siswa}$ menyukai ketiga kegiatan tersebut ($M \\cap G \\cap S$)\n- $12\\text{ siswa}$ menyukai Matematika dan Gambar tetapi tidak menyukai Musik\n- $10\\text{ siswa}$ menyukai Matematika dan Musik tetapi tidak menyukai Gambar\n- $7\\text{ siswa}$ menyukai Gambar dan Musik tetapi tidak menyukai Matematika\n- Total siswa yang menyukai Matematika adalah $45\\text{ orang}$\n- Total siswa yang menyukai Gambar adalah $45\\text{ orang}$\n- Total siswa yang menyukai Musik adalah $45\\text{ orang}$\n\nSatu orang siswa dipilih secara acak dari 100 siswa tersebut.\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Peluang terpilihnya siswa yang menyukai tepat satu jenis kegiatan adalah $0,53$."
+      },
+      {
+        "id": "B",
+        "text": "Peluang terpilihnya siswa yang menyukai tepat dua jenis kegiatan adalah $0,29$."
+      },
+      {
+        "id": "C",
+        "text": "Peluang terpilihnya siswa yang tidak menyukai satu pun dari ketiga kegiatan tersebut adalah $0,10$."
+      },
+      {
+        "id": "D",
+        "text": "Peluang terpilihnya siswa yang menyukai Matematika jika diketahui ia menyukai Musik adalah $\\frac{1}{2}$."
+      },
+      {
+        "id": "E",
+        "text": "Peluang terpilihnya siswa yang menyukai kegiatan Matematika atau Musik adalah $0,85$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Gunakan Diagram Venn 3 Himpunan. Tentukan jumlah anggota untuk tiap wilayah eksklusif: hanya Matematika, hanya Gambar, hanya Musik, tepat dua kegiatan, ketiga kegiatan, dan di luar ketiga lingkaran.",
+    "explanation": "Langkah-langkah rekonstruksi Diagram Venn 3 Himpunan:\n1. Hitung wilayah irisan:\n   - Suka ketiganya: $n(M \\cap G \\cap S) = 8$\n   - Suka tepat dua kegiatan:\n     * Matematika dan Gambar saja: $12$\n     * Matematika dan Musik saja: $10$\n     * Gambar dan Musik saja: $7$\n     * Total suka tepat dua kegiatan: $12 + 10 + 7 = 29\\text{ orang}$. (Pernyataan B BENAR karena $P = \\frac{29}{100} = 0,29$).\n2. Hitung siswa yang hanya menyukai satu kegiatan:\n   - Hanya Matematika: $45 - (12 + 10 + 8) = 45 - 30 = 15\\text{ orang}$\n   - Hanya Gambar: $45 - (12 + 7 + 8) = 45 - 27 = 18\\text{ orang}$\n   - Hanya Musik: $45 - (10 + 7 + 8) = 45 - 25 = 20\\text{ orang}$\n   - Total suka tepat satu kegiatan: $15 + 18 + 20 = 53\\text{ orang}$. (Pernyataan A BENAR karena $P = \\frac{53}{100} = 0,53$).\n3. Hitung siswa yang suka minimal satu kegiatan dan yang tidak suka ketiganya:\n   - $n(M \\cup G \\cup S) = 53 + 29 + 8 = 90\\text{ orang}$\n   - Tidak suka ketiganya: $100 - 90 = 10\\text{ orang}$. (Pernyataan C BENAR karena $P = \\frac{10}{100} = 0,10$).\n4. Evaluasi Pernyataan D dan E:\n   - Peluang Matematika bersyarat Musik: $P(M \\mid S) = \\frac{n(M \\cap S)}{n(S)} = \\frac{10 + 8}{45} = \\frac{18}{45} = \\frac{2}{5} = 0,40 \\ne 0,50$. (Pernyataan D SALAH).\n   - Siswa yang menyukai Matematika atau Musik: $n(M \\cup S) = 100 - (\\text{hanya Gambar} + \\text{tidak suka}) = 100 - (18 + 10) = 72\\text{ orang}$.\n   - $P(M \\cup S) = \\frac{72}{100} = 0,72 \\ne 0,85$. (Pernyataan E SALAH).\n\nJadi, seluruh pernyataan yang bernilai BENAR adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-peluang-kejadian-majemuk-06",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-majemuk",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Tersedia dua kotak tertutup dengan isi bola sebagai berikut:\n- Kotak I berisi $4\\text{ bola putih}$ dan $2\\text{ bola hitam}$ (total $6\\text{ bola}$).\n- Kotak II berisi $3\\text{ bola putih}$ dan $5\\text{ bola hitam}$ (total $8\\text{ bola}$).\n\nSebuah koin seimbang dilempar satu kali. Jika muncul sisi Angka, satu bola diambil secara acak dari Kotak I; sedangkan jika muncul sisi Gambar, satu bola diambil secara acak dari Kotak II.\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Peluang terambilnya bola putih dari Kotak I jika koin menunjukkan sisi Angka adalah $\\frac{2}{3}$."
+      },
+      {
+        "id": "B",
+        "text": "Peluang total terambilnya satu bola berwarna putih adalah $\\frac{25}{48}$."
+      },
+      {
+        "id": "C",
+        "text": "Jika diketahui bola yang terambil ternyata berwarna putih, peluang bahwa bola tersebut berasal dari Kotak I adalah $0,64$."
+      },
+      {
+        "id": "D",
+        "text": "Peluang total terambilnya satu bola berwarna hitam adalah $\\frac{25}{48}$."
+      },
+      {
+        "id": "E",
+        "text": "Peluang terambilnya bola putih dari Kotak II jika koin menunjukkan sisi Gambar adalah $\\frac{1}{2}$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Gunakan Hukum Peluang Total $P(P) = P(A)P(P \\mid A) + P(G)P(P \\mid G)$ dan Teorema Bayes $P(A \\mid P) = \\frac{P(A \\cap P)}{P(P)}$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Peluang pemilihan kotak melalui lemparan koin seimbang:\n   - $P(\\text{Angka}) = P(K_1) = \\frac{1}{2}$\n   - $P(\\text{Gambar}) = P(K_2) = \\frac{1}{2}$\n2. Peluang bersyarat terambilnya bola putih:\n   - Dari Kotak I: $P(P \\mid K_1) = \\frac{4}{6} = \\frac{2}{3}$. (Pernyataan A BENAR).\n   - Dari Kotak II: $P(P \\mid K_2) = \\frac{3}{8} \\ne \\frac{1}{2}$. (Pernyataan E SALAH).\n3. Menghitung Peluang Total bola putih (Pernyataan B):\n   $$P(P) = P(K_1) \\cdot P(P \\mid K_1) + P(K_2) \\cdot P(P \\mid K_2)$$\n   $$P(P) = \\left(\\frac{1}{2} \\times \\frac{2}{3}\\right) + \\left(\\frac{1}{2} \\times \\frac{3}{8}\\right) = \\frac{1}{3} + \\frac{3}{16} = \\frac{16 + 9}{48} = \\frac{25}{48}$$\n   (Pernyataan B BENAR).\n   - Peluang terambil bola hitam adalah komplemennya: $P(H) = 1 - \\frac{25}{48} = \\frac{23}{48} \\ne \\frac{25}{48}$. (Pernyataan D SALAH).\n4. Evaluasi Teorema Bayes (Pernyataan C):\n   - Peluang bola berasal dari Kotak I jika diketahui berwarna putih:\n     $$P(K_1 \\mid P) = \\frac{P(K_1 \\cap P)}{P(P)} = \\frac{\\frac{1}{3}}{\\frac{25}{48}} = \\frac{1}{3} \\times \\frac{48}{25} = \\frac{16}{25} = 0,64$$\n   (Pernyataan C BENAR).\n\nJadi, seluruh pernyataan yang bernilai BENAR adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-peluang-kejadian-majemuk-07",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-majemuk",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Dua buah dadu standar enam sisi dilempar undi bersama-sama sebanyak satu kali. Didefinisikan dua kejadian:\n- Kejadian $A$: muncul jumlah kedua mata dadu sama dengan $7$\n- Kejadian $B$: muncul kedua mata dadu bernilai sama (mata dadu kembar)\n\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Peluang terjadinya kejadian $A$ adalah $P(A) = \\frac{1}{6}$."
+      },
+      {
+        "id": "B",
+        "text": "Kejadian $A$ dan kejadian $B$ merupakan dua kejadian yang saling lepas (mutually exclusive)."
+      },
+      {
+        "id": "C",
+        "text": "Peluang muncul jumlah mata dadu sama dengan $7$ ATAU mata dadu kembar adalah $\\frac{1}{3}$."
+      },
+      {
+        "id": "D",
+        "text": "Peluang irisan kejadian $A$ dan $B$ adalah $P(A \\cap B) = \\frac{1}{36}$."
+      },
+      {
+        "id": "E",
+        "text": "Peluang terjadinya kejadian $B$ adalah $P(B) = \\frac{1}{12}$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Ruang sampel dua dadu adalah $n(S) = 36$. Cari anggota himpunan kejadian $A$ dan $B$. Periksa apakah ada titik sampel yang memenuhi kedua syarat secara bersamaan.",
+    "explanation": "Langkah-langkah evaluasi pelemparan dua dadu:\n1. Ruang sampel: $n(S) = 6 \\times 6 = 36$.\n2. Anggota kejadian $A$ (jumlah 7):\n   - $A = \\{(1,6), (2,5), (3,4), (4,3), (5,2), (6,1)\\} \\implies n(A) = 6$\n   - $P(A) = \\frac{6}{36} = \\frac{1}{6}$. (Pernyataan A BENAR).\n3. Anggota kejadian $B$ (mata dadu kembar):\n   - $B = \\{(1,1), (2,2), (3,3), (4,4), (5,5), (6,6)\\} \\implies n(B) = 6$\n   - $P(B) = \\frac{6}{36} = \\frac{1}{6} \\ne \\frac{1}{12}$. (Pernyataan E SALAH).\n4. Evaluasi irisan $A \\cap B$:\n   - Pada pasangan kembar $(x, x)$, jumlah mata dadu adalah $2x$ (selalu bilangan genap: $2, 4, 6, 8, 10, 12$).\n   - Karena $7$ adalah bilangan ganjil, tidak ada pasangan kembar yang berjumlah $7$ ($A \\cap B = \\emptyset$).\n   - Jadi, kejadian $A$ dan $B$ saling lepas (mutually exclusive) dan $P(A \\cap B) = 0 \\ne \\frac{1}{36}$.\n   (Pernyataan B BENAR dan Pernyataan D SALAH).\n5. Peluang gabungan dua kejadian saling lepas:\n   $$P(A \\cup B) = P(A) + P(B) = \\frac{1}{6} + \\frac{1}{6} = \\frac{2}{6} = \\frac{1}{3}$$\n   (Pernyataan C BENAR).\n\nJadi, seluruh pernyataan yang bernilai BENAR adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-peluang-kejadian-majemuk-08",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-majemuk",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Sebuah pabrik perakitan barang elektronik menggunakan tiga unit mesin otomatis (Mesin A, Mesin B, dan Mesin C). Kapasitas produksi dan tingkat kerusakan (cacat) masing-masing mesin adalah sebagai berikut:\n- Mesin A memproduksi $40\\%$ dari total produksi dengan tingkat cacat $2\\%$\n- Mesin B memproduksi $35\\%$ dari total produksi dengan tingkat cacat $4\\%$\n- Mesin C memproduksi $25\\%$ dari total produksi dengan tingkat cacat $6\\%$\n\nSatu unit produk diambil secara acak dari gudang penyimpanan hasil produksi gabungan ketiga mesin tersebut.\nTentukan kategori BENAR atau SALAH untuk setiap pernyataan berikut!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Peluang bahwa produk yang terpilih diproduksi oleh Mesin A dan berstatus cacat adalah $0,008$."
+      },
+      {
+        "id": "B",
+        "text": "Peluang keseluruhan (total) terpilihnya produk yang cacat dari pabrik tersebut adalah $0,037$ ($3,7\\%$)."
+      },
+      {
+        "id": "C",
+        "text": "Jika diketahui produk yang terpilih berstatus cacat, peluang produk tersebut diproduksi oleh Mesin A lebih besar daripada peluang produk tersebut diproduksi oleh Mesin C."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Salah"
+    },
+    "hint": "Gunakan aturan perkalian peluang $P(M_i \\cap C) = P(M_i) \\times P(C \\mid M_i)$. Jumlahkan seluruh irisan untuk mendapatkan peluang total cacat, lalu gunakan Teorema Bayes untuk membandingkan peluang asal mesin jika produk cacat.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Proporsi produksi dan peluang cacat bersyarat:\n   - Mesin A: $P(A) = 0,40$ dan $P(C \\mid A) = 0,02$\n   - Mesin B: $P(B) = 0,35$ dan $P(C \\mid B) = 0,04$\n   - Mesin C: $P(C_{mesin}) = 0,25$ dan $P(C \\mid C_{mesin}) = 0,06$\n2. Evaluasi Pernyataan A:\n   $$P(A \\cap C) = P(A) \\times P(C \\mid A) = 0,40 \\times 0,02 = 0,008$$\n   - Maka, Pernyataan A bernilai BENAR.\n3. Evaluasi Peluang Total Cacat (Pernyataan B):\n   - Irisan masing-masing mesin:\n     * $P(A \\cap C) = 0,008$\n     * $P(B \\cap C) = 0,35 \\times 0,04 = 0,014$\n     * $P(C_{mesin} \\cap C) = 0,25 \\times 0,06 = 0,015$\n   - Peluang total cacat:\n     $$P(C) = 0,008 + 0,014 + 0,015 = 0,037 = 3,7\\%$$\n   - Maka, Pernyataan B bernilai BENAR.\n4. Evaluasi Teorema Bayes (Pernyataan C):\n   - Peluang cacat berasal dari Mesin A: $P(A \\mid C) = \\frac{0,008}{0,037} = \\frac{8}{37}$.\n   - Peluang cacat berasal dari Mesin C: $P(C_{mesin} \\mid C) = \\frac{0,015}{0,037} = \\frac{15}{37}$.\n   - Karena $\\frac{8}{37} < \\frac{15}{37}$, peluang produk cacat berasal dari Mesin A justru lebih kecil daripada berasal dari Mesin C.\n   - Maka, Pernyataan C bernilai SALAH.\n\nKesimpulan Kategori:\n- Pernyataan A: Benar\n- Pernyataan B: Benar\n- Pernyataan C: Salah"
+  },
+  {
+    "id": "matwa-peluang-kejadian-majemuk-09",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-majemuk",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Sebuah sistem pengamanan laboratorium tingkat tinggi dilengkapi dengan $4\\text{ unit sensor gerak}$ independen yang bekerja secara mandiri. Peluang masing-masing sensor berhasil mendeteksi adanya penyusup secara berturut-turut adalah:\n- Sensor 1: $0,9$\n- Sensor 2: $0,8$\n- Sensor 3: $0,8$\n- Sensor 4: $0,5$\n\nTentukan kategori BENAR atau SALAH untuk setiap pernyataan berikut!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Peluang seluruh sensor secara serentak gagal mendeteksi penyusup adalah $0,002$ ($0,2\\%$)."
+      },
+      {
+        "id": "B",
+        "text": "Peluang sistem pengamanan berhasil mendeteksi penyusup (paling sedikit ada satu sensor yang berhasil mendeteksi) adalah $0,998$ ($99,8\\%$)."
+      },
+      {
+        "id": "C",
+        "text": "Peluang bahwa hanya Sensor 1 saja yang berhasil mendeteksi penyusup sedangkan tiga sensor lainnya gagal adalah $0,054$."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Salah"
+    },
+    "hint": "Karena keempat sensor bekerja secara independen, peluang semua gagal adalah perkalian peluang gagal masing-masing sensor ($q_i = 1 - p_i$). Peluang paling sedikit satu sensor berhasil adalah $1 - P(\\text{semua gagal})$.",
+    "explanation": "Langkah-langkah evaluasi keandalan sensor independen:\n1. Tentukan peluang gagal ($q_i$) masing-masing sensor:\n   - Sensor 1: $p_1 = 0,9 \\implies q_1 = 1 - 0,9 = 0,1$\n   - Sensor 2: $p_2 = 0,8 \\implies q_2 = 1 - 0,8 = 0,2$\n   - Sensor 3: $p_3 = 0,8 \\implies q_3 = 1 - 0,8 = 0,2$\n   - Sensor 4: $p_4 = 0,5 \\implies q_4 = 1 - 0,5 = 0,5$\n2. Evaluasi Semua Sensor Gagal (Pernyataan A):\n   - Karena sensor bekerja saling bebas:\n     $$P(\\text{semua gagal}) = q_1 \\times q_2 \\times q_3 \\times q_4 = 0,1 \\times 0,2 \\times 0,2 \\times 0,5 = 0,002 = 0,2\\%$$\n   - Maka, Pernyataan A bernilai BENAR.\n3. Evaluasi Paling Sedikit Satu Berhasil (Pernyataan B):\n   - Menggunakan prinsip komplemen:\n     $$P(\\text{minimal 1 berhasil}) = 1 - P(\\text{semua gagal}) = 1 - 0,002 = 0,998 = 99,8\\%$$\n   - Maka, Pernyataan B bernilai BENAR.\n4. Evaluasi Hanya Sensor 1 Berhasil (Pernyataan C):\n   - Kejadian Sensor 1 berhasil dan Sensor 2, 3, 4 gagal:\n     $$P = p_1 \\times q_2 \\times q_3 \\times q_4 = 0,9 \\times 0,2 \\times 0,2 \\times 0,5 = 0,018$$\n   - Nilai $0,018 \\ne 0,054$.\n   - Maka, Pernyataan C bernilai SALAH.\n\nKesimpulan Kategori:\n- Pernyataan A: Benar\n- Pernyataan B: Benar\n- Pernyataan C: Salah"
+  },
+  {
+    "id": "matwa-peluang-kejadian-majemuk-10",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-majemuk",
+    "question_type": "KECUKUPAN_DATA",
+    "difficulty": "HOTS",
+    "question_text": "Diberikan dua buah kejadian $A$ dan $B$ dalam suatu ruang sampel $S$ yang sama, dengan $P(B) > 0$.\n\nBerapakah nilai peluang bersyarat $P(A \\mid B)$?\n\nPutuskan apakah pernyataan (1) dan (2) berikut cukup untuk menjawab pertanyaan tersebut:\n(1) Nilai peluang irisan $P(A \\cap B) = 0,18$ dan $P(B) = 0,30$.\n(2) Kejadian $A$ dan $B$ merupakan dua kejadian yang saling bebas (independen), dengan $P(A) = 0,60$.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (2) SAJA tidak cukup."
+      },
+      {
+        "id": "B",
+        "text": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (1) SAJA tidak cukup."
+      },
+      {
+        "id": "C",
+        "text": "DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup."
+      },
+      {
+        "id": "D",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan Pernyataan (2) SAJA cukup."
+      },
+      {
+        "id": "E",
+        "text": "Pernyataan (1) dan Pernyataan (2) tidak cukup untuk menjawab pertanyaan."
+      }
+    ],
+    "correct_answer": "D",
+    "hint": "Gunakan definisi peluang bersyarat $P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}$ untuk Pernyataan (1), dan gunakan sifat dasar dua kejadian saling bebas $P(A \\mid B) = P(A)$ untuk Pernyataan (2).",
+    "explanation": "Langkah-langkah analisis kecukupan data:\nPertanyaan: Berapakah nilai peluang bersyarat $P(A \\mid B)$?\n\n1. Meninjau Pernyataan (1) SAJA ($P(A \\cap B) = 0,18$ dan $P(B) = 0,30$):\n   - Berdasarkan definisi peluang bersyarat:\n     $$P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}$$\n     $$P(A \\mid B) = \\frac{0,18}{0,30} = 0,60$$\n   - Nilai $P(A \\mid B)$ dapat dihitung secara tunggal dan pasti ($0,60$).\n   - Maka, Pernyataan (1) SAJA CUKUP.\n\n2. Meninjau Pernyataan (2) SAJA (Kejadian $A$ dan $B$ saling bebas, dengan $P(A) = 0,60$):\n   - Berdasarkan definisi dan sifat matematis dua kejadian yang saling bebas (independen):\n     $$P(A \\cap B) = P(A) \\cdot P(B)$$\n     $$P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{P(A) \\cdot P(B)}{P(B)} = P(A)$$\n   - Terjadinya kejadian $B$ sama sekali tidak mempengaruhi peluang kejadian $A$.\n   - Karena $P(A) = 0,60$, maka secara otomatis $P(A \\mid B) = 0,60$.\n   - Nilai $P(A \\mid B)$ dapat dihitung secara tunggal dan pasti ($0,60$).\n   - Maka, Pernyataan (2) SAJA CUKUP.\n\nKesimpulan:\nPernyataan (1) SAJA cukup untuk menjawab pertanyaan dan Pernyataan (2) SAJA cukup.\nJadi, pilihan yang tepat adalah D."
+  }
+]
