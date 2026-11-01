@@ -78,7 +78,7 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
     currentQuestion?.question_type || currentQuestion?.type || 'PG';
 
   return (
-    <header className="sticky top-0 z-40 w-full max-w-full bg-white/95 dark:bg-[#0B0F19]/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm transition-colors print:hidden overflow-hidden">
+    <header className="sticky top-0 z-50 w-full max-w-full bg-white/95 dark:bg-[#0B0F19]/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-md transition-colors print:hidden">
       {/* 1. Main Reader Header Toolbar */}
       <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 flex items-center justify-between gap-2 sm:gap-4 border-b border-slate-100 dark:border-slate-800/60">
         {/* Left: Branding & Tagline */}
@@ -190,7 +190,7 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
       </div>
 
       {/* 2. BARIS ATAS (BAB BESAR): Horizontal Scrollable Pills/Tabs */}
-      <div className="bg-slate-50/90 dark:bg-[#0E1424]/90 border-b border-slate-200 dark:border-slate-800 w-full overflow-hidden">
+      <div className="bg-slate-50/90 dark:bg-[#0E1424]/90 border-b border-slate-200 dark:border-slate-800 w-full">
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full flex items-center gap-2 py-1.5">
           <span className="hidden lg:inline-flex text-[11px] font-mono font-bold text-slate-500 uppercase flex-shrink-0">
             Bab:
@@ -217,7 +217,7 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
       </div>
 
       {/* 3. BARIS KEDUA (SUB-BAB): Chips / Buttons Sub-bab yang sedang Aktif */}
-      <div className="bg-white/80 dark:bg-[#090D17]/80 border-b border-slate-200/80 dark:border-slate-800/80 w-full overflow-hidden">
+      <div className="bg-white/80 dark:bg-[#090D17]/80 border-b border-slate-200/80 dark:border-slate-800/80 w-full">
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full flex items-center gap-2 py-1.5">
           <span className="hidden lg:inline-flex text-[11px] font-mono font-bold text-slate-500 uppercase flex-shrink-0">
             Sub-Bab:
@@ -244,7 +244,7 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
       </div>
 
       {/* 4. BARIS KETIGA (NOMOR SOAL & BADGES) */}
-      <div className="bg-slate-50/60 dark:bg-[#0C111E]/60 border-b border-slate-200/60 dark:border-slate-800/60 w-full overflow-hidden">
+      <div className="bg-slate-50/60 dark:bg-[#0C111E]/60 border-b border-slate-200/60 dark:border-slate-800/60 w-full">
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full flex items-center justify-between gap-2 py-1.5">
           {/* Left: Question Number Indicators */}
           <div className="flex items-center gap-1.5 overflow-x-auto py-0.5 scrollbar-none min-w-0 flex-1">
