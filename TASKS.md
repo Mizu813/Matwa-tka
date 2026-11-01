@@ -19,7 +19,7 @@
   - **File Target:** `docs/data/questions/sistem-pertidaksamaan-linear.json`
   - **Cakupan & Skenario Wajib:** Sistem pertidaksamaan linear multivariabel & grafik DHP. Wajib memuat: (1) Standar: menentukan nomor wilayah DHP (I–V) dari sistem pertidaksamaan linear (lengkap dengan inline SVG grafik kartesius); (2) HOTS: sistem pertidaksamaan dengan koefisien berupa variabel ($ax+4y \le 12, 2x-by \ge -6$) yang diuji dengan format Kecukupan Data menggunakan informasi gambar grafik dan titik potong dua garis.
 
-- [ ] **Task 05: `program-linear`**
+- [x] **Task 05: `program-linear`**
   - **File Target:** `docs/data/questions/program-linear.json`
   - **Cakupan & Skenario Wajib:** Optimasi nilai maksimum/minimum program linear. Wajib memuat: (1) Standar: laba maksimum produksi 2 barang (meja & kursi atau 2 jenis kue) dengan kendala bahan baku, jam kerja, atau modal; (2) HOTS (MCMA): minimasi biaya pencampuran 2 jenis logam per ton yang mengandung 3 unsur berbeda (Logam Utama, P, Q dalam kg) dengan syarat batas minimum tonase tiap unsur.
 
