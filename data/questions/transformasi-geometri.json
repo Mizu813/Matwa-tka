@@ -7,11 +7,26 @@
     "difficulty": "STANDAR",
     "question_text": "Sebuah proyektor digital memproyeksikan gambar desain tampak depan suatu gedung ke sebuah layar datar di aula. Gambar asli pada monitor komputer berukuran lebar $24\\text{ cm}$ dan tinggi $15\\text{ cm}$. Ketika proyektor diletakkan pada jarak $2\\text{ meter}$ dari layar, diperoleh bayangan hasil pembesaran (dilatasi) dengan faktor skala $k = 10$. Faktor skala pembesaran proyektor diketahui berbanding lurus dengan jarak proyektor ke layar ($k = c \\cdot x$, dengan $x$ dalam meter).\n\nJika proyektor digeser mundur ke jarak $3{,}6\\text{ meter}$ dari layar, sedangkan layar aula yang tersedia memiliki ukuran lebar $4{,}5\\text{ meter}$ dan tinggi $2{,}5\\text{ meter}$, bagaimana kondisi tampilan proyeksi gambar desain gedung pada layar aula tersebut?",
     "options": [
-      { "id": "A", "text": "Seluruh gambar tertampung utuh pada layar aula dengan sisa ruang vertikal $20\\text{ cm}$." },
-      { "id": "B", "text": "Gambar terpotong pada bagian tinggi (vertikal) sebesar $20\\text{ cm}$, sedangkan seluruh bagian lebar (horizontal) tertampung di layar." },
-      { "id": "C", "text": "Gambar terpotong pada bagian lebar (horizontal) sebesar $18\\text{ cm}$, sedangkan seluruh bagian tinggi tertampung di layar." },
-      { "id": "D", "text": "Gambar terpotong baik pada bagian lebar maupun tinggi masing-masing sebesar $15\\text{ cm}$." },
-      { "id": "E", "text": "Gambar tidak terpotong sama sekali dan tepat memenuhi ukuran layar tanpa sisa ruang." }
+      {
+        "id": "A",
+        "text": "Seluruh gambar tertampung utuh pada layar aula dengan sisa ruang vertikal $20\\text{ cm}$."
+      },
+      {
+        "id": "B",
+        "text": "Gambar terpotong pada bagian tinggi (vertikal) sebesar $20\\text{ cm}$, sedangkan seluruh bagian lebar (horizontal) tertampung di layar."
+      },
+      {
+        "id": "C",
+        "text": "Gambar terpotong pada bagian lebar (horizontal) sebesar $18\\text{ cm}$, sedangkan seluruh bagian tinggi tertampung di layar."
+      },
+      {
+        "id": "D",
+        "text": "Gambar terpotong baik pada bagian lebar maupun tinggi masing-masing sebesar $15\\text{ cm}$."
+      },
+      {
+        "id": "E",
+        "text": "Gambar tidak terpotong sama sekali dan tepat memenuhi ukuran layar tanpa sisa ruang."
+      }
     ],
     "correct_answer": "B",
     "hint": "Cari konstanta perbandingan faktor skala $k$, lalu hitung dimensi bayangan baru (lebar dan tinggi) pada jarak $3{,}6\\text{ meter}$. Bandingkan dengan dimensi fisik layar aula.",
@@ -23,13 +38,28 @@
     "sub_chapter_id": "transformasi-geometri",
     "question_type": "PG",
     "difficulty": "STANDAR",
-    "question_text": "Garis $g$ dengan persamaan $2x - 3y + 6 = 0$ ditranslasikan oleh matriks translasi $T = \\begin{pmatrix} 3 \\\\ -2 \\end{pmatrix}$, kemudian hasilnya dicerminkan terhadap garis $y = x$. Persamaan bayangan akhir garis tersebut adalah ...",
+    "question_text": "Perhatikan ilustrasi pergeseran garis lurus pada bidang Cartesius berikut:\n\n<div class=\"flex justify-center my-4 overflow-x-auto\"><svg viewBox=\"0 0 360 210\" class=\"w-full max-w-md h-auto drop-shadow-md rounded-lg\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"360\" height=\"210\" fill=\"#0f172a\" rx=\"8\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Axes: Origin (150, 130), dx=24 per unit, dy=20 per unit -->\n  <line x1=\"20\" y1=\"130\" x2=\"340\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <line x1=\"150\" y1=\"195\" x2=\"150\" y2=\"15\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <text x=\"345\" y=\"134\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">X</text>\n  <text x=\"146\" y=\"12\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">Y</text>\n  <!-- Line g: 2x - 3y + 6 = 0 -> y = 2/3 x + 2.\n       Points: (-3, 0) -> (78, 130), (0, 2) -> (150, 90), (3, 4) -> (222, 50)\n  -->\n  <line x1=\"50\" y1=\"148\" x2=\"260\" y2=\"28\" stroke=\"#38bdf8\" stroke-width=\"2.2\"/>\n  <text x=\"80\" y=\"115\" fill=\"#38bdf8\" font-size=\"11\" font-family=\"sans-serif\">g: 2x - 3y + 6 = 0</text>\n  <!-- Line g': 2x - 3y - 6 = 0 -> y = 2/3 x - 2.\n       Points: (0, -2) -> (150, 170), (3, 0) -> (222, 130), (6, 2) -> (294, 90)\n  -->\n  <line x1=\"100\" y1=\"203\" x2=\"310\" y2=\"83\" stroke=\"#f59e0b\" stroke-width=\"2.2\"/>\n  <text x=\"235\" y=\"170\" fill=\"#f59e0b\" font-size=\"11\" font-family=\"sans-serif\">g': 2x - 3y - 6 = 0</text>\n  <!-- Translation vector arrow from (0,2) to (3,0) -> (150,90) to (222,130) -->\n  <line x1=\"150\" y1=\"90\" x2=\"222\" y2=\"130\" stroke=\"#ec4899\" stroke-width=\"2\" stroke-dasharray=\"3\"/>\n  <circle cx=\"150\" cy=\"90\" r=\"3.5\" fill=\"#38bdf8\"/>\n  <circle cx=\"222\" cy=\"130\" r=\"3.5\" fill=\"#f59e0b\"/>\n  <text x=\"180\" y=\"105\" fill=\"#ec4899\" font-size=\"11\" font-family=\"sans-serif\" font-weight=\"bold\">T(3, -2)</text>\n</svg></div>\n\nGaris $g$ dengan persamaan $2x - 3y + 6 = 0$ ditranslasikan oleh matriks translasi $T = \\begin{pmatrix} 3 \\\\ -2 \\end{pmatrix}$. Persamaan bayangan garis $g'$ setelah translasi tersebut adalah ...",
     "options": [
-      { "id": "A", "text": "$3x - 2y + 6 = 0$" },
-      { "id": "B", "text": "$3x - 2y - 6 = 0$" },
-      { "id": "C", "text": "$2x + 3y - 6 = 0$" },
-      { "id": "D", "text": "$3x + 2y + 6 = 0$" },
-      { "id": "E", "text": "$2x - 3y + 12 = 0$" }
+      {
+        "id": "A",
+        "text": "$3x - 2y + 6 = 0$"
+      },
+      {
+        "id": "B",
+        "text": "$3x - 2y - 6 = 0$"
+      },
+      {
+        "id": "C",
+        "text": "$2x + 3y - 6 = 0$"
+      },
+      {
+        "id": "D",
+        "text": "$3x + 2y + 6 = 0$"
+      },
+      {
+        "id": "E",
+        "text": "$2x - 3y + 12 = 0$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Gunakan substitusi koordinat: jika titik $(x, y)$ ditranslasi $T = \\binom{a}{b}$, maka $x = x' - a$ dan $y = y' - b$. Untuk refleksi terhadap garis $y = x$, tukarkan $x'$ dengan $y''$ dan $y'$ dengan $x''$.",
@@ -43,11 +73,26 @@
     "difficulty": "HOTS",
     "question_text": "Kurva parabola dengan persamaan $y = x^2 - 4x + 3$ dirotasikan dengan pusat $O(0,0)$ sebesar $90^\\circ$ berlawanan arah putaran jarum jam, kemudian dilanjutkan dengan dilatasi berpusat di $O(0,0)$ dengan faktor skala $k = 2$. Persamaan bayangan kurva tersebut adalah ...",
     "options": [
-      { "id": "A", "text": "$y^2 - 8y + 2x + 12 = 0$" },
-      { "id": "B", "text": "$y^2 + 8y - 2x + 12 = 0$" },
-      { "id": "C", "text": "$x^2 - 8x + 2y + 12 = 0$" },
-      { "id": "D", "text": "$y^2 - 4y + 2x + 6 = 0$" },
-      { "id": "E", "text": "$2y^2 - 8y + x + 12 = 0$" }
+      {
+        "id": "A",
+        "text": "$y^2 - 8y + 2x + 12 = 0$"
+      },
+      {
+        "id": "B",
+        "text": "$y^2 + 8y - 2x + 12 = 0$"
+      },
+      {
+        "id": "C",
+        "text": "$x^2 - 8x + 2y + 12 = 0$"
+      },
+      {
+        "id": "D",
+        "text": "$y^2 - 4y + 2x + 6 = 0$"
+      },
+      {
+        "id": "E",
+        "text": "$2y^2 - 8y + x + 12 = 0$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Tentukan matriks transformasi komposisi $M = M_{\\text{dilatasi}} \\cdot M_{\\text{rotasi}}$, lalu nyatakan $x$ dan $y$ dalam $x'$ dan $y'$ untuk disubstitusikan ke persamaan kurva awal.",
@@ -61,11 +106,26 @@
     "difficulty": "HOTS",
     "question_text": "Lingkaran $L$ dengan persamaan $(x - 2)^2 + (y + 1)^2 = 9$ dicerminkan berturut-turut terhadap garis $x = 4$, kemudian terhadap garis $y = 3$. Hasil bayangan tersebut selanjutnya didilatasikan dengan pusat $(2, 3)$ dan faktor skala $k = -2$. Persamaan lingkaran bayangan akhir adalah ...",
     "options": [
-      { "id": "A", "text": "$x^2 + y^2 + 12x + 10y + 25 = 0$" },
-      { "id": "B", "text": "$x^2 + y^2 - 12x - 10y + 25 = 0$" },
-      { "id": "C", "text": "$x^2 + y^2 + 12x + 10y - 11 = 0$" },
-      { "id": "D", "text": "$x^2 + y^2 - 6x - 5y + 36 = 0$" },
-      { "id": "E", "text": "$x^2 + y^2 + 6x + 5y + 25 = 0$" }
+      {
+        "id": "A",
+        "text": "$x^2 + y^2 + 12x + 10y + 25 = 0$"
+      },
+      {
+        "id": "B",
+        "text": "$x^2 + y^2 - 12x - 10y + 25 = 0$"
+      },
+      {
+        "id": "C",
+        "text": "$x^2 + y^2 + 12x + 10y - 11 = 0$"
+      },
+      {
+        "id": "D",
+        "text": "$x^2 + y^2 - 6x - 5y + 36 = 0$"
+      },
+      {
+        "id": "E",
+        "text": "$x^2 + y^2 + 6x + 5y + 25 = 0$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Transformasikan titik pusat lingkaran $P(a, b)$ langkah demi langkah. Untuk jari-jari, refleksi tidak mengubah jari-jari, sedangkan dilatasi memperbesar jari-jari sebesar $|k|$.",
@@ -77,13 +137,28 @@
     "sub_chapter_id": "transformasi-geometri",
     "question_type": "MCMA",
     "difficulty": "HOTS",
-    "question_text": "Segitiga $ABC$ memiliki titik-titik sudut $A(1, 2)$, $B(4, 2)$, dan $C(1, 6)$. Segitiga tersebut ditranslasikan oleh vektor translasi $T = \\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix}$, kemudian dilanjutkan dengan dilatasi berpusat di titik asal $O(0,0)$ dengan faktor skala negatif $k = -2$ menghasilkan bayangan segitiga $A'B'C'$.\n\nTentukan semua pernyataan berikut yang bernilai BENAR! (Pilih semua opsi yang tepat)",
+    "question_text": "Perhatikan gambar refleksi bangun segitiga terhadap sumbu Y pada koordinat Cartesius berikut:\n\n<div class=\"flex justify-center my-4 overflow-x-auto\"><svg viewBox=\"0 0 360 210\" class=\"w-full max-w-md h-auto drop-shadow-md rounded-lg\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"360\" height=\"210\" fill=\"#0f172a\" rx=\"8\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Axes: Center Origin (180, 170), dx=25 per unit, dy=22 per unit -->\n  <line x1=\"20\" y1=\"170\" x2=\"340\" y2=\"170\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <line x1=\"180\" y1=\"200\" x2=\"180\" y2=\"15\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n  <text x=\"345\" y=\"174\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">X</text>\n  <text x=\"185\" y=\"18\" fill=\"#f59e0b\" font-size=\"11\" font-family=\"sans-serif\" font-weight=\"bold\">Cermin: Sumbu Y</text>\n  <!-- Original Triangle ABC: A(1,2)->(205,126), B(4,2)->(280,126), C(1,6)->(205,38) -->\n  <polygon points=\"205,126 280,126 205,38\" fill=\"#38bdf8\" fill-opacity=\"0.25\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n  <circle cx=\"205\" cy=\"126\" r=\"3.5\" fill=\"#38bdf8\"/>\n  <text x=\"210\" y=\"138\" fill=\"#f8fafc\" font-size=\"10\" font-family=\"sans-serif\">A(1,2)</text>\n  <circle cx=\"280\" cy=\"126\" r=\"3.5\" fill=\"#38bdf8\"/>\n  <text x=\"282\" y=\"138\" fill=\"#f8fafc\" font-size=\"10\" font-family=\"sans-serif\">B(4,2)</text>\n  <circle cx=\"205\" cy=\"38\" r=\"3.5\" fill=\"#38bdf8\"/>\n  <text x=\"210\" y=\"35\" fill=\"#f8fafc\" font-size=\"10\" font-family=\"sans-serif\">C(1,6)</text>\n  <!-- Reflected Triangle A'B'C': A'(-1,2)->(155,126), B'(-4,2)->(80,126), C'(-1,6)->(155,38) -->\n  <polygon points=\"155,126 80,126 155,38\" fill=\"#10b981\" fill-opacity=\"0.25\" stroke=\"#10b981\" stroke-width=\"2\"/>\n  <circle cx=\"155\" cy=\"126\" r=\"3.5\" fill=\"#10b981\"/>\n  <text x=\"115\" y=\"138\" fill=\"#f8fafc\" font-size=\"10\" font-family=\"sans-serif\">A'(-1,2)</text>\n  <circle cx=\"80\" cy=\"126\" r=\"3.5\" fill=\"#10b981\"/>\n  <text x=\"45\" y=\"138\" fill=\"#f8fafc\" font-size=\"10\" font-family=\"sans-serif\">B'(-4,2)</text>\n  <circle cx=\"155\" cy=\"38\" r=\"3.5\" fill=\"#10b981\"/>\n  <text x=\"110\" y=\"35\" fill=\"#f8fafc\" font-size=\"10\" font-family=\"sans-serif\">C'(-1,6)</text>\n</svg></div>\n\nSegitiga $ABC$ memiliki titik-titik sudut $A(1, 2)$, $B(4, 2)$, dan $C(1, 6)$. Segitiga tersebut dicerminkan terhadap sumbu Y menghasilkan bayangan $\\triangle A'B'C'$, kemudian bayangan tersebut ditranslasikan oleh $T = \\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix}$ menghasilkan $\\triangle A''B''C''$. Pilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR**!",
     "options": [
-      { "id": "A", "text": "Koordinat ketiga titik sudut bayangannya adalah $A'(-6, 2)$, $B'(-12, 2)$, dan $C'(-6, -6)$." },
-      { "id": "B", "text": "Panjang sisi terpanjang segitiga bayangan ($B'C'$) adalah $10\\text{ satuan}$." },
-      { "id": "C", "text": "Luas segitiga bayangan hasil transformasi adalah $24\\text{ satuan luas}$." },
-      { "id": "D", "text": "Luas segitiga bayangan bernilai $-24\\text{ satuan luas}$ karena faktor skala dilatasi bernilai negatif." },
-      { "id": "E", "text": "Panjang sisi miring segitiga bayangan tetap $5\\text{ satuan}$ karena translasi tidak merubah ukuran geometri." }
+      {
+        "id": "A",
+        "text": "Koordinat ketiga titik sudut bayangannya adalah $A'(-6, 2)$, $B'(-12, 2)$, dan $C'(-6, -6)$."
+      },
+      {
+        "id": "B",
+        "text": "Panjang sisi terpanjang segitiga bayangan ($B'C'$) adalah $10\\text{ satuan}$."
+      },
+      {
+        "id": "C",
+        "text": "Luas segitiga bayangan hasil transformasi adalah $24\\text{ satuan luas}$."
+      },
+      {
+        "id": "D",
+        "text": "Luas segitiga bayangan bernilai $-24\\text{ satuan luas}$ karena faktor skala dilatasi bernilai negatif."
+      },
+      {
+        "id": "E",
+        "text": "Panjang sisi miring segitiga bayangan tetap $5\\text{ satuan}$ karena translasi tidak merubah ukuran geometri."
+      }
     ],
     "correct_answer": [
       "A",
@@ -101,11 +176,26 @@
     "difficulty": "HOTS",
     "question_text": "Jajar genjang $KLMN$ memiliki koordinat titik-titik sudut $K(1, 1)$, $L(4, 1)$, $M(5, 3)$, dan $N(2, 3)$. Bangun tersebut ditransformasikan oleh matriks $M = \\begin{pmatrix} 2 & 1 \\\\ 1 & 3 \\end{pmatrix}$ menghasilkan bayangan $K'L'M'N'$.\n\nTentukan semua pernyataan berikut yang bernilai BENAR! (Pilih semua opsi yang tepat)",
     "options": [
-      { "id": "A", "text": "Determinan matriks transformasi adalah $5$ sehingga luas bangun bayangan menjadi $5$ kali luas bangun mula-mula." },
-      { "id": "B", "text": "Luas jajar genjang bayangan hasil transformasi adalah $30\\text{ satuan luas}$." },
-      { "id": "C", "text": "Koordinat bayangan titik $K$ dan titik $L$ masing-masing adalah $K'(3, 4)$ dan $L'(9, 7)$." },
-      { "id": "D", "text": "Luas jajar genjang bayangan hasil transformasi adalah $15\\text{ satuan luas}$." },
-      { "id": "E", "text": "Koordinat bayangan titik $N$ adalah $N'(11, 7)$." }
+      {
+        "id": "A",
+        "text": "Determinan matriks transformasi adalah $5$ sehingga luas bangun bayangan menjadi $5$ kali luas bangun mula-mula."
+      },
+      {
+        "id": "B",
+        "text": "Luas jajar genjang bayangan hasil transformasi adalah $30\\text{ satuan luas}$."
+      },
+      {
+        "id": "C",
+        "text": "Koordinat bayangan titik $K$ dan titik $L$ masing-masing adalah $K'(3, 4)$ dan $L'(9, 7)$."
+      },
+      {
+        "id": "D",
+        "text": "Luas jajar genjang bayangan hasil transformasi adalah $15\\text{ satuan luas}$."
+      },
+      {
+        "id": "E",
+        "text": "Koordinat bayangan titik $N$ adalah $N'(11, 7)$."
+      }
     ],
     "correct_answer": [
       "A",
@@ -123,11 +213,26 @@
     "difficulty": "STANDAR",
     "question_text": "Diberikan titik $P(-3, 5)$ pada bidang koordinat Kartesius. Tinjau berbagai transformasi tunggal maupun komposisi berikut pada titik $P$.\n\nTentukan semua pernyataan berikut yang bernilai BENAR! (Pilih semua opsi yang tepat)",
     "options": [
-      { "id": "A", "text": "Bayangan titik $P$ oleh pencerminan terhadap garis $y = -x$ adalah $(-5, 3)$." },
-      { "id": "B", "text": "Bayangan titik $P$ oleh rotasi $180^\\circ$ berpusat di $O(0,0)$ adalah $(3, -5)$." },
-      { "id": "C", "text": "Bayangan titik $P$ oleh pencerminan terhadap sumbu-$X$ dilanjutkan pencerminan terhadap sumbu-$Y$ berkoordinat $(3, -5)$." },
-      { "id": "D", "text": "Bayangan titik $P$ oleh pencerminan terhadap sumbu-$Y$ adalah $(-3, -5)$." },
-      { "id": "E", "text": "Bayangan titik $P$ oleh pencerminan terhadap garis $y = x$ adalah $(5, 3)$." }
+      {
+        "id": "A",
+        "text": "Bayangan titik $P$ oleh pencerminan terhadap garis $y = -x$ adalah $(-5, 3)$."
+      },
+      {
+        "id": "B",
+        "text": "Bayangan titik $P$ oleh rotasi $180^\\circ$ berpusat di $O(0,0)$ adalah $(3, -5)$."
+      },
+      {
+        "id": "C",
+        "text": "Bayangan titik $P$ oleh pencerminan terhadap sumbu-$X$ dilanjutkan pencerminan terhadap sumbu-$Y$ berkoordinat $(3, -5)$."
+      },
+      {
+        "id": "D",
+        "text": "Bayangan titik $P$ oleh pencerminan terhadap sumbu-$Y$ adalah $(-3, -5)$."
+      },
+      {
+        "id": "E",
+        "text": "Bayangan titik $P$ oleh pencerminan terhadap garis $y = x$ adalah $(5, 3)$."
+      }
     ],
     "correct_answer": [
       "A",
@@ -145,9 +250,18 @@
     "difficulty": "HOTS",
     "question_text": "Diberikan titik $A(2, -3)$ pada bidang koordinat. Tinjau komposisi pencerminan terhadap dua garis vertikal yang saling sejajar, yaitu garis $x = 1$ dan garis $x = 5$.\n\nTentukan kebenaran dari masing-masing pernyataan berikut (Benar / Salah)!",
     "options": [
-      { "id": "A", "text": "Komposisi pencerminan terhadap garis $x = 1$ dilanjutkan terhadap garis $x = 5$ pada titik sembarang ekuivalen dengan translasi horizontal tunggal sebesar $T = \\begin{pmatrix} 8 \\\\ 0 \\end{pmatrix}$." },
-      { "id": "B", "text": "Jika urutan pencerminan dibalik (dicerminkan terhadap garis $x = 5$ kemudian terhadap garis $x = 1$), bayangan akhir titik $A(2, -3)$ adalah $(-6, -3)$." },
-      { "id": "C", "text": "Pencerminan terhadap garis $x = 1$ dilanjutkan garis $x = 5$ menghasilkan bayangan yang sama persis jika urutan pencerminannya dibalik." }
+      {
+        "id": "A",
+        "text": "Komposisi pencerminan terhadap garis $x = 1$ dilanjutkan terhadap garis $x = 5$ pada titik sembarang ekuivalen dengan translasi horizontal tunggal sebesar $T = \\begin{pmatrix} 8 \\\\ 0 \\end{pmatrix}$."
+      },
+      {
+        "id": "B",
+        "text": "Jika urutan pencerminan dibalik (dicerminkan terhadap garis $x = 5$ kemudian terhadap garis $x = 1$), bayangan akhir titik $A(2, -3)$ adalah $(-6, -3)$."
+      },
+      {
+        "id": "C",
+        "text": "Pencerminan terhadap garis $x = 1$ dilanjutkan garis $x = 5$ menghasilkan bayangan yang sama persis jika urutan pencerminannya dibalik."
+      }
     ],
     "correct_answer": {
       "A": "Benar",
@@ -165,9 +279,18 @@
     "difficulty": "HOTS",
     "question_text": "Tinjau sifat-sifat geometris dari transformasi rotasi pada bidang dua dimensi.\n\nTentukan kebenaran dari masing-masing pernyataan berikut (Benar / Salah)!",
     "options": [
-      { "id": "A", "text": "Dua rotasi berurutan dengan pusat yang sama $O(0,0)$ masing-masing sebesar $45^\\circ$ berlawanan arah jarum jam ekuivalen dengan satu rotasi tunggal $R[O, 90^\\circ]$ yang memetakan titik $P(4, 2)$ menjadi $(-2, 4)$." },
-      { "id": "B", "text": "Rotasi titik $Q(3, 5)$ sebesar $90^\\circ$ searah jarum jam dengan pusat $M(1, 2)$ menghasilkan bayangan titik $Q'(4, 0)$." },
-      { "id": "C", "text": "Transformasi rotasi terhadap sembarang pusat selalu mengubah luas suatu bangun datar segitiga menjadi lebih besar jika sudut rotasinya melebihi $90^\\circ$." }
+      {
+        "id": "A",
+        "text": "Dua rotasi berurutan dengan pusat yang sama $O(0,0)$ masing-masing sebesar $45^\\circ$ berlawanan arah jarum jam ekuivalen dengan satu rotasi tunggal $R[O, 90^\\circ]$ yang memetakan titik $P(4, 2)$ menjadi $(-2, 4)$."
+      },
+      {
+        "id": "B",
+        "text": "Rotasi titik $Q(3, 5)$ sebesar $90^\\circ$ searah jarum jam dengan pusat $M(1, 2)$ menghasilkan bayangan titik $Q'(4, 0)$."
+      },
+      {
+        "id": "C",
+        "text": "Transformasi rotasi terhadap sembarang pusat selalu mengubah luas suatu bangun datar segitiga menjadi lebih besar jika sudut rotasinya melebihi $90^\\circ$."
+      }
     ],
     "correct_answer": {
       "A": "Benar",
@@ -185,11 +308,26 @@
     "difficulty": "HOTS",
     "question_text": "Garis $g$ dengan persamaan $y = 2x + c$ ditransformasikan oleh dilatasi yang berpusat di titik asal $O(0,0)$ dengan faktor skala $k$ ($k \\neq 0$) menghasilkan garis bayangan $g'$. Apakah garis bayangan $g'$ memotong sumbu-$Y$ di titik $(0, 12)$?\n\nPutuskan apakah pernyataan (1) dan (2) berikut cukup untuk menjawab pertanyaan tersebut:\n(1) Nilai konstanta garis mula-mula adalah $c = 4$.\n(2) Faktor skala dilatasi bernilai $k = 3$.",
     "options": [
-      { "id": "A", "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup." },
-      { "id": "B", "text": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup." },
-      { "id": "C", "text": "DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup." },
-      { "id": "D", "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan pernyataan (2) SAJA cukup." },
-      { "id": "E", "text": "Pernyataan (1) dan pernyataan (2) tidak cukup untuk menjawab pertanyaan." }
+      {
+        "id": "A",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup."
+      },
+      {
+        "id": "B",
+        "text": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup."
+      },
+      {
+        "id": "C",
+        "text": "DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup."
+      },
+      {
+        "id": "D",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan pernyataan (2) SAJA cukup."
+      },
+      {
+        "id": "E",
+        "text": "Pernyataan (1) dan pernyataan (2) tidak cukup untuk menjawab pertanyaan."
+      }
     ],
     "correct_answer": "C",
     "hint": "Tentukan persamaan garis bayangan $g'$ dengan mensubstitusikan $x = \\frac{x'}{k}$ dan $y = \\frac{y'}{k}$. Titik potong terhadap sumbu-$Y$ diperoleh saat $x' = 0$.",

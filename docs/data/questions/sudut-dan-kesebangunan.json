@@ -5,13 +5,28 @@
     "sub_chapter_id": "sudut-dan-kesebangunan",
     "question_type": "PG",
     "difficulty": "STANDAR",
-    "question_text": "Sebuah rak buku dinding dekoratif dibuat berbentuk segitiga sama kaki $ABC$ dengan alas mendatar $AB$ berukuran 90 cm dan tinggi dari titik puncak $C$ ke alas $AB$ adalah 120 cm. Rak tersebut dilengkapi dengan sekat papan horizontal $DE$ (sejajar dengan alas $AB$) yang dipasang pada jarak 40 cm diukur dari puncak $C$ ke bawah.\n\nBerdasarkan prinsip kesebangunan segitiga, panjang papan sekat $DE$ tersebut adalah ...",
+    "question_text": "Perhatikan sketsa rancangan rangka rak buku segitiga sama kaki berikut:\n\n<div class=\"flex justify-center my-4 overflow-x-auto\"><svg viewBox=\"0 0 340 210\" class=\"w-full max-w-sm h-auto drop-shadow-md rounded-lg\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"340\" height=\"210\" fill=\"#0f172a\" rx=\"8\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Triangle A(170, 30), B(50, 170), C(290, 170) -->\n  <polygon points=\"170,30 50,170 290,170\" fill=\"#38bdf8\" fill-opacity=\"0.15\" stroke=\"#38bdf8\" stroke-width=\"2.5\"/>\n  <!-- Height line AD: D(170, 170) -->\n  <line x1=\"170\" y1=\"30\" x2=\"170\" y2=\"170\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"4\"/>\n  <!-- Right-angle mark at D -->\n  <rect x=\"170\" y=\"155\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"1.2\"/>\n  <!-- Vertices labels -->\n  <text x=\"170\" y=\"22\" fill=\"#f8fafc\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"bold\">A</text>\n  <text x=\"35\" y=\"180\" fill=\"#f8fafc\" font-size=\"12\" font-family=\"sans-serif\" font-weight=\"bold\">B</text>\n  <text x=\"300\" y=\"180\" fill=\"#f8fafc\" font-size=\"12\" font-family=\"sans-serif\" font-weight=\"bold\">C</text>\n  <text x=\"170\" y=\"190\" fill=\"#f59e0b\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text>\n  <!-- Side length labels -->\n  <text x=\"95\" y=\"95\" fill=\"#38bdf8\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\">50 cm</text>\n  <text x=\"245\" y=\"95\" fill=\"#38bdf8\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\">50 cm</text>\n  <text x=\"170\" y=\"105\" fill=\"#f59e0b\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"end\">t = 40 cm</text>\n  <text x=\"170\" y=\"202\" fill=\"#94a3b8\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\">Alas BC = 60 cm (BD = DC = 30 cm)</text>\n</svg></div>\n\nSebuah rak buku dinding dekoratif dibuat berbentuk segitiga sama kaki $ABC$ dengan panjang $AB = AC = 50\\text{ cm}$ dan panjang alas $BC = 60\\text{ cm}$. Untuk memperkuat struktur rak, sebuah papan sekat horizontal dipasang sejajar dengan alas $BC$ pada jarak $16\\text{ cm}$ dari titik sudut puncak $A$. Panjang papan sekat horizontal tersebut adalah ...",
     "options": [
-      { "id": "A", "text": "30 cm" },
-      { "id": "B", "text": "35 cm" },
-      { "id": "C", "text": "45 cm" },
-      { "id": "D", "text": "25 cm" },
-      { "id": "E", "text": "40 cm" }
+      {
+        "id": "A",
+        "text": "30 cm"
+      },
+      {
+        "id": "B",
+        "text": "35 cm"
+      },
+      {
+        "id": "C",
+        "text": "45 cm"
+      },
+      {
+        "id": "D",
+        "text": "25 cm"
+      },
+      {
+        "id": "E",
+        "text": "40 cm"
+      }
     ],
     "correct_answer": "A",
     "hint": "Gunakan perbandingan kesebangunan antara segitiga kecil bagian atas $\\triangle CDE$ dan segitiga utuh $\\triangle CAB$: perbandingan sisi alas sebanding dengan perbandingan tinggi segitiga, yaitu $\\frac{DE}{AB} = \\frac{t_1}{t_2}$.",
@@ -56,13 +71,28 @@
     "sub_chapter_id": "sudut-dan-kesebangunan",
     "question_type": "PG",
     "difficulty": "STANDAR",
-    "question_text": "Dua garis sejajar dipotong oleh sebuah garis transversal. Sepasang sudut luar berseberangan yang terbentuk memiliki ukuran sudut masing-masing $(3x + 25)^\\circ$ dan $(5x - 15)^\\circ$.\n\nBesar sudut dalam sepihak yang bersesuaian dengan sudut pertama adalah ...",
+    "question_text": "Perhatikan konfigurasi dua garis sejajar yang dipotong garis transversal berikut:\n\n<div class=\"flex justify-center my-4 overflow-x-auto\"><svg viewBox=\"0 0 360 200\" class=\"w-full max-w-md h-auto drop-shadow-md rounded-lg\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"360\" height=\"200\" fill=\"#0f172a\" rx=\"8\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Two parallel lines -->\n  <line x1=\"30\" y1=\"65\" x2=\"330\" y2=\"65\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n  <text x=\"338\" y=\"69\" fill=\"#38bdf8\" font-size=\"12\" font-family=\"sans-serif\">m</text>\n  <line x1=\"30\" y1=\"135\" x2=\"330\" y2=\"135\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n  <text x=\"338\" y=\"139\" fill=\"#38bdf8\" font-size=\"12\" font-family=\"sans-serif\">n</text>\n  <!-- Transversal line: angle ~ 60 deg, passes (120, 20) to (240, 180) -->\n  <line x1=\"100\" y1=\"15\" x2=\"260\" y2=\"185\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n  <text x=\"268\" y=\"185\" fill=\"#f59e0b\" font-size=\"12\" font-family=\"sans-serif\">k</text>\n  <!-- Alternate exterior angles arcs -->\n  <!-- Top angle: (3x + 15)° exterior top-left -->\n  <path d=\"M 125,40 A 25 25 0 0 1 142,65\" fill=\"none\" stroke=\"#ec4899\" stroke-width=\"2\"/>\n  <text x=\"65\" y=\"45\" fill=\"#ec4899\" font-size=\"11\" font-family=\"sans-serif\" font-weight=\"bold\">(3x + 15)°</text>\n  <!-- Bottom angle: (5x - 25)° exterior bottom-right -->\n  <path d=\"M 235,160 A 25 25 0 0 1 218,135\" fill=\"none\" stroke=\"#ec4899\" stroke-width=\"2\"/>\n  <text x=\"245\" y=\"160\" fill=\"#ec4899\" font-size=\"11\" font-family=\"sans-serif\" font-weight=\"bold\">(5x - 25)°</text>\n  <text x=\"180\" y=\"192\" fill=\"#94a3b8\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">Garis m || n dipotong garis transversal k</text>\n</svg></div>\n\nDua garis sejajar dipotong oleh sebuah garis transversal. Sepasang sudut luar berseberangan dinyatakan oleh $(3x + 15)^\\circ$ dan $(5x - 25)^\\circ$. Nilai dari sudut dalam sepihak yang bersesuaian dengan sudut tersebut adalah ...",
     "options": [
-      { "id": "A", "text": "$95^\\circ$" },
-      { "id": "B", "text": "$85^\\circ$" },
-      { "id": "C", "text": "$105^\\circ$" },
-      { "id": "D", "text": "$75^\\circ$" },
-      { "id": "E", "text": "$115^\\circ$" }
+      {
+        "id": "A",
+        "text": "$95^\\circ$"
+      },
+      {
+        "id": "B",
+        "text": "$85^\\circ$"
+      },
+      {
+        "id": "C",
+        "text": "$105^\\circ$"
+      },
+      {
+        "id": "D",
+        "text": "$75^\\circ$"
+      },
+      {
+        "id": "E",
+        "text": "$115^\\circ$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Sudut-sudut luar berseberangan memiliki ukuran yang sama besar: $(3x + 25)^\\circ = (5x - 15)^\\circ$. Sudut dalam sepihak saling berpelurus (jumlahnya $180^\\circ$).",
@@ -74,13 +104,28 @@
     "sub_chapter_id": "sudut-dan-kesebangunan",
     "question_type": "PG",
     "difficulty": "HOTS",
-    "question_text": "Diberikan segitiga siku-siku $ABC$ yang siku-siku di titik $A$. Dari titik sudut $A$ ditarik garis tinggi $AD$ yang tegak lurus pada sisi miring (*hipotenusa*) $BC$, dengan titik $D$ terletak pada sisi $BC$. Jika panjang segmen garis proyeksi $BD = 9$ cm dan $CD = 16$ cm, maka keliling dari segitiga $ABC$ tersebut adalah ...",
+    "question_text": "Perhatikan gambar segitiga siku-siku $ABC$ dengan garis tinggi $AD$ berikut:\n\n<div class=\"flex justify-center my-4 overflow-x-auto\"><svg viewBox=\"0 0 340 210\" class=\"w-full max-w-sm h-auto drop-shadow-md rounded-lg\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"340\" height=\"210\" fill=\"#0f172a\" rx=\"8\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Triangle: B(40, 160), C(300, 160), A(120, 50) -->\n  <polygon points=\"40,160 300,160 120,50\" fill=\"#6366f1\" fill-opacity=\"0.15\" stroke=\"#6366f1\" stroke-width=\"2.5\"/>\n  <!-- Height line AD: D(120, 160) -->\n  <line x1=\"120\" y1=\"50\" x2=\"120\" y2=\"160\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n  <!-- Right angles -->\n  <rect x=\"120\" y=\"145\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"1.2\"/>\n  <!-- Vertex labels -->\n  <text x=\"120\" y=\"40\" fill=\"#f8fafc\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"bold\">A</text>\n  <text x=\"25\" y=\"170\" fill=\"#f8fafc\" font-size=\"12\" font-family=\"sans-serif\" font-weight=\"bold\">B</text>\n  <text x=\"310\" y=\"170\" fill=\"#f8fafc\" font-size=\"12\" font-family=\"sans-serif\" font-weight=\"bold\">C</text>\n  <text x=\"120\" y=\"180\" fill=\"#f59e0b\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text>\n  <!-- Segment length labels -->\n  <text x=\"75\" y=\"180\" fill=\"#38bdf8\" font-size=\"11\" font-family=\"sans-serif\">BD = 9 cm</text>\n  <text x=\"200\" y=\"180\" fill=\"#38bdf8\" font-size=\"11\" font-family=\"sans-serif\">CD = 16 cm</text>\n  <text x=\"130\" y=\"110\" fill=\"#f59e0b\" font-size=\"11\" font-family=\"sans-serif\">AD</text>\n</svg></div>\n\nDiberikan segitiga siku-siku $ABC$ yang siku-siku di titik $A$. Dari titik sudut $A$ ditarik garis tinggi $AD$ yang tegak lurus hipotenusa $BC$. Jika panjang segmen garis $BD = 9\\text{ cm}$ dan $CD = 16\\text{ cm}$, maka panjang garis tinggi $AD$ dan keliling $\\triangle ABC$ berturut-turut adalah ...",
     "options": [
-      { "id": "A", "text": "60 cm" },
-      { "id": "B", "text": "54 cm" },
-      { "id": "C", "text": "65 cm" },
-      { "id": "D", "text": "70 cm" },
-      { "id": "E", "text": "50 cm" }
+      {
+        "id": "A",
+        "text": "60 cm"
+      },
+      {
+        "id": "B",
+        "text": "54 cm"
+      },
+      {
+        "id": "C",
+        "text": "65 cm"
+      },
+      {
+        "id": "D",
+        "text": "70 cm"
+      },
+      {
+        "id": "E",
+        "text": "50 cm"
+      }
     ],
     "correct_answer": "A",
     "hint": "Gunakan teorema proyeksi kesebangunan segitiga siku-siku (teorema air mancur Euclid): $AB^2 = BD \\cdot BC$ dan $AC^2 = CD \\cdot BC$ dengan $BC = BD + CD$.",
@@ -109,15 +154,20 @@
       {
         "id": "D",
         "text": "Dua segitiga sembarang pasti sebangun apabila kedua segitiga tersebut memiliki luas daerah yang sama besar."
+      },
+      {
+        "id": "E",
+        "text": "Dua bangun datar yang kongruen sudah pasti sebangun dengan faktor perbesaran skala $k = 1$."
       }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Ingat bahwa kesebangunan mempertahankan bentuk (*shape*) dan sudut, sedangkan ukuran (*size*) dapat berubah. Kesamaan luas tidak menjamin kesamaan bentuk.",
-    "explanation": "Analisis aksioma dan teorema geometri:\n\n1. **Definisi Kesebangunan (Pernyataan A):**\n   Dua poligon sebangun jika dan hanya jika sudut-sudut yang bersesuaian kongruen dan sisi-sisi yang bersesuaian proporsional. Pernyataan A bernilai **BENAR**.\n\n2. **Relasi Kongruensi dan Kesebangunan (Pernyataan B):**\n   Kekongruenan adalah kasus khusus dari kesebangunan di mana faktor skala pembesaran/pengecilannya adalah tepat $k = 1$. Sebaliknya, bangun yang sebangun dapat memiliki faktor skala $k \\neq 1$ sehingga tidak kongruen. Pernyataan B bernilai **BENAR**.\n\n3. **Invariansi Sudut dan Trigonometri terhadap Dilatasi (Pernyataan C):**\n   Transformasi kesebangunan/dilatasi mempertahankan besar sudut (konformal). Oleh karena sudut tidak berubah, rasio trigonometri (seperti $\\sin, \\cos, \\tan$) yang hanya bergantung pada besar sudut lancip juga bernilai konstan. Pernyataan C bernilai **BENAR**.\n\n4. **Analisis Luas dan Kesebangunan (Pernyataan D):**\n   Dua segitiga dapat memiliki luas yang sama tanpa sebangun. Contoh: segitiga berukuran alas 4 dan tinggi 3 (luas 6) tidak sebangun dengan segitiga berukuran alas 6 dan tinggi 2 (luas 6). Pernyataan D bernilai **SALAH**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+    "explanation": "Analisis aksioma dan teorema geometri:\n\n1. **Definisi Kesebangunan (Pernyataan A):**\n   Dua poligon sebangun jika dan hanya jika sudut-sudut yang bersesuaian kongruen dan sisi-sisi yang bersesuaian proporsional. Pernyataan A bernilai **BENAR**.\n\n2. **Relasi Kongruensi dan Kesebangunan (Pernyataan B):**\n   Kekongruenan adalah kasus khusus dari kesebangunan di mana faktor skala pembesaran/pengecilannya adalah tepat $k = 1$. Sebaliknya, bangun yang sebangun dapat memiliki faktor skala $k \\neq 1$ sehingga tidak kongruen. Pernyataan B bernilai **BENAR**.\n\n3. **Invariansi Sudut dan Trigonometri terhadap Dilatasi (Pernyataan C):**\n   Transformasi kesebangunan/dilatasi mempertahankan besar sudut (konformal). Oleh karena sudut tidak berubah, rasio trigonometri (seperti $\\sin, \\cos, \\tan$) yang hanya bergantung pada besar sudut lancip juga bernilai konstan. Pernyataan C bernilai **BENAR**.\n\n4. **Analisis Luas dan Kesebangunan (Pernyataan D):**\n   Dua segitiga dapat memiliki luas yang sama tanpa sebangun. Contoh: segitiga berukuran alas 4 dan tinggi 3 (luas 6) tidak sebangun dengan segitiga berukuran alas 6 dan tinggi 2 (luas 6). Pernyataan D bernilai **SALAH**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Kekongruenan adalah kasus khusus dari kesebangunan dengan rasio panjang sisi senilai $1 : 1$."
   },
   {
     "id": "matwa-sudut-dan-kesebangunan-06",
@@ -142,15 +192,20 @@
       {
         "id": "D",
         "text": "Kedua diagonal trapesium berpotongan tidak tegak lurus dan membentuk sudut lancip $60^\\circ$."
+      },
+      {
+        "id": "E",
+        "text": "Kedua diagonal pada trapesium sama kaki memiliki panjang yang sama ($AC = BD$)."
       }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Gunakan sifat simetri trapesium sama kaki: $\\angle ABD = \\angle BAC = 45^\\circ$, sehingga segitiga $\\triangle ABE$ siku-siku sama kaki dengan $\\angle AEB = 90^\\circ$. Pada segitiga siku-siku $\\triangle BCE$, gunakan $\\angle ACB = 30^\\circ$ untuk mencari $CE$ dan sisi miring $BC$.",
-    "explanation": "Langkah-langkah evaluasi trapesium sama kaki sudut khusus:\n\n1. **Analisis Sudut dan Perpotongan Diagonal:**\n   - Karena trapesium sama kaki ($AD = BC$), maka sudut alas $\\angle DAB = \\angle ABC = 105^\\circ$.\n   - Karena simetris, $\\angle ABD = \\angle BAC = 45^\\circ$.\n   - Pada segitiga $\\triangle ABE$:\n     $$\\angle AEB = 180^\\circ - (\\angle EAB + \\angle EBA) = 180^\\circ - (45^\\circ + 45^\\circ) = 90^\\circ$$\n     Kedua diagonal berpotongan **tegak lurus** ($AC \\perp BD$).\n   - Sudut $\\angle ACB$ pada $\\triangle ABC$:\n     $$\\angle ACB = 180^\\circ - (\\angle BAC + \\angle ABC) = 180^\\circ - (45^\\circ + 105^\\circ) = 180^\\circ - 150^\\circ = 30^\\circ$$\n   Pernyataan A bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\n2. **Menghitung Panjang Sisi Miring $BC$ dan $AD$:**\n   - Pada segitiga siku-siku sama kaki $\\triangle ABE$ ($AE = BE$ dan $\\angle AEB = 90^\\circ$):\n     $$AE = BE = 2\\text{ cm}$$\n   - Segitiga $\\triangle BCE$ siku-siku di $E$ (karena diagonal saling tegak lurus, $\\angle BEC = 90^\\circ$).\n     Dengan $\\angle ECB = \\angle ACB = 30^\\circ$:\n     $$\\tan 30^\\circ = \\frac{BE}{CE} \\implies \\frac{1}{\\sqrt{3}} = \\frac{2}{CE} \\implies CE = 2\\sqrt{3}\\text{ cm}$$\n   - Panjang sisi miring $BC$ dihitung dengan Pythagoras pada $\\triangle BCE$:\n     $$BC = \\sqrt{BE^2 + CE^2} = \\sqrt{2^2 + (2\\sqrt{3})^2} = \\sqrt{4 + 12} = \\sqrt{16} = 4\\text{ cm}$$\n   Karena sama kaki, $AD = BC = 4\\text{ cm}$.\n   Pernyataan B bernilai **BENAR**.\n\n3. **Menghitung Luas Trapesium:**\n   Karena kedua diagonal saling tegak lurus ($d_1 \\perp d_2$):\n   - Panjang diagonal $AC = AE + CE = 2 + 2\\sqrt{3}\\text{ cm}$.\n   - Karena sama kaki, $BD = AC = 2 + 2\\sqrt{3}\\text{ cm}$.\n   - Rumus luas bangun datar dengan diagonal saling tegak lurus:\n     $$L = \\frac{1}{2} \\cdot d_1 \\cdot d_2 = \\frac{1}{2} \\cdot AC \\cdot BD = \\frac{1}{2}(2 + 2\\sqrt{3})^2$$\n     $$L = \\frac{1}{2}\\big(4 + 8\\sqrt{3} + 12\\big) = \\frac{1}{2}\\big(16 + 8\\sqrt{3}\\big) = 8 + 4\\sqrt{3}\\text{ cm}^2$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+    "explanation": "Langkah-langkah evaluasi trapesium sama kaki sudut khusus:\n\n1. **Analisis Sudut dan Perpotongan Diagonal:**\n   - Karena trapesium sama kaki ($AD = BC$), maka sudut alas $\\angle DAB = \\angle ABC = 105^\\circ$.\n   - Karena simetris, $\\angle ABD = \\angle BAC = 45^\\circ$.\n   - Pada segitiga $\\triangle ABE$:\n     $$\\angle AEB = 180^\\circ - (\\angle EAB + \\angle EBA) = 180^\\circ - (45^\\circ + 45^\\circ) = 90^\\circ$$\n     Kedua diagonal berpotongan **tegak lurus** ($AC \\perp BD$).\n   - Sudut $\\angle ACB$ pada $\\triangle ABC$:\n     $$\\angle ACB = 180^\\circ - (\\angle BAC + \\angle ABC) = 180^\\circ - (45^\\circ + 105^\\circ) = 180^\\circ - 150^\\circ = 30^\\circ$$\n   Pernyataan A bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\n2. **Menghitung Panjang Sisi Miring $BC$ dan $AD$:**\n   - Pada segitiga siku-siku sama kaki $\\triangle ABE$ ($AE = BE$ dan $\\angle AEB = 90^\\circ$):\n     $$AE = BE = 2\\text{ cm}$$\n   - Segitiga $\\triangle BCE$ siku-siku di $E$ (karena diagonal saling tegak lurus, $\\angle BEC = 90^\\circ$).\n     Dengan $\\angle ECB = \\angle ACB = 30^\\circ$:\n     $$\\tan 30^\\circ = \\frac{BE}{CE} \\implies \\frac{1}{\\sqrt{3}} = \\frac{2}{CE} \\implies CE = 2\\sqrt{3}\\text{ cm}$$\n   - Panjang sisi miring $BC$ dihitung dengan Pythagoras pada $\\triangle BCE$:\n     $$BC = \\sqrt{BE^2 + CE^2} = \\sqrt{2^2 + (2\\sqrt{3})^2} = \\sqrt{4 + 12} = \\sqrt{16} = 4\\text{ cm}$$\n   Karena sama kaki, $AD = BC = 4\\text{ cm}$.\n   Pernyataan B bernilai **BENAR**.\n\n3. **Menghitung Luas Trapesium:**\n   Karena kedua diagonal saling tegak lurus ($d_1 \\perp d_2$):\n   - Panjang diagonal $AC = AE + CE = 2 + 2\\sqrt{3}\\text{ cm}$.\n   - Karena sama kaki, $BD = AC = 2 + 2\\sqrt{3}\\text{ cm}$.\n   - Rumus luas bangun datar dengan diagonal saling tegak lurus:\n     $$L = \\frac{1}{2} \\cdot d_1 \\cdot d_2 = \\frac{1}{2} \\cdot AC \\cdot BD = \\frac{1}{2}(2 + 2\\sqrt{3})^2$$\n     $$L = \\frac{1}{2}\\big(4 + 8\\sqrt{3} + 12\\big) = \\frac{1}{2}\\big(16 + 8\\sqrt{3}\\big) = 8 + 4\\sqrt{3}\\text{ cm}^2$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Berdasarkan sifat simetri trapesium sama kaki, kedua diagonalnya kongruen ($AC = BD$)."
   },
   {
     "id": "matwa-sudut-dan-kesebangunan-07",
@@ -160,18 +215,35 @@
     "difficulty": "HOTS",
     "question_text": "Pada trapesium $ABCD$ dengan sisi sejajar $AB \\parallel CD$, diketahui panjang alas atas $AB = 12$ cm dan alas bawah $CD = 27$ cm. Ditarik garis $EF$ yang sejajar dengan $AB$ dan $CD$, memotong sisi miring $AD$ di titik $E$ dan memotong sisi miring $BC$ di titik $F$. Titik $E$ membagi sisi $AD$ dengan perbandingan $AE : ED = 2 : 3$.\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai garis sejajar $EF$ tersebut!",
     "options": [
-      { "id": "A", "text": "Panjang ruas garis sejajar $EF$ adalah 18 cm." },
-      { "id": "B", "text": "Jika diagonal $BD$ memotong ruas garis $EF$ di titik $G$, maka panjang segmen $EG = 7,2$ cm dan panjang segmen $GF = 10,8$ cm." },
-      { "id": "C", "text": "Perbandingan panjang segmen pada ruas garis tengah tersebut adalah $EG : GF = 2 : 3$." },
-      { "id": "D", "text": "Panjang ruas garis sejajar $EF$ adalah 19,5 cm, yang merupakan rata-rata hitung langsung dari kedua sisi sejajar." }
+      {
+        "id": "A",
+        "text": "Panjang ruas garis sejajar $EF$ adalah 18 cm."
+      },
+      {
+        "id": "B",
+        "text": "Jika diagonal $BD$ memotong ruas garis $EF$ di titik $G$, maka panjang segmen $EG = 7,2$ cm dan panjang segmen $GF = 10,8$ cm."
+      },
+      {
+        "id": "C",
+        "text": "Perbandingan panjang segmen pada ruas garis tengah tersebut adalah $EG : GF = 2 : 3$."
+      },
+      {
+        "id": "D",
+        "text": "Panjang ruas garis sejajar $EF$ adalah 19,5 cm, yang merupakan rata-rata hitung langsung dari kedua sisi sejajar."
+      },
+      {
+        "id": "E",
+        "text": "Perbandingan sisi-sisi bersesuaian pada segitiga yang dibentuk oleh perpotongan diagonal adalah senilai."
+      }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Gunakan dalil intersep garis sejajar pada trapesium: $EF = \\frac{AE \\cdot CD + ED \\cdot AB}{AE + ED}$. Untuk segmen pada diagonal $BD$, gunakan kesebangunan $\\triangle DEG \\sim \\triangle DAB$ dan $\\triangle BGF \\sim \\triangle BDC$.",
-    "explanation": "Langkah-langkah evaluasi garis bagi sejajar pada trapesium:\n\n1. **Menghitung Panjang Ruas Garis $EF$:**\n   Berdasarkan dalil intersep pembagian sisi sejajar trapesium berbobot:\n   $$EF = \\frac{AE \\cdot CD + ED \\cdot AB}{AE + ED}$$\n   Dengan $AE : ED = 2 : 3$, $AB = 12\\text{ cm}$, dan $CD = 27\\text{ cm}$:\n   $$EF = \\frac{2(27) + 3(12)}{2 + 3} = \\frac{54 + 36}{5} = \\frac{90}{5} = 18\\text{ cm}$$\n   Pernyataan A bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\n2. **Menghitung Panjang Segmen $EG$ dan $GF$ dari Diagonal $BD$:**\n   - Pada segitiga $\\triangle DAB$, karena $EG \\parallel AB$, maka $\\triangle DEG \\sim \\triangle DAB$:\n     $$\\frac{EG}{AB} = \\frac{DE}{DA} = \\frac{3}{2 + 3} = \\frac{3}{5}$$\n     $$EG = \\frac{3}{5} \\times 12 = 7,2\\text{ cm}$$\n   - Pada segitiga $\\triangle BDC$, karena $GF \\parallel CD$, maka $\\triangle BGF \\sim \\triangle BDC$:\n     $$\\frac{GF}{CD} = \\frac{BF}{BC} = \\frac{AE}{AD} = \\frac{2}{5}$$\n     $$GF = \\frac{2}{5} \\times 27 = 10,8\\text{ cm}$$\n     *(Cek: $EG + GF = 7,2 + 10,8 = 18\\text{ cm}$, cocok)*.\n   Pernyataan B bernilai **BENAR**.\n\n3. **Menentukan Rasio $EG : GF$:**\n   $$\\frac{EG}{GF} = \\frac{7,2}{10,8} = \\frac{72}{108} = \\frac{2}{3}$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+    "explanation": "Langkah-langkah evaluasi garis bagi sejajar pada trapesium:\n\n1. **Menghitung Panjang Ruas Garis $EF$:**\n   Berdasarkan dalil intersep pembagian sisi sejajar trapesium berbobot:\n   $$EF = \\frac{AE \\cdot CD + ED \\cdot AB}{AE + ED}$$\n   Dengan $AE : ED = 2 : 3$, $AB = 12\\text{ cm}$, dan $CD = 27\\text{ cm}$:\n   $$EF = \\frac{2(27) + 3(12)}{2 + 3} = \\frac{54 + 36}{5} = \\frac{90}{5} = 18\\text{ cm}$$\n   Pernyataan A bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\n2. **Menghitung Panjang Segmen $EG$ dan $GF$ dari Diagonal $BD$:**\n   - Pada segitiga $\\triangle DAB$, karena $EG \\parallel AB$, maka $\\triangle DEG \\sim \\triangle DAB$:\n     $$\\frac{EG}{AB} = \\frac{DE}{DA} = \\frac{3}{2 + 3} = \\frac{3}{5}$$\n     $$EG = \\frac{3}{5} \\times 12 = 7,2\\text{ cm}$$\n   - Pada segitiga $\\triangle BDC$, karena $GF \\parallel CD$, maka $\\triangle BGF \\sim \\triangle BDC$:\n     $$\\frac{GF}{CD} = \\frac{BF}{BC} = \\frac{AE}{AD} = \\frac{2}{5}$$\n     $$GF = \\frac{2}{5} \\times 27 = 10,8\\text{ cm}$$\n     *(Cek: $EG + GF = 7,2 + 10,8 = 18\\text{ cm}$, cocok)*.\n   Pernyataan B bernilai **BENAR**.\n\n3. **Menentukan Rasio $EG : GF$:**\n   $$\\frac{EG}{GF} = \\frac{7,2}{10,8} = \\frac{72}{108} = \\frac{2}{3}$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Sudut-sudut berseberangan dalam sama besar sehingga segitiga atas dan segitiga bawah sebangun."
   },
   {
     "id": "matwa-sudut-dan-kesebangunan-08",

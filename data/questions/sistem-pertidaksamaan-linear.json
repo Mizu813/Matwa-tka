@@ -7,11 +7,26 @@
     "difficulty": "STANDAR",
     "question_text": "Perhatikan sistem pertidaksamaan linear berikut:\n$$\\begin{cases} 2x + 3y \\le 12 \\\\ x - y \\le 1 \\\\ x \\ge 0, \\quad y \\ge 0 \\end{cases}$$\n\n<div class=\"flex justify-center my-3\"><svg viewBox=\"0 0 340 220\" class=\"w-80 h-auto drop-shadow-sm\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"340\" height=\"220\" fill=\"#0F172A\" rx=\"10\"/><line x1=\"30\" y1=\"190\" x2=\"320\" y2=\"190\" stroke=\"#64748B\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"210\" stroke=\"#64748B\" stroke-width=\"1.5\"/><text x=\"315\" y=\"205\" fill=\"#94A3B8\" font-size=\"11\" font-family=\"sans-serif\">X</text><text x=\"35\" y=\"28\" fill=\"#94A3B8\" font-size=\"11\" font-family=\"sans-serif\">Y</text><text x=\"40\" y=\"203\" fill=\"#94A3B8\" font-size=\"10\" font-family=\"sans-serif\">O</text><line x1=\"40\" y1=\"76\" x2=\"280\" y2=\"200\" stroke=\"#38BDF8\" stroke-width=\"2\"/><text x=\"265\" y=\"182\" fill=\"#38BDF8\" font-size=\"10\" font-weight=\"bold\">(6,0)</text><text x=\"16\" y=\"80\" fill=\"#38BDF8\" font-size=\"10\" font-weight=\"bold\">(0,4)</text><line x1=\"30\" y1=\"210\" x2=\"230\" y2=\"30\" stroke=\"#F43F5E\" stroke-width=\"2\"/><text x=\"80\" y=\"203\" fill=\"#F43F5E\" font-size=\"10\" font-weight=\"bold\">(1,0)</text><polygon points=\"50,190 90,190 170,110 50,76\" fill=\"#10B981\" fill-opacity=\"0.3\" stroke=\"#10B981\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/><text x=\"95\" y=\"145\" fill=\"#34D399\" font-size=\"14\" font-weight=\"bold\">II</text><text x=\"140\" y=\"55\" fill=\"#E2E8F0\" font-size=\"14\" font-weight=\"bold\">I</text><text x=\"170\" y=\"175\" fill=\"#E2E8F0\" font-size=\"14\" font-weight=\"bold\">III</text><text x=\"110\" y=\"215\" fill=\"#E2E8F0\" font-size=\"13\" font-weight=\"bold\">IV</text><text x=\"285\" y=\"145\" fill=\"#E2E8F0\" font-size=\"14\" font-weight=\"bold\">V</text><circle cx=\"170\" cy=\"110\" r=\"3.5\" fill=\"#FBBF24\"/><text x=\"180\" y=\"105\" fill=\"#FBBF24\" font-size=\"10\">(3,2)</text></svg></div>\n\nBerdasarkan grafik di atas, daerah himpunan penyelesaian (DHP) dari sistem pertidaksamaan tersebut ditunjukkan oleh nomor wilayah ...",
     "options": [
-      { "id": "A", "text": "Wilayah II" },
-      { "id": "B", "text": "Wilayah I" },
-      { "id": "C", "text": "Wilayah III" },
-      { "id": "D", "text": "Wilayah IV" },
-      { "id": "E", "text": "Wilayah V" }
+      {
+        "id": "A",
+        "text": "Wilayah II"
+      },
+      {
+        "id": "B",
+        "text": "Wilayah I"
+      },
+      {
+        "id": "C",
+        "text": "Wilayah III"
+      },
+      {
+        "id": "D",
+        "text": "Wilayah IV"
+      },
+      {
+        "id": "E",
+        "text": "Wilayah V"
+      }
     ],
     "correct_answer": "A",
     "hint": "Uji titik selidik $(0, 0)$ ke dalam kedua pertidaksamaan: $2(0) + 3(0) \\le 12$ (Benar) dan $0 - 0 \\le 1$ (Benar). Karena $(0,0)$ memenuhi kedua pertidaksamaan dan berada di Kuadran I, pilih daerah yang memuat titik asal di antara kedua garis batas.",
@@ -23,13 +38,28 @@
     "sub_chapter_id": "sistem-pertidaksamaan-linear",
     "question_type": "PG",
     "difficulty": "STANDAR",
-    "question_text": "Daerah penyelesaian dari suatu masalah program linear berada di Kuadran I dan dibatasi oleh titik-titik sudut $(0, 0)$, $(4, 0)$, $(2, 3)$, dan $(0, 3)$. Sistem pertidaksamaan linear yang merepresentasikan daerah tertutup tersebut adalah ...",
+    "question_text": "Perhatikan grafik daerah himpunan penyelesaian (DHP) pada bidang koordinat Cartesius berikut:\n\n<div class=\"flex justify-center my-4 overflow-x-auto\"><svg viewBox=\"0 0 360 220\" class=\"w-full max-w-md h-auto drop-shadow-md rounded-lg\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"360\" height=\"220\" fill=\"#0f172a\" rx=\"8\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Grid -->\n  <line x1=\"60\" y1=\"20\" x2=\"60\" y2=\"180\" stroke=\"#1e293b\" stroke-width=\"1\"/>\n  <line x1=\"120\" y1=\"20\" x2=\"120\" y2=\"180\" stroke=\"#1e293b\" stroke-width=\"1\"/>\n  <line x1=\"180\" y1=\"20\" x2=\"180\" y2=\"180\" stroke=\"#1e293b\" stroke-width=\"1\"/>\n  <line x1=\"240\" y1=\"20\" x2=\"240\" y2=\"180\" stroke=\"#1e293b\" stroke-width=\"1\"/>\n  <line x1=\"300\" y1=\"20\" x2=\"300\" y2=\"180\" stroke=\"#1e293b\" stroke-width=\"1\"/>\n  <!-- Axes -->\n  <line x1=\"40\" y1=\"180\" x2=\"330\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <line x1=\"60\" y1=\"200\" x2=\"60\" y2=\"20\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <text x=\"335\" y=\"184\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">X</text>\n  <text x=\"56\" y=\"16\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">Y</text>\n  <!-- Scale: Origin (60, 180), dx=50 per unit, dy=40 per unit -->\n  <!-- (0,0)->(60,180), (4,0)->(260,180), (2,3)->(160,60), (0,3)->(60,60) -->\n  <polygon points=\"60,180 260,180 160,60 60,60\" fill=\"#38bdf8\" fill-opacity=\"0.25\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n  <!-- Boundary lines extension -->\n  <line x1=\"40\" y1=\"60\" x2=\"220\" y2=\"60\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"4\"/>\n  <text x=\"225\" y=\"64\" fill=\"#f59e0b\" font-size=\"11\" font-family=\"sans-serif\">y = 3</text>\n  <line x1=\"130\" y1=\"24\" x2=\"280\" y2=\"204\" stroke=\"#ec4899\" stroke-width=\"1.5\" stroke-dasharray=\"4\"/>\n  <text x=\"250\" y=\"140\" fill=\"#ec4899\" font-size=\"11\" font-family=\"sans-serif\">3x + 2y = 12</text>\n  <!-- Vertices -->\n  <circle cx=\"60\" cy=\"180\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"45\" y=\"195\" fill=\"#f8fafc\" font-size=\"10\" font-family=\"sans-serif\">(0,0)</text>\n  <circle cx=\"260\" cy=\"180\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"255\" y=\"198\" fill=\"#f8fafc\" font-size=\"10\" font-family=\"sans-serif\">(4,0)</text>\n  <circle cx=\"160\" cy=\"60\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"165\" y=\"55\" fill=\"#f8fafc\" font-size=\"10\" font-family=\"sans-serif\">(2,3)</text>\n  <circle cx=\"60\" cy=\"60\" r=\"4\" fill=\"#38bdf8\"/>\n  <text x=\"32\" y=\"64\" fill=\"#f8fafc\" font-size=\"10\" font-family=\"sans-serif\">(0,3)</text>\n  <text x=\"110\" y=\"125\" fill=\"#38bdf8\" font-size=\"13\" font-family=\"sans-serif\" font-weight=\"bold\">DHP</text>\n</svg></div>\n\nDaerah penyelesaian dari suatu masalah program linear berada di Kuadran I dan dibatasi oleh titik-titik sudut $(0, 0)$, $(4, 0)$, $(2, 3)$, dan $(0, 3)$. Sistem pertidaksamaan linear yang merepresentasikan daerah tertutup tersebut adalah ...",
     "options": [
-      { "id": "A", "text": "$3x + 2y \\le 12, \\quad y \\le 3, \\quad x \\ge 0, \\quad y \\ge 0$" },
-      { "id": "B", "text": "$3x + 2y \\ge 12, \\quad y \\le 3, \\quad x \\ge 0, \\quad y \\ge 0$" },
-      { "id": "C", "text": "$2x + 3y \\le 12, \\quad y \\le 3, \\quad x \\ge 0, \\quad y \\ge 0$" },
-      { "id": "D", "text": "$3x + 2y \\le 12, \\quad x \\le 3, \\quad x \\ge 0, \\quad y \\ge 0$" },
-      { "id": "E", "text": "$2x + 3y \\ge 12, \\quad y \\ge 3, \\quad x \\ge 0, \\quad y \\ge 0$" }
+      {
+        "id": "A",
+        "text": "$3x + 2y \\le 12, \\quad y \\le 3, \\quad x \\ge 0, \\quad y \\ge 0$"
+      },
+      {
+        "id": "B",
+        "text": "$3x + 2y \\ge 12, \\quad y \\le 3, \\quad x \\ge 0, \\quad y \\ge 0$"
+      },
+      {
+        "id": "C",
+        "text": "$2x + 3y \\le 12, \\quad y \\le 3, \\quad x \\ge 0, \\quad y \\ge 0$"
+      },
+      {
+        "id": "D",
+        "text": "$3x + 2y \\le 12, \\quad x \\le 3, \\quad x \\ge 0, \\quad y \\ge 0$"
+      },
+      {
+        "id": "E",
+        "text": "$2x + 3y \\ge 12, \\quad y \\ge 3, \\quad x \\ge 0, \\quad y \\ge 0$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Cari persamaan garis yang menghubungkan titik $(4, 0)$ dan $(2, 3)$ menggunakan rumus gradien dua titik $m = \\frac{y_2 - y_1}{x_2 - x_1}$. Perhatikan juga batas garis mendatar di atas sumbu-$X$.",
@@ -41,13 +71,28 @@
     "sub_chapter_id": "sistem-pertidaksamaan-linear",
     "question_type": "PG",
     "difficulty": "HOTS",
-    "question_text": "Luas daerah tertutup (dalam satuan luas) yang dibatasi oleh sistem pertidaksamaan linear berikut:\n$$\\begin{cases} x + y \\ge 2 \\\\ x + y \\le 6 \\\\ x - y \\le 2 \\\\ y - x \\le 2 \\end{cases}$$\nadalah ...",
+    "question_text": "Perhatikan sketsa grafik daerah tertutup pada bidang koordinat Cartesius berikut:\n\n<div class=\"flex justify-center my-4 overflow-x-auto\"><svg viewBox=\"0 0 360 220\" class=\"w-full max-w-md h-auto drop-shadow-md rounded-lg\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"360\" height=\"220\" fill=\"#0f172a\" rx=\"8\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Axes: Center at (160, 120), scale: 22 px per unit -->\n  <line x1=\"30\" y1=\"120\" x2=\"330\" y2=\"120\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <line x1=\"160\" y1=\"205\" x2=\"160\" y2=\"15\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <text x=\"335\" y=\"124\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">X</text>\n  <text x=\"156\" y=\"12\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">Y</text>\n  <!-- Region vertices: (2,0)->(204,120), (4,2)->(248,76), (2,4)->(204,32), (0,2)->(160,76) -->\n  <polygon points=\"204,120 248,76 204,32 160,76\" fill=\"#10b981\" fill-opacity=\"0.3\" stroke=\"#10b981\" stroke-width=\"2\"/>\n  <!-- Coordinate ticks -->\n  <circle cx=\"204\" cy=\"120\" r=\"3.5\" fill=\"#10b981\"/>\n  <text x=\"200\" y=\"135\" fill=\"#f8fafc\" font-size=\"10\" font-family=\"sans-serif\">(2,0)</text>\n  <circle cx=\"248\" cy=\"76\" r=\"3.5\" fill=\"#10b981\"/>\n  <text x=\"254\" y=\"80\" fill=\"#f8fafc\" font-size=\"10\" font-family=\"sans-serif\">(4,2)</text>\n  <circle cx=\"204\" cy=\"32\" r=\"3.5\" fill=\"#10b981\"/>\n  <text x=\"200\" y=\"24\" fill=\"#f8fafc\" font-size=\"10\" font-family=\"sans-serif\">(2,4)</text>\n  <circle cx=\"160\" cy=\"76\" r=\"3.5\" fill=\"#10b981\"/>\n  <text x=\"130\" y=\"80\" fill=\"#f8fafc\" font-size=\"10\" font-family=\"sans-serif\">(0,2)</text>\n  <!-- Boundary lines -->\n  <line x1=\"130\" y1=\"150\" x2=\"270\" y2=\"10\" stroke=\"#38bdf8\" stroke-width=\"1\" stroke-dasharray=\"3\"/>\n  <line x1=\"130\" y1=\"106\" x2=\"270\" y2=\"-34\" stroke=\"#38bdf8\" stroke-width=\"1\" stroke-dasharray=\"3\"/>\n  <text x=\"195\" y=\"80\" fill=\"#10b981\" font-size=\"12\" font-family=\"sans-serif\" font-weight=\"bold\">DHP</text>\n</svg></div>\n\nLuas daerah tertutup (dalam satuan luas) yang dibatasi oleh sistem pertidaksamaan linear berikut:\n$$\\begin{cases} x + y \\ge 2 \\\\ x + y \\le 6 \\\\ x - y \\le 2 \\\\ y - x \\le 2 \\end{cases}$$\nadalah ...",
     "options": [
-      { "id": "A", "text": "8" },
-      { "id": "B", "text": "12" },
-      { "id": "C", "text": "16" },
-      { "id": "D", "text": "6" },
-      { "id": "E", "text": "10" }
+      {
+        "id": "A",
+        "text": "8"
+      },
+      {
+        "id": "B",
+        "text": "12"
+      },
+      {
+        "id": "C",
+        "text": "16"
+      },
+      {
+        "id": "D",
+        "text": "6"
+      },
+      {
+        "id": "E",
+        "text": "10"
+      }
     ],
     "correct_answer": "A",
     "hint": "Cari koordinat keempat titik perpotongan garis batas sistem. Bentuk geometri yang dihasilkan adalah persegi dengan panjang sisi $\\sqrt{8} = 2\\sqrt{2}$.",
@@ -61,11 +106,26 @@
     "difficulty": "HOTS",
     "question_text": "Banyaknya pasangan bilangan bulat $(x, y)$ yang memenuhi sistem pertidaksamaan linear berikut:\n$$\\begin{cases} 2x + 3y \\le 12 \\\\ x \\ge 0 \\\\ y \\ge 0 \\end{cases}$$\nadalah ...",
     "options": [
-      { "id": "A", "text": "19" },
-      { "id": "B", "text": "17" },
-      { "id": "C", "text": "21" },
-      { "id": "D", "text": "15" },
-      { "id": "E", "text": "23" }
+      {
+        "id": "A",
+        "text": "19"
+      },
+      {
+        "id": "B",
+        "text": "17"
+      },
+      {
+        "id": "C",
+        "text": "21"
+      },
+      {
+        "id": "D",
+        "text": "15"
+      },
+      {
+        "id": "E",
+        "text": "23"
+      }
     ],
     "correct_answer": "A",
     "hint": "Cacah nilai bulat tak-negatif $y$ yang mungkin dari $0$ hingga $4$. Untuk setiap nilai $y$, hitung banyaknya bilangan bulat $x$ yang memenuhi $0 \\le x \\le \\frac{12 - 3y}{2}$.",
@@ -79,18 +139,35 @@
     "difficulty": "STANDAR",
     "question_text": "Diberikan sistem pertidaksamaan linear:\n$$\\begin{cases} 3x + 4y \\le 24 \\\\ x - 2y \\ge -4 \\\\ x \\ge 0, \\quad y \\ge 0 \\end{cases}$$\nPilihlah **SEMUA** titik koordinat di bawah ini yang berada di dalam atau pada batas daerah penyelesaian (DHP) sistem tersebut!",
     "options": [
-      { "id": "A", "text": "Titik $(2, 3)$" },
-      { "id": "B", "text": "Titik $(4, 2)$" },
-      { "id": "C", "text": "Titik $(0, 2)$" },
-      { "id": "D", "text": "Titik $(2, 5)$" }
+      {
+        "id": "A",
+        "text": "Titik $(2, 3)$"
+      },
+      {
+        "id": "B",
+        "text": "Titik $(4, 2)$"
+      },
+      {
+        "id": "C",
+        "text": "Titik $(0, 2)$"
+      },
+      {
+        "id": "D",
+        "text": "Titik $(2, 5)$"
+      },
+      {
+        "id": "E",
+        "text": "Titik koordinat $(2, 2)$ terletak di dalam daerah himpunan penyelesaian."
+      }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Substitusikan nilai $(x, y)$ pada setiap opsi ke dalam seluruh pertidaksamaan pada sistem untuk memeriksa apakah semua syarat terpenuhi sekaligus.",
-    "explanation": "Uji titik ke dalam sistem pertidaksamaan:\n\n- **Opsi A: Titik $(2, 3)$**\n  - $3(2) + 4(3) = 6 + 12 = 18 \\le 24$ (Memenuhi)\n  - $2 - 2(3) = 2 - 6 = -4 \\ge -4$ (Memenuhi)\n  - $x \\ge 0, y \\ge 0$ (Memenuhi)\n  $\\implies$ Titik $(2, 3)$ berada di dalam DHP. (Opsi A **BENAR**)\n\n- **Opsi B: Titik $(4, 2)$**\n  - $3(4) + 4(2) = 12 + 8 = 20 \\le 24$ (Memenuhi)\n  - $4 - 2(2) = 4 - 4 = 0 \\ge -4$ (Memenuhi)\n  - $x \\ge 0, y \\ge 0$ (Memenuhi)\n  $\\implies$ Titik $(4, 2)$ berada di dalam DHP. (Opsi B **BENAR**)\n\n- **Opsi C: Titik $(0, 2)$**\n  - $3(0) + 4(2) = 8 \\le 24$ (Memenuhi)\n  - $0 - 2(2) = -4 \\ge -4$ (Memenuhi)\n  - $x \\ge 0, y \\ge 0$ (Memenuhi)\n  $\\implies$ Titik $(0, 2)$ berada di dalam DHP. (Opsi C **BENAR**)\n\n- **Opsi D: Titik $(2, 5)$**\n  - $3(2) + 4(5) = 6 + 20 = 26 \\le 24$ (Salah, $26 > 24$)\n  $\\implies$ Titik $(2, 5)$ tidak memenuhi DHP. (Opsi D **SALAH**)\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**."
+    "explanation": "Uji titik ke dalam sistem pertidaksamaan:\n\n- **Opsi A: Titik $(2, 3)$**\n  - $3(2) + 4(3) = 6 + 12 = 18 \\le 24$ (Memenuhi)\n  - $2 - 2(3) = 2 - 6 = -4 \\ge -4$ (Memenuhi)\n  - $x \\ge 0, y \\ge 0$ (Memenuhi)\n  $\\implies$ Titik $(2, 3)$ berada di dalam DHP. (Opsi A **BENAR**)\n\n- **Opsi B: Titik $(4, 2)$**\n  - $3(4) + 4(2) = 12 + 8 = 20 \\le 24$ (Memenuhi)\n  - $4 - 2(2) = 4 - 4 = 0 \\ge -4$ (Memenuhi)\n  - $x \\ge 0, y \\ge 0$ (Memenuhi)\n  $\\implies$ Titik $(4, 2)$ berada di dalam DHP. (Opsi B **BENAR**)\n\n- **Opsi C: Titik $(0, 2)$**\n  - $3(0) + 4(2) = 8 \\le 24$ (Memenuhi)\n  - $0 - 2(2) = -4 \\ge -4$ (Memenuhi)\n  - $x \\ge 0, y \\ge 0$ (Memenuhi)\n  $\\implies$ Titik $(0, 2)$ berada di dalam DHP. (Opsi C **BENAR**)\n\n- **Opsi D: Titik $(2, 5)$**\n  - $3(2) + 4(5) = 6 + 20 = 26 \\le 24$ (Salah, $26 > 24$)\n  $\\implies$ Titik $(2, 5)$ tidak memenuhi DHP. (Opsi D **SALAH**)\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Substitusi $(2, 2)$: $3(2) + 4(2) = 14 \\le 24$, $2 - 2(2) = -2 \\ge -2$, $2 \\ge 0$, $2 \\ge 0$, seluruh pertidaksamaan terpenuhi."
   },
   {
     "id": "matwa-sistem-pertidaksamaan-linear-06",
@@ -100,18 +177,35 @@
     "difficulty": "HOTS",
     "question_text": "Perhatikan sistem pertidaksamaan linear multivariabel berikut:\n$$\\begin{cases} x + 2y \\le 10 \\\\ 3x + y \\le 15 \\\\ x \\ge 0, \\quad y \\ge 0 \\end{cases}$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai sifat geometris daerah himpunan penyelesaiannya!",
     "options": [
-      { "id": "A", "text": "Titik potong kedua garis pembatas di Kuadran I adalah $(4, 3)$." },
-      { "id": "B", "text": "Daerah himpunan penyelesaian memiliki 4 titik pojok, yaitu $(0,0), (5,0), (4,3)$, dan $(0,5)$." },
-      { "id": "C", "text": "Luas daerah himpunan penyelesaian tersebut adalah $17,5\\text{ satuan luas}$." },
-      { "id": "D", "text": "Titik $(10, 0)$ merupakan salah satu titik pojok dari daerah himpunan penyelesaian." }
+      {
+        "id": "A",
+        "text": "Titik potong kedua garis pembatas di Kuadran I adalah $(4, 3)$."
+      },
+      {
+        "id": "B",
+        "text": "Daerah himpunan penyelesaian memiliki 4 titik pojok, yaitu $(0,0), (5,0), (4,3)$, dan $(0,5)$."
+      },
+      {
+        "id": "C",
+        "text": "Luas daerah himpunan penyelesaian tersebut adalah $17,5\\text{ satuan luas}$."
+      },
+      {
+        "id": "D",
+        "text": "Titik $(10, 0)$ merupakan salah satu titik pojok dari daerah himpunan penyelesaian."
+      },
+      {
+        "id": "E",
+        "text": "Nilai maksimum dari fungsi tujuan $f(x, y) = 3x + 2y$ pada daerah tersebut adalah 14."
+      }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Cari titik potong kedua garis dengan metode eliminasi-substitusi. Untuk menghitung luas poligon 4 titik, gunakan rumus luas Shoelace Gauss.",
-    "explanation": "Langkah-langkah analisis geometris DHP:\n\n1. Tentukan titik potong kedua garis pembatas:\n   $$\\begin{cases} x + 2y = 10 \\\\ 3x + y = 15 \\implies y = 15 - 3x \\end{cases}$$\n   Substitusikan: $x + 2(15 - 3x) = 10 \\implies x + 30 - 6x = 10 \\implies 5x = 20 \\implies x = 4$\n   Nilai $y = 15 - 3(4) = 3$.\n   Titik potong adalah $(4, 3)$. (Pernyataan A **BENAR**)\n\n2. Tentukan titik-titik pojok DHP:\n   - Titik asal: $(0, 0)$\n   - Perpotongan $3x + y = 15$ dengan sumbu-$X$: $(5, 0)$\n   - Titik potong kedua garis: $(4, 3)$\n   - Perpotongan $x + 2y = 10$ dengan sumbu-$Y$: $(0, 5)$\n   Titik $(10, 0)$ berada di luar DHP karena melanggar $3x + y \\le 15$ ($30 > 15$).\n   (Pernyataan B **BENAR**, Pernyataan D **SALAH**)\n\n3. Hitung luas daerah dengan metode Shoelace Gauss pada urutan $(0,0) \\to (5,0) \\to (4,3) \\to (0,5)$:\n   $$\\text{Luas} = \\frac{1}{2} |(0\\cdot 0 + 5\\cdot 3 + 4\\cdot 5 + 0\\cdot 0) - (0\\cdot 5 + 0\\cdot 4 + 3\\cdot 0 + 5\\cdot 0)|$$\n   $$\\text{Luas} = \\frac{1}{2} |15 + 20 - 0| = \\frac{35}{2} = 17,5\\text{ satuan luas}$$\n   (Pernyataan C **BENAR**)\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**."
+    "explanation": "Langkah-langkah analisis geometris DHP:\n\n1. Tentukan titik potong kedua garis pembatas:\n   $$\\begin{cases} x + 2y = 10 \\\\ 3x + y = 15 \\implies y = 15 - 3x \\end{cases}$$\n   Substitusikan: $x + 2(15 - 3x) = 10 \\implies x + 30 - 6x = 10 \\implies 5x = 20 \\implies x = 4$\n   Nilai $y = 15 - 3(4) = 3$.\n   Titik potong adalah $(4, 3)$. (Pernyataan A **BENAR**)\n\n2. Tentukan titik-titik pojok DHP:\n   - Titik asal: $(0, 0)$\n   - Perpotongan $3x + y = 15$ dengan sumbu-$X$: $(5, 0)$\n   - Titik potong kedua garis: $(4, 3)$\n   - Perpotongan $x + 2y = 10$ dengan sumbu-$Y$: $(0, 5)$\n   Titik $(10, 0)$ berada di luar DHP karena melanggar $3x + y \\le 15$ ($30 > 15$).\n   (Pernyataan B **BENAR**, Pernyataan D **SALAH**)\n\n3. Hitung luas daerah dengan metode Shoelace Gauss pada urutan $(0,0) \\to (5,0) \\to (4,3) \\to (0,5)$:\n   $$\\text{Luas} = \\frac{1}{2} |(0\\cdot 0 + 5\\cdot 3 + 4\\cdot 5 + 0\\cdot 0) - (0\\cdot 5 + 0\\cdot 4 + 3\\cdot 0 + 5\\cdot 0)|$$\n   $$\\text{Luas} = \\frac{1}{2} |15 + 20 - 0| = \\frac{35}{2} = 17,5\\text{ satuan luas}$$\n   (Pernyataan C **BENAR**)\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Nilai fungsi tujuan di titik pojok $(2, 4)$ adalah $f(2, 4) = 3(2) + 2(4) = 14$, yang merupakan nilai maksimum daerah."
   },
   {
     "id": "matwa-sistem-pertidaksamaan-linear-07",
@@ -121,18 +215,35 @@
     "difficulty": "HOTS",
     "question_text": "Diberikan daerah himpunan penyelesaian tertutup yang memenuhi sistem pertidaksamaan linear:\n$$\\begin{cases} 2x + y \\le 8 \\\\ x + 2y \\le 8 \\\\ x \\ge 0, \\quad y \\ge 0 \\end{cases}$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR**!",
     "options": [
-      { "id": "A", "text": "Nilai maksimum fungsi objektif $Z = 3x + 3y$ pada daerah tersebut adalah 16." },
-      { "id": "B", "text": "Garis batas $2x + y = 8$ dan $x + 2y = 8$ berpotongan di titik $\\left(\\frac{8}{3}, \\frac{8}{3}\\right)$." },
-      { "id": "C", "text": "Titik koordinat $(2, 2)$ berada di dalam daerah himpunan penyelesaian." },
-      { "id": "D", "text": "Nilai minimum fungsi objektif $Z = 3x + 3y$ pada daerah tersebut adalah 6." }
+      {
+        "id": "A",
+        "text": "Nilai maksimum fungsi objektif $Z = 3x + 3y$ pada daerah tersebut adalah 16."
+      },
+      {
+        "id": "B",
+        "text": "Garis batas $2x + y = 8$ dan $x + 2y = 8$ berpotongan di titik $\\left(\\frac{8}{3}, \\frac{8}{3}\\right)$."
+      },
+      {
+        "id": "C",
+        "text": "Titik koordinat $(2, 2)$ berada di dalam daerah himpunan penyelesaian."
+      },
+      {
+        "id": "D",
+        "text": "Nilai minimum fungsi objektif $Z = 3x + 3y$ pada daerah tersebut adalah 6."
+      },
+      {
+        "id": "E",
+        "text": "Metode garis selidik $ax + by = k$ dapat digunakan untuk mengidentifikasi titik optimum penyelesaian."
+      }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Cari titik potong kedua garis dengan menjumlahkan kedua persamaan: $3x + 3y = 16$. Uji nilai fungsi objektif $Z$ pada seluruh titik pojok $(0,0), (4,0), (8/3, 8/3)$, dan $(0,4)$.",
-    "explanation": "Langkah-langkah evaluasi DHP dan fungsi objektif:\n\n1. Cari titik perpotongan kedua garis batas:\n   $$(2x + y = 8) + (x + 2y = 8) \\implies 3x + 3y = 16 \\implies x + y = \\frac{16}{3}$$\n   Karena sistem simetris, $x = y = \\frac{8}{3}$. Titik potong adalah $\\left(\\frac{8}{3}, \\frac{8}{3}\\right)$. (Pernyataan B **BENAR**)\n\n2. Uji titik koordinat $(2, 2)$ ke sistem:\n   - $2(2) + 2 = 6 \\le 8$ (Memenuhi)\n   - $2 + 2(2) = 6 \\le 8$ (Memenuhi)\n   - $2 \\ge 0, 2 \\ge 0$ (Memenuhi)\n   Maka titik $(2, 2)$ berada di dalam DHP. (Pernyataan C **BENAR**)\n\n3. Evaluasi nilai fungsi objektif $Z = 3x + 3y = 3(x + y)$ pada titik-titik sudut DHP:\n   - Titik $(0, 0) \\implies Z = 0$ (Nilai Minimum)\n   - Titik $(4, 0) \\implies Z = 3(4) = 12$\n   - Titik $(0, 4) \\implies Z = 3(4) = 12$\n   - Titik $\\left(\\frac{8}{3}, \\frac{8}{3}\\right) \\implies Z = 3\\left(\\frac{8}{3} + \\frac{8}{3}\\right) = 3\\left(\\frac{16}{3}\\right) = 16$ (Nilai Maksimum)\n   Maka nilai maksimum adalah 16 (Pernyataan A **BENAR**), sedangkan nilai minimum adalah 0 bukan 6 (Pernyataan D **SALAH**).\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**."
+    "explanation": "Langkah-langkah evaluasi DHP dan fungsi objektif:\n\n1. Cari titik perpotongan kedua garis batas:\n   $$(2x + y = 8) + (x + 2y = 8) \\implies 3x + 3y = 16 \\implies x + y = \\frac{16}{3}$$\n   Karena sistem simetris, $x = y = \\frac{8}{3}$. Titik potong adalah $\\left(\\frac{8}{3}, \\frac{8}{3}\\right)$. (Pernyataan B **BENAR**)\n\n2. Uji titik koordinat $(2, 2)$ ke sistem:\n   - $2(2) + 2 = 6 \\le 8$ (Memenuhi)\n   - $2 + 2(2) = 6 \\le 8$ (Memenuhi)\n   - $2 \\ge 0, 2 \\ge 0$ (Memenuhi)\n   Maka titik $(2, 2)$ berada di dalam DHP. (Pernyataan C **BENAR**)\n\n3. Evaluasi nilai fungsi objektif $Z = 3x + 3y = 3(x + y)$ pada titik-titik sudut DHP:\n   - Titik $(0, 0) \\implies Z = 0$ (Nilai Minimum)\n   - Titik $(4, 0) \\implies Z = 3(4) = 12$\n   - Titik $(0, 4) \\implies Z = 3(4) = 12$\n   - Titik $\\left(\\frac{8}{3}, \\frac{8}{3}\\right) \\implies Z = 3\\left(\\frac{8}{3} + \\frac{8}{3}\\right) = 3\\left(\\frac{16}{3}\\right) = 16$ (Nilai Maksimum)\n   Maka nilai maksimum adalah 16 (Pernyataan A **BENAR**), sedangkan nilai minimum adalah 0 bukan 6 (Pernyataan D **SALAH**).\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Garis selidik $ax + by = k$ yang digeser sejajar melintasi daerah layak dapat menentukan titik sudut yang memaksimumkan atau meminimumkan nilai objektif."
   },
   {
     "id": "matwa-sistem-pertidaksamaan-linear-08",

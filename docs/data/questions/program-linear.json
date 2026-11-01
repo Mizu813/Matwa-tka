@@ -7,11 +7,26 @@
     "difficulty": "STANDAR",
     "question_text": "Sebuah industri rumahan memproduksi dua varian kue kering, yaitu Kue Nastar ($x$ toples) dan Kue Kastengel ($y$ toples). Setiap toples kue memerlukan bahan mentah mentega dan keju sebagai berikut:\n- 1 toples Kue Nastar membutuhkan $200\\text{ gram}$ mentega dan $100\\text{ gram}$ keju.\n- 1 toples Kue Kastengel membutuhkan $100\\text{ gram}$ mentega dan $300\\text{ gram}$ keju.\n\nPersediaan bahan baku yang tersedia di dapur adalah $3.000\\text{ gram}$ mentega dan $4.500\\text{ gram}$ keju. Keuntungan dari penjualan setiap toples Kue Nastar adalah $\\text{Rp}40.000,00$ dan Kue Kastengel adalah $\\text{Rp}50.000,00$.\n\nKeuntungan maksimum yang dapat diperoleh dari seluruh produksi tersebut adalah ...",
     "options": [
-      { "id": "A", "text": "$\\text{Rp}960.000,00$" },
-      { "id": "B", "text": "$\\text{Rp}750.000,00$" },
-      { "id": "C", "text": "$\\text{Rp}900.000,00$" },
-      { "id": "D", "text": "$\\text{Rp}840.000,00$" },
-      { "id": "E", "text": "$\\text{Rp}1.050.000,00$" }
+      {
+        "id": "A",
+        "text": "$\\text{Rp}960.000,00$"
+      },
+      {
+        "id": "B",
+        "text": "$\\text{Rp}750.000,00$"
+      },
+      {
+        "id": "C",
+        "text": "$\\text{Rp}900.000,00$"
+      },
+      {
+        "id": "D",
+        "text": "$\\text{Rp}840.000,00$"
+      },
+      {
+        "id": "E",
+        "text": "$\\text{Rp}1.050.000,00$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Susun sistem pertidaksamaan dari kendala mentega $2x + y \\le 30$ dan keju $x + 3y \\le 45$. Titik pojok optimal yang memberikan keuntungan maksimum diperoleh dari titik potong kedua garis kendala tersebut.",
@@ -25,11 +40,26 @@
     "difficulty": "STANDAR",
     "question_text": "Sebuah perusahaan jasa logistik menyewa dua jenis armada truk, yaitu Truk Tipe A dan Truk Tipe B, untuk mendistribusikan sedikitnya $120\\text{ koli}$ paket barang dan $90\\text{ drum}$ cairan kimia. Daya tampung armada:\n- Truk Tipe A dapat mengangkut $4\\text{ koli}$ paket dan $2\\text{ drum}$ cairan.\n- Truk Tipe B dapat mengangkut $3\\text{ koli}$ paket dan $3\\text{ drum}$ cairan.\n\nPerusahaan tersebut tidak dapat menyewa lebih dari $35\\text{ unit}$ truk secara keseluruhan. Jika $x$ menyatakan banyak truk Tipe A dan $y$ menyatakan banyak truk Tipe B yang disewa, model matematika yang sesuai dengan persoalan tersebut adalah ...",
     "options": [
-      { "id": "A", "text": "$4x + 3y \\ge 120, \\quad 2x + 3y \\ge 90, \\quad x + y \\le 35, \\quad x \\ge 0, \\quad y \\ge 0$" },
-      { "id": "B", "text": "$4x + 3y \\le 120, \\quad 2x + 3y \\le 90, \\quad x + y \\le 35, \\quad x \\ge 0, \\quad y \\ge 0$" },
-      { "id": "C", "text": "$4x + 3y \\ge 120, \\quad 2x + 3y \\ge 90, \\quad x + y \\ge 35, \\quad x \\ge 0, \\quad y \\ge 0$" },
-      { "id": "D", "text": "$3x + 4y \\ge 120, \\quad 3x + 2y \\ge 90, \\quad x + y \\le 35, \\quad x \\ge 0, \\quad y \\ge 0$" },
-      { "id": "E", "text": "$4x + 3y \\le 120, \\quad 2x + 3y \\ge 90, \\quad x + y \\ge 35, \\quad x \\ge 0, \\quad y \\ge 0$" }
+      {
+        "id": "A",
+        "text": "$4x + 3y \\ge 120, \\quad 2x + 3y \\ge 90, \\quad x + y \\le 35, \\quad x \\ge 0, \\quad y \\ge 0$"
+      },
+      {
+        "id": "B",
+        "text": "$4x + 3y \\le 120, \\quad 2x + 3y \\le 90, \\quad x + y \\le 35, \\quad x \\ge 0, \\quad y \\ge 0$"
+      },
+      {
+        "id": "C",
+        "text": "$4x + 3y \\ge 120, \\quad 2x + 3y \\ge 90, \\quad x + y \\ge 35, \\quad x \\ge 0, \\quad y \\ge 0$"
+      },
+      {
+        "id": "D",
+        "text": "$3x + 4y \\ge 120, \\quad 3x + 2y \\ge 90, \\quad x + y \\le 35, \\quad x \\ge 0, \\quad y \\ge 0$"
+      },
+      {
+        "id": "E",
+        "text": "$4x + 3y \\le 120, \\quad 2x + 3y \\ge 90, \\quad x + y \\ge 35, \\quad x \\ge 0, \\quad y \\ge 0$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Perhatikan frasa kunci: 'sedikitnya' menunjukkan batas minimum sehingga menggunakan tanda $\\ge$, sedangkan 'tidak lebih dari' menunjukkan batas maksimum armada sehingga menggunakan tanda $\\le$.",
@@ -41,13 +71,28 @@
     "sub_chapter_id": "program-linear",
     "question_type": "PG",
     "difficulty": "HOTS",
-    "question_text": "Diberikan daerah himpunan penyelesaian tertutup berbentuk segitiga yang dibatasi oleh tiga titik pojok $A(1, 4)$, $B(5, 2)$, dan $C(2, 1)$. Fungsi objektif yang akan dimaksimalkan pada daerah tersebut adalah:\n$$Z = ax + 2y$$\ndengan parameter $a > 0$.\n\nAgar nilai maksimum fungsi objektif $Z$ tercapai di titik pojok $B(5, 2)$ secara tunggal, interval nilai parameter $a$ yang memenuhi adalah ...",
+    "question_text": "Perhatikan daerah feasible penyelesaian berbentuk segitiga pada bidang Cartesius berikut:\n\n<div class=\"flex justify-center my-4 overflow-x-auto\"><svg viewBox=\"0 0 360 220\" class=\"w-full max-w-md h-auto drop-shadow-md rounded-lg\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"360\" height=\"220\" fill=\"#0f172a\" rx=\"8\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Axes: Origin (50, 190), dx=48 per unit, dy=36 per unit -->\n  <line x1=\"30\" y1=\"190\" x2=\"330\" y2=\"190\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <line x1=\"50\" y1=\"210\" x2=\"50\" y2=\"20\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <text x=\"335\" y=\"194\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">X</text>\n  <text x=\"46\" y=\"16\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">Y</text>\n  <!-- Points: A(1,4)->(98, 46), B(5,2)->(290, 118), C(2,1)->(146, 154) -->\n  <polygon points=\"98,46 290,118 146,154\" fill=\"#6366f1\" fill-opacity=\"0.3\" stroke=\"#6366f1\" stroke-width=\"2\"/>\n  <!-- Vertices -->\n  <circle cx=\"98\" cy=\"46\" r=\"4\" fill=\"#a855f7\"/>\n  <text x=\"75\" y=\"42\" fill=\"#f8fafc\" font-size=\"11\" font-family=\"sans-serif\" font-weight=\"bold\">A(1, 4)</text>\n  <circle cx=\"290\" cy=\"118\" r=\"4\" fill=\"#a855f7\"/>\n  <text x=\"295\" y=\"122\" fill=\"#f8fafc\" font-size=\"11\" font-family=\"sans-serif\" font-weight=\"bold\">B(5, 2)</text>\n  <circle cx=\"146\" cy=\"154\" r=\"4\" fill=\"#a855f7\"/>\n  <text x=\"140\" y=\"174\" fill=\"#f8fafc\" font-size=\"11\" font-family=\"sans-serif\" font-weight=\"bold\">C(2, 1)</text>\n  <text x=\"175\" y=\"105\" fill=\"#c084fc\" font-size=\"13\" font-family=\"sans-serif\" font-weight=\"bold\">Daerah Layak</text>\n</svg></div>\n\nDiberikan daerah himpunan penyelesaian tertutup berbentuk segitiga yang dibatasi oleh tiga titik pojok $A(1, 4)$, $B(5, 2)$, dan $C(2, 1)$. Fungsi objektif yang akan dimaksimalkan pada daerah tersebut adalah:\n$$Z = ax + 2y$$\ndengan parameter $a > 0$.\n\nAgar nilai maksimum fungsi objektif $Z$ tercapai di titik pojok $B(5, 2)$ secara tunggal, interval nilai parameter $a$ yang memenuhi adalah ...",
     "options": [
-      { "id": "A", "text": "$a > 1$" },
-      { "id": "B", "text": "$0 < a < 1$" },
-      { "id": "C", "text": "$a > 2$" },
-      { "id": "D", "text": "$1 < a < 3$" },
-      { "id": "E", "text": "$a \\ge 4$" }
+      {
+        "id": "A",
+        "text": "$a > 1$"
+      },
+      {
+        "id": "B",
+        "text": "$0 < a < 1$"
+      },
+      {
+        "id": "C",
+        "text": "$a > 2$"
+      },
+      {
+        "id": "D",
+        "text": "$1 < a < 3$"
+      },
+      {
+        "id": "E",
+        "text": "$a \\ge 4$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Hitung ekspresi fungsi objektif $Z$ pada ketiga titik pojok: $Z(A) = a + 8$, $Z(B) = 5a + 4$, dan $Z(C) = 2a + 2$. Syarat nilai maksimum tunggal di titik $B$ adalah $Z(B) > Z(A)$ dan $Z(B) > Z(C)$.",
@@ -61,11 +106,26 @@
     "difficulty": "HOTS",
     "question_text": "Sebuah peternakan unggas harus mencampur dua jenis pakan, yaitu Pakan X ($x\\text{ kg}$) dan Pakan Y ($y\\text{ kg}$), untuk memenuhi kebutuhan nutrisi harian kawanan ternak. Standar kebutuhan nutrisi harian minimum:\n- Protein: paling sedikit $24\\text{ unit}$\n- Kalsium: paling sedikit $18\\text{ unit}$\n\nSetiap kilogram Pakan X mengandung $3\\text{ unit}$ Protein dan $1\\text{ unit}$ Kalsium, dengan harga beli $\\text{Rp}15.000,00/\\text{kg}$. Sedangkan setiap kilogram Pakan Y mengandung $2\\text{ unit}$ Protein dan $2\\text{ unit}$ Kalsium, dengan harga beli $\\text{Rp}12.000,00/\\text{kg}$.\n\nBiaya pengeluaran minimum harian peternakan tersebut untuk pakan adalah ...",
     "options": [
-      { "id": "A", "text": "$\\text{Rp}135.000,00$" },
-      { "id": "B", "text": "$\\text{Rp}144.000,00$" },
-      { "id": "C", "text": "$\\text{Rp}150.000,00$" },
-      { "id": "D", "text": "$\\text{Rp}120.000,00$" },
-      { "id": "E", "text": "$\\text{Rp}165.000,00$" }
+      {
+        "id": "A",
+        "text": "$\\text{Rp}135.000,00$"
+      },
+      {
+        "id": "B",
+        "text": "$\\text{Rp}144.000,00$"
+      },
+      {
+        "id": "C",
+        "text": "$\\text{Rp}150.000,00$"
+      },
+      {
+        "id": "D",
+        "text": "$\\text{Rp}120.000,00$"
+      },
+      {
+        "id": "E",
+        "text": "$\\text{Rp}165.000,00$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Cari ketiga titik pojok daerah penyelesaian terbuka ke atas: titik potong sumbu-Y $(0, 12)$, perpotongan kedua garis kendala $(3; 7,5)$, dan titik potong sumbu-X $(18, 0)$. Uji biaya $C = 15.000x + 12.000y$ pada ketiga titik tersebut.",
@@ -77,20 +137,37 @@
     "sub_chapter_id": "program-linear",
     "question_type": "MCMA",
     "difficulty": "STANDAR",
-    "question_text": "Diberikan sistem pertidaksamaan linear:\n$$\\begin{cases} x + y \\le 8 \\\\ 2x + y \\le 12 \\\\ x \\ge 0, \\quad y \\ge 0 \\end{cases}$$\ndengan fungsi tujuan $Z = 5x + 3y$.\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai hasil optimasi!",
+    "question_text": "Perhatikan daerah penyelesaian layak (*feasible region*) sistem pertidaksamaan berikut:\n\n<div class=\"flex justify-center my-4 overflow-x-auto\"><svg viewBox=\"0 0 360 220\" class=\"w-full max-w-md h-auto drop-shadow-md rounded-lg\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"360\" height=\"220\" fill=\"#0f172a\" rx=\"8\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Axes: Origin (60, 190), dx=25 per unit, dy=14 per unit -->\n  <line x1=\"40\" y1=\"190\" x2=\"330\" y2=\"190\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <line x1=\"60\" y1=\"210\" x2=\"60\" y2=\"15\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <text x=\"335\" y=\"194\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">X</text>\n  <text x=\"56\" y=\"12\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">Y</text>\n  <!-- Lines: x+y=8 -> (60, 78) to (260, 190) -->\n  <!-- 2x+y=12 -> (60, 22) to (210, 190) -->\n  <!-- Intersection: (4,4) -> (60 + 100, 190 - 56) = (160, 134) -->\n  <polygon points=\"60,190 210,190 160,134 60,78\" fill=\"#38bdf8\" fill-opacity=\"0.25\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n  <line x1=\"50\" y1=\"71\" x2=\"270\" y2=\"197\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/>\n  <text x=\"265\" y=\"180\" fill=\"#f59e0b\" font-size=\"10\" font-family=\"sans-serif\">x + y = 8</text>\n  <line x1=\"55\" y1=\"14\" x2=\"220\" y2=\"202\" stroke=\"#ec4899\" stroke-width=\"1.5\"/>\n  <text x=\"175\" y=\"40\" fill=\"#ec4899\" font-size=\"10\" font-family=\"sans-serif\">2x + y = 12</text>\n  <!-- Points -->\n  <circle cx=\"60\" cy=\"190\" r=\"3.5\" fill=\"#38bdf8\"/>\n  <text x=\"42\" y=\"204\" fill=\"#f8fafc\" font-size=\"9\" font-family=\"sans-serif\">(0,0)</text>\n  <circle cx=\"210\" cy=\"190\" r=\"3.5\" fill=\"#38bdf8\"/>\n  <text x=\"205\" y=\"205\" fill=\"#f8fafc\" font-size=\"9\" font-family=\"sans-serif\">(6,0)</text>\n  <circle cx=\"160\" cy=\"134\" r=\"3.5\" fill=\"#38bdf8\"/>\n  <text x=\"168\" y=\"132\" fill=\"#f8fafc\" font-size=\"9\" font-family=\"sans-serif\">(4,4)</text>\n  <circle cx=\"60\" cy=\"78\" r=\"3.5\" fill=\"#38bdf8\"/>\n  <text x=\"35\" y=\"82\" fill=\"#f8fafc\" font-size=\"9\" font-family=\"sans-serif\">(0,8)</text>\n  <text x=\"100\" y=\"150\" fill=\"#38bdf8\" font-size=\"12\" font-family=\"sans-serif\" font-weight=\"bold\">Feasible</text>\n</svg></div>\n\nDiberikan sistem pertidaksamaan linear:\n$$\\begin{cases} x + y \\le 8 \\\\ 2x + y \\le 12 \\\\ x \\ge 0, \\quad y \\ge 0 \\end{cases}$$\ndengan fungsi tujuan $Z = 5x + 3y$.\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai hasil optimasi!",
     "options": [
-      { "id": "A", "text": "Titik perpotongan kedua garis batas berada di $(4, 4)$." },
-      { "id": "B", "text": "Nilai maksimum fungsi objektif adalah 32 yang tercapai di titik $(4, 4)$." },
-      { "id": "C", "text": "Nilai fungsi objektif di titik pojok $(6, 0)$ bernilai 30, lebih tinggi dari nilai di titik $(0, 8)$." },
-      { "id": "D", "text": "Nilai maksimum fungsi objektif tercapai di titik $(6, 0)$." }
+      {
+        "id": "A",
+        "text": "Titik perpotongan kedua garis batas berada di $(4, 4)$."
+      },
+      {
+        "id": "B",
+        "text": "Nilai maksimum fungsi objektif adalah 32 yang tercapai di titik $(4, 4)$."
+      },
+      {
+        "id": "C",
+        "text": "Nilai fungsi objektif di titik pojok $(6, 0)$ bernilai 30, lebih tinggi dari nilai di titik $(0, 8)$."
+      },
+      {
+        "id": "D",
+        "text": "Nilai maksimum fungsi objektif tercapai di titik $(6, 0)$."
+      },
+      {
+        "id": "E",
+        "text": "Titik potong antara garis $x + y = 8$ dan $2x + y = 12$ adalah $(4, 4)$."
+      }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Cari koordinat titik pojok poligon: $(0,0), (6,0), (4,4)$, dan $(0,8)$, lalu evaluasi nilai $Z = 5x + 3y$ pada masing-masing titik pojok.",
-    "explanation": "Langkah-langkah evaluasi titik pojok DHP:\n\n1. Titik potong kedua garis batas:\n   $$(2x + y = 12) - (x + y = 8) \\implies x = 4$$\n   $$y = 8 - 4 = 4$$\n   Titik potong adalah $(4, 4)$. (Pernyataan A **BENAR**)\n\n2. Tentukan seluruh titik pojok DHP:\n   - $O(0, 0) \\implies Z = 0$\n   - $A(6, 0) \\implies Z = 5(6) + 3(0) = 30$\n   - $B(4, 4) \\implies Z = 5(4) + 3(4) = 20 + 12 = 32$\n   - $C(0, 8) \\implies Z = 5(0) + 3(8) = 24$\n\n3. Analisis nilai-nilai fungsi objektif:\n   - Nilai maksimum adalah 32 di titik $(4, 4)$. (Pernyataan B **BENAR**)\n   - Nilai di titik $(6, 0)$ adalah 30, sedangkan di $(0, 8)$ adalah 24, sehingga $30 > 24$. (Pernyataan C **BENAR**)\n   - Nilai maksimum berada di $(4, 4)$, bukan di $(6, 0)$. (Pernyataan D **SALAH**)\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+    "explanation": "Langkah-langkah evaluasi titik pojok DHP:\n\n1. Titik potong kedua garis batas:\n   $$(2x + y = 12) - (x + y = 8) \\implies x = 4$$\n   $$y = 8 - 4 = 4$$\n   Titik potong adalah $(4, 4)$. (Pernyataan A **BENAR**)\n\n2. Tentukan seluruh titik pojok DHP:\n   - $O(0, 0) \\implies Z = 0$\n   - $A(6, 0) \\implies Z = 5(6) + 3(0) = 30$\n   - $B(4, 4) \\implies Z = 5(4) + 3(4) = 20 + 12 = 32$\n   - $C(0, 8) \\implies Z = 5(0) + 3(8) = 24$\n\n3. Analisis nilai-nilai fungsi objektif:\n   - Nilai maksimum adalah 32 di titik $(4, 4)$. (Pernyataan B **BENAR**)\n   - Nilai di titik $(6, 0)$ adalah 30, sedangkan di $(0, 8)$ adalah 24, sehingga $30 > 24$. (Pernyataan C **BENAR**)\n   - Nilai maksimum berada di $(4, 4)$, bukan di $(6, 0)$. (Pernyataan D **SALAH**)\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Eliminasi kedua persamaan: $(2x + y) - (x + y) = 12 - 8 \\implies x = 4$, lalu $y = 8 - 4 = 4$, sehingga titik potongnya adalah $(4, 4)$."
   },
   {
     "id": "matwa-program-linear-06",
@@ -100,18 +177,35 @@
     "difficulty": "HOTS",
     "question_text": "Sebuah industri metalurgi peleburan baja berniat memproduksi paduan logam khusus dengan mencampurkan dua jenis bijih mentah, yaitu Bijih Alpha ($x\\text{ ton}$) dan Bijih Beta ($y\\text{ ton}$). Setiap ton bijih logam mengandung tiga unsur mineral:\n- 1 ton Bijih Alpha mengandung: $500\\text{ kg}$ Logam Utama, $40\\text{ kg}$ Mineral P, dan $20\\text{ kg}$ Mineral Q.\n- 1 ton Bijih Beta mengandung: $500\\text{ kg}$ Logam Utama, $20\\text{ kg}$ Mineral P, dan $60\\text{ kg}$ Mineral Q.\n\nSyarat batas minimum kandungan campuran yang harus dipenuhi:\n- Logam Utama: sedikitnya $2.500\\text{ kg}$\n- Mineral P: sedikitnya $140\\text{ kg}$\n- Mineral Q: sedikitnya $180\\text{ kg}$\n\nBiaya pengadaan per ton adalah $\\text{Rp}8.000.000,00$ untuk Bijih Alpha dan $\\text{Rp}6.000.000,00$ untuk Bijih Beta.\n\nPilihlah **SEMUA** pernyataan berikut yang bernilai **BENAR**!",
     "options": [
-      { "id": "A", "text": "Titik-titik pojok batas daerah penyelesaian yang aktif meliputi $(0, 7), (2, 3), (3, 2)$, dan $(9, 0)$." },
-      { "id": "B", "text": "Biaya pengadaan minimum yang optimal adalah Rp34.000.000,00." },
-      { "id": "C", "text": "Biaya minimum tercapai saat industri menggunakan 2 ton Bijih Alpha dan 3 ton Bijih Beta." },
-      { "id": "D", "text": "Biaya pengadaan minimum tercapai saat industri menggunakan 3 ton Bijih Alpha dan 2 ton Bijih Beta." }
+      {
+        "id": "A",
+        "text": "Titik-titik pojok batas daerah penyelesaian yang aktif meliputi $(0, 7), (2, 3), (3, 2)$, dan $(9, 0)$."
+      },
+      {
+        "id": "B",
+        "text": "Biaya pengadaan minimum yang optimal adalah Rp34.000.000,00."
+      },
+      {
+        "id": "C",
+        "text": "Biaya minimum tercapai saat industri menggunakan 2 ton Bijih Alpha dan 3 ton Bijih Beta."
+      },
+      {
+        "id": "D",
+        "text": "Biaya pengadaan minimum tercapai saat industri menggunakan 3 ton Bijih Alpha dan 2 ton Bijih Beta."
+      },
+      {
+        "id": "E",
+        "text": "Fungsi kendala ketersediaan bahan baku membatasi daerah feasible di kuadran pertama."
+      }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Bagi persamaan kendala dengan faktor persekutuan untuk mendapatkan: $x + y \\ge 5$, $2x + y \\ge 7$, dan $x + 3y \\ge 9$. Cari titik potong kedua pasang garis kendala yang berurutan.",
-    "explanation": "Langkah-langkah penyelesaian program linear 3 kendala:\n\n1. Susun model matematika kendala kandungan unsur:\n   - Logam Utama: $500x + 500y \\ge 2.500 \\implies x + y \\ge 5$\n   - Mineral P: $40x + 20y \\ge 140 \\implies 2x + y \\ge 7$\n   - Mineral Q: $20x + 60y \\ge 180 \\implies x + 3y \\ge 9$\n   - Syarat non-negatif: $x \\ge 0, \\quad y \\ge 0$\n\n2. Tentukan titik-titik potong antar garis batas kendala:\n   - Garis $2x + y = 7$ dan $x + y = 5$:\n     $$(2x + y) - (x + y) = 7 - 5 \\implies x = 2, \\quad y = 3 \\implies (2, 3)$$\n     (Uji kendala Q: $2 + 3(3) = 11 \\ge 9$ terpenuhi)\n   - Garis $x + y = 5$ dan $x + 3y = 9$:\n     $$(x + 3y) - (x + y) = 9 - 5 \\implies 2y = 4 \\implies y = 2, \\quad x = 3 \\implies (3, 2)$$\n     (Uji kendala P: $2(3) + 2 = 8 \\ge 7$ terpenuhi)\n   - Titik potong sumbu-$Y$ ($x=0$): $\\max(y) = \\max(5, 7, 3) = 7 \\implies (0, 7)$\n   - Titik potong sumbu-$X$ ($y=0$): $\\max(x) = \\max(5, 3,5, 9) = 9 \\implies (9, 0)$\n   Maka titik pojok DHP adalah $(0, 7), (2, 3), (3, 2)$, dan $(9, 0)$. (Pernyataan A **BENAR**)\n\n3. Uji biaya $C = 8x + 6y$ (dalam juta rupiah) pada setiap titik pojok:\n   - Titik $(0, 7) \\implies C = 8(0) + 6(7) = 42\\text{ juta}$\n   - Titik $(2, 3) \\implies C = 8(2) + 6(3) = 16 + 18 = 34\\text{ juta}$ (Minimum)\n   - Titik $(3, 2) \\implies C = 8(3) + 6(2) = 24 + 12 = 36\\text{ juta}$\n   - Titik $(9, 0) \\implies C = 8(9) + 6(0) = 72\\text{ juta}$\n\n4. Kesimpulan optimasi:\n   Biaya minimum adalah Rp34.000.000,00 yang tercapai saat $x = 2\\text{ ton}$ dan $y = 3\\text{ ton}$. (Pernyataan B dan C **BENAR**, Pernyataan D **SALAH**)\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**."
+    "explanation": "Langkah-langkah penyelesaian program linear 3 kendala:\n\n1. Susun model matematika kendala kandungan unsur:\n   - Logam Utama: $500x + 500y \\ge 2.500 \\implies x + y \\ge 5$\n   - Mineral P: $40x + 20y \\ge 140 \\implies 2x + y \\ge 7$\n   - Mineral Q: $20x + 60y \\ge 180 \\implies x + 3y \\ge 9$\n   - Syarat non-negatif: $x \\ge 0, \\quad y \\ge 0$\n\n2. Tentukan titik-titik potong antar garis batas kendala:\n   - Garis $2x + y = 7$ dan $x + y = 5$:\n     $$(2x + y) - (x + y) = 7 - 5 \\implies x = 2, \\quad y = 3 \\implies (2, 3)$$\n     (Uji kendala Q: $2 + 3(3) = 11 \\ge 9$ terpenuhi)\n   - Garis $x + y = 5$ dan $x + 3y = 9$:\n     $$(x + 3y) - (x + y) = 9 - 5 \\implies 2y = 4 \\implies y = 2, \\quad x = 3 \\implies (3, 2)$$\n     (Uji kendala P: $2(3) + 2 = 8 \\ge 7$ terpenuhi)\n   - Titik potong sumbu-$Y$ ($x=0$): $\\max(y) = \\max(5, 7, 3) = 7 \\implies (0, 7)$\n   - Titik potong sumbu-$X$ ($y=0$): $\\max(x) = \\max(5, 3,5, 9) = 9 \\implies (9, 0)$\n   Maka titik pojok DHP adalah $(0, 7), (2, 3), (3, 2)$, dan $(9, 0)$. (Pernyataan A **BENAR**)\n\n3. Uji biaya $C = 8x + 6y$ (dalam juta rupiah) pada setiap titik pojok:\n   - Titik $(0, 7) \\implies C = 8(0) + 6(7) = 42\\text{ juta}$\n   - Titik $(2, 3) \\implies C = 8(2) + 6(3) = 16 + 18 = 34\\text{ juta}$ (Minimum)\n   - Titik $(3, 2) \\implies C = 8(3) + 6(2) = 24 + 12 = 36\\text{ juta}$\n   - Titik $(9, 0) \\implies C = 8(9) + 6(0) = 72\\text{ juta}$\n\n4. Kesimpulan optimasi:\n   Biaya minimum adalah Rp34.000.000,00 yang tercapai saat $x = 2\\text{ ton}$ dan $y = 3\\text{ ton}$. (Pernyataan B dan C **BENAR**, Pernyataan D **SALAH**)\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Karena jumlah produksi fisik tidak boleh negatif ($x \\ge 0, y \\ge 0$), seluruh daerah penyelesaian layak berada di Kuadran I."
   },
   {
     "id": "matwa-program-linear-07",
@@ -121,18 +215,35 @@
     "difficulty": "HOTS",
     "question_text": "Diberikan sistem pertidaksamaan kendala:\n$$\\begin{cases} x + 2y \\le 10 \\\\ 3x + y \\le 15 \\\\ x \\ge 0, \\quad y \\ge 0 \\end{cases}$$\ndengan fungsi objektif $Z = 3x + 6y$.\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai karakteristik solusi optimum program linear tersebut!",
     "options": [
-      { "id": "A", "text": "Gradien garis selidik fungsi tujuan sejajar dengan garis batas kendala $x + 2y = 10$." },
-      { "id": "B", "text": "Nilai maksimum fungsi tujuan pada daerah tersebut adalah 30." },
-      { "id": "C", "text": "Terdapat tak terhingga banyaknya kombinasi solusi optimum yang terletak di sepanjang ruas garis dari $(0, 5)$ ke $(4, 3)$." },
-      { "id": "D", "text": "Nilai maksimum hanya tercapai secara unik pada satu titik pojok yaitu $(4, 3)$." }
+      {
+        "id": "A",
+        "text": "Gradien garis selidik fungsi tujuan sejajar dengan garis batas kendala $x + 2y = 10$."
+      },
+      {
+        "id": "B",
+        "text": "Nilai maksimum fungsi tujuan pada daerah tersebut adalah 30."
+      },
+      {
+        "id": "C",
+        "text": "Terdapat tak terhingga banyaknya kombinasi solusi optimum yang terletak di sepanjang ruas garis dari $(0, 5)$ ke $(4, 3)$."
+      },
+      {
+        "id": "D",
+        "text": "Nilai maksimum hanya tercapai secara unik pada satu titik pojok yaitu $(4, 3)$."
+      },
+      {
+        "id": "E",
+        "text": "Titik optimum dari fungsi objektif linear selalu terletak pada batas atau titik pojok daerah penyelesaian."
+      }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Bandingkan gradien garis selidik fungsi objektif $Z = 3x + 6y$ dengan gradien garis batas kendala pertama. Jika gradiennya bernilai identik dan mencapai nilai maksimum, akan timbul alternatif solusi optimum di sepanjang ruas garis pembatas.",
-    "explanation": "Langkah-langkah analisis alternatif solusi optimum (*alternative optimal solutions*):\n\n1. Cari titik pojok DHP dari sistem kendala:\n   - $O(0, 0)$\n   - Titik potong $3x + y = 15$ dengan sumbu-$X$: $(5, 0)$\n   - Titik potong kedua garis: $x + 2(15 - 3x) = 10 \\implies 5x = 20 \\implies x = 4, y = 3 \\implies (4, 3)$\n   - Titik potong $x + 2y = 10$ dengan sumbu-$Y$: $(0, 5)$\n\n2. Analisis kemiringan (gradien) garis selidik:\n   Fungsi objektif: $3x + 6y = k \\implies y = -\\frac{3}{6}x + \\frac{k}{6} \\implies m = -\\frac{1}{2}$\n   Garis batas kendala: $x + 2y = 10 \\implies y = -\\frac{1}{2}x + 5 \\implies m = -\\frac{1}{2}$\n   Karena kedua garis memiliki gradien yang sama persis ($m = -\\frac{1}{2}$), garis selidik bergerak sejajar dengan batas kendala $x + 2y = 10$. (Pernyataan A **BENAR**)\n\n3. Hitung nilai $Z$ di titik pojok batas kendala tersebut:\n   - $Z(0, 5) = 3(0) + 6(5) = 30$\n   - $Z(4, 3) = 3(4) + 6(3) = 12 + 18 = 30$\n   - $Z(5, 0) = 3(5) + 6(0) = 15$\n   Nilai maksimum adalah 30. (Pernyataan B **BENAR**)\n\n4. Interpretasi geometris:\n   Karena nilai maksimum sama-sama tercapai di dua titik pojok yang bertetangga pada garis kendala yang sejajar, maka seluruh titik di sepanjang ruas garis penghubung dari $(0, 5)$ hingga $(4, 3)$ juga menghasilkan nilai $Z = 30$. Hal ini menghasilkan tak terhingga solusi optimal. (Pernyataan C **BENAR**, Pernyataan D **SALAH**)\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**."
+    "explanation": "Langkah-langkah analisis alternatif solusi optimum (*alternative optimal solutions*):\n\n1. Cari titik pojok DHP dari sistem kendala:\n   - $O(0, 0)$\n   - Titik potong $3x + y = 15$ dengan sumbu-$X$: $(5, 0)$\n   - Titik potong kedua garis: $x + 2(15 - 3x) = 10 \\implies 5x = 20 \\implies x = 4, y = 3 \\implies (4, 3)$\n   - Titik potong $x + 2y = 10$ dengan sumbu-$Y$: $(0, 5)$\n\n2. Analisis kemiringan (gradien) garis selidik:\n   Fungsi objektif: $3x + 6y = k \\implies y = -\\frac{3}{6}x + \\frac{k}{6} \\implies m = -\\frac{1}{2}$\n   Garis batas kendala: $x + 2y = 10 \\implies y = -\\frac{1}{2}x + 5 \\implies m = -\\frac{1}{2}$\n   Karena kedua garis memiliki gradien yang sama persis ($m = -\\frac{1}{2}$), garis selidik bergerak sejajar dengan batas kendala $x + 2y = 10$. (Pernyataan A **BENAR**)\n\n3. Hitung nilai $Z$ di titik pojok batas kendala tersebut:\n   - $Z(0, 5) = 3(0) + 6(5) = 30$\n   - $Z(4, 3) = 3(4) + 6(3) = 12 + 18 = 30$\n   - $Z(5, 0) = 3(5) + 6(0) = 15$\n   Nilai maksimum adalah 30. (Pernyataan B **BENAR**)\n\n4. Interpretasi geometris:\n   Karena nilai maksimum sama-sama tercapai di dua titik pojok yang bertetangga pada garis kendala yang sejajar, maka seluruh titik di sepanjang ruas garis penghubung dari $(0, 5)$ hingga $(4, 3)$ juga menghasilkan nilai $Z = 30$. Hal ini menghasilkan tak terhingga solusi optimal. (Pernyataan C **BENAR**, Pernyataan D **SALAH**)\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Berdasarkan Teorema Dasar Program Linear, nilai ekstrem fungsi tujuan selalu dicapai pada salah satu titik sudut (ekstrem) poligon daerah layak."
   },
   {
     "id": "matwa-program-linear-08",

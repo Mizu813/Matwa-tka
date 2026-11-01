@@ -7,11 +7,26 @@
     "difficulty": "STANDAR",
     "question_text": "Sebuah jasa katering dekorasi pernikahan menghias pinggiran sekeliling 180 buah tatakan piring saji berbentuk lingkaran menggunakan pita renda emas. Setiap tatakan piring memiliki diameter $d = 28$ cm. Harga pita renda emas adalah Rp2.500,00 per meter.\n\nDengan menggunakan pendekatan $\\pi = \\frac{22}{7}$, total biaya pembelian pita renda emas yang diperlukan untuk menghias seluruh 180 tatakan piring tersebut adalah ...",
     "options": [
-      { "id": "A", "text": "Rp396.000,00" },
-      { "id": "B", "text": "Rp392.000,00" },
-      { "id": "C", "text": "Rp400.000,00" },
-      { "id": "D", "text": "Rp384.000,00" },
-      { "id": "E", "text": "Rp412.000,00" }
+      {
+        "id": "A",
+        "text": "Rp396.000,00"
+      },
+      {
+        "id": "B",
+        "text": "Rp392.000,00"
+      },
+      {
+        "id": "C",
+        "text": "Rp400.000,00"
+      },
+      {
+        "id": "D",
+        "text": "Rp384.000,00"
+      },
+      {
+        "id": "E",
+        "text": "Rp412.000,00"
+      }
     ],
     "correct_answer": "A",
     "hint": "Hitung keliling satu tatakan piring dengan $K = \\pi \\cdot d$, lalu kalikan dengan 180 untuk mendapatkan panjang total pita dalam satuan meter, kemudian kalikan dengan harga per meter.",
@@ -25,11 +40,26 @@
     "difficulty": "STANDAR",
     "question_text": "Sebuah gedung auditorium memasang 20 unit panel jendela kaca berdesain identik. Setiap unit jendela berbentuk gabungan persegi panjang pada bagian bawah dan segitiga sama kaki pada bagian atasnya:\n- Bagian persegi panjang memiliki ukuran lebar 120 cm (1,2 m) dan tinggi 150 cm (1,5 m).\n- Bagian segitiga sama kaki memiliki alas selebar persegi panjang (120 cm = 1,2 m) dan tinggi segitiga 50 cm (0,5 m).\n\nTotal luas permukaan kaca (dalam meter persegi) yang dibutuhkan untuk memasang seluruh 20 unit jendela tersebut adalah ...",
     "options": [
-      { "id": "A", "text": "$42\\text{ m}^2$" },
-      { "id": "B", "text": "$40\\text{ m}^2$" },
-      { "id": "C", "text": "$45\\text{ m}^2$" },
-      { "id": "D", "text": "$48\\text{ m}^2$" },
-      { "id": "E", "text": "$36\\text{ m}^2$" }
+      {
+        "id": "A",
+        "text": "$42\\text{ m}^2$"
+      },
+      {
+        "id": "B",
+        "text": "$40\\text{ m}^2$"
+      },
+      {
+        "id": "C",
+        "text": "$45\\text{ m}^2$"
+      },
+      {
+        "id": "D",
+        "text": "$48\\text{ m}^2$"
+      },
+      {
+        "id": "E",
+        "text": "$36\\text{ m}^2$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Hitung luas satu unit jendela dengan menjumlahkan luas persegi panjang ($p \\times l$) dan luas segitiga ($\\frac{1}{2} \\times a \\times t$), lalu kalikan hasilnya dengan 20.",
@@ -43,11 +73,26 @@
     "difficulty": "STANDAR",
     "question_text": "Sebuah taman kota memiliki area rumput hijau berbentuk juring lingkaran dengan sudut pusat $\\alpha = 60^\\circ$ dan panjang jari-jari $R = 21$ meter.\n\nDengan menggunakan pendekatan $\\pi = \\frac{22}{7}$, luas area rumput juring lingkaran tersebut adalah ...",
     "options": [
-      { "id": "A", "text": "$231\\text{ m}^2$" },
-      { "id": "B", "text": "$220\\text{ m}^2$" },
-      { "id": "C", "text": "$242\\text{ m}^2$" },
-      { "id": "D", "text": "$198\\text{ m}^2$" },
-      { "id": "E", "text": "$264\\text{ m}^2$" }
+      {
+        "id": "A",
+        "text": "$231\\text{ m}^2$"
+      },
+      {
+        "id": "B",
+        "text": "$220\\text{ m}^2$"
+      },
+      {
+        "id": "C",
+        "text": "$242\\text{ m}^2$"
+      },
+      {
+        "id": "D",
+        "text": "$198\\text{ m}^2$"
+      },
+      {
+        "id": "E",
+        "text": "$264\\text{ m}^2$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Gunakan rumus luas juring lingkaran: $L = \\frac{\\alpha}{360^\\circ} \\times \\pi R^2$ dengan $\\alpha = 60^\\circ$ dan $R = 21$ meter.",
@@ -59,13 +104,28 @@
     "sub_chapter_id": "pengukuran-bangun-datar",
     "question_type": "PG",
     "difficulty": "HOTS",
-    "question_text": "Di dalam sebuah persegi $ABCD$ dengan panjang sisi $s = 14$ cm, dibuat dua busur seperempat lingkaran:\n- Busur pertama berpusat di titik sudut $B$ dengan jari-jari $r = 14$ cm yang menghubungkan titik sudut $A$ dan $C$.\n- Busur kedua berpusat di titik sudut $D$ dengan jari-jari $r = 14$ cm yang menghubungkan titik sudut $A$ dan $C$.\n\nKedua busur tersebut berpotongan dan membentuk daerah irisan menyerupai kelopak daun di tengah persegi. Dengan menggunakan $\\pi = \\frac{22}{7}$, luas daerah irisan kelopak daun tersebut adalah ...",
+    "question_text": "Perhatikan gambar bidang persegi dengan daerah arsir berbentuk daun (lensa) berikut:\n\n<div class=\"flex justify-center my-4 overflow-x-auto\"><svg viewBox=\"0 0 320 230\" class=\"w-full max-w-xs h-auto drop-shadow-md rounded-lg\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"320\" height=\"230\" fill=\"#0f172a\" rx=\"8\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Square ABCD: Top-Left (80, 30), Side=160 px -->\n  <rect x=\"80\" y=\"30\" width=\"160\" height=\"160\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/>\n  <!-- Leaf area: intersection of two quadrant circles -->\n  <!-- Center B(80, 190) arc from (80, 30) to (240, 190) AND Center D(240, 30) arc from (240, 190) to (80, 30) -->\n  <path d=\"M 80,30 A 160 160 0 0 1 240,190 A 160 160 0 0 1 80,30 Z\" fill=\"#10b981\" fill-opacity=\"0.4\" stroke=\"#10b981\" stroke-width=\"2\"/>\n  <!-- Vertices labels -->\n  <text x=\"70\" y=\"26\" fill=\"#f8fafc\" font-size=\"12\" font-family=\"sans-serif\" font-weight=\"bold\">D</text>\n  <text x=\"250\" y=\"26\" fill=\"#f8fafc\" font-size=\"12\" font-family=\"sans-serif\" font-weight=\"bold\">C</text>\n  <text x=\"70\" y=\"202\" fill=\"#f8fafc\" font-size=\"12\" font-family=\"sans-serif\" font-weight=\"bold\">A</text>\n  <text x=\"250\" y=\"202\" fill=\"#f8fafc\" font-size=\"12\" font-family=\"sans-serif\" font-weight=\"bold\">B</text>\n  <!-- Side dimension -->\n  <text x=\"160\" y=\"210\" fill=\"#38bdf8\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\">s = 14 cm</text>\n  <text x=\"160\" y=\"115\" fill=\"#f8fafc\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"bold\">Daerah Diarsir</text>\n</svg></div>\n\nDi dalam sebuah persegi $ABCD$ dengan panjang sisi $s = 14$ cm, dibuat dua busur lingkaran seperempat lingkaran dengan pusat di dua titik sudut yang berhadapan. Luas daerah irisan (daerah arsiran daun) di dalam persegi tersebut adalah ... (gunakan $\\pi = \\frac{22}{7}$)",
     "options": [
-      { "id": "A", "text": "$112\\text{ cm}^2$" },
-      { "id": "B", "text": "$108\\text{ cm}^2$" },
-      { "id": "C", "text": "$120\\text{ cm}^2$" },
-      { "id": "D", "text": "$98\\text{ cm}^2$" },
-      { "id": "E", "text": "$126\\text{ cm}^2$" }
+      {
+        "id": "A",
+        "text": "$112\\text{ cm}^2$"
+      },
+      {
+        "id": "B",
+        "text": "$108\\text{ cm}^2$"
+      },
+      {
+        "id": "C",
+        "text": "$120\\text{ cm}^2$"
+      },
+      {
+        "id": "D",
+        "text": "$98\\text{ cm}^2$"
+      },
+      {
+        "id": "E",
+        "text": "$126\\text{ cm}^2$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Luas irisan kelopak daun diperoleh dari jumlah luas dua buah seperempat lingkaran dikurangi luas persegi, atau menggunakan rumus praktis daun simetris $L = \\frac{4}{7} r^2$.",
@@ -79,18 +139,35 @@
     "difficulty": "HOTS",
     "question_text": "Sebuah lapangan taman berbentuk belah ketupat $ABCD$ memiliki panjang kedua garis diagonal masing-masing $d_1 = AC = 24$ meter dan $d_2 = BD = 32$ meter. Di bagian tengah lapangan dibuat kolam air mancur berbentuk lingkaran yang menyinggung keempat sisi belah ketupat dari dalam secara presisi.\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai ukuran geometris lapangan dan kolam tersebut!",
     "options": [
-      { "id": "A", "text": "Panjang sisi belah ketupat adalah 20 meter dan keliling lapangannya adalah 80 meter." },
-      { "id": "B", "text": "Luas total lapangan belah ketupat tersebut adalah $384\\text{ m}^2$." },
-      { "id": "C", "text": "Jari-jari kolam lingkaran yang menyinggung keempat sisi belah ketupat adalah 9,6 meter." },
-      { "id": "D", "text": "Jari-jari kolam lingkaran yang menyinggung keempat sisi belah ketupat adalah 12 meter." }
+      {
+        "id": "A",
+        "text": "Panjang sisi belah ketupat adalah 20 meter dan keliling lapangannya adalah 80 meter."
+      },
+      {
+        "id": "B",
+        "text": "Luas total lapangan belah ketupat tersebut adalah $384\\text{ m}^2$."
+      },
+      {
+        "id": "C",
+        "text": "Jari-jari kolam lingkaran yang menyinggung keempat sisi belah ketupat adalah 9,6 meter."
+      },
+      {
+        "id": "D",
+        "text": "Jari-jari kolam lingkaran yang menyinggung keempat sisi belah ketupat adalah 12 meter."
+      },
+      {
+        "id": "E",
+        "text": "Keliling belah ketupat adalah empat kali panjang sisinya ($K = 4s$)."
+      }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Gunakan teorema Pythagoras pada segitiga siku-siku seperempat diagonal untuk mencari sisi miring $s = \\sqrt{12^2 + 16^2}$. Jari-jari lingkaran dalam dihitung melalui hubungan luas: $L = \\frac{1}{2} \\times \\text{Keliling} \\times r$.",
-    "explanation": "Langkah-langkah evaluasi belah ketupat dan lingkaran dalamnya:\n\n1. **Menghitung Panjang Sisi dan Keliling Belah Ketupat:**\n   Kedua diagonal berpotongan tegak lurus di titik tengah, membagi belah ketupat menjadi 4 segitiga siku-siku kongruen dengan panjang sisi siku-siku:\n   $$a = \\frac{d_1}{2} = \\frac{24}{2} = 12\\text{ m}, \\quad b = \\frac{d_2}{2} = \\frac{32}{2} = 16\\text{ m}$$\n   Panjang sisi belah ketupat ($s$):\n   $$s = \\sqrt{12^2 + 16^2} = \\sqrt{144 + 256} = \\sqrt{400} = 20\\text{ meter}$$\n   Keliling belah ketupat:\n   $$K = 4s = 4(20) = 80\\text{ meter}$$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Menghitung Luas Belah Ketupat:**\n   $$L = \\frac{1}{2} \\times d_1 \\times d_2 = \\frac{1}{2} \\times 24 \\times 32 = 12 \\times 32 = 384\\text{ m}^2$$\n   Pernyataan B bernilai **BENAR**.\n\n3. **Menghitung Jari-Jari Lingkaran Dalam ($r$):**\n   Lingkaran menyinggung keempat sisi belah ketupat, sehingga tinggi segitiga siku-siku terhadap hipotenusa sisi belah ketupat adalah $r$.\n   Hubungan luas belah ketupat terhadap keliling dan jari-jari lingkaran dalam:\n   $$L = \\frac{1}{2} \\times K \\times r$$\n   $$384 = \\frac{1}{2} \\times 80 \\times r$$\n   $$384 = 40r \\implies r = \\frac{384}{40} = 9,6\\text{ meter}$$\n   Pernyataan C bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+    "explanation": "Langkah-langkah evaluasi belah ketupat dan lingkaran dalamnya:\n\n1. **Menghitung Panjang Sisi dan Keliling Belah Ketupat:**\n   Kedua diagonal berpotongan tegak lurus di titik tengah, membagi belah ketupat menjadi 4 segitiga siku-siku kongruen dengan panjang sisi siku-siku:\n   $$a = \\frac{d_1}{2} = \\frac{24}{2} = 12\\text{ m}, \\quad b = \\frac{d_2}{2} = \\frac{32}{2} = 16\\text{ m}$$\n   Panjang sisi belah ketupat ($s$):\n   $$s = \\sqrt{12^2 + 16^2} = \\sqrt{144 + 256} = \\sqrt{400} = 20\\text{ meter}$$\n   Keliling belah ketupat:\n   $$K = 4s = 4(20) = 80\\text{ meter}$$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Menghitung Luas Belah Ketupat:**\n   $$L = \\frac{1}{2} \\times d_1 \\times d_2 = \\frac{1}{2} \\times 24 \\times 32 = 12 \\times 32 = 384\\text{ m}^2$$\n   Pernyataan B bernilai **BENAR**.\n\n3. **Menghitung Jari-Jari Lingkaran Dalam ($r$):**\n   Lingkaran menyinggung keempat sisi belah ketupat, sehingga tinggi segitiga siku-siku terhadap hipotenusa sisi belah ketupat adalah $r$.\n   Hubungan luas belah ketupat terhadap keliling dan jari-jari lingkaran dalam:\n   $$L = \\frac{1}{2} \\times K \\times r$$\n   $$384 = \\frac{1}{2} \\times 80 \\times r$$\n   $$384 = 40r \\implies r = \\frac{384}{40} = 9,6\\text{ meter}$$\n   Pernyataan C bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Karena keempat sisi belah ketupat sama panjang, maka $K = s + s + s + s = 4s$."
   },
   {
     "id": "matwa-pengukuran-bangun-datar-06",
@@ -100,18 +177,35 @@
     "difficulty": "HOTS",
     "question_text": "Pak Darmawan memiliki kawat pagar pembatas sepanjang 120 meter. Kawat tersebut digunakan untuk memagari sebidang lahan kebun berbentuk persegi panjang yang dibagi menjadi dua petak identik menggunakan satu bentangan kawat sekat di tengahnya (sejajar dengan sisi lebar lahan).\n\nMisalkan $x$ menyatakan lebar lahan (terdapat 3 bentangan kawat vertikal selebar $x$) dan $y$ menyatakan panjang total lahan (terdapat 2 bentangan kawat horizontal sepanjang $y$).\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai optimasi luas kebun tersebut!",
     "options": [
-      { "id": "A", "text": "Hubungan fungsional antara panjang kebun $y$ dan lebar kebun $x$ dirumuskan oleh persamaan linear $y = 60 - 1,5x$." },
-      { "id": "B", "text": "Luas total kebun mencapai nilai maksimum apabila ukuran lebar pagar dipilih $x = 20$ meter dan panjang $y = 30$ meter." },
-      { "id": "C", "text": "Luas maksimum lahan kebun yang dapat dipagari dengan seluruh kawat tersebut adalah $600\\text{ m}^2$." },
-      { "id": "D", "text": "Luas kebun maksimum tercapai jika kebun dibuat berbentuk bujur sangkar (persegi) berukuran $24\\text{ m} \\times 24\\text{ m}$." }
+      {
+        "id": "A",
+        "text": "Hubungan fungsional antara panjang kebun $y$ dan lebar kebun $x$ dirumuskan oleh persamaan linear $y = 60 - 1,5x$."
+      },
+      {
+        "id": "B",
+        "text": "Luas total kebun mencapai nilai maksimum apabila ukuran lebar pagar dipilih $x = 20$ meter dan panjang $y = 30$ meter."
+      },
+      {
+        "id": "C",
+        "text": "Luas maksimum lahan kebun yang dapat dipagari dengan seluruh kawat tersebut adalah $600\\text{ m}^2$."
+      },
+      {
+        "id": "D",
+        "text": "Luas kebun maksimum tercapai jika kebun dibuat berbentuk bujur sangkar (persegi) berukuran $24\\text{ m} \\times 24\\text{ m}$."
+      },
+      {
+        "id": "E",
+        "text": "Untuk panjang keliling kawat yang tetap, luas maksimum persegi panjang tercapai saat sisinya sama panjang (bujur sangkar)."
+      }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Persamaan panjang kawat: $3x + 2y = 120$. Substitusikan $y$ ke dalam rumus luas $L(x) = x \\cdot y$ untuk memperoleh fungsi kuadrat, lalu cari titik puncak $x_p = -\\frac{b}{2a}$.",
-    "explanation": "Langkah-langkah optimasi luas lahan persegi panjang dengan sekat tengah:\n\n1. **Persamaan Panjang Kawat Pagar:**\n   Terdapat 3 bentangan sisi lebar ($x$) dan 2 bentangan sisi panjang ($y$):\n   $$3x + 2y = 120$$\n   $$2y = 120 - 3x \\implies y = 60 - 1,5x$$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Fungsi Luas Lahan:**\n   $$L(x) = x \\cdot y = x(60 - 1,5x) = -1,5x^2 + 60x$$\n\n3. **Mencari Nilai Ekstrem Maksimum:**\n   Fungsi kuadrat terbuka ke bawah ($a = -1,5 < 0$). Puncak tercapai pada absis:\n   $$x_p = -\\frac{b}{2a} = -\\frac{60}{2(-1,5)} = \\frac{60}{3} = 20\\text{ meter}$$\n   Substitusikan $x = 20$ ke dalam persamaan $y$:\n   $$y = 60 - 1,5(20) = 60 - 30 = 30\\text{ meter}$$\n   Ukuran optimal adalah lebar $x = 20\\text{ m}$ dan panjang $y = 30\\text{ m}$.\n   Pernyataan B bernilai **BENAR**.\n   Karena $x \\neq y$, bentuk lahan optimal bukan persegi bujur sangkar. Pernyataan D bernilai **SALAH**.\n\n4. **Menghitung Luas Maksimum:**\n   $$L_{\\text{maks}} = x \\times y = 20\\text{ m} \\times 30\\text{ m} = 600\\text{ m}^2$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+    "explanation": "Langkah-langkah optimasi luas lahan persegi panjang dengan sekat tengah:\n\n1. **Persamaan Panjang Kawat Pagar:**\n   Terdapat 3 bentangan sisi lebar ($x$) dan 2 bentangan sisi panjang ($y$):\n   $$3x + 2y = 120$$\n   $$2y = 120 - 3x \\implies y = 60 - 1,5x$$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Fungsi Luas Lahan:**\n   $$L(x) = x \\cdot y = x(60 - 1,5x) = -1,5x^2 + 60x$$\n\n3. **Mencari Nilai Ekstrem Maksimum:**\n   Fungsi kuadrat terbuka ke bawah ($a = -1,5 < 0$). Puncak tercapai pada absis:\n   $$x_p = -\\frac{b}{2a} = -\\frac{60}{2(-1,5)} = \\frac{60}{3} = 20\\text{ meter}$$\n   Substitusikan $x = 20$ ke dalam persamaan $y$:\n   $$y = 60 - 1,5(20) = 60 - 30 = 30\\text{ meter}$$\n   Ukuran optimal adalah lebar $x = 20\\text{ m}$ dan panjang $y = 30\\text{ m}$.\n   Pernyataan B bernilai **BENAR**.\n   Karena $x \\neq y$, bentuk lahan optimal bukan persegi bujur sangkar. Pernyataan D bernilai **SALAH**.\n\n4. **Menghitung Luas Maksimum:**\n   $$L_{\\text{maks}} = x \\times y = 20\\text{ m} \\times 30\\text{ m} = 600\\text{ m}^2$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Prinsip optimasi geometri membuktikan luas maksimum tercapai saat panjang = lebar ($x = y = 30\\text{ m}$)."
   },
   {
     "id": "matwa-pengukuran-bangun-datar-07",
@@ -121,18 +215,35 @@
     "difficulty": "HOTS",
     "question_text": "Diberikan bangun datar layang-layang $ABCD$ dengan diagonal $AC$ sebagai sumbu simetri. Panjang diagonal simetri $AC = 21$ cm dan panjang diagonal $BD = 16$ cm. Titik potong kedua diagonal adalah $E$, di mana panjang segmen $AE = 6$ cm dan $EC = 15$ cm.\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai keliling dan luas layang-layang tersebut!",
     "options": [
-      { "id": "A", "text": "Luas daerah layang-layang $ABCD$ adalah $168\\text{ cm}^2$." },
-      { "id": "B", "text": "Panjang sisi $AB = AD = 10$ cm dan panjang sisi $BC = CD = 17$ cm." },
-      { "id": "C", "text": "Keliling layang-layang $ABCD$ tersebut adalah 54 cm." },
-      { "id": "D", "text": "Keliling layang-layang $ABCD$ tersebut adalah 74 cm." }
+      {
+        "id": "A",
+        "text": "Luas daerah layang-layang $ABCD$ adalah $168\\text{ cm}^2$."
+      },
+      {
+        "id": "B",
+        "text": "Panjang sisi $AB = AD = 10$ cm dan panjang sisi $BC = CD = 17$ cm."
+      },
+      {
+        "id": "C",
+        "text": "Keliling layang-layang $ABCD$ tersebut adalah 54 cm."
+      },
+      {
+        "id": "D",
+        "text": "Keliling layang-layang $ABCD$ tersebut adalah 74 cm."
+      },
+      {
+        "id": "E",
+        "text": "Kedua garis diagonal pada layang-layang saling berpotongan tegak lurus ($d_1 \\perp d_2$)."
+      }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Diagonal simetri membagi diagonal $BD$ menjadi dua sama panjang ($BE = ED = 8$ cm). Gunakan teorema Pythagoras pada segitiga siku-siku $\\triangle ABE$ dan $\\triangle BCE$ untuk mencari panjang sisi-sisi layang-layang.",
-    "explanation": "Langkah-langkah evaluasi layang-layang:\n\n1. **Menghitung Luas Layang-Layang:**\n   $$L = \\frac{1}{2} \\times d_1 \\times d_2 = \\frac{1}{2} \\times 21 \\times 16 = 21 \\times 8 = 168\\text{ cm}^2$$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Menghitung Panjang Sisi-Sisi:**\n   Diagonal simetri $AC$ memotong tegak lurus diagonal $BD$ tepat di tengah:\n   $$BE = ED = \\frac{16}{2} = 8\\text{ cm}$$\n   - Sisi pendek $AB$ dan $AD$ (pada segitiga siku-siku $\\triangle ABE$ dengan $AE = 6\\text{ cm}$ dan $BE = 8\\text{ cm}$):\n     $$AB = \\sqrt{AE^2 + BE^2} = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10\\text{ cm}$$\n   - Sisi panjang $BC$ dan $CD$ (pada segitiga siku-siku $\\triangle BCE$ dengan $CE = 15\\text{ cm}$ dan $BE = 8\\text{ cm}$):\n     $$BC = \\sqrt{CE^2 + BE^2} = \\sqrt{15^2 + 8^2} = \\sqrt{225 + 64} = \\sqrt{289} = 17\\text{ cm}$$\n   Pernyataan B bernilai **BENAR**.\n\n3. **Menghitung Keliling Layang-Layang:**\n   $$K = 2(AB + BC) = 2(10 + 17) = 2(27) = 54\\text{ cm}$$\n   Pernyataan C bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+    "explanation": "Langkah-langkah evaluasi layang-layang:\n\n1. **Menghitung Luas Layang-Layang:**\n   $$L = \\frac{1}{2} \\times d_1 \\times d_2 = \\frac{1}{2} \\times 21 \\times 16 = 21 \\times 8 = 168\\text{ cm}^2$$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Menghitung Panjang Sisi-Sisi:**\n   Diagonal simetri $AC$ memotong tegak lurus diagonal $BD$ tepat di tengah:\n   $$BE = ED = \\frac{16}{2} = 8\\text{ cm}$$\n   - Sisi pendek $AB$ dan $AD$ (pada segitiga siku-siku $\\triangle ABE$ dengan $AE = 6\\text{ cm}$ dan $BE = 8\\text{ cm}$):\n     $$AB = \\sqrt{AE^2 + BE^2} = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10\\text{ cm}$$\n   - Sisi panjang $BC$ dan $CD$ (pada segitiga siku-siku $\\triangle BCE$ dengan $CE = 15\\text{ cm}$ dan $BE = 8\\text{ cm}$):\n     $$BC = \\sqrt{CE^2 + BE^2} = \\sqrt{15^2 + 8^2} = \\sqrt{225 + 64} = \\sqrt{289} = 17\\text{ cm}$$\n   Pernyataan B bernilai **BENAR**.\n\n3. **Menghitung Keliling Layang-Layang:**\n   $$K = 2(AB + BC) = 2(10 + 17) = 2(27) = 54\\text{ cm}$$\n   Pernyataan C bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Salah satu sifat utama bangun layang-layang adalah perpotongan tegak lurus antara kedua diagonalnya."
   },
   {
     "id": "matwa-pengukuran-bangun-datar-08",

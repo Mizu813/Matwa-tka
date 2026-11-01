@@ -7,11 +7,26 @@
     "difficulty": "STANDAR",
     "question_text": "Seorang teknisi sanitasi memasang saluran pipa pembuangan air lurus menggunakan 15 batang pipa paralon PVC yang disambung memanjang secara berurutan. Setiap batang pipa memiliki panjang awal yang sama, yaitu 4 meter (400 cm). Pada setiap sambungan antara dua pipa yang bersebelahan, salah satu ujung pipa dimasukkan ke dalam soket pipa berikutnya sehingga terjadi tumpang tindih (*overlap*) sepanjang 8 cm.\n\nPanjang total bentangan saluran pipa air setelah seluruh 15 batang pipa selesai tersambung lurus adalah ...",
     "options": [
-      { "id": "A", "text": "58,88 meter" },
-      { "id": "B", "text": "58,80 meter" },
-      { "id": "C", "text": "58,96 meter" },
-      { "id": "D", "text": "59,20 meter" },
-      { "id": "E", "text": "60,00 meter" }
+      {
+        "id": "A",
+        "text": "58,88 meter"
+      },
+      {
+        "id": "B",
+        "text": "58,80 meter"
+      },
+      {
+        "id": "C",
+        "text": "58,96 meter"
+      },
+      {
+        "id": "D",
+        "text": "59,20 meter"
+      },
+      {
+        "id": "E",
+        "text": "60,00 meter"
+      }
     ],
     "correct_answer": "A",
     "hint": "Gunakan konsep barisan aritmetika atau pengurangan overlap: untuk $n = 15$ batang pipa, terdapat $(n - 1) = 14$ titik sambungan. Setiap sambungan mengurangi panjang total sebesar 8 cm.",
@@ -25,11 +40,26 @@
     "difficulty": "STANDAR",
     "question_text": "Seorang ayah membagikan uang tabungan sebesar **Rp1.250.000,00** kepada 5 orang anaknya. Nominal uang yang diterima oleh masing-masing anak berselisih tetap dan membentuk barisan aritmetika, di mana anak sulung menerima bagian terbesar dan anak bungsu menerima bagian terkecil. Jika selisih uang yang diterima antara setiap dua anak yang berurutan usianya adalah **Rp40.000,00**, maka jumlah uang yang diterima oleh anak sulung adalah ...",
     "options": [
-      { "id": "A", "text": "Rp330.000,00" },
-      { "id": "B", "text": "Rp310.000,00" },
-      { "id": "C", "text": "Rp350.000,00" },
-      { "id": "D", "text": "Rp290.000,00" },
-      { "id": "E", "text": "Rp270.000,00" }
+      {
+        "id": "A",
+        "text": "Rp330.000,00"
+      },
+      {
+        "id": "B",
+        "text": "Rp310.000,00"
+      },
+      {
+        "id": "C",
+        "text": "Rp350.000,00"
+      },
+      {
+        "id": "D",
+        "text": "Rp290.000,00"
+      },
+      {
+        "id": "E",
+        "text": "Rp270.000,00"
+      }
     ],
     "correct_answer": "A",
     "hint": "Gunakan rumus suku tengah deret aritmetika untuk 5 suku ganjil: $U_3 = \\frac{S_5}{5}$. Anak sulung menerima suku ke-5, yaitu $U_5 = U_3 + 2b$.",
@@ -43,11 +73,26 @@
     "difficulty": "HOTS",
     "question_text": "Di sebuah gudang logistik, tumpukan pipa baja disusun rapi menyerupai bentuk trapesium ke atas. Setiap tumpukan baris di atasnya selalu memuat 2 batang pipa lebih sedikit dibandingkan baris tepat di bawahnya. Jika susunan tersebut terdiri dari 16 baris dan total pipa baja yang tersusun adalah **576 batang**, maka banyaknya pipa baja pada baris paling bawah adalah ...",
     "options": [
-      { "id": "A", "text": "51 batang" },
-      { "id": "B", "text": "49 batang" },
-      { "id": "C", "text": "53 batang" },
-      { "id": "D", "text": "47 batang" },
-      { "id": "E", "text": "55 batang" }
+      {
+        "id": "A",
+        "text": "51 batang"
+      },
+      {
+        "id": "B",
+        "text": "49 batang"
+      },
+      {
+        "id": "C",
+        "text": "53 batang"
+      },
+      {
+        "id": "D",
+        "text": "47 batang"
+      },
+      {
+        "id": "E",
+        "text": "55 batang"
+      }
     ],
     "correct_answer": "A",
     "hint": "Gunakan rumus jumlah deret aritmetika $S_n = \\frac{n}{2}(2a + (n - 1)b)$. Jika dihitung dari baris paling atas ($n = 1$) ke baris paling bawah ($n = 16$), maka beda bertambah $b = +2$.",
@@ -61,11 +106,26 @@
     "difficulty": "HOTS",
     "question_text": "Di antara bilangan 8 dan 128 disisipkan sebanyak $k$ buah bilangan real sedemikian sehingga bersama kedua bilangan awal terbentuk barisan aritmetika baru. Jika jumlah seluruh suku pada barisan aritmetika baru tersebut adalah **1.088**, maka banyaknya bilangan yang disisipkan ($k$) adalah ...",
     "options": [
-      { "id": "A", "text": "14 bilangan" },
-      { "id": "B", "text": "12 bilangan" },
-      { "id": "C", "text": "15 bilangan" },
-      { "id": "D", "text": "16 bilangan" },
-      { "id": "E", "text": "18 bilangan" }
+      {
+        "id": "A",
+        "text": "14 bilangan"
+      },
+      {
+        "id": "B",
+        "text": "12 bilangan"
+      },
+      {
+        "id": "C",
+        "text": "15 bilangan"
+      },
+      {
+        "id": "D",
+        "text": "16 bilangan"
+      },
+      {
+        "id": "E",
+        "text": "18 bilangan"
+      }
     ],
     "correct_answer": "A",
     "hint": "Gunakan rumus jumlah deret aritmetika $S_n = \\frac{n}{2}(a + U_n)$ dengan suku pertama $a = 8$ dan suku terakhir $U_n = 128$. Hubungan banyak suku total dan banyak bilangan yang disisipkan adalah $n = k + 2$.",
@@ -79,18 +139,35 @@
     "difficulty": "STANDAR",
     "question_text": "Diberikan deret bilangan aritmetika berikut:\n$$5 + 9 + 13 + 17 + \\dots$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai sifat dan rumus deret aritmetika tersebut!",
     "options": [
-      { "id": "A", "text": "Rumus suku ke-$n$ dari deret tersebut adalah $U_n = 4n + 1$." },
-      { "id": "B", "text": "Nilai dari suku ke-20 adalah $U_{20} = 81$." },
-      { "id": "C", "text": "Jumlah 15 suku pertama deret tersebut adalah $S_{15} = 495$." },
-      { "id": "D", "text": "Rumus jumlah $n$ suku pertama deret tersebut adalah $S_n = 4n^2 + n$." }
+      {
+        "id": "A",
+        "text": "Rumus suku ke-$n$ dari deret tersebut adalah $U_n = 4n + 1$."
+      },
+      {
+        "id": "B",
+        "text": "Nilai dari suku ke-20 adalah $U_{20} = 81$."
+      },
+      {
+        "id": "C",
+        "text": "Jumlah 15 suku pertama deret tersebut adalah $S_{15} = 495$."
+      },
+      {
+        "id": "D",
+        "text": "Rumus jumlah $n$ suku pertama deret tersebut adalah $S_n = 4n^2 + n$."
+      },
+      {
+        "id": "E",
+        "text": "Suku ke-10 dari barisan aritmetika tersebut adalah 41."
+      }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Tentukan suku pertama $a = 5$ dan beda $b = 9 - 5 = 4$. Gunakan rumus baku $U_n = a + (n - 1)b$ dan $S_n = \\frac{n}{2}(2a + (n - 1)b)$.",
-    "explanation": "Langkah-langkah evaluasi deret aritmetika:\n\n1. **Identifikasi parameter deret:**\n   - Suku pertama: $a = 5$\n   - Beda deret: $b = 9 - 5 = 4$\n\n2. **Rumus suku ke-$n$ (Pernyataan A):**\n   $$U_n = a + (n - 1)b = 5 + (n - 1)4 = 5 + 4n - 4 = 4n + 1$$\n   Pernyataan A bernilai **BENAR**.\n\n3. **Evaluasi suku ke-20 (Pernyataan B):**\n   $$U_{20} = 4(20) + 1 = 80 + 1 = 81$$\n   Pernyataan B bernilai **BENAR**.\n\n4. **Rumus jumlah $n$ suku pertama (Pernyataan D):**\n   $$S_n = \\frac{n}{2}\\big(2a + (n - 1)b\\big) = \\frac{n}{2}\\big(2(5) + 4(n - 1)\\big) = \\frac{n}{2}(10 + 4n - 4) = \\frac{n}{2}(4n + 6) = 2n^2 + 3n$$\n   Rumus yang benar adalah $S_n = 2n^2 + 3n$, bukan $4n^2 + n$.\n   Pernyataan D bernilai **SALAH**.\n\n5. **Evaluasi jumlah 15 suku pertama (Pernyataan C):**\n   $$S_{15} = 2(15)^2 + 3(15) = 2(225) + 45 = 450 + 45 = 495$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+    "explanation": "Langkah-langkah evaluasi deret aritmetika:\n\n1. **Identifikasi parameter deret:**\n   - Suku pertama: $a = 5$\n   - Beda deret: $b = 9 - 5 = 4$\n\n2. **Rumus suku ke-$n$ (Pernyataan A):**\n   $$U_n = a + (n - 1)b = 5 + (n - 1)4 = 5 + 4n - 4 = 4n + 1$$\n   Pernyataan A bernilai **BENAR**.\n\n3. **Evaluasi suku ke-20 (Pernyataan B):**\n   $$U_{20} = 4(20) + 1 = 80 + 1 = 81$$\n   Pernyataan B bernilai **BENAR**.\n\n4. **Rumus jumlah $n$ suku pertama (Pernyataan D):**\n   $$S_n = \\frac{n}{2}\\big(2a + (n - 1)b\\big) = \\frac{n}{2}\\big(2(5) + 4(n - 1)\\big) = \\frac{n}{2}(10 + 4n - 4) = \\frac{n}{2}(4n + 6) = 2n^2 + 3n$$\n   Rumus yang benar adalah $S_n = 2n^2 + 3n$, bukan $4n^2 + n$.\n   Pernyataan D bernilai **SALAH**.\n\n5. **Evaluasi jumlah 15 suku pertama (Pernyataan C):**\n   $$S_{15} = 2(15)^2 + 3(15) = 2(225) + 45 = 450 + 45 = 495$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Rumus suku ke-$n$: $U_{10} = a + (10 - 1)b = 5 + 9(4) = 5 + 36 = 41$."
   },
   {
     "id": "matwa-barisan-deret-aritmetika-06",
@@ -100,18 +177,35 @@
     "difficulty": "HOTS",
     "question_text": "Sebuah industri manufaktur perakitan panel surya mulai beroperasi pada awal tahun. Pada bulan Januari (bulan ke-1), pabrik memproduksi 120 unit panel surya. Berkat optimalisasi bertahap, kapasitas produksi bertambah secara konstan sebanyak 25 unit setiap bulannya hingga bulan Juni (bulan ke-6).\n\nMulai bulan Juli (bulan ke-7) hingga bulan Desember (bulan ke-12), pabrik memberlakukan shift lembur malam sehingga laju kenaikan produksi bulanan meningkat menjadi 40 unit per bulan (terhitung mulai penambahan dari bulan Juni ke bulan Juli).\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai volume produksi panel surya tersebut!",
     "options": [
-      { "id": "A", "text": "Produksi panel surya pada bulan Juni (bulan ke-6) adalah 245 unit, dan total produksi semester pertama mencapai 1.095 unit." },
-      { "id": "B", "text": "Produksi panel surya pada bulan Desember (bulan ke-12) mencapai 485 unit." },
-      { "id": "C", "text": "Total akumulasi seluruh panel surya yang berhasil diproduksi pabrik selama satu tahun penuh (12 bulan) adalah 3.405 unit." },
-      { "id": "D", "text": "Total volume produksi panel surya pada semester kedua (Juli–Desember) adalah 2.050 unit." }
+      {
+        "id": "A",
+        "text": "Produksi panel surya pada bulan Juni (bulan ke-6) adalah 245 unit, dan total produksi semester pertama mencapai 1.095 unit."
+      },
+      {
+        "id": "B",
+        "text": "Produksi panel surya pada bulan Desember (bulan ke-12) mencapai 485 unit."
+      },
+      {
+        "id": "C",
+        "text": "Total akumulasi seluruh panel surya yang berhasil diproduksi pabrik selama satu tahun penuh (12 bulan) adalah 3.405 unit."
+      },
+      {
+        "id": "D",
+        "text": "Total volume produksi panel surya pada semester kedua (Juli–Desember) adalah 2.050 unit."
+      },
+      {
+        "id": "E",
+        "text": "Pertambahan produksi tetap per periode merupakan representasi dari beda ($b$) barisan aritmetika."
+      }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Bagi perhitungan menjadi dua periode deret aritmetika terpisah: Semester 1 ($n = 1$ hingga 6 dengan $a = 120, b_1 = 25$) dan Semester 2 ($n = 7$ hingga 12 dengan $U_7 = U_6 + 40$ dan $b_2 = 40$).",
-    "explanation": "Langkah-langkah evaluasi produksi dua semester bertahap:\n\n1. **Analisis Semester 1 (Bulan ke-1 s.d. ke-6):**\n   - Suku pertama: $U_1 = 120$\n   - Beda bulanan: $b_1 = 25$\n   - Produksi bulan Juni ($U_6$):\n     $$U_6 = U_1 + 5b_1 = 120 + 5(25) = 120 + 125 = 245\\text{ unit}$$\n   - Total produksi semester 1 ($S_6$):\n     $$S_6 = \\frac{6}{2}(U_1 + U_6) = 3(120 + 245) = 3(365) = 1.095\\text{ unit}$$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Analisis Semester 2 (Bulan ke-7 s.d. ke-12):**\n   - Produksi bulan Juli ($U_7$): bertambah 40 unit dari bulan Juni:\n     $$U_7 = U_6 + 40 = 245 + 40 = 285\\text{ unit}$$\n   - Beda bulanan semester 2: $b_2 = 40$\n   - Produksi bulan Desember ($U_{12}$, berjarak 5 bulan dari Juli):\n     $$U_{12} = U_7 + 5b_2 = 285 + 5(40) = 285 + 200 = 485\\text{ unit}$$\n   Pernyataan B bernilai **BENAR**.\n\n   - Total produksi semester 2 (6 bulan):\n     $$S_{\\text{sem2}} = \\frac{6}{2}(U_7 + U_{12}) = 3(285 + 485) = 3(770) = 2.310\\text{ unit}$$\n     Pernyataan D bernilai **SALAH** (disebutkan 2.050 unit, yang benar adalah 2.310 unit).\n\n3. **Total Produksi 1 Tahun Penuh (12 Bulan):**\n   $$S_{12} = S_6 + S_{\\text{sem2}} = 1.095 + 2.310 = 3.405\\text{ unit}$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+    "explanation": "Langkah-langkah evaluasi produksi dua semester bertahap:\n\n1. **Analisis Semester 1 (Bulan ke-1 s.d. ke-6):**\n   - Suku pertama: $U_1 = 120$\n   - Beda bulanan: $b_1 = 25$\n   - Produksi bulan Juni ($U_6$):\n     $$U_6 = U_1 + 5b_1 = 120 + 5(25) = 120 + 125 = 245\\text{ unit}$$\n   - Total produksi semester 1 ($S_6$):\n     $$S_6 = \\frac{6}{2}(U_1 + U_6) = 3(120 + 245) = 3(365) = 1.095\\text{ unit}$$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Analisis Semester 2 (Bulan ke-7 s.d. ke-12):**\n   - Produksi bulan Juli ($U_7$): bertambah 40 unit dari bulan Juni:\n     $$U_7 = U_6 + 40 = 245 + 40 = 285\\text{ unit}$$\n   - Beda bulanan semester 2: $b_2 = 40$\n   - Produksi bulan Desember ($U_{12}$, berjarak 5 bulan dari Juli):\n     $$U_{12} = U_7 + 5b_2 = 285 + 5(40) = 285 + 200 = 485\\text{ unit}$$\n   Pernyataan B bernilai **BENAR**.\n\n   - Total produksi semester 2 (6 bulan):\n     $$S_{\\text{sem2}} = \\frac{6}{2}(U_7 + U_{12}) = 3(285 + 485) = 3(770) = 2.310\\text{ unit}$$\n     Pernyataan D bernilai **SALAH** (disebutkan 2.050 unit, yang benar adalah 2.310 unit).\n\n3. **Total Produksi 1 Tahun Penuh (12 Bulan):**\n   $$S_{12} = S_6 + S_{\\text{sem2}} = 1.095 + 2.310 = 3.405\\text{ unit}$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Nilai kenaikan konstan pada setiap interval waktu berurutan secara definisi adalah nilai beda ($b$)."
   },
   {
     "id": "matwa-barisan-deret-aritmetika-07",
@@ -121,18 +215,35 @@
     "difficulty": "HOTS",
     "question_text": "Tiga bilangan bulat positif $p, q, r$ membentuk barisan aritmetika naik ($p < q < r$). Diketahui jumlah ketiga bilangan tersebut adalah 45, dan jumlah kuadrat dari ketiga bilangan tersebut ($p^2 + q^2 + r^2$) adalah 725.\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai karakteristik ketiga bilangan tersebut!",
     "options": [
-      { "id": "A", "text": "Nilai suku tengah adalah $q = 15$ dan beda barisan aritmetika adalah $b = 5$." },
-      { "id": "B", "text": "Nilai bilangan terkecil adalah $p = 10$ dan bilangan terbesar adalah $r = 20$." },
-      { "id": "C", "text": "Hasil kali ketiga bilangan tersebut adalah $p \\times q \\times r = 3.000$." },
-      { "id": "D", "text": "Beda barisan aritmetika tersebut adalah $b = 8$." }
+      {
+        "id": "A",
+        "text": "Nilai suku tengah adalah $q = 15$ dan beda barisan aritmetika adalah $b = 5$."
+      },
+      {
+        "id": "B",
+        "text": "Nilai bilangan terkecil adalah $p = 10$ dan bilangan terbesar adalah $r = 20$."
+      },
+      {
+        "id": "C",
+        "text": "Hasil kali ketiga bilangan tersebut adalah $p \\times q \\times r = 3.000$."
+      },
+      {
+        "id": "D",
+        "text": "Beda barisan aritmetika tersebut adalah $b = 8$."
+      },
+      {
+        "id": "E",
+        "text": "Hubungan ketiga bilangan aritmetika memenuhi identitas $2q = p + r$."
+      }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Misalkan ketiga bilangan simetris terhadap suku tengah: $p = q - b$, $q$, dan $r = q + b$. Gunakan jumlah ketiga bilangan untuk mencari $q$, lalu substitusikan ke persamaan jumlah kuadrat untuk mencari $b$.",
-    "explanation": "Langkah-langkah penyelesaian sistem barisan aritmetika tiga bilangan:\n\n1. **Pemisalan simetris terhadap suku tengah:**\n   Misalkan suku-suku barisan adalah:\n   $$p = q - b, \\quad q, \\quad r = q + b$$\n\n2. **Menentukan suku tengah $q$ dari jumlah ketiga bilangan:**\n   $$p + q + r = (q - b) + q + (q + b) = 3q = 45$$\n   $$q = \\frac{45}{3} = 15$$\n\n3. **Menentukan beda $b$ dari jumlah kuadrat:**\n   $$p^2 + q^2 + r^2 = 725$$\n   $$(15 - b)^2 + 15^2 + (15 + b)^2 = 725$$\n   $$(225 - 30b + b^2) + 225 + (225 + 30b + b^2) = 725$$\n   $$675 + 2b^2 = 725$$\n   $$2b^2 = 725 - 675 = 50$$\n   $$b^2 = 25 \\implies b = 5 \\quad (\\text{karena barisan naik, } b > 0)$$\n   Pernyataan A bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\n4. **Menentukan nilai ketiga bilangan:**\n   - Bilangan terkecil: $p = 15 - 5 = 10$\n   - Suku tengah: $q = 15$\n   - Bilangan terbesar: $r = 15 + 5 = 20$\n   Pernyataan B bernilai **BENAR**.\n\n5. **Menghitung hasil kali ketiga bilangan:**\n   $$p \\times q \\times r = 10 \\times 15 \\times 20 = 3.000$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+    "explanation": "Langkah-langkah penyelesaian sistem barisan aritmetika tiga bilangan:\n\n1. **Pemisalan simetris terhadap suku tengah:**\n   Misalkan suku-suku barisan adalah:\n   $$p = q - b, \\quad q, \\quad r = q + b$$\n\n2. **Menentukan suku tengah $q$ dari jumlah ketiga bilangan:**\n   $$p + q + r = (q - b) + q + (q + b) = 3q = 45$$\n   $$q = \\frac{45}{3} = 15$$\n\n3. **Menentukan beda $b$ dari jumlah kuadrat:**\n   $$p^2 + q^2 + r^2 = 725$$\n   $$(15 - b)^2 + 15^2 + (15 + b)^2 = 725$$\n   $$(225 - 30b + b^2) + 225 + (225 + 30b + b^2) = 725$$\n   $$675 + 2b^2 = 725$$\n   $$2b^2 = 725 - 675 = 50$$\n   $$b^2 = 25 \\implies b = 5 \\quad (\\text{karena barisan naik, } b > 0)$$\n   Pernyataan A bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\n4. **Menentukan nilai ketiga bilangan:**\n   - Bilangan terkecil: $p = 15 - 5 = 10$\n   - Suku tengah: $q = 15$\n   - Bilangan terbesar: $r = 15 + 5 = 20$\n   Pernyataan B bernilai **BENAR**.\n\n5. **Menghitung hasil kali ketiga bilangan:**\n   $$p \\times q \\times r = 10 \\times 15 \\times 20 = 3.000$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Karena $q - p = r - q = b$, maka $2q = p + r$."
   },
   {
     "id": "matwa-barisan-deret-aritmetika-08",

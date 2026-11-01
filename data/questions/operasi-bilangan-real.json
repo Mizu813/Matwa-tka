@@ -14,6 +14,7 @@
       { "id": "E", "text": "$4\\frac{1}{8}$" }
     ],
     "correct_answer": "A",
+    "hint": "Ubah seluruh pecahan campuran menjadi pecahan biasa dan dahulukan operasi pembagian sebelum pengurangan dan penjumlahan.",
     "explanation": "Langkah-langkah penyelesaian berdasarkan urutan operasi hitung aljabar (hierarki operasi):\n\n1. Ubah pecahan campuran menjadi pecahan biasa:\n   - $3\\frac{1}{2} = \\frac{7}{2}$\n   - $1\\frac{3}{4} = \\frac{7}{4}$\n   - $2\\frac{1}{3} = \\frac{7}{3}$\n\n2. Selesaikan operasi pembagian terlebih dahulu:\n   $$\\frac{7}{4} \\div \\frac{7}{3} = \\frac{7}{4} \\times \\frac{3}{7} = \\frac{3}{4}$$\n\n3. Lanjutkan dengan operasi pengurangan dan penjumlahan:\n   $$\\frac{7}{2} - \\frac{3}{4} + \\frac{5}{8}$$\n   Samakan penyebut ke KPK dari 2, 4, dan 8, yaitu 8:\n   $$\\frac{28}{8} - \\frac{6}{8} + \\frac{5}{8} = \\frac{28 - 6 + 5}{8} = \\frac{27}{8} = 3\\frac{3}{8}$$\n\nJadi, jawaban yang benar adalah **A**."
   },
   {
@@ -31,6 +32,7 @@
       { "id": "E", "text": "$303.600$" }
     ],
     "correct_answer": "A",
+    "hint": "Faktorkan angka persekutuan 2024 dari dua suku pertama menggunakan sifat distributif a(b-c), lalu ubah 1012 x 200 menjadi bentuk 2024 x 100.",
     "explanation": "Langkah-langkah efisiensi perhitungan menggunakan sifat-sifat bilangan real:\n\n1. Terapkan sifat distributif $a \\times b - a \\times c = a \\times (b - c)$ pada dua suku pertama:\n   $$2024 \\times 175 - 2024 \\times 75 = 2024 \\times (175 - 75) = 2024 \\times 100$$\n\n2. Sederhanakan suku ketiga menggunakan manipulasi faktor pengali:\n   $$1012 \\times 200 = 1012 \\times (2 \\times 100) = (1012 \\times 2) \\times 100 = 2024 \\times 100$$\n\n3. Jumlahkan hasil keduanya:\n   $$2024 \\times 100 + 2024 \\times 100 = 2024 \\times (100 + 100) = 2024 \\times 200 = 404.800$$\n\nJadi, jawaban yang benar adalah **A**."
   },
   {
@@ -48,6 +50,7 @@
       { "id": "E", "text": "$2^{17} \\times 5^5\\text{ Joule}$" }
     ],
     "correct_answer": "A",
+    "hint": "Gunakan aturan perkalian eksponen basis sama a^m x a^n = a^(m+n), lalu kalikan hasilnya dengan 80% yang senilai 4/5 = 2^2 x 5^(-1).",
     "explanation": "Langkah-langkah komputasi besaran teknik menggunakan sifat perkalian eksponen:\n\n1. Hitung energi ideal total $E_{\\text{ideal}}$:\n   $$E_{\\text{ideal}} = V \\times I \\times t = (2^8 \\times 5^2) \\times (2^4 \\times 5^1) \\times (2^3 \\times 5^2)$$\n   Gunakan sifat $x^m \\times x^n = x^{m+n}$:\n   $$E_{\\text{ideal}} = 2^{8 + 4 + 3} \\times 5^{2 + 1 + 2} = 2^{15} \\times 5^5\\text{ Joule}$$\n\n2. Nyatakan faktor efisiensi energi efektif ($80\\%$) ke dalam faktorisasi prima:\n   $$80\\% = \\frac{80}{100} = \\frac{4}{5} = \\frac{2^2}{5^1} = 2^2 \\times 5^{-1}$$\n\n3. Hitung energi efektif yang tersampaikan:\n   $$E_{\\text{efektif}} = E_{\\text{ideal}} \\times 80\\% = (2^{15} \\times 5^5) \\times (2^2 \\times 5^{-1})$$\n   $$= 2^{15 + 2} \\times 5^{5 - 1} = 2^{17} \\times 5^4\\text{ Joule}$$\n\nJadi, jawaban yang benar adalah **A**."
   },
   {
@@ -65,6 +68,7 @@
       { "id": "E", "text": "$450\\text{ kg}$" }
     ],
     "correct_answer": "A",
+    "hint": "Hitung bobot sisa secara berurutan setelah dikurangi persentase penyusutan tiap tahap, lalu kalikan sisa akhir dengan fraksi 3/(2+3).",
     "explanation": "Langkah-langkah perhitungan bertahap:\n\n1. **Sisa setelah Tahap Pengeringan (penyusutan 25%):**\n   $$W_1 = 1.200 \\times (1 - 0,25) = 1.200 \\times \\frac{3}{4} = 900\\text{ kg}$$\n\n2. **Sisa setelah Tahap Pengupasan & Sortasi (penyusutan $\\frac{1}{6}$):**\n   $$W_2 = 900 \\times \\left(1 - \\frac{1}{6}\\right) = 900 \\times \\frac{5}{6} = 750\\text{ kg}$$\n\n3. **Sisa setelah Tahap Pemanggangan (penyusutan 20%):**\n   $$W_3 = 750 \\times (1 - 0,20) = 750 \\times \\frac{4}{5} = 600\\text{ kg}$$\n\n4. **Alokasi Pembagian Rasio Kopi Kemasan:**\n   Rasio *Premium* : *Reguler* = $2 : 3$, sehingga total proporsi bagian adalah $2 + 3 = 5$ bagian.\n   Total berat varian *Reguler*:\n   $$W_{\\text{Reguler}} = \\frac{3}{5} \\times 600\\text{ kg} = 3 \\times 120\\text{ kg} = 360\\text{ kg}$$\n\nJadi, jawaban yang benar adalah **A**."
   },
   {
@@ -73,19 +77,22 @@
     "sub_chapter_id": "operasi-bilangan-real",
     "question_type": "MCMA",
     "difficulty": "STANDAR",
-    "question_text": "Perhatikan beberapa konsep dan aksioma mengenai sistem bilangan real berikut. Pilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR**!",
+    "question_text": "Perhatikan beberapa konsep dan aksioma aljabar mengenai sistem bilangan real $\\mathbb{R}$. Pilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR**!",
     "options": [
       { "id": "A", "text": "Elemen identitas penjumlahan adalah 0 dan elemen identitas perkalian adalah 1." },
       { "id": "B", "text": "Operasi pengurangan dan pembagian pada bilangan real tidak memenuhi sifat komutatif maupun asosiatif." },
       { "id": "C", "text": "Pembagian bilangan real bukan nol dengan nol menghasilkan bilangan real yang terdefinisi." },
-      { "id": "D", "text": "Invers perkalian dari setiap bilangan real $a \\neq 0$ adalah $\\frac{1}{a}$ sehingga $a \\times \\frac{1}{a} = 1$." }
+      { "id": "D", "text": "Invers perkalian dari setiap bilangan real $a \\neq 0$ adalah $\\frac{1}{a}$ sehingga $a \\times \\frac{1}{a} = 1$." },
+      { "id": "E", "text": "Himpunan bilangan real bersifat tertutup terhadap operasi penjumlahan, pengurangan, dan perkalian." }
     ],
     "correct_answer": [
       "A",
       "B",
-      "D"
+      "D",
+      "E"
     ],
-    "explanation": "Evaluasi keabsahan pernyataan sistem bilangan real:\n\n- **Pernyataan A (BENAR):** Untuk setiap $a \\in \\mathbb{R}$, $a + 0 = a$ (0 adalah identitas penjumlahan) dan $a \\times 1 = a$ (1 adalah identitas perkalian).\n- **Pernyataan B (BENAR):** Pengurangan ($a - b \\neq b - a$) dan pembagian ($a \\div b \\neq b \\div a$) tidak bersifat komutatif maupun asosiatif.\n- **Pernyataan C (SALAH):** Pembagian dengan nol ($a \\div 0$) tidak terdefinisi pada sistem bilangan real.\n- **Pernyataan D (BENAR):** Aksioma invers perkalian menyatakan setiap $a \\neq 0$ memiliki invers perkalian $\\frac{1}{a}$ sedemikian hingga $a \\times \\frac{1}{a} = 1$.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan D**."
+    "hint": "Cermati sifat aksioma bilangan real: keberadaan elemen netral/identitas, sifat ketertutupan, ketidakterdefinisian pembagian dengan nol, dan sifat komutatif/asosiatif.",
+    "explanation": "Evaluasi keabsahan pernyataan sistem bilangan real:\n\n- **Pernyataan A (BENAR):** Untuk setiap $a \\in \\mathbb{R}$, $a + 0 = a$ (0 adalah identitas penjumlahan) dan $a \\times 1 = a$ (1 adalah identitas perkalian).\n- **Pernyataan B (BENAR):** Pengurangan ($a - b \\neq b - a$) dan pembagian ($a \\div b \\neq b \\div a$) tidak bersifat komutatif maupun asosiatif.\n- **Pernyataan C (SALAH):** Pembagian dengan nol ($a \\div 0$) tidak terdefinisi pada sistem bilangan real.\n- **Pernyataan D (BENAR):** Aksioma invers perkalian menyatakan setiap $a \\neq 0$ memiliki invers perkalian $\\frac{1}{a}$ sedemikian hingga $a \\times \\frac{1}{a} = 1$.\n- **Pernyataan E (BENAR):** Untuk setiap $a, b \\in \\mathbb{R}$, hasil dari $a + b$, $a - b$, dan $a \\times b$ senantiasa menghasilkan bilangan real kembali (sifat ketertutupan/closure).\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, D, dan E**."
   },
   {
     "id": "matwa-operasi-bilangan-real-06",
@@ -93,19 +100,22 @@
     "sub_chapter_id": "operasi-bilangan-real",
     "question_type": "MCMA",
     "difficulty": "HOTS",
-    "question_text": "Diberikan dua bilangan desimal berulang tak hingga:\n$$x = 0,272727\\dots \\quad \\text{dan} \\quad y = 0,41666\\dots$$\n(dengan angka 6 berulang tanpa henti). Pilihlah **SEMUA** pernyataan matematika berikut yang bernilai **BENAR**!",
+    "question_text": "Diberikan dua bilangan desimal berulang tak hingga yang diperoleh dari rasio frekuensi gelombang akustik:\n$$x = 0,272727\\dots \\quad \\text{dan} \\quad y = 0,41666\\dots$$\n(dengan angka 6 berulang tanpa henti). Pilihlah **SEMUA** pernyataan matematika berikut yang bernilai **BENAR**!",
     "options": [
       { "id": "A", "text": "Nilai $x$ setara dengan pecahan rasional $\\frac{3}{11}$" },
       { "id": "B", "text": "Nilai $y$ setara dengan pecahan rasional $\\frac{5}{12}$" },
       { "id": "C", "text": "Hasil penjumlahan $x + y = \\frac{91}{132}$" },
-      { "id": "D", "text": "Hasil perkalian $x \\times y = \\frac{1}{8}$" }
+      { "id": "D", "text": "Hasil perkalian $x \\times y = \\frac{1}{8}$" },
+      { "id": "E", "text": "Hasil pengurangan $y - x = \\frac{19}{132}$" }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
-    "explanation": "Langkah-langkah konversi desimal berulang ke bentuk pecahan rasional:\n\n1. **Konversi $x = 0,272727\\dots$:**\n   $$100x = 27,2727\\dots$$\n   $$x = 0,2727\\dots$$\n   Kurangkan kedua persamaan:\n   $$99x = 27 \\implies x = \\frac{27}{99} = \\frac{3}{11}$$\n   (Pernyataan A **BENAR**)\n\n2. **Konversi $y = 0,41666\\dots$:**\n   $$100y = 41,666\\dots$$\n   $$10y = 4,166\\dots$$\n   Kurangkan kedua persamaan:\n   $$90y = 37,5 \\implies 180y = 75 \\implies y = \\frac{75}{180} = \\frac{5}{12}$$\n   (Pernyataan B **BENAR**)\n\n3. **Uji Penjumlahan $x + y$:**\n   $$x + y = \\frac{3}{11} + \\frac{5}{12} = \\frac{36 + 55}{132} = \\frac{91}{132}$$\n   (Pernyataan C **BENAR**)\n\n4. **Uji Perkalian $x \\times y$:**\n   $$x \\times y = \\frac{3}{11} \\times \\frac{5}{12} = \\frac{1}{11} \\times \\frac{5}{4} = \\frac{5}{44} \\neq \\frac{1}{8}$$\n   (Pernyataan D **SALAH**)\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**."
+    "hint": "Gunakan metode eliminasi sistem persamaan perkalian 10 atau 100 untuk mengubah bilangan desimal berulang ke bentuk pecahan murni.",
+    "explanation": "Langkah-langkah konversi desimal berulang ke bentuk pecahan rasional:\n\n1. **Konversi $x = 0,272727\\dots$:**\n   $$100x = 27,2727\\dots$$\n   $$x = 0,2727\\dots$$\n   Kurangkan kedua persamaan:\n   $$99x = 27 \\implies x = \\frac{27}{99} = \\frac{3}{11}$$\n   (Pernyataan A **BENAR**)\n\n2. **Konversi $y = 0,41666\\dots$:**\n   $$100y = 41,666\\dots$$\n   $$10y = 4,166\\dots$$\n   Kurangkan kedua persamaan:\n   $$90y = 37,5 \\implies 180y = 75 \\implies y = \\frac{75}{180} = \\frac{5}{12}$$\n   (Pernyataan B **BENAR**)\n\n3. **Uji Penjumlahan $x + y$:**\n   $$x + y = \\frac{3}{11} + \\frac{5}{12} = \\frac{36 + 55}{132} = \\frac{91}{132}$$\n   (Pernyataan C **BENAR**)\n\n4. **Uji Perkalian $x \\times y$:**\n   $$x \\times y = \\frac{3}{11} \\times \\frac{5}{12} = \\frac{1}{11} \\times \\frac{5}{4} = \\frac{5}{44} \\neq \\frac{1}{8}$$\n   (Pernyataan D **SALAH**)\n\n5. **Uji Pengurangan $y - x$:**\n   $$y - x = \\frac{5}{12} - \\frac{3}{11} = \\frac{55 - 36}{132} = \\frac{19}{132}$$\n   (Pernyataan E **BENAR**)\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, C, dan E**."
   },
   {
     "id": "matwa-operasi-bilangan-real-07",
@@ -118,14 +128,17 @@
       { "id": "A", "text": "Waktu tempuh perjalanan kembali (B ke A) adalah 1,5 kali waktu tempuh perjalanan pergi (A ke B)" },
       { "id": "B", "text": "Kecepatan rata-rata untuk seluruh perjalanan pergi-pulang adalah $48\\text{ km/jam}$" },
       { "id": "C", "text": "Kecepatan rata-rata seluruh perjalanan identik dengan rata-rata harmonik dari kedua kecepatan" },
-      { "id": "D", "text": "Kecepatan rata-rata seluruh perjalanan adalah $50\\text{ km/jam}$" }
+      { "id": "D", "text": "Kecepatan rata-rata seluruh perjalanan adalah $50\\text{ km/jam}$" },
+      { "id": "E", "text": "Perbandingan laju $v_1 : v_2$ berbanding terbalik dengan perbandingan waktu tempuhnya $t_1 : t_2$" }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
-    "explanation": "Langkah-langkah analisis fisika-matematika gerak dan rata-rata harmonik:\n\n1. **Rasio Waktu Tempuh:**\n   Waktu pergi: $t_1 = \\frac{S}{60}$\n   Waktu pulang: $t_2 = \\frac{S}{40}$\n   Rasio: $\\frac{t_2}{t_1} = \\frac{S/40}{S/60} = \\frac{60}{40} = 1,5$. (Pernyataan A **BENAR**)\n\n2. **Kecepatan Rata-rata Pergi-Pulang:**\n   Total jarak tempuh: $S_{\\text{total}} = 2S$\n   Total waktu tempuh: $t_{\\text{total}} = \\frac{S}{60} + \\frac{S}{40} = \\frac{2S + 3S}{120} = \\frac{5S}{120} = \\frac{S}{24}$\n   $$v_{\\text{rata-rata}} = \\frac{S_{\\text{total}}}{t_{\\text{total}}} = \\frac{2S}{S/24} = 48\\text{ km/jam}$$\n   (Pernyataan B **BENAR**, Pernyataan D **SALAH**)\n\n3. **Identifikasi Jenis Rata-rata:**\n   Formula rata-rata harmonik antara $v_1$ dan $v_2$ adalah:\n   $$H = \\frac{2}{\\frac{1}{v_1} + \\frac{1}{v_2}} = \\frac{2}{\\frac{1}{60} + \\frac{1}{40}} = 48\\text{ km/jam}$$\n   Hal ini identik dengan formula kecepatan rata-rata pada jarak tempuh simetris. (Pernyataan C **BENAR**)\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**."
+    "hint": "Ingat bahwa kecepatan rata-rata total adalah perbandingan total seluruh jarak dibagi total seluruh waktu tempuh (bukan rata-rata aritmetika biasa).",
+    "explanation": "Langkah-langkah analisis fisika-matematika gerak dan rata-rata harmonik:\n\n1. **Rasio Waktu Tempuh:**\n   Waktu pergi: $t_1 = \\frac{S}{60}$\n   Waktu pulang: $t_2 = \\frac{S}{40}$\n   Rasio: $\\frac{t_2}{t_1} = \\frac{S/40}{S/60} = \\frac{60}{40} = 1,5$. (Pernyataan A **BENAR**)\n\n2. **Kecepatan Rata-rata Pergi-Pulang:**\n   Total jarak tempuh: $S_{\\text{total}} = 2S$\n   Total waktu tempuh: $t_{\\text{total}} = \\frac{S}{60} + \\frac{S}{40} = \\frac{2S + 3S}{120} = \\frac{5S}{120} = \\frac{S}{24}$\n   $$v_{\\text{rata-rata}} = \\frac{S_{\\text{total}}}{t_{\\text{total}}} = \\frac{2S}{S/24} = 48\\text{ km/jam}$$\n   (Pernyataan B **BENAR**, Pernyataan D **SALAH**)\n\n3. **Identifikasi Jenis Rata-rata:**\n   Formula rata-rata harmonik antara $v_1$ dan $v_2$ adalah:\n   $$H = \\frac{2}{\\frac{1}{v_1} + \\frac{1}{v_2}} = \\frac{2}{\\frac{1}{60} + \\frac{1}{40}} = 48\\text{ km/jam}$$\n   Hal ini identik dengan formula kecepatan rata-rata pada jarak tempuh simetris. (Pernyataan C **BENAR**)\n\n4. **Korelasi Kecepatan dan Waktu (Pernyataan E BENAR):**\n   Karena $S = v_1 t_1 = v_2 t_2$, maka $\\frac{v_1}{v_2} = \\frac{t_2}{t_1} = \\frac{60}{40} = 1,5$. Artinya rasio kecepatan berbanding terbalik secara presisi terhadap rasio waktu tempuh.\n\nOleh karena itu, opsi yang benar adalah **A, B, C, dan E**."
   },
   {
     "id": "matwa-operasi-bilangan-real-08",
@@ -153,6 +166,7 @@
       "B": "Salah",
       "C": "Benar"
     },
+    "hint": "Perhatikan aturan perkalian tanda pertidaksamaan dengan bilangan negatif, batasan nilai real negatif pada AM-GM, dan uraian pecahan parsial deret teleskopik.",
     "explanation": "Analisis keabsahan setiap baris pernyataan:\n\n1. **Pernyataan A (Benar):**\n   Sifat dasar ketidaksamaan bilangan real menyatakan bahwa jika kedua ruas dikalikan bilangan negatif ($c < 0$), maka tanda pertidaksamaan wajib dibalik. Maka $a < b \\iff ac > bc$.\n\n2. **Pernyataan B (Salah):**\n   Ketaksamaan $x + \\frac{1}{x} \\ge 2$ hanya terbukti untuk bilangan real positif ($x > 0$) berdasarkan ketaksamaan AM-GM. Untuk bilangan real negatif semisal $x = -1$, nilai $x + \\frac{1}{x} = -2 < 2$. Maka pernyataan untuk *setiap* bilangan real $x \\neq 0$ bernilai salah.\n\n3. **Pernyataan C (Benar):**\n   Pecahkan suku deret menggunakan pecahan parsial $\\frac{1}{k(k+1)} = \\frac{1}{k} - \\frac{1}{k+1}$:\n   $$\\left(1 - \\frac{1}{2}\\right) + \\left(\\frac{1}{2} - \\frac{1}{3}\\right) + \\dots + \\left(\\frac{1}{99} - \\frac{1}{100}\\right) = 1 - \\frac{1}{100} = \\frac{99}{100}$$"
   },
   {
@@ -181,6 +195,7 @@
       "B": "Salah",
       "C": "Benar"
     },
+    "hint": "Gunakan modulo 4 untuk menguji kuadrat bilangan ganjil, cermati definisi desimal berulang bagi bilangan rasional, dan lakukan pencoretan faktor berantai pada deret perkalian.",
     "explanation": "Analisis keabsahan masing-masing pernyataan:\n\n1. **Pernyataan A (Benar):**\n   Setiap bilangan bulat ganjil memiliki bentuk $2k+1$, sehingga kuadratnya memenuhi $(2k+1)^2 = 4k^2 + 4k + 1 \\equiv 1 \\pmod{4}$.\n   Dengan demikian, $p^2 + q^2 \\equiv 1 + 1 = 2 \\pmod{4}$.\n   Karena bersisa 2 ketika dibagi 4, maka $p^2 + q^2$ merupakan bilangan genap (habis dibagi 2), tetapi tidak dapat habis dibagi oleh 4.\n\n2. **Pernyataan B (Salah):**\n   Bilangan rasional memiliki representasi desimal yang berakhir atau berulang dengan panjang periode tetap. Pola desimal tersebut memiliki penambahan angka nol yang tak terhingga dan tidak pernah berulang dalam periode tetap, sehingga merupakan bilangan irasional.\n\n3. **Pernyataan C (Benar):**\n   Sederhanakan perkalian faktor-faktor beruntun:\n   $$\\frac{3}{2} \\times \\frac{4}{3} \\times \\frac{5}{4} \\times \\dots \\times \\frac{n+1}{n}$$\n   Semua suku pembilang dan penyebut saling mencoret secara teleskopik kecuali penyebut pertama (2) dan pembilang terakhir ($n+1$):\n   $$= \\frac{n+1}{2}$$\n   Sehingga selisihnya dengan $\\frac{n+1}{2}$ adalah $\\frac{n+1}{2} - \\frac{n+1}{2} = 0$."
   },
   {
@@ -213,6 +228,7 @@
       }
     ],
     "correct_answer": "A",
+    "hint": "Perhatikan bahwa ekspresi (a+b)/(a-b) bersifat homogen sehingga nilainya hanya bergantung pada nilai rasio a/b.",
     "explanation": "Target pertanyaan: Menentukan nilai eksak tunggal dari ekspresi perbandingan $\\frac{a + b}{a - b}$.\n\nPerhatikan bahwa jika kita bagi pembilang dan penyebut dengan $b$ ($b \\neq 0$):\n$$\\frac{a + b}{a - b} = \\frac{\\frac{a}{b} + 1}{\\frac{a}{b} - 1}$$\nSehingga nilai ekspresi ini sepenuhnya ditentukan oleh nilai rasio $\\frac{a}{b}$.\n\n- **Analisis Pernyataan (1):**\n  $$3a - 5b = 0 \\implies 3a = 5b \\implies \\frac{a}{b} = \\frac{5}{3}$$\n  Substitusikan nilai $\\frac{a}{b} = \\frac{5}{3}$ ke dalam bentuk target:\n  $$\\frac{a + b}{a - b} = \\frac{\\frac{5}{3} + 1}{\\frac{5}{3} - 1} = \\frac{\\frac{8}{3}}{\\frac{2}{3}} = \\frac{8}{2} = 4$$\n  Nilai dapat ditentukan secara tunggal dan pasti (bernilai 4).\n  Maka, **Pernyataan (1) SAJA CUKUP**.\n\n- **Analisis Pernyataan (2):**\n  $$a \\times b = 60$$\n  Terdapat tak terhingga pasangan $(a, b)$ yang memenuhi persamaan ini:\n  - Jika $(a, b) = (10, 6)$, maka $\\frac{a+b}{a-b} = \\frac{16}{4} = 4$.\n  - Jika $(a, b) = (12, 5)$, maka $\\frac{a+b}{a-b} = \\frac{17}{7} \\neq 4$.\n  Karena menghasilkan nilai target yang berbeda-beda, nilai ekspresi tidak dapat ditentukan secara pasti.\n  Maka, **Pernyataan (2) SAJA TIDAK CUKUP**.\n\nKesimpulan: Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (2) SAJA tidak cukup (**Jawaban A**)."
   }
 ]
