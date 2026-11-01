@@ -1,1 +1,218 @@
-[]
+[
+  {
+    "id": "matwa-sistem-persamaan-linear-01",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-persamaan-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Di sebuah toko perlengkapan sekolah, Budi membeli $3$ buku tulis dan $2$ bolpoin dengan total harga $\\text{Rp}16.500,00$. Di toko yang sama, Ani membeli $2$ buku tulis dan $4$ bolpoin dengan total harga $\\text{Rp}19.000,00$.\n\nJika Cici ingin membeli $1$ buku tulis dan $3$ bolpoin, total biaya yang harus dibayar Cici adalah ...",
+    "options": [
+      { "id": "A", "text": "$\\text{Rp}12.500,00$" },
+      { "id": "B", "text": "$\\text{Rp}11.500,00$" },
+      { "id": "C", "text": "$\\text{Rp}13.000,00$" },
+      { "id": "D", "text": "$\\text{Rp}14.500,00$" },
+      { "id": "E", "text": "$\\text{Rp}10.000,00$" }
+    ],
+    "correct_answer": "A",
+    "explanation": "Langkah-langkah penyelesaian SPLDV metode eliminasi dan substitusi:\n\n1. Definisikan variabel harga satuan:\n   - Misalkan harga $1$ buku tulis $= x$\n   - Misalkan harga $1$ bolpoin $= y$\n\n2. Susun sistem persamaan linear dua variabel:\n   $$\\begin{cases} 3x + 2y = 16.500 & \\text{...(1)} \\\\ 2x + 4y = 19.000 & \\text{...(2)} \\end{cases}$$\n\n3. Sederhanakan persamaan (2) dengan membagi kedua ruas dengan 2:\n   $$x + 2y = 9.500 \\implies x = 9.500 - 2y$$\n\n4. Substitusikan ekspresi $x$ ke dalam persamaan (1):\n   $$3(9.500 - 2y) + 2y = 16.500$$\n   $$28.500 - 6y + 2y = 16.500$$\n   $$-4y = 16.500 - 28.500 = -12.000 \\implies y = 3.000$$\n   (Harga $1$ bolpoin adalah $\\text{Rp}3.000,00$)\n\n5. Hitung harga $1$ buku tulis ($x$):\n   $$x = 9.500 - 2(3.000) = 9.500 - 6.000 = 3.500$$\n   (Harga $1$ buku tulis adalah $\\text{Rp}3.500,00$)\n\n6. Hitung belanjaan Cici ($1$ buku tulis dan $3$ bolpoin):\n   $$x + 3y = 3.500 + 3(3.000) = 3.500 + 9.000 = 12.500$$\n\nJadi, total biaya yang harus dibayar Cici adalah **Rp12.500,00** (Opsi **A**)."
+  },
+  {
+    "id": "matwa-sistem-persamaan-linear-02",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-persamaan-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan sistem persamaan linear tiga variabel (SPLTV) sebagai berikut:\n$$\\begin{cases} x + y + z = 6 \\\\ 2x - y + z = 3 \\\\ x + 2y - z = 2 \\end{cases}$$\nNilai dari hasil kali ketiga variabel $x \\cdot y \\cdot z$ adalah ...",
+    "options": [
+      { "id": "A", "text": "6" },
+      { "id": "B", "text": "8" },
+      { "id": "C", "text": "12" },
+      { "id": "D", "text": "4" },
+      { "id": "E", "text": "9" }
+    ],
+    "correct_answer": "A",
+    "explanation": "Langkah-langkah eliminasi SPLTV:\n\n1. Beri nomor pada masing-masing persamaan:\n   $$\\begin{aligned} x + y + z &= 6 & \\quad \\text{...(1)} \\\\ 2x - y + z &= 3 & \\quad \\text{...(2)} \\\\ x + 2y - z &= 2 & \\quad \\text{...(3)} \\end{aligned}$$\n\n2. Eliminasi variabel $z$ dengan menjumlahkan persamaan (1) dan persamaan (3):\n   $$(x + y + z) + (x + 2y - z) = 6 + 2 \\implies 2x + 3y = 8 \\quad \\text{...(4)}$$\n\n3. Eliminasi variabel $z$ dengan mengurangkan persamaan (1) dari persamaan (2):\n   $$(2x - y + z) - (x + y + z) = 3 - 6 \\implies x - 2y = -3 \\implies x = 2y - 3 \\quad \\text{...(5)}$$\n\n4. Substitusikan persamaan (5) ke dalam persamaan (4):\n   $$2(2y - 3) + 3y = 8 \\implies 4y - 6 + 3y = 8 \\implies 7y = 14 \\implies y = 2$$\n\n5. Tentukan nilai $x$ dan $z$:\n   $$x = 2(2) - 3 = 1$$\n   Dari persamaan (1): $1 + 2 + z = 6 \\implies z = 3$\n\n6. Hitung hasil kali $x \\cdot y \\cdot z$:\n   $$x \\cdot y \\cdot z = 1 \\cdot 2 \\cdot 3 = 6$$\n\nJadi, jawaban yang benar adalah **A**."
+  },
+  {
+    "id": "matwa-sistem-persamaan-linear-03",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-persamaan-linear",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Sebuah distributor alat kantor menyediakan paket bingkisan seminar yang berisi map arsip ($x$), buku catatan ($y$), dan pulpen eksklusif ($z$). Daftar harga paket ditetapkan sebagai berikut:\n- **Paket I** (2 map, 3 buku catatan, 1 pulpen): seharga $\\text{Rp}44.000,00$\n- **Paket II** (1 map, 2 buku catatan, 3 pulpen): seharga $\\text{Rp}47.000,00$\n- **Paket III** (3 map, 1 buku catatan, 2 pulpen): seharga $\\text{Rp}39.000,00$\n\nPanitia seminar bermaksud memesan **Paket IV** yang terdiri dari **6 map, 6 buku catatan, dan 6 pulpen**. Tanpa perlu menghitung harga satuan masing-masing barang, total harga Paket IV adalah ...",
+    "options": [
+      { "id": "A", "text": "$\\text{Rp}130.000,00$" },
+      { "id": "B", "text": "$\\text{Rp}120.000,00$" },
+      { "id": "C", "text": "$\\text{Rp}135.000,00$" },
+      { "id": "D", "text": "$\\text{Rp}140.000,00$" },
+      { "id": "E", "text": "$\\text{Rp}125.000,00$" }
+    ],
+    "correct_answer": "A",
+    "explanation": "Penyelesaian menggunakan konsep kombinasi linear langsung:\n\n1. Modelkan ketiga paket ke dalam sistem persamaan aljabar:\n   - Paket I: $2x + 3y + z = 44.000$\n   - Paket II: $x + 2y + 3z = 47.000$\n   - Paket III: $3x + y + 2z = 39.000$\n\n2. Target belanja Paket IV adalah:\n   $$\\text{Paket IV} = 6x + 6y + 6z$$\n\n3. Jumlahkan ketiga persamaan paket secara langsung:\n   $$(2x + 3y + z) + (x + 2y + 3z) + (3x + y + 2z) = 44.000 + 47.000 + 39.000$$\n   Kelompokkan koefisien masing-masing variabel:\n   $$(2 + 1 + 3)x + (3 + 2 + 1)y + (1 + 3 + 2)z = 130.000$$\n   $$6x + 6y + 6z = 130.000$$\n\n4. Karena bentuk aljabar hasil penjumlahan tepat sama dengan komposisi Paket IV, maka harga total Paket IV dapat ditentukan langsung bernilai $\\text{Rp}130.000,00$.\n\nJadi, jawaban yang benar adalah **A**."
+  },
+  {
+    "id": "matwa-sistem-persamaan-linear-04",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-persamaan-linear",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Diberikan sistem persamaan linear dua variabel dengan parameter konstanta $k$:\n$$\\begin{cases} (k + 1)x + 2y = 8 \\\\ 6x + ky = 12 \\end{cases}$$\nAgar sistem persamaan linear tersebut memiliki **tak terhingga banyak pasangan solusi** $(x, y)$, nilai parameter $k$ yang memenuhi adalah ...",
+    "options": [
+      { "id": "A", "text": "3" },
+      { "id": "B", "text": "2" },
+      { "id": "C", "text": "-3" },
+      { "id": "D", "text": "4" },
+      { "id": "E", "text": "-2" }
+    ],
+    "correct_answer": "A",
+    "explanation": "Langkah-langkah penentuan syarat solusi tak hingga:\n\n1. Suatu sistem persamaan linear dua variabel $\\begin{cases} a_1 x + b_1 y = c_1 \\\\ a_2 x + b_2 y = c_2 \\end{cases}$ memiliki tak hingga banyak penyelesaian jika dan hanya jika kedua persamaan tersebut saling berkelipatan (kedua garis berimpit), yang memenuhi rasio:\n   $$\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$$\n\n2. Terapkan nilai koefisien dari soal:\n   $$\\frac{k + 1}{6} = \\frac{2}{k} = \\frac{8}{12}$$\n\n3. Sederhanakan rasio konstanta:\n   $$\\frac{8}{12} = \\frac{2}{3}$$\n\n4. Selesaikan persamaan rasio koefisien $y$:\n   $$\\frac{2}{k} = \\frac{2}{3} \\implies 2k = 6 \\implies k = 3$$\n\n5. Uji konsistensi untuk nilai $k = 3$ pada koefisien $x$:\n   $$\\frac{k + 1}{6} = \\frac{3 + 1}{6} = \\frac{4}{6} = \\frac{2}{3}$$\n   Karena ketiga rasio sama persis $\\left(\\frac{2}{3} = \\frac{2}{3} = \\frac{2}{3}\\right)$, maka nilai $k$ yang tepat adalah $3$.\n\nJadi, jawaban yang benar adalah **A**."
+  },
+  {
+    "id": "matwa-sistem-persamaan-linear-05",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-persamaan-linear",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Perhatikan dua sistem persamaan linear berikut pada bidang koordinat Kartesius:\n- **Sistem I:** $\\begin{cases} 2x - y = 4 \\\\ 4x - 2y = 8 \\end{cases}$\n- **Sistem II:** $\\begin{cases} x + 2y = 5 \\\\ 2x + 4y = 7 \\end{cases}$\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR**!",
+    "options": [
+      { "id": "A", "text": "Sistem I merepresentasikan dua garis lurus yang saling berimpit." },
+      { "id": "B", "text": "Sistem I memiliki tak terhingga banyaknya pasangan solusi penyelesaian $(x, y)$." },
+      { "id": "C", "text": "Sistem II merepresentasikan dua garis lurus yang saling sejajar dan tidak pernah berpotongan." },
+      { "id": "D", "text": "Sistem II memiliki tepat satu pasangan solusi unik $(x, y)$." }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Analisis geometris kedua sistem persamaan linear:\n\n- **Analisis Sistem I:**\n  Rasio koefisien dan konstanta: $\\frac{2}{4} = \\frac{-1}{-2} = \\frac{4}{8} = \\frac{1}{2}$.\n  Karena semua perbandingan sama, kedua persamaan mendefinisikan garis lurus yang identik (berimpit). Akibatnya, terdapat tak hingga banyaknya titik persekutuan/solusi. (Pernyataan A dan B **BENAR**)\n\n- **Analisis Sistem II:**\n  Rasio koefisien variabel: $\\frac{1}{2} = \\frac{2}{4} = \\frac{1}{2}$.\n  Namun rasio konstanta: $\\frac{5}{7} \\neq \\frac{1}{2}$.\n  Karena gradien kedua garis sama ($m = -\\frac{1}{2}$) tetapi titik potong sumbu-$Y$ berbeda, kedua garis saling sejajar dan tidak pernah berpotongan. Sistem ini tidak memiliki penyelesaian (himpunan kosong). (Pernyataan C **BENAR**, Pernyataan D **SALAH**)\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+  },
+  {
+    "id": "matwa-sistem-persamaan-linear-06",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-persamaan-linear",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Sebuah sentra konveksi pakaian memproduksi tiga varian busana: Kemeja ($x$), Kaos Polo ($y$), dan Jaket ($z$). Setiap unit busana membutuhkan alokasi bahan mentah sebagai berikut:\n- 1 Kemeja membutuhkan $2\\text{ meter}$ kain katun, $1\\text{ rol}$ benang jahit, dan $5\\text{ butir}$ kancing.\n- 1 Kaos Polo membutuhkan $1\\text{ meter}$ kain katun, $1\\text{ rol}$ benang jahit, dan $3\\text{ butir}$ kancing.\n- 1 Jaket membutuhkan $3\\text{ meter}$ kain katun, $2\\text{ rol}$ benang jahit, dan $4\\text{ butir}$ kancing.\n\nDalam satu periode produksi mingguan, persediaan bahan yang terpakai habis seluruhnya adalah $115\\text{ meter}$ kain katun, $80\\text{ rol}$ benang, dan $250\\text{ butir}$ kancing.\n\nPilihlah **SEMUA** pernyataan berikut yang bernilai **BENAR** mengenai hasil produksi!",
+    "options": [
+      { "id": "A", "text": "Jumlah kemeja yang berhasil diproduksi adalah 20 potong." },
+      { "id": "B", "text": "Jumlah kaos polo yang berhasil diproduksi adalah 30 potong." },
+      { "id": "C", "text": "Total seluruh pakaian yang diproduksi dalam periode tersebut adalah 65 potong." },
+      { "id": "D", "text": "Jumlah jaket yang diproduksi lebih banyak dibandingkan jumlah kemeja yang diproduksi." }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Langkah-langkah pemodelan dan eliminasi SPLTV:\n\n1. Susun sistem persamaan aljabar penggunaan bahan:\n   $$\\begin{cases} 2x + y + 3z = 115 & \\text{(Katun)} \\\\ x + y + 2z = 80 & \\text{(Benang)} \\\\ 5x + 3y + 4z = 250 & \\text{(Kancing)} \\end{cases}$$\n\n2. Kurangkan persamaan (1) dengan persamaan (2):\n   $$(2x + y + 3z) - (x + y + 2z) = 115 - 80 \\implies x + z = 35 \\implies x = 35 - z$$\n\n3. Nyatakan $y$ dari persamaan (2):\n   $$y = 80 - x - 2z = 80 - (35 - z) - 2z = 45 - z$$\n\n4. Substitusikan $x$ dan $y$ ke persamaan (3):\n   $$5(35 - z) + 3(45 - z) + 4z = 250$$\n   $$175 - 5z + 135 - 3z + 4z = 250$$\n   $$310 - 4z = 250 \\implies 4z = 60 \\implies z = 15\\text{ potong jaket}$$\n\n5. Hitung kuantitas $x$ dan $y$:\n   $$x = 35 - 15 = 20\\text{ potong kemeja}$$\n   $$y = 45 - 15 = 30\\text{ potong kaos polo}$$\n\n6. Evaluasi pernyataan:\n   - Kemeja ($x = 20$): Pernyataan A **BENAR**.\n   - Kaos Polo ($y = 30$): Pernyataan B **BENAR**.\n   - Total busana: $x + y + z = 20 + 30 + 15 = 65$ potong: Pernyataan C **BENAR**.\n   - Jaket ($z = 15$) dan kemeja ($x = 20$), sehingga jaket lebih sedikit: Pernyataan D **SALAH**.\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**."
+  },
+  {
+    "id": "matwa-sistem-persamaan-linear-07",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-persamaan-linear",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Diberikan sistem persamaan tak linear yang dapat ditransformasikan ke sistem linear dengan substitusi pecahan aljabar untuk variabel tak nol $x, y, z \\neq 0$:\n$$\\begin{cases} \\frac{1}{x} + \\frac{2}{y} + \\frac{1}{z} = 3 \\\\ \\frac{2}{x} - \\frac{2}{y} + \\frac{1}{z} = 2 \\\\ \\frac{1}{x} + \\frac{4}{y} - \\frac{1}{z} = 2 \\end{cases}$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR**!",
+    "options": [
+      { "id": "A", "text": "Nilai variabel $x = 1$ dan $z = 1$" },
+      { "id": "B", "text": "Nilai variabel $y = 2$" },
+      { "id": "C", "text": "Nilai penjumlahan ketiga variabel $x + y + z = 4$" },
+      { "id": "D", "text": "Nilai perkalian ketiga variabel $x \\cdot y \\cdot z = 4$" }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Langkah-langkah transformasi ke sistem linear:\n\n1. Lakukan pemisalan variabel pecahan:\n   $$u = \\frac{1}{x}, \\quad v = \\frac{1}{y}, \\quad w = \\frac{1}{z}$$\n   Sistem persamaan linear dalam $(u, v, w)$ menjadi:\n   $$\\begin{cases} u + 2v + w = 3 & \\text{...(1)} \\\\ 2u - 2v + w = 2 & \\text{...(2)} \\\\ u + 4v - w = 2 & \\text{...(3)} \\end{cases}$$\n\n2. Jumlahkan persamaan (1) dan persamaan (3) untuk mengeliminasi $w$:\n   $$(u + 2v + w) + (u + 4v - w) = 3 + 2 \\implies 2u + 6v = 5 \\quad \\text{...(4)}$$\n\n3. Jumlahkan persamaan (2) dan persamaan (3) untuk mengeliminasi $w$:\n   $$(2u - 2v + w) + (u + 4v - w) = 2 + 2 \\implies 3u + 2v = 4 \\quad \\text{...(5)}$$\n\n4. Selesaikan sistem (4) dan (5):\n   Kalikan persamaan (5) dengan 3:\n   $$9u + 6v = 12$$\n   Kurangkan dengan persamaan (4):\n   $$(9u + 6v) - (2u + 6v) = 12 - 5 \\implies 7u = 7 \\implies u = 1$$\n\n5. Tentukan nilai $v$ dan $w$:\n   $$2(1) + 6v = 5 \\implies 6v = 3 \\implies v = \\frac{1}{2}$$\n   Substitusikan ke persamaan (1):\n   $$1 + 2\\left(\\frac{1}{2}\\right) + w = 3 \\implies 1 + 1 + w = 3 \\implies w = 1$$\n\n6. Kembalikan ke variabel asal $(x, y, z)$:\n   - $x = \\frac{1}{u} = \\frac{1}{1} = 1$\n   - $y = \\frac{1}{v} = \\frac{1}{1/2} = 2$\n   - $z = \\frac{1}{w} = \\frac{1}{1} = 1$\n\n7. Evaluasi opsi jawaban:\n   - $x = 1$ dan $z = 1$ (Pernyataan A **BENAR**)\n   - $y = 2$ (Pernyataan B **BENAR**)\n   - $x + y + z = 1 + 2 + 1 = 4$ (Pernyataan C **BENAR**)\n   - $x \\cdot y \\cdot z = 1 \\cdot 2 \\cdot 1 = 2 \\neq 4$ (Pernyataan D **SALAH**)\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**."
+  },
+  {
+    "id": "matwa-sistem-persamaan-linear-08",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-persamaan-linear",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Tentukan kebenaran dari masing-masing pernyataan aljabar mengenai sistem persamaan linear di bawah ini dengan memilih **Benar** atau **Salah** pada setiap baris:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Jika pasangan bilangan $(x, y) = (2, 1)$ merupakan solusi dari SPLDV $ax - by = 5$ dan $bx + ay = 5$, maka nilai dari penjumlahan koefisien $a + b = 4$."
+      },
+      {
+        "id": "B",
+        "text": "Sistem persamaan linear tiga variabel $\\begin{cases} x + y + z = 4 \\\\ 2x + 2y + 2z = 8 \\\\ 3x + 3y + 3z = 12 \\end{cases}$ memiliki tepat tiga pasangan solusi real."
+      },
+      {
+        "id": "C",
+        "text": "Sistem persamaan linear homogen dua variabel $\\begin{cases} a_1 x + b_1 y = 0 \\\\ a_2 x + b_2 y = 0 \\end{cases}$ dengan determinan koefisien $a_1 b_2 - a_2 b_1 \\neq 0$ hanya memiliki solusi tunggal trivial yaitu $(x, y) = (0, 0)$."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Salah",
+      "C": "Benar"
+    },
+    "explanation": "Analisis keabsahan tiap pernyataan:\n\n1. **Pernyataan A (Benar):**\n   Substitusikan $(x, y) = (2, 1)$ ke dalam kedua persamaan:\n   $$\\begin{cases} 2a - b = 5 \\\\ 2b + a = 5 \\implies a = 5 - 2b \\end{cases}$$\n   Substitusi ke persamaan pertama: $2(5 - 2b) - b = 5 \\implies 10 - 5b = 5 \\implies b = 1$.\n   Maka $a = 5 - 2(1) = 3$.\n   Nilai $a + b = 3 + 1 = 4$.\n\n2. **Pernyataan B (Salah):**\n   Ketiga persamaan pada sistem merupakan kelipatan skalar satu sama lain (persamaan bidang yang sama). Akibatnya, sistem memiliki tak terhingga banyaknya solusi kontinu yang membentuk sebuah bidang, bukan tepat tiga pasangan solusi diskret.\n\n3. **Pernyataan C (Benar):**\n   Berdasarkan Aturan Cramer, jika matriks koefisien sebuah sistem persamaan linear homogen memiliki determinan bukan nol (non-singular), maka invers matriks ada sehingga satu-satunya penyelesaian adalah solusi trivial $(0, 0)$."
+  },
+  {
+    "id": "matwa-sistem-persamaan-linear-09",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-persamaan-linear",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Tentukan kebenaran dari masing-masing pernyataan pemodelan matematika masalah kontekstual di bawah ini dengan memilih **Benar** atau **Salah** pada setiap baris:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Empat tahun yang lalu, usia Ayah adalah empat kali usia Budi. Enam tahun yang akan datang, usia Ayah menjadi dua kali usia Budi ditambah 8 tahun. Selisih usia Ayah dan Budi saat ini adalah 24 tahun."
+      },
+      {
+        "id": "B",
+        "text": "Sebuah bilangan dua digit bernilai 4 kali jumlah angka-angka penyusunnya. Jika urutan kedua angkanya ditukar, terbentuk bilangan baru yang nilainya 18 lebih besar dari bilangan semula. Bilangan semula tersebut adalah 24."
+      },
+      {
+        "id": "C",
+        "text": "Diketahui tiga bilangan real $x, y, z$ memenuhi relasi $x + y + z = 15$. Jika bilangan ketiga sama dengan jumlah dua bilangan pertama ($z = x + y$), maka nilai rata-rata dari ketiga bilangan tersebut adalah 5."
+      }
+    ],
+    "correct_answer": {
+      "A": "Salah",
+      "B": "Benar",
+      "C": "Benar"
+    },
+    "explanation": "Analisis pemodelan matematika:\n\n1. **Pernyataan A (Salah):**\n   Misalkan usia Ayah saat ini $= A$ dan usia Budi $= B$.\n   - 4 tahun lalu: $A - 4 = 4(B - 4) \\implies A = 4B - 12$\n   - 6 tahun mendatang: $A + 6 = 2(B + 6) + 8 \\implies A + 6 = 2B + 20 \\implies A = 2B + 14$\n   Samakan: $4B - 12 = 2B + 14 \\implies 2B = 26 \\implies B = 13$ tahun.\n   Usia Ayah: $A = 2(13) + 14 = 40$ tahun.\n   Selisih usia: $A - B = 40 - 13 = 27$ tahun (bukan 24 tahun).\n\n2. **Pernyataan B (Benar):**\n   Misalkan bilangan dua digit $= 10x + y$.\n   - Syarat 1: $10x + y = 4(x + y) \\implies 6x = 3y \\implies y = 2x$\n   - Syarat 2: $10y + x = (10x + y) + 18 \\implies 9y - 9x = 18 \\implies y - x = 2$\n   Substitusi $y = 2x$: $2x - x = 2 \\implies x = 2$, sehingga $y = 4$.\n   Bilangan semula adalah $10(2) + 4 = 24$.\n\n3. **Pernyataan C (Benar):**\n   Rata-rata tiga bilangan adalah $\\frac{x + y + z}{3}$. Karena diketahui langsung $x + y + z = 15$, maka rata-ratanya adalah $\\frac{15}{3} = 5$ terlepas dari pembagian nilai masing-masing bilangan."
+  },
+  {
+    "id": "matwa-sistem-persamaan-linear-10",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-persamaan-linear",
+    "question_type": "KECUKUPAN_DATA",
+    "difficulty": "HOTS",
+    "question_text": "Berapakah harga $1\\text{ kg}$ buah apel ($x$)?\n\n<div class=\"flex justify-center my-3\"><svg viewBox=\"0 0 280 85\" class=\"w-64 h-auto drop-shadow-sm\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"10\" width=\"260\" height=\"65\" rx=\"10\" fill=\"#1E293B\" stroke=\"#F59E0B\" stroke-width=\"2\"/><text x=\"140\" y=\"35\" fill=\"#E2E8F0\" font-size=\"13\" font-family=\"monospace\" text-anchor=\"middle\" font-weight=\"bold\">Target: Harga 1 kg Apel (x) = ?</text><text x=\"140\" y=\"58\" fill=\"#FBBF24\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\">(1) 2x+y+z=54rb &amp; y+z=26rb | (2) x+2y=42rb</text></svg></div>\n\nDiketahui harga buah apel ($x$), jeruk ($y$), dan mangga ($z$):\n(1) Harga $2\\text{ kg}$ apel, $1\\text{ kg}$ jeruk, dan $1\\text{ kg}$ mangga adalah $\\text{Rp}54.000,00$, sedangkan harga $1\\text{ kg}$ jeruk dan $1\\text{ kg}$ mangga adalah $\\text{Rp}26.000,00$.\n(2) Harga $1\\text{ kg}$ apel dan $2\\text{ kg}$ jeruk adalah $\\text{Rp}42.000,00$.\n\nPutuskan apakah pernyataan (1) dan (2) tersebut cukup untuk menjawab pertanyaan.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (2) SAJA tidak cukup."
+      },
+      {
+        "id": "B",
+        "text": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (1) SAJA tidak cukup."
+      },
+      {
+        "id": "C",
+        "text": "DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup."
+      },
+      {
+        "id": "D",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan Pernyataan (2) SAJA cukup."
+      },
+      {
+        "id": "E",
+        "text": "Pernyataan (1) dan Pernyataan (2) tidak cukup untuk menjawab pertanyaan."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Target pertanyaan: Menentukan nilai pasti dari harga $1\\text{ kg}$ apel ($x$).\n\n- **Analisis Pernyataan (1):**\n  Diberikan dua persamaan:\n  $$2x + y + z = 54.000$$\n  $$y + z = 26.000$$\n  Substitusikan kelompok suku $(y + z)$ ke persamaan pertama:\n  $$2x + (y + z) = 54.000 \\implies 2x + 26.000 = 54.000$$\n  $$2x = 54.000 - 26.000 = 28.000 \\implies x = 14.000$$\n  Harga $1\\text{ kg}$ apel dapat ditentukan secara unik dan pasti, yaitu $\\text{Rp}14.000,00$.\n  Maka, **Pernyataan (1) SAJA CUKUP**.\n\n- **Analisis Pernyataan (2):**\n  Diberikan persamaan:\n  $$x + 2y = 42.000$$\n  Persamaan ini memuat dua variabel yang tidak diketahui nilainya secara independen:\n  - Jika harga jeruk $y = 10.000$, maka $x = 22.000$.\n  - Jika harga jeruk $y = 14.000$, maka $x = 14.000$.\n  Karena nilai $x$ tidak tunggal, informasi ini tidak memadai.\n  Maka, **Pernyataan (2) SAJA TIDAK CUKUP**.\n\nKesimpulan: Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (2) SAJA tidak cukup (**Jawaban A**)."
+  }
+]
