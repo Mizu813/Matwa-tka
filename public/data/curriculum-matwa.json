@@ -1,0 +1,74 @@
+[
+  {
+    "chapter_id": "bilangan-real",
+    "title": "1. Bilangan Real",
+    "sub_chapters": [
+      { "sub_chapter_id": "eksponen-dan-akar", "title": "1.1 Eksponen & Bentuk Akar" },
+      { "sub_chapter_id": "operasi-bilangan-real", "title": "1.2 Operasi Hitung & Aplikasi" }
+    ]
+  },
+  {
+    "chapter_id": "aljabar-linear",
+    "title": "2. Aljabar Linear",
+    "sub_chapters": [
+      { "sub_chapter_id": "sistem-persamaan-linear", "title": "2.1 SPLDV & SPLTV" },
+      { "sub_chapter_id": "sistem-pertidaksamaan-linear", "title": "2.2 Sistem Pertidaksamaan Linear" },
+      { "sub_chapter_id": "program-linear", "title": "2.3 Program Linear & Optimasi" }
+    ]
+  },
+  {
+    "chapter_id": "fungsi",
+    "title": "3. Fungsi",
+    "sub_chapters": [
+      { "sub_chapter_id": "domain-range-grafik-fungsi", "title": "3.1 Domain, Range & Grafik" },
+      { "sub_chapter_id": "fungsi-komposisi", "title": "3.2 Fungsi Komposisi" },
+      { "sub_chapter_id": "fungsi-invers", "title": "3.3 Fungsi Invers" }
+    ]
+  },
+  {
+    "chapter_id": "barisan-dan-deret",
+    "title": "4. Barisan & Deret",
+    "sub_chapters": [
+      { "sub_chapter_id": "barisan-deret-aritmetika", "title": "4.1 Aritmetika" },
+      { "sub_chapter_id": "barisan-deret-geometri", "title": "4.2 Geometri, Pertumbuhan & Peluruhan" },
+      { "sub_chapter_id": "bunga-tunggal-majemuk", "title": "4.3 Bunga Tunggal & Majemuk" }
+    ]
+  },
+  {
+    "chapter_id": "geometri-dan-pengukuran",
+    "title": "5. Geometri & Pengukuran",
+    "sub_chapters": [
+      { "sub_chapter_id": "sudut-dan-kesebangunan", "title": "5.1 Sudut, Garis & Kesebangunan" },
+      { "sub_chapter_id": "pengukuran-bangun-datar", "title": "5.2 Keliling & Luas Bangun Datar" },
+      { "sub_chapter_id": "pengukuran-bangun-ruang", "title": "5.3 Volume & Luas Bangun Ruang" },
+      { "sub_chapter_id": "jarak-dimensi-tiga", "title": "5.4 Proyeksi & Jarak Dimensi Tiga" },
+      { "sub_chapter_id": "transformasi-geometri", "title": "5.5 Transformasi Geometri" }
+    ]
+  },
+  {
+    "chapter_id": "trigonometri",
+    "title": "6. Trigonometri",
+    "sub_chapters": [
+      { "sub_chapter_id": "perbandingan-trigonometri", "title": "6.1 Perbandingan & Sudut Berelasi" },
+      { "sub_chapter_id": "aplikasi-trigonometri", "title": "6.2 Aplikasi Elevasi & Depresi" }
+    ]
+  },
+  {
+    "chapter_id": "statistika",
+    "title": "7. Statistika",
+    "sub_chapters": [
+      { "sub_chapter_id": "penyajian-data", "title": "7.1 Penyajian Data Visual" },
+      { "sub_chapter_id": "statistika-data-tunggal", "title": "7.2 Data Tunggal" },
+      { "sub_chapter_id": "statistika-data-kelompok", "title": "7.3 Data Kelompok & Histogram" }
+    ]
+  },
+  {
+    "chapter_id": "peluang-dan-kombinatorika",
+    "title": "8. Pencacahan & Peluang",
+    "sub_chapters": [
+      { "sub_chapter_id": "aturan-pencacahan", "title": "8.1 Aturan Pencacahan, Permutasi & Kombinasi" },
+      { "sub_chapter_id": "peluang-kejadian-tunggal", "title": "8.2 Peluang Kejadian Tunggal" },
+      { "sub_chapter_id": "peluang-kejadian-majemuk", "title": "8.3 Peluang Kejadian Majemuk" }
+    ]
+  }
+]

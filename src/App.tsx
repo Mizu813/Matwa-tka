@@ -1,44 +1,52 @@
-import React, { useState, useEffect, useCallback, useMemo } from 'react';
-import { questionsData } from './data/questionsData';
+import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import {
+  CurriculumChapter,
+  Question,
   UserAnswerRecord,
   AnswerStatus,
-  Question,
-  ModuleCategory,
-  PackageCategory,
+  ViewDisplayMode,
 } from './types/quiz';
-import { PdfTopNavbar, ViewDisplayMode } from './components/PdfTopNavbar';
+import { PdfTopNavbar } from './components/PdfTopNavbar';
 import { PdfDocumentSheet } from './components/PdfDocumentSheet';
 import { EvaluationModal } from './components/EvaluationModal';
 import { FormulaCheatsheetModal } from './components/FormulaCheatsheetModal';
 
+// Helper to safely resolve relative asset URLs in Vite dev, preview, and GitHub Pages
+const resolveAssetPath = (relativePath: string): string => {
+  const base = import.meta.env.BASE_URL || './';
+  const cleanBase = base.endsWith('/') ? base : `${base}/`;
+  const cleanPath = relativePath.startsWith('/') ? relativePath.slice(1) : relativePath;
+  return `${cleanBase}${cleanPath}`;
+};
+
 export const App: React.FC = () => {
-  // 1. Sub-Bab & Paket Filter State (Controlled by Sticky Top Navbar)
-  const [selectedModule, setSelectedModule] = useState<ModuleCategory | 'Semua'>('Semua');
-  const [selectedPackage, setSelectedPackage] = useState<PackageCategory>('Semua');
+  // 1. Curriculum hierarchy state
+  const [curriculum, setCurriculum] = useState<CurriculumChapter[]>([]);
+  const [isCurriculumLoading, setIsCurriculumLoading] = useState<boolean>(true);
 
-  // Filtered questions based on selected Sub-Bab and selected Paket
-  const activeQuestions = useMemo(() => {
-    return questionsData.filter((q) => {
-      const matchModule = selectedModule === 'Semua' || q.module === selectedModule;
-      const matchPackage = selectedPackage === 'Semua' || q.package === selectedPackage;
-      return matchModule && matchPackage;
-    });
-  }, [selectedModule, selectedPackage]);
+  // 2. Navigation Routing State (Chapter, SubChapter, QuestionNumber)
+  const [activeChapterId, setActiveChapterId] = useState<string>('bilangan-real');
+  const [activeSubChapterId, setActiveSubChapterId] = useState<string>('eksponen-dan-akar');
+  const [currentQuestionNumber, setCurrentQuestionNumber] = useState<number>(1);
 
-  // 2. Display Mode: 'continuous' (Full PDF Document) vs 'single' (Page-by-page)
+  // 3. Question Data Cache: sub_chapter_id -> Question[]
+  const [questionsCache, setQuestionsCache] = useState<Record<string, Question[]>>({});
+  const [isQuestionsLoading, setIsQuestionsLoading] = useState<boolean>(false);
+
+  // 4. Display Mode: 'continuous' vs 'single'
   const [displayMode, setDisplayMode] = useState<ViewDisplayMode>('continuous');
 
-  // Index for single-question view mode
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
-
-  // 3. Zoom / Text Size scaling (90%, 100%, 110%, 120%)
+  // 5. Zoom level (90%, 100%, 110%, 120%)
   const [zoomLevel, setZoomLevel] = useState<number>(100);
 
-  // 4. Global toggle for expanding all hints & solutions
+  // 6. Global expand hints/solutions
   const [allExpanded, setAllExpanded] = useState<boolean>(false);
 
-  // 5. User answers state with localStorage persistence
+  // 7. Modals
+  const [isEvaluationModalOpen, setIsEvaluationModalOpen] = useState<boolean>(false);
+  const [isFormulaModalOpen, setIsFormulaModalOpen] = useState<boolean>(false);
+
+  // 8. User answers state with localStorage persistence
   const [userAnswers, setUserAnswers] = useState<Record<string, UserAnswerRecord>>(() => {
     try {
       const saved = localStorage.getItem('matwa_tka_answers');
@@ -48,7 +56,7 @@ export const App: React.FC = () => {
     }
   });
 
-  // 6. Bookmarked questions state with localStorage persistence
+  // 9. Bookmarks state with localStorage persistence
   const [bookmarkedIds, setBookmarkedIds] = useState<string[]>(() => {
     try {
       const saved = localStorage.getItem('matwa_tka_bookmarks');
@@ -58,7 +66,7 @@ export const App: React.FC = () => {
     }
   });
 
-  // 7. Time spent tracking
+  // 10. Time spent tracking
   const [timeSpentSeconds, setTimeSpentSeconds] = useState<number>(() => {
     try {
       const saved = localStorage.getItem('matwa_tka_time_spent');
@@ -68,18 +76,216 @@ export const App: React.FC = () => {
     }
   });
 
-  // 8. Theme state (Default: High-contrast Dark Paper or Clean White Paper)
+  // 11. Theme state (Dark Mode by default)
   const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
     const saved = localStorage.getItem('matwa_tka_theme');
     if (saved) return saved === 'dark';
-    return true; // Default Dark Mode as configured
+    return true;
   });
 
-  // Modal state
-  const [isEvaluationModalOpen, setIsEvaluationModalOpen] = useState<boolean>(false);
-  const [isFormulaModalOpen, setIsFormulaModalOpen] = useState<boolean>(false);
+  // Ref to avoid infinite hashchange loops
+  const isUpdatingHashInternally = useRef(false);
 
-  // Dark mode effect
+  // -------------------------------------------------------------
+  // Load Master Curriculum on mount
+  // -------------------------------------------------------------
+  useEffect(() => {
+    const loadCurriculum = async () => {
+      setIsCurriculumLoading(true);
+      const pathsToTry = [
+        resolveAssetPath('data/curriculum-matwa.json'),
+        './data/curriculum-matwa.json',
+        '/data/curriculum-matwa.json',
+      ];
+
+      for (const p of pathsToTry) {
+        try {
+          const res = await fetch(p);
+          if (res.ok) {
+            const data: CurriculumChapter[] = await res.json();
+            if (Array.isArray(data) && data.length > 0) {
+              setCurriculum(data);
+              setIsCurriculumLoading(false);
+              return;
+            }
+          }
+        } catch {
+          // continue to next path
+        }
+      }
+      setIsCurriculumLoading(false);
+    };
+
+    loadCurriculum();
+  }, []);
+
+  // -------------------------------------------------------------
+  // Hash Routing Logic & Fallback Parser
+  // #/<chapter_id>/<sub_chapter_id>/<nomor_soal>
+  // Fallback to #/bilangan-real/eksponen-dan-akar/1
+  // -------------------------------------------------------------
+  const parseHash = useCallback(
+    (hashStr: string, cur: CurriculumChapter[]) => {
+      if (!cur || cur.length === 0) return null;
+
+      const fallbackChapter = cur[0];
+      const fallbackSub = fallbackChapter.sub_chapters[0];
+      const fallback = {
+        chapterId: fallbackChapter.chapter_id,
+        subChapterId: fallbackSub.sub_chapter_id,
+        questionNumber: 1,
+      };
+
+      if (!hashStr || hashStr === '#' || hashStr === '#/' || hashStr.startsWith('#/soal/')) {
+        return fallback;
+      }
+
+      // Format: #/chapterId/subChapterId/questionNumber
+      const cleaned = hashStr.replace(/^#\/?/, '');
+      const parts = cleaned.split('/').filter(Boolean);
+
+      if (parts.length < 2) {
+        return fallback;
+      }
+
+      const chapterId = parts[0];
+      const subChapterId = parts[1];
+      const questionNum = parts[2] ? parseInt(parts[2], 10) : 1;
+
+      const foundChapter = cur.find((c) => c.chapter_id === chapterId);
+      if (!foundChapter) return fallback;
+
+      const foundSub = foundChapter.sub_chapters.find((s) => s.sub_chapter_id === subChapterId);
+      if (!foundSub) {
+        return {
+          chapterId: foundChapter.chapter_id,
+          subChapterId: foundChapter.sub_chapters[0]?.sub_chapter_id || fallback.subChapterId,
+          questionNumber: 1,
+        };
+      }
+
+      return {
+        chapterId,
+        subChapterId,
+        questionNumber: isNaN(questionNum) || questionNum < 1 ? 1 : questionNum,
+      };
+    },
+    []
+  );
+
+  // Sync state when Hash changes or on initial curriculum load
+  useEffect(() => {
+    if (curriculum.length === 0) return;
+
+    const handleHashSync = () => {
+      if (isUpdatingHashInternally.current) {
+        isUpdatingHashInternally.current = false;
+        return;
+      }
+
+      const parsed = parseHash(window.location.hash, curriculum);
+      if (parsed) {
+        setActiveChapterId(parsed.chapterId);
+        setActiveSubChapterId(parsed.subChapterId);
+        setCurrentQuestionNumber(parsed.questionNumber);
+
+        // Ensure hash matches standard structure
+        const targetHash = `#/${parsed.chapterId}/${parsed.subChapterId}/${parsed.questionNumber}`;
+        if (window.location.hash !== targetHash) {
+          isUpdatingHashInternally.current = true;
+          window.location.replace(targetHash);
+        }
+      }
+    };
+
+    handleHashSync();
+    window.addEventListener('hashchange', handleHashSync);
+    return () => window.removeEventListener('hashchange', handleHashSync);
+  }, [curriculum, parseHash]);
+
+  // Update hash when user interacts with navigation
+  const navigateTo = useCallback(
+    (chapterId: string, subChapterId: string, questionNum: number) => {
+      setActiveChapterId(chapterId);
+      setActiveSubChapterId(subChapterId);
+      setCurrentQuestionNumber(questionNum);
+
+      const newHash = `#/${chapterId}/${subChapterId}/${questionNum}`;
+      if (window.location.hash !== newHash) {
+        isUpdatingHashInternally.current = true;
+        window.location.hash = newHash;
+      }
+    },
+    []
+  );
+
+  // -------------------------------------------------------------
+  // Fetch questions for active sub-chapter
+  // -------------------------------------------------------------
+  useEffect(() => {
+    if (!activeSubChapterId) return;
+
+    // Check if already in cache
+    if (questionsCache[activeSubChapterId]) {
+      return;
+    }
+
+    const loadQuestions = async () => {
+      setIsQuestionsLoading(true);
+      const pathsToTry = [
+        resolveAssetPath(`data/questions/${activeSubChapterId}.json`),
+        `./data/questions/${activeSubChapterId}.json`,
+        `/data/questions/${activeSubChapterId}.json`,
+      ];
+
+      for (const p of pathsToTry) {
+        try {
+          const res = await fetch(p);
+          if (res.ok) {
+            const data: Question[] = await res.json();
+            if (Array.isArray(data)) {
+              setQuestionsCache((prev) => ({
+                ...prev,
+                [activeSubChapterId]: data,
+              }));
+              setIsQuestionsLoading(false);
+              return;
+            }
+          }
+        } catch {
+          // continue
+        }
+      }
+
+      // If empty or 404, fallback to empty array
+      setQuestionsCache((prev) => ({
+        ...prev,
+        [activeSubChapterId]: [],
+      }));
+      setIsQuestionsLoading(false);
+    };
+
+    loadQuestions();
+  }, [activeSubChapterId, questionsCache]);
+
+  // Current active questions list
+  const activeQuestions = useMemo(() => {
+    return questionsCache[activeSubChapterId] || [];
+  }, [questionsCache, activeSubChapterId]);
+
+  // Active titles for Kop Document
+  const activeChapterObj = useMemo(() => {
+    return curriculum.find((c) => c.chapter_id === activeChapterId) || curriculum[0];
+  }, [curriculum, activeChapterId]);
+
+  const activeSubChapterObj = useMemo(() => {
+    return (
+      activeChapterObj?.sub_chapters.find((s) => s.sub_chapter_id === activeSubChapterId) ||
+      activeChapterObj?.sub_chapters[0]
+    );
+  }, [activeChapterObj, activeSubChapterId]);
+
+  // Theme effect
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add('dark');
@@ -123,14 +329,9 @@ export const App: React.FC = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Safe boundary check for currentIndex
-  useEffect(() => {
-    if (currentIndex >= activeQuestions.length && activeQuestions.length > 0) {
-      setCurrentIndex(0);
-    }
-  }, [activeQuestions, currentIndex]);
-
-  // Handlers for user interactions
+  // -------------------------------------------------------------
+  // User interaction handlers
+  // -------------------------------------------------------------
   const handleSelectOption = useCallback((questionId: string, optionId: string) => {
     setUserAnswers((prev) => {
       const existing = prev[questionId];
@@ -173,7 +374,7 @@ export const App: React.FC = () => {
   }, []);
 
   const handleSelectCategoryAnswer = useCallback(
-    (questionId: string, statementId: string, value: boolean) => {
+    (questionId: string, statementId: string, value: string | boolean) => {
       setUserAnswers((prev) => {
         const existing = prev[questionId];
         const currentMap = { ...(existing?.categoryAnswers || {}) };
@@ -202,95 +403,131 @@ export const App: React.FC = () => {
     });
   }, []);
 
-  const handleSelectModule = useCallback((modName: ModuleCategory | 'Semua') => {
-    setSelectedModule(modName);
-    setCurrentIndex(0);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, []);
+  // Navigation handlers
+  const handleSelectChapter = useCallback(
+    (chapterId: string) => {
+      const targetChap = curriculum.find((c) => c.chapter_id === chapterId);
+      const targetSub = targetChap?.sub_chapters[0]?.sub_chapter_id || '';
+      navigateTo(chapterId, targetSub, 1);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    },
+    [curriculum, navigateTo]
+  );
 
-  const handleSelectPackage = useCallback((pkg: PackageCategory) => {
-    setSelectedPackage(pkg);
-    setCurrentIndex(0);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, []);
+  const handleSelectSubChapter = useCallback(
+    (subChapterId: string) => {
+      navigateTo(activeChapterId, subChapterId, 1);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    },
+    [activeChapterId, navigateTo]
+  );
 
-  const handleZoomIn = () => {
-    setZoomLevel((prev) => Math.min(120, prev + 10));
-  };
-
-  const handleZoomOut = () => {
-    setZoomLevel((prev) => Math.max(90, prev - 10));
-  };
+  const handleSelectQuestionNumber = useCallback(
+    (questionNum: number) => {
+      navigateTo(activeChapterId, activeSubChapterId, questionNum);
+      if (displayMode === 'continuous') {
+        const el = document.getElementById(`soal-${questionNum}`);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    },
+    [activeChapterId, activeSubChapterId, displayMode, navigateTo]
+  );
 
   const totalAnswered = useMemo(() => {
     return Object.values(userAnswers).filter(
-      (a) => a.status === 'answered' || a.status === 'doubt'
+      (a) =>
+        a.status === 'answered' ||
+        a.status === 'doubt' ||
+        !!a.selectedOption ||
+        (a.selectedOptions && a.selectedOptions.length > 0) ||
+        (a.categoryAnswers && Object.keys(a.categoryAnswers).length > 0)
     ).length;
   }, [userAnswers]);
 
+  if (isCurriculumLoading) {
+    return (
+      <div className="min-h-screen w-full flex flex-col items-center justify-center bg-slate-100 dark:bg-[#070B12] text-slate-800 dark:text-slate-200">
+        <div className="w-12 h-12 rounded-2xl border-4 border-indigo-600 border-t-transparent animate-spin mb-4" />
+        <h2 className="text-base font-bold font-mono">Memuat Master Kurikulum TKA...</h2>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen w-full max-w-full overflow-x-hidden bg-slate-100 dark:bg-[#070B12] text-slate-900 dark:text-slate-100 font-sans selection:bg-indigo-500 selection:text-white transition-colors flex flex-col items-stretch">
-      {/* 1. STICKY TOP NAVBAR (Document Controls & Sub-Bab Tabs) */}
+      {/* 1. TWO-TIER STICKY TOP NAVBAR (8 Bab & 22 Sub-Bab) */}
       <PdfTopNavbar
-        selectedModule={selectedModule}
-        onSelectModule={handleSelectModule}
-        selectedPackage={selectedPackage}
-        onSelectPackage={handleSelectPackage}
+        curriculum={curriculum}
+        activeChapterId={activeChapterId}
+        activeSubChapterId={activeSubChapterId}
+        currentQuestionNumber={currentQuestionNumber}
+        subChapterQuestions={activeQuestions}
+        onSelectChapter={handleSelectChapter}
+        onSelectSubChapter={handleSelectSubChapter}
+        onSelectQuestionNumber={handleSelectQuestionNumber}
+        userAnswers={userAnswers}
         displayMode={displayMode}
         onToggleDisplayMode={() =>
           setDisplayMode((prev) => (prev === 'continuous' ? 'single' : 'continuous'))
         }
         zoomLevel={zoomLevel}
-        onZoomIn={handleZoomIn}
-        onZoomOut={handleZoomOut}
+        onZoomIn={() => setZoomLevel((prev) => Math.min(120, prev + 10))}
+        onZoomOut={() => setZoomLevel((prev) => Math.max(90, prev - 10))}
         isDarkMode={isDarkMode}
         onToggleDarkMode={() => setIsDarkMode((prev) => !prev)}
         allExpanded={allExpanded}
         onToggleAllExpanded={() => setAllExpanded((prev) => !prev)}
         onOpenEvaluation={() => setIsEvaluationModalOpen(true)}
         totalAnswered={totalAnswered}
-        totalQuestions={questionsData.length}
       />
 
       {/* 2. MAIN CENTERED PDF DOCUMENT SHEET */}
       <main className="w-full max-w-full pb-16 flex flex-col items-center">
-        <PdfDocumentSheet
-          questions={activeQuestions}
-          selectedModule={selectedModule}
-          selectedPackage={selectedPackage}
-          userAnswers={userAnswers}
-          onSelectOption={handleSelectOption}
-          onToggleMcmaOption={handleToggleMcmaOption}
-          onSelectCategoryAnswer={handleSelectCategoryAnswer}
-          bookmarkedIds={bookmarkedIds}
-          onToggleBookmark={handleToggleBookmark}
-          displayMode={displayMode}
-          currentIndex={currentIndex}
-          onSelectIndex={(idx) => {
-            setCurrentIndex(idx);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }}
-          globalExpandState={allExpanded}
-          zoomLevel={zoomLevel}
-        />
+        {isQuestionsLoading ? (
+          <div className="w-full max-w-4xl mx-auto px-4 py-16 flex flex-col items-center justify-center">
+            <div className="w-10 h-10 rounded-xl border-4 border-indigo-500 border-t-transparent animate-spin mb-3" />
+            <p className="text-xs font-mono font-semibold text-slate-500">
+              Memuat butir soal sub-bab...
+            </p>
+          </div>
+        ) : (
+          <PdfDocumentSheet
+            questions={activeQuestions}
+            activeChapterTitle={activeChapterObj?.title || '1. Bilangan Real'}
+            activeSubChapterTitle={activeSubChapterObj?.title || '1.1 Eksponen & Bentuk Akar'}
+            userAnswers={userAnswers}
+            onSelectOption={handleSelectOption}
+            onToggleMcmaOption={handleToggleMcmaOption}
+            onSelectCategoryAnswer={handleSelectCategoryAnswer}
+            bookmarkedIds={bookmarkedIds}
+            onToggleBookmark={handleToggleBookmark}
+            displayMode={displayMode}
+            currentIndex={Math.max(0, currentQuestionNumber - 1)}
+            onSelectIndex={(idx) => handleSelectQuestionNumber(idx + 1)}
+            globalExpandState={allExpanded}
+            zoomLevel={zoomLevel}
+          />
+        )}
       </main>
 
       {/* 3. EVALUATION / SCORING MODAL */}
       <EvaluationModal
         isOpen={isEvaluationModalOpen}
         onClose={() => setIsEvaluationModalOpen(false)}
-        questions={questionsData}
+        questions={activeQuestions}
         userAnswers={userAnswers}
         timeSpentSeconds={timeSpentSeconds}
         onSelectQuestion={(idx) => {
-          setSelectedModule('Semua');
-          setCurrentIndex(idx);
+          handleSelectQuestionNumber(idx + 1);
           setIsEvaluationModalOpen(false);
-          window.scrollTo({ top: 0, behavior: 'smooth' });
         }}
         onResetExam={() => {
           setUserAnswers({});
-          setCurrentIndex(0);
+          setCurrentQuestionNumber(1);
           setTimeSpentSeconds(0);
         }}
       />

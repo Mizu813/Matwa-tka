@@ -1,32 +1,38 @@
-export type QuestionType = 'pg_single' | 'pgk_mcma' | 'pgk_kategori';
+export type QuestionType =
+  | 'PG'
+  | 'MCMA'
+  | 'KATEGORI'
+  | 'KECUKUPAN_DATA'
+  | 'pg_single'
+  | 'pgk_mcma'
+  | 'pgk_kategori';
 
-export type CognitiveLevel = 'Pengetahuan & Pemahaman' | 'Aplikasi' | 'Penalaran (HOTS)';
+export type QuestionDifficulty = 'STANDAR' | 'HOTS';
 
-export type ModuleCategory =
-  | 'Aljabar & Bilangan'
-  | 'Pemodelan Linear & Sistem Persamaan'
-  | 'Barisan & Pemodelan Eksponensial'
-  | 'Geometri Bidang & Terapan'
-  | 'Geometri Ruang (Dimensi Tiga)'
-  | 'Transformasi Geometri'
-  | 'Trigonometri'
-  | 'Statistika & Peluang'
-  | 'Kecukupan Data (Data Sufficiency)';
+export interface CurriculumSubChapter {
+  sub_chapter_id: string;
+  title: string;
+}
 
-export type PackageCategory = 'Semua' | 'Paket 1' | 'Paket 2' | 'Paket 3';
+export interface CurriculumChapter {
+  chapter_id: string;
+  title: string;
+  sub_chapters: CurriculumSubChapter[];
+}
 
-export interface OptionItem {
+export interface QuestionOptionItem {
   id: string; // 'A' | 'B' | 'C' | 'D' | 'E'
-  label: string;
+  label?: string;
   text: string;
   isCorrect?: boolean;
 }
 
 export interface CategoryStatement {
   id: string; // 'A' | 'B' | 'C'
-  label: string;
-  statement: string;
-  correctAnswer: boolean; // true = Benar, false = Salah
+  label?: string;
+  statement?: string;
+  text?: string;
+  correctAnswer?: boolean | string;
 }
 
 export interface ExplanationStep {
@@ -36,61 +42,56 @@ export interface ExplanationStep {
 }
 
 export interface QuestionExplanation {
-  summary: string;
-  steps: ExplanationStep[];
-  keyConcept: string;
+  summary?: string;
+  steps?: ExplanationStep[];
+  keyConcept?: string;
 }
 
 export interface Question {
   id: string;
-  number: number;
-  package: 'Paket 1' | 'Paket 2' | 'Paket 3';
-  packageQuestionNumber: number; // Nomor asli di lembar soal paket (misal 1 - 25)
-  module: ModuleCategory;
-  competency: string;
-  subCompetency: string;
-  cognitiveLevel: CognitiveLevel;
-  type: QuestionType;
-  title: string;
-  scenario: string;
-  questionPrompt: string;
+  chapter_id: string;
+  sub_chapter_id: string;
+  question_type: QuestionType;
+  difficulty: QuestionDifficulty;
+  question_text: string;
+  options: QuestionOptionItem[];
+  correct_answer: string | string[] | Record<string, string | boolean>;
+  explanation: string | QuestionExplanation;
+  title?: string;
+  number?: number;
   svgComponentId?: string;
-  options?: OptionItem[]; // For pg_single and pgk_mcma
-  categoryStatements?: CategoryStatement[]; // For pgk_kategori
-  correctAnswer: string | string[] | Record<string, boolean>; // e.g. 'C', ['p1', 'p4'], { A: false, B: false, C: true }
-  explanation: QuestionExplanation;
-  hint1?: string; // Petunjuk 1: Konsep Inti / Teorema
-  hint2?: string; // Petunjuk 2: Langkah Awal / Persamaan
-  trap?: string; // Jebakan Umum TKA (Common Trap)
-  optionExplanations?: Record<string, string>; // Penjelasan spesifik per pilihan A/B/C/D/E
+  hint1?: string;
+  hint2?: string;
+  trap?: string;
+
+  // Backwards compatibility helpers
+  type?: QuestionType;
+  scenario?: string;
+  questionPrompt?: string;
+  cognitiveLevel?: string;
+  module?: string;
+  package?: string;
+  packageQuestionNumber?: number;
+  categoryStatements?: CategoryStatement[];
 }
 
-export type AppView = 'dashboard' | 'drill' | 'concepts' | 'bookmarks' | 'exam';
-export type TimerMode = 'stopwatch' | 'pomodoro';
-
+export type ViewDisplayMode = 'continuous' | 'single';
 export type AnswerStatus = 'unanswered' | 'doubt' | 'answered';
 
 export interface UserAnswerRecord {
   questionId: string;
   status: AnswerStatus;
-  selectedOption?: string; // for pg_single
-  selectedOptions?: string[]; // for pgk_mcma
-  categoryAnswers?: Record<string, boolean>; // for pgk_kategori { A: true, B: false }
+  selectedOption?: string; // for PG & KECUKUPAN_DATA
+  selectedOptions?: string[]; // for MCMA
+  categoryAnswers?: Record<string, string | boolean>; // for KATEGORI
 }
 
-export interface ModuleSummary {
-  name: ModuleCategory;
+export interface SubChapterSummary {
+  subChapterId: string;
+  subChapterTitle: string;
+  chapterId: string;
+  chapterTitle: string;
   totalQuestions: number;
   correctCount: number;
   answeredCount: number;
-}
-
-export interface ExamResult {
-  totalScore: number; // 0 - 100
-  totalCorrect: number;
-  totalQuestions: number;
-  totalAnswered: number;
-  totalDoubt: number;
-  timeSpentSeconds: number;
-  moduleBreakdown: ModuleSummary[];
 }

@@ -1,5 +1,10 @@
 import React from 'react';
-import { ModuleCategory, PackageCategory } from '../types/quiz';
+import {
+  CurriculumChapter,
+  Question,
+  UserAnswerRecord,
+  ViewDisplayMode,
+} from '../types/quiz';
 import {
   FileText,
   Printer,
@@ -7,24 +12,26 @@ import {
   Moon,
   ZoomIn,
   ZoomOut,
-  Maximize2,
   CheckCircle,
   Eye,
   EyeOff,
-  BookOpen,
   Layers,
+  Sparkles,
 } from 'lucide-react';
 
-export type ViewDisplayMode = 'continuous' | 'single';
-
 interface PdfTopNavbarProps {
-  selectedModule: ModuleCategory | 'Semua';
-  onSelectModule: (moduleName: ModuleCategory | 'Semua') => void;
-  selectedPackage: PackageCategory;
-  onSelectPackage: (pkg: PackageCategory) => void;
+  curriculum: CurriculumChapter[];
+  activeChapterId: string;
+  activeSubChapterId: string;
+  currentQuestionNumber: number;
+  subChapterQuestions: Question[];
+  onSelectChapter: (chapterId: string) => void;
+  onSelectSubChapter: (subChapterId: string) => void;
+  onSelectQuestionNumber: (questionNum: number) => void;
+  userAnswers: Record<string, UserAnswerRecord>;
   displayMode: ViewDisplayMode;
   onToggleDisplayMode: () => void;
-  zoomLevel: number; // e.g. 100, 110, 125
+  zoomLevel: number;
   onZoomIn: () => void;
   onZoomOut: () => void;
   isDarkMode: boolean;
@@ -33,34 +40,18 @@ interface PdfTopNavbarProps {
   onToggleAllExpanded: () => void;
   onOpenEvaluation: () => void;
   totalAnswered: number;
-  totalQuestions: number;
 }
 
-export const SUB_BAB_MODULES: { id: ModuleCategory | 'Semua'; label: string; range: string }[] = [
-  { id: 'Semua', label: 'Semua Materi', range: '54 Soal' },
-  { id: 'Aljabar & Bilangan', label: '1. Aljabar & Bilangan', range: '6 Soal' },
-  { id: 'Pemodelan Linear & Sistem Persamaan', label: '2. Pemodelan Linear & SPL', range: '8 Soal' },
-  { id: 'Barisan & Pemodelan Eksponensial', label: '3. Barisan & Eksponensial', range: '4 Soal' },
-  { id: 'Geometri Bidang & Terapan', label: '4. Geometri Bidang', range: '9 Soal' },
-  { id: 'Geometri Ruang (Dimensi Tiga)', label: '5. Dimensi Tiga', range: '9 Soal' },
-  { id: 'Transformasi Geometri', label: '6. Transformasi Geometri', range: '2 Soal' },
-  { id: 'Trigonometri', label: '7. Trigonometri', range: '3 Soal' },
-  { id: 'Statistika & Peluang', label: '8. Statistika & Peluang', range: '10 Soal' },
-  { id: 'Kecukupan Data (Data Sufficiency)', label: '9. Kecukupan Data', range: '3 Soal' },
-];
-
-export const PAKET_MODULES: { id: PackageCategory; label: string; count: string }[] = [
-  { id: 'Semua', label: 'Semua Paket', count: '54' },
-  { id: 'Paket 1', label: 'Paket 1', count: '25' },
-  { id: 'Paket 2', label: 'Paket 2', count: '25' },
-  { id: 'Paket 3', label: 'Paket 3', count: '4' },
-];
-
 export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
-  selectedModule,
-  onSelectModule,
-  selectedPackage,
-  onSelectPackage,
+  curriculum,
+  activeChapterId,
+  activeSubChapterId,
+  currentQuestionNumber,
+  subChapterQuestions,
+  onSelectChapter,
+  onSelectSubChapter,
+  onSelectQuestionNumber,
+  userAnswers,
   displayMode,
   onToggleDisplayMode,
   zoomLevel,
@@ -72,13 +63,25 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
   onToggleAllExpanded,
   onOpenEvaluation,
   totalAnswered,
-  totalQuestions,
 }) => {
+  // Find current active chapter & sub-chapter
+  const activeChapter =
+    curriculum.find((c) => c.chapter_id === activeChapterId) || curriculum[0];
+  const activeSubChapters = activeChapter ? activeChapter.sub_chapters : [];
+  const currentQuestion = subChapterQuestions[currentQuestionNumber - 1];
+
+  const currentDifficulty =
+    currentQuestion?.difficulty ||
+    (currentQuestion?.cognitiveLevel === 'Penalaran (HOTS)' ? 'HOTS' : 'STANDAR');
+
+  const currentType =
+    currentQuestion?.question_type || currentQuestion?.type || 'PG';
+
   return (
     <header className="sticky top-0 z-40 w-full max-w-full bg-white/95 dark:bg-[#0B0F19]/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm transition-colors print:hidden overflow-hidden">
-      {/* Baris 1: Main Reader Header & Document Controls */}
+      {/* 1. Main Reader Header Toolbar */}
       <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 flex items-center justify-between gap-2 sm:gap-4 border-b border-slate-100 dark:border-slate-800/60">
-        {/* Left: Branding & PDF Document Title */}
+        {/* Left: Branding & Tagline */}
         <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-shrink">
           <div className="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold text-sm shadow-sm flex-shrink-0">
             <FileText className="w-4 h-4" />
@@ -87,25 +90,27 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
             <div className="flex items-center gap-1.5 sm:gap-2">
               <span className="font-extrabold text-sm sm:text-base text-slate-900 dark:text-white tracking-tight truncate">
                 Matwa-TKA
-                <span className="hidden sm:inline text-indigo-600 dark:text-indigo-400 font-semibold text-xs sm:text-sm"> | Bank Soal 2025</span>
+                <span className="hidden sm:inline text-indigo-600 dark:text-indigo-400 font-semibold text-xs sm:text-sm">
+                  {' '}| 8 Bab &amp; 22 Sub-Bab
+                </span>
               </span>
               <span className="hidden md:inline-flex px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 font-mono flex-shrink-0">
-                54 BUTIR SOAL
+                KURIKULUM RESMI
               </span>
             </div>
           </div>
         </div>
 
-        {/* Right: Reader Toolbar */}
+        {/* Right: Reader Toolbar Controls */}
         <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
-          {/* Display Mode: Continuous Document vs Single Question */}
+          {/* Display Mode Toggle */}
           <button
             onClick={onToggleDisplayMode}
             className="flex items-center gap-1.5 p-1.5 sm:px-2.5 sm:py-1.5 rounded-lg text-xs font-semibold border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
             title={
               displayMode === 'continuous'
                 ? 'Beralih ke Mode Lembar Per Soal'
-                : 'Beralih ke Mode Dokumen Bersambung (Full PDF)'
+                : 'Beralih ke Mode Dokumen Utuh Bersambung'
             }
           >
             {displayMode === 'continuous' ? (
@@ -178,77 +183,132 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
             <CheckCircle className="w-3.5 h-3.5" />
             <span className="hidden sm:inline">Rekap Nilai</span>
             <span className="font-mono text-[11px] bg-indigo-700 px-1.5 py-0.2 rounded ml-0.5">
-              {totalAnswered}/{totalQuestions}
+              {totalAnswered}
             </span>
           </button>
         </div>
       </div>
 
-      {/* Baris 2: SUB-BAB DOMAIN MATERI & FILTER PAKET */}
+      {/* 2. BARIS ATAS (BAB BESAR): Horizontal Scrollable Pills/Tabs */}
       <div className="bg-slate-50/90 dark:bg-[#0E1424]/90 border-b border-slate-200 dark:border-slate-800 w-full overflow-hidden">
-        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full flex flex-col gap-1.5 py-2">
-          {/* Baris 2A: 9 Domain Materi Tabs */}
-          <div className="flex items-center justify-between gap-2">
-            <span className="hidden md:inline-flex text-[11px] font-mono font-bold text-slate-500 uppercase flex-shrink-0">
-              Domain Materi:
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full flex items-center gap-2 py-1.5">
+          <span className="hidden lg:inline-flex text-[11px] font-mono font-bold text-slate-500 uppercase flex-shrink-0">
+            Bab:
+          </span>
+          <nav className="flex items-center gap-1.5 overflow-x-auto py-0.5 scrollbar-none w-full min-w-0">
+            {curriculum.map((chap) => {
+              const isSelected = chap.chapter_id === activeChapterId;
+              return (
+                <button
+                  key={chap.chapter_id}
+                  onClick={() => onSelectChapter(chap.chapter_id)}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap transition-all flex items-center gap-1 flex-shrink-0 ${
+                    isSelected
+                      ? 'bg-indigo-600 text-white shadow-sm'
+                      : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-800/60'
+                  }`}
+                >
+                  <span>{chap.title}</span>
+                </button>
+              );
+            })}
+          </nav>
+        </div>
+      </div>
+
+      {/* 3. BARIS KEDUA (SUB-BAB): Chips / Buttons Sub-bab yang sedang Aktif */}
+      <div className="bg-white/80 dark:bg-[#090D17]/80 border-b border-slate-200/80 dark:border-slate-800/80 w-full overflow-hidden">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full flex items-center gap-2 py-1.5">
+          <span className="hidden lg:inline-flex text-[11px] font-mono font-bold text-slate-500 uppercase flex-shrink-0">
+            Sub-Bab:
+          </span>
+          <nav className="flex items-center gap-1.5 overflow-x-auto py-0.5 scrollbar-none w-full min-w-0">
+            {activeSubChapters.map((sub) => {
+              const isSelected = sub.sub_chapter_id === activeSubChapterId;
+              return (
+                <button
+                  key={sub.sub_chapter_id}
+                  onClick={() => onSelectSubChapter(sub.sub_chapter_id)}
+                  className={`px-2.5 py-1 rounded-md text-[11px] font-semibold whitespace-nowrap transition-all flex items-center gap-1 border flex-shrink-0 ${
+                    isSelected
+                      ? 'bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border-indigo-300 dark:border-indigo-700 font-bold shadow-2xs'
+                      : 'border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/60 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800'
+                  }`}
+                >
+                  <span>{sub.title}</span>
+                </button>
+              );
+            })}
+          </nav>
+        </div>
+      </div>
+
+      {/* 4. BARIS KETIGA (NOMOR SOAL & BADGES) */}
+      <div className="bg-slate-50/60 dark:bg-[#0C111E]/60 border-b border-slate-200/60 dark:border-slate-800/60 w-full overflow-hidden">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full flex items-center justify-between gap-2 py-1.5">
+          {/* Left: Question Number Indicators */}
+          <div className="flex items-center gap-1.5 overflow-x-auto py-0.5 scrollbar-none min-w-0 flex-1">
+            <span className="text-[11px] font-mono font-bold text-slate-500 uppercase flex-shrink-0 mr-1">
+              Soal:
             </span>
-            <nav className="flex items-center gap-1.5 overflow-x-auto py-0.5 scrollbar-none w-full min-w-0">
-              {SUB_BAB_MODULES.map((tab) => {
-                const isSelected = selectedModule === tab.id;
+            {subChapterQuestions.length === 0 ? (
+              <span className="text-xs text-slate-400 italic font-mono">
+                Belum ada butir soal
+              </span>
+            ) : (
+              subChapterQuestions.map((q, idx) => {
+                const questionNum = idx + 1;
+                const isSelected = questionNum === currentQuestionNumber;
+                const answer = userAnswers[q.id];
+                const isAnswered =
+                  answer?.status === 'answered' ||
+                  answer?.status === 'doubt' ||
+                  !!answer?.selectedOption ||
+                  (answer?.selectedOptions && answer.selectedOptions.length > 0) ||
+                  (answer?.categoryAnswers && Object.keys(answer.categoryAnswers).length > 0);
+
                 return (
                   <button
-                    key={tab.id}
-                    onClick={() => onSelectModule(tab.id)}
-                    className={`px-2.5 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap transition-all flex items-center gap-1.5 flex-shrink-0 ${
+                    key={q.id}
+                    onClick={() => onSelectQuestionNumber(questionNum)}
+                    className={`min-w-6 h-6 px-1.5 rounded text-xs font-mono font-bold flex items-center justify-center transition-all relative flex-shrink-0 ${
                       isSelected
-                        ? 'bg-indigo-600 text-white shadow-sm'
-                        : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-800/60'
+                        ? 'bg-slate-900 dark:bg-white text-white dark:text-slate-900 shadow-sm ring-2 ring-indigo-500'
+                        : isAnswered
+                        ? 'bg-indigo-100 dark:bg-indigo-950/80 text-indigo-700 dark:text-indigo-300 border border-indigo-300 dark:border-indigo-700'
+                        : 'bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700 hover:border-slate-400'
                     }`}
                   >
-                    <span>{tab.label}</span>
-                    <span
-                      className={`text-[10px] font-mono font-normal px-1.5 py-0.5 rounded ${
-                        isSelected
-                          ? 'bg-indigo-700/80 text-white'
-                          : 'bg-slate-200 dark:bg-slate-800 text-slate-500 dark:text-slate-400'
-                      }`}
-                    >
-                      {tab.range}
-                    </span>
+                    {questionNum}
+                    {isAnswered && !isSelected && (
+                      <span className="absolute -top-0.5 -right-0.5 w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                    )}
                   </button>
                 );
-              })}
-            </nav>
+              })
+            )}
           </div>
 
-          {/* Baris 2B: Filter Paket Soal */}
-          <div className="flex items-center gap-2 pt-1 border-t border-slate-200/60 dark:border-slate-800/60">
-            <span className="text-[11px] font-mono font-bold text-slate-500 uppercase flex-shrink-0">
-              Filter Paket:
-            </span>
-            <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none">
-              {PAKET_MODULES.map((pkg) => {
-                const isSelected = selectedPackage === pkg.id;
-                return (
-                  <button
-                    key={pkg.id}
-                    onClick={() => onSelectPackage(pkg.id)}
-                    className={`px-2.5 py-0.5 rounded-md text-[11px] font-bold font-mono transition-all flex items-center gap-1 ${
-                      isSelected
-                        ? 'bg-emerald-600 text-white shadow-xs'
-                        : 'bg-slate-100 dark:bg-slate-800/80 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700'
-                    }`}
-                  >
-                    <span>{pkg.label}</span>
-                    <span className="text-[10px] opacity-80">({pkg.count})</span>
-                  </button>
-                );
-              })}
+          {/* Right: Active Question Badges (Difficulty & Type) */}
+          {currentQuestion && (
+            <div className="flex items-center gap-1.5 flex-shrink-0">
+              <span
+                className={`px-2 py-0.5 rounded text-[10px] font-bold font-mono border ${
+                  currentDifficulty === 'HOTS'
+                    ? 'bg-rose-50 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 border-rose-200 dark:border-rose-800'
+                    : 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800'
+                }`}
+              >
+                {currentDifficulty}
+              </span>
+
+              <span className="px-2 py-0.5 rounded text-[10px] font-bold font-mono bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800">
+                {currentType}
+              </span>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </header>
   );
 };
-

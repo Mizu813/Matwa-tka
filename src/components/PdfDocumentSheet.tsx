@@ -1,24 +1,22 @@
 import React from 'react';
-import { Question, UserAnswerRecord, ModuleCategory, PackageCategory } from '../types/quiz';
+import { Question, UserAnswerRecord, ViewDisplayMode } from '../types/quiz';
 import { PdfQuestionCard } from './PdfQuestionCard';
-import { ViewDisplayMode } from './PdfTopNavbar';
 import {
   ChevronLeft,
   ChevronRight,
-  Printer,
-  Info,
   Award,
   Sparkles,
+  BookOpen,
 } from 'lucide-react';
 
 interface PdfDocumentSheetProps {
   questions: Question[];
-  selectedModule: ModuleCategory | 'Semua';
-  selectedPackage: PackageCategory;
+  activeChapterTitle: string;
+  activeSubChapterTitle: string;
   userAnswers: Record<string, UserAnswerRecord>;
   onSelectOption: (questionId: string, optionId: string) => void;
   onToggleMcmaOption: (questionId: string, optionId: string) => void;
-  onSelectCategoryAnswer: (questionId: string, statementId: string, value: boolean) => void;
+  onSelectCategoryAnswer: (questionId: string, statementId: string, value: string | boolean) => void;
   bookmarkedIds: string[];
   onToggleBookmark: (questionId: string) => void;
   displayMode: ViewDisplayMode;
@@ -30,8 +28,8 @@ interface PdfDocumentSheetProps {
 
 export const PdfDocumentSheet: React.FC<PdfDocumentSheetProps> = ({
   questions,
-  selectedModule,
-  selectedPackage,
+  activeChapterTitle,
+  activeSubChapterTitle,
   userAnswers,
   onSelectOption,
   onToggleMcmaOption,
@@ -44,8 +42,8 @@ export const PdfDocumentSheet: React.FC<PdfDocumentSheetProps> = ({
   globalExpandState,
   zoomLevel,
 }) => {
-  const currentQuestion = questions[currentIndex] || questions[0];
   const totalQuestions = questions.length;
+  const currentQuestion = questions[currentIndex] || questions[0];
 
   return (
     <div className="w-full max-w-4xl mx-auto px-3 sm:px-6 lg:px-8 py-5 sm:py-8 space-y-6 flex flex-col items-center">
@@ -53,7 +51,7 @@ export const PdfDocumentSheet: React.FC<PdfDocumentSheetProps> = ({
       <div className="w-full p-5 sm:p-8 rounded-2xl bg-white dark:bg-[#111827] border border-slate-200 dark:border-slate-800 shadow-sm transition-all text-center space-y-3 relative overflow-hidden print:border-none print:shadow-none">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-mono font-bold uppercase tracking-wider border border-slate-200 dark:border-slate-700">
           <Award className="w-3.5 h-3.5 text-indigo-500" />
-          Bank Data Soal Matematika (Non-Lanjut) TKA SMA 2025
+          Kurikulum Standar TKA Matematika SMA
         </div>
 
         <h1 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight uppercase">
@@ -61,25 +59,38 @@ export const PdfDocumentSheet: React.FC<PdfDocumentSheetProps> = ({
         </h1>
 
         <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
-          Dataset asesmen terstandarisasi yang dipisahkan berdasarkan 9 domain materi resmi, dilengkapi visualisasi diagram vektor SVG presisi, rendering rumus KaTeX terintegrasi, dan pembahasan langkah demi langkah.
+          Platform asesmen mandiri interaktif 8 Bab Besar &amp; 22 Sub-bab resmi, dilengkapi visualisasi diagram teknis, rendering rumus KaTeX presisi, dan pembahasan langkah demi langkah.
         </p>
 
         {/* Double Border Line khas dokumen resmi */}
         <div className="pt-3 border-t-2 border-b border-slate-900 dark:border-slate-100 flex flex-wrap items-center justify-between gap-2 text-[11px] font-mono text-slate-600 dark:text-slate-400 py-1.5 px-2">
-          <span>DOMAIN: <strong className="text-slate-900 dark:text-white">{selectedModule.toUpperCase()}</strong></span>
-          <span>PAKET: <strong className="text-emerald-600 dark:text-emerald-400">{selectedPackage.toUpperCase()}</strong></span>
-          <span>TOTAL: <strong className="text-slate-900 dark:text-white">{totalQuestions} BUTIR SOAL</strong></span>
+          <span>BAB: <strong className="text-slate-900 dark:text-white">{activeChapterTitle.toUpperCase()}</strong></span>
+          <span>SUB-BAB: <strong className="text-indigo-600 dark:text-indigo-400">{activeSubChapterTitle.toUpperCase()}</strong></span>
+          <span>JUMLAH: <strong className="text-slate-900 dark:text-white">{totalQuestions} BUTIR SOAL</strong></span>
         </div>
       </div>
 
-      {/* Render Questions List */}
-      {displayMode === 'continuous' ? (
-        /* Mode Dokumen Bersambung (Full PDF View) */
+      {/* Jika Belum Ada Soal di Sub-Bab Ini */}
+      {totalQuestions === 0 ? (
+        <div className="w-full p-8 sm:p-12 rounded-2xl bg-white dark:bg-[#111827] border border-dashed border-slate-300 dark:border-slate-800 text-center space-y-3">
+          <div className="w-12 h-12 rounded-2xl bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 flex items-center justify-center mx-auto">
+            <BookOpen className="w-6 h-6" />
+          </div>
+          <h3 className="text-base font-bold text-slate-900 dark:text-white">
+            Belum Ada Soal pada Sub-Bab Ini
+          </h3>
+          <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 max-w-md mx-auto">
+            Bank soal untuk sub-bab <span className="font-semibold text-indigo-600 dark:text-indigo-400">"{activeSubChapterTitle}"</span> sedang dalam tahap penyusunan. Silakan pilih sub-bab lainnya melalui bilah navigasi di atas.
+          </p>
+        </div>
+      ) : displayMode === 'continuous' ? (
+        /* Mode Dokumen Bersambung (Full Continuous View) */
         <div className="w-full space-y-6 flex flex-col items-center">
-          {questions.map((q) => (
+          {questions.map((q, idx) => (
             <PdfQuestionCard
               key={q.id}
               question={q}
+              questionNumber={idx + 1}
               userAnswer={userAnswers[q.id]}
               onSelectOption={onSelectOption}
               onToggleMcmaOption={onToggleMcmaOption}
@@ -96,7 +107,9 @@ export const PdfDocumentSheet: React.FC<PdfDocumentSheetProps> = ({
         <div className="w-full space-y-6 flex flex-col items-center">
           {currentQuestion && (
             <PdfQuestionCard
+              key={currentQuestion.id}
               question={currentQuestion}
+              questionNumber={currentIndex + 1}
               userAnswer={userAnswers[currentQuestion.id]}
               onSelectOption={onSelectOption}
               onToggleMcmaOption={onToggleMcmaOption}
@@ -109,26 +122,23 @@ export const PdfDocumentSheet: React.FC<PdfDocumentSheetProps> = ({
           )}
 
           {/* Pagination Navigation Bar ala PDF Reader */}
-          <div className="p-4 rounded-xl bg-white dark:bg-[#111827] border border-slate-200 dark:border-slate-800 shadow-sm flex items-center justify-between gap-3 print:hidden">
+          <div className="w-full p-4 rounded-xl bg-white dark:bg-[#111827] border border-slate-200 dark:border-slate-800 shadow-sm flex items-center justify-between gap-3 print:hidden">
             <button
               onClick={() => onSelectIndex(Math.max(0, currentIndex - 1))}
               disabled={currentIndex === 0}
               className={`flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-bold border transition-all ${
                 currentIndex === 0
                   ? 'opacity-40 cursor-not-allowed border-slate-200 dark:border-slate-800 text-slate-400'
-                  : 'border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-100'
+                  : 'border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700'
               }`}
             >
               <ChevronLeft className="w-4 h-4" />
               <span>Sebelumnya</span>
             </button>
 
-            {/* Quick Page Indicator */}
-            <div className="flex items-center gap-2">
-              <span className="text-xs font-mono font-bold text-slate-700 dark:text-slate-300">
-                Halaman {currentIndex + 1} dari {totalQuestions}
-              </span>
-            </div>
+            <span className="font-mono text-xs font-bold text-slate-600 dark:text-slate-400">
+              Soal {currentIndex + 1} dari {totalQuestions}
+            </span>
 
             <button
               onClick={() => onSelectIndex(Math.min(totalQuestions - 1, currentIndex + 1))}
@@ -136,25 +146,15 @@ export const PdfDocumentSheet: React.FC<PdfDocumentSheetProps> = ({
               className={`flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-bold border transition-all ${
                 currentIndex === totalQuestions - 1
                   ? 'opacity-40 cursor-not-allowed border-slate-200 dark:border-slate-800 text-slate-400'
-                  : 'border-indigo-600 bg-indigo-600 text-white hover:bg-indigo-500 shadow-sm'
+                  : 'border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700'
               }`}
             >
-              <span>Berikutnya</span>
+              <span>Selanjutnya</span>
               <ChevronRight className="w-4 h-4" />
             </button>
           </div>
         </div>
       )}
-
-      {/* Dokumen Footer Catatan Akademik */}
-      <footer className="w-full text-center py-6 text-xs text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-800/60 print:block">
-        <p className="font-mono">
-          © SIM-TKA Matematika Wajib | Asesmen HOTS &amp; SVG Teknis
-        </p>
-        <p className="text-[11px] mt-1 text-slate-400">
-          Dokumen ini disusun untuk melatih pemahaman konseptual dan penalaran aljabar tingkat lanjut.
-        </p>
-      </footer>
     </div>
   );
 };

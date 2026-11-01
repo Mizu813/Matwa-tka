@@ -1,5 +1,9 @@
 import React from 'react';
-import { Question, UserAnswerRecord, ModuleCategory } from '../types/quiz';
+import {
+  Question,
+  UserAnswerRecord,
+  CurriculumChapter,
+} from '../types/quiz';
 import {
   Trophy,
   CheckCircle2,
@@ -12,7 +16,7 @@ import {
   Target,
   BarChart3,
   X,
-  Flame,
+  Clock,
 } from 'lucide-react';
 
 interface EvaluationModalProps {
@@ -36,199 +40,221 @@ export const EvaluationModal: React.FC<EvaluationModalProps> = ({
 }) => {
   if (!isOpen) return null;
 
-  // Grade calculation
   let correctCount = 0;
   let wrongCount = 0;
   let unansweredCount = 0;
 
-  // Module breakdown tracking
-  const moduleStats: Record<string, { total: number; correct: number }> = {};
+  // Chapter breakdown stats
+  const chapterStats: Record<string, { total: number; correct: number; answered: number }> = {};
 
   questions.forEach((q) => {
-    if (!moduleStats[q.module]) {
-      moduleStats[q.module] = { total: 0, correct: 0 };
+    const chapKey = q.chapter_id || 'Umum';
+    if (!chapterStats[chapKey]) {
+      chapterStats[chapKey] = { total: 0, correct: 0, answered: 0 };
     }
-    moduleStats[q.module].total += 1;
+    chapterStats[chapKey].total += 1;
 
     const answer = userAnswers[q.id];
-    if (!answer || answer.status === 'unanswered') {
+    const isAnswered =
+      answer &&
+      (answer.status === 'answered' ||
+        answer.status === 'doubt' ||
+        !!answer.selectedOption ||
+        (answer.selectedOptions && answer.selectedOptions.length > 0) ||
+        (answer.categoryAnswers && Object.keys(answer.categoryAnswers).length > 0));
+
+    if (!isAnswered) {
       unansweredCount++;
       return;
     }
 
+    chapterStats[chapKey].answered += 1;
+
+    const qType = q.question_type || q.type || 'PG';
     let isCorrect = false;
 
-    if (q.type === 'pg_single') {
-      isCorrect = answer.selectedOption === q.correctAnswer;
-    } else if (q.type === 'pgk_mcma') {
-      const correctArr = Array.isArray(q.correctAnswer) ? q.correctAnswer : [];
+    if (qType === 'PG' || qType === 'KECUKUPAN_DATA' || qType === 'pg_single') {
+      isCorrect = answer.selectedOption === q.correct_answer;
+    } else if (qType === 'MCMA' || qType === 'pgk_mcma') {
+      const correctArr = Array.isArray(q.correct_answer)
+        ? q.correct_answer
+        : [q.correct_answer as string];
       const userArr = answer.selectedOptions || [];
       isCorrect =
         correctArr.length === userArr.length &&
-        correctArr.every((item) => userArr.includes(item));
-    } else if (q.type === 'pgk_kategori') {
-      const correctObj = q.correctAnswer as Record<string, boolean>;
+        correctArr.every((item) => userArr.includes(item)) &&
+        userArr.every((item) => correctArr.includes(item));
+    } else if (qType === 'KATEGORI' || qType === 'pgk_kategori') {
+      const correctObj = (q.correct_answer || {}) as Record<string, any>;
       const userObj = answer.categoryAnswers || {};
       const keys = Object.keys(correctObj);
       isCorrect =
         keys.length > 0 &&
-        keys.every((key) => userObj[key] === correctObj[key]);
+        keys.every((key) => {
+          const u = String(userObj[key] ?? '').toLowerCase();
+          const c = String(correctObj[key] ?? '').toLowerCase();
+          const norm = (v: string) =>
+            v === 'true' || v === 'benar' ? 'b' : v === 'false' || v === 'salah' ? 's' : v;
+          return norm(u) === norm(c);
+        });
     }
 
     if (isCorrect) {
       correctCount++;
-      moduleStats[q.module].correct += 1;
+      chapterStats[chapKey].correct += 1;
     } else {
       wrongCount++;
     }
   });
 
   const totalQuestions = questions.length;
-  const score = totalQuestions > 0 ? Math.round((correctCount / totalQuestions) * 100) : 0;
+  const scorePercent =
+    totalQuestions > 0 ? Math.round((correctCount / totalQuestions) * 100) : 0;
 
-  // Format time
-  const minutes = Math.floor(timeSpentSeconds / 60);
-  const seconds = timeSpentSeconds % 60;
-  const formattedTime = `${minutes} menit ${seconds} detik`;
-
-  // Determine Predicate
-  let predicate = 'Perlu Belajar Lebih Giat';
-  let badgeColor = 'text-amber-400 bg-amber-950/40 border-amber-500/30';
-  if (score >= 85) {
-    predicate = 'Sangat Memuaskan (Level Mahir)';
-    badgeColor = 'text-emerald-400 bg-emerald-950/40 border-emerald-500/30';
-  } else if (score >= 70) {
-    predicate = 'Kompeten (Level Cakap)';
-    badgeColor = 'text-indigo-400 bg-indigo-950/40 border-indigo-500/30';
-  } else if (score >= 50) {
-    predicate = 'Cukup (Level Dasar)';
-    badgeColor = 'text-sky-400 bg-sky-950/40 border-sky-500/30';
-  }
+  const formatTime = (seconds: number) => {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins}m ${secs}s`;
+  };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fadeIn">
-      <div className="bg-[#111827] rounded-3xl border border-[#1F2937] shadow-2xl w-full max-w-3xl max-h-[90vh] flex flex-col overflow-hidden">
-        {/* Header Modal */}
-        <div className="p-6 border-b border-[#1F2937] bg-gradient-to-r from-[#151D2F] via-[#1E1B4B] to-[#151D2F] flex items-center justify-between">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm animate-fadeIn">
+      <div className="w-full max-w-2xl bg-white dark:bg-[#111827] border border-slate-200 dark:border-slate-800 rounded-3xl shadow-2xl overflow-hidden max-h-[90vh] flex flex-col">
+        {/* Header */}
+        <div className="p-5 sm:p-6 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-2xl bg-indigo-600/30 border border-indigo-500/40 text-indigo-400 flex items-center justify-center shadow-lg">
-              <Trophy className="w-6 h-6 text-amber-400" />
+            <div className="w-10 h-10 rounded-2xl bg-indigo-600/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+              <Trophy className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="text-lg font-extrabold text-white">
-                Hasil Evaluasi Asesmen TKA Matematika
+              <h3 className="text-lg font-black text-slate-900 dark:text-white">
+                Rekap Hasil Asesmen Mandiri
               </h3>
-              <p className="text-xs text-slate-300">
-                Laporan Kognitif Blueprint Berdasarkan Standar Ujian
+              <p className="text-xs text-slate-500 dark:text-slate-400">
+                Statistik akurasi jawaban dan waktu pengerjaan soal
               </p>
             </div>
           </div>
           <button
             onClick={onClose}
-            className="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-[#1F2937] transition-colors"
+            className="p-2 rounded-xl text-slate-400 hover:text-slate-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
         {/* Modal Body */}
-        <div className="p-6 overflow-y-auto space-y-6 flex-1">
-          {/* Top Score Banner */}
-          <div className="p-6 rounded-3xl bg-gradient-to-br from-[#151D2F] to-[#0D1321] border border-indigo-500/30 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
-            <div className="flex items-center gap-5">
-              <div className="w-20 h-20 rounded-2xl bg-indigo-600 text-white flex flex-col items-center justify-center shadow-xl shadow-indigo-600/30">
-                <span className="text-3xl font-mono font-black">{score}</span>
-                <span className="text-[10px] uppercase font-bold text-indigo-200">Skor / 100</span>
+        <div className="p-5 sm:p-6 overflow-y-auto space-y-6">
+          {/* Big Score Card */}
+          <div className="p-6 rounded-2xl bg-gradient-to-br from-indigo-500/10 via-indigo-500/5 to-transparent border border-indigo-500/20 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="text-center sm:text-left">
+              <span className="text-xs font-mono font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider block mb-1">
+                Skor Akhir Siswa
+              </span>
+              <div className="flex items-baseline gap-2 justify-center sm:justify-start">
+                <span className="text-4xl sm:text-5xl font-black text-slate-900 dark:text-white">
+                  {scorePercent}
+                </span>
+                <span className="text-lg font-bold text-slate-400">/ 100</span>
               </div>
-              <div>
-                <div className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold border mb-1.5 ${badgeColor}`}>
-                  <Award className="w-3.5 h-3.5" />
-                  {predicate}
-                </div>
-                <div className="text-xs text-slate-400">
-                  Total waktu pengerjaan: <span className="font-semibold text-slate-200">{formattedTime}</span>
-                </div>
-              </div>
+              <p className="text-xs text-slate-600 dark:text-slate-400 mt-1">
+                {scorePercent >= 80
+                  ? '🌟 Luar biasa! Penguasaan materi HOTS sangat matang.'
+                  : scorePercent >= 60
+                  ? '👍 Bagus! Perdalam kembali analisis jebakan soal.'
+                  : '💡 Tetap semangat! Tinjau kembali tahapan langkah pada kunci solusi.'}
+              </p>
             </div>
 
-            {/* Quick stats mini cards */}
-            <div className="grid grid-cols-3 gap-2">
-              <div className="p-3 rounded-2xl bg-[#0B0F19] border border-slate-800 text-center">
-                <div className="text-xs text-emerald-400 font-bold flex items-center justify-center gap-1">
-                  <CheckCircle2 className="w-3.5 h-3.5" /> {correctCount}
+            {/* Quick Metrics */}
+            <div className="grid grid-cols-2 gap-2 w-full sm:w-auto font-mono text-xs">
+              <div className="p-3 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/60 text-emerald-700 dark:text-emerald-300 flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+                <div>
+                  <div className="font-black text-sm">{correctCount}</div>
+                  <div className="text-[10px]">Benar</div>
                 </div>
-                <div className="text-[10px] text-slate-400 mt-0.5">Benar</div>
               </div>
-              <div className="p-3 rounded-2xl bg-[#0B0F19] border border-slate-800 text-center">
-                <div className="text-xs text-rose-400 font-bold flex items-center justify-center gap-1">
-                  <XCircle className="w-3.5 h-3.5" /> {wrongCount}
+              <div className="p-3 rounded-xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800/60 text-rose-700 dark:text-rose-300 flex items-center gap-2">
+                <XCircle className="w-4 h-4 text-rose-500" />
+                <div>
+                  <div className="font-black text-sm">{wrongCount}</div>
+                  <div className="text-[10px]">Salah</div>
                 </div>
-                <div className="text-[10px] text-slate-400 mt-0.5">Salah</div>
               </div>
-              <div className="p-3 rounded-2xl bg-[#0B0F19] border border-slate-800 text-center">
-                <div className="text-xs text-amber-400 font-bold flex items-center justify-center gap-1">
-                  <HelpCircle className="w-3.5 h-3.5" /> {unansweredCount}
+              <div className="p-3 rounded-xl bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 flex items-center gap-2">
+                <HelpCircle className="w-4 h-4 text-slate-400" />
+                <div>
+                  <div className="font-black text-sm">{unansweredCount}</div>
+                  <div className="text-[10px]">Belum Diisi</div>
                 </div>
-                <div className="text-[10px] text-slate-400 mt-0.5">Kosong</div>
+              </div>
+              <div className="p-3 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800/60 text-indigo-700 dark:text-indigo-300 flex items-center gap-2">
+                <Clock className="w-4 h-4 text-indigo-500" />
+                <div>
+                  <div className="font-black text-sm">{formatTime(timeSpentSeconds)}</div>
+                  <div className="text-[10px]">Waktu Ujian</div>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Module Breakdown Section */}
-          <div className="space-y-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-2">
-              <BarChart3 className="w-4 h-4 text-indigo-400" />
-              Rincian Penguasaan Per Silabus Materi
+          {/* Question Review Grid */}
+          <div>
+            <h4 className="text-xs font-mono font-bold text-slate-500 uppercase tracking-wider mb-3">
+              Daftar Status Soal Sub-Bab Ini (Klik untuk Melompat ke Soal):
             </h4>
+            <div className="grid grid-cols-4 sm:grid-cols-6 gap-2">
+              {questions.map((q, idx) => {
+                const answer = userAnswers[q.id];
+                const isAnswered =
+                  answer &&
+                  (answer.status === 'answered' ||
+                    answer.status === 'doubt' ||
+                    !!answer.selectedOption ||
+                    (answer.selectedOptions && answer.selectedOptions.length > 0) ||
+                    (answer.categoryAnswers && Object.keys(answer.categoryAnswers).length > 0));
 
-            <div className="space-y-2.5">
-              {Object.entries(moduleStats).map(([modName, stat]) => {
-                const pct = stat.total > 0 ? Math.round((stat.correct / stat.total) * 100) : 0;
+                let badgeColor =
+                  'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border-slate-200 dark:border-slate-700';
+
+                if (isAnswered) {
+                  badgeColor =
+                    'bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 border-indigo-300 dark:border-indigo-700 font-bold';
+                }
+
                 return (
-                  <div
-                    key={modName}
-                    className="p-3.5 rounded-2xl border border-[#1F2937] bg-[#151D2F] flex flex-col gap-2"
+                  <button
+                    key={q.id}
+                    onClick={() => onSelectQuestion(idx)}
+                    className={`p-2.5 rounded-xl border text-xs font-mono flex flex-col items-center justify-center transition-all hover:scale-105 ${badgeColor}`}
                   >
-                    <div className="flex items-center justify-between text-xs">
-                      <span className="font-bold text-white truncate max-w-md">{modName}</span>
-                      <span className="font-mono font-bold text-indigo-400">
-                        {stat.correct}/{stat.total} ({pct}%)
-                      </span>
-                    </div>
-                    <div className="w-full bg-[#0B0F19] rounded-full h-2 overflow-hidden">
-                      <div
-                        className={`h-full rounded-full transition-all duration-500 ${
-                          pct >= 75 ? 'bg-emerald-500' : pct >= 50 ? 'bg-indigo-500' : 'bg-rose-500'
-                        }`}
-                        style={{ width: `${pct}%` }}
-                      />
-                    </div>
-                  </div>
+                    <span>Soal #{idx + 1}</span>
+                    <span className="text-[10px] mt-0.5 opacity-80">
+                      {isAnswered ? 'Terisi' : 'Kosong'}
+                    </span>
+                  </button>
                 );
               })}
             </div>
           </div>
         </div>
 
-        {/* Modal Footer */}
-        <div className="p-4 border-t border-[#1F2937] bg-[#151D2F] flex flex-wrap items-center justify-between gap-3">
+        {/* Footer */}
+        <div className="p-4 sm:p-5 border-t border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-[#0E1424] flex items-center justify-between">
           <button
-            onClick={() => {
-              onResetExam();
-              onClose();
-            }}
-            className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl border border-rose-500/30 text-rose-300 hover:bg-rose-500/10 text-xs font-bold transition-colors"
+            onClick={onResetExam}
+            className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold text-rose-600 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/30 transition-colors"
           >
-            <RotateCcw className="w-4 h-4" />
-            Ulangi Ujian dari Awal
+            <RotateCcw className="w-3.5 h-3.5" />
+            <span>Reset Jawaban Ujian</span>
           </button>
 
           <button
             onClick={onClose}
-            className="flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold shadow-md shadow-indigo-600/30 transition-all hover:scale-105"
+            className="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold shadow-sm transition-all"
           >
-            <BookOpen className="w-4 h-4" />
-            Tutup &amp; Pelajari Pembahasan Soal
+            Tutup &amp; Lanjutkan Latihan
           </button>
         </div>
       </div>
