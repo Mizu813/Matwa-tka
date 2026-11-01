@@ -458,7 +458,7 @@ export const App: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen w-full max-w-full overflow-x-clip bg-slate-100 dark:bg-[#070B12] text-slate-900 dark:text-slate-100 font-sans selection:bg-indigo-500 selection:text-white transition-colors flex flex-col items-stretch">
+    <div className="min-h-screen w-full bg-slate-100 dark:bg-[#070B12] text-slate-900 dark:text-slate-100 font-sans selection:bg-indigo-500 selection:text-white transition-colors flex flex-col items-stretch">
       {/* 1. TWO-TIER STICKY TOP NAVBAR (8 Bab & 22 Sub-Bab) */}
       <PdfTopNavbar
         curriculum={curriculum}

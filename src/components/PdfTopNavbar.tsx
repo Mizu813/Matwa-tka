@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   CurriculumChapter,
   Question,
@@ -64,6 +64,38 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
   onOpenEvaluation,
   totalAnswered,
 }) => {
+  // Sticky state for curriculum bar (Bab, Sub-Bab, Soal)
+  const [isSticky, setIsSticky] = useState<boolean>(false);
+  const [navHeight, setNavHeight] = useState<number>(0);
+  const toolbarRef = useRef<HTMLDivElement>(null);
+  const navRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const updateDimensions = () => {
+      if (navRef.current) {
+        setNavHeight(navRef.current.offsetHeight);
+      }
+    };
+
+    updateDimensions();
+    window.addEventListener('resize', updateDimensions);
+
+    const handleScroll = () => {
+      const toolbarHeight = toolbarRef.current?.offsetHeight || 56;
+      const currentScrollY = window.scrollY || document.documentElement.scrollTop;
+      setIsSticky(currentScrollY >= toolbarHeight);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    // Run initial check
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', updateDimensions);
+    };
+  }, []);
+
   // Find current active chapter & sub-chapter
   const activeChapter =
     curriculum.find((c) => c.chapter_id === activeChapterId) || curriculum[0];
@@ -80,7 +112,10 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
   return (
     <div className="w-full max-w-full print:hidden">
       {/* 1. Main Reader Header Toolbar (Non-statis: mengalir alami dan tergulung saat di-scroll) */}
-      <div className="w-full bg-white dark:bg-[#0B0F19] border-b border-slate-200 dark:border-slate-800 transition-colors">
+      <div
+        ref={toolbarRef}
+        className="w-full bg-white dark:bg-[#0B0F19] border-b border-slate-200 dark:border-slate-800 transition-colors"
+      >
         <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 flex items-center justify-between gap-2 sm:gap-4">
           {/* Left: Branding & Tagline */}
           <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-shrink">
@@ -191,8 +226,18 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
         </div>
       </div>
 
-      {/* 2. STICKY TOPBAR: HANYA BAB, SUB-BAB, DAN SOAL (STATIS DI ATAS SAAT SCROLL) */}
-      <header className="sticky top-0 z-40 w-full max-w-full bg-white/95 dark:bg-[#0B0F19]/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-md transition-colors">
+      {/* Spacer saat isSticky aktif agar lembar soal di bawah tidak meloncat */}
+      {isSticky && <div style={{ height: `${navHeight}px` }} className="w-full pointer-events-none" />}
+
+      {/* 2. BILAH BAB, SUB-BAB, DAN SOAL (STATIS DI PALING ATAS SAAT SCROLL) */}
+      <header
+        ref={navRef}
+        className={`w-full max-w-full bg-white/95 dark:bg-[#0B0F19]/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-md transition-shadow ${
+          isSticky
+            ? 'fixed top-0 left-0 right-0 z-50 shadow-lg'
+            : 'relative z-30'
+        }`}
+      >
         {/* 2.1 BARIS ATAS (BAB BESAR): Horizontal Scrollable Pills/Tabs */}
       <div className="bg-slate-50/90 dark:bg-[#0E1424]/90 border-b border-slate-200 dark:border-slate-800 w-full">
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full flex items-center gap-2 py-1.5">
@@ -293,24 +338,50 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
             )}
           </div>
 
-          {/* Right: Active Question Badges (Difficulty & Type) */}
-          {currentQuestion && (
-            <div className="flex items-center gap-1.5 flex-shrink-0">
-              <span
-                className={`px-2 py-0.5 rounded text-[10px] font-bold font-mono border ${
-                  currentDifficulty === 'HOTS'
-                    ? 'bg-rose-50 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 border-rose-200 dark:border-rose-800'
-                    : 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800'
-                }`}
-              >
-                {currentDifficulty}
-              </span>
+          {/* Right: Active Question Badges (Difficulty & Type) & Sticky Quick Controls */}
+          <div className="flex items-center gap-1.5 flex-shrink-0">
+            {currentQuestion && (
+              <>
+                <span
+                  className={`px-2 py-0.5 rounded text-[10px] font-bold font-mono border ${
+                    currentDifficulty === 'HOTS'
+                      ? 'bg-rose-50 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 border-rose-200 dark:border-rose-800'
+                      : 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800'
+                  }`}
+                >
+                  {currentDifficulty}
+                </span>
 
-              <span className="px-2 py-0.5 rounded text-[10px] font-bold font-mono bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800">
-                {currentType}
-              </span>
-            </div>
-          )}
+                <span className="px-2 py-0.5 rounded text-[10px] font-bold font-mono bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800">
+                  {currentType}
+                </span>
+              </>
+            )}
+
+            {/* Quick Sticky Controls when top toolbar is scrolled out */}
+            {isSticky && (
+              <div className="flex items-center gap-1 pl-1 ml-1 border-l border-slate-200 dark:border-slate-700">
+                <button
+                  onClick={onToggleDarkMode}
+                  className="p-1 rounded text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition-colors"
+                  title={isDarkMode ? 'Mode Terang' : 'Mode Gelap'}
+                >
+                  {isDarkMode ? <Sun className="w-3.5 h-3.5 text-amber-400" /> : <Moon className="w-3.5 h-3.5 text-slate-600" />}
+                </button>
+                <button
+                  onClick={onOpenEvaluation}
+                  className="flex items-center gap-1 px-2 py-0.5 rounded bg-indigo-600 hover:bg-indigo-500 text-white text-[11px] font-bold shadow-xs transition-all"
+                  title="Buka Rekap Nilai"
+                >
+                  <CheckCircle className="w-3 h-3" />
+                  <span className="hidden sm:inline">Nilai</span>
+                  <span className="font-mono text-[10px] bg-indigo-700 px-1 rounded">
+                    {totalAnswered}
+                  </span>
+                </button>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </header>
