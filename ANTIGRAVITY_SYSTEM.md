@@ -22,9 +22,10 @@ Setiap kali pengguna memberikan perintah "Lanjutkan", "Kerjakan task berikutnya"
 
 ### ATURAN KUALITAS MATEMATIKA & SKEMA JSON
 1. **Backward-Design Verification:** Tentukan angka kunci jawaban dan koefisien yang bulat/bersih terlebih dahulu sebelum menulis narasi soal. Hitung ulang setiap opsi sebelum menetapkan `correct_answer`.
-2. **Standar KaTeX / LaTeX:** Semua rumus, variabel, pecahan, akar, dan derajat wajib dibungkus `$ ... $` atau `$$ ... $$`. Gunakan double-backslash di dalam JSON string (`\\frac{a}{b}`, `\\sqrt{x}`, `\\le`, `\\ge`, `^{\\circ}`).
+2. **Standar KaTeX / LaTeX:** Semua rumus, variabel, pecahan, akar, dan derajat wajib dibungkus `$ ... $` atau `$$ ... $$`. Gunakan double-backslash di dalam JSON string (`\\frac{a}{b}`, `\\sqrt{x}`, `\\le`, `\\ge`, `^{\\circ}`). DILARANG menggunakan `\\begin{cases}` di dalam inline math `$ ... $` (gunakan display math `$$ ... $$` terpisah baris atau tulis persamaan linier dipisah koma agar layout visual tidak rusak).
 3. **Visual Mandiri:** Gunakan Markdown Table di dalam `question_text` untuk data tabel, dan gunakan inline `<svg>` yang presisi atau deskripsi koordinat lengkap untuk soal bergambar/grafik.
-4. **Skema Objek Soal JSON:**
+4. **Petunjuk Pengerjaan (Hint):** Setiap butir soal wajib menyertakan properti `"hint"` (dan opsional `"hint2"`) yang berisi konsep inti dan strategi awal pengerjaan untuk memfasilitasi belajar mandiri siswa sebelum membuka solusi lengkap.
+5. **Skema Objek Soal JSON:**
 ```json
 [
   {
@@ -42,6 +43,7 @@ Setiap kali pengguna memberikan perintah "Lanjutkan", "Kerjakan task berikutnya"
       { "id": "E", "text": "Opsi E" }
     ],
     "correct_answer": "A (untuk PG/KECUKUPAN_DATA) | [\"A\", \"C\"] (untuk MCMA) | {\"A\": \"Benar\", \"B\": \"Salah\", \"C\": \"Benar\"} (untuk KATEGORI)",
+    "hint": "Petunjuk pengerjaan / konsep kunci yang membimbing siswa.",
     "explanation": "Pembahasan matematis langkah demi langkah yang membuktikan kunci jawaban."
   }
 ]

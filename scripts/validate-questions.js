@@ -206,12 +206,21 @@ questions.forEach((q, idx) => {
     }
   }
 
-  // Question Text & Explanation LaTeX validation
+  // Question Text & Explanation & Hint LaTeX validation
   if (typeof q.question_text === 'string') {
     validateLatex(q.question_text, `${qContext} question_text`);
   }
   if (typeof q.explanation === 'string') {
     validateLatex(q.explanation, `${qContext} explanation`);
+  }
+  if (typeof q.hint === 'string') {
+    validateLatex(q.hint, `${qContext} hint`);
+  }
+  if (typeof q.hint1 === 'string') {
+    validateLatex(q.hint1, `${qContext} hint1`);
+  }
+  if (typeof q.hint2 === 'string') {
+    validateLatex(q.hint2, `${qContext} hint2`);
   }
 });
 

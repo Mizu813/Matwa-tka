@@ -491,7 +491,7 @@ export const PdfQuestionCard: React.FC<PdfQuestionCardProps> = ({
         {/* Tombol Pembuka Tab */}
         <div className="flex flex-wrap items-center gap-2">
           {/* Tombol Tab Petunjuk / Hint */}
-          {(question.hint1 || question.hint2) && (
+          {(question.hint || question.hint1 || question.hint2) && (
             <button
               onClick={() => setIsHintOpen((prev) => !prev)}
               className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold transition-all border ${
@@ -524,14 +524,14 @@ export const PdfQuestionCard: React.FC<PdfQuestionCardProps> = ({
         {/* 4A. Konten Accordion Hint */}
         {isHintOpen && (
           <div className="p-4 sm:p-5 rounded-xl bg-amber-50/60 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/50 space-y-2.5 animate-fadeIn">
-            {question.hint1 && (
+            {(question.hint || question.hint1) && (
               <div className="space-y-1">
                 <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-800 dark:text-amber-300 font-mono">
                   <Lightbulb className="w-4 h-4 text-amber-500" />
-                  Konsep Inti:
+                  Petunjuk / Konsep Inti:
                 </div>
                 <div className="text-xs sm:text-sm text-slate-800 dark:text-slate-200 leading-relaxed pl-6">
-                  <MathView content={question.hint1} />
+                  <MathView content={question.hint || question.hint1 || ''} />
                 </div>
               </div>
             )}

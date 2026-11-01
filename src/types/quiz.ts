@@ -60,6 +60,7 @@ export interface Question {
   title?: string;
   number?: number;
   svgComponentId?: string;
+  hint?: string;
   hint1?: string;
   hint2?: string;
   trap?: string;

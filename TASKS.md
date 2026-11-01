@@ -15,7 +15,7 @@
   - **File Target:** `docs/data/questions/sistem-persamaan-linear.json`
   - **Cakupan & Skenario Wajib:** SPLDV dan SPLTV (maksimum 3 variabel). Wajib memuat: (1) Standar: harga kombinasi 2 dan 3 jenis alat tulis; (2) HOTS: SPLTV sistem paket (diketahui harga Paket I, II, III, ditanyakan harga Paket IV yang merupakan kombinasi linear langsung tanpa perlu mencari harga satuan); (3) HOTS: SPLTV kontekstual dalam format MCMA & Kecukupan Data.
 
-- [ ] **Task 04: `sistem-pertidaksamaan-linear`**
+- [x] **Task 04: `sistem-pertidaksamaan-linear`**
   - **File Target:** `docs/data/questions/sistem-pertidaksamaan-linear.json`
   - **Cakupan & Skenario Wajib:** Sistem pertidaksamaan linear multivariabel & grafik DHP. Wajib memuat: (1) Standar: menentukan nomor wilayah DHP (I–V) dari sistem pertidaksamaan linear (lengkap dengan inline SVG grafik kartesius); (2) HOTS: sistem pertidaksamaan dengan koefisien berupa variabel ($ax+4y \le 12, 2x-by \ge -6$) yang diuji dengan format Kecukupan Data menggunakan informasi gambar grafik dan titik potong dua garis.
 

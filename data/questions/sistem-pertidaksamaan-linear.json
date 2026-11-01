@@ -1,1 +1,228 @@
-[]
+[
+  {
+    "id": "matwa-sistem-pertidaksamaan-linear-01",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-pertidaksamaan-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Perhatikan sistem pertidaksamaan linear berikut:\n$$\\begin{cases} 2x + 3y \\le 12 \\\\ x - y \\le 1 \\\\ x \\ge 0, \\quad y \\ge 0 \\end{cases}$$\n\n<div class=\"flex justify-center my-3\"><svg viewBox=\"0 0 340 220\" class=\"w-80 h-auto drop-shadow-sm\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"340\" height=\"220\" fill=\"#0F172A\" rx=\"10\"/><line x1=\"30\" y1=\"190\" x2=\"320\" y2=\"190\" stroke=\"#64748B\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"210\" stroke=\"#64748B\" stroke-width=\"1.5\"/><text x=\"315\" y=\"205\" fill=\"#94A3B8\" font-size=\"11\" font-family=\"sans-serif\">X</text><text x=\"35\" y=\"28\" fill=\"#94A3B8\" font-size=\"11\" font-family=\"sans-serif\">Y</text><text x=\"40\" y=\"203\" fill=\"#94A3B8\" font-size=\"10\" font-family=\"sans-serif\">O</text><line x1=\"40\" y1=\"76\" x2=\"280\" y2=\"200\" stroke=\"#38BDF8\" stroke-width=\"2\"/><text x=\"265\" y=\"182\" fill=\"#38BDF8\" font-size=\"10\" font-weight=\"bold\">(6,0)</text><text x=\"16\" y=\"80\" fill=\"#38BDF8\" font-size=\"10\" font-weight=\"bold\">(0,4)</text><line x1=\"30\" y1=\"210\" x2=\"230\" y2=\"30\" stroke=\"#F43F5E\" stroke-width=\"2\"/><text x=\"80\" y=\"203\" fill=\"#F43F5E\" font-size=\"10\" font-weight=\"bold\">(1,0)</text><polygon points=\"50,190 90,190 170,110 50,76\" fill=\"#10B981\" fill-opacity=\"0.3\" stroke=\"#10B981\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/><text x=\"95\" y=\"145\" fill=\"#34D399\" font-size=\"14\" font-weight=\"bold\">II</text><text x=\"140\" y=\"55\" fill=\"#E2E8F0\" font-size=\"14\" font-weight=\"bold\">I</text><text x=\"170\" y=\"175\" fill=\"#E2E8F0\" font-size=\"14\" font-weight=\"bold\">III</text><text x=\"110\" y=\"215\" fill=\"#E2E8F0\" font-size=\"13\" font-weight=\"bold\">IV</text><text x=\"285\" y=\"145\" fill=\"#E2E8F0\" font-size=\"14\" font-weight=\"bold\">V</text><circle cx=\"170\" cy=\"110\" r=\"3.5\" fill=\"#FBBF24\"/><text x=\"180\" y=\"105\" fill=\"#FBBF24\" font-size=\"10\">(3,2)</text></svg></div>\n\nBerdasarkan grafik di atas, daerah himpunan penyelesaian (DHP) dari sistem pertidaksamaan tersebut ditunjukkan oleh nomor wilayah ...",
+    "options": [
+      { "id": "A", "text": "Wilayah II" },
+      { "id": "B", "text": "Wilayah I" },
+      { "id": "C", "text": "Wilayah III" },
+      { "id": "D", "text": "Wilayah IV" },
+      { "id": "E", "text": "Wilayah V" }
+    ],
+    "correct_answer": "A",
+    "hint": "Uji titik selidik $(0, 0)$ ke dalam kedua pertidaksamaan: $2(0) + 3(0) \\le 12$ (Benar) dan $0 - 0 \\le 1$ (Benar). Karena $(0,0)$ memenuhi kedua pertidaksamaan dan berada di Kuadran I, pilih daerah yang memuat titik asal di antara kedua garis batas.",
+    "explanation": "Langkah-langkah penentuan daerah himpunan penyelesaian (DHP):\n\n1. Analisis garis pembatas pertama ($g_1$): $2x + 3y = 12$\n   - Titik potong sumbu-$X$ ($y=0$): $(6, 0)$\n   - Titik potong sumbu-$Y$ ($x=0$): $(0, 4)$\n   - Uji titik $(0,0)$: $2(0) + 3(0) = 0 \\le 12$ (Bernilai Benar $\\implies$ daerah mengarah ke titik asal/kiri-bawah garis $g_1$).\n\n2. Analisis garis pembatas kedua ($g_2$): $x - y = 1$\n   - Titik potong sumbu-$X$ ($y=0$): $(1, 0)$\n   - Titik potong sumbu-$Y$ ($x=0$): $(0, -1)$\n   - Uji titik $(0,0)$: $0 - 0 = 0 \\le 1$ (Bernilai Benar $\\implies$ daerah berada di sebelah kiri-atas garis $g_2$).\n\n3. Batasan non-negatif: $x \\ge 0, y \\ge 0$ membatasi daerah hanya pada Kuadran I.\n\n4. Daerah yang memenuhi irisan ketiga kondisi tersebut adalah segi empat dengan titik sudut $(0,0), (1,0), (3,2)$, dan $(0,4)$, yang berlabel **Wilayah II**.\n\nJadi, jawaban yang benar adalah **A**."
+  },
+  {
+    "id": "matwa-sistem-pertidaksamaan-linear-02",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-pertidaksamaan-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Daerah penyelesaian dari suatu masalah program linear berada di Kuadran I dan dibatasi oleh titik-titik sudut $(0, 0)$, $(4, 0)$, $(2, 3)$, dan $(0, 3)$. Sistem pertidaksamaan linear yang merepresentasikan daerah tertutup tersebut adalah ...",
+    "options": [
+      { "id": "A", "text": "$3x + 2y \\le 12, \\quad y \\le 3, \\quad x \\ge 0, \\quad y \\ge 0$" },
+      { "id": "B", "text": "$3x + 2y \\ge 12, \\quad y \\le 3, \\quad x \\ge 0, \\quad y \\ge 0$" },
+      { "id": "C", "text": "$2x + 3y \\le 12, \\quad y \\le 3, \\quad x \\ge 0, \\quad y \\ge 0$" },
+      { "id": "D", "text": "$3x + 2y \\le 12, \\quad x \\le 3, \\quad x \\ge 0, \\quad y \\ge 0$" },
+      { "id": "E", "text": "$2x + 3y \\ge 12, \\quad y \\ge 3, \\quad x \\ge 0, \\quad y \\ge 0$" }
+    ],
+    "correct_answer": "A",
+    "hint": "Cari persamaan garis yang menghubungkan titik $(4, 0)$ dan $(2, 3)$ menggunakan rumus gradien dua titik $m = \\frac{y_2 - y_1}{x_2 - x_1}$. Perhatikan juga batas garis mendatar di atas sumbu-$X$.",
+    "explanation": "Langkah-langkah rekonstruksi sistem pertidaksamaan dari titik sudut:\n\n1. Tentukan garis batas miring yang melalui titik $(4, 0)$ dan $(2, 3)$:\n   $$m = \\frac{3 - 0}{2 - 4} = \\frac{3}{-2} = -\\frac{3}{2}$$\n   Persamaan garis melalui $(4, 0)$:\n   $$y - 0 = -\\frac{3}{2}(x - 4) \\implies 2y = -3x + 12 \\implies 3x + 2y = 12$$\n\n2. Karena daerah memuat titik $(0, 0)$ sebagai salah satu titik sudutnya, uji $(0, 0)$:\n   $$3(0) + 2(0) = 0 \\le 12 \\implies 3x + 2y \\le 12$$\n\n3. Tentukan batas atas horizontal yang melalui titik $(0, 3)$ dan $(2, 3)$:\n   Garis mendatar adalah $y = 3$. Karena daerah berada di bawahnya, maka $y \\le 3$.\n\n4. Batas sumbu koordinat di Kuadran I adalah $x \\ge 0$ dan $y \\ge 0$.\n\nJadi, sistem pertidaksamaan yang tepat adalah **A**."
+  },
+  {
+    "id": "matwa-sistem-pertidaksamaan-linear-03",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-pertidaksamaan-linear",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Luas daerah tertutup (dalam satuan luas) yang dibatasi oleh sistem pertidaksamaan linear berikut:\n$$\\begin{cases} x + y \\ge 2 \\\\ x + y \\le 6 \\\\ x - y \\le 2 \\\\ y - x \\le 2 \\end{cases}$$\nadalah ...",
+    "options": [
+      { "id": "A", "text": "8" },
+      { "id": "B", "text": "12" },
+      { "id": "C", "text": "16" },
+      { "id": "D", "text": "6" },
+      { "id": "E", "text": "10" }
+    ],
+    "correct_answer": "A",
+    "hint": "Cari koordinat keempat titik perpotongan garis batas sistem. Bentuk geometri yang dihasilkan adalah persegi dengan panjang sisi $\\sqrt{8} = 2\\sqrt{2}$.",
+    "explanation": "Langkah-langkah menentukan luas daerah poligon:\n\n1. Sistem pertidaksamaan dapat dituliskan sebagai irisan dua pita sejajar:\n   $$2 \\le x + y \\le 6 \\quad \\text{dan} \\quad -2 \\le x - y \\le 2$$\n\n2. Tentukan koordinat keempat titik potong batas:\n   - Perpotongan $x + y = 2$ dan $x - y = 2$:\n     $$2x = 4 \\implies x = 2, \\quad y = 0 \\implies A(2, 0)$$\n   - Perpotongan $x + y = 2$ dan $x - y = -2$:\n     $$2x = 0 \\implies x = 0, \\quad y = 2 \\implies B(0, 2)$$\n   - Perpotongan $x + y = 6$ dan $x - y = -2$:\n     $$2x = 4 \\implies x = 2, \\quad y = 4 \\implies C(2, 4)$$\n   - Perpotongan $x + y = 6$ dan $x - y = 2$:\n     $$2x = 8 \\implies x = 4, \\quad y = 2 \\implies D(4, 2)$$\n\n3. Hitung panjang sisi-sisi poligon $ABCD$:\n   $$AB = \\sqrt{(0 - 2)^2 + (2 - 0)^2} = \\sqrt{4 + 4} = \\sqrt{8} = 2\\sqrt{2}$$\n   $$AD = \\sqrt{(4 - 2)^2 + (2 - 0)^2} = \\sqrt{4 + 4} = \\sqrt{8} = 2\\sqrt{2}$$\n   Karena semua sisi tegak lurus dan sama panjang, bangun tersebut adalah persegi.\n\n4. Hitung luas persegi:\n   $$\\text{Luas} = s^2 = (2\\sqrt{2})^2 = 8\\text{ satuan luas}$$\n\nJadi, luas daerah penyelesaian adalah **8 satuan luas** (Opsi **A**)."
+  },
+  {
+    "id": "matwa-sistem-pertidaksamaan-linear-04",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-pertidaksamaan-linear",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Banyaknya pasangan bilangan bulat $(x, y)$ yang memenuhi sistem pertidaksamaan linear berikut:\n$$\\begin{cases} 2x + 3y \\le 12 \\\\ x \\ge 0 \\\\ y \\ge 0 \\end{cases}$$\nadalah ...",
+    "options": [
+      { "id": "A", "text": "19" },
+      { "id": "B", "text": "17" },
+      { "id": "C", "text": "21" },
+      { "id": "D", "text": "15" },
+      { "id": "E", "text": "23" }
+    ],
+    "correct_answer": "A",
+    "hint": "Cacah nilai bulat tak-negatif $y$ yang mungkin dari $0$ hingga $4$. Untuk setiap nilai $y$, hitung banyaknya bilangan bulat $x$ yang memenuhi $0 \\le x \\le \\frac{12 - 3y}{2}$.",
+    "explanation": "Langkah-langkah pencacahan titik kisi (lattice points):\n\n1. Syarat $x \\ge 0$ dan $y \\ge 0$ dengan $x, y \\in \\mathbb{Z}$ (bilangan bulat tak-negatif).\n\n2. Dari $2x + 3y \\le 12$, batas maksimum nilai $y$ tercapai saat $x = 0$:\n   $$3y \\le 12 \\implies y \\le 4$$\n   Sehingga kemungkinan nilai $y$ adalah $y \\in \\{0, 1, 2, 3, 4\\}$.\n\n3. Hitung banyaknya nilai $x$ untuk tiap kemungkinan nilai $y$ ($x \\le \\frac{12 - 3y}{2}$):\n   - Untuk $y = 0$: $x \\le \\frac{12}{2} = 6 \\implies x \\in \\{0, 1, 2, 3, 4, 5, 6\\} \\implies 7\\text{ titik}$\n   - Untuk $y = 1$: $x \\le \\frac{9}{2} = 4,5 \\implies x \\in \\{0, 1, 2, 3, 4\\} \\implies 5\\text{ titik}$\n   - Untuk $y = 2$: $x \\le \\frac{6}{2} = 3 \\implies x \\in \\{0, 1, 2, 3\\} \\implies 4\\text{ titik}$\n   - Untuk $y = 3$: $x \\le \\frac{3}{2} = 1,5 \\implies x \\in \\{0, 1\\} \\implies 2\\text{ titik}$\n   - Untuk $y = 4$: $x \\le \\frac{0}{2} = 0 \\implies x \\in \\{0\\} \\implies 1\\text{ titik}$\n\n4. Jumlahkan seluruh kemungkinan titik bulat:\n   $$\\text{Total} = 7 + 5 + 4 + 2 + 1 = 19\\text{ pasangan bulat}$$\n\nJadi, jawaban yang benar adalah **A**."
+  },
+  {
+    "id": "matwa-sistem-pertidaksamaan-linear-05",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-pertidaksamaan-linear",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan sistem pertidaksamaan linear:\n$$\\begin{cases} 3x + 4y \\le 24 \\\\ x - 2y \\ge -4 \\\\ x \\ge 0, \\quad y \\ge 0 \\end{cases}$$\nPilihlah **SEMUA** titik koordinat di bawah ini yang berada di dalam atau pada batas daerah penyelesaian (DHP) sistem tersebut!",
+    "options": [
+      { "id": "A", "text": "Titik $(2, 3)$" },
+      { "id": "B", "text": "Titik $(4, 2)$" },
+      { "id": "C", "text": "Titik $(0, 2)$" },
+      { "id": "D", "text": "Titik $(2, 5)$" }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Substitusikan nilai $(x, y)$ pada setiap opsi ke dalam seluruh pertidaksamaan pada sistem untuk memeriksa apakah semua syarat terpenuhi sekaligus.",
+    "explanation": "Uji titik ke dalam sistem pertidaksamaan:\n\n- **Opsi A: Titik $(2, 3)$**\n  - $3(2) + 4(3) = 6 + 12 = 18 \\le 24$ (Memenuhi)\n  - $2 - 2(3) = 2 - 6 = -4 \\ge -4$ (Memenuhi)\n  - $x \\ge 0, y \\ge 0$ (Memenuhi)\n  $\\implies$ Titik $(2, 3)$ berada di dalam DHP. (Opsi A **BENAR**)\n\n- **Opsi B: Titik $(4, 2)$**\n  - $3(4) + 4(2) = 12 + 8 = 20 \\le 24$ (Memenuhi)\n  - $4 - 2(2) = 4 - 4 = 0 \\ge -4$ (Memenuhi)\n  - $x \\ge 0, y \\ge 0$ (Memenuhi)\n  $\\implies$ Titik $(4, 2)$ berada di dalam DHP. (Opsi B **BENAR**)\n\n- **Opsi C: Titik $(0, 2)$**\n  - $3(0) + 4(2) = 8 \\le 24$ (Memenuhi)\n  - $0 - 2(2) = -4 \\ge -4$ (Memenuhi)\n  - $x \\ge 0, y \\ge 0$ (Memenuhi)\n  $\\implies$ Titik $(0, 2)$ berada di dalam DHP. (Opsi C **BENAR**)\n\n- **Opsi D: Titik $(2, 5)$**\n  - $3(2) + 4(5) = 6 + 20 = 26 \\le 24$ (Salah, $26 > 24$)\n  $\\implies$ Titik $(2, 5)$ tidak memenuhi DHP. (Opsi D **SALAH**)\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**."
+  },
+  {
+    "id": "matwa-sistem-pertidaksamaan-linear-06",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-pertidaksamaan-linear",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Perhatikan sistem pertidaksamaan linear multivariabel berikut:\n$$\\begin{cases} x + 2y \\le 10 \\\\ 3x + y \\le 15 \\\\ x \\ge 0, \\quad y \\ge 0 \\end{cases}$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai sifat geometris daerah himpunan penyelesaiannya!",
+    "options": [
+      { "id": "A", "text": "Titik potong kedua garis pembatas di Kuadran I adalah $(4, 3)$." },
+      { "id": "B", "text": "Daerah himpunan penyelesaian memiliki 4 titik pojok, yaitu $(0,0), (5,0), (4,3)$, dan $(0,5)$." },
+      { "id": "C", "text": "Luas daerah himpunan penyelesaian tersebut adalah $17,5\\text{ satuan luas}$." },
+      { "id": "D", "text": "Titik $(10, 0)$ merupakan salah satu titik pojok dari daerah himpunan penyelesaian." }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Cari titik potong kedua garis dengan metode eliminasi-substitusi. Untuk menghitung luas poligon 4 titik, gunakan rumus luas Shoelace Gauss.",
+    "explanation": "Langkah-langkah analisis geometris DHP:\n\n1. Tentukan titik potong kedua garis pembatas:\n   $$\\begin{cases} x + 2y = 10 \\\\ 3x + y = 15 \\implies y = 15 - 3x \\end{cases}$$\n   Substitusikan: $x + 2(15 - 3x) = 10 \\implies x + 30 - 6x = 10 \\implies 5x = 20 \\implies x = 4$\n   Nilai $y = 15 - 3(4) = 3$.\n   Titik potong adalah $(4, 3)$. (Pernyataan A **BENAR**)\n\n2. Tentukan titik-titik pojok DHP:\n   - Titik asal: $(0, 0)$\n   - Perpotongan $3x + y = 15$ dengan sumbu-$X$: $(5, 0)$\n   - Titik potong kedua garis: $(4, 3)$\n   - Perpotongan $x + 2y = 10$ dengan sumbu-$Y$: $(0, 5)$\n   Titik $(10, 0)$ berada di luar DHP karena melanggar $3x + y \\le 15$ ($30 > 15$).\n   (Pernyataan B **BENAR**, Pernyataan D **SALAH**)\n\n3. Hitung luas daerah dengan metode Shoelace Gauss pada urutan $(0,0) \\to (5,0) \\to (4,3) \\to (0,5)$:\n   $$\\text{Luas} = \\frac{1}{2} |(0\\cdot 0 + 5\\cdot 3 + 4\\cdot 5 + 0\\cdot 0) - (0\\cdot 5 + 0\\cdot 4 + 3\\cdot 0 + 5\\cdot 0)|$$\n   $$\\text{Luas} = \\frac{1}{2} |15 + 20 - 0| = \\frac{35}{2} = 17,5\\text{ satuan luas}$$\n   (Pernyataan C **BENAR**)\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**."
+  },
+  {
+    "id": "matwa-sistem-pertidaksamaan-linear-07",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-pertidaksamaan-linear",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Diberikan daerah himpunan penyelesaian tertutup yang memenuhi sistem pertidaksamaan linear:\n$$\\begin{cases} 2x + y \\le 8 \\\\ x + 2y \\le 8 \\\\ x \\ge 0, \\quad y \\ge 0 \\end{cases}$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR**!",
+    "options": [
+      { "id": "A", "text": "Nilai maksimum fungsi objektif $Z = 3x + 3y$ pada daerah tersebut adalah 16." },
+      { "id": "B", "text": "Garis batas $2x + y = 8$ dan $x + 2y = 8$ berpotongan di titik $\\left(\\frac{8}{3}, \\frac{8}{3}\\right)$." },
+      { "id": "C", "text": "Titik koordinat $(2, 2)$ berada di dalam daerah himpunan penyelesaian." },
+      { "id": "D", "text": "Nilai minimum fungsi objektif $Z = 3x + 3y$ pada daerah tersebut adalah 6." }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Cari titik potong kedua garis dengan menjumlahkan kedua persamaan: $3x + 3y = 16$. Uji nilai fungsi objektif $Z$ pada seluruh titik pojok $(0,0), (4,0), (8/3, 8/3)$, dan $(0,4)$.",
+    "explanation": "Langkah-langkah evaluasi DHP dan fungsi objektif:\n\n1. Cari titik perpotongan kedua garis batas:\n   $$(2x + y = 8) + (x + 2y = 8) \\implies 3x + 3y = 16 \\implies x + y = \\frac{16}{3}$$\n   Karena sistem simetris, $x = y = \\frac{8}{3}$. Titik potong adalah $\\left(\\frac{8}{3}, \\frac{8}{3}\\right)$. (Pernyataan B **BENAR**)\n\n2. Uji titik koordinat $(2, 2)$ ke sistem:\n   - $2(2) + 2 = 6 \\le 8$ (Memenuhi)\n   - $2 + 2(2) = 6 \\le 8$ (Memenuhi)\n   - $2 \\ge 0, 2 \\ge 0$ (Memenuhi)\n   Maka titik $(2, 2)$ berada di dalam DHP. (Pernyataan C **BENAR**)\n\n3. Evaluasi nilai fungsi objektif $Z = 3x + 3y = 3(x + y)$ pada titik-titik sudut DHP:\n   - Titik $(0, 0) \\implies Z = 0$ (Nilai Minimum)\n   - Titik $(4, 0) \\implies Z = 3(4) = 12$\n   - Titik $(0, 4) \\implies Z = 3(4) = 12$\n   - Titik $\\left(\\frac{8}{3}, \\frac{8}{3}\\right) \\implies Z = 3\\left(\\frac{8}{3} + \\frac{8}{3}\\right) = 3\\left(\\frac{16}{3}\\right) = 16$ (Nilai Maksimum)\n   Maka nilai maksimum adalah 16 (Pernyataan A **BENAR**), sedangkan nilai minimum adalah 0 bukan 6 (Pernyataan D **SALAH**).\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**."
+  },
+  {
+    "id": "matwa-sistem-pertidaksamaan-linear-08",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-pertidaksamaan-linear",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Tentukan kebenaran dari masing-masing pernyataan konseptual mengenai sistem pertidaksamaan linear dan grafik daerah penyelesaian di bawah ini dengan memilih **Benar** atau **Salah** pada setiap baris:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Jika pertidaksamaan linear memuat tanda ketaksamaan tegas ($<$ atau $>$), maka garis pembatas persamaan pada grafik koordinat digambar berupa garis putus-putus (*dashed line*)."
+      },
+      {
+        "id": "B",
+        "text": "Sistem pertidaksamaan linear $x + y \\le 2$ dan $x + y \\ge 5$ dengan $x \\ge 0, y \\ge 0$ menghasilkan daerah himpunan penyelesaian tertutup yang berbentuk trapesium siku-siku."
+      },
+      {
+        "id": "C",
+        "text": "Suatu daerah penyelesaian sistem pertidaksamaan linear dikatakan tidak terbatas (*unbounded*) apabila daerah arsiran membentang hingga tak hingga dan tidak dapat dilingkupi seluruhnya di dalam suatu lingkaran berjejari berhingga."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Salah",
+      "C": "Benar"
+    },
+    "hint": "Perhatikan aturan konvensi garis tegas vs putus-putus. Pada pernyataan B perhatikan bahwa dua garis memiliki gradien sama tetapi daerah arsirannya saling menjauh (tidak beririsan).",
+    "explanation": "Analisis kebenaran setiap pernyataan:\n\n1. **Pernyataan A (Benar):**\n   Berdasarkan konvensi baku grafik kartesius pertidaksamaan, tanda ketaksamaan tegas ($<$ atau $>$) menunjukkan bahwa titik-titik pada garis batas bukan merupakan bagian dari himpunan penyelesaian, sehingga digambar dengan garis putus-putus.\n\n2. **Pernyataan B (Salah):**\n   Garis $x + y = 2$ dan $x + y = 5$ adalah dua garis sejajar. Karena $x + y \\le 2$ mengarah ke kiri-bawah sedangkan $x + y \\ge 5$ mengarah ke kanan-atas, kedua daerah tidak memiliki irisan sama sekali (himpunan penyelesaian kosong), bukan membentuk trapesium.\n\n3. **Pernyataan C (Benar):**\n   Secara topologis dan program linear, himpunan konveks dikatakan *unbounded* jika tidak terdapat suatu bilangan real $R > 0$ sedemikian hingga seluruh titik himpunan termuat dalam cakram $|(x, y)| \\le R$."
+  },
+  {
+    "id": "matwa-sistem-pertidaksamaan-linear-09",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-pertidaksamaan-linear",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Tentukan kebenaran dari masing-masing pernyataan matematika terkait titik selidik dan daerah pertidaksamaan dua variabel di bawah ini dengan memilih **Benar** atau **Salah** pada setiap baris:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Titik selidik $(0, 0)$ tidak dapat digunakan untuk menguji daerah arsiran jika garis pembatas melewati titik asal koordinat, seperti pada garis $y - 2x = 0$."
+      },
+      {
+        "id": "B",
+        "text": "Daerah penyelesaian dari sistem pertidaksamaan $-1 \\le x \\le 3$ dan $2 \\le y \\le 5$ pada bidang Kartesius membentuk persegi panjang dengan luas $12\\text{ satuan luas}$."
+      },
+      {
+        "id": "C",
+        "text": "Pertidaksamaan linear satu variabel $x \\ge -3$ pada bidang Kartesius merepresentasikan daerah setengah bidang di sebelah kiri garis vertikal $x = -3$."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Salah"
+    },
+    "hint": "Titik uji harus berada di luar garis batas. Hitung panjang interval $\\Delta x$ dan $\\Delta y$ untuk luas persegi panjang. Perhatikan arah tanda lebih besar pada garis vertikal x = -3.",
+    "explanation": "Analisis kebenaran setiap pernyataan:\n\n1. **Pernyataan A (Benar):**\n   Titik uji wajib dipilih di luar garis pembatas agar dapat membedakan dengan jelas sisi mana yang memenuhi pertidaksamaan. Jika garis melalui $(0, 0)$, maka substitusi $(0, 0)$ menghasilkan $0 = 0$ yang tidak memberikan informasi arah daerah penyelesaian.\n\n2. **Pernyataan B (Benar):**\n   Panjang sisi horizontal: $\\Delta x = 3 - (-1) = 4$.\n   Panjang sisi vertikal: $\\Delta y = 5 - 2 = 3$.\n   Luas daerah persegi panjang adalah $L = \\Delta x \\times \\Delta y = 4 \\times 3 = 12\\text{ satuan luas}$.\n\n3. **Pernyataan C (Salah):**\n   Pertidaksamaan $x \\ge -3$ menyatakan bahwa absis titik harus bernilai lebih besar dari atau sama dengan $-3$, yang terletak di sebelah **kanan** garis vertikal $x = -3$, bukan di sebelah kiri."
+  },
+  {
+    "id": "matwa-sistem-pertidaksamaan-linear-10",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "sistem-pertidaksamaan-linear",
+    "question_type": "KECUKUPAN_DATA",
+    "difficulty": "HOTS",
+    "question_text": "Diberikan sistem pertidaksamaan linear dengan parameter koefisien variabel $a$ dan $b$:\n$$\\begin{cases} ax + 4y \\le 12 \\\\ 2x - by \\ge -6 \\\\ x \\ge 0, \\quad y \\ge 0 \\end{cases}$$\n\n<div class=\"flex justify-center my-3\"><svg viewBox=\"0 0 280 85\" class=\"w-64 h-auto drop-shadow-sm\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"10\" width=\"260\" height=\"65\" rx=\"10\" fill=\"#1E293B\" stroke=\"#EC4899\" stroke-width=\"2\"/><text x=\"140\" y=\"35\" fill=\"#E2E8F0\" font-size=\"13\" font-family=\"monospace\" text-anchor=\"middle\" font-weight=\"bold\">Target: Luas DHP Poligon = ?</text><text x=\"140\" y=\"58\" fill=\"#F472B6\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\">(1) ax+4y=12 lewat (4,0) | (2) 2x-by=-6 lewat (0,2)</text></svg></div>\n\nDaerah himpunan penyelesaian sistem tersebut membentuk suatu poligon tertutup di Kuadran I. Berapakah luas daerah himpunan penyelesaian (DHP) tersebut?\n\n(1) Garis batas $ax + 4y = 12$ memotong sumbu-$X$ di titik $(4, 0)$.\n(2) Garis batas $2x - by = -6$ memotong sumbu-$Y$ di titik $(0, 2)$.\n\nPutuskan apakah pernyataan (1) dan (2) tersebut cukup untuk menjawab pertanyaan.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (2) SAJA tidak cukup."
+      },
+      {
+        "id": "B",
+        "text": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (1) SAJA tidak cukup."
+      },
+      {
+        "id": "C",
+        "text": "DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup."
+      },
+      {
+        "id": "D",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan Pernyataan (2) SAJA cukup."
+      },
+      {
+        "id": "E",
+        "text": "Pernyataan (1) dan Pernyataan (2) tidak cukup untuk menjawab pertanyaan."
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Luas DHP hanya dapat dihitung jika seluruh titik sudut poligon diketahui. Periksa apakah pernyataan (1) saja cukup untuk mencari nilai a dan b, atau apakah kedua pernyataan harus digabungkan.",
+    "explanation": "Target pertanyaan: Menentukan nilai eksak luas daerah himpunan penyelesaian poligon tertutup di Kuadran I.\n\nUntuk menghitung luas poligon DHP, kedua persamaan garis pembatas harus diketahui secara lengkap, yang berarti nilai parameter $a$ dan $b$ harus dapat ditentukan.\n\n- **Analisis Pernyataan (1) SAJA:**\n  Garis $ax + 4y = 12$ melalui $(4, 0)$:\n  $$a(4) + 4(0) = 12 \\implies 4a = 12 \\implies a = 3$$\n  Persamaan garis pertama menjadi $3x + 4y = 12$.\n  Namun nilai $b$ pada garis kedua ($2x - by = -6$) belum diketahui, sehingga titik potong kedua garis dan bentuk poligon DHP belum dapat ditentukan secara pasti.\n  Maka, **Pernyataan (1) SAJA TIDAK CUKUP**.\n\n- **Analisis Pernyataan (2) SAJA:**\n  Garis $2x - by = -6$ melalui $(0, 2)$:\n  $$2(0) - b(2) = -6 \\implies -2b = -6 \\implies b = 3$$\n  Persamaan garis kedua menjadi $2x - 3y = -6$.\n  Namun nilai $a$ pada garis pertama ($ax + 4y = 12$) belum diketahui, sehingga bentuk poligon DHP belum dapat ditentukan secara pasti.\n  Maka, **Pernyataan (2) SAJA TIDAK CUKUP**.\n\n- **Analisis Pernyataan (1) dan (2) BERSAMA-SAMA:**\n  Dengan menggabungkan kedua pernyataan:\n  - Dari (1): $a = 3 \\implies 3x + 4y \\le 12$\n  - Dari (2): $b = 3 \\implies 2x - 3y \\ge -6$\n  Kedua persamaan garis diketahui secara lengkap. Kita dapat menentukan koordinat semua titik sudut DHP di Kuadran I:\n  1. Titik asal: $(0, 0)$\n  2. Titik potong $3x + 4y = 12$ dengan sumbu-$X$: $(4, 0)$\n  3. Titik potong kedua garis: $\\left(\\frac{12}{17}, \\frac{42}{17}\\right)$\n  4. Titik potong $2x - 3y = -6$ dengan sumbu-$Y$: $(0, 2)$\n  Karena semua titik sudut poligon DHP diketahui secara unik dan pasti, luas daerah poligon dapat dihitung secara pasti.\n  Maka, **DUA pernyataan BERSAMA-SAMA CUKUP**.\n\nKesimpulan: DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup (**Jawaban C**)."
+  }
+]
