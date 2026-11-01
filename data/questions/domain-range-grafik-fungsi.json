@@ -7,11 +7,26 @@
     "difficulty": "STANDAR",
     "question_text": "Dalam pengujian ketahanan mesin kendaraan, indeks kekentalan (*viscosity index*) suatu pelumas sintetik dimodelkan sebagai fungsi kuadrat terhadap temperatur kerja mesin $T$ (dalam derajat Celsius, $20 \\le T \\le 100$):\n$$V(T) = -\\frac{1}{20}(T - 60)^2 + 100$$\n\nStandar mutu performa pelumas mesin ditetapkan berdasarkan tabel indikator berikut:\n\n| Status Performa | Rentang Indeks Kekentalan $V(T)$ |\n| :--- | :--- |\n| Sub-Optimal | $V(T) < 80$ |\n| Efisien Normal | $80 \\le V(T) < 95$ |\n| Performa Optimal (Prima) | $95 \\le V(T) \\le 100$ |\n\nBerdasarkan tabel indikator tersebut, interval temperatur kerja mesin $T$ agar pelumas bekerja pada status **Performa Optimal (Prima)** adalah ...",
     "options": [
-      { "id": "A", "text": "$50 \\le T \\le 70$" },
-      { "id": "B", "text": "$40 \\le T \\le 80$" },
-      { "id": "C", "text": "$55 \\le T \\le 65$" },
-      { "id": "D", "text": "$45 \\le T \\le 75$" },
-      { "id": "E", "text": "$60 \\le T \\le 80$" }
+      {
+        "id": "A",
+        "text": "$50 \\le T \\le 70$"
+      },
+      {
+        "id": "B",
+        "text": "$40 \\le T \\le 80$"
+      },
+      {
+        "id": "C",
+        "text": "$55 \\le T \\le 65$"
+      },
+      {
+        "id": "D",
+        "text": "$45 \\le T \\le 75$"
+      },
+      {
+        "id": "E",
+        "text": "$60 \\le T \\le 80$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Substitusikan rumus $V(T)$ ke dalam pertidaksamaan performa optimal $95 \\le V(T) \\le 100$. Sederhanakan pertidaksamaan kuadrat $(T - 60)^2 \\le 100$ untuk menentukan interval nilai $T$.",
@@ -23,13 +38,28 @@
     "sub_chapter_id": "domain-range-grafik-fungsi",
     "question_type": "PG",
     "difficulty": "STANDAR",
-    "question_text": "Diberikan fungsi kuadrat:\n$$f(x) = -2x^2 + 8x - 6$$\nPernyataan yang **BENAR** mengenai sifat geometris dan letak titik puncak grafik parabola tersebut adalah ...",
+    "question_text": "Perhatikan grafik kurva parabola fungsi kuadrat pada bidang Cartesius berikut:\n\n<div class=\"flex justify-center my-4 overflow-x-auto\"><svg viewBox=\"0 0 360 220\" class=\"w-full max-w-md h-auto drop-shadow-md rounded-lg\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"360\" height=\"220\" fill=\"#0f172a\" rx=\"8\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Axes: Origin (100, 150), dx=40 per unit, dy=35 per unit -->\n  <line x1=\"20\" y1=\"150\" x2=\"330\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <line x1=\"100\" y1=\"210\" x2=\"100\" y2=\"20\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <text x=\"335\" y=\"154\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">X</text>\n  <text x=\"96\" y=\"16\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">Y</text>\n  <!-- Parabola path:\n       x=0 -> y=-6 (100, 360) out of view\n       x=0.5 -> y=-2.5 -> (120, 237.5)\n       x=1 -> y=0 -> (140, 150)\n       x=2 -> y=2 -> (180, 80)\n       x=3 -> y=0 -> (220, 150)\n       x=3.5 -> y=-2.5 -> (240, 237.5)\n  -->\n  <path d=\"M 115,220 Q 180, -60 245,220\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\"/>\n  <!-- Axis of symmetry: x=2 -> x=180 -->\n  <line x1=\"180\" y1=\"40\" x2=\"180\" y2=\"200\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"4\"/>\n  <text x=\"185\" y=\"55\" fill=\"#f59e0b\" font-size=\"10\" font-family=\"sans-serif\">x = 2</text>\n  <!-- Peak Point (2, 2) -> (180, 80) -->\n  <circle cx=\"180\" cy=\"80\" r=\"4.5\" fill=\"#f43f5e\"/>\n  <text x=\"188\" y=\"82\" fill=\"#f8fafc\" font-size=\"11\" font-family=\"sans-serif\" font-weight=\"bold\">Puncak (2, 2)</text>\n  <!-- Intercepts (1,0) and (3,0) -->\n  <circle cx=\"140\" cy=\"150\" r=\"4\" fill=\"#10b981\"/>\n  <text x=\"130\" y=\"168\" fill=\"#f8fafc\" font-size=\"10\" font-family=\"sans-serif\">(1,0)</text>\n  <circle cx=\"220\" cy=\"150\" r=\"4\" fill=\"#10b981\"/>\n  <text x=\"220\" y=\"168\" fill=\"#f8fafc\" font-size=\"10\" font-family=\"sans-serif\">(3,0)</text>\n  <!-- Function label -->\n  <text x=\"240\" y=\"70\" fill=\"#38bdf8\" font-size=\"11\" font-family=\"sans-serif\">f(x) = -2x² + 8x - 6</text>\n</svg></div>\n\nDiberikan fungsi kuadrat:\n$$f(x) = -2x^2 + 8x - 6$$\nPernyataan yang **BENAR** mengenai karakteristik kurva parabola fungsi tersebut adalah ...",
     "options": [
-      { "id": "A", "text": "Kurva parabola terbuka ke bawah, memiliki titik puncak $(2, 2)$ di Kuadran I, dan memotong sumbu-$X$ di dua titik positif $(1, 0)$ dan $(3, 0)$" },
-      { "id": "B", "text": "Kurva parabola terbuka ke atas, memiliki titik puncak $(2, 2)$ di Kuadran I, dan memotong sumbu-$X$ di dua titik positif" },
-      { "id": "C", "text": "Kurva parabola terbuka ke bawah, memiliki titik puncak $(-2, 2)$ di Kuadran II, dan tidak memotong sumbu-$X$" },
-      { "id": "D", "text": "Kurva parabola terbuka ke bawah, memiliki titik puncak $(2, -2)$ di Kuadran IV, dan memotong sumbu-$Y$ positif" },
-      { "id": "E", "text": "Kurva parabola terbuka ke atas, memiliki titik puncak $(2, -6)$ di Kuadran IV, dan memotong sumbu-$X$ di dua titik berbeda" }
+      {
+        "id": "A",
+        "text": "Kurva parabola terbuka ke bawah, memiliki titik puncak $(2, 2)$ di Kuadran I, dan memotong sumbu-$X$ di dua titik positif $(1, 0)$ dan $(3, 0)$"
+      },
+      {
+        "id": "B",
+        "text": "Kurva parabola terbuka ke atas, memiliki titik puncak $(2, 2)$ di Kuadran I, dan memotong sumbu-$X$ di dua titik positif"
+      },
+      {
+        "id": "C",
+        "text": "Kurva parabola terbuka ke bawah, memiliki titik puncak $(-2, 2)$ di Kuadran II, dan tidak memotong sumbu-$X$"
+      },
+      {
+        "id": "D",
+        "text": "Kurva parabola terbuka ke bawah, memiliki titik puncak $(2, -2)$ di Kuadran IV, dan memotong sumbu-$Y$ positif"
+      },
+      {
+        "id": "E",
+        "text": "Kurva parabola terbuka ke atas, memiliki titik puncak $(2, -6)$ di Kuadran IV, dan memotong sumbu-$X$ di dua titik berbeda"
+      }
     ],
     "correct_answer": "A",
     "hint": "Periksa tanda koefisien $a = -2$ untuk menentukan arah keterbukaan parabola. Gunakan rumus absis puncak $x_p = -\\frac{b}{2a}$ dan substitusikan ke fungsi untuk memperoleh ordinat puncak $y_p$.",
@@ -43,11 +73,26 @@
     "difficulty": "HOTS",
     "question_text": "Daerah asal alami (*natural domain*) $D_f$ dari fungsi akar-rasional:\n$$f(x) = \\sqrt{\\frac{x^2 - 8x + 12}{x - 3}}$$\nagar terdefinisi pada himpunan bilangan real adalah ...",
     "options": [
-      { "id": "A", "text": "$\\{x \\in \\mathbb{R} \\mid 2 \\le x < 3 \\quad \\text{atau} \\quad x \\ge 6\\}$" },
-      { "id": "B", "text": "$\\{x \\in \\mathbb{R} \\mid x \\le 2 \\quad \\text{atau} \\quad 3 < x \\le 6\\}$" },
-      { "id": "C", "text": "$\\{x \\in \\mathbb{R} \\mid 2 < x < 3 \\quad \\text{atau} \\quad x > 6\\}$" },
-      { "id": "D", "text": "$\\{x \\in \\mathbb{R} \\mid 3 < x \\le 6\\}$" },
-      { "id": "E", "text": "$\\{x \\in \\mathbb{R} \\mid x \\ge 2, \\quad x \\neq 3\\}$" }
+      {
+        "id": "A",
+        "text": "$\\{x \\in \\mathbb{R} \\mid 2 \\le x < 3 \\quad \\text{atau} \\quad x \\ge 6\\}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\{x \\in \\mathbb{R} \\mid x \\le 2 \\quad \\text{atau} \\quad 3 < x \\le 6\\}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\{x \\in \\mathbb{R} \\mid 2 < x < 3 \\quad \\text{atau} \\quad x > 6\\}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\{x \\in \\mathbb{R} \\mid 3 < x \\le 6\\}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\{x \\in \\mathbb{R} \\mid x \\ge 2, \\quad x \\neq 3\\}$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Syarat fungsi akar adalah nilai pecahan di dalam akar harus non-negatif (>= 0), dan penyebut tidak boleh bernilai nol ($x - 3 \\neq 0$). Faktorkan pembilang $(x - 2)(x - 6)$ lalu uji tanda pada garis bilangan.",
@@ -61,11 +106,26 @@
     "difficulty": "HOTS",
     "question_text": "Diberikan fungsi rasional:\n$$f(x) = \\frac{2x + 1}{x - 2}$$\npada domain terbatas $D_f = \\{x \\in \\mathbb{R} \\mid 3 \\le x \\le 5\\}$. Daerah hasil (*range*) $R_f$ dari fungsi tersebut adalah ...",
     "options": [
-      { "id": "A", "text": "$\\left\\{y \\in \\mathbb{R} \\;\\middle|\\; \\frac{11}{3} \\le y \\le 7\\right\\}$" },
-      { "id": "B", "text": "$\\{y \\in \\mathbb{R} \\mid 3 \\le y \\le 7\\}$" },
-      { "id": "C", "text": "$\\left\\{y \\in \\mathbb{R} \\;\\middle|\\; \\frac{7}{3} \\le y \\le 5\\right\\}$" },
-      { "id": "D", "text": "$\\{y \\in \\mathbb{R} \\mid y \\ge 7\\}$" },
-      { "id": "E", "text": "$\\left\\{y \\in \\mathbb{R} \\;\\middle|\\; y \\le \\frac{11}{3} \\quad \\text{atau} \\quad y \\ge 7\\right\\}$" }
+      {
+        "id": "A",
+        "text": "$\\left\\{y \\in \\mathbb{R} \\;\\middle|\\; \\frac{11}{3} \\le y \\le 7\\right\\}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\{y \\in \\mathbb{R} \\mid 3 \\le y \\le 7\\}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\left\\{y \\in \\mathbb{R} \\;\\middle|\\; \\frac{7}{3} \\le y \\le 5\\right\\}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\{y \\in \\mathbb{R} \\mid y \\ge 7\\}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\left\\{y \\in \\mathbb{R} \\;\\middle|\\; y \\le \\frac{11}{3} \\quad \\text{atau} \\quad y \\ge 7\\right\\}$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Periksa kemonotonan fungsi dengan menghitung turunan pertama $f'(x)$. Karena $f'(x) = -\\frac{5}{(x - 2)^2} < 0$, fungsi selalu monoton turun pada interval $[3, 5]$, sehingga nilai maksimum tercapai di $x = 3$ dan minimum di $x = 5$.",
@@ -77,20 +137,37 @@
     "sub_chapter_id": "domain-range-grafik-fungsi",
     "question_type": "MCMA",
     "difficulty": "STANDAR",
-    "question_text": "Diberikan fungsi rasional:\n$$f(x) = \\frac{3x - 6}{x + 2}$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai asimtot dan titik potong grafiknya!",
+    "question_text": "Perhatikan grafik kurva fungsi rasional beserta garis-garis asimtotnya berikut:\n\n<div class=\"flex justify-center my-4 overflow-x-auto\"><svg viewBox=\"0 0 360 220\" class=\"w-full max-w-md h-auto drop-shadow-md rounded-lg\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"360\" height=\"220\" fill=\"#0f172a\" rx=\"8\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Axes: Origin (180, 130), dx=25 per unit, dy=20 per unit -->\n  <line x1=\"20\" y1=\"130\" x2=\"340\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <line x1=\"180\" y1=\"210\" x2=\"180\" y2=\"15\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <text x=\"345\" y=\"134\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">X</text>\n  <text x=\"176\" y=\"12\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">Y</text>\n  <!-- Asymptotes:\n       x = -2 -> 180 - 50 = 130\n       y = 3 -> 130 - 60 = 70\n  -->\n  <line x1=\"130\" y1=\"15\" x2=\"130\" y2=\"210\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"4\"/>\n  <text x=\"75\" y=\"30\" fill=\"#f59e0b\" font-size=\"10\" font-family=\"sans-serif\">Asimtot x = -2</text>\n  <line x1=\"20\" y1=\"70\" x2=\"340\" y2=\"70\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"4\"/>\n  <text x=\"250\" y=\"62\" fill=\"#f59e0b\" font-size=\"10\" font-family=\"sans-serif\">Asimtot y = 3</text>\n  <!-- Curve branch 1 (x > -2): passes (0, -3) -> (180, 190), (2, 0) -> (230, 130), (6, 1.5) -> (330, 100) -->\n  <path d=\"M 145,210 Q 155,145 230,130 T 340,78\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\"/>\n  <!-- Curve branch 2 (x < -2): passes (-4, 9) -> (80, -50), (-3, 15), (-6, 6) -> (30, 10) -->\n  <path d=\"M 20,62 Q 95,60 115,15\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\"/>\n  <!-- Key points -->\n  <circle cx=\"230\" cy=\"130\" r=\"3.5\" fill=\"#10b981\"/>\n  <text x=\"228\" y=\"146\" fill=\"#f8fafc\" font-size=\"9\" font-family=\"sans-serif\">(2, 0)</text>\n  <circle cx=\"180\" cy=\"190\" r=\"3.5\" fill=\"#10b981\"/>\n  <text x=\"190\" y=\"195\" fill=\"#f8fafc\" font-size=\"9\" font-family=\"sans-serif\">(0, -3)</text>\n  <text x=\"210\" y=\"105\" fill=\"#38bdf8\" font-size=\"11\" font-family=\"sans-serif\">f(x) = (3x - 6)/(x + 2)</text>\n</svg></div>\n\nDiberikan fungsi rasional:\n$$f(x) = \\frac{3x - 6}{x + 2}$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai asimtot, daerah asal, dan daerah hasil fungsi tersebut!",
     "options": [
-      { "id": "A", "text": "Asimtot tegak kurva adalah garis vertikal $x = -2$." },
-      { "id": "B", "text": "Asimtot datar kurva adalah garis horizontal $y = 3$." },
-      { "id": "C", "text": "Grafik fungsi memotong sumbu-$X$ di titik $(2, 0)$ dan memotong sumbu-$Y$ di titik $(0, -3)$." },
-      { "id": "D", "text": "Asimtot datar kurva adalah garis horizontal $y = -2$." }
+      {
+        "id": "A",
+        "text": "Asimtot tegak kurva adalah garis vertikal $x = -2$."
+      },
+      {
+        "id": "B",
+        "text": "Asimtot datar kurva adalah garis horizontal $y = 3$."
+      },
+      {
+        "id": "C",
+        "text": "Grafik fungsi memotong sumbu-$X$ di titik $(2, 0)$ dan memotong sumbu-$Y$ di titik $(0, -3)$."
+      },
+      {
+        "id": "D",
+        "text": "Asimtot datar kurva adalah garis horizontal $y = -2$."
+      },
+      {
+        "id": "E",
+        "text": "Titik potong grafik fungsi dengan sumbu Y berada pada koordinat $(0, -3)$."
+      }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Asimtot tegak dicari dari pembuat nol penyebut ($x + 2 = 0$). Asimtot datar dicari dari limit fungsi saat $x \\to \\pm\\infty$. Titik potong sumbu koordinat dicari saat $y = 0$ dan $x = 0$.",
-    "explanation": "Analisis karakteristik grafik fungsi rasional:\n\n- **Asimtot Tegak:**\n  Penyebut sama dengan nol: $x + 2 = 0 \\implies x = -2$. (Pernyataan A **BENAR**)\n\n- **Asimtot Datar:**\n  Hitung limit menuju tak hingga:\n  $$\\lim_{x \\to \\infty} \\frac{3x - 6}{x + 2} = \\lim_{x \\to \\infty} \\frac{3 - 6/x}{1 + 2/x} = 3$$\n  Garis $y = 3$ merupakan asimtot datar. (Pernyataan B **BENAR**, Pernyataan D **SALAH**)\n\n- **Titik Potong Sumbu Koordinat:**\n  - Titik potong sumbu-$X$ ($f(x) = 0$): $3x - 6 = 0 \\implies x = 2 \\implies (2, 0)$.\n  - Titik potong sumbu-$Y$ ($x = 0$): $f(0) = \\frac{3(0) - 6}{0 + 2} = -3 \\implies (0, -3)$.\n  (Pernyataan C **BENAR**)\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+    "explanation": "Analisis karakteristik grafik fungsi rasional:\n\n- **Asimtot Tegak:**\n  Penyebut sama dengan nol: $x + 2 = 0 \\implies x = -2$. (Pernyataan A **BENAR**)\n\n- **Asimtot Datar:**\n  Hitung limit menuju tak hingga:\n  $$\\lim_{x \\to \\infty} \\frac{3x - 6}{x + 2} = \\lim_{x \\to \\infty} \\frac{3 - 6/x}{1 + 2/x} = 3$$\n  Garis $y = 3$ merupakan asimtot datar. (Pernyataan B **BENAR**, Pernyataan D **SALAH**)\n\n- **Titik Potong Sumbu Koordinat:**\n  - Titik potong sumbu-$X$ ($f(x) = 0$): $3x - 6 = 0 \\implies x = 2 \\implies (2, 0)$.\n  - Titik potong sumbu-$Y$ ($x = 0$): $f(0) = \\frac{3(0) - 6}{0 + 2} = -3 \\implies (0, -3)$.\n  (Pernyataan C **BENAR**)\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Titik potong sumbu Y diperoleh saat $x = 0$: $f(0) = \\frac{3(0) - 6}{0 + 2} = \\frac{-6}{2} = -3$, sehingga koordinatnya adalah $(0, -3)$."
   },
   {
     "id": "matwa-domain-range-grafik-fungsi-06",
@@ -100,18 +177,35 @@
     "difficulty": "HOTS",
     "question_text": "Diberikan fungsi kuadrat:\n$$f(x) = x^2 - 4x + 7$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai sifat fungsi dan grafiknya!",
     "options": [
-      { "id": "A", "text": "Fungsi $f(x)$ bersifat definit positif ($f(x) > 0$ untuk setiap bilangan real $x$)." },
-      { "id": "B", "text": "Nilai minimum fungsi adalah 3 yang tercapai pada absis $x = 2$." },
-      { "id": "C", "text": "Grafik fungsi $f(x)$ identik dengan grafik parabola $y = x^2$ yang ditranslasikan 2 satuan ke kanan dan 3 satuan ke atas." },
-      { "id": "D", "text": "Grafik parabola memotong sumbu-$X$ di dua titik koordinat real berbeda." }
+      {
+        "id": "A",
+        "text": "Fungsi $f(x)$ bersifat definit positif ($f(x) > 0$ untuk setiap bilangan real $x$)."
+      },
+      {
+        "id": "B",
+        "text": "Nilai minimum fungsi adalah 3 yang tercapai pada absis $x = 2$."
+      },
+      {
+        "id": "C",
+        "text": "Grafik fungsi $f(x)$ identik dengan grafik parabola $y = x^2$ yang ditranslasikan 2 satuan ke kanan dan 3 satuan ke atas."
+      },
+      {
+        "id": "D",
+        "text": "Grafik parabola memotong sumbu-$X$ di dua titik koordinat real berbeda."
+      },
+      {
+        "id": "E",
+        "text": "Garis sumbu simetri dari kurva parabola tersebut adalah $x = 2$."
+      }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Ubah fungsi ke bentuk kuadrat sempurna $f(x) = (x - 2)^2 + 3$. Tinjau nilai diskriminan $D = b^2 - 4ac$ dan koefisien $a$ untuk membuktikan sifat definit positif.",
-    "explanation": "Langkah-langkah analisis bentuk kanonik kuadrat:\n\n1. Bentuk kuadrat sempurna:\n   $$f(x) = (x^2 - 4x + 4) + 3 = (x - 2)^2 + 3$$\n\n2. Analisis titik puncak dan nilai ekstrem:\n   Karena $(x - 2)^2 \\ge 0$, nilai minimum $f(x)$ adalah $0 + 3 = 3$ saat $x = 2$. Titik puncak berada di $(2, 3)$. (Pernyataan B **BENAR**)\n\n3. Uji definit positif:\n   - Koefisien $a = 1 > 0$\n   - Diskriminan $D = (-4)^2 - 4(1)(7) = 16 - 28 = -12 < 0$\n   Karena $a > 0$ dan $D < 0$, kurva parabola seluruhnya melayang di atas sumbu-$X$ tanpa pernah memotong atau menyinggung sumbu-$X$ ($f(x) > 0$ untuk setiap $x \\in \\mathbb{R}$). (Pernyataan A **BENAR**, Pernyataan D **SALAH**)\n\n4. Transformasi translasi grafik:\n   Persamaan $y = (x - 2)^2 + 3$ diperoleh dari $y = x^2$ dengan menggeser 2 satuan searah sumbu-$X$ positif (kanan) dan 3 satuan searah sumbu-$Y$ positif (atas). (Pernyataan C **BENAR**)\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**."
+    "explanation": "Langkah-langkah analisis bentuk kanonik kuadrat:\n\n1. Bentuk kuadrat sempurna:\n   $$f(x) = (x^2 - 4x + 4) + 3 = (x - 2)^2 + 3$$\n\n2. Analisis titik puncak dan nilai ekstrem:\n   Karena $(x - 2)^2 \\ge 0$, nilai minimum $f(x)$ adalah $0 + 3 = 3$ saat $x = 2$. Titik puncak berada di $(2, 3)$. (Pernyataan B **BENAR**)\n\n3. Uji definit positif:\n   - Koefisien $a = 1 > 0$\n   - Diskriminan $D = (-4)^2 - 4(1)(7) = 16 - 28 = -12 < 0$\n   Karena $a > 0$ dan $D < 0$, kurva parabola seluruhnya melayang di atas sumbu-$X$ tanpa pernah memotong atau menyinggung sumbu-$X$ ($f(x) > 0$ untuk setiap $x \\in \\mathbb{R}$). (Pernyataan A **BENAR**, Pernyataan D **SALAH**)\n\n4. Transformasi translasi grafik:\n   Persamaan $y = (x - 2)^2 + 3$ diperoleh dari $y = x^2$ dengan menggeser 2 satuan searah sumbu-$X$ positif (kanan) dan 3 satuan searah sumbu-$Y$ positif (atas). (Pernyataan C **BENAR**)\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Sumbu simetri parabola $f(x) = ax^2 + bx + c$ dihitung melalui rumus $x = -\\frac{b}{2a} = -\\frac{-4}{2(1)} = 2$."
   },
   {
     "id": "matwa-domain-range-grafik-fungsi-07",
@@ -121,18 +215,35 @@
     "difficulty": "HOTS",
     "question_text": "Diberikan fungsi nilai mutlak:\n$$f(x) = |2x - 6| - 4$$\npada domain seluruh bilangan real $x \\in \\mathbb{R}$. Pilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR**!",
     "options": [
-      { "id": "A", "text": "Titik balik minimum grafik fungsi berada di titik koordinat $(3, -4)$." },
-      { "id": "B", "text": "Daerah hasil (*range*) dari fungsi adalah $\\{y \\in \\mathbb{R} \\mid y \\ge -4\\}$." },
-      { "id": "C", "text": "Grafik fungsi memotong sumbu-$X$ tepat di dua titik, yaitu $(1, 0)$ dan $(5, 0)$." },
-      { "id": "D", "text": "Grafik fungsi memiliki sumbu simetri berupa garis horizontal $y = 3$." }
+      {
+        "id": "A",
+        "text": "Titik balik minimum grafik fungsi berada di titik koordinat $(3, -4)$."
+      },
+      {
+        "id": "B",
+        "text": "Daerah hasil (*range*) dari fungsi adalah $\\{y \\in \\mathbb{R} \\mid y \\ge -4\\}$."
+      },
+      {
+        "id": "C",
+        "text": "Grafik fungsi memotong sumbu-$X$ tepat di dua titik, yaitu $(1, 0)$ dan $(5, 0)$."
+      },
+      {
+        "id": "D",
+        "text": "Grafik fungsi memiliki sumbu simetri berupa garis horizontal $y = 3$."
+      },
+      {
+        "id": "E",
+        "text": "Titik balik minimum grafik fungsi nilai mutlak terjadi di koordinat $(3, -4)$."
+      }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Sifat nilai mutlak $|2x - 6| \\ge 0$ mencapai nilai terkecil 0 saat $2x - 6 = 0$. Selesaikan $|2x - 6| - 4 = 0$ untuk mencari titik potong sumbu-$X$.",
-    "explanation": "Analisis grafik fungsi nilai mutlak:\n\n- **Titik Balik Minimum & Range:**\n  Karena $|2x - 6| \\ge 0$, nilai minimum tercapai saat $2x - 6 = 0 \\implies x = 3$.\n  $$f(3) = |0| - 4 = -4$$\n  Titik balik minimum berada di $(3, -4)$ (Pernyataan A **BENAR**).\n  Karena nilai terendah adalah $-4$, maka daerah hasil adalah $R_f = \\{y \\in \\mathbb{R} \\mid y \\ge -4\\}$ (Pernyataan B **BENAR**).\n\n- **Titik Potong Sumbu-$X$ ($f(x) = 0$):**\n  $$|2x - 6| - 4 = 0 \\implies |2x - 6| = 4$$\n  - Kasus 1: $2x - 6 = 4 \\implies 2x = 10 \\implies x = 5$\n  - Kasus 2: $2x - 6 = -4 \\implies 2x = 2 \\implies x = 1$\n  Grafik memotong sumbu-$X$ di titik $(1, 0)$ dan $(5, 0)$ (Pernyataan C **BENAR**).\n\n- **Sumbu Simetri:**\n  Grafik simetris terhadap garis **vertikal** $x = 3$, bukan garis horizontal $y = 3$ (Pernyataan D **SALAH**).\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**."
+    "explanation": "Analisis grafik fungsi nilai mutlak:\n\n- **Titik Balik Minimum & Range:**\n  Karena $|2x - 6| \\ge 0$, nilai minimum tercapai saat $2x - 6 = 0 \\implies x = 3$.\n  $$f(3) = |0| - 4 = -4$$\n  Titik balik minimum berada di $(3, -4)$ (Pernyataan A **BENAR**).\n  Karena nilai terendah adalah $-4$, maka daerah hasil adalah $R_f = \\{y \\in \\mathbb{R} \\mid y \\ge -4\\}$ (Pernyataan B **BENAR**).\n\n- **Titik Potong Sumbu-$X$ ($f(x) = 0$):**\n  $$|2x - 6| - 4 = 0 \\implies |2x - 6| = 4$$\n  - Kasus 1: $2x - 6 = 4 \\implies 2x = 10 \\implies x = 5$\n  - Kasus 2: $2x - 6 = -4 \\implies 2x = 2 \\implies x = 1$\n  Grafik memotong sumbu-$X$ di titik $(1, 0)$ dan $(5, 0)$ (Pernyataan C **BENAR**).\n\n- **Sumbu Simetri:**\n  Grafik simetris terhadap garis **vertikal** $x = 3$, bukan garis horizontal $y = 3$ (Pernyataan D **SALAH**).\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Nilai minimum $|2x - 6|$ adalah 0 saat $x = 3$, sehingga nilai minimum $f(3) = 0 - 4 = -4$, membentuk titik balik $(3, -4)$."
   },
   {
     "id": "matwa-domain-range-grafik-fungsi-08",

@@ -7,11 +7,26 @@
     "difficulty": "STANDAR",
     "question_text": "Di sebuah toko perlengkapan sekolah, Budi membeli $3$ buku tulis dan $2$ bolpoin dengan total harga $\\text{Rp}16.500,00$. Di toko yang sama, Ani membeli $2$ buku tulis dan $4$ bolpoin dengan total harga $\\text{Rp}19.000,00$.\n\nJika Cici ingin membeli $1$ buku tulis dan $3$ bolpoin, total biaya yang harus dibayar Cici adalah ...",
     "options": [
-      { "id": "A", "text": "$\\text{Rp}12.500,00$" },
-      { "id": "B", "text": "$\\text{Rp}11.500,00$" },
-      { "id": "C", "text": "$\\text{Rp}13.000,00$" },
-      { "id": "D", "text": "$\\text{Rp}14.500,00$" },
-      { "id": "E", "text": "$\\text{Rp}10.000,00$" }
+      {
+        "id": "A",
+        "text": "$\\text{Rp}12.500,00$"
+      },
+      {
+        "id": "B",
+        "text": "$\\text{Rp}11.500,00$"
+      },
+      {
+        "id": "C",
+        "text": "$\\text{Rp}13.000,00$"
+      },
+      {
+        "id": "D",
+        "text": "$\\text{Rp}14.500,00$"
+      },
+      {
+        "id": "E",
+        "text": "$\\text{Rp}10.000,00$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Modelkan harga 1 buku tulis sebagai $x$ dan 1 bolpoin sebagai $y$. Sederhanakan persamaan kedua menjadi $x + 2y = 9.500$, lalu substitusikan ke persamaan pertama.",
@@ -25,11 +40,26 @@
     "difficulty": "STANDAR",
     "question_text": "Diberikan sistem persamaan linear tiga variabel (SPLTV) sebagai berikut:\n$$\\begin{cases} x + y + z = 6 \\\\ 2x - y + z = 3 \\\\ x + 2y - z = 2 \\end{cases}$$\nNilai dari hasil kali ketiga variabel $x \\cdot y \\cdot z$ adalah ...",
     "options": [
-      { "id": "A", "text": "6" },
-      { "id": "B", "text": "8" },
-      { "id": "C", "text": "12" },
-      { "id": "D", "text": "4" },
-      { "id": "E", "text": "9" }
+      {
+        "id": "A",
+        "text": "6"
+      },
+      {
+        "id": "B",
+        "text": "8"
+      },
+      {
+        "id": "C",
+        "text": "12"
+      },
+      {
+        "id": "D",
+        "text": "4"
+      },
+      {
+        "id": "E",
+        "text": "9"
+      }
     ],
     "correct_answer": "A",
     "hint": "Eliminasi variabel $z$ terlebih dahulu dengan menjumlahkan persamaan (1) dan (3), kemudian kurangkan persamaan (1) dari (2) untuk mendapatkan SPLDV dalam $x$ dan $y$.",
@@ -43,11 +73,26 @@
     "difficulty": "HOTS",
     "question_text": "Sebuah distributor alat kantor menyediakan paket bingkisan seminar yang berisi map arsip ($x$), buku catatan ($y$), dan pulpen eksklusif ($z$). Daftar harga paket ditetapkan sebagai berikut:\n- **Paket I** (2 map, 3 buku catatan, 1 pulpen): seharga $\\text{Rp}44.000,00$\n- **Paket II** (1 map, 2 buku catatan, 3 pulpen): seharga $\\text{Rp}47.000,00$\n- **Paket III** (3 map, 1 buku catatan, 2 pulpen): seharga $\\text{Rp}39.000,00$\n\nPanitia seminar bermaksud memesan **Paket IV** yang terdiri dari **6 map, 6 buku catatan, dan 6 pulpen**. Tanpa perlu menghitung harga satuan masing-masing barang, total harga Paket IV adalah ...",
     "options": [
-      { "id": "A", "text": "$\\text{Rp}130.000,00$" },
-      { "id": "B", "text": "$\\text{Rp}120.000,00$" },
-      { "id": "C", "text": "$\\text{Rp}135.000,00$" },
-      { "id": "D", "text": "$\\text{Rp}140.000,00$" },
-      { "id": "E", "text": "$\\text{Rp}125.000,00$" }
+      {
+        "id": "A",
+        "text": "$\\text{Rp}130.000,00$"
+      },
+      {
+        "id": "B",
+        "text": "$\\text{Rp}120.000,00$"
+      },
+      {
+        "id": "C",
+        "text": "$\\text{Rp}135.000,00$"
+      },
+      {
+        "id": "D",
+        "text": "$\\text{Rp}140.000,00$"
+      },
+      {
+        "id": "E",
+        "text": "$\\text{Rp}125.000,00$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Perhatikan koefisien barang di ketiga paket: $(2+1+3)x + (3+2+1)y + (1+3+2)z$. Jumlahkan ketiga harga paket secara langsung.",
@@ -61,11 +106,26 @@
     "difficulty": "HOTS",
     "question_text": "Diberikan sistem persamaan linear dua variabel dengan parameter konstanta $k$:\n$$\\begin{cases} (k + 1)x + 2y = 8 \\\\ 6x + ky = 12 \\end{cases}$$\nAgar sistem persamaan linear tersebut memiliki **tak terhingga banyak pasangan solusi** $(x, y)$, nilai parameter $k$ yang memenuhi adalah ...",
     "options": [
-      { "id": "A", "text": "3" },
-      { "id": "B", "text": "2" },
-      { "id": "C", "text": "-3" },
-      { "id": "D", "text": "4" },
-      { "id": "E", "text": "-2" }
+      {
+        "id": "A",
+        "text": "3"
+      },
+      {
+        "id": "B",
+        "text": "2"
+      },
+      {
+        "id": "C",
+        "text": "-3"
+      },
+      {
+        "id": "D",
+        "text": "4"
+      },
+      {
+        "id": "E",
+        "text": "-2"
+      }
     ],
     "correct_answer": "A",
     "hint": "Syarat SPLDV memiliki tak hingga solusi adalah perbandingan koefisien dan konstantanya setara: $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$.",
@@ -79,18 +139,35 @@
     "difficulty": "STANDAR",
     "question_text": "Perhatikan dua sistem persamaan linear berikut pada bidang koordinat Kartesius:\n\n**Sistem I:**\n$$\\begin{cases} 2x - y = 4 \\\\ 4x - 2y = 8 \\end{cases}$$\n\n**Sistem II:**\n$$\\begin{cases} x + 2y = 5 \\\\ 2x + 4y = 7 \\end{cases}$$\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR**!",
     "options": [
-      { "id": "A", "text": "Sistem I merepresentasikan dua garis lurus yang saling berimpit." },
-      { "id": "B", "text": "Sistem I memiliki tak terhingga banyaknya pasangan solusi penyelesaian $(x, y)$." },
-      { "id": "C", "text": "Sistem II merepresentasikan dua garis lurus yang saling sejajar dan tidak pernah berpotongan." },
-      { "id": "D", "text": "Sistem II memiliki tepat satu pasangan solusi unik $(x, y)$." }
+      {
+        "id": "A",
+        "text": "Sistem I merepresentasikan dua garis lurus yang saling berimpit."
+      },
+      {
+        "id": "B",
+        "text": "Sistem I memiliki tak terhingga banyaknya pasangan solusi penyelesaian $(x, y)$."
+      },
+      {
+        "id": "C",
+        "text": "Sistem II merepresentasikan dua garis lurus yang saling sejajar dan tidak pernah berpotongan."
+      },
+      {
+        "id": "D",
+        "text": "Sistem II memiliki tepat satu pasangan solusi unik $(x, y)$."
+      },
+      {
+        "id": "E",
+        "text": "Kedua garis pembatas pada Sistem II memiliki nilai gradien yang sama persis ($m_1 = m_2 = -\\frac{2}{3}$)."
+      }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Bandingkan rasio koefisien $\\frac{a_1}{a_2}$ dan $\\frac{b_1}{b_2}$ terhadap rasio konstanta $\\frac{c_1}{c_2}$. Jika ketiga rasio bernilai sama, kedua garis berimpit. Jika hanya rasio koefisien yang sama, kedua garis sejajar.",
-    "explanation": "Analisis geometris kedua sistem persamaan linear:\n\n- **Analisis Sistem I:**\n  Rasio koefisien dan konstanta: $\\frac{2}{4} = \\frac{-1}{-2} = \\frac{4}{8} = \\frac{1}{2}$.\n  Karena semua perbandingan sama, kedua persamaan mendefinisikan garis lurus yang identik (berimpit). Akibatnya, terdapat tak hingga banyaknya titik persekutuan/solusi. (Pernyataan A dan B **BENAR**)\n\n- **Analisis Sistem II:**\n  Rasio koefisien variabel: $\\frac{1}{2} = \\frac{2}{4} = \\frac{1}{2}$.\n  Namun rasio konstanta: $\\frac{5}{7} \\neq \\frac{1}{2}$.\n  Karena gradien kedua garis sama ($m = -\\frac{1}{2}$) tetapi titik potong sumbu-$Y$ berbeda, kedua garis saling sejajar dan tidak pernah berpotongan. Sistem ini tidak memiliki penyelesaian (himpunan kosong). (Pernyataan C **BENAR**, Pernyataan D **SALAH**)\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+    "explanation": "Analisis geometris kedua sistem persamaan linear:\n\n- **Analisis Sistem I:**\n  Rasio koefisien dan konstanta: $\\frac{2}{4} = \\frac{-1}{-2} = \\frac{4}{8} = \\frac{1}{2}$.\n  Karena semua perbandingan sama, kedua persamaan mendefinisikan garis lurus yang identik (berimpit). Akibatnya, terdapat tak hingga banyaknya titik persekutuan/solusi. (Pernyataan A dan B **BENAR**)\n\n- **Analisis Sistem II:**\n  Rasio koefisien variabel: $\\frac{1}{2} = \\frac{2}{4} = \\frac{1}{2}$.\n  Namun rasio konstanta: $\\frac{5}{7} \\neq \\frac{1}{2}$.\n  Karena gradien kedua garis sama ($m = -\\frac{1}{2}$) tetapi titik potong sumbu-$Y$ berbeda, kedua garis saling sejajar dan tidak pernah berpotongan. Sistem ini tidak memiliki penyelesaian (himpunan kosong). (Pernyataan C **BENAR**, Pernyataan D **SALAH**)\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Dua garis sejajar pada Sistem II memiliki gradien yang sama persis, yaitu $m = -\\frac{a}{b} = -\\frac{2}{3}$."
   },
   {
     "id": "matwa-sistem-persamaan-linear-06",
@@ -100,18 +177,35 @@
     "difficulty": "HOTS",
     "question_text": "Sebuah sentra konveksi pakaian memproduksi tiga varian busana: Kemeja ($x$), Kaos Polo ($y$), dan Jaket ($z$). Setiap unit busana membutuhkan alokasi bahan mentah sebagai berikut:\n- 1 Kemeja membutuhkan $2\\text{ meter}$ kain katun, $1\\text{ rol}$ benang jahit, dan $5\\text{ butir}$ kancing.\n- 1 Kaos Polo membutuhkan $1\\text{ meter}$ kain katun, $1\\text{ rol}$ benang jahit, dan $3\\text{ butir}$ kancing.\n- 1 Jaket membutuhkan $3\\text{ meter}$ kain katun, $2\\text{ rol}$ benang jahit, dan $4\\text{ butir}$ kancing.\n\nDalam satu periode produksi mingguan, persediaan bahan yang terpakai habis seluruhnya adalah $115\\text{ meter}$ kain katun, $80\\text{ rol}$ benang, dan $250\\text{ butir}$ kancing.\n\nPilihlah **SEMUA** pernyataan berikut yang bernilai **BENAR** mengenai hasil produksi!",
     "options": [
-      { "id": "A", "text": "Jumlah kemeja yang berhasil diproduksi adalah 20 potong." },
-      { "id": "B", "text": "Jumlah kaos polo yang berhasil diproduksi adalah 30 potong." },
-      { "id": "C", "text": "Total seluruh pakaian yang diproduksi dalam periode tersebut adalah 65 potong." },
-      { "id": "D", "text": "Jumlah jaket yang diproduksi lebih banyak dibandingkan jumlah kemeja yang diproduksi." }
+      {
+        "id": "A",
+        "text": "Jumlah kemeja yang berhasil diproduksi adalah 20 potong."
+      },
+      {
+        "id": "B",
+        "text": "Jumlah kaos polo yang berhasil diproduksi adalah 30 potong."
+      },
+      {
+        "id": "C",
+        "text": "Total seluruh pakaian yang diproduksi dalam periode tersebut adalah 65 potong."
+      },
+      {
+        "id": "D",
+        "text": "Jumlah jaket yang diproduksi lebih banyak dibandingkan jumlah kemeja yang diproduksi."
+      },
+      {
+        "id": "E",
+        "text": "Selisih antara jumlah kaos polo dan jaket yang diproduksi adalah 15 potong."
+      }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Kurangkan persamaan katun ($2x + y + 3z = 115$) dengan persamaan benang ($x + y + 2z = 80$) untuk mendapatkan relasi $x + z = 35$, lalu nyatakan $x$ dan $y$ dalam $z$.",
-    "explanation": "Langkah-langkah pemodelan dan eliminasi SPLTV:\n\n1. Susun sistem persamaan aljabar penggunaan bahan:\n   $$\\begin{cases} 2x + y + 3z = 115 & \\text{(Katun)} \\\\ x + y + 2z = 80 & \\text{(Benang)} \\\\ 5x + 3y + 4z = 250 & \\text{(Kancing)} \\end{cases}$$\n\n2. Kurangkan persamaan (1) dengan persamaan (2):\n   $$(2x + y + 3z) - (x + y + 2z) = 115 - 80 \\implies x + z = 35 \\implies x = 35 - z$$\n\n3. Nyatakan $y$ dari persamaan (2):\n   $$y = 80 - x - 2z = 80 - (35 - z) - 2z = 45 - z$$\n\n4. Substitusikan $x$ dan $y$ ke persamaan (3):\n   $$5(35 - z) + 3(45 - z) + 4z = 250$$\n   $$175 - 5z + 135 - 3z + 4z = 250$$\n   $$310 - 4z = 250 \\implies 4z = 60 \\implies z = 15\\text{ potong jaket}$$\n\n5. Hitung kuantitas $x$ dan $y$:\n   $$x = 35 - 15 = 20\\text{ potong kemeja}$$\n   $$y = 45 - 15 = 30\\text{ potong kaos polo}$$\n\n6. Evaluasi pernyataan:\n   - Kemeja ($x = 20$): Pernyataan A **BENAR**.\n   - Kaos Polo ($y = 30$): Pernyataan B **BENAR**.\n   - Total busana: $x + y + z = 20 + 30 + 15 = 65$ potong: Pernyataan C **BENAR**.\n   - Jaket ($z = 15$) dan kemeja ($x = 20$), sehingga jaket lebih sedikit: Pernyataan D **SALAH**.\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**."
+    "explanation": "Langkah-langkah pemodelan dan eliminasi SPLTV:\n\n1. Susun sistem persamaan aljabar penggunaan bahan:\n   $$\\begin{cases} 2x + y + 3z = 115 & \\text{(Katun)} \\\\ x + y + 2z = 80 & \\text{(Benang)} \\\\ 5x + 3y + 4z = 250 & \\text{(Kancing)} \\end{cases}$$\n\n2. Kurangkan persamaan (1) dengan persamaan (2):\n   $$(2x + y + 3z) - (x + y + 2z) = 115 - 80 \\implies x + z = 35 \\implies x = 35 - z$$\n\n3. Nyatakan $y$ dari persamaan (2):\n   $$y = 80 - x - 2z = 80 - (35 - z) - 2z = 45 - z$$\n\n4. Substitusikan $x$ dan $y$ ke persamaan (3):\n   $$5(35 - z) + 3(45 - z) + 4z = 250$$\n   $$175 - 5z + 135 - 3z + 4z = 250$$\n   $$310 - 4z = 250 \\implies 4z = 60 \\implies z = 15\\text{ potong jaket}$$\n\n5. Hitung kuantitas $x$ dan $y$:\n   $$x = 35 - 15 = 20\\text{ potong kemeja}$$\n   $$y = 45 - 15 = 30\\text{ potong kaos polo}$$\n\n6. Evaluasi pernyataan:\n   - Kemeja ($x = 20$): Pernyataan A **BENAR**.\n   - Kaos Polo ($y = 30$): Pernyataan B **BENAR**.\n   - Total busana: $x + y + z = 20 + 30 + 15 = 65$ potong: Pernyataan C **BENAR**.\n   - Jaket ($z = 15$) dan kemeja ($x = 20$), sehingga jaket lebih sedikit: Pernyataan D **SALAH**.\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Selisih produksi kaos polo (30 potong) dan jaket (15 potong) adalah $30 - 15 = 15$ potong."
   },
   {
     "id": "matwa-sistem-persamaan-linear-07",
@@ -121,18 +215,35 @@
     "difficulty": "HOTS",
     "question_text": "Diberikan sistem persamaan tak linear yang dapat ditransformasikan ke sistem linear dengan substitusi pecahan aljabar untuk variabel tak nol $x, y, z \\neq 0$:\n$$\\begin{cases} \\frac{1}{x} + \\frac{2}{y} + \\frac{1}{z} = 3 \\\\ \\frac{2}{x} - \\frac{2}{y} + \\frac{1}{z} = 2 \\\\ \\frac{1}{x} + \\frac{4}{y} - \\frac{1}{z} = 2 \\end{cases}$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR**!",
     "options": [
-      { "id": "A", "text": "Nilai variabel $x = 1$ dan $z = 1$" },
-      { "id": "B", "text": "Nilai variabel $y = 2$" },
-      { "id": "C", "text": "Nilai penjumlahan ketiga variabel $x + y + z = 4$" },
-      { "id": "D", "text": "Nilai perkalian ketiga variabel $x \\cdot y \\cdot z = 4$" }
+      {
+        "id": "A",
+        "text": "Nilai variabel $x = 1$ dan $z = 1$"
+      },
+      {
+        "id": "B",
+        "text": "Nilai variabel $y = 2$"
+      },
+      {
+        "id": "C",
+        "text": "Nilai penjumlahan ketiga variabel $x + y + z = 4$"
+      },
+      {
+        "id": "D",
+        "text": "Nilai perkalian ketiga variabel $x \\cdot y \\cdot z = 4$"
+      },
+      {
+        "id": "E",
+        "text": "Nilai kuadrat dari penjumlahan variabel $(x + y)^2 = 9$"
+      }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Gunakan substitusi variabel baru $u = \\frac{1}{x}, v = \\frac{1}{y}, w = \\frac{1}{z}$ untuk mengubahnya menjadi SPLTV baku berderajat satu.",
-    "explanation": "Langkah-langkah transformasi ke sistem linear:\n\n1. Lakukan pemisalan variabel pecahan:\n   $$u = \\frac{1}{x}, \\quad v = \\frac{1}{y}, \\quad w = \\frac{1}{z}$$\n   Sistem persamaan linear dalam $(u, v, w)$ menjadi:\n   $$\\begin{cases} u + 2v + w = 3 & \\text{...(1)} \\\\ 2u - 2v + w = 2 & \\text{...(2)} \\\\ u + 4v - w = 2 & \\text{...(3)} \\end{cases}$$\n\n2. Jumlahkan persamaan (1) dan persamaan (3) untuk mengeliminasi $w$:\n   $$(u + 2v + w) + (u + 4v - w) = 3 + 2 \\implies 2u + 6v = 5 \\quad \\text{...(4)}$$\n\n3. Jumlahkan persamaan (2) dan persamaan (3) untuk mengeliminasi $w$:\n   $$(2u - 2v + w) + (u + 4v - w) = 2 + 2 \\implies 3u + 2v = 4 \\quad \\text{...(5)}$$\n\n4. Selesaikan sistem (4) dan (5):\n   Kalikan persamaan (5) dengan 3:\n   $$9u + 6v = 12$$\n   Kurangkan dengan persamaan (4):\n   $$(9u + 6v) - (2u + 6v) = 12 - 5 \\implies 7u = 7 \\implies u = 1$$\n\n5. Tentukan nilai $v$ dan $w$:\n   $$2(1) + 6v = 5 \\implies 6v = 3 \\implies v = \\frac{1}{2}$$\n   Substitusikan ke persamaan (1):\n   $$1 + 2\\left(\\frac{1}{2}\\right) + w = 3 \\implies 1 + 1 + w = 3 \\implies w = 1$$\n\n6. Kembalikan ke variabel asal $(x, y, z)$:\n   - $x = \\frac{1}{u} = \\frac{1}{1} = 1$\n   - $y = \\frac{1}{v} = \\frac{1}{1/2} = 2$\n   - $z = \\frac{1}{w} = \\frac{1}{1} = 1$\n\n7. Evaluasi opsi jawaban:\n   - $x = 1$ dan $z = 1$ (Pernyataan A **BENAR**)\n   - $y = 2$ (Pernyataan B **BENAR**)\n   - $x + y + z = 1 + 2 + 1 = 4$ (Pernyataan C **BENAR**)\n   - $x \\cdot y \\cdot z = 1 \\cdot 2 \\cdot 1 = 2 \\neq 4$ (Pernyataan D **SALAH**)\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**."
+    "explanation": "Langkah-langkah transformasi ke sistem linear:\n\n1. Lakukan pemisalan variabel pecahan:\n   $$u = \\frac{1}{x}, \\quad v = \\frac{1}{y}, \\quad w = \\frac{1}{z}$$\n   Sistem persamaan linear dalam $(u, v, w)$ menjadi:\n   $$\\begin{cases} u + 2v + w = 3 & \\text{...(1)} \\\\ 2u - 2v + w = 2 & \\text{...(2)} \\\\ u + 4v - w = 2 & \\text{...(3)} \\end{cases}$$\n\n2. Jumlahkan persamaan (1) dan persamaan (3) untuk mengeliminasi $w$:\n   $$(u + 2v + w) + (u + 4v - w) = 3 + 2 \\implies 2u + 6v = 5 \\quad \\text{...(4)}$$\n\n3. Jumlahkan persamaan (2) dan persamaan (3) untuk mengeliminasi $w$:\n   $$(2u - 2v + w) + (u + 4v - w) = 2 + 2 \\implies 3u + 2v = 4 \\quad \\text{...(5)}$$\n\n4. Selesaikan sistem (4) dan (5):\n   Kalikan persamaan (5) dengan 3:\n   $$9u + 6v = 12$$\n   Kurangkan dengan persamaan (4):\n   $$(9u + 6v) - (2u + 6v) = 12 - 5 \\implies 7u = 7 \\implies u = 1$$\n\n5. Tentukan nilai $v$ dan $w$:\n   $$2(1) + 6v = 5 \\implies 6v = 3 \\implies v = \\frac{1}{2}$$\n   Substitusikan ke persamaan (1):\n   $$1 + 2\\left(\\frac{1}{2}\\right) + w = 3 \\implies 1 + 1 + w = 3 \\implies w = 1$$\n\n6. Kembalikan ke variabel asal $(x, y, z)$:\n   - $x = \\frac{1}{u} = \\frac{1}{1} = 1$\n   - $y = \\frac{1}{v} = \\frac{1}{1/2} = 2$\n   - $z = \\frac{1}{w} = \\frac{1}{1} = 1$\n\n7. Evaluasi opsi jawaban:\n   - $x = 1$ dan $z = 1$ (Pernyataan A **BENAR**)\n   - $y = 2$ (Pernyataan B **BENAR**)\n   - $x + y + z = 1 + 2 + 1 = 4$ (Pernyataan C **BENAR**)\n   - $x \\cdot y \\cdot z = 1 \\cdot 2 \\cdot 1 = 2 \\neq 4$ (Pernyataan D **SALAH**)\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Karena $x = 1$ dan $y = 2$, maka $(x + y)^2 = (1 + 2)^2 = 3^2 = 9$."
   },
   {
     "id": "matwa-sistem-persamaan-linear-08",

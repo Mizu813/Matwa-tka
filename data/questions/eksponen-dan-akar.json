@@ -5,7 +5,7 @@
     "sub_chapter_id": "eksponen-dan-akar",
     "question_type": "PG",
     "difficulty": "STANDAR",
-    "question_text": "Bentuk sederhana dari ekspresi aljabar pecahan berpangkat:\n$$\\left( \\frac{a^{3} b^{-2} c^{4}}{a^{-1} b^{4} c^{-2}} \\right)^{\\frac{1}{2}}$$\nadalah ...",
+    "question_text": "Dalam perancangan sirkuit mikroelektronika, efisiensi konduktivitas dinyatakan oleh perbandingan daya dan hambatan yang disederhanakan melalui ekspresi aljabar pecahan berpangkat:\n$$\\left( \\frac{a^{3} b^{-2} c^{4}}{a^{-1} b^{4} c^{-2}} \\right)^{\\frac{1}{2}}$$\nBentuk paling sederhana dari ekspresi tersebut untuk variabel tak nol adalah ...",
     "options": [
       { "id": "A", "text": "$\\frac{a^2 c^3}{b^3}$" },
       { "id": "B", "text": "$\\frac{a^4 c^6}{b^6}$" },
@@ -14,6 +14,7 @@
       { "id": "E", "text": "$a^2 b^3 c^3$" }
     ],
     "correct_answer": "A",
+    "hint": "Kelompokkan variabel yang sama di pembilang dan penyebut, kurangkan eksponennya sesuai sifat a^m / a^n = a^(m-n), lalu kalikan setiap eksponen dengan 1/2.",
     "explanation": "Langkah-langkah penyederhanaan eksponen rasional:\n\n1. Sederhanakan suku di dalam kurung menggunakan sifat $\\frac{x^m}{x^n} = x^{m-n}$:\n   - Variabel $a$: $\\frac{a^3}{a^{-1}} = a^{3 - (-1)} = a^4$\n   - Variabel $b$: $\\frac{b^{-2}}{b^4} = b^{-2 - 4} = b^{-6} = \\frac{1}{b^6}$\n   - Variabel $c$: $\\frac{c^4}{c^{-2}} = c^{4 - (-2)} = c^6$\n\n   Sehingga bentuk di dalam kurung menjadi:\n   $$\\frac{a^4 c^6}{b^6}$$\n\n2. Pangkatkan seluruh bentuk dengan eksponen $\\frac{1}{2}$ menggunakan sifat $(x^m)^n = x^{m \\cdot n}$:\n   $$\\left( \\frac{a^4 c^6}{b^6} \\right)^{\\frac{1}{2}} = \\frac{a^{4 \\cdot \\frac{1}{2}} c^{6 \\cdot \\frac{1}{2}}}{b^{6 \\cdot \\frac{1}{2}}} = \\frac{a^2 c^3}{b^3}$$\n\nJadi, jawaban yang benar adalah **A**."
   },
   {
@@ -22,7 +23,7 @@
     "sub_chapter_id": "eksponen-dan-akar",
     "question_type": "PG",
     "difficulty": "STANDAR",
-    "question_text": "Bentuk rasional dari pecahan dengan penyebut bentuk akar:\n$$\\frac{2 + \\sqrt{3}}{\\sqrt{3} - \\sqrt{2}}$$\nadalah ...",
+    "question_text": "Dalam pengukuran impedansi jaringan transmisi listrik, rasio tegangan terhadap arus menghasilkan pecahan dengan penyebut bentuk akar irasional:\n$$\\frac{2 + \\sqrt{3}}{\\sqrt{3} - \\sqrt{2}}$$\nBentuk rasional dari pecahan tersebut adalah ...",
     "options": [
       { "id": "A", "text": "$3 + 2\\sqrt{2} + 2\\sqrt{3} + \\sqrt{6}$" },
       { "id": "B", "text": "$3 - 2\\sqrt{2} + 2\\sqrt{3} - \\sqrt{6}$" },
@@ -31,6 +32,7 @@
       { "id": "E", "text": "$1 + \\sqrt{2} + \\sqrt{3} + 2\\sqrt{6}$" }
     ],
     "correct_answer": "A",
+    "hint": "Kalikan pembilang dan penyebut dengan sekawan penyebut yaitu (\\sqrt{3} + \\sqrt{2}), lalu gunakan identitas selisih dua kuadrat.",
     "explanation": "Langkah-langkah merasionalkan penyebut pecahan bentuk akar:\n\n1. Kalikan pembilang dan penyebut dengan bentuk sekawan dari penyebut, yaitu $(\\sqrt{3} + \\sqrt{2})$:\n   $$\\frac{2 + \\sqrt{3}}{\\sqrt{3} - \\sqrt{2}} \\times \\frac{\\sqrt{3} + \\sqrt{2}}{\\sqrt{3} + \\sqrt{2}}$$\n\n2. Hitung hasil perkalian penyebut menggunakan sifat selisih kuadrat $(x-y)(x+y) = x^2 - y^2$:\n   $$(\\sqrt{3})^2 - (\\sqrt{2})^2 = 3 - 2 = 1$$\n\n3. Hitung hasil perkalian pembilang secara distributif:\n   $$(2 + \\sqrt{3})(\\sqrt{3} + \\sqrt{2}) = 2\\sqrt{3} + 2\\sqrt{2} + (\\sqrt{3})(\\sqrt{3}) + (\\sqrt{3})(\\sqrt{2})$$\n   $$= 2\\sqrt{3} + 2\\sqrt{2} + 3 + \\sqrt{6} = 3 + 2\\sqrt{2} + 2\\sqrt{3} + \\sqrt{6}$$\n\n4. Karena penyebut bernilai 1, maka hasil akhirnya adalah:\n   $$3 + 2\\sqrt{2} + 2\\sqrt{3} + \\sqrt{6}$$\n\nJadi, jawaban yang benar adalah **A**."
   },
   {
@@ -39,7 +41,7 @@
     "sub_chapter_id": "eksponen-dan-akar",
     "question_type": "PG",
     "difficulty": "HOTS",
-    "question_text": "Diketahui dua bilangan berpangkat besar $x = 49^{1012}$ dan $y = 7^{2025}$. Angka satuan dari hasil operasi aljabar $3y - 2x$ adalah ...",
+    "question_text": "Diketahui dua bilangan berpangkat besar yang merepresentasikan jumlah iterasi algoritma kriptografi: $x = 49^{1012}$ dan $y = 7^{2025}$. Angka satuan dari hasil operasi aljabar $3y - 2x$ adalah ...",
     "options": [
       { "id": "A", "text": "1" },
       { "id": "B", "text": "3" },
@@ -48,6 +50,7 @@
       { "id": "E", "text": "5" }
     ],
     "correct_answer": "D",
+    "hint": "Ubah 49 ke bentuk 7^2 dan faktorkan pangkat persekutuan terkecil 7^2024. Cermati pola siklus angka satuan dari perpangkatan 7 berpangkat n modulo 10.",
     "explanation": "Langkah-langkah penyelesaian:\n\n1. Nyatakan $x$ ke dalam basis bilangan prima 7:\n   $$x = 49^{1012} = (7^2)^{1012} = 7^{2024}$$\n\n2. Bentuk ekspresi aljabar $3y - 2x$ dengan memfaktorkan pangkat persekutuan terkecil $7^{2024}$:\n   $$3y - 2x = 3(7^{2025}) - 2(7^{2024}) = 7^{2024} (3 \\cdot 7^1 - 2) = 7^{2024} (21 - 2) = 19 \\cdot 7^{2024}$$\n\n3. Analisis pola angka satuan dari perpangkatan $7^n$ mod 10:\n   - $7^1 = 7 \\equiv 7 \\pmod{10}$\n   - $7^2 = 49 \\equiv 9 \\pmod{10}$\n   - $7^3 = 343 \\equiv 3 \\pmod{10}$\n   - $7^4 = 2401 \\equiv 1 \\pmod{10}$\n   - $7^5 \\equiv 7 \\pmod{10}$ (berulang setiap periode 4)\n\n4. Evaluasi angka satuan dari $7^{2024}$:\n   Karena $2024 = 4 \\times 506 + 0$ (habis dibagi 4), maka angka satuan dari $7^{2024}$ sama dengan angka satuan dari $7^4$, yaitu $1$.\n\n5. Hitung angka satuan dari hasil perkalian $19 \\cdot 7^{2024}$:\n   $$19 \\cdot 1 = 19 \\equiv 9 \\pmod{10}$$\n\nJadi, angka satuan dari $3y - 2x$ adalah **9** (Opsi **D**)."
   },
   {
@@ -56,7 +59,7 @@
     "sub_chapter_id": "eksponen-dan-akar",
     "question_type": "PG",
     "difficulty": "HOTS",
-    "question_text": "Jika $x_1$ dan $x_2$ adalah akar-akar real dari persamaan eksponen:\n$$3^{2x+1} - 28 \\cdot 3^x + 9 = 0$$\nmaka nilai dari $x_1^2 + x_2^2$ adalah ...",
+    "question_text": "Jika $x_1$ dan $x_2$ adalah akar-akar real dari persamaan eksponen pemodelan pertumbuhan koloni bakteri:\n$$3^{2x+1} - 28 \\cdot 3^x + 9 = 0$$\nmaka nilai dari $x_1^2 + x_2^2$ adalah ...",
     "options": [
       { "id": "A", "text": "3" },
       { "id": "B", "text": "5" },
@@ -65,6 +68,7 @@
       { "id": "E", "text": "13" }
     ],
     "correct_answer": "B",
+    "hint": "Gunakan pemisalan u = 3^x untuk mengubah persamaan menjadi bentuk kuadrat 3u^2 - 28u + 9 = 0, lalu cari akar-akarnya.",
     "explanation": "Langkah-langkah penyelesaian:\n\n1. Uraikan suku pertama menggunakan sifat eksponen $3^{2x+1} = 3^1 \\cdot (3^x)^2$:\n   $$3 \\cdot (3^x)^2 - 28 \\cdot 3^x + 9 = 0$$\n\n2. Lakukan substitusi variabel $u = 3^x$ dengan syarat $u > 0$:\n   $$3u^2 - 28u + 9 = 0$$\n\n3. Faktorkan persamaan kuadrat tersebut:\n   $$(3u - 1)(u - 9) = 0$$\n   Sehingga diperoleh nilai $u$:\n   - $u_1 = \\frac{1}{3} = 3^{-1}$\n   - $u_2 = 9 = 3^2$\n\n4. Kembalikan ke variabel $x$:\n   - $3^x = 3^{-1} \\implies x_1 = -1$\n   - $3^x = 3^2 \\implies x_2 = 2$\n\n5. Hitung nilai $x_1^2 + x_2^2$:\n   $$x_1^2 + x_2^2 = (-1)^2 + 2^2 = 1 + 4 = 5$$\n\nJadi, nilai yang dicari adalah **5** (Opsi **B**)."
   },
   {
@@ -73,19 +77,22 @@
     "sub_chapter_id": "eksponen-dan-akar",
     "question_type": "MCMA",
     "difficulty": "STANDAR",
-    "question_text": "Perhatikan tabel relasi bentuk eksponen dan bentuk akar untuk bilangan real positif $a > 0$ dan $b > 0$ berikut:\n\n| No | Bentuk Awal | Bentuk Ekuivalen |\n| :---: | :--- | :--- |\n| (1) | $\\sqrt{a^3 \\cdot \\sqrt[3]{a^6}}$ | $a^{5/2}$ |\n| (2) | $(a^{-2} b^3)^{-\\frac{1}{2}}$ | $\\frac{a}{\\sqrt{b^3}}$ |\n| (3) | $\\frac{a^{2/3} - b^{2/3}}{a^{1/3} + b^{1/3}}$ | $a^{1/3} - b^{1/3}$ |\n| (4) | $\\sqrt[3]{a^6 b^9}$ | $a^3 b^3$ |\n\nPilihlah **SEMUA** pernyataan nomor yang bernilai **BENAR**!",
+    "question_text": "Dalam analisis pemodelan komputasi laju pendinginan material semikonduktor dan peluruhan isotop di laboratorium teknologi material, dua parameter fisis tak nol $a > 0$ dan $b > 0$ direlasikan melalui ekspresi aljabar eksponen dan bentuk akar.\n\n<div class=\"flex justify-center my-3\"><svg viewBox=\"0 0 360 80\" class=\"w-full max-w-sm h-auto drop-shadow-sm\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"350\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><text x=\"180\" y=\"30\" fill=\"#38bdf8\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"bold\">VERIFIKASI RUMUS KOMPUTASI EKSPONEN & AKAR</text><text x=\"180\" y=\"52\" fill=\"#f8fafc\" font-size=\"11\" font-family=\"monospace\" text-anchor=\"middle\">Domain: a > 0, b > 0  |  Pengujian Identitas Aljabar</text></svg></div>\n\nSeorang peneliti sedang menguji keabsahan lima formula penyederhanaan berikut yang diajukan oleh tim analis data:\n(1) Bentuk $\\sqrt{a^3 \\cdot \\sqrt[3]{a^6}}$ dapat disederhanakan menjadi $a^{5/2}$\n(2) Bentuk $(a^{-2} b^3)^{-\\frac{1}{2}}$ ekuivalen dengan $\\frac{a}{\\sqrt{b^3}}$\n(3) Bentuk $\\frac{a^{2/3} - b^{2/3}}{a^{1/3} + b^{1/3}}$ ekuivalen dengan $a^{1/3} - b^{1/3}$\n(4) Bentuk $\\sqrt[3]{a^6 b^9}$ dapat disederhanakan menjadi $a^3 b^3$\n(5) Bentuk $(a^{1/2} + b^{1/2})^2 - 2\\sqrt{ab}$ dapat disederhanakan menjadi $a + b$\n\nPilihlah **SEMUA** pernyataan formula nomor yang bernilai **BENAR**!",
     "options": [
       { "id": "A", "text": "Pernyataan (1): $\\sqrt{a^3 \\cdot \\sqrt[3]{a^6}} = a^{5/2}$" },
       { "id": "B", "text": "Pernyataan (2): $(a^{-2} b^3)^{-\\frac{1}{2}} = \\frac{a}{\\sqrt{b^3}}$" },
       { "id": "C", "text": "Pernyataan (3): $\\frac{a^{2/3} - b^{2/3}}{a^{1/3} + b^{1/3}} = a^{1/3} - b^{1/3}$" },
-      { "id": "D", "text": "Pernyataan (4): $\\sqrt[3]{a^6 b^9} = a^3 b^3$" }
+      { "id": "D", "text": "Pernyataan (4): $\\sqrt[3]{a^6 b^9} = a^3 b^3$" },
+      { "id": "E", "text": "Pernyataan (5): $(a^{1/2} + b^{1/2})^2 - 2\\sqrt{ab} = a + b$" }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
-    "explanation": "Mari kita uji kebenaran tiap pernyataan secara sistematis:\n\n- **Pernyataan (1) - BENAR:**\n  $$\\sqrt[3]{a^6} = a^{6/3} = a^2$$\n  $$\\sqrt{a^3 \\cdot a^2} = \\sqrt{a^5} = a^{5/2}$$\n\n- **Pernyataan (2) - BENAR:**\n  $$(a^{-2} b^3)^{-\\frac{1}{2}} = a^{(-2)(-\\frac{1}{2})} \\cdot b^{3(-\\frac{1}{2})} = a^1 \\cdot b^{-\\frac{3}{2}} = \\frac{a}{\\sqrt{b^3}}$$\n\n- **Pernyataan (3) - BENAR:**\n  Gunakan faktorisasi selisih kuadrat $x^2 - y^2 = (x - y)(x + y)$ dengan memisalkan $x = a^{1/3}$ dan $y = b^{1/3}$:\n  $$\\frac{(a^{1/3})^2 - (b^{1/3})^2}{a^{1/3} + b^{1/3}} = \\frac{(a^{1/3} - b^{1/3})(a^{1/3} + b^{1/3})}{a^{1/3} + b^{1/3}} = a^{1/3} - b^{1/3}$$\n\n- **Pernyataan (4) - SALAH:**\n  $$\\sqrt[3]{a^6 b^9} = a^{6/3} b^{9/3} = a^2 b^3 \\neq a^3 b^3$$\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**."
+    "hint": "Uraikan pangkat akar bertingkat ke bentuk pangkat rasional, gunakan faktorisasi selisih kuadrat pada pecahan, dan jabarkan kuadrat binomial.",
+    "explanation": "Mari kita uji kebenaran tiap formula secara sistematis:\n\n- **Pernyataan (1) - BENAR:**\n  $$\\sqrt[3]{a^6} = a^{6/3} = a^2$$\n  $$\\sqrt{a^3 \\cdot a^2} = \\sqrt{a^5} = a^{5/2}$$\n\n- **Pernyataan (2) - BENAR:**\n  $$(a^{-2} b^3)^{-\\frac{1}{2}} = a^{(-2)(-\\frac{1}{2})} \\cdot b^{3(-\\frac{1}{2})} = a^1 \\cdot b^{-\\frac{3}{2}} = \\frac{a}{b^{3/2}} = \\frac{a}{\\sqrt{b^3}}$$\n\n- **Pernyataan (3) - BENAR:**\n  Gunakan faktorisasi selisih dua kuadrat $x^2 - y^2 = (x - y)(x + y)$ dengan memisalkan $x = a^{1/3}$ dan $y = b^{1/3}$:\n  $$\\frac{(a^{1/3})^2 - (b^{1/3})^2}{a^{1/3} + b^{1/3}} = \\frac{(a^{1/3} - b^{1/3})(a^{1/3} + b^{1/3})}{a^{1/3} + b^{1/3}} = a^{1/3} - b^{1/3}$$\n\n- **Pernyataan (4) - SALAH:**\n  $$\\sqrt[3]{a^6 b^9} = a^{6/3} b^{9/3} = a^2 b^3 \\neq a^3 b^3$$\n\n- **Pernyataan (5) - BENAR:**\n  Ekspansikan bentuk kuadrat binomial:\n  $$(a^{1/2} + b^{1/2})^2 = (a^{1/2})^2 + 2(a^{1/2})(b^{1/2}) + (b^{1/2})^2 = a + 2\\sqrt{ab} + b$$\n  Sehingga:\n  $$(a^{1/2} + b^{1/2})^2 - 2\\sqrt{ab} = a + 2\\sqrt{ab} + b - 2\\sqrt{ab} = a + b$$\n\nOleh karena itu, opsi formula yang bernilai benar adalah **A, B, C, dan E**."
   },
   {
     "id": "matwa-eksponen-dan-akar-06",
@@ -98,14 +105,17 @@
       { "id": "A", "text": "Nilai ekspresi aljabar $2x^3 - 6x = 5$" },
       { "id": "B", "text": "Nilai ekspresi aljabar $x^2 - 2^{2/3} - 2^{-2/3} = 2$" },
       { "id": "C", "text": "Nilai $x$ berada pada interval terbuka $2 < x < 3$" },
-      { "id": "D", "text": "Nilai $x$ merupakan bilangan rasional" }
+      { "id": "D", "text": "Nilai $x$ merupakan bilangan rasional" },
+      { "id": "E", "text": "Nilai dari $(2^{1/3} - 2^{-1/3})^2 = x^2 - 4$" }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
-    "explanation": "Mari kita analisis keabsahan masing-masing pernyataan aljabar:\n\n1. **Analisis Pernyataan A (BENAR):**\n   Pangkatkan $x$ dengan 3 menggunakan identitas $(u+v)^3 = u^3 + v^3 + 3uv(u+v)$:\n   $$x^3 = (2^{1/3})^3 + (2^{-1/3})^3 + 3(2^{1/3})(2^{-1/3})(2^{1/3} + 2^{-1/3})$$\n   $$x^3 = 2 + \\frac{1}{2} + 3(1)(x) = \\frac{5}{2} + 3x$$\n   Kalikan kedua ruas dengan 2:\n   $$2x^3 = 5 + 6x \\implies 2x^3 - 6x = 5$$\n\n2. **Analisis Pernyataan B (BENAR):**\n   Kuadratkan nilai $x$:\n   $$x^2 = (2^{1/3} + 2^{-1/3})^2 = (2^{1/3})^2 + 2(2^{1/3})(2^{-1/3}) + (2^{-1/3})^2 = 2^{2/3} + 2 + 2^{-2/3}$$\n   Maka:\n   $$x^2 - 2^{2/3} - 2^{-2/3} = 2$$\n\n3. **Analisis Pernyataan C (BENAR):**\n   Kita ketahui bahwa $1 < 2 < 8 \\implies 1 < 2^{1/3} < 2$. Pendekatan numerik menunjukkan $2^{1/3} \\approx 1,26$ dan $2^{-1/3} = \\frac{1}{2^{1/3}} \\approx 0,79$. Sehingga:\n   $$x \\approx 1,26 + 0,79 = 2,05$$\n   Karena $2 < 2,05 < 3$, maka pernyataan $2 < x < 3$ bernilai benar.\n\n4. **Analisis Pernyataan D (SALAH):**\n   Persamaan aljabar yang dipenuhi oleh $x$ adalah polinomial berderajat 3: $2x^3 - 6x - 5 = 0$. Berdasarkan Teorema Akar Rasional, faktor pembagi bulat dari 5 terhadap 2 tidak menghasilkan akar real. Oleh karena itu, $x$ adalah bilangan irasional.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+    "hint": "Pangkatkan tiga persamaan x menggunakan identitas (u+v)^3 = u^3 + v^3 + 3uv(u+v) dan gunakan perkiraan nilai desimal dari 2^(1/3).",
+    "explanation": "Mari kita analisis keabsahan masing-masing pernyataan aljabar:\n\n1. **Analisis Pernyataan A (BENAR):**\n   Pangkatkan $x$ dengan 3 menggunakan identitas $(u+v)^3 = u^3 + v^3 + 3uv(u+v)$:\n   $$x^3 = (2^{1/3})^3 + (2^{-1/3})^3 + 3(2^{1/3})(2^{-1/3})(2^{1/3} + 2^{-1/3})$$\n   $$x^3 = 2 + \\frac{1}{2} + 3(1)(x) = \\frac{5}{2} + 3x$$\n   Kalikan kedua ruas dengan 2:\n   $$2x^3 = 5 + 6x \\implies 2x^3 - 6x = 5$$\n\n2. **Analisis Pernyataan B (BENAR):**\n   Kuadratkan nilai $x$:\n   $$x^2 = (2^{1/3} + 2^{-1/3})^2 = (2^{1/3})^2 + 2(2^{1/3})(2^{-1/3}) + (2^{-1/3})^2 = 2^{2/3} + 2 + 2^{-2/3}$$\n   Maka:\n   $$x^2 - 2^{2/3} - 2^{-2/3} = 2$$\n\n3. **Analisis Pernyataan C (BENAR):**\n   Kita ketahui bahwa $1 < 2 < 8 \\implies 1 < 2^{1/3} < 2$. Pendekatan numerik menunjukkan $2^{1/3} \\approx 1,26$ dan $2^{-1/3} = \\frac{1}{2^{1/3}} \\approx 0,79$. Sehingga:\n   $$x \\approx 1,26 + 0,79 = 2,05$$\n   Karena $2 < 2,05 < 3$, maka pernyataan $2 < x < 3$ bernilai benar.\n\n4. **Analisis Pernyataan D (SALAH):**\n   Persamaan aljabar yang dipenuhi oleh $x$ adalah polinomial berderajat 3: $2x^3 - 6x - 5 = 0$. Berdasarkan Teorema Akar Rasional, pembagi bulat dari 5 terhadap 2 tidak menghasilkan akar rasional. Oleh karena itu, $x$ adalah bilangan irasional.\n\n5. **Analisis Pernyataan E (BENAR):**\n   Gunakan identitas kuadrat selisih $(u-v)^2 = (u+v)^2 - 4uv$:\n   $$(2^{1/3} - 2^{-1/3})^2 = (2^{1/3} + 2^{-1/3})^2 - 4(2^{1/3})(2^{-1/3}) = x^2 - 4(1) = x^2 - 4$$\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, C, dan E**."
   },
   {
     "id": "matwa-eksponen-dan-akar-07",
@@ -113,19 +123,22 @@
     "sub_chapter_id": "eksponen-dan-akar",
     "question_type": "MCMA",
     "difficulty": "HOTS",
-    "question_text": "Diberikan dua bentuk akar bersarang:\n$$P = \\sqrt{8 - 2\\sqrt{15}} \\quad \\text{dan} \\quad Q = \\sqrt{8 + 2\\sqrt{15}}$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR**!",
+    "question_text": "Diberikan dua bentuk akar bersarang yang merepresentasikan parameter resistansi sirkuit:\n$$P = \\sqrt{8 - 2\\sqrt{15}} \\quad \\text{dan} \\quad Q = \\sqrt{8 + 2\\sqrt{15}}$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR**!",
     "options": [
       { "id": "A", "text": "Nilai hasil kali $P \\cdot Q = 2$" },
       { "id": "B", "text": "Nilai penjumlahan $P + Q = 2\\sqrt{5}$" },
       { "id": "C", "text": "Nilai jumlah kuadrat $P^2 + Q^2 = 16$" },
-      { "id": "D", "text": "Bentuk sederhana dari $P$ adalah $\\sqrt{3} - \\sqrt{5}$" }
+      { "id": "D", "text": "Bentuk sederhana dari $P$ adalah $\\sqrt{3} - \\sqrt{5}$" },
+      { "id": "E", "text": "Nilai pengurangan $Q - P = 2\\sqrt{3}$" }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
-    "explanation": "Penyederhanaan akar bersarang bentuk $\\sqrt{(a+b) \\pm 2\\sqrt{ab}} = \\sqrt{a} \\pm \\sqrt{b}$ (dengan $a > b$):\nCari dua bilangan yang jumlahnya 8 dan hasil kalinya 15. Bilangan tersebut adalah 5 dan 3 ($5+3=8, 5 \\times 3=15$).\n- $P = \\sqrt{5} - \\sqrt{3}$\n- $Q = \\sqrt{5} + \\sqrt{3}$\n\nUji masing-masing pernyataan:\n- **Pernyataan A (BENAR):**\n  $$P \\cdot Q = (\\sqrt{5} - \\sqrt{3})(\\sqrt{5} + \\sqrt{3}) = (\\sqrt{5})^2 - (\\sqrt{3})^2 = 5 - 3 = 2$$\n- **Pernyataan B (BENAR):**\n  $$P + Q = (\\sqrt{5} - \\sqrt{3}) + (\\sqrt{5} + \\sqrt{3}) = 2\\sqrt{5}$$\n- **Pernyataan C (BENAR):**\n  $$P^2 + Q^2 = (8 - 2\\sqrt{15}) + (8 + 2\\sqrt{15}) = 16$$\n- **Pernyataan D (SALAH):**\n  Karena $\\sqrt{5} > \\sqrt{3}$, maka nilai akar kuadrat positif $P = \\sqrt{5} - \\sqrt{3} > 0$. Bentuk $\\sqrt{3} - \\sqrt{5}$ bernilai negatif sehingga tidak memenuhi definisi akar utama kuadrat.\n\nJadi, pernyataan yang benar adalah **A, B, dan C**."
+    "hint": "Gunakan bentuk identitas akar bersarang \\sqrt{(a+b) \\pm 2\\sqrt{ab}} = \\sqrt{a} \\pm \\sqrt{b} dengan mencari dua bilangan yang jumlahnya 8 dan hasil kalinya 15.",
+    "explanation": "Penyederhanaan akar bersarang bentuk $\\sqrt{(a+b) \\pm 2\\sqrt{ab}} = \\sqrt{a} \\pm \\sqrt{b}$ (dengan $a > b$):\nCari dua bilangan yang jumlahnya 8 dan hasil kalinya 15. Bilangan tersebut adalah 5 dan 3 ($5+3=8, 5 \\times 3=15$).\n- $P = \\sqrt{5} - \\sqrt{3}$\n- $Q = \\sqrt{5} + \\sqrt{3}$\n\nUji masing-masing pernyataan:\n- **Pernyataan A (BENAR):**\n  $$P \\cdot Q = (\\sqrt{5} - \\sqrt{3})(\\sqrt{5} + \\sqrt{3}) = (\\sqrt{5})^2 - (\\sqrt{3})^2 = 5 - 3 = 2$$\n- **Pernyataan B (BENAR):**\n  $$P + Q = (\\sqrt{5} - \\sqrt{3}) + (\\sqrt{5} + \\sqrt{3}) = 2\\sqrt{5}$$\n- **Pernyataan C (BENAR):**\n  $$P^2 + Q^2 = (8 - 2\\sqrt{15}) + (8 + 2\\sqrt{15}) = 16$$\n- **Pernyataan D (SALAH):**\n  Karena $\\sqrt{5} > \\sqrt{3}$, maka nilai akar kuadrat utama harus bernilai positif $P = \\sqrt{5} - \\sqrt{3} > 0$. Bentuk $\\sqrt{3} - \\sqrt{5}$ bernilai negatif sehingga tidak memenuhi definisi akar utama kuadrat.\n- **Pernyataan E (BENAR):**\n  $$Q - P = (\\sqrt{5} + \\sqrt{3}) - (\\sqrt{5} - \\sqrt{3}) = \\sqrt{5} + \\sqrt{3} - \\sqrt{5} + \\sqrt{3} = 2\\sqrt{3}$$\n\nJadi, pernyataan yang benar adalah **A, B, C, dan E**."
   },
   {
     "id": "matwa-eksponen-dan-akar-08",
@@ -153,6 +166,7 @@
       "B": "Benar",
       "C": "Salah"
     },
+    "hint": "Tinjau identitas aljabar kuadrat (a+b)^2 - 2ab untuk pernyataan A, rasionalisasi penyebut untuk pernyataan B, dan rumus akar bersarang untuk pernyataan C.",
     "explanation": "Analisis kebenaran setiap pernyataan:\n\n1. **Pernyataan A (Benar):**\n   $$a + b = (2 + \\sqrt{3}) + (2 - \\sqrt{3}) = 4$$\n   $$a \\cdot b = (2 + \\sqrt{3})(2 - \\sqrt{3}) = 4 - 3 = 1$$\n   $$a^2 + b^2 = (a+b)^2 - 2ab = 4^2 - 2(1) = 16 - 2 = 14$$\n\n2. **Pernyataan B (Benar):**\n   $$\\frac{4}{\\sqrt{5} - 1} \\times \\frac{\\sqrt{5} + 1}{\\sqrt{5} + 1} = \\frac{4(\\sqrt{5} + 1)}{(\\sqrt{5})^2 - 1^2} = \\frac{4(\\sqrt{5} + 1)}{5 - 1} = \\frac{4(\\sqrt{5} + 1)}{4} = \\sqrt{5} + 1$$\n\n3. **Pernyataan C (Salah):**\n   Bentuk akar bersarang $\\sqrt{(p+q) + 2\\sqrt{pq}} = \\sqrt{p} + \\sqrt{q}$.\n   Dengan $p=5$ dan $q=2$, maka $p+q=7$ dan $pq=10$.\n   Maka $\\sqrt{7 + 2\\sqrt{10}} = \\sqrt{5} + \\sqrt{2}$, bukan $\\sqrt{5} - \\sqrt{2}$."
   },
   {
@@ -181,6 +195,7 @@
       "B": "Benar",
       "C": "Salah"
     },
+    "hint": "Perhatikan bahwa basis perpangkatan 1/2 berada di antara 0 dan 1 sehingga tanda pertidaksamaan harus berbalik saat membandingkan eksponen.",
     "explanation": "Analisis kebenaran setiap pernyataan:\n\n1. **Pernyataan A (Benar):**\n   Karena basis eksponen $0 < \\frac{1}{2} < 1$, arah tanda ketidaksamaan berbalik ketika pangkat dibandingkan:\n   $$x^2 - 3x \\le 4 \\iff x^2 - 3x - 4 \\le 0 \\iff (x - 4)(x + 1) \\le 0$$\n   Interval nilai yang memenuhi adalah $-1 \\le x \\le 4$.\n\n2. **Pernyataan B (Benar):**\n   Ubah akar bersusun menjadi perkalian pangkat pecahan bertingkat:\n   $$\\sqrt{x \\sqrt{x \\sqrt{x}}} = x^{1/2} \\cdot (x^{1/2})^{1/2} \\cdot ((x^{1/2})^{1/2})^{1/2}$$\n   $$= x^{1/2} \\cdot x^{1/4} \\cdot x^{1/8} = x^{\\frac{4 + 2 + 1}{8}} = x^{\\frac{7}{8}}$$\n\n3. **Pernyataan C (Salah):**\n   Substitusikan nilai $3$ ke persamaan kedua:\n   $$3^b = (2^a)^b = 2^{ab}$$\n   Diketahui bahwa $3^b = 8 = 2^3$, sehingga diperoleh hubungan:\n   $$2^{ab} = 2^3 \\implies ab = 3$$\n   Pernyataan menyatakan bahwa $a \\cdot b = 4$, sehingga pernyataan ini bernilai **Salah**."
   },
   {
@@ -213,6 +228,7 @@
       }
     ],
     "correct_answer": "A",
+    "hint": "Ubah persamaan pertama ke basis 2 untuk melihat apakah suku 2^(2x - y) dapat langsung ditentukan tanpa harus mengetahui nilai x dan y secara terpisah.",
     "explanation": "Target pertanyaan: Menentukan nilai eksak dari ekspresi $2^{2x - y}$.\n\n- **Analisis Pernyataan (1):**\n  $$4^x = 64 \\cdot 2^y$$\n  Ubah seluruh suku ke basis perpangkatan prima 2:\n  $$(2^2)^x = 2^6 \\cdot 2^y \\implies 2^{2x} = 2^{6 + y}$$\n  Bagi kedua ruas dengan $2^y$:\n  $$\\frac{2^{2x}}{2^y} = 2^6 \\implies 2^{2x - y} = 64$$\n  Nilai dari $2^{2x - y}$ dapat ditentukan secara tunggal dan pasti bernilai 64.\n  Maka, **Pernyataan (1) SAJA CUKUP**.\n\n- **Analisis Pernyataan (2):**\n  $$x + y = 5$$\n  Persamaan linear ini memiliki tak hingga pasangan solusi $(x, y)$ pada bilangan real, misalnya:\n  - Jika $(x, y) = (3, 2) \\implies 2x - y = 2(3) - 2 = 4 \\implies 2^{2x - y} = 2^4 = 16$.\n  - Jika $(x, y) = (1, 4) \\implies 2x - y = 2(1) - 4 = -2 \\implies 2^{2x - y} = 2^{-2} = \\frac{1}{4}$.\n  Karena menghasilkan nilai $2^{2x - y}$ yang berbeda-beda, nilai ekspresi tidak dapat ditentukan secara pasti.\n  Maka, **Pernyataan (2) SAJA TIDAK CUKUP**.\n\nKesimpulan: Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (2) SAJA tidak cukup (**Jawaban A**)."
   }
 ]

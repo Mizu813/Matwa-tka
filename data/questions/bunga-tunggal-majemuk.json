@@ -7,11 +7,26 @@
     "difficulty": "STANDAR",
     "question_text": "Seorang nasabah menginvestasikan modal sebesar **Rp20.000.000,00** di sebuah bank komersial dengan skema suku bunga majemuk sebesar **10% per tahun**. Jika bunga dihitung dan dikapitalisasikan ke dalam pokok simpanan pada setiap akhir tahun, maka total saldo nilai akhir investasi nasabah tersebut setelah 3 tahun adalah ...",
     "options": [
-      { "id": "A", "text": "Rp26.620.000,00" },
-      { "id": "B", "text": "Rp26.000.000,00" },
-      { "id": "C", "text": "Rp26.400.000,00" },
-      { "id": "D", "text": "Rp27.280.000,00" },
-      { "id": "E", "text": "Rp25.920.000,00" }
+      {
+        "id": "A",
+        "text": "Rp26.620.000,00"
+      },
+      {
+        "id": "B",
+        "text": "Rp26.000.000,00"
+      },
+      {
+        "id": "C",
+        "text": "Rp26.400.000,00"
+      },
+      {
+        "id": "D",
+        "text": "Rp27.280.000,00"
+      },
+      {
+        "id": "E",
+        "text": "Rp25.920.000,00"
+      }
     ],
     "correct_answer": "A",
     "hint": "Gunakan rumus nilai akhir modal bunga majemuk tahunan $M_n = M_0(1 + i)^n$ dengan $M_0 = 20.000.000$, $i = 0,10$, dan $n = 3$.",
@@ -25,11 +40,26 @@
     "difficulty": "STANDAR",
     "question_text": "Pak Budi meminjam dana modal usaha di koperasi simpan pinjam sebesar **Rp15.000.000,00** dengan kesepakatan suku bunga tunggal sebesar **1,2% per bulan**. Jika pinjaman tersebut akan dilunasi secara sekaligus beserta seluruh bunganya pada akhir bulan ke-10, maka total uang pengembalian yang harus dibayarkan Pak Budi adalah ...",
     "options": [
-      { "id": "A", "text": "Rp16.800.000,00" },
-      { "id": "B", "text": "Rp16.500.000,00" },
-      { "id": "C", "text": "Rp17.200.000,00" },
-      { "id": "D", "text": "Rp16.200.000,00" },
-      { "id": "E", "text": "Rp17.500.000,00" }
+      {
+        "id": "A",
+        "text": "Rp16.800.000,00"
+      },
+      {
+        "id": "B",
+        "text": "Rp16.500.000,00"
+      },
+      {
+        "id": "C",
+        "text": "Rp17.200.000,00"
+      },
+      {
+        "id": "D",
+        "text": "Rp16.200.000,00"
+      },
+      {
+        "id": "E",
+        "text": "Rp17.500.000,00"
+      }
     ],
     "correct_answer": "A",
     "hint": "Gunakan rumus total pengembalian bunga tunggal: $M_t = M_0(1 + b \\cdot t)$ dengan $b = 1,2\\% = 0,012$ dan $t = 10\\text{ bulan}$.",
@@ -43,11 +73,26 @@
     "difficulty": "HOTS",
     "question_text": "Dua orang investor, Anton dan Budi, masing-masing menanamkan modal awal yang sama besar, yaitu **Rp50.000.000,00** selama jangka waktu 2 tahun:\n- Anton memilih instrumen investasi dengan skema **bunga tunggal** sebesar 8% per tahun.\n- Budi memilih instrumen investasi dengan skema **bunga majemuk** sebesar 8% per tahun (dikapitalisasikan setahun sekali).\n\nSelisih keuntungan bunga yang diterima oleh Budi dibandingkan dengan keuntungan bunga yang diterima Anton pada akhir tahun ke-2 adalah ...",
     "options": [
-      { "id": "A", "text": "Rp320.000,00" },
-      { "id": "B", "text": "Rp300.000,00" },
-      { "id": "C", "text": "Rp350.000,00" },
-      { "id": "D", "text": "Rp400.000,00" },
-      { "id": "E", "text": "Rp280.000,00" }
+      {
+        "id": "A",
+        "text": "Rp320.000,00"
+      },
+      {
+        "id": "B",
+        "text": "Rp300.000,00"
+      },
+      {
+        "id": "C",
+        "text": "Rp350.000,00"
+      },
+      {
+        "id": "D",
+        "text": "Rp400.000,00"
+      },
+      {
+        "id": "E",
+        "text": "Rp280.000,00"
+      }
     ],
     "correct_answer": "A",
     "hint": "Hitung bunga tunggal Anton dengan $B_A = M_0 \\times i \\times 2$ dan bunga majemuk Budi dengan $B_B = M_0[(1 + i)^2 - 1]$. Selisih keuntungan bunga dapat dihitung cepat dengan rumus $\\Delta = M_0 \\cdot i^2$.",
@@ -61,11 +106,26 @@
     "difficulty": "HOTS",
     "question_text": "Ibu Rina menaruh simpanan modal sebesar **Rp20.000.000,00** di bank yang menerapkan suku bunga majemuk sebesar **20% per tahun** yang dikapitalisasikan setiap semester (setiap 6 bulan sekali, yaitu 10% per semester).\n\nJika saldo tabungan Ibu Rina berkembang menjadi **Rp29.282.000,00**, berapa lama modal tersebut telah diinvestasikan?",
     "options": [
-      { "id": "A", "text": "2 tahun (4 semester)" },
-      { "id": "B", "text": "2,5 tahun (5 semester)" },
-      { "id": "C", "text": "3 tahun (6 semester)" },
-      { "id": "D", "text": "1,5 tahun (3 semester)" },
-      { "id": "E", "text": "4 tahun (8 semester)" }
+      {
+        "id": "A",
+        "text": "2 tahun (4 semester)"
+      },
+      {
+        "id": "B",
+        "text": "2,5 tahun (5 semester)"
+      },
+      {
+        "id": "C",
+        "text": "3 tahun (6 semester)"
+      },
+      {
+        "id": "D",
+        "text": "1,5 tahun (3 semester)"
+      },
+      {
+        "id": "E",
+        "text": "4 tahun (8 semester)"
+      }
     ],
     "correct_answer": "A",
     "hint": "Gunakan rumus $M_k = M_0(1 + i_{\\text{sem}})^k$ dengan $i_{\\text{sem}} = 10\\% = 0,10$. Tentukan banyak semester $k$ dari $(1,10)^k = \\frac{29.282.000}{20.000.000} = 1,4641$.",
@@ -79,18 +139,35 @@
     "difficulty": "STANDAR",
     "question_text": "Diberikan modal awal $M_0$ yang diinvestasikan dengan suku bunga tahunan $i > 0$ selama $t$ tahun.\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai sifat aljabar dan perbandingan antara sistem bunga tunggal dan bunga majemuk!",
     "options": [
-      { "id": "A", "text": "Pada sistem bunga tunggal, akumulasi total saldo modal pada akhir setiap tahun membentuk barisan aritmetika dengan beda tetap $b = M_0 \\times i$." },
-      { "id": "B", "text": "Pada sistem bunga majemuk tahunan, akumulasi total saldo modal pada akhir setiap tahun membentuk barisan geometri dengan rasio $r = 1 + i$." },
-      { "id": "C", "text": "Untuk jangka waktu investasi lebih dari 1 tahun ($t > 1$) dengan suku bunga yang sama ($i > 0$), total bunga yang dihasilkan sistem bunga majemuk selalu lebih besar daripada sistem bunga tunggal." },
-      { "id": "D", "text": "Pada sistem bunga majemuk, nominal rupiah bunga yang diterima investor setiap tahunnya bernilai konstan dan tidak pernah bertambah." }
+      {
+        "id": "A",
+        "text": "Pada sistem bunga tunggal, akumulasi total saldo modal pada akhir setiap tahun membentuk barisan aritmetika dengan beda tetap $b = M_0 \\times i$."
+      },
+      {
+        "id": "B",
+        "text": "Pada sistem bunga majemuk tahunan, akumulasi total saldo modal pada akhir setiap tahun membentuk barisan geometri dengan rasio $r = 1 + i$."
+      },
+      {
+        "id": "C",
+        "text": "Untuk jangka waktu investasi lebih dari 1 tahun ($t > 1$) dengan suku bunga yang sama ($i > 0$), total bunga yang dihasilkan sistem bunga majemuk selalu lebih besar daripada sistem bunga tunggal."
+      },
+      {
+        "id": "D",
+        "text": "Pada sistem bunga majemuk, nominal rupiah bunga yang diterima investor setiap tahunnya bernilai konstan dan tidak pernah bertambah."
+      },
+      {
+        "id": "E",
+        "text": "Pada periode waktu yang sama dengan bunga positif, bunga majemuk menghasilkan nilai akhir lebih besar atau sama dibandingkan bunga tunggal."
+      }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Pada bunga tunggal, pertambahan bunga tiap tahun bernilai tetap (linier/aritmetika). Pada bunga majemuk, bunga dihitung dari modal yang terus membesar (eksponensial/geometri).",
-    "explanation": "Analisis konsep dasar sistem perbungaan:\n\n1. **Karakteristik Bunga Tunggal (Pernyataan A):**\n   Saldo tahun ke-$t$ adalah $M_t = M_0 + t(M_0 \\cdot i)$. Setiap pertambahan satu tahun, saldo bertambah sebesar konstanta $M_0 \\cdot i$. Karena selisihnya konstan, urutan saldo membentuk barisan aritmetika dengan beda $b = M_0 \\cdot i$.\n   Pernyataan A bernilai **BENAR**.\n\n2. **Karakteristik Bunga Majemuk (Pernyataan B):**\n   Saldo tahun ke-$t$ adalah $M_t = M_0 (1 + i)^t$. Rasio antara dua tahun berurutan adalah $\\frac{M_{t+1}}{M_t} = 1 + i$ (tetap). Karena rasionya konstan, urutan saldo membentuk barisan geometri dengan rasio $r = 1 + i$.\n   Pernyataan B bernilai **BENAR**.\n\n3. **Perbandingan Hasil Investasi (Pernyataan C & D):**\n   - Karena pada bunga majemuk terdapat 'bunga atas bunga' (*compounding effect*), maka nominal bunga tahunan terus membesar setiap tahunnya. Pernyataan D bernilai **SALAH**.\n   - Untuk $t > 1$, $(1 + i)^t > 1 + i \\cdot t$, sehingga saldo dan keuntungan bunga majemuk selalu melampaui bunga tunggal. Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+    "explanation": "Analisis konsep dasar sistem perbungaan:\n\n1. **Karakteristik Bunga Tunggal (Pernyataan A):**\n   Saldo tahun ke-$t$ adalah $M_t = M_0 + t(M_0 \\cdot i)$. Setiap pertambahan satu tahun, saldo bertambah sebesar konstanta $M_0 \\cdot i$. Karena selisihnya konstan, urutan saldo membentuk barisan aritmetika dengan beda $b = M_0 \\cdot i$.\n   Pernyataan A bernilai **BENAR**.\n\n2. **Karakteristik Bunga Majemuk (Pernyataan B):**\n   Saldo tahun ke-$t$ adalah $M_t = M_0 (1 + i)^t$. Rasio antara dua tahun berurutan adalah $\\frac{M_{t+1}}{M_t} = 1 + i$ (tetap). Karena rasionya konstan, urutan saldo membentuk barisan geometri dengan rasio $r = 1 + i$.\n   Pernyataan B bernilai **BENAR**.\n\n3. **Perbandingan Hasil Investasi (Pernyataan C & D):**\n   - Karena pada bunga majemuk terdapat 'bunga atas bunga' (*compounding effect*), maka nominal bunga tahunan terus membesar setiap tahunnya. Pernyataan D bernilai **SALAH**.\n   - Untuk $t > 1$, $(1 + i)^t > 1 + i \\cdot t$, sehingga saldo dan keuntungan bunga majemuk selalu melampaui bunga tunggal. Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Karena efek bunga berbunga (*compounding*), nilai akhir bunga majemuk selalu melampaui bunga tunggal untuk $t > 1$."
   },
   {
     "id": "matwa-bunga-tunggal-majemuk-06",
@@ -100,18 +177,35 @@
     "difficulty": "HOTS",
     "question_text": "Seorang investor menanamkan modal sebesar **Rp100.000.000,00** pada proyek kemitraan usaha dengan kesepakatan bagi hasil berskema **bunga tunggal 12% per tahun** dari modal pokok aktif. Ketentuan investasi diatur sebagai berikut:\n- Keuntungan laba bagi hasil dibayarkan pada setiap akhir tahun.\n- Setiap laba tahunan dikenakan potongan pajak penghasilan final sebesar **20%**.\n- Pada awal tahun ke-2, investor melakukan penarikan sebagian modal pokok sebesar **Rp40.000.000,00**, sedangkan sisanya tetap diinvestasikan hingga akhir tahun ke-2.\n- Pada akhir tahun ke-2, investor mencairkan seluruh sisa modal beserta laba bersih tahun ke-2, dengan dikenakan biaya administrasi penutupan rekening flat sebesar **Rp150.000,00**.\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai hasil keuangan investasi tersebut!",
     "options": [
-      { "id": "A", "text": "Laba bersih setelah potongan pajak yang diterima investor pada akhir tahun ke-1 adalah Rp9.600.000,00." },
-      { "id": "B", "text": "Pada akhir tahun ke-2, laba bersih setelah pajak yang dihasilkan dari sisa modal pokok aktif adalah Rp5.760.000,00." },
-      { "id": "C", "text": "Total dana bersih yang diterima investor saat penutupan dan pencairan akhir rekening (sisa pokok + laba bersih tahun ke-2 dikurangi biaya administrasi) adalah Rp65.610.000,00." },
-      { "id": "D", "text": "Total potongan pajak penghasilan atas laba bagi hasil selama 2 tahun periode investasi adalah Rp2.880.000,00." }
+      {
+        "id": "A",
+        "text": "Laba bersih setelah potongan pajak yang diterima investor pada akhir tahun ke-1 adalah Rp9.600.000,00."
+      },
+      {
+        "id": "B",
+        "text": "Pada akhir tahun ke-2, laba bersih setelah pajak yang dihasilkan dari sisa modal pokok aktif adalah Rp5.760.000,00."
+      },
+      {
+        "id": "C",
+        "text": "Total dana bersih yang diterima investor saat penutupan dan pencairan akhir rekening (sisa pokok + laba bersih tahun ke-2 dikurangi biaya administrasi) adalah Rp65.610.000,00."
+      },
+      {
+        "id": "D",
+        "text": "Total potongan pajak penghasilan atas laba bagi hasil selama 2 tahun periode investasi adalah Rp2.880.000,00."
+      },
+      {
+        "id": "E",
+        "text": "Total akumulasi dana investasi berbunga majemuk bertumbuh secara eksponensial terhadap waktu."
+      }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Hitung laba kotor tahun ke-1 dari pokok 100 juta lalu kurangkan pajak 20%. Kurangkan pokok 40 juta di awal tahun ke-2 sehingga pokok aktif menjadi 60 juta. Hitung laba bersih tahun ke-2 dan kurangkan biaya admin saat pencairan.",
-    "explanation": "Langkah-langkah evaluasi aliran kas investasi bertahap:\n\n1. **Kinerja Tahun ke-1 (Modal Pokok = Rp100.000.000,00):**\n   - Laba kotor tahun ke-1: $12\\% \\times 100.000.000 = \\text{Rp}12.000.000,00$\n   - Pajak penghasilan final ($20\\%$): $20\\% \\times 12.000.000 = \\text{Rp}2.400.000,00$\n   - Laba bersih tahun ke-1: $12.000.000 - 2.400.000 = \\text{Rp}9.600.000,00$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Kinerja Tahun ke-2 (Modal Pokok Aktif):**\n   - Penarikan awal tahun ke-2: Rp40.000.000,00.\n   - Sisa modal pokok aktif: $100.000.000 - 40.000.000 = \\text{Rp}60.000.000,00$.\n   - Laba kotor tahun ke-2: $12\\% \\times 60.000.000 = \\text{Rp}7.200.000,00$\n   - Pajak penghasilan final ($20\\%$): $20\\% \\times 7.200.000 = \\text{Rp}1.440.000,00$\n   - Laba bersih tahun ke-2: $7.200.000 - 1.440.000 = \\text{Rp}5.760.000,00$\n   Pernyataan B bernilai **BENAR**.\n\n3. **Total Pajak Penghasilan (Pernyataan D):**\n   $$\\text{Total Pajak} = 2.400.000 + 1.440.000 = \\text{Rp}3.840.000,00$$\n   Pernyataan D bernilai **SALAH** (disebutkan Rp2.880.000,00).\n\n4. **Pencairan Akhir Rekening pada Akhir Tahun ke-2:**\n   - Komponen pencairan: Sisa pokok aktif ($60.000.000$) + Laba bersih tahun ke-2 ($5.760.000$)\n   - Subtotal sebelum biaya administrasi: $\\text{Rp}65.760.000,00$\n   - Biaya administrasi penutupan rekening: $\\text{Rp}150.000,00$\n   - Total dana bersih diterima:\n     $$65.760.000 - 150.000 = \\text{Rp}65.610.000,00$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+    "explanation": "Langkah-langkah evaluasi aliran kas investasi bertahap:\n\n1. **Kinerja Tahun ke-1 (Modal Pokok = Rp100.000.000,00):**\n   - Laba kotor tahun ke-1: $12\\% \\times 100.000.000 = \\text{Rp}12.000.000,00$\n   - Pajak penghasilan final ($20\\%$): $20\\% \\times 12.000.000 = \\text{Rp}2.400.000,00$\n   - Laba bersih tahun ke-1: $12.000.000 - 2.400.000 = \\text{Rp}9.600.000,00$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Kinerja Tahun ke-2 (Modal Pokok Aktif):**\n   - Penarikan awal tahun ke-2: Rp40.000.000,00.\n   - Sisa modal pokok aktif: $100.000.000 - 40.000.000 = \\text{Rp}60.000.000,00$.\n   - Laba kotor tahun ke-2: $12\\% \\times 60.000.000 = \\text{Rp}7.200.000,00$\n   - Pajak penghasilan final ($20\\%$): $20\\% \\times 7.200.000 = \\text{Rp}1.440.000,00$\n   - Laba bersih tahun ke-2: $7.200.000 - 1.440.000 = \\text{Rp}5.760.000,00$\n   Pernyataan B bernilai **BENAR**.\n\n3. **Total Pajak Penghasilan (Pernyataan D):**\n   $$\\text{Total Pajak} = 2.400.000 + 1.440.000 = \\text{Rp}3.840.000,00$$\n   Pernyataan D bernilai **SALAH** (disebutkan Rp2.880.000,00).\n\n4. **Pencairan Akhir Rekening pada Akhir Tahun ke-2:**\n   - Komponen pencairan: Sisa pokok aktif ($60.000.000$) + Laba bersih tahun ke-2 ($5.760.000$)\n   - Subtotal sebelum biaya administrasi: $\\text{Rp}65.760.000,00$\n   - Biaya administrasi penutupan rekening: $\\text{Rp}150.000,00$\n   - Total dana bersih diterima:\n     $$65.760.000 - 150.000 = \\text{Rp}65.610.000,00$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Formula $M_t = M_0 (1 + i)^t$ menunjukkan hubungan fungsi eksponensial terhadap waktu $t$."
   },
   {
     "id": "matwa-bunga-tunggal-majemuk-07",
@@ -121,18 +215,35 @@
     "difficulty": "HOTS",
     "question_text": "Seorang kepala keluarga mengikuti program tabungan rencana pendidikan dengan menyetorkan uang sebesar **Rp1.000.000,00** secara rutin pada **setiap awal tahun** selama 3 tahun berturut-turut. Lembaga keuangan memberikan bunga majemuk sebesar **10% per tahun** yang dihitung pada setiap akhir tahun.\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai akumulasi nilai tabungan rencana tersebut!",
     "options": [
-      { "id": "A", "text": "Total akumulasi modal pokok yang telah disetorkan selama 3 tahun adalah Rp3.000.000,00." },
-      { "id": "B", "text": "Total saldo akhir tabungan pendidikan pada akhir tahun ke-3 adalah Rp3.641.000,00." },
-      { "id": "C", "text": "Total keuntungan bunga majemuk yang terhimpun selama 3 tahun adalah Rp641.000,00." },
-      { "id": "D", "text": "Total saldo akhir tabungan pendidikan pada akhir tahun ke-3 adalah Rp3.310.000,00." }
+      {
+        "id": "A",
+        "text": "Total akumulasi modal pokok yang telah disetorkan selama 3 tahun adalah Rp3.000.000,00."
+      },
+      {
+        "id": "B",
+        "text": "Total saldo akhir tabungan pendidikan pada akhir tahun ke-3 adalah Rp3.641.000,00."
+      },
+      {
+        "id": "C",
+        "text": "Total keuntungan bunga majemuk yang terhimpun selama 3 tahun adalah Rp641.000,00."
+      },
+      {
+        "id": "D",
+        "text": "Total saldo akhir tabungan pendidikan pada akhir tahun ke-3 adalah Rp3.310.000,00."
+      },
+      {
+        "id": "E",
+        "text": "Perhitungan tabungan setoran berkala (anuitas) memanfaatkan prinsip deret geometri."
+      }
     ],
     "correct_answer": [
       "A",
       "B",
-      "C"
+      "C",
+      "E"
     ],
     "hint": "Hitung nilai masa depan masing-masing setoran: setoran ke-1 berbunga selama 3 tahun ($1.000.000 \\times 1,1^3$), setoran ke-2 berbunga selama 2 tahun ($1.000.000 \\times 1,1^2$), dan setoran ke-3 berbunga selama 1 tahun ($1.000.000 \\times 1,1$).",
-    "explanation": "Langkah-langkah evaluasi tabungan anuitas awal periode (*annuity due*):\n\n1. **Total Setoran Pokok (Pernyataan A):**\n   Nasabah menyetor 3 kali sebesar Rp1.000.000,00:\n   $$\\text{Total Pokok} = 3 \\times 1.000.000 = \\text{Rp}3.000.000,00$$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Akumulasi Saldo pada Akhir Tahun ke-3:**\n   Karena setoran dilakukan di awal tahun, setiap setoran mengalami periode pemajemukan yang berbeda hingga akhir tahun ke-3:\n   - Setoran ke-1 (awal th-1) berbunga selama 3 tahun:\n     $$1.000.000 \\times (1,1)^3 = 1.000.000 \\times 1,331 = \\text{Rp}1.331.000,00$$\n   - Setoran ke-2 (awal th-2) berbunga selama 2 tahun:\n     $$1.000.000 \\times (1,1)^2 = 1.000.000 \\times 1,21 = \\text{Rp}1.210.000,00$$\n   - Setoran ke-3 (awal th-3) berbunga selama 1 tahun:\n     $$1.000.000 \\times (1,1)^1 = 1.000.000 \\times 1,10 = \\text{Rp}1.100.000,00$$\n   - Total saldo akhir tabungan:\n     $$FV = 1.331.000 + 1.210.000 + 1.100.000 = \\text{Rp}3.641.000,00$$\n   Pernyataan B bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\n3. **Total Keuntungan Bunga (Pernyataan C):**\n   $$\\text{Total Bunga} = FV - \\text{Total Pokok} = 3.641.000 - 3.000.000 = \\text{Rp}641.000,00$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+    "explanation": "Langkah-langkah evaluasi tabungan anuitas awal periode (*annuity due*):\n\n1. **Total Setoran Pokok (Pernyataan A):**\n   Nasabah menyetor 3 kali sebesar Rp1.000.000,00:\n   $$\\text{Total Pokok} = 3 \\times 1.000.000 = \\text{Rp}3.000.000,00$$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Akumulasi Saldo pada Akhir Tahun ke-3:**\n   Karena setoran dilakukan di awal tahun, setiap setoran mengalami periode pemajemukan yang berbeda hingga akhir tahun ke-3:\n   - Setoran ke-1 (awal th-1) berbunga selama 3 tahun:\n     $$1.000.000 \\times (1,1)^3 = 1.000.000 \\times 1,331 = \\text{Rp}1.331.000,00$$\n   - Setoran ke-2 (awal th-2) berbunga selama 2 tahun:\n     $$1.000.000 \\times (1,1)^2 = 1.000.000 \\times 1,21 = \\text{Rp}1.210.000,00$$\n   - Setoran ke-3 (awal th-3) berbunga selama 1 tahun:\n     $$1.000.000 \\times (1,1)^1 = 1.000.000 \\times 1,10 = \\text{Rp}1.100.000,00$$\n   - Total saldo akhir tabungan:\n     $$FV = 1.331.000 + 1.210.000 + 1.100.000 = \\text{Rp}3.641.000,00$$\n   Pernyataan B bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\n3. **Total Keuntungan Bunga (Pernyataan C):**\n   $$\\text{Total Bunga} = FV - \\text{Total Pokok} = 3.641.000 - 3.000.000 = \\text{Rp}641.000,00$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Jumlah seluruh akumulasi setoran berkala merupakan penjumlahan suku-suku deret geometri dengan faktor pengali $(1 + i)$."
   },
   {
     "id": "matwa-bunga-tunggal-majemuk-08",
