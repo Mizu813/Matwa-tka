@@ -1,0 +1,78 @@
+[
+  {
+    "id": "exp-pg-1",
+    "chapter_id": "bilangan-real",
+    "sub_chapter_id": "eksponen-dan-akar",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "title": "Penyederhanaan Pecahan Aljabar Bentuk Eksponen",
+    "question_text": "Bentuk sederhana dari ekspresi aljabar pecahan berpangkat:\n$$\\left( \\frac{a^{3} b^{-2} c^{4}}{a^{-1} b^{4} c^{-2}} \\right)^{\\frac{1}{2}}$$\nadalah ...",
+    "options": [
+      { "id": "A", "label": "A", "text": "$\\frac{a^2 c^3}{b^3}$" },
+      { "id": "B", "label": "B", "text": "$\\frac{a^4 c^6}{b^6}$" },
+      { "id": "C", "label": "C", "text": "$\\frac{a c^2}{b}$" },
+      { "id": "D", "label": "D", "text": "$\\frac{a^2 b^3}{c^3}$" },
+      { "id": "E", "label": "E", "text": "$a^2 b^3 c^3$" }
+    ],
+    "correct_answer": "A",
+    "explanation": "Langkah-langkah penyederhanaan eksponen rasional:\n\n1. Sederhanakan suku di dalam kurung menggunakan sifat $\\frac{x^m}{x^n} = x^{m-n}$:\n   - Variabel $a$: $\\frac{a^3}{a^{-1}} = a^{3 - (-1)} = a^4$\n   - Variabel $b$: $\\frac{b^{-2}}{b^4} = b^{-2 - 4} = b^{-6} = \\frac{1}{b^6}$\n   - Variabel $c$: $\\frac{c^4}{c^{-2}} = c^{4 - (-2)} = c^6$\n\n   Sehingga bentuk dalam kurung menjadi:\n   $$\\frac{a^4 c^6}{b^6}$$\n\n2. Pangkatkan seluruh bentuk dengan eksponen $\\frac{1}{2}$ menggunakan sifat $(x^m)^n = x^{m \\cdot n}$:\n   $$\\left( \\frac{a^4 c^6}{b^6} \\right)^{\\frac{1}{2}} = \\frac{a^{4 \\cdot \\frac{1}{2}} c^{6 \\cdot \\frac{1}{2}}}{b^{6 \\cdot \\frac{1}{2}}} = \\frac{a^2 c^3}{b^3}$$\n\nJadi, jawaban yang benar adalah **A**."
+  },
+  {
+    "id": "exp-mcma-2",
+    "chapter_id": "bilangan-real",
+    "sub_chapter_id": "eksponen-dan-akar",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "title": "Analisis Kebenaran Relasi Eksponen dan Bentuk Akar",
+    "question_text": "Perhatikan tabel relasi bentuk eksponen dan bentuk akar untuk bilangan real positif $a > 0$ dan $b > 0$ berikut:\n\n| No | Bentuk Awal | Bentuk Ekuivalen |\n| :---: | :--- | :--- |\n| (1) | $\\sqrt{a^3 \\cdot \\sqrt[3]{a^6}}$ | $a^{5/2}$ |\n| (2) | $(a^{-2} b^3)^{-\\frac{1}{2}}$ | $\\frac{a}{\\sqrt{b^3}}$ |\n| (3) | $\\frac{a^{2/3} - b^{2/3}}{a^{1/3} + b^{1/3}}$ | $a^{1/3} - b^{1/3}$ |\n| (4) | $\\sqrt[3]{a^6 b^9}$ | $a^3 b^3$ |\n\nPilihlah **SEMUA** pernyataan nomor yang bernilai **BENAR**!",
+    "options": [
+      { "id": "A", "label": "A", "text": "Pernyataan (1): $\\sqrt{a^3 \\cdot \\sqrt[3]{a^6}} = a^{5/2}$" },
+      { "id": "B", "label": "B", "text": "Pernyataan (2): $(a^{-2} b^3)^{-\\frac{1}{2}} = \\frac{a}{\\sqrt{b^3}}$" },
+      { "id": "C", "label": "C", "text": "Pernyataan (3): $\\frac{a^{2/3} - b^{2/3}}{a^{1/3} + b^{1/3}} = a^{1/3} - b^{1/3}$" },
+      { "id": "D", "label": "D", "text": "Pernyataan (4): $\\sqrt[3]{a^6 b^9} = a^3 b^3$" }
+    ],
+    "correct_answer": ["A", "B", "C"],
+    "explanation": "Mari kita uji kebenaran tiap pernyataan secara sistematis:\n\n- **Pernyataan (1) - BENAR:**\n  $$\\sqrt[3]{a^6} = a^{6/3} = a^2$$\n  $$\\sqrt{a^3 \\cdot a^2} = \\sqrt{a^5} = a^{5/2}$$\n\n- **Pernyataan (2) - BENAR:**\n  $$(a^{-2} b^3)^{-\\frac{1}{2}} = a^{(-2)(-\\frac{1}{2})} \\cdot b^{3(-\\frac{1}{2})} = a^1 \\cdot b^{-\\frac{3}{2}} = \\frac{a}{\\sqrt{b^3}}$$\n\n- **Pernyataan (3) - BENAR:**\n  Gunakan faktorisasi selisih kuadrat $x^2 - y^2 = (x - y)(x + y)$ dengan memisalkan $x = a^{1/3}$ dan $y = b^{1/3}$:\n  $$\\frac{(a^{1/3})^2 - (b^{1/3})^2}{a^{1/3} + b^{1/3}} = \\frac{(a^{1/3} - b^{1/3})(a^{1/3} + b^{1/3})}{a^{1/3} + b^{1/3}} = a^{1/3} - b^{1/3}$$\n\n- **Pernyataan (4) - SALAH:**\n  $$\\sqrt[3]{a^6 b^9} = a^{6/3} b^{9/3} = a^2 b^3 \\neq a^3 b^3$$\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**."
+  },
+  {
+    "id": "exp-kategori-3",
+    "chapter_id": "bilangan-real",
+    "sub_chapter_id": "eksponen-dan-akar",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "title": "Evaluasi Kebenaran Operasi Bentuk Akar dan Merasionalkan Penyebut",
+    "question_text": "Tentukan kebenaran dari masing-masing pernyataan matematika mengenai bentuk akar di bawah ini dengan memilih **Benar** atau **Salah** pada setiap baris:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Jika $a = 2 + \\sqrt{3}$ dan $b = 2 - \\sqrt{3}$, maka nilai dari $a^2 + b^2 = 14$."
+      },
+      {
+        "id": "B",
+        "text": "Bentuk rasional penyebut dari pecahan $\\frac{4}{\\sqrt{5} - 1}$ adalah $\\sqrt{5} + 1$."
+      },
+      {
+        "id": "C",
+        "text": "Nilai penyederhanaan bentuk akar bersarang $\\sqrt{7 + 2\\sqrt{10}}$ identik dengan $\\sqrt{5} - \\sqrt{2}$."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Salah"
+    },
+    "explanation": "Analisis kebenaran setiap pernyataan:\n\n1. **Pernyataan A (Benar):**\n   $$a + b = (2 + \\sqrt{3}) + (2 - \\sqrt{3}) = 4$$\n   $$a \\cdot b = (2 + \\sqrt{3})(2 - \\sqrt{3}) = 4 - 3 = 1$$\n   $$a^2 + b^2 = (a+b)^2 - 2ab = 4^2 - 2(1) = 16 - 2 = 14$$\n\n2. **Pernyataan B (Benar):**\n   $$\\frac{4}{\\sqrt{5} - 1} \\times \\frac{\\sqrt{5} + 1}{\\sqrt{5} + 1} = \\frac{4(\\sqrt{5} + 1)}{(\\sqrt{5})^2 - 1^2} = \\frac{4(\\sqrt{5} + 1)}{5 - 1} = \\frac{4(\\sqrt{5} + 1)}{4} = \\sqrt{5} + 1$$\n\n3. **Pernyataan C (Salah):**\n   Bentuk akar bersarang $\\sqrt{(p+q) + 2\\sqrt{pq}} = \\sqrt{p} + \\sqrt{q}$.\n   Dengan $p=5$ dan $q=2$, maka $p+q=7$ dan $pq=10$.\n   Maka $\\sqrt{7 + 2\\sqrt{10}} = \\sqrt{5} + \\sqrt{2}$, bukan $\\sqrt{5} - \\sqrt{2}$."
+  },
+  {
+    "id": "exp-ds-4",
+    "chapter_id": "bilangan-real",
+    "sub_chapter_id": "eksponen-dan-akar",
+    "question_type": "KECUKUPAN_DATA",
+    "difficulty": "HOTS",
+    "title": "Kecukupan Data: Nilai Eksponen Dua Variabel",
+    "question_text": "Berapakah nilai dari ekspresi $2^{2x - y}$?\n\n<div class=\"flex justify-center my-3\"><svg viewBox=\"0 0 260 90\" class=\"w-56 h-auto drop-shadow-sm\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"10\" width=\"240\" height=\"70\" rx=\"12\" fill=\"#1E293B\" stroke=\"#6366F1\" stroke-width=\"2\"/><text x=\"130\" y=\"38\" fill=\"#E2E8F0\" font-size=\"14\" font-family=\"monospace\" text-anchor=\"middle\" font-weight=\"bold\">Target: 2^(2x - y) = ?</text><text x=\"130\" y=\"62\" fill=\"#38BDF8\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\">(1) 4^x = 64 · 2^y   |   (2) x + y = 5</text></svg></div>\n\n(1) $4^x = 64 \\cdot 2^y$\n(2) $x + y = 5$\n\nPutuskan apakah pernyataan (1) dan (2) tersebut cukup untuk menjawab pertanyaan.",
+    "options": [],
+    "correct_answer": "A",
+    "explanation": "Target pertanyaan: Menentukan nilai eksak dari $2^{2x - y}$.\n\n- **Analisis Pernyataan (1):**\n  $$4^x = 64 \\cdot 2^y$$\n  Ubah semua suku ke basis 2:\n  $$(2^2)^x = 2^6 \\cdot 2^y$$\n  $$2^{2x} = 2^{6+y}$$\n  Bagi kedua ruas dengan $2^y$:\n  $$\\frac{2^{2x}}{2^y} = 2^6 \\implies 2^{2x - y} = 64$$\n  Nilai dari $2^{2x - y}$ dapat ditentukan secara pasti bernilai 64.\n  Maka, **Pernyataan (1) SAJA CUKUP**.\n\n- **Analisis Pernyataan (2):**\n  $$x + y = 5$$\n  Persamaan ini memiliki tak hingga pasangan solusi $(x, y)$, seperti $(1, 4) \\implies 2x - y = -2$, atau $(3, 2) \\implies 2x - y = 4$, yang menghasilkan nilai $2^{2x - y}$ berbeda-beda.\n  Maka, **Pernyataan (2) SAJA TIDAK CUKUP**.\n\nKesimpulan: Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (2) SAJA tidak cukup (**Jawaban A**)."
+  }
+]
