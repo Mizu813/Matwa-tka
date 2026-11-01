@@ -1,1 +1,228 @@
-[]
+[
+  {
+    "id": "matwa-domain-range-grafik-fungsi-01",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "domain-range-grafik-fungsi",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dalam pengujian ketahanan mesin kendaraan, indeks kekentalan (*viscosity index*) suatu pelumas sintetik dimodelkan sebagai fungsi kuadrat terhadap temperatur kerja mesin $T$ (dalam derajat Celsius, $20 \\le T \\le 100$):\n$$V(T) = -\\frac{1}{20}(T - 60)^2 + 100$$\n\nStandar mutu performa pelumas mesin ditetapkan berdasarkan tabel indikator berikut:\n\n| Status Performa | Rentang Indeks Kekentalan $V(T)$ |\n| :--- | :--- |\n| Sub-Optimal | $V(T) < 80$ |\n| Efisien Normal | $80 \\le V(T) < 95$ |\n| Performa Optimal (Prima) | $95 \\le V(T) \\le 100$ |\n\nBerdasarkan tabel indikator tersebut, interval temperatur kerja mesin $T$ agar pelumas bekerja pada status **Performa Optimal (Prima)** adalah ...",
+    "options": [
+      { "id": "A", "text": "$50 \\le T \\le 70$" },
+      { "id": "B", "text": "$40 \\le T \\le 80$" },
+      { "id": "C", "text": "$55 \\le T \\le 65$" },
+      { "id": "D", "text": "$45 \\le T \\le 75$" },
+      { "id": "E", "text": "$60 \\le T \\le 80$" }
+    ],
+    "correct_answer": "A",
+    "hint": "Substitusikan rumus $V(T)$ ke dalam pertidaksamaan performa optimal $95 \\le V(T) \\le 100$. Sederhanakan pertidaksamaan kuadrat $(T - 60)^2 \\le 100$ untuk menentukan interval nilai $T$.",
+    "explanation": "Langkah-langkah evaluasi interval fungsi kuadrat terhadap tabel indikator:\n\n1. Syarat pelumas berada pada status *Performa Optimal (Prima)*:\n   $$95 \\le V(T) \\le 100$$\n\n2. Masukkan rumus fungsi $V(T)$:\n   $$95 \\le -\\frac{1}{20}(T - 60)^2 + 100 \\le 100$$\n\n3. Kurangkan 100 dari seluruh ruas:\n   $$-5 \\le -\\frac{1}{20}(T - 60)^2 \\le 0$$\n\n4. Kalikan seluruh ruas dengan $-20$ (ingat tanda pertidaksamaan berbalik):\n   $$0 \\le (T - 60)^2 \\le 100$$\n\n5. Tarik akar kuadrat pada pertidaksamaan $(T - 60)^2 \\le 100$:\n   $$-10 \\le T - 60 \\le 10$$\n   Tambahkan 60 ke seluruh ruas:\n   $$50 \\le T \\le 70$$\n\nJadi, pelumas bekerja optimal pada rentang temperatur **50 <= T <= 70 derajat Celsius** (Opsi **A**)."
+  },
+  {
+    "id": "matwa-domain-range-grafik-fungsi-02",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "domain-range-grafik-fungsi",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan fungsi kuadrat:\n$$f(x) = -2x^2 + 8x - 6$$\nPernyataan yang **BENAR** mengenai sifat geometris dan letak titik puncak grafik parabola tersebut adalah ...",
+    "options": [
+      { "id": "A", "text": "Kurva parabola terbuka ke bawah, memiliki titik puncak $(2, 2)$ di Kuadran I, dan memotong sumbu-$X$ di dua titik positif $(1, 0)$ dan $(3, 0)$" },
+      { "id": "B", "text": "Kurva parabola terbuka ke atas, memiliki titik puncak $(2, 2)$ di Kuadran I, dan memotong sumbu-$X$ di dua titik positif" },
+      { "id": "C", "text": "Kurva parabola terbuka ke bawah, memiliki titik puncak $(-2, 2)$ di Kuadran II, dan tidak memotong sumbu-$X$" },
+      { "id": "D", "text": "Kurva parabola terbuka ke bawah, memiliki titik puncak $(2, -2)$ di Kuadran IV, dan memotong sumbu-$Y$ positif" },
+      { "id": "E", "text": "Kurva parabola terbuka ke atas, memiliki titik puncak $(2, -6)$ di Kuadran IV, dan memotong sumbu-$X$ di dua titik berbeda" }
+    ],
+    "correct_answer": "A",
+    "hint": "Periksa tanda koefisien $a = -2$ untuk menentukan arah keterbukaan parabola. Gunakan rumus absis puncak $x_p = -\\frac{b}{2a}$ dan substitusikan ke fungsi untuk memperoleh ordinat puncak $y_p$.",
+    "explanation": "Langkah-langkah analisis kurva fungsi kuadrat:\n\n1. Koefisien fungsi: $a = -2, b = 8, c = -6$.\n   Karena $a = -2 < 0$, kurva parabola **terbuka ke bawah**.\n\n2. Tentukan koordinat titik puncak $(x_p, y_p)$:\n   $$x_p = -\\frac{b}{2a} = -\\frac{8}{2(-2)} = -\\frac{8}{-4} = 2$$\n   $$y_p = f(2) = -2(2)^2 + 8(2) - 6 = -8 + 16 - 6 = 2$$\n   Titik puncak berada di $(2, 2)$ yang terletak di **Kuadran I**.\n\n3. Tentukan titik potong dengan sumbu-$X$ ($f(x) = 0$):\n   $$-2x^2 + 8x - 6 = 0 \\implies x^2 - 4x + 3 = 0 \\implies (x - 1)(x - 3) = 0$$\n   Kurva memotong sumbu-$X$ di dua titik berabsis positif: $(1, 0)$ dan $(3, 0)$.\n\nJadi, pernyataan yang tepat adalah **A**."
+  },
+  {
+    "id": "matwa-domain-range-grafik-fungsi-03",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "domain-range-grafik-fungsi",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Daerah asal alami (*natural domain*) $D_f$ dari fungsi akar-rasional:\n$$f(x) = \\sqrt{\\frac{x^2 - 8x + 12}{x - 3}}$$\nagar terdefinisi pada himpunan bilangan real adalah ...",
+    "options": [
+      { "id": "A", "text": "$\\{x \\in \\mathbb{R} \\mid 2 \\le x < 3 \\quad \\text{atau} \\quad x \\ge 6\\}$" },
+      { "id": "B", "text": "$\\{x \\in \\mathbb{R} \\mid x \\le 2 \\quad \\text{atau} \\quad 3 < x \\le 6\\}$" },
+      { "id": "C", "text": "$\\{x \\in \\mathbb{R} \\mid 2 < x < 3 \\quad \\text{atau} \\quad x > 6\\}$" },
+      { "id": "D", "text": "$\\{x \\in \\mathbb{R} \\mid 3 < x \\le 6\\}$" },
+      { "id": "E", "text": "$\\{x \\in \\mathbb{R} \\mid x \\ge 2, \\quad x \\neq 3\\}$" }
+    ],
+    "correct_answer": "A",
+    "hint": "Syarat fungsi akar adalah nilai pecahan di dalam akar harus non-negatif (>= 0), dan penyebut tidak boleh bernilai nol ($x - 3 \\neq 0$). Faktorkan pembilang $(x - 2)(x - 6)$ lalu uji tanda pada garis bilangan.",
+    "explanation": "Langkah-langkah penentuan domain fungsi akar-rasional:\n\n1. Syarat agar bentuk akar terdefinisi pada bilangan real:\n   $$\\frac{x^2 - 8x + 12}{x - 3} \\ge 0$$\n   dengan syarat penyebut tidak boleh nol:\n   $$x - 3 \\neq 0 \\implies x \\neq 3$$\n\n2. Faktorkan bagian pembilang:\n   $$x^2 - 8x + 12 = (x - 2)(x - 6)$$\n   Pertidaksamaannya menjadi:\n   $$\\frac{(x - 2)(x - 6)}{x - 3} \\ge 0$$\n\n3. Tentukan titik-titik kritis pada garis bilangan: $x = 2$, $x = 3$, dan $x = 6$.\n\n4. Uji tanda pada tiap interval:\n   - Interval $x < 2$ (misal $x = 0$): $\\frac{(-2)(-6)}{-3} = -4 < 0$ (Negatif)\n   - Interval $2 \\le x < 3$ (misal $x = 2,5$): $\\frac{(+0,5)(-3,5)}{-0,5} = +3,5 > 0$ (Positif $\\implies$ Memenuhi)\n   - Interval $3 < x < 6$ (misal $x = 4$): $\\frac{(+2)(-2)}{+1} = -4 < 0$ (Negatif)\n   - Interval $x \\ge 6$ (misal $x = 7$): $\\frac{(+5)(+1)}{+4} = +1,25 > 0$ (Positif $\\implies$ Memenuhi)\n\n5. Karena pembilang boleh bernilai 0 ($x = 2$ dan $x = 6$ termasuk solusi tertutup), sedangkan penyebut tidak boleh nol ($x = 3$ interval terbuka), maka domainnya adalah:\n   $$D_f = \\{x \\in \\mathbb{R} \\mid 2 \\le x < 3 \\quad \\text{atau} \\quad x \\ge 6\\}$$\n\nJadi, jawaban yang benar adalah **A**."
+  },
+  {
+    "id": "matwa-domain-range-grafik-fungsi-04",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "domain-range-grafik-fungsi",
+    "question_type": "PG",
+    "difficulty": "HOTS",
+    "question_text": "Diberikan fungsi rasional:\n$$f(x) = \\frac{2x + 1}{x - 2}$$\npada domain terbatas $D_f = \\{x \\in \\mathbb{R} \\mid 3 \\le x \\le 5\\}$. Daerah hasil (*range*) $R_f$ dari fungsi tersebut adalah ...",
+    "options": [
+      { "id": "A", "text": "$\\left\\{y \\in \\mathbb{R} \\;\\middle|\\; \\frac{11}{3} \\le y \\le 7\\right\\}$" },
+      { "id": "B", "text": "$\\{y \\in \\mathbb{R} \\mid 3 \\le y \\le 7\\}$" },
+      { "id": "C", "text": "$\\left\\{y \\in \\mathbb{R} \\;\\middle|\\; \\frac{7}{3} \\le y \\le 5\\right\\}$" },
+      { "id": "D", "text": "$\\{y \\in \\mathbb{R} \\mid y \\ge 7\\}$" },
+      { "id": "E", "text": "$\\left\\{y \\in \\mathbb{R} \\;\\middle|\\; y \\le \\frac{11}{3} \\quad \\text{atau} \\quad y \\ge 7\\right\\}$" }
+    ],
+    "correct_answer": "A",
+    "hint": "Periksa kemonotonan fungsi dengan menghitung turunan pertama $f'(x)$. Karena $f'(x) = -\\frac{5}{(x - 2)^2} < 0$, fungsi selalu monoton turun pada interval $[3, 5]$, sehingga nilai maksimum tercapai di $x = 3$ dan minimum di $x = 5$.",
+    "explanation": "Langkah-langkah mencari range fungsi rasional pada domain tertutup:\n\n1. Periksa kontinuitas fungsi $f(x)$ pada domain $[3, 5]$:\n   Asimtot tegak berada di $x = 2$, yang berada di luar interval $[3, 5]$. Sehingga $f(x)$ kontinu pada seluruh interval $[3, 5]$.\n\n2. Uji turunan pertama untuk mengetahui kemonotonan:\n   $$f'(x) = \\frac{2(x - 2) - 1(2x + 1)}{(x - 2)^2} = \\frac{2x - 4 - 2x - 1}{(x - 2)^2} = \\frac{-5}{(x - 2)^2}$$\n   Karena $(x - 2)^2 > 0$, maka $f'(x) < 0$ untuk seluruh $x \\in [3, 5]$. Artinya fungsi $f(x)$ **monoton turun** (*strictly decreasing*).\n\n3. Evaluasi nilai fungsi pada batas interval domain:\n   - Nilai maksimum tercapai pada batas kiri ($x = 3$):\n     $$f(3) = \\frac{2(3) + 1}{3 - 2} = \\frac{7}{1} = 7$$\n   - Nilai minimum tercapai pada batas kanan ($x = 5$):\n     $$f(5) = \\frac{2(5) + 1}{5 - 2} = \\frac{11}{3}$$\n\n4. Daerah hasil (*range*) fungsi:\n   $$R_f = \\left\\{y \\in \\mathbb{R} \\;\\middle|\\; \\frac{11}{3} \\le y \\le 7\\right\\}$$\n\nJadi, jawaban yang benar adalah **A**."
+  },
+  {
+    "id": "matwa-domain-range-grafik-fungsi-05",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "domain-range-grafik-fungsi",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan fungsi rasional:\n$$f(x) = \\frac{3x - 6}{x + 2}$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai asimtot dan titik potong grafiknya!",
+    "options": [
+      { "id": "A", "text": "Asimtot tegak kurva adalah garis vertikal $x = -2$." },
+      { "id": "B", "text": "Asimtot datar kurva adalah garis horizontal $y = 3$." },
+      { "id": "C", "text": "Grafik fungsi memotong sumbu-$X$ di titik $(2, 0)$ dan memotong sumbu-$Y$ di titik $(0, -3)$." },
+      { "id": "D", "text": "Asimtot datar kurva adalah garis horizontal $y = -2$." }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Asimtot tegak dicari dari pembuat nol penyebut ($x + 2 = 0$). Asimtot datar dicari dari limit fungsi saat $x \\to \\pm\\infty$. Titik potong sumbu koordinat dicari saat $y = 0$ dan $x = 0$.",
+    "explanation": "Analisis karakteristik grafik fungsi rasional:\n\n- **Asimtot Tegak:**\n  Penyebut sama dengan nol: $x + 2 = 0 \\implies x = -2$. (Pernyataan A **BENAR**)\n\n- **Asimtot Datar:**\n  Hitung limit menuju tak hingga:\n  $$\\lim_{x \\to \\infty} \\frac{3x - 6}{x + 2} = \\lim_{x \\to \\infty} \\frac{3 - 6/x}{1 + 2/x} = 3$$\n  Garis $y = 3$ merupakan asimtot datar. (Pernyataan B **BENAR**, Pernyataan D **SALAH**)\n\n- **Titik Potong Sumbu Koordinat:**\n  - Titik potong sumbu-$X$ ($f(x) = 0$): $3x - 6 = 0 \\implies x = 2 \\implies (2, 0)$.\n  - Titik potong sumbu-$Y$ ($x = 0$): $f(0) = \\frac{3(0) - 6}{0 + 2} = -3 \\implies (0, -3)$.\n  (Pernyataan C **BENAR**)\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**."
+  },
+  {
+    "id": "matwa-domain-range-grafik-fungsi-06",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "domain-range-grafik-fungsi",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Diberikan fungsi kuadrat:\n$$f(x) = x^2 - 4x + 7$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai sifat fungsi dan grafiknya!",
+    "options": [
+      { "id": "A", "text": "Fungsi $f(x)$ bersifat definit positif ($f(x) > 0$ untuk setiap bilangan real $x$)." },
+      { "id": "B", "text": "Nilai minimum fungsi adalah 3 yang tercapai pada absis $x = 2$." },
+      { "id": "C", "text": "Grafik fungsi $f(x)$ identik dengan grafik parabola $y = x^2$ yang ditranslasikan 2 satuan ke kanan dan 3 satuan ke atas." },
+      { "id": "D", "text": "Grafik parabola memotong sumbu-$X$ di dua titik koordinat real berbeda." }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Ubah fungsi ke bentuk kuadrat sempurna $f(x) = (x - 2)^2 + 3$. Tinjau nilai diskriminan $D = b^2 - 4ac$ dan koefisien $a$ untuk membuktikan sifat definit positif.",
+    "explanation": "Langkah-langkah analisis bentuk kanonik kuadrat:\n\n1. Bentuk kuadrat sempurna:\n   $$f(x) = (x^2 - 4x + 4) + 3 = (x - 2)^2 + 3$$\n\n2. Analisis titik puncak dan nilai ekstrem:\n   Karena $(x - 2)^2 \\ge 0$, nilai minimum $f(x)$ adalah $0 + 3 = 3$ saat $x = 2$. Titik puncak berada di $(2, 3)$. (Pernyataan B **BENAR**)\n\n3. Uji definit positif:\n   - Koefisien $a = 1 > 0$\n   - Diskriminan $D = (-4)^2 - 4(1)(7) = 16 - 28 = -12 < 0$\n   Karena $a > 0$ dan $D < 0$, kurva parabola seluruhnya melayang di atas sumbu-$X$ tanpa pernah memotong atau menyinggung sumbu-$X$ ($f(x) > 0$ untuk setiap $x \\in \\mathbb{R}$). (Pernyataan A **BENAR**, Pernyataan D **SALAH**)\n\n4. Transformasi translasi grafik:\n   Persamaan $y = (x - 2)^2 + 3$ diperoleh dari $y = x^2$ dengan menggeser 2 satuan searah sumbu-$X$ positif (kanan) dan 3 satuan searah sumbu-$Y$ positif (atas). (Pernyataan C **BENAR**)\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**."
+  },
+  {
+    "id": "matwa-domain-range-grafik-fungsi-07",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "domain-range-grafik-fungsi",
+    "question_type": "MCMA",
+    "difficulty": "HOTS",
+    "question_text": "Diberikan fungsi nilai mutlak:\n$$f(x) = |2x - 6| - 4$$\npada domain seluruh bilangan real $x \\in \\mathbb{R}$. Pilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR**!",
+    "options": [
+      { "id": "A", "text": "Titik balik minimum grafik fungsi berada di titik koordinat $(3, -4)$." },
+      { "id": "B", "text": "Daerah hasil (*range*) dari fungsi adalah $\\{y \\in \\mathbb{R} \\mid y \\ge -4\\}$." },
+      { "id": "C", "text": "Grafik fungsi memotong sumbu-$X$ tepat di dua titik, yaitu $(1, 0)$ dan $(5, 0)$." },
+      { "id": "D", "text": "Grafik fungsi memiliki sumbu simetri berupa garis horizontal $y = 3$." }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Sifat nilai mutlak $|2x - 6| \\ge 0$ mencapai nilai terkecil 0 saat $2x - 6 = 0$. Selesaikan $|2x - 6| - 4 = 0$ untuk mencari titik potong sumbu-$X$.",
+    "explanation": "Analisis grafik fungsi nilai mutlak:\n\n- **Titik Balik Minimum & Range:**\n  Karena $|2x - 6| \\ge 0$, nilai minimum tercapai saat $2x - 6 = 0 \\implies x = 3$.\n  $$f(3) = |0| - 4 = -4$$\n  Titik balik minimum berada di $(3, -4)$ (Pernyataan A **BENAR**).\n  Karena nilai terendah adalah $-4$, maka daerah hasil adalah $R_f = \\{y \\in \\mathbb{R} \\mid y \\ge -4\\}$ (Pernyataan B **BENAR**).\n\n- **Titik Potong Sumbu-$X$ ($f(x) = 0$):**\n  $$|2x - 6| - 4 = 0 \\implies |2x - 6| = 4$$\n  - Kasus 1: $2x - 6 = 4 \\implies 2x = 10 \\implies x = 5$\n  - Kasus 2: $2x - 6 = -4 \\implies 2x = 2 \\implies x = 1$\n  Grafik memotong sumbu-$X$ di titik $(1, 0)$ dan $(5, 0)$ (Pernyataan C **BENAR**).\n\n- **Sumbu Simetri:**\n  Grafik simetris terhadap garis **vertikal** $x = 3$, bukan garis horizontal $y = 3$ (Pernyataan D **SALAH**).\n\nOleh karena itu, opsi yang benar adalah **A, B, dan C**."
+  },
+  {
+    "id": "matwa-domain-range-grafik-fungsi-08",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "domain-range-grafik-fungsi",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Tentukan kebenaran dari masing-masing pernyataan matematika mengenai domain, range, dan karakteristik fungsi di bawah ini dengan memilih **Benar** atau **Salah** pada setiap baris:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Domain alami dari fungsi $f(x) = \\sqrt{9 - x^2}$ adalah interval tertutup $[-3, 3]$, dan range dari fungsi tersebut adalah interval tertutup $[0, 3]$."
+      },
+      {
+        "id": "B",
+        "text": "Grafik fungsi linear $f(x) = -\\frac{3}{4}x + 6$ melewati Kuadran I, Kuadran II, dan Kuadran IV, serta tidak pernah melintasi Kuadran III."
+      },
+      {
+        "id": "C",
+        "text": "Fungsi kuadrat $f(x) = ax^2 + bx + c$ dengan $a \\neq 0$ selalu memiliki fungsi invers yang terdefinisi pada seluruh domain bilangan real $\\mathbb{R}$."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Benar",
+      "C": "Salah"
+    },
+    "hint": "Fungsi setengah lingkaran $y = \\sqrt{9 - x^2}$ memiliki batas nilai $0 \\le y \\le 3$. Gambarkan letak garis bergradien negatif dengan titik potong positif. Uji garis horizontal untuk membuktikan fungsi invers pada parabola.",
+    "explanation": "Analisis keabsahan tiap pernyataan:\n\n1. **Pernyataan A (Benar):**\n   - Syarat domain: $9 - x^2 \\ge 0 \\implies x^2 \\le 9 \\implies -3 \\le x \\le 3$.\n   - Karena $0 \\le x^2 \\le 9$, maka $0 \\le 9 - x^2 \\le 9$, sehingga $0 \\le \\sqrt{9 - x^2} \\le 3$. Range adalah $[0, 3]$.\n\n2. **Pernyataan B (Benar):**\n   Titik potong sumbu-$Y$ adalah $(0, 6)$ (positif) dan titik potong sumbu-$X$ adalah $(8, 0)$ (positif).\n   - Untuk $x < 0$: $y > 6$ (Kuadran II)\n   - Untuk $0 < x < 8$: $y > 0$ (Kuadran I)\n   - Untuk $x > 8$: $y < 0$ (Kuadran IV)\n   Garis tidak pernah melintasi Kuadran III ($x < 0$ dan $y < 0$).\n\n3. **Pernyataan C (Salah):**\n   Fungsi kuadrat tidak memenuhi uji garis horizontal (*horizontal line test*) pada seluruh domain $\\mathbb{R}$ karena satu nilai $y$ dapat berasal dari dua nilai $x$ berbeda (fungsi banyak-ke-satu). Inversnya hanya ada jika domain dibatasi pada salah satu sisi sumbu simetri."
+  },
+  {
+    "id": "matwa-domain-range-grafik-fungsi-09",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "domain-range-grafik-fungsi",
+    "question_type": "KATEGORI",
+    "difficulty": "HOTS",
+    "question_text": "Tentukan kebenaran dari masing-masing pernyataan aljabar mengenai simetri kurva dan perpotongan grafik di bawah ini dengan memilih **Benar** atau **Salah** pada setiap baris:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fungsi $f(x) = \\frac{x^3}{x^2 + 1}$ merupakan fungsi ganjil (*odd function*) yang kurva grafiknya simetris terhadap titik pusat asal $(0, 0)$."
+      },
+      {
+        "id": "B",
+        "text": "Jika kurva parabola $y = x^2 - 2x$ dicerminkan terhadap sumbu-$X$, maka persamaan kurva bayangan hasil refleksinya adalah $y = -x^2 - 2x$."
+      },
+      {
+        "id": "C",
+        "text": "Perpotongan antara kurva parabola $f(x) = x^2 - 3x + 2$ dengan garis linear $g(x) = x - 1$ terjadi tepat di dua titik koordinat, yaitu $(1, 0)$ dan $(3, 2)$."
+      }
+    ],
+    "correct_answer": {
+      "A": "Benar",
+      "B": "Salah",
+      "C": "Benar"
+    },
+    "hint": "Uji $f(-x)$ untuk memeriksa sifat fungsi ganjil. Refleksi terhadap sumbu-$X$ mengubah $y$ menjadi $-y$. Samakan $f(x) = g(x)$ untuk mencari titik potong persekutuan.",
+    "explanation": "Analisis keabsahan tiap pernyataan:\n\n1. **Pernyataan A (Benar):**\n   $$f(-x) = \\frac{(-x)^3}{(-x)^2 + 1} = \\frac{-x^3}{x^2 + 1} = -\\left(\\frac{x^3}{x^2 + 1}\\right) = -f(x)$$\n   Karena $f(-x) = -f(x)$, fungsi tersebut memenuhi definisi fungsi ganjil yang simetris terhadap titik asal $(0, 0)$.\n\n2. **Pernyataan B (Salah):**\n   Pencerminan terhadap sumbu-$X$ mentransformasikan $y \\to -y$:\n   $$-y = x^2 - 2x \\implies y = -x^2 + 2x$$\n   Bukan $y = -x^2 - 2x$.\n\n3. **Pernyataan C (Benar):**\n   Samakan kedua persamaan kurva:\n   $$x^2 - 3x + 2 = x - 1 \\implies x^2 - 4x + 3 = 0 \\implies (x - 1)(x - 3) = 0$$\n   - Untuk $x = 1$: $y = 1 - 1 = 0 \\implies (1, 0)$\n   - Untuk $x = 3$: $y = 3 - 1 = 2 \\implies (3, 2)$\n   Keduanya merupakan titik potong yang tepat."
+  },
+  {
+    "id": "matwa-domain-range-grafik-fungsi-10",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "domain-range-grafik-fungsi",
+    "question_type": "KECUKUPAN_DATA",
+    "difficulty": "HOTS",
+    "question_text": "Diberikan fungsi kuadrat $f(x) = ax^2 + bx + c$.\n\n<div class=\"flex justify-center my-3\"><svg viewBox=\"0 0 280 85\" class=\"w-64 h-auto drop-shadow-sm\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"10\" width=\"260\" height=\"65\" rx=\"10\" fill=\"#1E293B\" stroke=\"#06B6D4\" stroke-width=\"2\"/><text x=\"140\" y=\"35\" fill=\"#E2E8F0\" font-size=\"13\" font-family=\"monospace\" text-anchor=\"middle\" font-weight=\"bold\">Target: Nilai Maksimum f(x) pd [0,4] = ?</text><text x=\"140\" y=\"58\" fill=\"#22D3EE\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\">(1) f(x) &gt; 0 hanya pd (1,5) | (2) Grafik lewat (0,-5)</text></svg></div>\n\nBerapakah nilai maksimum dari fungsi $f(x)$ pada domain interval tertutup $[0, 4]$?\n\n(1) Grafik fungsi $f(x)$ berada di atas sumbu-$X$ hanya pada interval terbuka $(1, 5)$.\n(2) Grafik fungsi $f(x)$ memotong sumbu-$Y$ di titik koordinat $(0, -5)$.\n\nPutuskan apakah pernyataan (1) dan (2) tersebut cukup untuk menjawab pertanyaan.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (2) SAJA tidak cukup."
+      },
+      {
+        "id": "B",
+        "text": "Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi Pernyataan (1) SAJA tidak cukup."
+      },
+      {
+        "id": "C",
+        "text": "DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup."
+      },
+      {
+        "id": "D",
+        "text": "Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan Pernyataan (2) SAJA cukup."
+      },
+      {
+        "id": "E",
+        "text": "Pernyataan (1) dan Pernyataan (2) tidak cukup untuk menjawab pertanyaan."
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Interval di atas sumbu-X pada pernyataan (1) mengindikasikan akar-akar pembuat nol di $x = 1$ dan $x = 5$ serta arah kurva terbuka ke bawah $f(x) = a(x - 1)(x - 5)$. Pernyataan (2) memberikan titik $(0, -5)$ untuk menentukan nilai parameter $a$.",
+    "explanation": "Target pertanyaan: Menentukan nilai maksimum numerik fungsi kuadrat $f(x)$ pada domain terbatas interval tertutup $[0, 4]$.\n\n- **Analisis Pernyataan (1) SAJA:**\n  Grafik berada di atas sumbu-$X$ hanya pada interval terbuka $(1, 5)$ mengindikasikan:\n  1. Pembuat nol (akar-akar): $x_1 = 1$ dan $x_2 = 5$.\n  2. Karena kurva bernilai positif di antara kedua akar dan bernilai negatif di luar akar, maka kurva terbuka ke bawah ($a < 0$).\n  Persamaan fungsinya adalah:\n  $$f(x) = a(x - 1)(x - 5) = a(x^2 - 6x + 5)$$\n  Sumbu simetri berada di $x_p = \\frac{1 + 5}{2} = 3$.\n  Karena $x_p = 3 \\in [0, 4]$, maka nilai maksimum tercapai pada $x = 3$:\n  $$f(3) = a(3 - 1)(3 - 5) = -4a$$\n  Namun karena nilai numerik parameter $a$ belum diketahui, nilai maksimum belum dapat ditentukan secara pasti.\n  Maka, **Pernyataan (1) SAJA TIDAK CUKUP**.\n\n- **Analisis Pernyataan (2) SAJA:**\n  Kurva melalui $(0, -5) \\implies c = -5$.\n  Hanya mengetahui intersep sumbu-$Y$ tanpa mengetahui nilai $a$ dan $b$ tidak cukup untuk merekonstruksi kurva.\n  Maka, **Pernyataan (2) SAJA TIDAK CUKUP**.\n\n- **Analisis Pernyataan (1) dan (2) BERSAMA-SAMA:**\n  Dari (1): $f(x) = a(x - 1)(x - 5)$.\n  Dari (2): substitusi titik $(0, -5)$:\n  $$f(0) = a(0 - 1)(0 - 5) = 5a = -5 \\implies a = -1$$\n  Dengan $a = -1$, rumus fungsi kuadrat diketahui secara pasti dan tunggal:\n  $$f(x) = -(x - 1)(x - 5) = -x^2 + 6x - 5$$\n  Pada interval domain $[0, 4]$, nilai maksimum tercapai pada puncak $x = 3$:\n  $$f(3) = -(3 - 1)(3 - 5) = -(2)(-2) = 4$$\n  Nilai maksimum dapat ditentukan secara pasti bernilai 4.\n  Maka, **DUA pernyataan BERSAMA-SAMA CUKUP**.\n\nKesimpulan: DUA pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup (**Jawaban C**)."
+  }
+]

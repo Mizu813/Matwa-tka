@@ -24,7 +24,7 @@
   - **Cakupan & Skenario Wajib:** Optimasi nilai maksimum/minimum program linear. Wajib memuat: (1) Standar: laba maksimum produksi 2 barang (meja & kursi atau 2 jenis kue) dengan kendala bahan baku, jam kerja, atau modal; (2) HOTS (MCMA): minimasi biaya pencampuran 2 jenis logam per ton yang mengandung 3 unsur berbeda (Logam Utama, P, Q dalam kg) dengan syarat batas minimum tonase tiap unsur.
 
 ### BAB 3: FUNGSI (`fungsi`)
-- [ ] **Task 06: `domain-range-grafik-fungsi`**
+- [x] **Task 06: `domain-range-grafik-fungsi`**
   - **File Target:** `docs/data/questions/domain-range-grafik-fungsi.json`
   - **Cakupan & Skenario Wajib:** Identifikasi fungsi linear, kuadrat, rasional, dan akar secara analitis & grafis. Wajib memuat: (1) Standar: evaluasi interval fungsi kekentalan pelumas mesin terhadap tabel indikator, dan sifat grafik $f(x)=a(x^2+bx+c)$ (arah terbuka, perpotongan garis, kuadran); (2) HOTS: domain & range fungsi akar-rasional $f(x)=\sqrt{\frac{x^2-8x+12}{x-3}}$; (3) HOTS: rekonstruksi $f(x)=ax^2+bx+c$ dari interval di bawah/atas sumbu-$X$ untuk mencari range pada domain terbatas dan nilai maksimum (Kecukupan Data).
 
