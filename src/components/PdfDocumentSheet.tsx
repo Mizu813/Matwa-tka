@@ -13,6 +13,7 @@ interface PdfDocumentSheetProps {
   questions: Question[];
   activeChapterTitle: string;
   activeSubChapterTitle: string;
+  activeDifficultyTab: 'STANDAR' | 'HOTS';
   userAnswers: Record<string, UserAnswerRecord>;
   onSelectOption: (questionId: string, optionId: string) => void;
   onToggleMcmaOption: (questionId: string, optionId: string) => void;
@@ -30,6 +31,7 @@ export const PdfDocumentSheet: React.FC<PdfDocumentSheetProps> = ({
   questions,
   activeChapterTitle,
   activeSubChapterTitle,
+  activeDifficultyTab,
   userAnswers,
   onSelectOption,
   onToggleMcmaOption,
@@ -55,17 +57,29 @@ export const PdfDocumentSheet: React.FC<PdfDocumentSheetProps> = ({
         </div>
 
         <h1 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight uppercase">
-          TKA MATEMATIKA WAJIB (HOTS &amp; TEKNIKAL)
+          TKA MATEMATIKA WAJIB ({activeDifficultyTab === 'HOTS' ? 'TINGKAT HOTS & PENALARAN' : 'TINGKAT STANDAR TKA'})
         </h1>
 
         <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
-          Platform asesmen mandiri interaktif 8 Bab Besar &amp; 22 Sub-bab resmi, dilengkapi visualisasi diagram teknis, rendering rumus KaTeX presisi, dan pembahasan langkah demi langkah.
+          Platform asesmen mandiri interaktif 8 Bab Besar &amp; 24 Sub-bab resmi, dilengkapi visualisasi diagram teknis, rendering rumus KaTeX presisi, dan pembahasan langkah demi langkah.
         </p>
 
         {/* Double Border Line khas dokumen resmi */}
         <div className="pt-3 border-t-2 border-b border-slate-900 dark:border-slate-100 flex flex-wrap items-center justify-between gap-2 text-[11px] font-mono text-slate-600 dark:text-slate-400 py-1.5 px-2">
           <span>BAB: <strong className="text-slate-900 dark:text-white">{activeChapterTitle.toUpperCase()}</strong></span>
           <span>SUB-BAB: <strong className="text-indigo-600 dark:text-indigo-400">{activeSubChapterTitle.toUpperCase()}</strong></span>
+          <span className="flex items-center gap-1.5">
+            HALAMAN:
+            <span
+              className={`px-2 py-0.5 rounded text-[10px] font-bold font-mono tracking-wider ${
+                activeDifficultyTab === 'HOTS'
+                  ? 'bg-rose-100 dark:bg-rose-950/80 text-rose-700 dark:text-rose-300 border border-rose-300 dark:border-rose-800'
+                  : 'bg-emerald-100 dark:bg-emerald-950/80 text-emerald-700 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800'
+              }`}
+            >
+              SOAL {activeDifficultyTab}
+            </span>
+          </span>
           <span>JUMLAH: <strong className="text-slate-900 dark:text-white">{totalQuestions} BUTIR SOAL</strong></span>
         </div>
       </div>
@@ -77,10 +91,10 @@ export const PdfDocumentSheet: React.FC<PdfDocumentSheetProps> = ({
             <BookOpen className="w-6 h-6" />
           </div>
           <h3 className="text-base font-bold text-slate-900 dark:text-white">
-            Belum Ada Soal pada Sub-Bab Ini
+            Belum Ada Soal {activeDifficultyTab} pada Sub-Bab Ini
           </h3>
           <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 max-w-md mx-auto">
-            Bank soal untuk sub-bab <span className="font-semibold text-indigo-600 dark:text-indigo-400">"{activeSubChapterTitle}"</span> sedang dalam tahap penyusunan. Silakan pilih sub-bab lainnya melalui bilah navigasi di atas.
+            Bank soal {activeDifficultyTab.toLowerCase()} untuk sub-bab <span className="font-semibold text-indigo-600 dark:text-indigo-400">"{activeSubChapterTitle}"</span> sedang dipersiapkan. Silakan beralih kategori melalui tombol switch di atas atau pilih sub-bab lainnya.
           </p>
         </div>
       ) : displayMode === 'continuous' ? (

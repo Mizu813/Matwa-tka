@@ -25,7 +25,7 @@ interface EvaluationModalProps {
   questions: Question[];
   userAnswers: Record<string, UserAnswerRecord>;
   timeSpentSeconds: number;
-  onSelectQuestion: (index: number) => void;
+  onSelectQuestion: (question: Question, index: number) => void;
   onResetExam: () => void;
 }
 
@@ -226,10 +226,19 @@ export const EvaluationModal: React.FC<EvaluationModalProps> = ({
                 return (
                   <button
                     key={q.id}
-                    onClick={() => onSelectQuestion(idx)}
+                    onClick={() => onSelectQuestion(q, idx)}
                     className={`p-2.5 rounded-xl border text-xs font-mono flex flex-col items-center justify-center transition-all hover:scale-105 ${badgeColor}`}
                   >
-                    <span>Soal #{idx + 1}</span>
+                    <div className="flex items-center gap-1">
+                      <span>#{idx + 1}</span>
+                      <span className={`text-[9px] px-1 py-0.2 rounded font-bold ${
+                        (q.difficulty || 'STANDAR') === 'HOTS'
+                          ? 'bg-rose-100 dark:bg-rose-900/60 text-rose-700 dark:text-rose-300'
+                          : 'bg-emerald-100 dark:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300'
+                      }`}>
+                        {q.difficulty || 'STANDAR'}
+                      </span>
+                    </div>
                     <span className="text-[10px] mt-0.5 opacity-80">
                       {isAnswered ? 'Terisi' : 'Kosong'}
                     </span>

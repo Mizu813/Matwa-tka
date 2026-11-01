@@ -66,6 +66,275 @@
     "explanation": "Langkah-langkah analisis kurva fungsi kuadrat:\n\n1. Koefisien fungsi: $a = -2, b = 8, c = -6$.\n   Karena $a = -2 < 0$, kurva parabola **terbuka ke bawah**.\n\n2. Tentukan koordinat titik puncak $(x_p, y_p)$:\n   $$x_p = -\\frac{b}{2a} = -\\frac{8}{2(-2)} = -\\frac{8}{-4} = 2$$\n   $$y_p = f(2) = -2(2)^2 + 8(2) - 6 = -8 + 16 - 6 = 2$$\n   Titik puncak berada di $(2, 2)$ yang terletak di **Kuadran I**.\n\n3. Tentukan titik potong dengan sumbu-$X$ ($f(x) = 0$):\n   $$-2x^2 + 8x - 6 = 0 \\implies x^2 - 4x + 3 = 0 \\implies (x - 1)(x - 3) = 0$$\n   Kurva memotong sumbu-$X$ di dua titik berabsis positif: $(1, 0)$ dan $(3, 0)$.\n\nJadi, pernyataan yang tepat adalah **A**."
   },
   {
+    "id": "matwa-domain-range-grafik-fungsi-05",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "domain-range-grafik-fungsi",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Perhatikan grafik kurva fungsi rasional beserta garis-garis asimtotnya berikut:\n\n<div class=\"flex justify-center my-4 overflow-x-auto\"><svg viewBox=\"0 0 360 220\" class=\"w-full max-w-md h-auto drop-shadow-md rounded-lg\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"360\" height=\"220\" fill=\"#0f172a\" rx=\"8\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Axes: Origin (180, 130), dx=25 per unit, dy=20 per unit -->\n  <line x1=\"20\" y1=\"130\" x2=\"340\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <line x1=\"180\" y1=\"210\" x2=\"180\" y2=\"15\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <text x=\"345\" y=\"134\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">X</text>\n  <text x=\"176\" y=\"12\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">Y</text>\n  <!-- Asymptotes:\n       x = -2 -> 180 - 50 = 130\n       y = 3 -> 130 - 60 = 70\n  -->\n  <line x1=\"130\" y1=\"15\" x2=\"130\" y2=\"210\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"4\"/>\n  <text x=\"75\" y=\"30\" fill=\"#f59e0b\" font-size=\"10\" font-family=\"sans-serif\">Asimtot x = -2</text>\n  <line x1=\"20\" y1=\"70\" x2=\"340\" y2=\"70\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"4\"/>\n  <text x=\"250\" y=\"62\" fill=\"#f59e0b\" font-size=\"10\" font-family=\"sans-serif\">Asimtot y = 3</text>\n  <!-- Curve branch 1 (x > -2): passes (0, -3) -> (180, 190), (2, 0) -> (230, 130), (6, 1.5) -> (330, 100) -->\n  <path d=\"M 145,210 Q 155,145 230,130 T 340,78\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\"/>\n  <!-- Curve branch 2 (x < -2): passes (-4, 9) -> (80, -50), (-3, 15), (-6, 6) -> (30, 10) -->\n  <path d=\"M 20,62 Q 95,60 115,15\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\"/>\n  <!-- Key points -->\n  <circle cx=\"230\" cy=\"130\" r=\"3.5\" fill=\"#10b981\"/>\n  <text x=\"228\" y=\"146\" fill=\"#f8fafc\" font-size=\"9\" font-family=\"sans-serif\">(2, 0)</text>\n  <circle cx=\"180\" cy=\"190\" r=\"3.5\" fill=\"#10b981\"/>\n  <text x=\"190\" y=\"195\" fill=\"#f8fafc\" font-size=\"9\" font-family=\"sans-serif\">(0, -3)</text>\n  <text x=\"210\" y=\"105\" fill=\"#38bdf8\" font-size=\"11\" font-family=\"sans-serif\">f(x) = (3x - 6)/(x + 2)</text>\n</svg></div>\n\nDiberikan fungsi rasional:\n$$f(x) = \\frac{3x - 6}{x + 2}$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai asimtot, daerah asal, dan daerah hasil fungsi tersebut!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Asimtot tegak kurva adalah garis vertikal $x = -2$."
+      },
+      {
+        "id": "B",
+        "text": "Asimtot datar kurva adalah garis horizontal $y = 3$."
+      },
+      {
+        "id": "C",
+        "text": "Grafik fungsi memotong sumbu-$X$ di titik $(2, 0)$ dan memotong sumbu-$Y$ di titik $(0, -3)$."
+      },
+      {
+        "id": "D",
+        "text": "Asimtot datar kurva adalah garis horizontal $y = -2$."
+      },
+      {
+        "id": "E",
+        "text": "Titik potong grafik fungsi dengan sumbu Y berada pada koordinat $(0, -3)$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "hint": "Asimtot tegak dicari dari pembuat nol penyebut ($x + 2 = 0$). Asimtot datar dicari dari limit fungsi saat $x \\to \\pm\\infty$. Titik potong sumbu koordinat dicari saat $y = 0$ dan $x = 0$.",
+    "explanation": "Analisis karakteristik grafik fungsi rasional:\n\n- **Asimtot Tegak:**\n  Penyebut sama dengan nol: $x + 2 = 0 \\implies x = -2$. (Pernyataan A **BENAR**)\n\n- **Asimtot Datar:**\n  Hitung limit menuju tak hingga:\n  $$\\lim_{x \\to \\infty} \\frac{3x - 6}{x + 2} = \\lim_{x \\to \\infty} \\frac{3 - 6/x}{1 + 2/x} = 3$$\n  Garis $y = 3$ merupakan asimtot datar. (Pernyataan B **BENAR**, Pernyataan D **SALAH**)\n\n- **Titik Potong Sumbu Koordinat:**\n  - Titik potong sumbu-$X$ ($f(x) = 0$): $3x - 6 = 0 \\implies x = 2 \\implies (2, 0)$.\n  - Titik potong sumbu-$Y$ ($x = 0$): $f(0) = \\frac{3(0) - 6}{0 + 2} = -3 \\implies (0, -3)$.\n  (Pernyataan C **BENAR**)\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Titik potong sumbu Y diperoleh saat $x = 0$: $f(0) = \\frac{3(0) - 6}{0 + 2} = \\frac{-6}{2} = -3$, sehingga koordinatnya adalah $(0, -3)$."
+  },
+  {
+    "id": "matwa-domain-range-grafik-fungsi-11",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "domain-range-grafik-fungsi",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Daerah asal alami (*domain*) dari fungsi pecahan irasional:\n$$f(x) = \\sqrt{\\frac{2x - 6}{x + 4}}$$\nuntuk variabel real $x \\in \\mathbb{R}$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\{x \\mid x < -4 \\text{ atau } x \\ge 3,\\; x \\in \\mathbb{R}\\}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\{x \\mid -4 < x \\le 3,\\; x \\in \\mathbb{R}\\}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\{x \\mid x \\le -4 \\text{ atau } x \\ge 3,\\; x \\in \\mathbb{R}\\}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\{x \\mid x \\ge 3,\\; x \\in \\mathbb{R}\\}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\{x \\mid x \\neq -4,\\; x \\in \\mathbb{R}\\}$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Syarat di dalam tanda akar kuadrat harus non-negatif (>= 0) dan penyebut tidak boleh sama dengan nol.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Syarat di dalam tanda akar harus tak negatif:\n   $$\\frac{2x - 6}{x + 4} \\ge 0$$\n\n2. Syarat penyebut pecahan tidak boleh nol:\n   $$x + 4 \\neq 0 \\implies x \\neq -4$$\n\n3. Tentukan pembuat nol pembilang dan penyebut:\n   - Pembilang: $2x - 6 = 0 \\implies x = 3$\n   - Penyebut: $x + 4 = 0 \\implies x = -4$\n\n4. Uji tanda pada garis bilangan bertitik $-4$ (bulatan kosong) dan $3$ (bulatan penuh):\n   - Untuk $x > 3$ (misal $x = 4$): $\\frac{2(4)-6}{4+4} = \\frac{2}{8} > 0$ $(+)$\n   - Untuk $-4 < x < 3$ (misal $x = 0$): $\\frac{-6}{4} < 0$ $(-)$\n   - Untuk $x < -4$ (misal $x = -5$): $\\frac{2(-5)-6}{-5+4} = \\frac{-16}{-1} = 16 > 0$ $(+)$\n\n5. Ambil daerah bertanda positif ($+$) dan nol:\n   $$x < -4 \\quad \\text{atau} \\quad x \\ge 3$$\n\nJadi, daerah asal alaminya adalah **A** ($\\{x \\mid x < -4 \\text{ atau } x \\ge 3,\\; x \\in \\mathbb{R}\\}$)."
+  },
+  {
+    "id": "matwa-domain-range-grafik-fungsi-12",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "domain-range-grafik-fungsi",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Tinggi lintasan sebuah roket air (dalam meter) setelah $t$ detik diluncurkan vertikal ke atas dimodelkan oleh fungsi kuadrat $h(t) = 40t - 5t^2$. Tinggi maksimum yang dapat dicapai roket air tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$60\\text{ meter}$"
+      },
+      {
+        "id": "B",
+        "text": "$75\\text{ meter}$"
+      },
+      {
+        "id": "C",
+        "text": "$80\\text{ meter}$"
+      },
+      {
+        "id": "D",
+        "text": "$90\\text{ meter}$"
+      },
+      {
+        "id": "E",
+        "text": "$100\\text{ meter}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Tinggi maksimum tercapai saat t = -b / (2a). Substitusikan nilai t tersebut ke fungsi h(t).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Identifikasi koefisien fungsi kuadrat $h(t) = -5t^2 + 40t$:\n   $$a = -5, \\quad b = 40, \\quad c = 0$$\n\n2. Tentukan waktu saat mencapai ketinggian maksimum (absis titik puncak):\n   $$t_p = -\\frac{b}{2a} = -\\frac{40}{2(-5)} = \\frac{40}{10} = 4\\text{ detik}$$\n\n3. Substitusikan $t = 4$ ke fungsi $h(t)$ untuk mendapatkan tinggi puncak:\n   $$h_{\\text{maks}} = 40(4) - 5(4)^2 = 160 - 5(16) = 160 - 80 = 80\\text{ meter}$$\n\nJadi, tinggi maksimum roket adalah **C** ($80\\text{ meter}$)."
+  },
+  {
+    "id": "matwa-domain-range-grafik-fungsi-13",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "domain-range-grafik-fungsi",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Daerah hasil (*range*) dari fungsi kuadrat $f(x) = x^2 - 4x + 7$ yang didefinisikan pada interval domain tertutup $-1 \\le x \\le 5$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\{y \\mid 3 \\le y \\le 12,\\; y \\in \\mathbb{R}\\}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\{y \\mid 7 \\le y \\le 12,\\; y \\in \\mathbb{R}\\}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\{y \\mid 3 \\le y \\le 7,\\; y \\in \\mathbb{R}\\}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\{y \\mid -1 \\le y \\le 5,\\; y \\in \\mathbb{R}\\}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\{y \\mid 0 \\le y \\le 12,\\; y \\in \\mathbb{R}\\}$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Cari nilai titik puncak x_p = -b / (2a). Jika x_p berada di dalam interval, hitung f(x_p) serta nilai di kedua batas ujung f(-1) dan f(5).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Tentukan sumbu simetri / absis puncak parabola:\n   $$x_p = -\\frac{-4}{2(1)} = 2$$\n   Karena $x = 2$ berada di dalam interval $[-1, 5]$, maka nilai minimum kurva berada di titik puncak.\n\n2. Hitung nilai minimum pada puncak:\n   $$y_{\\text{min}} = f(2) = (2)^2 - 4(2) + 7 = 4 - 8 + 7 = 3$$\n\n3. Hitung nilai fungsi pada batas interval:\n   - Ujung kiri: $f(-1) = (-1)^2 - 4(-1) + 7 = 1 + 4 + 7 = 12$\n   - Ujung kanan: $f(5) = (5)^2 - 4(5) + 7 = 25 - 20 + 7 = 12$\n\n4. Nilai terbesar adalah $12$ dan nilai terkecil adalah $3$:\n   $$R_f = \\{y \\mid 3 \\le y \\le 12,\\; y \\in \\mathbb{R}\\}$$\n\nJadi, daerah hasilnya adalah **A** ($\\{y \\mid 3 \\le y \\le 12,\\; y \\in \\mathbb{R}\\}$)."
+  },
+  {
+    "id": "matwa-domain-range-grafik-fungsi-14",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "domain-range-grafik-fungsi",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Domain alami (*daerah asal*) dari fungsi gabungan aljabar:\n$$f(x) = \\sqrt{9 - x^2} + \\frac{1}{x - 1}$$\nuntuk $x \\in \\mathbb{R}$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\{x \\mid -3 \\le x \\le 3,\\; x \\neq 1,\\; x \\in \\mathbb{R}\\}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\{x \\mid -3 < x < 3,\\; x \\in \\mathbb{R}\\}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\{x \\mid x \\le -3 \\text{ atau } x \\ge 3,\\; x \\in \\mathbb{R}\\}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\{x \\mid x \\neq 1,\\; x \\in \\mathbb{R}\\}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\{x \\mid -3 \\le x < 1,\\; x \\in \\mathbb{R}\\}$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Iriskan dua syarat domain: syarat tanda akar (9 - x^2 >= 0) dan syarat penyebut pecahan (x - 1 != 0).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Syarat bentuk akar real:\n   $$9 - x^2 \\ge 0 \\implies x^2 \\le 9 \\implies -3 \\le x \\le 3$$\n\n2. Syarat penyebut pecahan tak nol:\n   $$x - 1 \\neq 0 \\implies x \\neq 1$$\n\n3. Lakukan irisan (interseksi) dari kedua syarat tersebut:\n   $$D_f = \\{x \\mid -3 \\le x \\le 3,\\; x \\neq 1,\\; x \\in \\mathbb{R}\\}$$\n\nJadi, domain alami fungsi tersebut adalah **A** ($\\{x \\mid -3 \\le x \\le 3,\\; x \\neq 1,\\; x \\in \\mathbb{R}\\}$)."
+  },
+  {
+    "id": "matwa-domain-range-grafik-fungsi-15",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "domain-range-grafik-fungsi",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Grafik kurva parabola $y = x^2$ mengalami translasi geometri dengan digeser sejauh $3\\text{ satuan}$ ke arah kanan dan $5\\text{ satuan}$ ke arah bawah. Persamaan fungsi kuadrat hasil pergeseran tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$y = x^2 - 6x + 4$"
+      },
+      {
+        "id": "B",
+        "text": "$y = x^2 + 6x + 4$"
+      },
+      {
+        "id": "C",
+        "text": "$y = x^2 - 6x - 4$"
+      },
+      {
+        "id": "D",
+        "text": "$y = x^2 - 3x - 5$"
+      },
+      {
+        "id": "E",
+        "text": "$y = x^2 + 6x + 14$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Pergeseran h satuan ke kanan menggantikan x dengan (x - h), dan k satuan ke bawah menambahkan -k pada fungsi.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Aturan pergeseran grafik fungsi $y = f(x)$:\n   - Digeser ke kanan $h$ satuan: $y = f(x - h)$\n   - Digeser ke bawah $k$ satuan: $y = f(x - h) - k$\n\n2. Terapkan untuk $h = 3$ dan $k = 5$ pada $f(x) = x^2$:\n   $$y = (x - 3)^2 - 5$$\n\n3. Jabarkan bentuk kuadrat binomial:\n   $$y = (x^2 - 6x + 9) - 5$$\n   $$y = x^2 - 6x + 4$$\n\nJadi, persamaan fungsi hasil pergeseran adalah **A** ($y = x^2 - 6x + 4$)."
+  },
+  {
+    "id": "matwa-domain-range-grafik-fungsi-16",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "domain-range-grafik-fungsi",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah kurva parabola fungsi kuadrat memiliki titik balik puncak di $(2, -1)$ serta memotong sumbu-$Y$ di titik $(0, 7)$. Persamaan grafik fungsi kuadrat tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$y = 2x^2 - 8x + 7$"
+      },
+      {
+        "id": "B",
+        "text": "$y = 2x^2 + 8x + 7$"
+      },
+      {
+        "id": "C",
+        "text": "$y = x^2 - 4x + 7$"
+      },
+      {
+        "id": "D",
+        "text": "$y = 2x^2 - 8x - 7$"
+      },
+      {
+        "id": "E",
+        "text": "$y = 3x^2 - 12x + 7$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Gunakan bentuk rumus puncak y = a(x - x_p)^2 + y_p dengan x_p = 2 dan y_p = -1, lalu tentukan nilai a melalui titik (0, 7).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Gunakan formula kurva kuadrat dengan titik puncak $(x_p, y_p) = (2, -1)$:\n   $$y = a(x - 2)^2 - 1$$\n\n2. Substitusikan titik potong sumbu-$Y$ $(0, 7)$ untuk mencari koefisien $a$:\n   $$7 = a(0 - 2)^2 - 1$$\n   $$7 = 4a - 1$$\n   $$4a = 8 \\implies a = 2$$\n\n3. Tuliskan persamaan lengkap dan jabarkan:\n   $$y = 2(x - 2)^2 - 1$$\n   $$y = 2(x^2 - 4x + 4) - 1$$\n   $$y = 2x^2 - 8x + 8 - 1 = 2x^2 - 8x + 7$$\n\nJadi, persamaan fungsinya adalah **A** ($y = 2x^2 - 8x + 7$)."
+  },
+  {
+    "id": "matwa-domain-range-grafik-fungsi-17",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "domain-range-grafik-fungsi",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan fungsi pecahan rasional:\n$$f(x) = \\frac{4x - 3}{2x + 6}, \\quad x \\neq -3$$\nPersamaan asimtot datar dan asimtot tegak kurva fungsi tersebut berturut-turut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$y = 2$ dan $x = -3$"
+      },
+      {
+        "id": "B",
+        "text": "$y = -3$ dan $x = 2$"
+      },
+      {
+        "id": "C",
+        "text": "$y = 4$ dan $x = -6$"
+      },
+      {
+        "id": "D",
+        "text": "$y = 2$ dan $x = 3$"
+      },
+      {
+        "id": "E",
+        "text": "$y = -2$ dan $x = -3$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Asimtot datar y = koefisien x pembilang / koefisien x penyebut. Asimtot tegak adalah nilai pembuat nol penyebut.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Asimtot datar untuk fungsi rasional berbentuk $f(x) = \\frac{ax + b}{cx + d}$:\n   $$y = \\frac{a}{c} = \\frac{4}{2} = 2$$\n\n2. Asimtot tegak dicari dari pembuat nol penyebut ($2x + 6 = 0$):\n   $$2x = -6 \\implies x = -3$$\n\nJadi, persamaan asimtot datar dan asimtot tegak berturut-turut adalah **A** ($y = 2$ dan $x = -3$)."
+  },
+  {
     "id": "matwa-domain-range-grafik-fungsi-03",
     "chapter_id": "fungsi",
     "sub_chapter_id": "domain-range-grafik-fungsi",
@@ -130,44 +399,6 @@
     "correct_answer": "A",
     "hint": "Periksa kemonotonan fungsi dengan menghitung turunan pertama $f'(x)$. Karena $f'(x) = -\\frac{5}{(x - 2)^2} < 0$, fungsi selalu monoton turun pada interval $[3, 5]$, sehingga nilai maksimum tercapai di $x = 3$ dan minimum di $x = 5$.",
     "explanation": "Langkah-langkah mencari range fungsi rasional pada domain tertutup:\n\n1. Periksa kontinuitas fungsi $f(x)$ pada domain $[3, 5]$:\n   Asimtot tegak berada di $x = 2$, yang berada di luar interval $[3, 5]$. Sehingga $f(x)$ kontinu pada seluruh interval $[3, 5]$.\n\n2. Uji turunan pertama untuk mengetahui kemonotonan:\n   $$f'(x) = \\frac{2(x - 2) - 1(2x + 1)}{(x - 2)^2} = \\frac{2x - 4 - 2x - 1}{(x - 2)^2} = \\frac{-5}{(x - 2)^2}$$\n   Karena $(x - 2)^2 > 0$, maka $f'(x) < 0$ untuk seluruh $x \\in [3, 5]$. Artinya fungsi $f(x)$ **monoton turun** (*strictly decreasing*).\n\n3. Evaluasi nilai fungsi pada batas interval domain:\n   - Nilai maksimum tercapai pada batas kiri ($x = 3$):\n     $$f(3) = \\frac{2(3) + 1}{3 - 2} = \\frac{7}{1} = 7$$\n   - Nilai minimum tercapai pada batas kanan ($x = 5$):\n     $$f(5) = \\frac{2(5) + 1}{5 - 2} = \\frac{11}{3}$$\n\n4. Daerah hasil (*range*) fungsi:\n   $$R_f = \\left\\{y \\in \\mathbb{R} \\;\\middle|\\; \\frac{11}{3} \\le y \\le 7\\right\\}$$\n\nJadi, jawaban yang benar adalah **A**."
-  },
-  {
-    "id": "matwa-domain-range-grafik-fungsi-05",
-    "chapter_id": "fungsi",
-    "sub_chapter_id": "domain-range-grafik-fungsi",
-    "question_type": "MCMA",
-    "difficulty": "STANDAR",
-    "question_text": "Perhatikan grafik kurva fungsi rasional beserta garis-garis asimtotnya berikut:\n\n<div class=\"flex justify-center my-4 overflow-x-auto\"><svg viewBox=\"0 0 360 220\" class=\"w-full max-w-md h-auto drop-shadow-md rounded-lg\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"360\" height=\"220\" fill=\"#0f172a\" rx=\"8\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Axes: Origin (180, 130), dx=25 per unit, dy=20 per unit -->\n  <line x1=\"20\" y1=\"130\" x2=\"340\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <line x1=\"180\" y1=\"210\" x2=\"180\" y2=\"15\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <text x=\"345\" y=\"134\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">X</text>\n  <text x=\"176\" y=\"12\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">Y</text>\n  <!-- Asymptotes:\n       x = -2 -> 180 - 50 = 130\n       y = 3 -> 130 - 60 = 70\n  -->\n  <line x1=\"130\" y1=\"15\" x2=\"130\" y2=\"210\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"4\"/>\n  <text x=\"75\" y=\"30\" fill=\"#f59e0b\" font-size=\"10\" font-family=\"sans-serif\">Asimtot x = -2</text>\n  <line x1=\"20\" y1=\"70\" x2=\"340\" y2=\"70\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"4\"/>\n  <text x=\"250\" y=\"62\" fill=\"#f59e0b\" font-size=\"10\" font-family=\"sans-serif\">Asimtot y = 3</text>\n  <!-- Curve branch 1 (x > -2): passes (0, -3) -> (180, 190), (2, 0) -> (230, 130), (6, 1.5) -> (330, 100) -->\n  <path d=\"M 145,210 Q 155,145 230,130 T 340,78\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\"/>\n  <!-- Curve branch 2 (x < -2): passes (-4, 9) -> (80, -50), (-3, 15), (-6, 6) -> (30, 10) -->\n  <path d=\"M 20,62 Q 95,60 115,15\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\"/>\n  <!-- Key points -->\n  <circle cx=\"230\" cy=\"130\" r=\"3.5\" fill=\"#10b981\"/>\n  <text x=\"228\" y=\"146\" fill=\"#f8fafc\" font-size=\"9\" font-family=\"sans-serif\">(2, 0)</text>\n  <circle cx=\"180\" cy=\"190\" r=\"3.5\" fill=\"#10b981\"/>\n  <text x=\"190\" y=\"195\" fill=\"#f8fafc\" font-size=\"9\" font-family=\"sans-serif\">(0, -3)</text>\n  <text x=\"210\" y=\"105\" fill=\"#38bdf8\" font-size=\"11\" font-family=\"sans-serif\">f(x) = (3x - 6)/(x + 2)</text>\n</svg></div>\n\nDiberikan fungsi rasional:\n$$f(x) = \\frac{3x - 6}{x + 2}$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai asimtot, daerah asal, dan daerah hasil fungsi tersebut!",
-    "options": [
-      {
-        "id": "A",
-        "text": "Asimtot tegak kurva adalah garis vertikal $x = -2$."
-      },
-      {
-        "id": "B",
-        "text": "Asimtot datar kurva adalah garis horizontal $y = 3$."
-      },
-      {
-        "id": "C",
-        "text": "Grafik fungsi memotong sumbu-$X$ di titik $(2, 0)$ dan memotong sumbu-$Y$ di titik $(0, -3)$."
-      },
-      {
-        "id": "D",
-        "text": "Asimtot datar kurva adalah garis horizontal $y = -2$."
-      },
-      {
-        "id": "E",
-        "text": "Titik potong grafik fungsi dengan sumbu Y berada pada koordinat $(0, -3)$."
-      }
-    ],
-    "correct_answer": [
-      "A",
-      "B",
-      "C",
-      "E"
-    ],
-    "hint": "Asimtot tegak dicari dari pembuat nol penyebut ($x + 2 = 0$). Asimtot datar dicari dari limit fungsi saat $x \\to \\pm\\infty$. Titik potong sumbu koordinat dicari saat $y = 0$ dan $x = 0$.",
-    "explanation": "Analisis karakteristik grafik fungsi rasional:\n\n- **Asimtot Tegak:**\n  Penyebut sama dengan nol: $x + 2 = 0 \\implies x = -2$. (Pernyataan A **BENAR**)\n\n- **Asimtot Datar:**\n  Hitung limit menuju tak hingga:\n  $$\\lim_{x \\to \\infty} \\frac{3x - 6}{x + 2} = \\lim_{x \\to \\infty} \\frac{3 - 6/x}{1 + 2/x} = 3$$\n  Garis $y = 3$ merupakan asimtot datar. (Pernyataan B **BENAR**, Pernyataan D **SALAH**)\n\n- **Titik Potong Sumbu Koordinat:**\n  - Titik potong sumbu-$X$ ($f(x) = 0$): $3x - 6 = 0 \\implies x = 2 \\implies (2, 0)$.\n  - Titik potong sumbu-$Y$ ($x = 0$): $f(0) = \\frac{3(0) - 6}{0 + 2} = -3 \\implies (0, -3)$.\n  (Pernyataan C **BENAR**)\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Titik potong sumbu Y diperoleh saat $x = 0$: $f(0) = \\frac{3(0) - 6}{0 + 2} = \\frac{-6}{2} = -3$, sehingga koordinatnya adalah $(0, -3)$."
   },
   {
     "id": "matwa-domain-range-grafik-fungsi-06",

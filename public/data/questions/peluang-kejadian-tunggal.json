@@ -66,6 +66,274 @@
     "explanation": "Langkah-langkah penyelesaian:\n1. Hitung total seluruh bola dalam kotak:\n   $$n(S) = 8 + 6 + 10 = 24\\text{ bola}$$\n2. Menghitung peluang terambilnya bola biru:\n   $$P(\\text{biru}) = \\frac{6}{24} = \\frac{1}{4}$$\n3. Menggunakan konsep peluang komplemen:\n   $$P(\\text{bukan biru}) = 1 - P(\\text{biru}) = 1 - \\frac{1}{4} = \\frac{3}{4}$$\n\nCara alternatif (langsung):\n- Jumlah bola bukan biru (merah + kuning): $8 + 10 = 18\\text{ bola}$.\n- $P(\\text{bukan biru}) = \\frac{18}{24} = \\frac{3}{4}$.\n\nJadi, peluang terambilnya bola yang bukan berwarna biru adalah $\\frac{3}{4}$."
   },
   {
+    "id": "matwa-peluang-kejadian-tunggal-07",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-tunggal",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Satu set lengkap kartu bridge (kartu remi standar) terdiri dari $52\\text{ kartu}$ (tanpa joker) yang terbagi rata ke dalam empat jenis: Sekop (Spade), Hati (Heart), Keriting (Club), dan Wajik (Diamond). Satu kartu diambil secara acak dari tumpukan kartu yang telah dikocok rata.\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Peluang terambil kartu As adalah $\\frac{1}{13}$."
+      },
+      {
+        "id": "B",
+        "text": "Peluang terambil kartu berwarna hitam (Sekop atau Keriting) adalah $\\frac{1}{2}$."
+      },
+      {
+        "id": "C",
+        "text": "Peluang terambil kartu yang bukan kartu bergambar (King, Queen, Jack) adalah $\\frac{10}{13}$."
+      },
+      {
+        "id": "D",
+        "text": "Peluang terambil kartu jenis Hati (Heart) adalah $\\frac{1}{2}$."
+      },
+      {
+        "id": "E",
+        "text": "Peluang terambil kartu King berwarna merah adalah $\\frac{1}{13}$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Total kartu bridge adalah 52. Ada 4 kartu As, 26 kartu hitam, 12 kartu bergambar (King, Queen, Jack), dan 13 kartu untuk setiap jenis lambang.",
+    "explanation": "Langkah-langkah evaluasi kartu bridge:\n1. Kartu As (Pernyataan A):\n   - Terdapat 4 kartu As (As Sekop, Hati, Keriting, Wajik).\n   - $P(\\text{As}) = \\frac{4}{52} = \\frac{1}{13}$. (Pernyataan A BENAR).\n2. Kartu Berwarna Hitam (Pernyataan B):\n   - Kartu hitam terdiri dari 13 Sekop dan 13 Keriting ($26\\text{ kartu}$).\n   - $P(\\text{Hitam}) = \\frac{26}{52} = \\frac{1}{2}$. (Pernyataan B BENAR).\n3. Bukan Kartu Bergambar (Pernyataan C):\n   - Kartu bergambar (face cards) terdiri dari King, Queen, Jack pada 4 jenis lambang: $3 \\times 4 = 12\\text{ kartu}$.\n   - Banyak kartu yang bukan kartu bergambar: $52 - 12 = 40\\text{ kartu}$.\n   - $P(\\text{bukan bergambar}) = \\frac{40}{52} = \\frac{10}{13}$. (Pernyataan C BENAR).\n4. Evaluasi Pernyataan D dan E:\n   - Kartu jenis Hati ada 13 lembar: $P = \\frac{13}{52} = \\frac{1}{4} \\ne \\frac{1}{2}$. (Pernyataan D SALAH).\n   - Kartu King merah ada 2 lembar (King Hati dan King Wajik): $P = \\frac{2}{52} = \\frac{1}{26} \\ne \\frac{1}{13}$. (Pernyataan E SALAH).\n\nJadi, seluruh pernyataan yang bernilai BENAR adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-peluang-kejadian-tunggal-11",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-tunggal",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah dadu standar enam sisi bermata $1, 2, 3, 4, 5, 6$ dilempar undi satu kali. Peluang munculnya mata dadu bilangan prima ganjil adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{1}{6}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{1}{3}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{1}{2}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{2}{3}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{5}{6}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Identifikasi ruang sampel dadu dan tentukan anggota kejadian bilangan prima yang bernilai ganjil.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Ruang sampel pelemparan sebuah dadu:\n   $$S = \\{1, 2, 3, 4, 5, 6\\} \\implies n(S) = 6$$\n2. Menentukan kejadian $A$ yaitu muncul bilangan prima ganjil:\n   - Bilangan prima pada dadu adalah $\\{2, 3, 5\\}$.\n   - Bilangan prima yang ganjil adalah $\\{3, 5\\}$.\n   - Maka $n(A) = 2$.\n3. Menghitung peluang kejadian $A$:\n   $$P(A) = \\frac{n(A)}{n(S)} = \\frac{2}{6} = \\frac{1}{3}$$\n\nJadi, peluang muncul mata dadu prima ganjil adalah $\\frac{1}{3}$."
+  },
+  {
+    "id": "matwa-peluang-kejadian-tunggal-12",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-tunggal",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Tiga keping uang logam standar (memiliki sisi Angka dan Gambar) dilempar undi bersama-sama satu kali. Peluang munculnya sekurang-kurangnya $2\\text{ sisi Angka}$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{1}{8}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{1}{4}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{3}{8}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{1}{2}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{5}{8}$"
+      }
+    ],
+    "correct_answer": "D",
+    "hint": "Sekurang-kurangnya 2 Angka berarti tepat 2 Angka atau 3 Angka. Hitung jumlah titik sampel dari total 8 titik sampel.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Ruang sampel pelemparan $3$ keping uang logam:\n   $$n(S) = 2^3 = 8$$\n   Anggota $S = \\{AAA, AAG, AGA, GAA, AGG, GAG, GGA, GGG\\}$.\n2. Titik sampel kejadian $A$ (muncul minimal $2$ Angka):\n   - Tepat $2$ Angka: $\\{AAG, AGA, GAA\\}$ ($3$ kejadian)\n   - Tepat $3$ Angka: $\\{AAA\\}$ ($1$ kejadian)\n   - Total titik sampel $n(A) = 3 + 1 = 4$.\n3. Menghitung peluang:\n   $$P(A) = \\frac{n(A)}{n(S)} = \\frac{4}{8} = \\frac{1}{2}$$\n\nJadi, peluang munculnya sekurang-kurangnya $2$ sisi Angka adalah $\\frac{1}{2}$."
+  },
+  {
+    "id": "matwa-peluang-kejadian-tunggal-13",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-tunggal",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dari sekumpulan kartu bernomor $1$ sampai dengan $25$, diambil sebuah kartu secara acak. Peluang terambilnya kartu dengan nomor kelipatan $4$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{4}{25}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{1}{5}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{6}{25}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{7}{25}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{8}{25}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Daftar semua bilangan kelipatan 4 dari 1 sampai 25, lalu bandingkan dengan total 25 kartu.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Ruang sampel $S = \\{1, 2, 3, \\dots, 25\\} \\implies n(S) = 25$.\n2. Kejadian $K$ terambil kartu kelipatan $4$:\n   $$K = \\{4, 8, 12, 16, 20, 24\\} \\implies n(K) = 6$$\n3. Menghitung nilai peluang:\n   $$P(K) = \\frac{n(K)}{n(S)} = \\frac{6}{25}$$\n\nJadi, peluang terambilnya kartu bernomor kelipatan $4$ adalah $\\frac{6}{25}$."
+  },
+  {
+    "id": "matwa-peluang-kejadian-tunggal-14",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-tunggal",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Peluang seorang peserta lulus dalam tes seleksi beasiswa luar negeri adalah $0{,}82$. Peluang bahwa peserta tersebut dinyatakan gagal atau tidak lulus dalam seleksi beasiswa tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$0{,}08$"
+      },
+      {
+        "id": "B",
+        "text": "$0{,}12$"
+      },
+      {
+        "id": "C",
+        "text": "$0{,}18$"
+      },
+      {
+        "id": "D",
+        "text": "$0{,}28$"
+      },
+      {
+        "id": "E",
+        "text": "$0{,}82$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Gunakan sifat peluang komplemen: $P(A') = 1 - P(A)$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Diketahui peluang lulus $P(A) = 0{,}82$.\n2. Kejadian gagal merupakan komplemen dari kejadian lulus ($A'$):\n   $$P(A') = 1 - P(A)$$\n   $$P(A') = 1 - 0{,}82 = 0{,}18$$\n\nJadi, peluang peserta tersebut tidak lulus adalah $0{,}18$."
+  },
+  {
+    "id": "matwa-peluang-kejadian-tunggal-15",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-tunggal",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dua buah dadu bersisi enam dilempar undi bersama-sama sebanyak $144\\text{ kali}$. Frekuensi harapan munculnya mata dadu berjumlah $8$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$15\\text{ kali}$"
+      },
+      {
+        "id": "B",
+        "text": "$18\\text{ kali}$"
+      },
+      {
+        "id": "C",
+        "text": "$20\\text{ kali}$"
+      },
+      {
+        "id": "D",
+        "text": "$24\\text{ kali}$"
+      },
+      {
+        "id": "E",
+        "text": "$28\\text{ kali}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Tentukan jumlah pasangan mata dadu yang berjumlah 8 dari total 36 pasangan, lalu kalikan peluangnya dengan banyaknya percobaan: $F_h = n \\times P(A)$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Ruang sampel dua buah dadu: $n(S) = 6 \\times 6 = 36$.\n2. Pasangan mata dadu berjumlah $8$ ($A$):\n   $$A = \\{(2,6), (3,5), (4,4), (5,3), (6,2)\\} \\implies n(A) = 5$$\n3. Peluang kejadian $A$:\n   $$P(A) = \\frac{5}{36}$$\n4. Menghitung frekuensi harapan untuk $N = 144$ lemparan:\n   $$F_h = N \\times P(A) = 144 \\times \\frac{5}{36} = 4 \\times 5 = 20\\text{ kali}$$\n\nJadi, frekuensi harapan muncul mata dadu berjumlah $8$ adalah $20\\text{ kali}$."
+  },
+  {
+    "id": "matwa-peluang-kejadian-tunggal-16",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-tunggal",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Di dalam sebuah kantong tersimpan $5\\text{ kelereng merah}$ dan $3\\text{ kelereng biru}$. Jika diambil $2\\text{ kelereng}$ sekaligus secara acak, maka peluang terambil kedua kelereng berwarna merah adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{5}{28}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{5}{14}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{15}{56}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{15}{28}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{5}{8}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Gunakan kombinasi untuk menghitung banyak cara memilih 2 kelereng merah dari 5 kelereng merah, dibagi banyak cara memilih 2 kelereng dari seluruh 8 kelereng.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Menghitung banyak titik sampel ruang sampel $n(S)$:\n   $$n(S) = C(8, 2) = \\frac{8 \\times 7}{2 \\times 1} = 28$$\n2. Menghitung banyak kejadian terpilih $2$ merah dari $5$ merah:\n   $$n(A) = C(5, 2) = \\frac{5 \\times 4}{2 \\times 1} = 10$$\n3. Menghitung nilai peluang:\n   $$P(A) = \\frac{n(A)}{n(S)} = \\frac{10}{28} = \\frac{5}{14}$$\n\nJadi, peluang terambilnya kedua kelereng berwarna merah adalah $\\frac{5}{14}$."
+  },
+  {
+    "id": "matwa-peluang-kejadian-tunggal-17",
+    "chapter_id": "peluang-dan-kombinatorika",
+    "sub_chapter_id": "peluang-kejadian-tunggal",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dari $100\\text{ pengendara motor}$ yang disurvei oleh dinas perhubungan, tercatat $45\\text{ orang}$ menggunakan helm berstandar SNI model half-face, $35\\text{ orang}$ menggunakan model full-face, dan sisanya menggunakan jenis penutup kepala lain. Jika seorang pengendara dipilih secara acak, peluang terpilihnya pengendara yang menggunakan helm model full-face adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{1}{5}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{7}{20}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{9}{20}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{4}{5}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{17}{20}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Peluang empiris dihitung dengan rasio frekuensi kejadian terhadap total sampel uji.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Total sampel pengendara $n(S) = 100$.\n2. Banyak pengendara dengan helm full-face $n(F) = 35$.\n3. Menghitung peluang empiris:\n   $$P(F) = \\frac{35}{100} = \\frac{7}{20}$$\n\nJadi, peluang terpilihnya pengendara helm model full-face adalah $\\frac{7}{20}$."
+  },
+  {
     "id": "matwa-peluang-kejadian-tunggal-03",
     "chapter_id": "peluang-dan-kombinatorika",
     "sub_chapter_id": "peluang-kejadian-tunggal",
@@ -204,43 +472,6 @@
     ],
     "hint": "Gunakan rumus kombinasi $\\binom{12}{3} = 220$ untuk ruang sampel. Untuk kejadian 'paling sedikit 1 kelereng merah', hitung komplemen dari kejadian 'tidak ada kelereng merah yang terambil' (ketiga kelereng diambil dari 7 kelereng non-merah).",
     "explanation": "Langkah-langkah evaluasi kombinasi pengambilan kelereng:\n1. Ruang sampel (Pernyataan A):\n   $$n(S) = \\binom{12}{3} = \\frac{12 \\times 11 \\times 10}{3 \\times 2 \\times 1} = 220$$\n   (Pernyataan A BENAR).\n2. Terambil 1 merah, 1 hijau, dan 1 kuning (Pernyataan B):\n   - Banyak cara:\n     $$\\binom{5}{1} \\times \\binom{4}{1} \\times \\binom{3}{1} = 5 \\times 4 \\times 3 = 60$$\n   - Peluang:\n     $$P = \\frac{60}{220} = \\frac{3}{11}$$\n   (Pernyataan B BENAR).\n3. Paling sedikit 1 kelereng merah (Pernyataan C):\n   - Banyak cara tidak ada kelereng merah terambil (ketiganya diambil dari $4\\text{ hijau} + 3\\text{ kuning} = 7\\text{ kelereng}$):\n     $$\\binom{7}{3} = \\frac{7 \\times 6 \\times 5}{3 \\times 2 \\times 1} = 35$$\n   - Peluang tidak ada kelereng merah: $\\frac{35}{220} = \\frac{7}{44}$.\n   - Peluang paling sedikit 1 merah:\n     $$P = 1 - \\frac{7}{44} = \\frac{37}{44}$$\n   (Pernyataan C BENAR).\n4. Evaluasi Pernyataan D dan E:\n   - Ketiga kelereng merah: $\\frac{\\binom{5}{3}}{220} = \\frac{10}{220} = \\frac{1}{22} \\ne \\frac{1}{44}$. (Pernyataan D SALAH).\n   - Ketiga kelereng hijau: $\\frac{\\binom{4}{3}}{220} = \\frac{4}{220} = \\frac{1}{55} \\ne \\frac{1}{11}$. (Pernyataan E SALAH).\n\nJadi, seluruh pernyataan yang bernilai BENAR adalah A, B, dan C."
-  },
-  {
-    "id": "matwa-peluang-kejadian-tunggal-07",
-    "chapter_id": "peluang-dan-kombinatorika",
-    "sub_chapter_id": "peluang-kejadian-tunggal",
-    "question_type": "MCMA",
-    "difficulty": "STANDAR",
-    "question_text": "Satu set lengkap kartu bridge (kartu remi standar) terdiri dari $52\\text{ kartu}$ (tanpa joker) yang terbagi rata ke dalam empat jenis: Sekop (Spade), Hati (Heart), Keriting (Club), dan Wajik (Diamond). Satu kartu diambil secara acak dari tumpukan kartu yang telah dikocok rata.\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
-    "options": [
-      {
-        "id": "A",
-        "text": "Peluang terambil kartu As adalah $\\frac{1}{13}$."
-      },
-      {
-        "id": "B",
-        "text": "Peluang terambil kartu berwarna hitam (Sekop atau Keriting) adalah $\\frac{1}{2}$."
-      },
-      {
-        "id": "C",
-        "text": "Peluang terambil kartu yang bukan kartu bergambar (King, Queen, Jack) adalah $\\frac{10}{13}$."
-      },
-      {
-        "id": "D",
-        "text": "Peluang terambil kartu jenis Hati (Heart) adalah $\\frac{1}{2}$."
-      },
-      {
-        "id": "E",
-        "text": "Peluang terambil kartu King berwarna merah adalah $\\frac{1}{13}$."
-      }
-    ],
-    "correct_answer": [
-      "A",
-      "B",
-      "C"
-    ],
-    "hint": "Total kartu bridge adalah 52. Ada 4 kartu As, 26 kartu hitam, 12 kartu bergambar (King, Queen, Jack), dan 13 kartu untuk setiap jenis lambang.",
-    "explanation": "Langkah-langkah evaluasi kartu bridge:\n1. Kartu As (Pernyataan A):\n   - Terdapat 4 kartu As (As Sekop, Hati, Keriting, Wajik).\n   - $P(\\text{As}) = \\frac{4}{52} = \\frac{1}{13}$. (Pernyataan A BENAR).\n2. Kartu Berwarna Hitam (Pernyataan B):\n   - Kartu hitam terdiri dari 13 Sekop dan 13 Keriting ($26\\text{ kartu}$).\n   - $P(\\text{Hitam}) = \\frac{26}{52} = \\frac{1}{2}$. (Pernyataan B BENAR).\n3. Bukan Kartu Bergambar (Pernyataan C):\n   - Kartu bergambar (face cards) terdiri dari King, Queen, Jack pada 4 jenis lambang: $3 \\times 4 = 12\\text{ kartu}$.\n   - Banyak kartu yang bukan kartu bergambar: $52 - 12 = 40\\text{ kartu}$.\n   - $P(\\text{bukan bergambar}) = \\frac{40}{52} = \\frac{10}{13}$. (Pernyataan C BENAR).\n4. Evaluasi Pernyataan D dan E:\n   - Kartu jenis Hati ada 13 lembar: $P = \\frac{13}{52} = \\frac{1}{4} \\ne \\frac{1}{2}$. (Pernyataan D SALAH).\n   - Kartu King merah ada 2 lembar (King Hati dan King Wajik): $P = \\frac{2}{52} = \\frac{1}{26} \\ne \\frac{1}{13}$. (Pernyataan E SALAH).\n\nJadi, seluruh pernyataan yang bernilai BENAR adalah A, B, dan C."
   },
   {
     "id": "matwa-peluang-kejadian-tunggal-08",

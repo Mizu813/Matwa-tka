@@ -23,6 +23,10 @@ interface PdfTopNavbarProps {
   curriculum: CurriculumChapter[];
   activeChapterId: string;
   activeSubChapterId: string;
+  activeDifficultyTab: 'STANDAR' | 'HOTS';
+  onSelectDifficultyTab: (tab: 'STANDAR' | 'HOTS') => void;
+  standarCount: number;
+  hotsCount: number;
   currentQuestionNumber: number;
   subChapterQuestions: Question[];
   onSelectChapter: (chapterId: string) => void;
@@ -46,6 +50,10 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
   curriculum,
   activeChapterId,
   activeSubChapterId,
+  activeDifficultyTab,
+  onSelectDifficultyTab,
+  standarCount,
+  hotsCount,
   currentQuestionNumber,
   subChapterQuestions,
   onSelectChapter,
@@ -100,14 +108,6 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
   const activeChapter =
     curriculum.find((c) => c.chapter_id === activeChapterId) || curriculum[0];
   const activeSubChapters = activeChapter ? activeChapter.sub_chapters : [];
-  const currentQuestion = subChapterQuestions[currentQuestionNumber - 1];
-
-  const currentDifficulty =
-    currentQuestion?.difficulty ||
-    (currentQuestion?.cognitiveLevel === 'Penalaran (HOTS)' ? 'HOTS' : 'STANDAR');
-
-  const currentType =
-    currentQuestion?.question_type || currentQuestion?.type || 'PG';
 
   return (
     <div className="w-full max-w-full print:hidden">
@@ -338,25 +338,54 @@ export const PdfTopNavbar: React.FC<PdfTopNavbarProps> = ({
             )}
           </div>
 
-          {/* Right: Active Question Badges (Difficulty & Type) & Sticky Quick Controls */}
+          {/* Right: Switch Button (Standar / HOTS) replacing previous static badges */}
           <div className="flex items-center gap-1.5 flex-shrink-0">
-            {currentQuestion && (
-              <>
+            <div className="inline-flex p-0.5 rounded-lg bg-slate-200/90 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 shadow-2xs">
+              <button
+                type="button"
+                onClick={() => onSelectDifficultyTab('STANDAR')}
+                className={`px-2.5 py-1 rounded-md text-[11px] sm:text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
+                  activeDifficultyTab === 'STANDAR'
+                    ? 'bg-emerald-600 text-white shadow-xs'
+                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-300/40 dark:hover:bg-slate-700/50'
+                }`}
+                title="Beralih ke Halaman Soal Standar"
+              >
+                <span>Standar</span>
                 <span
-                  className={`px-2 py-0.5 rounded text-[10px] font-bold font-mono border ${
-                    currentDifficulty === 'HOTS'
-                      ? 'bg-rose-50 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 border-rose-200 dark:border-rose-800'
-                      : 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800'
+                  className={`text-[10px] px-1.5 py-0.2 rounded-full font-mono font-bold leading-tight ${
+                    activeDifficultyTab === 'STANDAR'
+                      ? 'bg-emerald-800/90 text-white'
+                      : 'bg-slate-300 dark:bg-slate-700 text-slate-700 dark:text-slate-300'
                   }`}
                 >
-                  {currentDifficulty}
+                  {standarCount}
                 </span>
+              </button>
 
-                <span className="px-2 py-0.5 rounded text-[10px] font-bold font-mono bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800">
-                  {currentType}
+              <button
+                type="button"
+                onClick={() => onSelectDifficultyTab('HOTS')}
+                className={`px-2.5 py-1 rounded-md text-[11px] sm:text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
+                  activeDifficultyTab === 'HOTS'
+                    ? 'bg-rose-600 text-white shadow-xs'
+                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-300/40 dark:hover:bg-slate-700/50'
+                }`}
+                title="Beralih ke Halaman Soal HOTS (Tingkat Tinggi)"
+              >
+                <Sparkles className="w-3 h-3 text-amber-300" />
+                <span>HOTS</span>
+                <span
+                  className={`text-[10px] px-1.5 py-0.2 rounded-full font-mono font-bold leading-tight ${
+                    activeDifficultyTab === 'HOTS'
+                      ? 'bg-rose-800/90 text-white'
+                      : 'bg-slate-300 dark:bg-slate-700 text-slate-700 dark:text-slate-300'
+                  }`}
+                >
+                  {hotsCount}
                 </span>
-              </>
-            )}
+              </button>
+            </div>
 
             {/* Quick Sticky Controls when top toolbar is scrolled out */}
             {isSticky && (

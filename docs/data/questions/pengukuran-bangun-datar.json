@@ -99,6 +99,237 @@
     "explanation": "Langkah-langkah evaluasi luas juring lingkaran:\n\n1. Identifikasi parameter juring:\n   - Sudut pusat: $\\alpha = 60^\\circ$\n   - Jari-jari: $R = 21\\text{ meter}$\n   - Pendekatan $\\pi = \\frac{22}{7}$\n\n2. Gunakan rumus perbandingan juring terhadap luas lingkaran penuh:\n   $$L_{\\text{juring}} = \\frac{\\alpha}{360^\\circ} \\times \\pi R^2$$\n   $$L_{\\text{juring}} = \\frac{60^\\circ}{360^\\circ} \\times \\frac{22}{7} \\times 21^2$$\n   $$L_{\\text{juring}} = \\frac{1}{6} \\times \\frac{22}{7} \\times 441$$\n\n3. Sederhanakan perhitungan pecahan:\n   $$\\frac{441}{7} = 63$$\n   $$L_{\\text{juring}} = \\frac{1}{6} \\times 22 \\times 63 = \\frac{1.386}{6} = 231\\text{ m}^2$$\n\nJadi, luas area rumput juring lingkaran adalah **231 meter persegi** (Opsi **A**)."
   },
   {
+    "id": "matwa-pengukuran-bangun-datar-11",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-datar",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Perbandingan antara panjang dan lebar sebuah lapangan futsal berstandar adalah $5 : 3$. Jika keliling sekeliling lapangan tersebut terukur $96\\text{ meter}$, luas permukaan lapangan futsal tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$480\\text{ m}^2$"
+      },
+      {
+        "id": "B",
+        "text": "$520\\text{ m}^2$"
+      },
+      {
+        "id": "C",
+        "text": "$540\\text{ m}^2$"
+      },
+      {
+        "id": "D",
+        "text": "$560\\text{ m}^2$"
+      },
+      {
+        "id": "E",
+        "text": "$600\\text{ m}^2$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Keliling K = 2(5x + 3x) = 96. Cari nilai x, lalu hitung panjang = 5x, lebar = 3x, dan Luas = p * l.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Misalkan panjang $p = 5x$ dan lebar $l = 3x$.\n\n2. Gunakan rumus keliling persegi panjang:\n   $$K = 2(p + l) = 96$$\n   $$2(5x + 3x) = 96$$\n   $$16x = 96 \\implies x = \\frac{96}{16} = 6\\text{ meter}$$\n\n3. Tentukan ukuran dimensi:\n   - Panjang $p = 5(6) = 30\\text{ meter}$\n   - Lebar $l = 3(6) = 18\\text{ meter}$\n\n4. Hitung luas lapangan:\n   $$L = p \\times l = 30\\text{ m} \\times 18\\text{ m} = 540\\text{ m}^2$$\n\nJadi, luas lapangan tersebut adalah **C** ($540\\text{ m}^2$)."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-datar-12",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-datar",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah bidang tanah berbentuk trapesium sama kaki memiliki panjang sisi-sisi sejajar $14\\text{ meter}$ dan $30\\text{ meter}$, serta panjang kedua sisi miringnya masing-masing $17\\text{ meter}$. Luas bidang tanah tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$308\\text{ m}^2$"
+      },
+      {
+        "id": "B",
+        "text": "$330\\text{ m}^2$"
+      },
+      {
+        "id": "C",
+        "text": "$352\\text{ m}^2$"
+      },
+      {
+        "id": "D",
+        "text": "$374\\text{ m}^2$"
+      },
+      {
+        "id": "E",
+        "text": "$396\\text{ m}^2$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Cari proyeksi sisi miring pada alas: x = (30 - 14)/2 = 8 m. Gunakan teorema Pythagoras untuk mencari tinggi: t = sqrt(17^2 - 8^2).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Hitung panjang segmen proyeksi sisi miring pada sisi alas yang lebih panjang:\n   $$x = \\frac{30 - 14}{2} = \\frac{16}{2} = 8\\text{ meter}$$\n\n2. Hitung tinggi trapesium ($t$) menggunakan teorema Pythagoras:\n   $$t = \\sqrt{17^2 - 8^2} = \\sqrt{289 - 64} = \\sqrt{225} = 15\\text{ meter}$$\n\n3. Hitung luas trapesium:\n   $$L = \\frac{a + b}{2} \\times t = \\frac{14 + 30}{2} \\times 15 = 22 \\times 15 = 330\\text{ m}^2$$\n\nJadi, luas bidang tanah tersebut adalah **B** ($330\\text{ m}^2$)."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-datar-13",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-datar",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah juring lingkaran dengan sudut pusat $60^\\circ$ memiliki panjang jari-jari $21\\text{ cm}$. Dengan menggunakan pendekatan $\\pi = \\frac{22}{7}$, panjang busur lengkung yang membatasi juring tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$11\\text{ cm}$"
+      },
+      {
+        "id": "B",
+        "text": "$22\\text{ cm}$"
+      },
+      {
+        "id": "C",
+        "text": "$33\\text{ cm}$"
+      },
+      {
+        "id": "D",
+        "text": "$44\\text{ cm}$"
+      },
+      {
+        "id": "E",
+        "text": "$66\\text{ cm}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Panjang busur = (sudut pusat / 360) * 2 * pi * r.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Formula panjang busur lingkaran:\n   $$\\text{Panjang Busur} = \\frac{\\theta}{360^\\circ} \\times 2\\pi r$$\n\n2. Masukkan parameter $\\theta = 60^\\circ$ dan $r = 21\\text{ cm}$:\n   $$\\text{Panjang Busur} = \\frac{60^\\circ}{360^\\circ} \\times 2 \\times \\frac{22}{7} \\times 21$$\n   $$\\text{Panjang Busur} = \\frac{1}{6} \\times 2 \\times 22 \\times 3 = \\frac{1}{6} \\times 132 = 22\\text{ cm}$$\n\nJadi, panjang busur lengkungnya adalah **B** ($22\\text{ cm}$)."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-datar-14",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-datar",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah taman rekreasi berbentuk persegi memiliki panjang sisi $14\\text{ meter}$. Tepat di bagian tengah taman dibangun kolam hias berbentuk lingkaran yang garis tepinya menyinggung keempat sisi persegi ($d = 14\\text{ m}$). Luas area taman di luar kolam (daerah sudut yang ditanami rumput) adalah ... (Gunakan $\\pi = \\frac{22}{7}$)",
+    "options": [
+      {
+        "id": "A",
+        "text": "$36\\text{ m}^2$"
+      },
+      {
+        "id": "B",
+        "text": "$42\\text{ m}^2$"
+      },
+      {
+        "id": "C",
+        "text": "$48\\text{ m}^2$"
+      },
+      {
+        "id": "D",
+        "text": "$54\\text{ m}^2$"
+      },
+      {
+        "id": "E",
+        "text": "$60\\text{ m}^2$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Luas area rumput = Luas persegi - Luas lingkaran dengan s = 14 m dan r = 7 m.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Hitung luas taman berbentuk persegi:\n   $$L_{\\text{persegi}} = s^2 = 14 \\times 14 = 196\\text{ m}^2$$\n\n2. Hitung luas kolam lingkaran dengan jari-jari $r = \\frac{14}{2} = 7\\text{ meter}$:\n   $$L_{\\text{lingkaran}} = \\pi r^2 = \\frac{22}{7} \\times 7^2 = 22 \\times 7 = 154\\text{ m}^2$$\n\n3. Hitung selisih luas area di luar kolam:\n   $$L_{\\text{rumput}} = 196 - 154 = 42\\text{ m}^2$$\n\nJadi, luas area rumput adalah **B** ($42\\text{ m}^2$)."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-datar-15",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-datar",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebidang tanah berbentuk segitiga sembarang memiliki panjang ketiga sisinya berturut-turut $13\\text{ meter}$, $14\\text{ meter}$, dan $15\\text{ meter}$. Luas bidang tanah tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$78\\text{ m}^2$"
+      },
+      {
+        "id": "B",
+        "text": "$84\\text{ m}^2$"
+      },
+      {
+        "id": "C",
+        "text": "$90\\text{ m}^2$"
+      },
+      {
+        "id": "D",
+        "text": "$96\\text{ m}^2$"
+      },
+      {
+        "id": "E",
+        "text": "$105\\text{ m}^2$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Gunakan rumus Heron: Luas = sqrt(s(s-a)(s-b)(s-c)) dengan s = (a + b + c)/2.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Hitung semi-perimeter ($s$):\n   $$s = \\frac{a + b + c}{2} = \\frac{13 + 14 + 15}{2} = \\frac{42}{2} = 21\\text{ meter}$$\n\n2. Gunakan rumus Heron untuk luas segitiga sembarang:\n   $$L = \\sqrt{s(s - a)(s - b)(s - c)}$$\n   $$L = \\sqrt{21(21 - 13)(21 - 14)(21 - 15)}$$\n   $$L = \\sqrt{21 \\times 8 \\times 7 \\times 6}$$\n\n3. Faktorkan bilangan di bawah akar:\n   $$L = \\sqrt{(3 \\times 7) \\times (2^3) \\times 7 \\times (2 \\times 3)} = \\sqrt{7^2 \\times 3^2 \\times 2^4}$$\n   $$L = 7 \\times 3 \\times 4 = 84\\text{ m}^2$$\n\nJadi, luas tanah tersebut adalah **B** ($84\\text{ m}^2$)."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-datar-16",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-datar",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah kerangka layang-layang hias bambu memiliki dua diagonal yang berpotongan tegak lurus dengan panjang masing-masing $16\\text{ cm}$ dan $21\\text{ cm}$. Luas kertas pembungkus yang dibutuhkan untuk menutup layang-layang tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$156\\text{ cm}^2$"
+      },
+      {
+        "id": "B",
+        "text": "$168\\text{ cm}^2$"
+      },
+      {
+        "id": "C",
+        "text": "$182\\text{ cm}^2$"
+      },
+      {
+        "id": "D",
+        "text": "$336\\text{ cm}^2$"
+      },
+      {
+        "id": "E",
+        "text": "$364\\text{ cm}^2$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Luas layang-layang = 1/2 * d_1 * d_2.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Gunakan formula luas layang-layang:\n   $$L = \\frac{1}{2} \\times d_1 \\times d_2$$\n\n2. Masukkan panjang kedua diagonal:\n   $$L = \\frac{1}{2} \\times 16\\text{ cm} \\times 21\\text{ cm} = 8 \\times 21 = 168\\text{ cm}^2$$\n\nJadi, luas kertas yang dibutuhkan adalah **B** ($168\\text{ cm}^2$)."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-datar-17",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-datar",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Lantai sebuah ruang pertemuan berukuran $12\\text{ meter} \\times 8\\text{ meter}$ akan dipasangi ubin keramik persegi berukuran $40\\text{ cm} \\times 40\\text{ cm}$. Keramik dijual dalam kemasan kardus dengan isi $10\\text{ buah per kardus}$. Jumlah kardus keramik minimum yang harus dibeli untuk menutup seluruh lantai adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$48\\text{ kardus}$"
+      },
+      {
+        "id": "B",
+        "text": "$54\\text{ kardus}$"
+      },
+      {
+        "id": "C",
+        "text": "$60\\text{ kardus}$"
+      },
+      {
+        "id": "D",
+        "text": "$64\\text{ kardus}$"
+      },
+      {
+        "id": "E",
+        "text": "$72\\text{ kardus}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Hitung luas total lantai dalam cm^2, bagi dengan luas 1 keping keramik, lalu bagi dengan isi per kardus.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Hitung luas lantai aula dalam satuan $\\text{cm}^2$:\n   $$L_{\\text{lantai}} = 1200\\text{ cm} \\times 800\\text{ cm} = 960.000\\text{ cm}^2$$\n\n2. Hitung luas satu buah ubin keramik:\n   $$L_{\\text{ubin}} = 40\\text{ cm} \\times 40\\text{ cm} = 1.600\\text{ cm}^2$$\n\n3. Hitung jumlah ubin keramik yang dibutuhkan:\n   $$N = \\frac{960.000}{1.600} = 600\\text{ buah}$$\n\n4. Hitung jumlah kardus yang harus dibeli ($1\\text{ kardus} = 10\\text{ buah}$):\n   $$\\text{Kardus} = \\frac{600}{10} = 60\\text{ kardus}$$\n\nJadi, jumlah kardus keramik yang dibutuhkan adalah **C** ($60\\text{ kardus}$)."
+  },
+  {
     "id": "matwa-pengukuran-bangun-datar-04",
     "chapter_id": "geometri-dan-pengukuran",
     "sub_chapter_id": "pengukuran-bangun-datar",

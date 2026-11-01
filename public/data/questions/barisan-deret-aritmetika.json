@@ -66,6 +66,275 @@
     "explanation": "Langkah-langkah menghitung pembagian uang dengan deret aritmetika:\n\n1. Diketahui:\n   - Banyaknya anak: $n = 5$\n   - Total uang yang dibagikan: $S_5 = \\text{Rp}1.250.000,00$\n   - Selisih antar bagian: $b = \\text{Rp}40.000,00$\n\n2. **Menentukan bagian anak tengah (anak ke-3):**\n   Karena $n = 5$ bernilai ganjil, suku tengahnya adalah anak ke-3 ($U_3$):\n   $$U_3 = \\frac{S_5}{n} = \\frac{1.250.000}{5} = \\text{Rp}250.000,00$$\n\n3. **Menentukan bagian anak sulung (anak ke-5):**\n   Anak sulung berada dua tingkat di atas anak tengah:\n   $$U_5 = U_3 + 2b = 250.000 + 2(40.000) = 250.000 + 80.000 = \\text{Rp}330.000,00$$\n\n*(Verifikasi seluruh bagian anak: anak ke-1 = Rp170.000, ke-2 = Rp210.000, ke-3 = Rp250.000, ke-4 = Rp290.000, ke-5 = Rp330.000; total = Rp1.250.000,00)*.\n\nJadi, anak sulung menerima uang sebesar **Rp330.000,00** (Opsi **A**)."
   },
   {
+    "id": "matwa-barisan-deret-aritmetika-05",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-aritmetika",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan deret bilangan aritmetika berikut:\n$$5 + 9 + 13 + 17 + \\dots$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai sifat dan rumus deret aritmetika tersebut!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rumus suku ke-$n$ dari deret tersebut adalah $U_n = 4n + 1$."
+      },
+      {
+        "id": "B",
+        "text": "Nilai dari suku ke-20 adalah $U_{20} = 81$."
+      },
+      {
+        "id": "C",
+        "text": "Jumlah 15 suku pertama deret tersebut adalah $S_{15} = 495$."
+      },
+      {
+        "id": "D",
+        "text": "Rumus jumlah $n$ suku pertama deret tersebut adalah $S_n = 4n^2 + n$."
+      },
+      {
+        "id": "E",
+        "text": "Suku ke-10 dari barisan aritmetika tersebut adalah 41."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "hint": "Tentukan suku pertama $a = 5$ dan beda $b = 9 - 5 = 4$. Gunakan rumus baku $U_n = a + (n - 1)b$ dan $S_n = \\frac{n}{2}(2a + (n - 1)b)$.",
+    "explanation": "Langkah-langkah evaluasi deret aritmetika:\n\n1. **Identifikasi parameter deret:**\n   - Suku pertama: $a = 5$\n   - Beda deret: $b = 9 - 5 = 4$\n\n2. **Rumus suku ke-$n$ (Pernyataan A):**\n   $$U_n = a + (n - 1)b = 5 + (n - 1)4 = 5 + 4n - 4 = 4n + 1$$\n   Pernyataan A bernilai **BENAR**.\n\n3. **Evaluasi suku ke-20 (Pernyataan B):**\n   $$U_{20} = 4(20) + 1 = 80 + 1 = 81$$\n   Pernyataan B bernilai **BENAR**.\n\n4. **Rumus jumlah $n$ suku pertama (Pernyataan D):**\n   $$S_n = \\frac{n}{2}\\big(2a + (n - 1)b\\big) = \\frac{n}{2}\\big(2(5) + 4(n - 1)\\big) = \\frac{n}{2}(10 + 4n - 4) = \\frac{n}{2}(4n + 6) = 2n^2 + 3n$$\n   Rumus yang benar adalah $S_n = 2n^2 + 3n$, bukan $4n^2 + n$.\n   Pernyataan D bernilai **SALAH**.\n\n5. **Evaluasi jumlah 15 suku pertama (Pernyataan C):**\n   $$S_{15} = 2(15)^2 + 3(15) = 2(225) + 45 = 450 + 45 = 495$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Rumus suku ke-$n$: $U_{10} = a + (10 - 1)b = 5 + 9(4) = 5 + 36 = 41$."
+  },
+  {
+    "id": "matwa-barisan-deret-aritmetika-11",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-aritmetika",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diketahui suku ke-$5$ suatu barisan aritmetika adalah $19$ dan suku ke-$9$ adalah $35$. Suku ke-$20$ dari barisan aritmetika tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$75$"
+      },
+      {
+        "id": "B",
+        "text": "$79$"
+      },
+      {
+        "id": "C",
+        "text": "$81$"
+      },
+      {
+        "id": "D",
+        "text": "$83$"
+      },
+      {
+        "id": "E",
+        "text": "$85$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Gunakan selisih suku U_9 - U_5 = 4b untuk mencari beda b, lalu cari suku pertama a.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Rumus suku ke-$n$ barisan aritmetika: $U_n = a + (n - 1)b$:\n   - $U_5 = a + 4b = 19$\n   - $U_9 = a + 8b = 35$\n\n2. Kurangkan kedua persamaan:\n   $$(a + 8b) - (a + 4b) = 35 - 19$$\n   $$4b = 16 \\implies b = 4$$\n\n3. Cari suku pertama $a$:\n   $$a + 4(4) = 19 \\implies a + 16 = 19 \\implies a = 3$$\n\n4. Hitung suku ke-$20$ ($U_{20}$):\n   $$U_{20} = a + 19b = 3 + 19(4) = 3 + 76 = 79$$\n\nJadi, suku ke-$20$ adalah **B** ($79$)."
+  },
+  {
+    "id": "matwa-barisan-deret-aritmetika-12",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-aritmetika",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dalam sebuah gedung pertunjukan seni, barisan kursi diatur sedemikian rupa sehingga baris paling depan memuat $20\\text{ kursi}$ dan setiap baris di belakangnya selalu memuat $4\\text{ kursi}$ lebih banyak daripada baris di depannya. Jika terdapat $15\\text{ baris kursi}$ di dalam gedung tersebut, total kapasitas seluruh tempat duduk adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$680\\text{ kursi}$"
+      },
+      {
+        "id": "B",
+        "text": "$700\\text{ kursi}$"
+      },
+      {
+        "id": "C",
+        "text": "$720\\text{ kursi}$"
+      },
+      {
+        "id": "D",
+        "text": "$740\\text{ kursi}$"
+      },
+      {
+        "id": "E",
+        "text": "$760\\text{ kursi}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Gunakan rumus jumlah deret aritmetika S_n = n/2 * (2a + (n - 1)b) dengan a = 20, b = 4, dan n = 15.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Identifikasi parameter deret aritmetika:\n   - Suku pertama ($a$) $= 20$\n   - Beda ($b$) $= 4$\n   - Banyak baris ($n$) $= 15$\n\n2. Gunakan rumus jumlah deret aritmetika $S_n$:\n   $$S_{15} = \\frac{15}{2} [2(20) + (15 - 1)4]$$\n   $$S_{15} = \\frac{15}{2} [40 + 14(4)]$$\n   $$S_{15} = \\frac{15}{2} [40 + 56] = \\frac{15}{2} [96] = 15 \\times 48 = 720\\text{ kursi}$$\n\nJadi, total kapasitas tempat duduk adalah **C** ($720\\text{ kursi}$)."
+  },
+  {
+    "id": "matwa-barisan-deret-aritmetika-13",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-aritmetika",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Jumlah $n$ suku pertama suatu deret aritmetika ditentukan oleh rumus $S_n = 3n^2 - 2n$. Rumus suku ke-$n$ ($U_n$) dari deret tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$U_n = 6n - 5$"
+      },
+      {
+        "id": "B",
+        "text": "$U_n = 6n + 1$"
+      },
+      {
+        "id": "C",
+        "text": "$U_n = 6n - 2$"
+      },
+      {
+        "id": "D",
+        "text": "$U_n = 3n - 5$"
+      },
+      {
+        "id": "E",
+        "text": "$U_n = 6n - 1$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Gunakan hubungan suku ke-n dan jumlah suku: U_n = S_n - S_(n-1).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Gunakan formula $U_n = S_n - S_{n-1}$:\n   - $S_n = 3n^2 - 2n$\n   - $S_{n-1} = 3(n - 1)^2 - 2(n - 1) = 3(n^2 - 2n + 1) - 2n + 2 = 3n^2 - 6n + 3 - 2n + 2 = 3n^2 - 8n + 5$\n\n2. Kurangkan $S_n$ dengan $S_{n-1}$:\n   $$U_n = (3n^2 - 2n) - (3n^2 - 8n + 5)$$\n   $$U_n = 3n^2 - 2n - 3n^2 + 8n - 5$$\n   $$U_n = 6n - 5$$\n\nJadi, rumus suku ke-$n$ adalah **A** ($U_n = 6n - 5$)."
+  },
+  {
+    "id": "matwa-barisan-deret-aritmetika-14",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-aritmetika",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan barisan bilangan aritmetika berhingga:\n$$7,\\; 12,\\; 17,\\; 22,\\; \\dots,\\; 197$$\nBanyaknya suku bilangan pada barisan tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$37$"
+      },
+      {
+        "id": "B",
+        "text": "$38$"
+      },
+      {
+        "id": "C",
+        "text": "$39$"
+      },
+      {
+        "id": "D",
+        "text": "$40$"
+      },
+      {
+        "id": "E",
+        "text": "$41$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Identifikasi a = 7, b = 5, dan U_n = 197. Selesaikan persamaan U_n = a + (n - 1)b untuk mencari n.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Identifikasi suku pertama, beda, dan suku terakhir:\n   - $a = 7$\n   - $b = 12 - 7 = 5$\n   - $U_n = 197$\n\n2. Substitusikan ke rumus $U_n = a + (n - 1)b$:\n   $$197 = 7 + (n - 1)5$$\n   $$197 - 7 = 5(n - 1)$$\n   $$190 = 5(n - 1)$$\n   $$n - 1 = \\frac{190}{5} = 38$$\n   $$n = 38 + 1 = 39$$\n\nJadi, banyaknya suku adalah **C** ($39$)."
+  },
+  {
+    "id": "matwa-barisan-deret-aritmetika-15",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-aritmetika",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Antara bilangan $4$ dan $28$ disisipkan sebanyak $5\\text{ bilangan}$ sehingga bersama kedua bilangan semula terbentuk barisan aritmetika baru. Beda ($b$) dari barisan aritmetika baru tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$3$"
+      },
+      {
+        "id": "B",
+        "text": "$4$"
+      },
+      {
+        "id": "C",
+        "text": "$5$"
+      },
+      {
+        "id": "D",
+        "text": "$6$"
+      },
+      {
+        "id": "E",
+        "text": "$7$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Gunakan rumus sisipan beda baru b' = (y - x) / (k + 1) dengan x = 4, y = 28, dan k = 5.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Formula beda baru hasil sisipan $k$ bilangan di antara $x$ dan $y$:\n   $$b' = \\frac{y - x}{k + 1}$$\n\n2. Masukkan nilai yang diketahui:\n   - $x = 4$\n   - $y = 28$\n   - $k = 5$\n   $$b' = \\frac{28 - 4}{5 + 1} = \\frac{24}{6} = 4$$\n\nJadi, beda barisan yang baru adalah **B** ($4$)."
+  },
+  {
+    "id": "matwa-barisan-deret-aritmetika-16",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-aritmetika",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Suatu barisan aritmetika memiliki suku pertama $a = 5$, suku terakhir $U_n = 85$, dan beda $b = 4$. Suku tengah ($U_t$) dari barisan tersebut terletak pada nomor suku ke-...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$9$"
+      },
+      {
+        "id": "B",
+        "text": "$10$"
+      },
+      {
+        "id": "C",
+        "text": "$11$"
+      },
+      {
+        "id": "D",
+        "text": "$12$"
+      },
+      {
+        "id": "E",
+        "text": "$13$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Hitung nilai suku tengah U_t = (a + U_n) / 2 = 45, lalu cari t dari rumus U_t = a + (t - 1)b.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Hitung nilai suku tengah $U_t$:\n   $$U_t = \\frac{a + U_n}{2} = \\frac{5 + 85}{2} = \\frac{90}{2} = 45$$\n\n2. Tentukan letak indeks $t$ menggunakan rumus suku ke-$t$:\n   $$U_t = a + (t - 1)b$$\n   $$45 = 5 + (t - 1)4$$\n   $$40 = 4(t - 1)$$\n   $$t - 1 = 10 \\implies t = 11$$\n\nJadi, suku tengah terletak pada suku ke-**C** ($11$)."
+  },
+  {
+    "id": "matwa-barisan-deret-aritmetika-17",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-aritmetika",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Tiga bilangan bulat $(k - 1)$, $(2k + 1)$, dan $(4k - 1)$ membentuk barisan aritmetika berurutan. Nilai konstanta $k$ yang memenuhi adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$2$"
+      },
+      {
+        "id": "B",
+        "text": "$3$"
+      },
+      {
+        "id": "C",
+        "text": "$4$"
+      },
+      {
+        "id": "D",
+        "text": "$5$"
+      },
+      {
+        "id": "E",
+        "text": "$6$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Sifat tiga suku berurutan barisan aritmetika: 2 * U_2 = U_1 + U_3.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Sifat suku tengah barisan aritmetika:\n   $$2U_2 = U_1 + U_3$$\n\n2. Masukkan bentuk aljabar masing-masing suku:\n   $$2(2k + 1) = (k - 1) + (4k - 1)$$\n   $$4k + 2 = 5k - 2$$\n\n3. Selesaikan untuk $k$:\n   $$2 + 2 = 5k - 4k$$\n   $$k = 4$$\n\nJadi, nilai $k$ yang memenuhi adalah **C** ($4$)."
+  },
+  {
     "id": "matwa-barisan-deret-aritmetika-03",
     "chapter_id": "barisan-dan-deret",
     "sub_chapter_id": "barisan-deret-aritmetika",
@@ -130,44 +399,6 @@
     "correct_answer": "A",
     "hint": "Gunakan rumus jumlah deret aritmetika $S_n = \\frac{n}{2}(a + U_n)$ dengan suku pertama $a = 8$ dan suku terakhir $U_n = 128$. Hubungan banyak suku total dan banyak bilangan yang disisipkan adalah $n = k + 2$.",
     "explanation": "Langkah-langkah penyelesaian penyisipan deret aritmetika:\n\n1. Diketahui:\n   - Suku pertama: $a = 8$\n   - Suku terakhir: $U_n = 128$\n   - Jumlah seluruh suku: $S_n = 1.088$\n   - Banyak suku total: $n = k + 2$, dengan $k$ adalah banyak bilangan yang disisipkan.\n\n2. Gunakan rumus jumlah deret aritmetika berbasis suku awal dan akhir:\n   $$S_n = \\frac{n}{2}(a + U_n)$$\n   $$1.088 = \\frac{n}{2}(8 + 128)$$\n   $$1.088 = \\frac{n}{2}(136)$$\n   $$1.088 = 68n$$\n\n3. Tentukan banyak suku total $n$:\n   $$n = \\frac{1.088}{68} = 16\\text{ suku}$$\n\n4. Hitung banyaknya bilangan yang disisipkan ($k$):\n   $$k = n - 2 = 16 - 2 = 14\\text{ bilangan}$$\n\n*(Beda barisan baru: $b = \\frac{128 - 8}{16 - 1} = \\frac{120}{15} = 8$)*.\n\nJadi, banyaknya bilangan yang disisipkan adalah **14 bilangan** (Opsi **A**)."
-  },
-  {
-    "id": "matwa-barisan-deret-aritmetika-05",
-    "chapter_id": "barisan-dan-deret",
-    "sub_chapter_id": "barisan-deret-aritmetika",
-    "question_type": "MCMA",
-    "difficulty": "STANDAR",
-    "question_text": "Diberikan deret bilangan aritmetika berikut:\n$$5 + 9 + 13 + 17 + \\dots$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai sifat dan rumus deret aritmetika tersebut!",
-    "options": [
-      {
-        "id": "A",
-        "text": "Rumus suku ke-$n$ dari deret tersebut adalah $U_n = 4n + 1$."
-      },
-      {
-        "id": "B",
-        "text": "Nilai dari suku ke-20 adalah $U_{20} = 81$."
-      },
-      {
-        "id": "C",
-        "text": "Jumlah 15 suku pertama deret tersebut adalah $S_{15} = 495$."
-      },
-      {
-        "id": "D",
-        "text": "Rumus jumlah $n$ suku pertama deret tersebut adalah $S_n = 4n^2 + n$."
-      },
-      {
-        "id": "E",
-        "text": "Suku ke-10 dari barisan aritmetika tersebut adalah 41."
-      }
-    ],
-    "correct_answer": [
-      "A",
-      "B",
-      "C",
-      "E"
-    ],
-    "hint": "Tentukan suku pertama $a = 5$ dan beda $b = 9 - 5 = 4$. Gunakan rumus baku $U_n = a + (n - 1)b$ dan $S_n = \\frac{n}{2}(2a + (n - 1)b)$.",
-    "explanation": "Langkah-langkah evaluasi deret aritmetika:\n\n1. **Identifikasi parameter deret:**\n   - Suku pertama: $a = 5$\n   - Beda deret: $b = 9 - 5 = 4$\n\n2. **Rumus suku ke-$n$ (Pernyataan A):**\n   $$U_n = a + (n - 1)b = 5 + (n - 1)4 = 5 + 4n - 4 = 4n + 1$$\n   Pernyataan A bernilai **BENAR**.\n\n3. **Evaluasi suku ke-20 (Pernyataan B):**\n   $$U_{20} = 4(20) + 1 = 80 + 1 = 81$$\n   Pernyataan B bernilai **BENAR**.\n\n4. **Rumus jumlah $n$ suku pertama (Pernyataan D):**\n   $$S_n = \\frac{n}{2}\\big(2a + (n - 1)b\\big) = \\frac{n}{2}\\big(2(5) + 4(n - 1)\\big) = \\frac{n}{2}(10 + 4n - 4) = \\frac{n}{2}(4n + 6) = 2n^2 + 3n$$\n   Rumus yang benar adalah $S_n = 2n^2 + 3n$, bukan $4n^2 + n$.\n   Pernyataan D bernilai **SALAH**.\n\n5. **Evaluasi jumlah 15 suku pertama (Pernyataan C):**\n   $$S_{15} = 2(15)^2 + 3(15) = 2(225) + 45 = 450 + 45 = 495$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Rumus suku ke-$n$: $U_{10} = a + (10 - 1)b = 5 + 9(4) = 5 + 36 = 41$."
   },
   {
     "id": "matwa-barisan-deret-aritmetika-06",

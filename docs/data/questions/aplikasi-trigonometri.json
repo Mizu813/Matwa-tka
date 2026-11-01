@@ -66,6 +66,274 @@
     "explanation": "Langkah-langkah penyelesaian:\n1. Berdasarkan sifat garis sejajar, sudut depresi $30^\\circ$ dari garis horizontal pandangan pengamat sama dengan sudut elevasi $30^\\circ$ dari perahu menuju puncak mercusuar (sudut dalam berseberangan).\n2. Pada segitiga siku-siku yang terbentuk:\n   - Sisi depan (tinggi mercusuar): $h = 45\\text{ m}$.\n   - Sisi samping (jarak horizontal perahu ke dasar mercusuar): $d$.\n3. Gunakan perbandingan tangen:\n   $$\\tan 30^\\circ = \\frac{h}{d}$$\n   $$\\frac{1}{\\sqrt{3}} = \\frac{45}{d}$$\n   $$d = 45\\sqrt{3}\\text{ meter}$$\n\nJadi, jarak mendatar perahu nelayan ke dasar mercusuar adalah $45\\sqrt{3}\\text{ meter}$."
   },
   {
+    "id": "matwa-aplikasi-trigonometri-07",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "aplikasi-trigonometri",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah tiang pemancar vertikal setinggi $24\\text{ meter}$ berdiri tegak lurus di atas tanah mendatar. Untuk menstabilkan tiang dari tiupan angin kencang, dipasang dua utas kawat baja lurus yang ditambatkan ke pasak tanah di sisi yang sama:\n- Kawat Baja 1 diikatkan dari puncak tiang (ketinggian $24\\text{ meter}$) ke pasak tanah $P_1$ dan membentuk sudut kemiringan (elevasi) $30^\\circ$ terhadap permukaan tanah.\n- Kawat Baja 2 diikatkan dari titik tengah tiang (ketinggian $12\\text{ meter}$) ke pasak tanah $P_2$ dan membentuk sudut kemiringan (elevasi) $45^\\circ$ terhadap permukaan tanah.\n\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Panjang Kawat Baja 1 adalah tepat $48\\text{ meter}$."
+      },
+      {
+        "id": "B",
+        "text": "Panjang Kawat Baja 2 adalah $12\\sqrt{2}\\text{ meter}$."
+      },
+      {
+        "id": "C",
+        "text": "Jarak pasak $P_2$ ke kaki tiang pemancar adalah $12\\text{ meter}$."
+      },
+      {
+        "id": "D",
+        "text": "Panjang Kawat Baja 1 sama dengan dua kali panjang Kawat Baja 2."
+      },
+      {
+        "id": "E",
+        "text": "Jarak pasak $P_1$ ke kaki tiang pemancar adalah $24\\text{ meter}$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Gunakan definisi perbandingan sinus untuk mencari panjang kawat (sisi miring) dan tangen untuk mencari jarak pasak ke kaki tiang (sisi samping).",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Analisis Kawat Baja 1:\n   - Ketinggian ikatan di tiang: $h_1 = 24\\text{ meter}$.\n   - Sudut elevasi terhadap tanah: $\\theta_1 = 30^\\circ$.\n   - Panjang kawat $L_1$: $\\sin 30^\\circ = \\frac{h_1}{L_1} \\implies \\frac{1}{2} = \\frac{24}{L_1} \\implies L_1 = 48\\text{ meter}$. (Pernyataan A BENAR).\n   - Jarak pasak $P_1$ ke kaki tiang ($d_1$): $\\tan 30^\\circ = \\frac{h_1}{d_1} \\implies \\frac{1}{\\sqrt{3}} = \\frac{24}{d_1} \\implies d_1 = 24\\sqrt{3}\\text{ meter} \\ne 24\\text{ meter}$. (Pernyataan E SALAH).\n2. Analisis Kawat Baja 2:\n   - Ketinggian ikatan di tiang: $h_2 = 12\\text{ meter}$.\n   - Sudut elevasi terhadap tanah: $\\theta_2 = 45^\\circ$.\n   - Panjang kawat $L_2$: $\\sin 45^\\circ = \\frac{h_2}{L_2} \\implies \\frac{1}{2}\\sqrt{2} = \\frac{12}{L_2} \\implies L_2 = \\frac{12}{\\frac{1}{2}\\sqrt{2}} = 12\\sqrt{2}\\text{ meter}$. (Pernyataan B BENAR).\n   - Jarak pasak $P_2$ ke kaki tiang ($d_2$): $\\tan 45^\\circ = \\frac{h_2}{d_2} \\implies 1 = \\frac{12}{d_2} \\implies d_2 = 12\\text{ meter}$. (Pernyataan C BENAR).\n3. Evaluasi perbandingan panjang kawat (Pernyataan D):\n   - Dua kali panjang Kawat Baja 2 adalah $2 \\times 12\\sqrt{2} = 24\\sqrt{2} \\approx 33,94\\text{ m}$.\n   - Nilai ini tidak sama dengan panjang Kawat 1 ($48\\text{ m}$), sehingga Pernyataan D SALAH.\n\nJadi, pernyataan yang bernilai BENAR adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-aplikasi-trigonometri-11",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "aplikasi-trigonometri",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Pada segitiga $ABC$, diketahui panjang sisi $a = 12\\text{ cm}$, besar sudut $\\angle A = 30^\\circ$, dan besar sudut $\\angle B = 45^\\circ$. Panjang sisi $b$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$6\\sqrt{2}\\text{ cm}$"
+      },
+      {
+        "id": "B",
+        "text": "$12\\sqrt{2}\\text{ cm}$"
+      },
+      {
+        "id": "C",
+        "text": "$12\\sqrt{3}\\text{ cm}$"
+      },
+      {
+        "id": "D",
+        "text": "$24\\sqrt{2}\\text{ cm}$"
+      },
+      {
+        "id": "E",
+        "text": "$24\\sqrt{3}\\text{ cm}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Gunakan Aturan Sinus: $\\frac{a}{\\sin A} = \\frac{b}{\\sin B}$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Menerapkan Aturan Sinus:\n   $$\\frac{a}{\\sin A} = \\frac{b}{\\sin B}$$\n2. Substitusi nilai yang diketahui:\n   $$\\frac{12}{\\sin 30^\\circ} = \\frac{b}{\\sin 45^\\circ}$$\n   $$\\frac{12}{\\frac{1}{2}} = \\frac{b}{\\frac{1}{2}\\sqrt{2}}$$\n3. Menyelesaikan nilai $b$:\n   $$24 = \\frac{b}{\\frac{1}{2}\\sqrt{2}}$$\n   $$b = 24 \\times \\frac{1}{2}\\sqrt{2} = 12\\sqrt{2}\\text{ cm}$$\n\nJadi, panjang sisi $b$ adalah $12\\sqrt{2}\\text{ cm}$."
+  },
+  {
+    "id": "matwa-aplikasi-trigonometri-12",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "aplikasi-trigonometri",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Pada segitiga $PQR$, diketahui panjang sisi $p = 6\\sqrt{2}\\text{ cm}$, sisi $q = 12\\text{ cm}$, dan sudut $\\angle P = 30^\\circ$. Jika $\\angle Q$ merupakan sudut lancip, maka besar sudut $\\angle Q$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$30^\\circ$"
+      },
+      {
+        "id": "B",
+        "text": "$45^\\circ$"
+      },
+      {
+        "id": "C",
+        "text": "$60^\\circ$"
+      },
+      {
+        "id": "D",
+        "text": "$75^\\circ$"
+      },
+      {
+        "id": "E",
+        "text": "$90^\\circ$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Gunakan Aturan Sinus: $\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}$ untuk mencari nilai $\\sin Q$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Menerapkan Aturan Sinus:\n   $$\\frac{p}{\\sin P} = \\frac{q}{\\sin Q}$$\n   $$\\frac{6\\sqrt{2}}{\\sin 30^\\circ} = \\frac{12}{\\sin Q}$$\n2. Substitusi nilai $\\sin 30^\\circ = \\frac{1}{2}$:\n   $$\\frac{6\\sqrt{2}}{\\frac{1}{2}} = \\frac{12}{\\sin Q}$$\n   $$12\\sqrt{2} = \\frac{12}{\\sin Q}$$\n3. Menentukan $\\sin Q$ dan besar sudut $\\angle Q$:\n   $$\\sin Q = \\frac{12}{12\\sqrt{2}} = \\frac{1}{\\sqrt{2}} = \\frac{1}{2}\\sqrt{2}$$\n   Karena $\\angle Q$ adalah sudut lancip, maka $\\angle Q = 45^\\circ$.\n\nJadi, besar sudut $\\angle Q$ adalah $45^\\circ$."
+  },
+  {
+    "id": "matwa-aplikasi-trigonometri-13",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "aplikasi-trigonometri",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Pada segitiga $ABC$, diketahui panjang sisi $b = 8\\text{ cm}$, sisi $c = 5\\text{ cm}$, dan sudut apit $\\angle A = 60^\\circ$. Panjang sisi $a$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$6\\text{ cm}$"
+      },
+      {
+        "id": "B",
+        "text": "$7\\text{ cm}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\sqrt{59}\\text{ cm}$"
+      },
+      {
+        "id": "D",
+        "text": "$8\\text{ cm}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\sqrt{89}\\text{ cm}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Gunakan Aturan Cosinus: $a^2 = b^2 + c^2 - 2bc\\cos A$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Menerapkan Aturan Cosinus:\n   $$a^2 = b^2 + c^2 - 2bc\\cos A$$\n2. Substitusi nilai yang diketahui:\n   $$a^2 = 8^2 + 5^2 - 2(8)(5)\\cos 60^\\circ$$\n   $$a^2 = 64 + 25 - 80\\left(\\frac{1}{2}\\right)$$\n   $$a^2 = 89 - 40 = 49$$\n3. Menghitung panjang $a$:\n   $$a = \\sqrt{49} = 7\\text{ cm}$$\n\nJadi, panjang sisi $a$ adalah $7\\text{ cm}$."
+  },
+  {
+    "id": "matwa-aplikasi-trigonometri-14",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "aplikasi-trigonometri",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Suatu segitiga $KLM$ memiliki panjang sisi $k = 4\\text{ cm}$, $l = 5\\text{ cm}$, dan $m = 6\\text{ cm}$. Nilai $\\cos K$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{1}{4}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{3}{8}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{1}{2}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{3}{4}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{5}{6}$"
+      }
+    ],
+    "correct_answer": "D",
+    "hint": "Gunakan Aturan Cosinus yang diisolasi untuk mencari cosinus sudut: $\\cos K = \\frac{l^2 + m^2 - k^2}{2lm}$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Rumus Aturan Cosinus untuk sudut $K$:\n   $$k^2 = l^2 + m^2 - 2lm\\cos K$$\n   $$\\cos K = \\frac{l^2 + m^2 - k^2}{2lm}$$\n2. Substitusi nilai sisi ke rumus:\n   $$\\cos K = \\frac{5^2 + 6^2 - 4^2}{2(5)(6)}$$\n   $$\\cos K = \\frac{25 + 36 - 16}{60} = \\frac{45}{60}$$\n3. Menyederhanakan pecahan:\n   $$\\cos K = \\frac{3}{4}$$\n\nJadi, nilai $\\cos K$ adalah $\\frac{3}{4}$."
+  },
+  {
+    "id": "matwa-aplikasi-trigonometri-15",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "aplikasi-trigonometri",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Luas segitiga $ABC$ yang memiliki panjang sisi $a = 10\\text{ cm}$, sisi $b = 14\\text{ cm}$, dan besar sudut apit $\\angle C = 30^\\circ$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$17{,}5\\text{ cm}^2$"
+      },
+      {
+        "id": "B",
+        "text": "$35\\text{ cm}^2$"
+      },
+      {
+        "id": "C",
+        "text": "$35\\sqrt{2}\\text{ cm}^2$"
+      },
+      {
+        "id": "D",
+        "text": "$35\\sqrt{3}\\text{ cm}^2$"
+      },
+      {
+        "id": "E",
+        "text": "$70\\text{ cm}^2$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Gunakan rumus luas segitiga dengan sinus sudut apit: $L = \\frac{1}{2} a b \\sin C$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Rumus luas segitiga:\n   $$L = \\frac{1}{2} a b \\sin C$$\n2. Substitusi nilai:\n   $$L = \\frac{1}{2} \\times 10 \\times 14 \\times \\sin 30^\\circ$$\n   $$L = 70 \\times \\frac{1}{2} = 35\\text{ cm}^2$$\n\nJadi, luas segitiga $ABC$ adalah $35\\text{ cm}^2$."
+  },
+  {
+    "id": "matwa-aplikasi-trigonometri-16",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "aplikasi-trigonometri",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dua buah kapal motor $P$ dan $Q$ berangkat bersamaan dari dermaga pelabuhan $O$. Kapal $P$ berlayar dengan arah jurusan tiga angka $030^\\circ$ berkecepatan $30\\text{ knot}$, sedangkan kapal $Q$ berlayar dengan arah jurusan tiga angka $090^\\circ$ berkecepatan $40\\text{ knot}$. Setelah kedua kapal berlayar selama $2\\text{ jam}$, jarak lurus antara kapal $P$ dan kapal $Q$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$10\\sqrt{13}\\text{ mil}$"
+      },
+      {
+        "id": "B",
+        "text": "$20\\sqrt{13}\\text{ mil}$"
+      },
+      {
+        "id": "C",
+        "text": "$20\\sqrt{37}\\text{ mil}$"
+      },
+      {
+        "id": "D",
+        "text": "$70\\text{ mil}$"
+      },
+      {
+        "id": "E",
+        "text": "$100\\text{ mil}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Hitung sudut apit antar kedua lintasan ($090^\\circ - 030^\\circ = 60^\\circ$) dan jarak tempuh masing-masing kapal selama 2 jam, lalu gunakan Aturan Cosinus.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Menghitung jarak tempuh masing-masing kapal:\n   - Kapal $P$: $d_P = 30\\text{ knot} \\times 2\\text{ jam} = 60\\text{ mil}$.\n   - Kapal $Q$: $d_Q = 40\\text{ knot} \\times 2\\text{ jam} = 80\\text{ mil}$.\n2. Menentukan sudut apit $\\theta$ di dermaga $O$:\n   $$\\theta = 090^\\circ - 030^\\circ = 60^\\circ$$\n3. Menghitung jarak $PQ$ dengan Aturan Cosinus:\n   $$PQ^2 = OP^2 + OQ^2 - 2(OP)(OQ)\\cos 60^\\circ$$\n   $$PQ^2 = 60^2 + 80^2 - 2(60)(80)\\left(\\frac{1}{2}\\right)$$\n   $$PQ^2 = 3600 + 6400 - 4800 = 10000 - 4800 = 5200$$\n   $$PQ = \\sqrt{5200} = \\sqrt{400 \\times 13} = 20\\sqrt{13}\\text{ mil}$$\n\nJadi, jarak antara kapal $P$ dan kapal $Q$ adalah $20\\sqrt{13}\\text{ mil}$."
+  },
+  {
+    "id": "matwa-aplikasi-trigonometri-17",
+    "chapter_id": "trigonometri",
+    "sub_chapter_id": "aplikasi-trigonometri",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Seorang pengamat dengan tinggi mata $1{,}6\\text{ meter}$ dari permukaan tanah mengamati puncak sebuah tiang bendera dengan sudut elevasi $45^\\circ$. Jika pengamat tersebut berdiri pada jarak horizontal $18{,}4\\text{ meter}$ dari tiang bendera, maka tinggi tiang bendera dari permukaan tanah adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$16{,}8\\text{ meter}$"
+      },
+      {
+        "id": "B",
+        "text": "$18{,}4\\text{ meter}$"
+      },
+      {
+        "id": "C",
+        "text": "$20{,}0\\text{ meter}$"
+      },
+      {
+        "id": "D",
+        "text": "$21{,}6\\text{ meter}$"
+      },
+      {
+        "id": "E",
+        "text": "$23{,}4\\text{ meter}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Tinggi objek dihitung dari $h = h_{\\text{mata}} + x \\cdot \\tan \\alpha$, dengan $\\alpha$ adalah sudut elevasi.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Menghitung ketinggian tiang di atas tinggi mata pengamat ($y$):\n   $$\\tan 45^\\circ = \\frac{y}{x} = \\frac{y}{18{,}4}$$\n   Karena $\\tan 45^\\circ = 1$, maka:\n   $$y = 18{,}4 \\times 1 = 18{,}4\\text{ meter}$$\n2. Menghitung tinggi total tiang bendera dari permukaan tanah:\n   $$H = y + h_{\\text{mata}} = 18{,}4 + 1{,}6 = 20{,}0\\text{ meter}$$\n\nJadi, tinggi tiang bendera tersebut adalah $20{,}0\\text{ meter}$."
+  },
+  {
     "id": "matwa-aplikasi-trigonometri-03",
     "chapter_id": "trigonometri",
     "sub_chapter_id": "aplikasi-trigonometri",
@@ -204,43 +472,6 @@
     ],
     "hint": "Tentukan jarak mendatar dan jarak pandang lurus (hipotenusa) untuk masing-masing mobil dari segitiga siku-siku yang terbentuk. Karena kedua mobil berada pada sisi berlawanan terhadap titik proyeksi drone, jarak total kedua mobil adalah penjumlahan kedua jarak mendatar.",
     "explanation": "Langkah-langkah penyelesaian:\n1. Misalkan titik kedudukan drone di udara adalah $D$ dan proyeksi tegak lurusnya di permukaan jalan tol adalah titik $O$. Tinggi drone: $DO = 120\\text{ m}$.\n2. Analisis Mobil Merah ($M_1$):\n   - Sudut depresi $45^\\circ \\implies$ sudut elevasi dari $M_1$ ke $D$ adalah $45^\\circ$.\n   - Jarak mendatar $OM_1$: $\\tan 45^\\circ = \\frac{DO}{OM_1} \\implies 1 = \\frac{120}{OM_1} \\implies OM_1 = 120\\text{ meter}$.\n   - Jarak lurus $DM_1$: $\\sin 45^\\circ = \\frac{DO}{DM_1} \\implies DM_1 = \\frac{120}{\\frac{1}{2}\\sqrt{2}} = 120\\sqrt{2} \\approx 120 \\times 1,41 = 169,2\\text{ meter}$.\n3. Analisis Mobil Putih ($M_2$):\n   - Sudut depresi $60^\\circ \\implies$ sudut elevasi dari $M_2$ ke $D$ adalah $60^\\circ$.\n   - Jarak mendatar $OM_2$: $\\tan 60^\\circ = \\frac{DO}{OM_2} \\implies \\sqrt{3} = \\frac{120}{OM_2} \\implies OM_2 = \\frac{120}{\\sqrt{3}} = 40\\sqrt{3} \\approx 40 \\times 1,73 = 69,2\\text{ meter}$. (Pernyataan A BENAR).\n   - Jarak lurus $DM_2$: $\\sin 60^\\circ = \\frac{DO}{DM_2} \\implies DM_2 = \\frac{120}{\\frac{1}{2}\\sqrt{3}} = \\frac{240}{\\sqrt{3}} = 80\\sqrt{3} \\approx 80 \\times 1,73 = 138,4\\text{ meter}$. (Pernyataan B BENAR).\n4. Evaluasi jarak antara kedua mobil (Pernyataan C):\n   - Karena kedua mobil berada pada sisi yang berlawanan terhadap titik $O$:\n     $$M_1M_2 = OM_1 + OM_2 = 120 + 69,2 = 189,2\\text{ meter}$$\n   - Pernyataan C BENAR.\n5. Evaluasi Pernyataan D dan E:\n   - Jarak lurus ke Mobil Merah ($169,2\\text{ m}$) lebih panjang daripada jarak lurus ke Mobil Putih ($138,4\\text{ m}$), sehingga Pernyataan D SALAH.\n   - Jika kedua mobil berada pada sisi yang sama, jaraknya adalah selisihnya: $120 - 69,2 = 50,8\\text{ meter}$, bukan $120\\text{ meter}$, sehingga Pernyataan E SALAH.\n\nJadi, pernyataan yang bernilai BENAR adalah A, B, dan C."
-  },
-  {
-    "id": "matwa-aplikasi-trigonometri-07",
-    "chapter_id": "trigonometri",
-    "sub_chapter_id": "aplikasi-trigonometri",
-    "question_type": "MCMA",
-    "difficulty": "STANDAR",
-    "question_text": "Sebuah tiang pemancar vertikal setinggi $24\\text{ meter}$ berdiri tegak lurus di atas tanah mendatar. Untuk menstabilkan tiang dari tiupan angin kencang, dipasang dua utas kawat baja lurus yang ditambatkan ke pasak tanah di sisi yang sama:\n- Kawat Baja 1 diikatkan dari puncak tiang (ketinggian $24\\text{ meter}$) ke pasak tanah $P_1$ dan membentuk sudut kemiringan (elevasi) $30^\\circ$ terhadap permukaan tanah.\n- Kawat Baja 2 diikatkan dari titik tengah tiang (ketinggian $12\\text{ meter}$) ke pasak tanah $P_2$ dan membentuk sudut kemiringan (elevasi) $45^\\circ$ terhadap permukaan tanah.\n\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
-    "options": [
-      {
-        "id": "A",
-        "text": "Panjang Kawat Baja 1 adalah tepat $48\\text{ meter}$."
-      },
-      {
-        "id": "B",
-        "text": "Panjang Kawat Baja 2 adalah $12\\sqrt{2}\\text{ meter}$."
-      },
-      {
-        "id": "C",
-        "text": "Jarak pasak $P_2$ ke kaki tiang pemancar adalah $12\\text{ meter}$."
-      },
-      {
-        "id": "D",
-        "text": "Panjang Kawat Baja 1 sama dengan dua kali panjang Kawat Baja 2."
-      },
-      {
-        "id": "E",
-        "text": "Jarak pasak $P_1$ ke kaki tiang pemancar adalah $24\\text{ meter}$."
-      }
-    ],
-    "correct_answer": [
-      "A",
-      "B",
-      "C"
-    ],
-    "hint": "Gunakan definisi perbandingan sinus untuk mencari panjang kawat (sisi miring) dan tangen untuk mencari jarak pasak ke kaki tiang (sisi samping).",
-    "explanation": "Langkah-langkah penyelesaian:\n1. Analisis Kawat Baja 1:\n   - Ketinggian ikatan di tiang: $h_1 = 24\\text{ meter}$.\n   - Sudut elevasi terhadap tanah: $\\theta_1 = 30^\\circ$.\n   - Panjang kawat $L_1$: $\\sin 30^\\circ = \\frac{h_1}{L_1} \\implies \\frac{1}{2} = \\frac{24}{L_1} \\implies L_1 = 48\\text{ meter}$. (Pernyataan A BENAR).\n   - Jarak pasak $P_1$ ke kaki tiang ($d_1$): $\\tan 30^\\circ = \\frac{h_1}{d_1} \\implies \\frac{1}{\\sqrt{3}} = \\frac{24}{d_1} \\implies d_1 = 24\\sqrt{3}\\text{ meter} \\ne 24\\text{ meter}$. (Pernyataan E SALAH).\n2. Analisis Kawat Baja 2:\n   - Ketinggian ikatan di tiang: $h_2 = 12\\text{ meter}$.\n   - Sudut elevasi terhadap tanah: $\\theta_2 = 45^\\circ$.\n   - Panjang kawat $L_2$: $\\sin 45^\\circ = \\frac{h_2}{L_2} \\implies \\frac{1}{2}\\sqrt{2} = \\frac{12}{L_2} \\implies L_2 = \\frac{12}{\\frac{1}{2}\\sqrt{2}} = 12\\sqrt{2}\\text{ meter}$. (Pernyataan B BENAR).\n   - Jarak pasak $P_2$ ke kaki tiang ($d_2$): $\\tan 45^\\circ = \\frac{h_2}{d_2} \\implies 1 = \\frac{12}{d_2} \\implies d_2 = 12\\text{ meter}$. (Pernyataan C BENAR).\n3. Evaluasi perbandingan panjang kawat (Pernyataan D):\n   - Dua kali panjang Kawat Baja 2 adalah $2 \\times 12\\sqrt{2} = 24\\sqrt{2} \\approx 33,94\\text{ m}$.\n   - Nilai ini tidak sama dengan panjang Kawat 1 ($48\\text{ m}$), sehingga Pernyataan D SALAH.\n\nJadi, pernyataan yang bernilai BENAR adalah A, B, dan C."
   },
   {
     "id": "matwa-aplikasi-trigonometri-08",

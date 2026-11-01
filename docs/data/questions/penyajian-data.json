@@ -66,6 +66,274 @@
     "explanation": "Langkah-langkah evaluasi perubahan persentase penjualan antar bulan:\n1. Periode Januari ke Februari:\n   - Kenaikan volume: $150 - 120 = 30\\text{ ton}$\n   - Persentase: $\\frac{30}{120} \\times 100\\% = 25\\%$\n2. Periode Februari ke Maret:\n   - Mengalami penurunan: $135 - 150 = -15\\text{ ton}$ (penurunan sebesar $10\\%$)\n3. Periode Maret ke April:\n   - Kenaikan volume: $180 - 135 = 45\\text{ ton}$\n   - Persentase: $\\frac{45}{135} \\times 100\\% = \\frac{1}{3} \\times 100\\% \\approx 33,33\\%$\n4. Periode April ke Mei:\n   - Mengalami penurunan: $144 - 180 = -36\\text{ ton}$ (penurunan sebesar $20\\%$)\n5. Periode Mei ke Juni:\n   - Kenaikan volume: $216 - 144 = 72\\text{ ton}$\n   - Persentase: $\\frac{72}{144} \\times 100\\% = \\frac{1}{2} \\times 100\\% = 50\\%$\n\nBerdasarkan perbandingan di atas, peningkatan persentase penjualan terbesar terjadi pada periode Mei ke Juni, yaitu sebesar $50\\%$."
   },
   {
+    "id": "matwa-penyajian-data-07",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "penyajian-data",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Dinas Pertanian mencatat hasil panen jagung (dalam satuan ton) dari enam desa binaan di satu kecamatan pada musim panen raya:\n\n| Desa | Hasil Panen (Ton) |\n| :--- | :---: |\n| Desa Sukamaju | $48$ |\n| Desa Sukamulya | $42$ |\n| Desa Mekarsari | $55$ |\n| Desa Cibening | $35$ |\n| Desa Karangtanjung | $60$ |\n| Desa Wargamekar | $30$ |\n\nTarget rata-rata hasil panen yang ditetapkan oleh dinas adalah $45\\text{ ton}$ per desa.\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rata-rata aktual hasil panen dari keenam desa tersebut adalah tepat $45\\text{ ton}$ per desa."
+      },
+      {
+        "id": "B",
+        "text": "Terdapat tepat 3 desa yang berhasil mencapai atau melampaui target rata-rata panen $45\\text{ ton}$."
+      },
+      {
+        "id": "C",
+        "text": "Selisih antara hasil panen tertinggi dan terendah dari keenam desa tersebut adalah $30\\text{ ton}$."
+      },
+      {
+        "id": "D",
+        "text": "Total hasil panen dari keenam desa binaan tersebut adalah $300\\text{ ton}$."
+      },
+      {
+        "id": "E",
+        "text": "Desa Sukamulya merupakan desa dengan hasil panen paling rendah."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Hitung jumlah total panen dan bagi dengan banyak desa ($6$) untuk mencari rata-rata aktual. Bandingkan hasil panen tiap desa terhadap ambang batas $45\\text{ ton}$.",
+    "explanation": "Langkah-langkah evaluasi data:\n1. Hitung total hasil panen keenam desa:\n   $$\\text{Total} = 48 + 42 + 55 + 35 + 60 + 30 = 270\\text{ ton}$$\n   (Pernyataan D SALAH karena total adalah $270\\text{ ton}$, bukan $300\\text{ ton}$).\n2. Hitung rata-rata hasil panen aktual:\n   $$\\bar{x} = \\frac{270}{6} = 45\\text{ ton}$$\n   (Pernyataan A BENAR karena rata-rata aktual tepat $45\\text{ ton}$ per desa).\n3. Identifikasi desa yang mencapai atau melampaui target ($\\ge 45\\text{ ton}$):\n   - Desa Sukamaju ($48\\text{ ton}$)\n   - Desa Mekarsari ($55\\text{ ton}$)\n   - Desa Karangtanjung ($60\\text{ ton}$)\n   Terdapat tepat 3 desa. (Pernyataan B BENAR).\n4. Evaluasi panen tertinggi dan terendah:\n   - Panen tertinggi: Desa Karangtanjung ($60\\text{ ton}$).\n   - Panen terendah: Desa Wargamekar ($30\\text{ ton}$), bukan Sukamulya ($42\\text{ ton}$). (Pernyataan E SALAH).\n   - Selisih tertinggi dan terendah: $60 - 30 = 30\\text{ ton}$. (Pernyataan C BENAR).\n\nJadi, pernyataan yang bernilai BENAR adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-penyajian-data-11",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "penyajian-data",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diagram lingkaran menyajikan data pemilihan kegiatan ekstrakurikuler dari $360\\text{ siswa}$ di suatu SMA: Futsal sebesar $100^\\circ$, Basket sebesar $80^\\circ$, Pramuka sebesar $90^\\circ$, Robotik sebesar $50^\\circ$, dan sisanya memilih Seni. Banyak siswa yang memilih ekstrakurikuler Seni adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$30\\text{ siswa}$"
+      },
+      {
+        "id": "B",
+        "text": "$36\\text{ siswa}$"
+      },
+      {
+        "id": "C",
+        "text": "$40\\text{ siswa}$"
+      },
+      {
+        "id": "D",
+        "text": "$45\\text{ siswa}$"
+      },
+      {
+        "id": "E",
+        "text": "$50\\text{ siswa}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Total sudut satu lingkaran penuh adalah $360^\\circ$. Cari sudut sektor Seni terlebih dahulu, lalu hitung jumlah siswanya.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Menghitung besar sudut sektor Seni:\n   $$\\theta_{\\text{Seni}} = 360^\\circ - (100^\\circ + 80^\\circ + 90^\\circ + 50^\\circ) = 360^\\circ - 320^\\circ = 40^\\circ$$\n2. Menghitung banyak siswa yang memilih Seni:\n   $$\\text{Banyak siswa} = \\frac{\\theta_{\\text{Seni}}}{360^\\circ} \\times 360 = \\frac{40^\\circ}{360^\\circ} \\times 360 = 40\\text{ siswa}$$\n\nJadi, banyak siswa yang memilih ekstrakurikuler Seni adalah $40\\text{ siswa}$."
+  },
+  {
+    "id": "matwa-penyajian-data-12",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "penyajian-data",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Suatu tabel distribusi frekuensi memiliki kelas-kelas interval: $21 - 25$, $26 - 30$, $31 - 35$, $36 - 40$, dan $41 - 45$. Tepi bawah kelas ketiga dan panjang kelas interval tersebut berturut-turut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$30{,}5$ dan $4$"
+      },
+      {
+        "id": "B",
+        "text": "$30{,}5$ dan $5$"
+      },
+      {
+        "id": "C",
+        "text": "$31{,}0$ dan $5$"
+      },
+      {
+        "id": "D",
+        "text": "$31{,}5$ dan $4$"
+      },
+      {
+        "id": "E",
+        "text": "$31{,}5$ dan $5$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Tepi bawah adalah batas bawah dikurangi $0{,}5$. Panjang kelas dihitung dari selisih tepi atas dan tepi bawah kelas yang bersangkutan.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Kelas interval ketiga adalah $31 - 35$:\n   - Batas bawah ($B_b$) $= 31$.\n   - Batas atas ($B_a$) $= 35$.\n2. Menghitung tepi bawah kelas ketiga:\n   $$T_b = B_b - 0{,}5 = 31 - 0{,}5 = 30{,}5$$\n3. Menghitung panjang kelas ($c$):\n   $$c = T_a - T_b = 35{,}5 - 30{,}5 = 5$$\n   (Atau $c = 35 - 31 + 1 = 5$).\n\nJadi, tepi bawah dan panjang kelasnya berturut-turut adalah $30{,}5$ dan $5$."
+  },
+  {
+    "id": "matwa-penyajian-data-13",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "penyajian-data",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Perhatikan data distribusi frekuensi kumulatif \"kurang dari\" nilai tes berikut:\n- Nilai $\\le 49{,}5$: frekuensi kumulatif $= 4$\n- Nilai $\\le 59{,}5$: frekuensi kumulatif $= 11$\n- Nilai $\\le 69{,}5$: frekuensi kumulatif $= 25$\n- Nilai $\\le 79{,}5$: frekuensi kumulatif $= 42$\n- Nilai $\\le 89{,}5$: frekuensi kumulatif $= 50$\nBanyak siswa yang memperoleh nilai pada interval kelas $70 - 79$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$8\\text{ siswa}$"
+      },
+      {
+        "id": "B",
+        "text": "$14\\text{ siswa}$"
+      },
+      {
+        "id": "C",
+        "text": "$17\\text{ siswa}$"
+      },
+      {
+        "id": "D",
+        "text": "$25\\text{ siswa}$"
+      },
+      {
+        "id": "E",
+        "text": "$42\\text{ siswa}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Frekuensi kelas suatu interval sama dengan selisih frekuensi kumulatif tepi atasnya dengan frekuensi kumulatif tepi bawahnya.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Interval kelas $70 - 79$ memiliki:\n   - Tepi bawah $= 69{,}5$\n   - Tepi atas $= 79{,}5$\n2. Menghitung frekuensi kelas interval tersebut:\n   $$f = F_k(\\le 79{,}5) - F_k(\\le 69{,}5)$$\n   $$f = 42 - 25 = 17\\text{ siswa}$$\n\nJadi, banyak siswa yang memperoleh nilai pada interval $70 - 79$ adalah $17\\text{ siswa}$."
+  },
+  {
+    "id": "matwa-penyajian-data-14",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "penyajian-data",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Jika suatu kelas interval data memiliki batas bawah $50$ dan batas atas $59$, maka titik tengah ($x_i$) dan tepi atas ($T_a$) kelas interval tersebut berturut-turut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$54{,}0$ dan $59{,}0$"
+      },
+      {
+        "id": "B",
+        "text": "$54{,}5$ dan $59{,}0$"
+      },
+      {
+        "id": "C",
+        "text": "$54{,}5$ dan $59{,}5$"
+      },
+      {
+        "id": "D",
+        "text": "$55{,}0$ dan $59{,}5$"
+      },
+      {
+        "id": "E",
+        "text": "$55{,}0$ dan $60{,}0$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Titik tengah adalah rata-rata dari batas bawah dan batas atas: $x_i = \\frac{B_b + B_a}{2}$. Tepi atas adalah batas atas ditambah $0{,}5$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Menghitung titik tengah ($x_i$):\n   $$x_i = \\frac{B_b + B_a}{2} = \\frac{50 + 59}{2} = \\frac{109}{2} = 54{,}5$$\n2. Menghitung tepi atas ($T_a$):\n   $$T_a = B_a + 0{,}5 = 59 + 0{,}5 = 59{,}5$$\n\nJadi, titik tengah dan tepi atas berturut-turut adalah $54{,}5$ dan $59{,}5$."
+  },
+  {
+    "id": "matwa-penyajian-data-15",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "penyajian-data",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dalam suatu survei kepuasan pelanggan terhadap $200\\text{ responden}$, diperoleh data: kategori Sangat Puas sebesar $35\\%$, Puas sebesar $45\\%$, Cukup sebesar $12\\%$, dan sisanya menyatakan Kurang Puas. Banyak responden yang menyatakan Kurang Puas adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$8\\text{ orang}$"
+      },
+      {
+        "id": "B",
+        "text": "$12\\text{ orang}$"
+      },
+      {
+        "id": "C",
+        "text": "$16\\text{ orang}$"
+      },
+      {
+        "id": "D",
+        "text": "$20\\text{ orang}$"
+      },
+      {
+        "id": "E",
+        "text": "$24\\text{ orang}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Total persentase adalah $100\\%$. Tentukan persentase kategori Kurang Puas, lalu kalikan dengan total $200\\text{ responden}$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Menghitung persentase kategori Kurang Puas:\n   $$\\% = 100\\% - (35\\% + 45\\% + 12\\%) = 100\\% - 92\\% = 8\\%$$\n2. Menghitung jumlah orang:\n   $$\\text{Banyak responden} = \\frac{8}{100} \\times 200 = 16\\text{ orang}$$\n\nJadi, banyak responden yang menyatakan Kurang Puas adalah $16\\text{ orang}$."
+  },
+  {
+    "id": "matwa-penyajian-data-16",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "penyajian-data",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Pada sebuah histogram pengukuran berat badan sekelompok balita, batang frekuensi untuk kelas interval $11 - 15\\text{ kg}$ memiliki tinggi $12$. Jika total seluruh balita yang diukur adalah $60\\text{ balita}$, maka persentase balita yang berada pada kelompok berat badan tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$12\\%$"
+      },
+      {
+        "id": "B",
+        "text": "$15\\%$"
+      },
+      {
+        "id": "C",
+        "text": "$20\\%$"
+      },
+      {
+        "id": "D",
+        "text": "$24\\%$"
+      },
+      {
+        "id": "E",
+        "text": "$25\\%$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Persentase dihitung dengan membagi frekuensi kelas dengan frekuensi total dikalikan $100\\%$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Diketahui frekuensi kelas $11 - 15\\text{ kg}$ adalah $f = 12$.\n2. Total frekuensi data $N = 60$.\n3. Menghitung persentase:\n   $$\\text{Persentase} = \\frac{12}{60} \\times 100\\% = \\frac{1}{5} \\times 100\\% = 20\\%$$\n\nJadi, persentasenya adalah $20\\%$."
+  },
+  {
+    "id": "matwa-penyajian-data-17",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "penyajian-data",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Data produksi gabah kering (dalam satuan ton) dari $5\\text{ desa}$ adalah sebagai berikut: Desa A $= 120\\text{ ton}$, Desa B $= 150\\text{ ton}$, Desa C $= 180\\text{ ton}$, Desa D $= 90\\text{ ton}$, dan Desa E $= 210\\text{ ton}$. Jika data tersebut disajikan ke dalam diagram lingkaran, besar sudut sektor untuk Desa C adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$72{,}0^\\circ$"
+      },
+      {
+        "id": "B",
+        "text": "$86{,}4^\\circ$"
+      },
+      {
+        "id": "C",
+        "text": "$90{,}0^\\circ$"
+      },
+      {
+        "id": "D",
+        "text": "$100{,}8^\\circ$"
+      },
+      {
+        "id": "E",
+        "text": "$108{,}0^\\circ$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Hitung total ton produksi seluruh desa, kemudian gunakan rumus sudut sektor: $\\theta = \\frac{\\text{produksi desa}}{\\text{total produksi}} \\times 360^\\circ$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Menghitung total produksi seluruh desa:\n   $$\\text{Total} = 120 + 150 + 180 + 90 + 210 = 750\\text{ ton}$$\n2. Menghitung besar sudut sektor Desa C:\n   $$\\theta_C = \\frac{180}{750} \\times 360^\\circ = \\frac{6}{25} \\times 360^\\circ = \\frac{2160^\\circ}{25} = 86{,}4^\\circ$$\n\nJadi, besar sudut sektor untuk Desa C adalah $86{,}4^\\circ$."
+  },
+  {
     "id": "matwa-penyajian-data-03",
     "chapter_id": "statistika",
     "sub_chapter_id": "penyajian-data",
@@ -204,43 +472,6 @@
     ],
     "hint": "Konversikan seluruh sektor ke dalam derajat atau jumlah orang. Ingat bahwa $360^\\circ = 100\\% = 1.800\\text{ orang}$. Maka $1^\\circ = 5\\text{ orang}$ dan $1\\% = 18\\text{ orang} = 3,6^\\circ$.",
     "explanation": "Langkah-langkah konversi dan analisis data diagram lingkaran:\n1. Faktor konversi dasar:\n   - Total populasi: $1.800\\text{ orang} = 360^\\circ = 100\\%$.\n   - Setiap $1^\\circ$ mewakili $\\frac{1.800}{360} = 5\\text{ orang}$.\n   - Setiap $1\\%$ mewakili $\\frac{1.800}{100} = 18\\text{ orang} = 3,6^\\circ$.\n2. Evaluasi Bus Jemputan Karyawan:\n   - Sudut pusat: $120^\\circ$.\n   - Jumlah karyawan: $120 \\times 5 = 600\\text{ orang}$. (Pernyataan A BENAR).\n   - Persentase: $\\frac{120^\\circ}{360^\\circ} \\times 100\\% = 33\\frac{1}{3}\\% \\ne 40\\%$. (Pernyataan E SALAH).\n3. Evaluasi Kereta Commuter Line:\n   - Persentase: $25\\%$.\n   - Sudut pusat: $25\\% \\times 360^\\circ = 90^\\circ$. (Pernyataan B BENAR).\n   - Jumlah karyawan: $25 \\times 18 = 450\\text{ orang}$.\n4. Evaluasi Mobil Pribadi:\n   - Sudut pusat: $40^\\circ$.\n   - Jumlah karyawan: $40 \\times 5 = 200\\text{ orang}$.\n5. Evaluasi Jalan Kaki / Sepeda Non-motor:\n   - Persentase: $5\\%$.\n   - Sudut pusat: $5 \\times 3,6^\\circ = 18^\\circ$.\n   - Jumlah karyawan: $5 \\times 18 = 90\\text{ orang}$.\n6. Evaluasi Sepeda Motor ($x^\\circ$):\n   - Total sudut yang terpakai selain motor: $120^\\circ + 90^\\circ + 40^\\circ + 18^\\circ = 268^\\circ$.\n   - Sudut sektor sepeda motor: $x^\\circ = 360^\\circ - 268^\\circ = 92^\\circ$.\n   - Jumlah karyawan: $92 \\times 5 = 460\\text{ orang}$. (Pernyataan C BENAR).\n7. Evaluasi Pernyataan D:\n   - Selisih pengguna Mobil Pribadi ($200$) dan Jalan Kaki ($90$): $200 - 90 = 110\\text{ orang} \\ne 150\\text{ orang}$. (Pernyataan D SALAH).\n\nJadi, pernyataan yang bernilai BENAR adalah A, B, dan C."
-  },
-  {
-    "id": "matwa-penyajian-data-07",
-    "chapter_id": "statistika",
-    "sub_chapter_id": "penyajian-data",
-    "question_type": "MCMA",
-    "difficulty": "STANDAR",
-    "question_text": "Dinas Pertanian mencatat hasil panen jagung (dalam satuan ton) dari enam desa binaan di satu kecamatan pada musim panen raya:\n\n| Desa | Hasil Panen (Ton) |\n| :--- | :---: |\n| Desa Sukamaju | $48$ |\n| Desa Sukamulya | $42$ |\n| Desa Mekarsari | $55$ |\n| Desa Cibening | $35$ |\n| Desa Karangtanjung | $60$ |\n| Desa Wargamekar | $30$ |\n\nTarget rata-rata hasil panen yang ditetapkan oleh dinas adalah $45\\text{ ton}$ per desa.\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
-    "options": [
-      {
-        "id": "A",
-        "text": "Rata-rata aktual hasil panen dari keenam desa tersebut adalah tepat $45\\text{ ton}$ per desa."
-      },
-      {
-        "id": "B",
-        "text": "Terdapat tepat 3 desa yang berhasil mencapai atau melampaui target rata-rata panen $45\\text{ ton}$."
-      },
-      {
-        "id": "C",
-        "text": "Selisih antara hasil panen tertinggi dan terendah dari keenam desa tersebut adalah $30\\text{ ton}$."
-      },
-      {
-        "id": "D",
-        "text": "Total hasil panen dari keenam desa binaan tersebut adalah $300\\text{ ton}$."
-      },
-      {
-        "id": "E",
-        "text": "Desa Sukamulya merupakan desa dengan hasil panen paling rendah."
-      }
-    ],
-    "correct_answer": [
-      "A",
-      "B",
-      "C"
-    ],
-    "hint": "Hitung jumlah total panen dan bagi dengan banyak desa ($6$) untuk mencari rata-rata aktual. Bandingkan hasil panen tiap desa terhadap ambang batas $45\\text{ ton}$.",
-    "explanation": "Langkah-langkah evaluasi data:\n1. Hitung total hasil panen keenam desa:\n   $$\\text{Total} = 48 + 42 + 55 + 35 + 60 + 30 = 270\\text{ ton}$$\n   (Pernyataan D SALAH karena total adalah $270\\text{ ton}$, bukan $300\\text{ ton}$).\n2. Hitung rata-rata hasil panen aktual:\n   $$\\bar{x} = \\frac{270}{6} = 45\\text{ ton}$$\n   (Pernyataan A BENAR karena rata-rata aktual tepat $45\\text{ ton}$ per desa).\n3. Identifikasi desa yang mencapai atau melampaui target ($\\ge 45\\text{ ton}$):\n   - Desa Sukamaju ($48\\text{ ton}$)\n   - Desa Mekarsari ($55\\text{ ton}$)\n   - Desa Karangtanjung ($60\\text{ ton}$)\n   Terdapat tepat 3 desa. (Pernyataan B BENAR).\n4. Evaluasi panen tertinggi dan terendah:\n   - Panen tertinggi: Desa Karangtanjung ($60\\text{ ton}$).\n   - Panen terendah: Desa Wargamekar ($30\\text{ ton}$), bukan Sukamulya ($42\\text{ ton}$). (Pernyataan E SALAH).\n   - Selisih tertinggi dan terendah: $60 - 30 = 30\\text{ ton}$. (Pernyataan C BENAR).\n\nJadi, pernyataan yang bernilai BENAR adalah A, B, dan C."
   },
   {
     "id": "matwa-penyajian-data-08",

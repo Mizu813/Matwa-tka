@@ -99,6 +99,237 @@
     "explanation": "Langkah-langkah evaluasi sudut garis sejajar dipotong transversal:\n\n1. **Menentukan nilai $x$ dari sifat sudut luar berseberangan:**\n   Dua garis sejajar yang dipotong transversal menghasilkan sudut-sudut luar berseberangan yang sama besar:\n   $$(3x + 25)^\\circ = (5x - 15)^\\circ$$\n   $$5x - 3x = 25 + 15$$\n   $$2x = 40 \\implies x = 20^\\circ$$\n\n2. **Menghitung besar sudut pertama:**\n   $$\\theta_1 = 3(20^\\circ) + 25^\\circ = 60^\\circ + 25^\\circ = 85^\\circ$$\n   *(Cek sudut kedua: $5(20^\\circ) - 15^\\circ = 100^\\circ - 15^\\circ = 85^\\circ$, sama besar)*.\n\n3. **Menentukan besar sudut dalam sepihak:**\n   Pasangan sudut dalam sepihak saling berpelurus (berjumlah $180^\\circ$):\n   $$\\theta_{\\text{sepihak}} = 180^\\circ - 85^\\circ = 95^\\circ$$\n\nJadi, besar sudut dalam sepihak yang bersesuaian adalah **95 derajat** (Opsi **A**)."
   },
   {
+    "id": "matwa-sudut-dan-kesebangunan-11",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "sudut-dan-kesebangunan",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Besar suatu sudut sama dengan $\\frac{2}{3}$ dari besar sudut pelurusnya. Besar sudut penyiku dari sudut tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$18^\\circ$"
+      },
+      {
+        "id": "B",
+        "text": "$24^\\circ$"
+      },
+      {
+        "id": "C",
+        "text": "$36^\\circ$"
+      },
+      {
+        "id": "D",
+        "text": "$45^\\circ$"
+      },
+      {
+        "id": "E",
+        "text": "$72^\\circ$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Dua sudut saling berpelurus berjumlah 180 derajat. Selesaikan x = 2/3 (180 - x), lalu cari sudut penyiku (90 - x).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Misalkan besar sudut tersebut adalah $x$. Sudut pelurusnya adalah $(180^\\circ - x)$.\n\n2. Hubungan sudut pada soal:\n   $$x = \\frac{2}{3}(180^\\circ - x)$$\n   $$3x = 2(180^\\circ - x)$$\n   $$3x = 360^\\circ - 2x$$\n   $$5x = 360^\\circ \\implies x = 72^\\circ$$\n\n3. Hitung besar sudut penyiku dari $x$ ($90^\\circ - x$):\n   $$\\text{Penyiku} = 90^\\circ - 72^\\circ = 18^\\circ$$\n\nJadi, besar sudut penyiku tersebut adalah **A** ($18^\\circ$)."
+  },
+  {
+    "id": "matwa-sudut-dan-kesebangunan-12",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "sudut-dan-kesebangunan",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dua garis sejajar dipotong oleh sebuah garis transversal sehingga membentuk pasangan sudut dalam sepihak sebesar $(3x + 15)^\\circ$ dan $(2x + 25)^\\circ$. Nilai $x$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$24$"
+      },
+      {
+        "id": "B",
+        "text": "$28$"
+      },
+      {
+        "id": "C",
+        "text": "$32$"
+      },
+      {
+        "id": "D",
+        "text": "$36$"
+      },
+      {
+        "id": "E",
+        "text": "$40$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Jumlah dua sudut dalam sepihak pada dua garis sejajar yang dipotong garis transversal adalah 180 derajat.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Sifat sudut dalam sepihak berjumlah $180^\\circ$:\n   $$(3x + 15)^\\circ + (2x + 25)^\\circ = 180^\\circ$$\n\n2. Jumlahkan suku-suku sejenis:\n   $$5x + 40 = 180$$\n   $$5x = 180 - 40$$\n   $$5x = 140 \\implies x = \\frac{140}{5} = 28$$\n\nJadi, nilai $x$ adalah **B** ($28$)."
+  },
+  {
+    "id": "matwa-sudut-dan-kesebangunan-13",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "sudut-dan-kesebangunan",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah tiang bendera setinggi $6\\text{ meter}$ menghasilkan bayangan sepanjang $4\\text{ meter}$ di atas permukaan tanah datar. Pada saat yang sama, sebuah pohon rindang di samping tiang bendera menghasilkan bayangan sepanjang $10\\text{ meter}$. Tinggi pohon rindang tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$12\\text{ meter}$"
+      },
+      {
+        "id": "B",
+        "text": "$14\\text{ meter}$"
+      },
+      {
+        "id": "C",
+        "text": "$15\\text{ meter}$"
+      },
+      {
+        "id": "D",
+        "text": "$16\\text{ meter}$"
+      },
+      {
+        "id": "E",
+        "text": "$18\\text{ meter}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Gunakan konsep kesebangunan dua segitiga siku-siku bayangan sinar matahari: t_pohon / t_tiang = s_pohon / s_tiang.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Sudut elevasi sinar matahari sama, sehingga segitiga tiang dan segitiga pohon sebangun:\n   $$\\frac{t_{\\text{pohon}}}{t_{\\text{tiang}}} = \\frac{\\text{bayangan}_{\\text{pohon}}}{\\text{bayangan}_{\\text{tiang}}}$$\n\n2. Masukkan nilai yang diketahui:\n   $$\\frac{t_{\\text{pohon}}}{6\\text{ m}} = \\frac{10\\text{ m}}{4\\text{ m}}$$\n   $$t_{\\text{pohon}} = 6 \\times \\frac{10}{4} = 6 \\times 2{,}5 = 15\\text{ meter}$$\n\nJadi, tinggi pohon tersebut adalah **C** ($15\\text{ meter}$)."
+  },
+  {
+    "id": "matwa-sudut-dan-kesebangunan-14",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "sudut-dan-kesebangunan",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Pada segitiga $ABC$, titik $D$ terletak pada sisi $AB$ dan titik $E$ pada sisi $AC$ sedemikian rupa sehingga ruas garis $DE$ sejajar dengan sisi $BC$. Jika panjang $AD = 6\\text{ cm}$, $DB = 4\\text{ cm}$, dan panjang $DE = 9\\text{ cm}$, maka panjang sisi $BC$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$12\\text{ cm}$"
+      },
+      {
+        "id": "B",
+        "text": "$13{,}5\\text{ cm}$"
+      },
+      {
+        "id": "C",
+        "text": "$15\\text{ cm}$"
+      },
+      {
+        "id": "D",
+        "text": "$16\\text{ cm}$"
+      },
+      {
+        "id": "E",
+        "text": "$18\\text{ cm}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Segitiga ADE sebangun dengan segitiga ABC. Rasio perbandingan sisi bersesuaian: DE / BC = AD / AB.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Hitung panjang sisi total $AB$:\n   $$AB = AD + DB = 6\\text{ cm} + 4\\text{ cm} = 10\\text{ cm}$$\n\n2. Karena $DE \\parallel BC$, maka $\\triangle ADE \\sim \\triangle ABC$:\n   $$\\frac{DE}{BC} = \\frac{AD}{AB}$$\n\n3. Substitusikan nilai-nilai panjang sisi:\n   $$\\frac{9}{BC} = \\frac{6}{10}$$\n   $$\\frac{9}{BC} = \\frac{3}{5}$$\n   $$3 \\cdot BC = 45 \\implies BC = \\frac{45}{3} = 15\\text{ cm}$$\n\nJadi, panjang sisi $BC$ adalah **C** ($15\\text{ cm}$)."
+  },
+  {
+    "id": "matwa-sudut-dan-kesebangunan-15",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "sudut-dan-kesebangunan",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan trapesium $ABCD$ dengan sisi sejajar $AB \\parallel CD$. Ruas garis $EF$ dibuat sejajar dengan sisi $AB$ di mana titik $E$ terletak pada sisi $AD$ dan $F$ pada $BC$. Jika panjang $AB = 20\\text{ cm}$, $CD = 8\\text{ cm}$, $AE = 6\\text{ cm}$, dan $ED = 3\\text{ cm}$, maka panjang ruas garis $EF$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$10\\text{ cm}$"
+      },
+      {
+        "id": "B",
+        "text": "$12\\text{ cm}$"
+      },
+      {
+        "id": "C",
+        "text": "$14\\text{ cm}$"
+      },
+      {
+        "id": "D",
+        "text": "$15\\text{ cm}$"
+      },
+      {
+        "id": "E",
+        "text": "$16\\text{ cm}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Gunakan rumus perbandingan segmen garis trapesium bertingkat: EF = (AE * CD + ED * AB) / (AE + ED).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Gunakan formula garis pembagi sejajar pada trapesium:\n   $$EF = \\frac{AE \\cdot CD + ED \\cdot AB}{AE + ED}$$\n\n2. Masukkan ukuran-ukuran sisi:\n   $$EF = \\frac{6(8) + 3(20)}{6 + 3}$$\n   $$EF = \\frac{48 + 60}{9} = \\frac{108}{9} = 12\\text{ cm}$$\n\nJadi, panjang ruas garis $EF$ adalah **B** ($12\\text{ cm}$)."
+  },
+  {
+    "id": "matwa-sudut-dan-kesebangunan-16",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "sudut-dan-kesebangunan",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Segitiga $ABC$ siku-siku di titik $A$, dan ruas garis $AD$ merupakan garis tinggi yang ditarik tegak lurus ke sisi hipotenusa $BC$. Jika panjang segmen $BD = 4\\text{ cm}$ dan $CD = 9\\text{ cm}$, maka panjang garis tinggi $AD$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$5\\text{ cm}$"
+      },
+      {
+        "id": "B",
+        "text": "$6\\text{ cm}$"
+      },
+      {
+        "id": "C",
+        "text": "$6{,}5\\text{ cm}$"
+      },
+      {
+        "id": "D",
+        "text": "$7\\text{ cm}$"
+      },
+      {
+        "id": "E",
+        "text": "$7{,}2\\text{ cm}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Gunakan teorema garis tinggi segitiga siku-siku (teorema air mancur): AD^2 = BD * CD.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Berdasarkan kesebangunan pada segitiga siku-siku yang ditarik garis tinggi ke hipotenusa ($\\triangle ABD \\sim \\triangle CAD$):\n   $$\\frac{AD}{CD} = \\frac{BD}{AD} \\implies AD^2 = BD \\cdot CD$$\n\n2. Masukkan panjang segmen:\n   $$AD^2 = 4 \\times 9 = 36$$\n   $$AD = \\sqrt{36} = 6\\text{ cm}$$\n\nJadi, panjang garis tinggi $AD$ adalah **B** ($6\\text{ cm}$)."
+  },
+  {
+    "id": "matwa-sudut-dan-kesebangunan-17",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "sudut-dan-kesebangunan",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Titik $A$, $B$, dan $C$ terletak pada busur keliling lingkaran yang berpusat di titik $O$. Jika besar sudut pusat $\\angle AOB = 110^\\circ$, maka besar sudut keliling $\\angle ACB$ yang menghadap busur minor yang sama adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$45^\\circ$"
+      },
+      {
+        "id": "B",
+        "text": "$50^\\circ$"
+      },
+      {
+        "id": "C",
+        "text": "$55^\\circ$"
+      },
+      {
+        "id": "D",
+        "text": "$60^\\circ$"
+      },
+      {
+        "id": "E",
+        "text": "$70^\\circ$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Besar sudut keliling sama dengan setengah dari besar sudut pusat yang menghadap busur yang sama.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Gunakan teorema sudut lingkaran:\n   $$\\text{Sudut Keliling} = \\frac{1}{2} \\times \\text{Sudut Pusat}$$\n\n2. Karena $\\angle ACB$ dan $\\angle AOB$ menghadap busur minor $AB$ yang sama:\n   $$\\angle ACB = \\frac{1}{2} \\times \\angle AOB = \\frac{1}{2} \\times 110^\\circ = 55^\\circ$$\n\nJadi, besar sudut keliling $\\angle ACB$ adalah **C** ($55^\\circ$)."
+  },
+  {
     "id": "matwa-sudut-dan-kesebangunan-04",
     "chapter_id": "geometri-dan-pengukuran",
     "sub_chapter_id": "sudut-dan-kesebangunan",

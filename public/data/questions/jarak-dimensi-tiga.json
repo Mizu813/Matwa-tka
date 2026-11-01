@@ -66,6 +66,274 @@
     "explanation": "Langkah-langkah pengerjaan:\n1. Tinjau segitiga $\\triangle AEG$ pada kubus $ABCD.EFGH$:\n   - $AE = 6\\text{ cm}$ (rusuk kubus)\n   - $EG = 6\\sqrt{2}\\text{ cm}$ (diagonal bidang atas $EFGH$)\n   - $AG = 6\\sqrt{3}\\text{ cm}$ (diagonal ruang kubus)\n2. Karena garis $AE$ tegak lurus bidang atas $EFGH$, maka $AE \\perp EG$, sehingga segitiga $\\triangle AEG$ merupakan segitiga siku-siku di $E$.\n3. Jarak titik $E$ ke garis $AG$ adalah garis tinggi $d$ yang ditarik dari titik $E$ tegak lurus ke sisi $AG$.\n4. Dengan rumus luas segitiga dari dua alas yang berbeda:\n   $$\\text{Luas } \\triangle AEG = \\frac{1}{2} \\cdot AE \\cdot EG = \\frac{1}{2} \\cdot AG \\cdot d$$\n   $$AE \\cdot EG = AG \\cdot d$$\n   $$d = \\frac{AE \\cdot EG}{AG} = \\frac{6 \\cdot 6\\sqrt{2}}{6\\sqrt{3}} = \\frac{6\\sqrt{2}}{\\sqrt{3}} = \\frac{6\\sqrt{6}}{3} = 2\\sqrt{6}\\text{ cm}$$\n\nJadi, jarak titik $E$ ke diagonal ruang $AG$ adalah $2\\sqrt{6}\\text{ cm}$."
   },
   {
+    "id": "matwa-jarak-dimensi-tiga-07",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "jarak-dimensi-tiga",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan balok $ABCD.EFGH$ dengan ukuran panjang rusuk alas $AB = 8\\text{ cm}$, lebar $BC = 6\\text{ cm}$, dan tinggi $CG = 5\\text{ cm}$. Titik $O$ adalah titik perpotongan diagonal bidang alas $AC$ dan $BD$.\n\nTentukan semua pernyataan berikut yang bernilai BENAR! (Pilih semua opsi yang tepat)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Panjang diagonal ruang balok $AG$ adalah $5\\sqrt{5}\\text{ cm}$."
+      },
+      {
+        "id": "B",
+        "text": "Jarak dari titik potong diagonal alas $O$ ke titik sudut atas $G$ adalah $5\\sqrt{2}\\text{ cm}$."
+      },
+      {
+        "id": "C",
+        "text": "Jarak dari titik $O$ ke rusuk $AB$ adalah $3\\text{ cm}$ dan jarak dari titik $O$ ke rusuk $BC$ adalah $4\\text{ cm}$."
+      },
+      {
+        "id": "D",
+        "text": "Panjang diagonal ruang balok $AG$ adalah $10\\sqrt{2}\\text{ cm}$."
+      },
+      {
+        "id": "E",
+        "text": "Jarak dari titik potong diagonal alas $O$ ke titik sudut atas $G$ adalah $10\\text{ cm}$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Hitung diagonal bidang alas $AC$ dengan teorema Pythagoras, lalu cari diagonal ruang balok dan perhatikan segitiga siku-siku $\\triangle OCG$ yang siku-siku di $C$.",
+    "explanation": "Langkah-langkah evaluasi:\n1. Menghitung diagonal bidang alas $AC$:\n   $$AC = \\sqrt{AB^2 + BC^2} = \\sqrt{8^2 + 6^2} = \\sqrt{64 + 36} = \\sqrt{100} = 10\\text{ cm}$$\n2. Menghitung diagonal ruang balok $AG$:\n   $$AG = \\sqrt{AB^2 + BC^2 + CG^2} = \\sqrt{10^2 + 5^2} = \\sqrt{100 + 25} = \\sqrt{125} = 5\\sqrt{5}\\text{ cm}$$\n   Pernyataan A BENAR dan pernyataan D SALAH.\n3. Menghitung jarak titik $O$ ke titik $G$:\n   - Titik $O$ adalah titik tengah diagonal alas $AC$, sehingga $OC = \\frac{1}{2} AC = 5\\text{ cm}$.\n   - Rusuk tegak $CG = 5\\text{ cm}$ tegak lurus terhadap bidang alas, sehingga $CG \\perp OC$ (sudut $\\angle OCG = 90^\\circ$).\n   - Pada segitiga siku-siku $\\triangle OCG$:\n     $$OG = \\sqrt{OC^2 + CG^2} = \\sqrt{5^2 + 5^2} = \\sqrt{25 + 25} = \\sqrt{50} = 5\\sqrt{2}\\text{ cm}$$\n   Pernyataan B BENAR dan pernyataan E SALAH.\n4. Menghitung jarak titik $O$ ke rusuk alas:\n   - Titik $O$ terletak tepat di tengah bidang persegi panjang $ABCD$.\n   - Jarak tegak lurus dari titik pusat $O$ ke rusuk panjang $AB$ adalah setengah dari lebar $BC$:\n     $$d(O, AB) = \\frac{1}{2} \\times BC = \\frac{1}{2} \\times 6 = 3\\text{ cm}$$\n   - Jarak tegak lurus dari titik pusat $O$ ke rusuk lebar $BC$ adalah setengah dari panjang $AB$:\n     $$d(O, BC) = \\frac{1}{2} \\times AB = \\frac{1}{2} \\times 8 = 4\\text{ cm}$$\n   Pernyataan C BENAR.\n\nJadi, pernyataan yang bernilai benar adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-jarak-dimensi-tiga-11",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "jarak-dimensi-tiga",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan kubus $ABCD.EFGH$ dengan panjang rusuk $8\\text{ cm}$. Titik $M$ terletak di tengah rusuk $BC$. Jarak antara titik $H$ dan titik $M$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$10\\text{ cm}$"
+      },
+      {
+        "id": "B",
+        "text": "$12\\text{ cm}$"
+      },
+      {
+        "id": "C",
+        "text": "$4\\sqrt{5}\\text{ cm}$"
+      },
+      {
+        "id": "D",
+        "text": "$8\\sqrt{2}\\text{ cm}$"
+      },
+      {
+        "id": "E",
+        "text": "$14\\text{ cm}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Gunakan segitiga siku-siku HDM di mana D adalah proyeksi H pada alas. DM = sqrt(DC^2 + CM^2), lalu HM = sqrt(HD^2 + DM^2).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Titik $M$ berada di tengah rusuk $BC$, sehingga $CM = \\frac{1}{2}(8) = 4\\text{ cm}$.\n\n2. Hitung jarak $D$ ke $M$ pada bidang alas $ABCD$ (segitiga $DCM$ siku-siku di $C$):\n   $$DM = \\sqrt{DC^2 + CM^2} = \\sqrt{8^2 + 4^2} = \\sqrt{64 + 16} = \\sqrt{80}\\text{ cm}$$\n\n3. Garis $HD$ tegak lurus bidang alas $ABCD$, sehingga segitiga $HDM$ siku-siku di $D$:\n   $$HM = \\sqrt{HD^2 + DM^2} = \\sqrt{8^2 + (\\sqrt{80})^2} = \\sqrt{64 + 80} = \\sqrt{144} = 12\\text{ cm}$$\n\nJadi, jarak titik $H$ ke titik $M$ adalah **B** ($12\\text{ cm}$)."
+  },
+  {
+    "id": "matwa-jarak-dimensi-tiga-12",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "jarak-dimensi-tiga",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diketahui kubus $ABCD.EFGH$ dengan panjang rusuk $6\\text{ cm}$. Jarak titik $B$ ke garis diagonal bidang $EG$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$3\\sqrt{3}\\text{ cm}$"
+      },
+      {
+        "id": "B",
+        "text": "$3\\sqrt{6}\\text{ cm}$"
+      },
+      {
+        "id": "C",
+        "text": "$6\\sqrt{2}\\text{ cm}$"
+      },
+      {
+        "id": "D",
+        "text": "$4\\sqrt{3}\\text{ cm}$"
+      },
+      {
+        "id": "E",
+        "text": "$6\\sqrt{3}\\text{ cm}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Titik proyeksi B pada diagonal EG jatuh tepat di titik pusat O dari bidang atas EFGH. Jarak BO = sqrt(BF^2 + FO^2).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Segitiga $BEG$ adalah segitiga sama sisi karena $BE = EG = BG = 6\\sqrt{2}\\text{ cm}$ (ketiganya diagonal bidang kubus).\n\n2. Garis tinggi dari $B$ ke $EG$ jatuh tepat di titik tengah $EG$, sebut titik $O$. Titik $O$ adalah pusat bidang atas $EFGH$.\n\n3. Jarak $F$ ke $O$ adalah setengah diagonal bidang $FH$:\n   $$FO = \\frac{1}{2}(6\\sqrt{2}) = 3\\sqrt{2}\\text{ cm}$$\n\n4. Karena $BF \\perp$ bidang atas $EFGH$, maka $\\triangle BFO$ siku-siku di $F$:\n   $$BO = \\sqrt{BF^2 + FO^2} = \\sqrt{6^2 + (3\\sqrt{2})^2} = \\sqrt{36 + 18} = \\sqrt{54} = 3\\sqrt{6}\\text{ cm}$$\n\nJadi, jarak titik $B$ ke garis $EG$ adalah **B** ($3\\sqrt{6}\\text{ cm}$)."
+  },
+  {
+    "id": "matwa-jarak-dimensi-tiga-13",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "jarak-dimensi-tiga",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan kubus $ABCD.EFGH$ dengan panjang rusuk $12\\text{ cm}$. Jarak titik sudut $C$ ke bidang diagonal $BDG$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$4\\sqrt{2}\\text{ cm}$"
+      },
+      {
+        "id": "B",
+        "text": "$4\\sqrt{3}\\text{ cm}$"
+      },
+      {
+        "id": "C",
+        "text": "$6\\sqrt{3}\\text{ cm}$"
+      },
+      {
+        "id": "D",
+        "text": "$8\\sqrt{3}\\text{ cm}$"
+      },
+      {
+        "id": "E",
+        "text": "$6\\sqrt{2}\\text{ cm}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Jarak titik sudut ke bidang diagonal segitiga kubus yang memotong ketiga rusuk yang bertemu di titik sudut tersebut adalah 1/3 kali panjang diagonal ruang.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Diagonal ruang kubus dari titik $C$ menuju titik $E$ berpotongan tegak lurus dengan bidang $BDG$.\n\n2. Bidang $BDG$ membagi diagonal ruang $CE$ menjadi dua bagian dengan rasio $1 : 2$. Jarak titik $C$ ke bidang $BDG$ adalah $\\frac{1}{3}$ dari panjang diagonal ruang $CE$:\n   $$d_{\\text{ruang}} = s\\sqrt{3} = 12\\sqrt{3}\\text{ cm}$$\n\n3. Hitung jarak titik $C$ ke bidang $BDG$:\n   $$\\text{Jarak} = \\frac{1}{3} \\times 12\\sqrt{3} = 4\\sqrt{3}\\text{ cm}$$\n\nJadi, jarak titik $C$ ke bidang $BDG$ adalah **B** ($4\\sqrt{3}\\text{ cm}$)."
+  },
+  {
+    "id": "matwa-jarak-dimensi-tiga-14",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "jarak-dimensi-tiga",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Limas tegak beraturan $T.ABCD$ memiliki alas berbentuk persegi dengan panjang sisi alas $AB = 8\\text{ cm}$ dan panjang rusuk tegak $TA = 4\\sqrt{6}\\text{ cm}$. Jarak titik puncak $T$ ke bidang alas $ABCD$ (tinggi limas) adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$6\\text{ cm}$"
+      },
+      {
+        "id": "B",
+        "text": "$8\\text{ cm}$"
+      },
+      {
+        "id": "C",
+        "text": "$4\\sqrt{3}\\text{ cm}$"
+      },
+      {
+        "id": "D",
+        "text": "$10\\text{ cm}$"
+      },
+      {
+        "id": "E",
+        "text": "$6\\sqrt{2}\\text{ cm}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Tinggi limas jatuh pada titik pusat alas O. AO = 1/2 diagonal alas AC. Tinggi TO = sqrt(TA^2 - AO^2).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Tentukan panjang diagonal sisi alas $AC$ pada persegi berukuran $8\\text{ cm}$:\n   $$AC = 8\\sqrt{2}\\text{ cm}$$\n\n2. Jarak dari titik sudut $A$ ke pusat alas $O$:\n   $$AO = \\frac{1}{2} AC = \\frac{1}{2}(8\\sqrt{2}) = 4\\sqrt{2}\\text{ cm}$$\n\n3. Gunakan teorema Pythagoras pada segitiga tegak $TOA$ siku-siku di $O$:\n   $$TO = \\sqrt{TA^2 - AO^2} = \\sqrt{(4\\sqrt{6})^2 - (4\\sqrt{2})^2}$$\n   $$TO = \\sqrt{16(6) - 16(2)} = \\sqrt{96 - 32} = \\sqrt{64} = 8\\text{ cm}$$\n\nJadi, jarak titik $T$ ke bidang alas adalah **B** ($8\\text{ cm}$)."
+  },
+  {
+    "id": "matwa-jarak-dimensi-tiga-15",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "jarak-dimensi-tiga",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Pada kubus $ABCD.EFGH$ dengan panjang rusuk $10\\text{ cm}$, jarak antara garis rusuk tegak $AE$ dan garis diagonal bidang alas $BD$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$5\\text{ cm}$"
+      },
+      {
+        "id": "B",
+        "text": "$5\\sqrt{2}\\text{ cm}$"
+      },
+      {
+        "id": "C",
+        "text": "$5\\sqrt{3}\\text{ cm}$"
+      },
+      {
+        "id": "D",
+        "text": "$10\\text{ cm}$"
+      },
+      {
+        "id": "E",
+        "text": "$10\\sqrt{2}\\text{ cm}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Garis AE tegak lurus bidang alas ABCD di titik A. Jarak garis AE ke garis BD pada bidang alas sama dengan jarak titik A ke garis BD.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Rusuk $AE$ tegak lurus bidang alas $ABCD$ di titik $A$.\n\n2. Jarak antara garis $AE$ dan garis $BD$ yang terletak pada bidang alas sama dengan panjang ruas garis dari titik $A$ yang ditarik tegak lurus ke garis $BD$.\n\n3. Pada persegi $ABCD$, diagonal $AC$ dan $BD$ berpotongan saling tegak lurus di titik pusat $O$. Maka jarak $A$ ke garis $BD$ adalah setengah dari diagonal bidang $AC$:\n   $$AC = 10\\sqrt{2}\\text{ cm}$$\n   $$AO = \\frac{1}{2} AC = \\frac{1}{2}(10\\sqrt{2}) = 5\\sqrt{2}\\text{ cm}$$\n\nJadi, jarak antara garis $AE$ dan garis $BD$ adalah **B** ($5\\sqrt{2}\\text{ cm}$)."
+  },
+  {
+    "id": "matwa-jarak-dimensi-tiga-16",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "jarak-dimensi-tiga",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan kubus $ABCD.EFGH$. Jika $\\theta$ adalah sudut yang dibentuk oleh garis diagonal ruang $AG$ dengan bidang alas $ABCD$, maka nilai dari $\\sin \\theta$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{1}{2}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{1}{3}\\sqrt{3}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{1}{2}\\sqrt{2}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{1}{3}\\sqrt{6}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{1}{2}\\sqrt{3}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Proyeksikan garis AG pada alas ABCD yaitu ruas garis AC. Sudut theta terletak pada segitiga ACG di sudut CAG.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Proyeksi garis $AG$ pada bidang alas $ABCD$ adalah diagonal sisi $AC$.\n\n2. Sudut antara garis $AG$ dan bidang alas adalah $\\angle CAG = \\theta$.\n\n3. Segitiga $ACG$ adalah segitiga siku-siku di titik $C$ dengan:\n   - Panjang rusuk tegak: $CG = s$\n   - Panjang diagonal bidang alas: $AC = s\\sqrt{2}$\n   - Panjang diagonal ruang: $AG = s\\sqrt{3}$\n\n4. Nilai $\\sin \\theta$ adalah perbandingan sisi depan terhadap sisi miring:\n   $$\\sin \\theta = \\frac{CG}{AG} = \\frac{s}{s\\sqrt{3}} = \\frac{1}{\\sqrt{3}} = \\frac{1}{3}\\sqrt{3}$$\n\nJadi, nilai $\\sin \\theta$ adalah **B** ($\\frac{1}{3}\\sqrt{3}$)."
+  },
+  {
+    "id": "matwa-jarak-dimensi-tiga-17",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "jarak-dimensi-tiga",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Balok $ABCD.EFGH$ memiliki ukuran panjang rusuk $AB = 8\\text{ cm}$, $BC = 6\\text{ cm}$, dan $CG = 5\\text{ cm}$. Titik $K$ adalah titik perpotongan kedua diagonal bidang atas $EG$ dan $FH$. Jarak titik $K$ ke bidang alas $ABCD$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$4\\text{ cm}$"
+      },
+      {
+        "id": "B",
+        "text": "$5\\text{ cm}$"
+      },
+      {
+        "id": "C",
+        "text": "$6\\text{ cm}$"
+      },
+      {
+        "id": "D",
+        "text": "$8\\text{ cm}$"
+      },
+      {
+        "id": "E",
+        "text": "$10\\text{ cm}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Bidang atas EFGH sejajar dengan bidang alas ABCD. Jarak setiap titik pada bidang atas ke bidang alas sama dengan tinggi balok.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Titik $K$ terletak pada bidang atas $EFGH$.\n\n2. Pada balok tegak, bidang atas $EFGH$ sejajar sempurna dengan bidang alas $ABCD$.\n\n3. Jarak tegak lurus dari sembarang titik pada bidang atas ke bidang alas selalu konstan dan sama dengan tinggi balok ($t = CG = 5\\text{ cm}$).\n\nJadi, jarak titik $K$ ke bidang alas adalah **B** ($5\\text{ cm}$)."
+  },
+  {
     "id": "matwa-jarak-dimensi-tiga-03",
     "chapter_id": "geometri-dan-pengukuran",
     "sub_chapter_id": "jarak-dimensi-tiga",
@@ -204,43 +472,6 @@
     ],
     "hint": "Ingat konsep jarak dua garis bersilangan yang tegak lurus, proyeksi titik sudut atas kubus ke bidang diagonal vertikal, dan jarak antar bidang sejajar.",
     "explanation": "Langkah-langkah evaluasi tiap pernyataan:\n1. Evaluasi Pernyataan A (Jarak garis bersilangan $BD$ dan $AH$):\n   - Garis $BD$ terletak pada bidang alas $ABCD$.\n   - Bidang yang memuat $AH$ dan sejajar dengan $BD$ adalah bidang $AFH$, atau perhatikan vektor normal bidang yang memuat $AH$ dan tegak lurus garis $BD$:\n     Vektor $\\vec{BD} = (6, -6, 0)$ sejajar dengan $(1, -1, 0)$.\n     Vektor $\\vec{AH} = (0, 6, 6)$ sejajar dengan $(0, 1, 1)$.\n     Vektor normal persekutuan: $\\vec{n} = (1, -1, 0) \\times (0, 1, 1) = (-1, -1, 1)$.\n     Jarak kedua garis bersilangan: $d = \\frac{|\\vec{AB} \\cdot \\vec{n}|}{|\\vec{n}|} = \\frac{|(6,0,0) \\cdot (-1,-1,1)|}{\\sqrt{(-1)^2 + (-1)^2 + 1^2}} = \\frac{6}{\\sqrt{3}} = 2\\sqrt{3}\\text{ cm}$.\n     Pernyataan A BENAR.\n2. Evaluasi Pernyataan B dan E (Jarak titik $E$ ke bidang $BDHF$):\n   - Bidang $BDHF$ adalah bidang diagonal vertikal yang memuat diagonal sisi $HF$.\n   - Pada bidang atas $EFGH$, segitiga $\\triangle EFH$ adalah segitiga siku-siku sama kaki di $E$.\n   - Garis tinggi dari $E$ ke diagonal $HF$ berpotongan di titik tengah $HF$ (misal titik $O_{atas}$).\n   - Karena bidang $BDHF$ tegak lurus bidang $EFGH$, maka jarak titik $E$ ke bidang $BDHF$ sama dengan panjang $E O_{atas}$:\n     $$E O_{atas} = \\frac{1}{2} EG = \\frac{1}{2}(6\\sqrt{2}) = 3\\sqrt{2}\\text{ cm}$$\n     Pernyataan B BENAR dan pernyataan E SALAH.\n3. Evaluasi Pernyataan C:\n   - Rusuk $AB$ sejajar dengan bidang $CDHG$ karena rusuk $AB$ sejajar dengan rusuk $DC$ yang terletak pada bidang $CDHG$.\n   - Jarak setiap titik pada rusuk $AB$ (termasuk titik tengahnya) ke bidang $CDHG$ sama dengan panjang rusuk lebar $AD = BC = 6\\text{ cm}$.\n     Pernyataan C BENAR.\n4. Evaluasi Pernyataan D:\n   - Garis $AC$ berada pada bidang alas $ABCD$ dan garis $HF$ berada pada bidang atas $EFGH$.\n   - Kedua bidang tersebut sejajar dengan jarak vertikal sebesar rusuk kubus, yaitu $6\\text{ cm}$.\n   - Jarak antara garis $AC$ dan garis $HF$ adalah jarak tegak lurus terpendek antara kedua garis, yaitu $6\\text{ cm}$ (bukan $6\\sqrt{2}\\text{ cm}$).\n     Pernyataan D SALAH.\n\nJadi, pernyataan yang bernilai benar adalah A, B, dan C."
-  },
-  {
-    "id": "matwa-jarak-dimensi-tiga-07",
-    "chapter_id": "geometri-dan-pengukuran",
-    "sub_chapter_id": "jarak-dimensi-tiga",
-    "question_type": "MCMA",
-    "difficulty": "STANDAR",
-    "question_text": "Diberikan balok $ABCD.EFGH$ dengan ukuran panjang rusuk alas $AB = 8\\text{ cm}$, lebar $BC = 6\\text{ cm}$, dan tinggi $CG = 5\\text{ cm}$. Titik $O$ adalah titik perpotongan diagonal bidang alas $AC$ dan $BD$.\n\nTentukan semua pernyataan berikut yang bernilai BENAR! (Pilih semua opsi yang tepat)",
-    "options": [
-      {
-        "id": "A",
-        "text": "Panjang diagonal ruang balok $AG$ adalah $5\\sqrt{5}\\text{ cm}$."
-      },
-      {
-        "id": "B",
-        "text": "Jarak dari titik potong diagonal alas $O$ ke titik sudut atas $G$ adalah $5\\sqrt{2}\\text{ cm}$."
-      },
-      {
-        "id": "C",
-        "text": "Jarak dari titik $O$ ke rusuk $AB$ adalah $3\\text{ cm}$ dan jarak dari titik $O$ ke rusuk $BC$ adalah $4\\text{ cm}$."
-      },
-      {
-        "id": "D",
-        "text": "Panjang diagonal ruang balok $AG$ adalah $10\\sqrt{2}\\text{ cm}$."
-      },
-      {
-        "id": "E",
-        "text": "Jarak dari titik potong diagonal alas $O$ ke titik sudut atas $G$ adalah $10\\text{ cm}$."
-      }
-    ],
-    "correct_answer": [
-      "A",
-      "B",
-      "C"
-    ],
-    "hint": "Hitung diagonal bidang alas $AC$ dengan teorema Pythagoras, lalu cari diagonal ruang balok dan perhatikan segitiga siku-siku $\\triangle OCG$ yang siku-siku di $C$.",
-    "explanation": "Langkah-langkah evaluasi:\n1. Menghitung diagonal bidang alas $AC$:\n   $$AC = \\sqrt{AB^2 + BC^2} = \\sqrt{8^2 + 6^2} = \\sqrt{64 + 36} = \\sqrt{100} = 10\\text{ cm}$$\n2. Menghitung diagonal ruang balok $AG$:\n   $$AG = \\sqrt{AB^2 + BC^2 + CG^2} = \\sqrt{10^2 + 5^2} = \\sqrt{100 + 25} = \\sqrt{125} = 5\\sqrt{5}\\text{ cm}$$\n   Pernyataan A BENAR dan pernyataan D SALAH.\n3. Menghitung jarak titik $O$ ke titik $G$:\n   - Titik $O$ adalah titik tengah diagonal alas $AC$, sehingga $OC = \\frac{1}{2} AC = 5\\text{ cm}$.\n   - Rusuk tegak $CG = 5\\text{ cm}$ tegak lurus terhadap bidang alas, sehingga $CG \\perp OC$ (sudut $\\angle OCG = 90^\\circ$).\n   - Pada segitiga siku-siku $\\triangle OCG$:\n     $$OG = \\sqrt{OC^2 + CG^2} = \\sqrt{5^2 + 5^2} = \\sqrt{25 + 25} = \\sqrt{50} = 5\\sqrt{2}\\text{ cm}$$\n   Pernyataan B BENAR dan pernyataan E SALAH.\n4. Menghitung jarak titik $O$ ke rusuk alas:\n   - Titik $O$ terletak tepat di tengah bidang persegi panjang $ABCD$.\n   - Jarak tegak lurus dari titik pusat $O$ ke rusuk panjang $AB$ adalah setengah dari lebar $BC$:\n     $$d(O, AB) = \\frac{1}{2} \\times BC = \\frac{1}{2} \\times 6 = 3\\text{ cm}$$\n   - Jarak tegak lurus dari titik pusat $O$ ke rusuk lebar $BC$ adalah setengah dari panjang $AB$:\n     $$d(O, BC) = \\frac{1}{2} \\times AB = \\frac{1}{2} \\times 8 = 4\\text{ cm}$$\n   Pernyataan C BENAR.\n\nJadi, pernyataan yang bernilai benar adalah A, B, dan C."
   },
   {
     "id": "matwa-jarak-dimensi-tiga-08",

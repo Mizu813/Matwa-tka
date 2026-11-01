@@ -66,6 +66,275 @@
     "explanation": "Langkah-langkah evaluasi beban tekan uji:\n\n1. Identifikasi barisan geometri:\n   - Titik ke-1 ($U_1$): $a = 500\\text{ kg}$\n   - Titik ke-2 ($U_2$): $1.000\\text{ kg}$\n   - Rasio ($r$): $\\frac{U_2}{U_1} = \\frac{1.000}{500} = 2$\n\n2. Menentukan beban pada titik tumpuan ke-6 ($U_6$):\n   $$U_n = a \\cdot r^{n - 1}$$\n   $$U_6 = 500 \\cdot 2^{6 - 1} = 500 \\cdot 2^5$$\n\n3. Hitung perpangkatan:\n   $$2^5 = 32$$\n   $$U_6 = 500 \\times 32 = 16.000\\text{ kg}$$\n   Dalam satuan ton: $16.000\\text{ kg} = 16\\text{ ton}$.\n\nJadi, beban pada titik tumpuan ke-6 adalah **16.000 kg (16 ton)** (Opsi **A**)."
   },
   {
+    "id": "matwa-barisan-deret-geometri-05",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-geometri",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan deret geometri dengan suku-suku positif:\n$$3 + 6 + 12 + 24 + \\dots$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai sifat dan rumus deret geometri tersebut!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rasio deret geometri tersebut adalah $r = 2$ dan rumus suku ke-$n$ adalah $U_n = 3 \\times 2^{n - 1}$."
+      },
+      {
+        "id": "B",
+        "text": "Nilai dari suku ke-8 adalah $U_8 = 384$."
+      },
+      {
+        "id": "C",
+        "text": "Jumlah 6 suku pertama deret tersebut adalah $S_6 = 189$."
+      },
+      {
+        "id": "D",
+        "text": "Rumus jumlah $n$ suku pertama deret tersebut adalah $S_n = 2^{n+1} - 1$."
+      },
+      {
+        "id": "E",
+        "text": "Rasio persekutuan dari deret geometri tersebut bernilai konstan $r = 2$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "hint": "Tentukan suku pertama $a = 3$ dan rasio $r = \\frac{6}{3} = 2$. Gunakan rumus $U_n = a \\cdot r^{n - 1}$ dan $S_n = \\frac{a(r^n - 1)}{r - 1}$.",
+    "explanation": "Langkah-langkah evaluasi deret geometri:\n\n1. **Identifikasi parameter deret:**\n   - Suku pertama: $a = 3$\n   - Rasio: $r = \\frac{6}{3} = 2$\n   - Rumus suku ke-$n$: $U_n = a \\cdot r^{n - 1} = 3 \\cdot 2^{n - 1}$.\n   Pernyataan A bernilai **BENAR**.\n\n2. **Evaluasi suku ke-8 (Pernyataan B):**\n   $$U_8 = 3 \\cdot 2^{8 - 1} = 3 \\cdot 2^7 = 3 \\cdot 128 = 384$$\n   Pernyataan B bernilai **BENAR**.\n\n3. **Rumus jumlah $n$ suku pertama (Pernyataan D):**\n   $$S_n = \\frac{a(r^n - 1)}{r - 1} = \\frac{3(2^n - 1)}{2 - 1} = 3(2^n - 1) = 3 \\cdot 2^n - 3$$\n   Rumus yang benar adalah $S_n = 3(2^n - 1)$, bukan $2^{n+1} - 1$.\n   Pernyataan D bernilai **SALAH**.\n\n4. **Evaluasi jumlah 6 suku pertama (Pernyataan C):**\n   $$S_6 = 3(2^6 - 1) = 3(64 - 1) = 3(63) = 189$$\n   *(Cek manual: $3 + 6 + 12 + 24 + 48 + 96 = 189$)*.\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Rasio suku berurutan adalah $r = \\frac{U_2}{U_1} = \\frac{6}{3} = 2$."
+  },
+  {
+    "id": "matwa-barisan-deret-geometri-11",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-geometri",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Suku ke-$3$ suatu barisan geometri adalah $18$ dan suku ke-$6$ adalah $486$. Suku ke-$8$ dari barisan geometri tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$1.458$"
+      },
+      {
+        "id": "B",
+        "text": "$2.916$"
+      },
+      {
+        "id": "C",
+        "text": "$4.374$"
+      },
+      {
+        "id": "D",
+        "text": "$5.832$"
+      },
+      {
+        "id": "E",
+        "text": "$6.561$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Rasio r^3 = U_6 / U_3 = 486 / 18 = 27. Suku U_8 = U_6 * r^2.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Rumus suku ke-$n$ barisan geometri $U_n = a \\cdot r^{n-1}$:\n   - $U_3 = a \\cdot r^2 = 18$\n   - $U_6 = a \\cdot r^5 = 486$\n\n2. Tentukan rasio $r$:\n   $$\\frac{U_6}{U_3} = \\frac{a r^5}{a r^2} = r^3 = \\frac{486}{18} = 27 \\implies r = \\sqrt[3]{27} = 3$$\n\n3. Hitung suku ke-$8$ ($U_8$):\n   $$U_8 = U_6 \\cdot r^2 = 486 \\cdot 3^2 = 486 \\cdot 9 = 4.374$$\n\nJadi, suku ke-$8$ adalah **C** ($4.374$)."
+  },
+  {
+    "id": "matwa-barisan-deret-geometri-12",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-geometri",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Jumlah $6\\text{ suku}$ pertama dari deret geometri: $2 + 6 + 18 + 54 + \\dots$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$486$"
+      },
+      {
+        "id": "B",
+        "text": "$728$"
+      },
+      {
+        "id": "C",
+        "text": "$730$"
+      },
+      {
+        "id": "D",
+        "text": "$1.456$"
+      },
+      {
+        "id": "E",
+        "text": "$2.186$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Gunakan rumus jumlah deret geometri S_n = a(r^n - 1) / (r - 1) dengan a = 2 dan r = 3.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Identifikasi suku pertama dan rasio:\n   - $a = 2$\n   - $r = \\frac{6}{2} = 3$\n\n2. Gunakan rumus jumlah $n$ suku deret geometri ($r > 1$):\n   $$S_n = \\frac{a(r^n - 1)}{r - 1}$$\n   $$S_6 = \\frac{2(3^6 - 1)}{3 - 1} = \\frac{2(729 - 1)}{2} = 728$$\n\nJadi, jumlah $6$ suku pertama adalah **B** ($728$)."
+  },
+  {
+    "id": "matwa-barisan-deret-geometri-13",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-geometri",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah bola tenis dijatuhkan dari ketinggian $12\\text{ meter}$ di atas lantai beton. Setiap kali memantul, bola mencapai ketinggian $\\frac{2}{3}$ dari tinggi pantulan sebelumnya. Panjang total lintasan yang ditempuh bola tersebut sampai berhenti adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$48\\text{ meter}$"
+      },
+      {
+        "id": "B",
+        "text": "$54\\text{ meter}$"
+      },
+      {
+        "id": "C",
+        "text": "$60\\text{ meter}$"
+      },
+      {
+        "id": "D",
+        "text": "$72\\text{ meter}$"
+      },
+      {
+        "id": "E",
+        "text": "$84\\text{ meter}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Rumus praktis panjang lintasan pantulan bola: S = h * (b + a) / (b - a) untuk rasio pantulan a/b.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Gunakan formula panjang lintasan bola jatuh dan memantul:\n   $$S = h \\times \\frac{b + a}{b - a}$$\n\n2. Diketahui tinggi awal $h = 12\\text{ meter}$ dan rasio pantulan $\\frac{a}{b} = \\frac{2}{3}$:\n   $$S = 12 \\times \\frac{3 + 2}{3 - 2} = 12 \\times \\frac{5}{1} = 60\\text{ meter}$$\n\nJadi, panjang total lintasan bola adalah **C** ($60\\text{ meter}$)."
+  },
+  {
+    "id": "matwa-barisan-deret-geometri-14",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-geometri",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dalam sebuah bioreaktor kultur mikroorganisme, suatu koloni bakteri membelah diri menjadi dua setiap $15\\text{ menit}$. Jika populasi awal bakteri terhitung sebanyak $30\\text{ sel}$, banyak bakteri setelah masa inkubasi selama $2\\text{ jam}$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$3.840\\text{ sel}$"
+      },
+      {
+        "id": "B",
+        "text": "$7.680\\text{ sel}$"
+      },
+      {
+        "id": "C",
+        "text": "$15.360\\text{ sel}$"
+      },
+      {
+        "id": "D",
+        "text": "$30.720\\text{ sel}$"
+      },
+      {
+        "id": "E",
+        "text": "$61.440\\text{ sel}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Lama waktu = 120 menit sehingga terjadi n = 120/15 = 8 kali pembelahan. Hitung P_n = P_0 * 2^n.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Hitung banyaknya siklus pembelahan dalam $2\\text{ jam}$ ($120\\text{ menit}$):\n   $$n = \\frac{120\\text{ menit}}{15\\text{ menit}} = 8\\text{ siklus}$$\n\n2. Gunakan rumus pertumbuhan eksponensial pembelahan:\n   $$P_n = P_0 \\cdot 2^n$$\n   $$P_8 = 30 \\cdot 2^8 = 30 \\cdot 256 = 7.680\\text{ sel}$$\n\nJadi, banyak bakteri setelah $2$ jam adalah **B** ($7.680\\text{ sel}$)."
+  },
+  {
+    "id": "matwa-barisan-deret-geometri-15",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-geometri",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Suatu isotop radioaktif memiliki waktu paruh $10\\text{ hari}$. Jika massa awal zat radioaktif tersebut adalah $80\\text{ gram}$, sisa massa zat radioaktif yang belum meluruh setelah disimpan selama $40\\text{ hari}$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$2{,}5\\text{ gram}$"
+      },
+      {
+        "id": "B",
+        "text": "$5\\text{ gram}$"
+      },
+      {
+        "id": "C",
+        "text": "$10\\text{ gram}$"
+      },
+      {
+        "id": "D",
+        "text": "$15\\text{ gram}$"
+      },
+      {
+        "id": "E",
+        "text": "$20\\text{ gram}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Banyak periode paruh n = 40 / 10 = 4. Sisa massa M = M_0 * (1/2)^n.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Tentukan jumlah periode peluruhan:\n   $$n = \\frac{t}{T_{1/2}} = \\frac{40\\text{ hari}}{10\\text{ hari}} = 4$$\n\n2. Gunakan rumus peluruhan radioaktif:\n   $$M = M_0 \\left(\\frac{1}{2}\\right)^n$$\n   $$M = 80 \\times \\left(\\frac{1}{2}\\right)^4 = 80 \\times \\frac{1}{16} = 5\\text{ gram}$$\n\nJadi, sisa zat radioaktif adalah **B** ($5\\text{ gram}$)."
+  },
+  {
+    "id": "matwa-barisan-deret-geometri-16",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-geometri",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah deret geometri tak hingga konvergen memiliki suku pertama $a = 16$ dan jumlah tak hingga $S_\\infty = 24$. Nilai rasio ($r$) dari deret geometri tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{1}{4}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{1}{3}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{1}{2}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{2}{3}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{3}{4}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Gunakan rumus jumlah deret geometri tak hingga S_\\infty = a / (1 - r).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Formula deret geometri tak hingga konvergen:\n   $$S_\\infty = \\frac{a}{1 - r}$$\n\n2. Masukkan nilai $S_\\infty = 24$ dan $a = 16$:\n   $$24 = \\frac{16}{1 - r}$$\n   $$1 - r = \\frac{16}{24} = \\frac{2}{3}$$\n\n3. Selesaikan untuk $r$:\n   $$r = 1 - \\frac{2}{3} = \\frac{1}{3}$$\n\nJadi, rasio deret tersebut adalah **B** ($\\frac{1}{3}$)."
+  },
+  {
+    "id": "matwa-barisan-deret-geometri-17",
+    "chapter_id": "barisan-dan-deret",
+    "sub_chapter_id": "barisan-deret-geometri",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Tiga bilangan positif $k$, $k + 6$, dan $4k$ membentuk tiga suku berurutan barisan geometri. Rasio ($r$) dari barisan geometri tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{3}{2}$"
+      },
+      {
+        "id": "B",
+        "text": "$2$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{5}{2}$"
+      },
+      {
+        "id": "D",
+        "text": "$3$"
+      },
+      {
+        "id": "E",
+        "text": "$4$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Sifat tiga suku berurutan barisan geometri: (U_2)^2 = U_1 * U_3. Cari nilai k positif, lalu tentukan rasio r = U_2 / U_1.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Gunakan sifat geometri $(U_2)^2 = U_1 \\cdot U_3$:\n   $$(k + 6)^2 = k \\cdot 4k$$\n   $$k^2 + 12k + 36 = 4k^2$$\n\n2. Bentuk persamaan kuadrat standar:\n   $$3k^2 - 12k - 36 = 0$$\n   Bagi dengan $3$:\n   $$k^2 - 4k - 12 = 0$$\n   $$(k - 6)(k + 2) = 0$$\n\n3. Karena barisan terdiri dari bilangan positif, pilih $k = 6$.\n\n4. Tentukan ketiga suku barisan:\n   - $U_1 = 6$\n   - $U_2 = 6 + 6 = 12$\n   - $U_3 = 4(6) = 24$\n\n5. Rasio barisan:\n   $$r = \\frac{U_2}{U_1} = \\frac{12}{6} = 2$$\n\nJadi, rasio barisan tersebut adalah **B** ($2$)."
+  },
+  {
     "id": "matwa-barisan-deret-geometri-03",
     "chapter_id": "barisan-dan-deret",
     "sub_chapter_id": "barisan-deret-geometri",
@@ -130,44 +399,6 @@
     "correct_answer": "A",
     "hint": "Gunakan rumus praktis panjang lintasan pantulan bola $P = h \\cdot \\frac{b + a}{b - a}$ dengan $h = 12$ dan rasio pantulan $r = \\frac{a}{b} = \\frac{3}{5}$.",
     "explanation": "Langkah-langkah menghitung panjang lintasan pantulan bola:\n\n**Metode 1: Formula Praktis Rasio Pecahan**\nUntuk bola yang dijatuhkan dari ketinggian $h$ dengan rasio pantulan $r = \\frac{a}{b}$:\n$$P = h \\left(\\frac{b + a}{b - a}\\right)$$\nDiketahui $h = 12\\text{ m}$, $a = 3$, dan $b = 5$:\n$$P = 12 \\times \\left(\\frac{5 + 3}{5 - 3}\\right) = 12 \\times \\frac{8}{2} = 12 \\times 4 = 48\\text{ meter}$$\n\n**Metode 2: Deret Geometri Tak Hingga Terurai**\n1. Lintasan turun awal: $h_0 = 12\\text{ m}$.\n2. Setiap pantulan berikutnya memiliki lintasan naik dan turun dua kali lipat:\n   - Pantulan 1: naik $12 \\times \\frac{3}{5} = \\frac{36}{5}$, turun $\\frac{36}{5} \\implies 2 \\times \\frac{36}{5}$\n   - Pantulan 2: naik $\\frac{36}{5} \\times \\frac{3}{5}$, turun $\\dots$\n3. Jumlah deret tak hingga untuk seluruh fase pantulan (naik + turun):\n   $$S_{\\infty} = \\frac{a_1}{1 - r} = \\frac{\\frac{36}{5}}{1 - \\frac{3}{5}} = \\frac{\\frac{36}{5}}{\\frac{2}{5}} = 18\\text{ m}$$\n4. Panjang lintasan total:\n   $$P = h_0 + 2 \\cdot S_{\\infty} = 12 + 2(18) = 12 + 36 = 48\\text{ meter}$$\n\nJadi, panjang lintasan total bola hingga berhenti adalah **48 meter** (Opsi **A**)."
-  },
-  {
-    "id": "matwa-barisan-deret-geometri-05",
-    "chapter_id": "barisan-dan-deret",
-    "sub_chapter_id": "barisan-deret-geometri",
-    "question_type": "MCMA",
-    "difficulty": "STANDAR",
-    "question_text": "Diberikan deret geometri dengan suku-suku positif:\n$$3 + 6 + 12 + 24 + \\dots$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai sifat dan rumus deret geometri tersebut!",
-    "options": [
-      {
-        "id": "A",
-        "text": "Rasio deret geometri tersebut adalah $r = 2$ dan rumus suku ke-$n$ adalah $U_n = 3 \\times 2^{n - 1}$."
-      },
-      {
-        "id": "B",
-        "text": "Nilai dari suku ke-8 adalah $U_8 = 384$."
-      },
-      {
-        "id": "C",
-        "text": "Jumlah 6 suku pertama deret tersebut adalah $S_6 = 189$."
-      },
-      {
-        "id": "D",
-        "text": "Rumus jumlah $n$ suku pertama deret tersebut adalah $S_n = 2^{n+1} - 1$."
-      },
-      {
-        "id": "E",
-        "text": "Rasio persekutuan dari deret geometri tersebut bernilai konstan $r = 2$."
-      }
-    ],
-    "correct_answer": [
-      "A",
-      "B",
-      "C",
-      "E"
-    ],
-    "hint": "Tentukan suku pertama $a = 3$ dan rasio $r = \\frac{6}{3} = 2$. Gunakan rumus $U_n = a \\cdot r^{n - 1}$ dan $S_n = \\frac{a(r^n - 1)}{r - 1}$.",
-    "explanation": "Langkah-langkah evaluasi deret geometri:\n\n1. **Identifikasi parameter deret:**\n   - Suku pertama: $a = 3$\n   - Rasio: $r = \\frac{6}{3} = 2$\n   - Rumus suku ke-$n$: $U_n = a \\cdot r^{n - 1} = 3 \\cdot 2^{n - 1}$.\n   Pernyataan A bernilai **BENAR**.\n\n2. **Evaluasi suku ke-8 (Pernyataan B):**\n   $$U_8 = 3 \\cdot 2^{8 - 1} = 3 \\cdot 2^7 = 3 \\cdot 128 = 384$$\n   Pernyataan B bernilai **BENAR**.\n\n3. **Rumus jumlah $n$ suku pertama (Pernyataan D):**\n   $$S_n = \\frac{a(r^n - 1)}{r - 1} = \\frac{3(2^n - 1)}{2 - 1} = 3(2^n - 1) = 3 \\cdot 2^n - 3$$\n   Rumus yang benar adalah $S_n = 3(2^n - 1)$, bukan $2^{n+1} - 1$.\n   Pernyataan D bernilai **SALAH**.\n\n4. **Evaluasi jumlah 6 suku pertama (Pernyataan C):**\n   $$S_6 = 3(2^6 - 1) = 3(64 - 1) = 3(63) = 189$$\n   *(Cek manual: $3 + 6 + 12 + 24 + 48 + 96 = 189$)*.\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Rasio suku berurutan adalah $r = \\frac{U_2}{U_1} = \\frac{6}{3} = 2$."
   },
   {
     "id": "matwa-barisan-deret-geometri-06",

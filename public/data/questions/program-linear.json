@@ -66,6 +66,275 @@
     "explanation": "Langkah-langkah translasi persoalan verbal ke model matematika:\n\n1. Kendala kapasitas koli paket:\n   Total koli yang diangkut oleh $x$ truk A dan $y$ truk B adalah $4x + 3y$. Karena disyaratkan mengangkut *sedikitnya* 120 koli, maka pertidaksamaannya:\n   $$4x + 3y \\ge 120$$\n\n2. Kendala kapasitas drum cairan:\n   Total drum yang diangkut adalah $2x + 3y$. Karena disyaratkan mengangkut *sedikitnya* 90 drum, maka pertidaksamaannya:\n   $$2x + 3y \\ge 90$$\n\n3. Kendala ketersediaan total truk:\n   Total armada yang disewa tidak boleh melebihi 35 truk:\n   $$x + y \\le 35$$\n\n4. Kendala non-negatif:\n   Banyaknya armada tidak mungkin bernilai negatif:\n   $$x \\ge 0, \\quad y \\ge 0$$\n\nJadi, model matematika yang tepat adalah **A**."
   },
   {
+    "id": "matwa-program-linear-05",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "program-linear",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Perhatikan daerah penyelesaian layak (*feasible region*) sistem pertidaksamaan berikut:\n\n<div class=\"flex justify-center my-4 overflow-x-auto\"><svg viewBox=\"0 0 360 220\" class=\"w-full max-w-md h-auto drop-shadow-md rounded-lg\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"360\" height=\"220\" fill=\"#0f172a\" rx=\"8\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Axes: Origin (60, 190), dx=25 per unit, dy=14 per unit -->\n  <line x1=\"40\" y1=\"190\" x2=\"330\" y2=\"190\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <line x1=\"60\" y1=\"210\" x2=\"60\" y2=\"15\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <text x=\"335\" y=\"194\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">X</text>\n  <text x=\"56\" y=\"12\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">Y</text>\n  <!-- Lines: x+y=8 -> (60, 78) to (260, 190) -->\n  <!-- 2x+y=12 -> (60, 22) to (210, 190) -->\n  <!-- Intersection: (4,4) -> (60 + 100, 190 - 56) = (160, 134) -->\n  <polygon points=\"60,190 210,190 160,134 60,78\" fill=\"#38bdf8\" fill-opacity=\"0.25\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n  <line x1=\"50\" y1=\"71\" x2=\"270\" y2=\"197\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/>\n  <text x=\"265\" y=\"180\" fill=\"#f59e0b\" font-size=\"10\" font-family=\"sans-serif\">x + y = 8</text>\n  <line x1=\"55\" y1=\"14\" x2=\"220\" y2=\"202\" stroke=\"#ec4899\" stroke-width=\"1.5\"/>\n  <text x=\"175\" y=\"40\" fill=\"#ec4899\" font-size=\"10\" font-family=\"sans-serif\">2x + y = 12</text>\n  <!-- Points -->\n  <circle cx=\"60\" cy=\"190\" r=\"3.5\" fill=\"#38bdf8\"/>\n  <text x=\"42\" y=\"204\" fill=\"#f8fafc\" font-size=\"9\" font-family=\"sans-serif\">(0,0)</text>\n  <circle cx=\"210\" cy=\"190\" r=\"3.5\" fill=\"#38bdf8\"/>\n  <text x=\"205\" y=\"205\" fill=\"#f8fafc\" font-size=\"9\" font-family=\"sans-serif\">(6,0)</text>\n  <circle cx=\"160\" cy=\"134\" r=\"3.5\" fill=\"#38bdf8\"/>\n  <text x=\"168\" y=\"132\" fill=\"#f8fafc\" font-size=\"9\" font-family=\"sans-serif\">(4,4)</text>\n  <circle cx=\"60\" cy=\"78\" r=\"3.5\" fill=\"#38bdf8\"/>\n  <text x=\"35\" y=\"82\" fill=\"#f8fafc\" font-size=\"9\" font-family=\"sans-serif\">(0,8)</text>\n  <text x=\"100\" y=\"150\" fill=\"#38bdf8\" font-size=\"12\" font-family=\"sans-serif\" font-weight=\"bold\">Feasible</text>\n</svg></div>\n\nDiberikan sistem pertidaksamaan linear:\n$$\\begin{cases} x + y \\le 8 \\\\ 2x + y \\le 12 \\\\ x \\ge 0, \\quad y \\ge 0 \\end{cases}$$\ndengan fungsi tujuan $Z = 5x + 3y$.\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai hasil optimasi!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Titik perpotongan kedua garis batas berada di $(4, 4)$."
+      },
+      {
+        "id": "B",
+        "text": "Nilai maksimum fungsi objektif adalah 32 yang tercapai di titik $(4, 4)$."
+      },
+      {
+        "id": "C",
+        "text": "Nilai fungsi objektif di titik pojok $(6, 0)$ bernilai 30, lebih tinggi dari nilai di titik $(0, 8)$."
+      },
+      {
+        "id": "D",
+        "text": "Nilai maksimum fungsi objektif tercapai di titik $(6, 0)$."
+      },
+      {
+        "id": "E",
+        "text": "Titik potong antara garis $x + y = 8$ dan $2x + y = 12$ adalah $(4, 4)$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "hint": "Cari koordinat titik pojok poligon: $(0,0), (6,0), (4,4)$, dan $(0,8)$, lalu evaluasi nilai $Z = 5x + 3y$ pada masing-masing titik pojok.",
+    "explanation": "Langkah-langkah evaluasi titik pojok DHP:\n\n1. Titik potong kedua garis batas:\n   $$(2x + y = 12) - (x + y = 8) \\implies x = 4$$\n   $$y = 8 - 4 = 4$$\n   Titik potong adalah $(4, 4)$. (Pernyataan A **BENAR**)\n\n2. Tentukan seluruh titik pojok DHP:\n   - $O(0, 0) \\implies Z = 0$\n   - $A(6, 0) \\implies Z = 5(6) + 3(0) = 30$\n   - $B(4, 4) \\implies Z = 5(4) + 3(4) = 20 + 12 = 32$\n   - $C(0, 8) \\implies Z = 5(0) + 3(8) = 24$\n\n3. Analisis nilai-nilai fungsi objektif:\n   - Nilai maksimum adalah 32 di titik $(4, 4)$. (Pernyataan B **BENAR**)\n   - Nilai di titik $(6, 0)$ adalah 30, sedangkan di $(0, 8)$ adalah 24, sehingga $30 > 24$. (Pernyataan C **BENAR**)\n   - Nilai maksimum berada di $(4, 4)$, bukan di $(6, 0)$. (Pernyataan D **SALAH**)\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Eliminasi kedua persamaan: $(2x + y) - (x + y) = 12 - 8 \\implies x = 4$, lalu $y = 8 - 4 = 4$, sehingga titik potongnya adalah $(4, 4)$."
+  },
+  {
+    "id": "matwa-program-linear-11",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "program-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Titik-titik pojok suatu daerah himpunan penyelesaian sistem pertidaksamaan linear adalah $O(0, 0)$, $A(5, 0)$, $B(4, 3)$, $C(1, 5)$, dan $D(0, 4)$. Nilai maksimum dari fungsi tujuan $f(x, y) = 400x + 300y$ pada daerah tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$2.000$"
+      },
+      {
+        "id": "B",
+        "text": "$2.200$"
+      },
+      {
+        "id": "C",
+        "text": "$2.500$"
+      },
+      {
+        "id": "D",
+        "text": "$2.700$"
+      },
+      {
+        "id": "E",
+        "text": "$1.900$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Uji nilai fungsi f(x, y) = 400x + 300y pada setiap titik pojok, lalu bandingkan hasilnya.",
+    "explanation": "Langkah-langkah penyelesaian:\n\nEvaluasi fungsi tujuan $f(x, y) = 400x + 300y$ pada seluruh titik pojok:\n- Titik $O(0, 0)$: $f(0, 0) = 400(0) + 300(0) = 0$\n- Titik $A(5, 0)$: $f(5, 0) = 400(5) + 300(0) = 2.000$\n- Titik $B(4, 3)$: $f(4, 3) = 400(4) + 300(3) = 1.600 + 900 = 2.500$ (Maksimum)\n- Titik $C(1, 5)$: $f(1, 5) = 400(1) + 300(5) = 400 + 1.500 = 1.900$\n- Titik $D(0, 4)$: $f(0, 4) = 400(0) + 300(4) = 1.200$\n\nNilai tertinggi yang diperoleh adalah $2.500$ pada titik $B(4, 3)$.\n\nJadi, nilai maksimumnya adalah **C** ($2.500$)."
+  },
+  {
+    "id": "matwa-program-linear-12",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "program-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Nilai minimum fungsi objektif $Z = 5x + 2y$ yang memenuhi sistem pertidaksamaan:\n$$\\begin{cases} 2x + y \\ge 8 \\\\ x + 2y \\ge 10 \\\\ x \\ge 0,\\; y \\ge 0 \\end{cases}$$\nadalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$14$"
+      },
+      {
+        "id": "B",
+        "text": "$16$"
+      },
+      {
+        "id": "C",
+        "text": "$18$"
+      },
+      {
+        "id": "D",
+        "text": "$20$"
+      },
+      {
+        "id": "E",
+        "text": "$24$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Tentukan titik pojok daerah penyelesaian terbuka: titik potong sumbu-Y (0, 8), titik potong kedua garis (2, 4), dan titik potong sumbu-X (10, 0).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Cari titik potong kedua garis perbatasan:\n   $$\\begin{cases} 2x + y = 8 \\implies y = 8 - 2x \\\\ x + 2y = 10 \\end{cases}$$\n   Substitusi: $x + 2(8 - 2x) = 10 \\implies x + 16 - 4x = 10 \\implies -3x = -6 \\implies x = 2$\n   Nilai $y = 8 - 2(2) = 4$. Titik potong adalah $(2, 4)$.\n\n2. Titik pojok daerah penyelesaian terbuka ke arah kanan atas:\n   - Titik $A(0, 8)$ (pada sumbu-$Y$ dari $2x + y = 8$)\n   - Titik $B(2, 4)$ (titik potong kedua garis)\n   - Titik $C(10, 0)$ (pada sumbu-$X$ dari $x + 2y = 10$)\n\n3. Evaluasi fungsi $Z = 5x + 2y$:\n   - $Z(A) = 5(0) + 2(8) = 16$ (Minimum)\n   - $Z(B) = 5(2) + 2(4) = 10 + 8 = 18$\n   - $Z(C) = 5(10) + 2(0) = 50$\n\nNilai terkecil adalah $16$ di titik $(0, 8)$.\n\nJadi, nilai minimumnya adalah **B** ($16$)."
+  },
+  {
+    "id": "matwa-program-linear-13",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "program-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dalam penyelesaian masalah program linear menggunakan metode grafis garis selidik, fungsi objektif yang hendak dimaksimumkan adalah $Z = 3x + 4y$. Gradien (kemiringan) dari berkas garis selidik tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$-\\frac{3}{4}$"
+      },
+      {
+        "id": "B",
+        "text": "$-\\frac{4}{3}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{3}{4}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{4}{3}$"
+      },
+      {
+        "id": "E",
+        "text": "$-\\frac{1}{2}$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Bentuk persamaan garis selidik ax + by = k, ubah ke bentuk eksplisit y = mx + c untuk melihat gradien m = -a/b.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Persamaan berkas garis selidik dinyatakan dengan menyamakan fungsi objektif dengan suatu konstanta $k$:\n   $$3x + 4y = k$$\n\n2. Ubah ke bentuk persamaan garis linear $y = mx + c$:\n   $$4y = -3x + k$$\n   $$y = -\\frac{3}{4}x + \\frac{k}{4}$$\n\n3. Koefisien di depan variabel $x$ merupakan gradien garis selidik:\n   $$m = -\\frac{3}{4}$$\n\nJadi, gradien garis selidik adalah **A** ($-\\frac{3}{4}$)."
+  },
+  {
+    "id": "matwa-program-linear-14",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "program-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah pelataran parkir seluas $400\\text{ m}^2$ hanya mampu menampung tidak lebih dari $30\\text{ kendaraan}$ (mobil sedan dan bus). Luas parkir yang diperlukan untuk satu mobil sedan adalah $10\\text{ m}^2$ dan untuk satu bus adalah $20\\text{ m}^2$. Tarif retribusi parkir ditetapkan $\\text{Rp}5.000$ untuk mobil sedan dan $\\text{Rp}10.000$ untuk bus. Pendapatan retribusi maksimum yang dapat diperoleh pengelola parkir tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\text{Rp}150.000$"
+      },
+      {
+        "id": "B",
+        "text": "$\\text{Rp}180.000$"
+      },
+      {
+        "id": "C",
+        "text": "$\\text{Rp}200.000$"
+      },
+      {
+        "id": "D",
+        "text": "$\\text{Rp}220.000$"
+      },
+      {
+        "id": "E",
+        "text": "$\\text{Rp}250.000$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Perhatikan fungsi tujuan f(x, y) = 5.000x + 10.000y = 5.000(x + 2y). Gunakan kendala luas 10x + 20y <= 400.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Misalkan banyak mobil sedan $= x$ dan bus $= y$.\n\n2. Susun sistem kendala:\n   - Kapasitas kendaraan: $x + y \\le 30$\n   - Kapasitas luas lahan: $10x + 20y \\le 400 \\implies x + 2y \\le 40$\n   - $x \\ge 0,\\; y \\ge 0$\n\n3. Tentukan fungsi penerimaan:\n   $$f(x, y) = 5.000x + 10.000y = 5.000(x + 2y)$$\n\n4. Dari kendala luas lahan, nilai maksimum dari ekspresi $(x + 2y)$ adalah $40$. Karena jika $x = 0$ dan $y = 20$, syarat $x + y = 20 \\le 30$ tetap terpenuhi.\n\n5. Hitung penerimaan maksimum:\n   $$f_{\\text{maks}} = 5.000 \\times 40 = \\text{Rp}200.000$$\n\nJadi, pendapatan maksimum pengelola parkir adalah **C** ($\\text{Rp}200.000$)."
+  },
+  {
+    "id": "matwa-program-linear-15",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "program-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah workshop kriya memproduksi meja ($x$) dan kursi ($y$). Keterbatasan persediaan kayu dan alokasi jam kerja menghasilkan daerah feasible dengan titik-titik sudut optimum $(0, 20)$, $(12, 16)$, dan $(18, 0)$. Keuntungan dari penjualan satu unit meja adalah $\\text{Rp}150.000$ dan satu unit kursi adalah $\\text{Rp}100.000$. Agar diperoleh keuntungan total maksimum, banyak meja ($x$) yang harus diproduksi adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$0\\text{ unit}$"
+      },
+      {
+        "id": "B",
+        "text": "$12\\text{ unit}$"
+      },
+      {
+        "id": "C",
+        "text": "$16\\text{ unit}$"
+      },
+      {
+        "id": "D",
+        "text": "$18\\text{ unit}$"
+      },
+      {
+        "id": "E",
+        "text": "$20\\text{ unit}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Hitung keuntungan di setiap titik sudut f(x, y) = 150.000x + 100.000y, lalu cari nilai x di titik yang menghasilkan keuntungan maksimum.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Fungsi keuntungan penjualan:\n   $$f(x, y) = 150.000x + 100.000y$$\n\n2. Uji nilai keuntungan di setiap titik sudut:\n   - Titik $(0, 20)$: $f(0, 20) = 150.000(0) + 100.000(20) = \\text{Rp}2.000.000$\n   - Titik $(12, 16)$: $f(12, 16) = 150.000(12) + 100.000(16) = 1.800.000 + 1.600.000 = \\text{Rp}3.400.000$ (Maksimum)\n   - Titik $(18, 0)$: $f(18, 0) = 150.000(18) + 100.000(0) = \\text{Rp}2.700.000$\n\n3. Keuntungan maksimum $\\text{Rp}3.400.000$ dicapai saat memproduksi $x = 12\\text{ meja}$ dan $y = 16\\text{ kursi}$.\n\nJadi, banyak meja yang harus diproduksi adalah **B** ($12\\text{ unit}$)."
+  },
+  {
+    "id": "matwa-program-linear-16",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "program-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan daerah himpunan penyelesaian yang dibatasi oleh $2x + 5y \\le 20$, $x + y \\le 6$, $x \\ge 0$, dan $y \\ge 0$. Fungsi tujuan $f(x, y) = ax + by$ dengan $a, b > 0$ akan mencapai nilai maksimum di sepanjang seluruh segmen garis pembatas $2x + 5y = 20$ apabila nilai perbandingan $a : b$ sama dengan ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$1 : 1$"
+      },
+      {
+        "id": "B",
+        "text": "$2 : 5$"
+      },
+      {
+        "id": "C",
+        "text": "$5 : 2$"
+      },
+      {
+        "id": "D",
+        "text": "$3 : 5$"
+      },
+      {
+        "id": "E",
+        "text": "$1 : 2$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Solusi optimal terjadi di sepanjang segmen garis pembatas jika garis selidik sejajar dengan garis pembatas tersebut (gradiennya sama).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Agar nilai maksimum terjadi di sepanjang segmen garis $2x + 5y = 20$, maka garis selidik fungsi tujuan $ax + by = k$ harus berhimpit atau sejajar dengan garis pembatas tersebut.\n\n2. Tentukan gradien garis pembatas $2x + 5y = 20$:\n   $$5y = -2x + 20 \\implies y = -\\frac{2}{5}x + 4 \\implies m_1 = -\\frac{2}{5}$$\n\n3. Tentukan gradien garis selidik $ax + by = k$:\n   $$by = -ax + k \\implies y = -\\frac{a}{b}x + \\frac{k}{b} \\implies m_2 = -\\frac{a}{b}$$\n\n4. Samakan kedua gradien:\n   $$-\\frac{a}{b} = -\\frac{2}{5} \\implies \\frac{a}{b} = \\frac{2}{5} \\implies a : b = 2 : 5$$\n\nJadi, perbandingan $a : b$ bernilai **B** ($2 : 5$)."
+  },
+  {
+    "id": "matwa-program-linear-17",
+    "chapter_id": "aljabar-linear",
+    "sub_chapter_id": "program-linear",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Seorang peternak harus menyusun ransum pakan harian dari dua jenis konsentrat $P$ ($x\\text{ kg}$) dan $Q$ ($y\\text{ kg}$). Tiap kilogram konsentrat $P$ mengandung $3\\text{ unit}$ protein dan $1\\text{ unit}$ kalsium, sedangkan konsentrat $Q$ mengandung $1\\text{ unit}$ protein dan $2\\text{ unit}$ kalsium. Kebutuhan nutrisi harian ternak paling sedikit adalah $15\\text{ unit}$ protein dan $10\\text{ unit}$ kalsium. Jika harga konsentrat $P$ adalah $\\text{Rp}8.000/\\text{kg}$ dan konsentrat $Q$ adalah $\\text{Rp}6.000/\\text{kg}$, model matematika yang tepat untuk meminimumkan biaya pakan adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "Meminimumkan $C = 8.000x + 6.000y$ dengan kendala $3x + y \\ge 15,\\; x + 2y \\ge 10,\\; x \\ge 0,\\; y \\ge 0$"
+      },
+      {
+        "id": "B",
+        "text": "Meminimumkan $C = 8.000x + 6.000y$ dengan kendala $3x + y \\le 15,\\; x + 2y \\le 10,\\; x \\ge 0,\\; y \\ge 0$"
+      },
+      {
+        "id": "C",
+        "text": "Meminimumkan $C = 6.000x + 8.000y$ dengan kendala $x + 3y \\ge 15,\\; 2x + y \\ge 10,\\; x \\ge 0,\\; y \\ge 0$"
+      },
+      {
+        "id": "D",
+        "text": "Meminimumkan $C = 8.000x + 6.000y$ dengan kendala $3x + 2y \\ge 15,\\; x + y \\ge 10,\\; x \\ge 0,\\; y \\ge 0$"
+      },
+      {
+        "id": "E",
+        "text": "Meminimumkan $C = 8.000x + 6.000y$ dengan kendala $x + y \\ge 25,\\; 3x + 2y \\ge 10,\\; x \\ge 0,\\; y \\ge 0$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Kata \"paling sedikit\" menunjukkan pertidaksamaan bertanda lebih dari atau sama dengan (>=).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Tentukan fungsi tujuan (biaya minimum):\n   $$C(x, y) = 8.000x + 6.000y$$\n\n2. Tentukan kendala kandungan nutrisi:\n   - Kandungan protein (paling sedikit $15\\text{ unit}$): $3x + 1y \\ge 15$\n   - Kandungan kalsium (paling sedikit $10\\text{ unit}$): $1x + 2y \\ge 10$\n   - Non-negatif: $x \\ge 0,\\; y \\ge 0$\n\nJadi, model matematikanya adalah **A** (Meminimumkan $C = 8.000x + 6.000y$ dengan kendala $3x + y \\ge 15,\\; x + 2y \\ge 10,\\; x \\ge 0,\\; y \\ge 0$)."
+  },
+  {
     "id": "matwa-program-linear-03",
     "chapter_id": "aljabar-linear",
     "sub_chapter_id": "program-linear",
@@ -130,44 +399,6 @@
     "correct_answer": "A",
     "hint": "Cari ketiga titik pojok daerah penyelesaian terbuka ke atas: titik potong sumbu-Y $(0, 12)$, perpotongan kedua garis kendala $(3; 7,5)$, dan titik potong sumbu-X $(18, 0)$. Uji biaya $C = 15.000x + 12.000y$ pada ketiga titik tersebut.",
     "explanation": "Langkah-langkah minimasi biaya pada daerah tak terbatas (*unbounded feasible region*):\n\n1. Susun fungsi objektif biaya:\n   $$C(x, y) = 15.000x + 12.000y$$\n\n2. Susun sistem pertidaksamaan kendala nutrisi:\n   - Protein: $3x + 2y \\ge 24$\n   - Kalsium: $x + 2y \\ge 18$\n   - Syarat fisik: $x \\ge 0, \\quad y \\ge 0$\n\n3. Tentukan titik-titik sudut daerah penyelesaian:\n   - Titik pada sumbu-$Y$ ($x=0$): $2y = 24 \\implies y = 12 \\implies (0, 12)$\n     (Uji kalsium: $0 + 2(12) = 24 \\ge 18$ terpenuhi)\n   - Titik perpotongan kedua garis batas:\n     $$(3x + 2y) - (x + 2y) = 24 - 18 \\implies 2x = 6 \\implies x = 3$$\n     $$3 + 2y = 18 \\implies 2y = 15 \\implies y = 7,5$$\n     Titik pojok adalah $(3; 7,5)$.\n   - Titik pada sumbu-$X$ ($y=0$): $x = 18 \\implies (18, 0)$\n     (Uji protein: $3(18) + 0 = 54 \\ge 24$ terpenuhi)\n\n4. Evaluasi nilai biaya pada ketiga titik pojok:\n   - $C(0, 12) = 15.000(0) + 12.000(12) = \\text{Rp}144.000,00$\n   - $C(3; 7,5) = 15.000(3) + 12.000(7,5) = 45.000 + 90.000 = \\text{Rp}135.000,00$\n   - $C(18, 0) = 15.000(18) + 12.000(0) = \\text{Rp}270.000,00$\n\nBiaya minimum yang dicapai adalah **Rp135.000,00** pada pembelian $3\\text{ kg}$ Pakan X dan $7,5\\text{ kg}$ Pakan Y (Opsi **A**)."
-  },
-  {
-    "id": "matwa-program-linear-05",
-    "chapter_id": "aljabar-linear",
-    "sub_chapter_id": "program-linear",
-    "question_type": "MCMA",
-    "difficulty": "STANDAR",
-    "question_text": "Perhatikan daerah penyelesaian layak (*feasible region*) sistem pertidaksamaan berikut:\n\n<div class=\"flex justify-center my-4 overflow-x-auto\"><svg viewBox=\"0 0 360 220\" class=\"w-full max-w-md h-auto drop-shadow-md rounded-lg\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"360\" height=\"220\" fill=\"#0f172a\" rx=\"8\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Axes: Origin (60, 190), dx=25 per unit, dy=14 per unit -->\n  <line x1=\"40\" y1=\"190\" x2=\"330\" y2=\"190\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <line x1=\"60\" y1=\"210\" x2=\"60\" y2=\"15\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <text x=\"335\" y=\"194\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">X</text>\n  <text x=\"56\" y=\"12\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"sans-serif\">Y</text>\n  <!-- Lines: x+y=8 -> (60, 78) to (260, 190) -->\n  <!-- 2x+y=12 -> (60, 22) to (210, 190) -->\n  <!-- Intersection: (4,4) -> (60 + 100, 190 - 56) = (160, 134) -->\n  <polygon points=\"60,190 210,190 160,134 60,78\" fill=\"#38bdf8\" fill-opacity=\"0.25\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n  <line x1=\"50\" y1=\"71\" x2=\"270\" y2=\"197\" stroke=\"#f59e0b\" stroke-width=\"1.5\"/>\n  <text x=\"265\" y=\"180\" fill=\"#f59e0b\" font-size=\"10\" font-family=\"sans-serif\">x + y = 8</text>\n  <line x1=\"55\" y1=\"14\" x2=\"220\" y2=\"202\" stroke=\"#ec4899\" stroke-width=\"1.5\"/>\n  <text x=\"175\" y=\"40\" fill=\"#ec4899\" font-size=\"10\" font-family=\"sans-serif\">2x + y = 12</text>\n  <!-- Points -->\n  <circle cx=\"60\" cy=\"190\" r=\"3.5\" fill=\"#38bdf8\"/>\n  <text x=\"42\" y=\"204\" fill=\"#f8fafc\" font-size=\"9\" font-family=\"sans-serif\">(0,0)</text>\n  <circle cx=\"210\" cy=\"190\" r=\"3.5\" fill=\"#38bdf8\"/>\n  <text x=\"205\" y=\"205\" fill=\"#f8fafc\" font-size=\"9\" font-family=\"sans-serif\">(6,0)</text>\n  <circle cx=\"160\" cy=\"134\" r=\"3.5\" fill=\"#38bdf8\"/>\n  <text x=\"168\" y=\"132\" fill=\"#f8fafc\" font-size=\"9\" font-family=\"sans-serif\">(4,4)</text>\n  <circle cx=\"60\" cy=\"78\" r=\"3.5\" fill=\"#38bdf8\"/>\n  <text x=\"35\" y=\"82\" fill=\"#f8fafc\" font-size=\"9\" font-family=\"sans-serif\">(0,8)</text>\n  <text x=\"100\" y=\"150\" fill=\"#38bdf8\" font-size=\"12\" font-family=\"sans-serif\" font-weight=\"bold\">Feasible</text>\n</svg></div>\n\nDiberikan sistem pertidaksamaan linear:\n$$\\begin{cases} x + y \\le 8 \\\\ 2x + y \\le 12 \\\\ x \\ge 0, \\quad y \\ge 0 \\end{cases}$$\ndengan fungsi tujuan $Z = 5x + 3y$.\n\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai hasil optimasi!",
-    "options": [
-      {
-        "id": "A",
-        "text": "Titik perpotongan kedua garis batas berada di $(4, 4)$."
-      },
-      {
-        "id": "B",
-        "text": "Nilai maksimum fungsi objektif adalah 32 yang tercapai di titik $(4, 4)$."
-      },
-      {
-        "id": "C",
-        "text": "Nilai fungsi objektif di titik pojok $(6, 0)$ bernilai 30, lebih tinggi dari nilai di titik $(0, 8)$."
-      },
-      {
-        "id": "D",
-        "text": "Nilai maksimum fungsi objektif tercapai di titik $(6, 0)$."
-      },
-      {
-        "id": "E",
-        "text": "Titik potong antara garis $x + y = 8$ dan $2x + y = 12$ adalah $(4, 4)$."
-      }
-    ],
-    "correct_answer": [
-      "A",
-      "B",
-      "C",
-      "E"
-    ],
-    "hint": "Cari koordinat titik pojok poligon: $(0,0), (6,0), (4,4)$, dan $(0,8)$, lalu evaluasi nilai $Z = 5x + 3y$ pada masing-masing titik pojok.",
-    "explanation": "Langkah-langkah evaluasi titik pojok DHP:\n\n1. Titik potong kedua garis batas:\n   $$(2x + y = 12) - (x + y = 8) \\implies x = 4$$\n   $$y = 8 - 4 = 4$$\n   Titik potong adalah $(4, 4)$. (Pernyataan A **BENAR**)\n\n2. Tentukan seluruh titik pojok DHP:\n   - $O(0, 0) \\implies Z = 0$\n   - $A(6, 0) \\implies Z = 5(6) + 3(0) = 30$\n   - $B(4, 4) \\implies Z = 5(4) + 3(4) = 20 + 12 = 32$\n   - $C(0, 8) \\implies Z = 5(0) + 3(8) = 24$\n\n3. Analisis nilai-nilai fungsi objektif:\n   - Nilai maksimum adalah 32 di titik $(4, 4)$. (Pernyataan B **BENAR**)\n   - Nilai di titik $(6, 0)$ adalah 30, sedangkan di $(0, 8)$ adalah 24, sehingga $30 > 24$. (Pernyataan C **BENAR**)\n   - Nilai maksimum berada di $(4, 4)$, bukan di $(6, 0)$. (Pernyataan D **SALAH**)\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Eliminasi kedua persamaan: $(2x + y) - (x + y) = 12 - 8 \\implies x = 4$, lalu $y = 8 - 4 = 4$, sehingga titik potongnya adalah $(4, 4)$."
   },
   {
     "id": "matwa-program-linear-06",

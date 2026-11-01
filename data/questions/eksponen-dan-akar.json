@@ -7,11 +7,26 @@
     "difficulty": "STANDAR",
     "question_text": "Dalam perancangan sirkuit mikroelektronika, efisiensi konduktivitas dinyatakan oleh perbandingan daya dan hambatan yang disederhanakan melalui ekspresi aljabar pecahan berpangkat:\n$$\\left( \\frac{a^{3} b^{-2} c^{4}}{a^{-1} b^{4} c^{-2}} \\right)^{\\frac{1}{2}}$$\nBentuk paling sederhana dari ekspresi tersebut untuk variabel tak nol adalah ...",
     "options": [
-      { "id": "A", "text": "$\\frac{a^2 c^3}{b^3}$" },
-      { "id": "B", "text": "$\\frac{a^4 c^6}{b^6}$" },
-      { "id": "C", "text": "$\\frac{a c^2}{b}$" },
-      { "id": "D", "text": "$\\frac{a^2 b^3}{c^3}$" },
-      { "id": "E", "text": "$a^2 b^3 c^3$" }
+      {
+        "id": "A",
+        "text": "$\\frac{a^2 c^3}{b^3}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{a^4 c^6}{b^6}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{a c^2}{b}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{a^2 b^3}{c^3}$"
+      },
+      {
+        "id": "E",
+        "text": "$a^2 b^3 c^3$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Kelompokkan variabel yang sama di pembilang dan penyebut, kurangkan eksponennya sesuai sifat a^m / a^n = a^(m-n), lalu kalikan setiap eksponen dengan 1/2.",
@@ -25,15 +40,299 @@
     "difficulty": "STANDAR",
     "question_text": "Dalam pengukuran impedansi jaringan transmisi listrik, rasio tegangan terhadap arus menghasilkan pecahan dengan penyebut bentuk akar irasional:\n$$\\frac{2 + \\sqrt{3}}{\\sqrt{3} - \\sqrt{2}}$$\nBentuk rasional dari pecahan tersebut adalah ...",
     "options": [
-      { "id": "A", "text": "$3 + 2\\sqrt{2} + 2\\sqrt{3} + \\sqrt{6}$" },
-      { "id": "B", "text": "$3 - 2\\sqrt{2} + 2\\sqrt{3} - \\sqrt{6}$" },
-      { "id": "C", "text": "$2 + 3\\sqrt{2} + \\sqrt{3} + \\sqrt{6}$" },
-      { "id": "D", "text": "$\\frac{3 + 2\\sqrt{2} + 2\\sqrt{3} + \\sqrt{6}}{5}$" },
-      { "id": "E", "text": "$1 + \\sqrt{2} + \\sqrt{3} + 2\\sqrt{6}$" }
+      {
+        "id": "A",
+        "text": "$3 + 2\\sqrt{2} + 2\\sqrt{3} + \\sqrt{6}$"
+      },
+      {
+        "id": "B",
+        "text": "$3 - 2\\sqrt{2} + 2\\sqrt{3} - \\sqrt{6}$"
+      },
+      {
+        "id": "C",
+        "text": "$2 + 3\\sqrt{2} + \\sqrt{3} + \\sqrt{6}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{3 + 2\\sqrt{2} + 2\\sqrt{3} + \\sqrt{6}}{5}$"
+      },
+      {
+        "id": "E",
+        "text": "$1 + \\sqrt{2} + \\sqrt{3} + 2\\sqrt{6}$"
+      }
     ],
     "correct_answer": "A",
     "hint": "Kalikan pembilang dan penyebut dengan sekawan penyebut yaitu (\\sqrt{3} + \\sqrt{2}), lalu gunakan identitas selisih dua kuadrat.",
     "explanation": "Langkah-langkah merasionalkan penyebut pecahan bentuk akar:\n\n1. Kalikan pembilang dan penyebut dengan bentuk sekawan dari penyebut, yaitu $(\\sqrt{3} + \\sqrt{2})$:\n   $$\\frac{2 + \\sqrt{3}}{\\sqrt{3} - \\sqrt{2}} \\times \\frac{\\sqrt{3} + \\sqrt{2}}{\\sqrt{3} + \\sqrt{2}}$$\n\n2. Hitung hasil perkalian penyebut menggunakan sifat selisih kuadrat $(x-y)(x+y) = x^2 - y^2$:\n   $$(\\sqrt{3})^2 - (\\sqrt{2})^2 = 3 - 2 = 1$$\n\n3. Hitung hasil perkalian pembilang secara distributif:\n   $$(2 + \\sqrt{3})(\\sqrt{3} + \\sqrt{2}) = 2\\sqrt{3} + 2\\sqrt{2} + (\\sqrt{3})(\\sqrt{3}) + (\\sqrt{3})(\\sqrt{2})$$\n   $$= 2\\sqrt{3} + 2\\sqrt{2} + 3 + \\sqrt{6} = 3 + 2\\sqrt{2} + 2\\sqrt{3} + \\sqrt{6}$$\n\n4. Karena penyebut bernilai 1, maka hasil akhirnya adalah:\n   $$3 + 2\\sqrt{2} + 2\\sqrt{3} + \\sqrt{6}$$\n\nJadi, jawaban yang benar adalah **A**."
+  },
+  {
+    "id": "matwa-eksponen-dan-akar-05",
+    "chapter_id": "bilangan-real",
+    "sub_chapter_id": "eksponen-dan-akar",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Dalam analisis pemodelan komputasi laju pendinginan material semikonduktor dan peluruhan isotop di laboratorium teknologi material, dua parameter fisis tak nol $a > 0$ dan $b > 0$ direlasikan melalui ekspresi aljabar eksponen dan bentuk akar.\n\n<div class=\"flex justify-center my-3\"><svg viewBox=\"0 0 360 80\" class=\"w-full max-w-sm h-auto drop-shadow-sm\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"350\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><text x=\"180\" y=\"30\" fill=\"#38bdf8\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"bold\">VERIFIKASI RUMUS KOMPUTASI EKSPONEN & AKAR</text><text x=\"180\" y=\"52\" fill=\"#f8fafc\" font-size=\"11\" font-family=\"monospace\" text-anchor=\"middle\">Domain: a > 0, b > 0  |  Pengujian Identitas Aljabar</text></svg></div>\n\nSeorang peneliti sedang menguji keabsahan lima formula penyederhanaan berikut yang diajukan oleh tim analis data:\n(1) Bentuk $\\sqrt{a^3 \\cdot \\sqrt[3]{a^6}}$ dapat disederhanakan menjadi $a^{5/2}$\n(2) Bentuk $(a^{-2} b^3)^{-\\frac{1}{2}}$ ekuivalen dengan $\\frac{a}{\\sqrt{b^3}}$\n(3) Bentuk $\\frac{a^{2/3} - b^{2/3}}{a^{1/3} + b^{1/3}}$ ekuivalen dengan $a^{1/3} - b^{1/3}$\n(4) Bentuk $\\sqrt[3]{a^6 b^9}$ dapat disederhanakan menjadi $a^3 b^3$\n(5) Bentuk $(a^{1/2} + b^{1/2})^2 - 2\\sqrt{ab}$ dapat disederhanakan menjadi $a + b$\n\nPilihlah **SEMUA** pernyataan formula nomor yang bernilai **BENAR**!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pernyataan (1): $\\sqrt{a^3 \\cdot \\sqrt[3]{a^6}} = a^{5/2}$"
+      },
+      {
+        "id": "B",
+        "text": "Pernyataan (2): $(a^{-2} b^3)^{-\\frac{1}{2}} = \\frac{a}{\\sqrt{b^3}}$"
+      },
+      {
+        "id": "C",
+        "text": "Pernyataan (3): $\\frac{a^{2/3} - b^{2/3}}{a^{1/3} + b^{1/3}} = a^{1/3} - b^{1/3}$"
+      },
+      {
+        "id": "D",
+        "text": "Pernyataan (4): $\\sqrt[3]{a^6 b^9} = a^3 b^3$"
+      },
+      {
+        "id": "E",
+        "text": "Pernyataan (5): $(a^{1/2} + b^{1/2})^2 - 2\\sqrt{ab} = a + b$"
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "hint": "Uraikan pangkat akar bertingkat ke bentuk pangkat rasional, gunakan faktorisasi selisih kuadrat pada pecahan, dan jabarkan kuadrat binomial.",
+    "explanation": "Mari kita uji kebenaran tiap formula secara sistematis:\n\n- **Pernyataan (1) - BENAR:**\n  $$\\sqrt[3]{a^6} = a^{6/3} = a^2$$\n  $$\\sqrt{a^3 \\cdot a^2} = \\sqrt{a^5} = a^{5/2}$$\n\n- **Pernyataan (2) - BENAR:**\n  $$(a^{-2} b^3)^{-\\frac{1}{2}} = a^{(-2)(-\\frac{1}{2})} \\cdot b^{3(-\\frac{1}{2})} = a^1 \\cdot b^{-\\frac{3}{2}} = \\frac{a}{b^{3/2}} = \\frac{a}{\\sqrt{b^3}}$$\n\n- **Pernyataan (3) - BENAR:**\n  Gunakan faktorisasi selisih dua kuadrat $x^2 - y^2 = (x - y)(x + y)$ dengan memisalkan $x = a^{1/3}$ dan $y = b^{1/3}$:\n  $$\\frac{(a^{1/3})^2 - (b^{1/3})^2}{a^{1/3} + b^{1/3}} = \\frac{(a^{1/3} - b^{1/3})(a^{1/3} + b^{1/3})}{a^{1/3} + b^{1/3}} = a^{1/3} - b^{1/3}$$\n\n- **Pernyataan (4) - SALAH:**\n  $$\\sqrt[3]{a^6 b^9} = a^{6/3} b^{9/3} = a^2 b^3 \\neq a^3 b^3$$\n\n- **Pernyataan (5) - BENAR:**\n  Ekspansikan bentuk kuadrat binomial:\n  $$(a^{1/2} + b^{1/2})^2 = (a^{1/2})^2 + 2(a^{1/2})(b^{1/2}) + (b^{1/2})^2 = a + 2\\sqrt{ab} + b$$\n  Sehingga:\n  $$(a^{1/2} + b^{1/2})^2 - 2\\sqrt{ab} = a + 2\\sqrt{ab} + b - 2\\sqrt{ab} = a + b$$\n\nOleh karena itu, opsi formula yang bernilai benar adalah **A, B, C, dan E**."
+  },
+  {
+    "id": "matwa-eksponen-dan-akar-11",
+    "chapter_id": "bilangan-real",
+    "sub_chapter_id": "eksponen-dan-akar",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dalam pemodelan redaman sinyal gelombang elektromagnetik pada saluran transmisi telekomunikasi, relasi daya sinyal dinyatakan oleh persamaan eksponen:\n$$4^{2x - 1} = \\left(\\frac{1}{8}\\right)^{x - 3}$$\nNilai $x$ real yang memenuhi persamaan tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{7}{11}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{11}{7}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{9}{7}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{7}{9}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{11}{5}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Ubah kedua ruas ke basis bilangan prima 2, lalu samakan pangkatnya: 4 = 2^2 dan 1/8 = 2^(-3).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Nyatakan kedua ruas ke basis yang sama, yaitu bilangan prima $2$:\n   $$4 = 2^2 \\implies 4^{2x - 1} = (2^2)^{2x - 1} = 2^{2(2x - 1)} = 2^{4x - 2}$$\n   $$\\frac{1}{8} = 2^{-3} \\implies \\left(\\frac{1}{8}\\right)^{x - 3} = (2^{-3})^{x - 3} = 2^{-3(x - 3)} = 2^{-3x + 9}$$\n\n2. Karena basis kedua ruas sudah sama ($2 > 0$ dan $2 \\neq 1$), samakan eksponennya:\n   $$4x - 2 = -3x + 9$$\n\n3. Selesaikan persamaan linear satu variabel:\n   $$4x + 3x = 9 + 2$$\n   $$7x = 11 \\implies x = \\frac{11}{7}$$\n\nJadi, nilai $x$ yang memenuhi adalah **B** ($\\frac{11}{7}$)."
+  },
+  {
+    "id": "matwa-eksponen-dan-akar-12",
+    "chapter_id": "bilangan-real",
+    "sub_chapter_id": "eksponen-dan-akar",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dalam perhitungan modulus elastisitas batang penguat struktur jembatan baja komposit, didapatkan besaran teknis yang memuat bentuk akar bertingkat $\\sqrt{11 - 2\\sqrt{30}}$. Bentuk sederhana dari ekspresi akar tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\sqrt{6} - \\sqrt{5}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\sqrt{6} + \\sqrt{5}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\sqrt{10} - \\sqrt{3}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\sqrt{15} - \\sqrt{2}$"
+      },
+      {
+        "id": "E",
+        "text": "$2\\sqrt{3} - \\sqrt{5}$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Gunakan identitas bentuk akar bertingkat \\sqrt{(a+b) - 2\\sqrt{ab}} = \\sqrt{a} - \\sqrt{b} dengan syarat a > b > 0.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Gunakan rumus penyederhanaan bentuk akar khusus:\n   $$\\sqrt{(a + b) \\pm 2\\sqrt{ab}} = \\sqrt{a} \\pm \\sqrt{b} \\quad (a > b)$$\n\n2. Cari dua bilangan $a$ dan $b$ sehingga:\n   - $a + b = 11$\n   - $a \\cdot b = 30$\n\n3. Bilangan yang memenuhi kedua syarat tersebut adalah $a = 6$ dan $b = 5$ ($6 > 5$):\n   - $6 + 5 = 11$\n   - $6 \\times 5 = 30$\n\n4. Substitusikan ke rumus:\n   $$\\sqrt{11 - 2\\sqrt{30}} = \\sqrt{(6 + 5) - 2\\sqrt{6 \\times 5}} = \\sqrt{6} - \\sqrt{5}$$\n\nJadi, bentuk sederhananya adalah **A** ($\\sqrt{6} - \\sqrt{5}$)."
+  },
+  {
+    "id": "matwa-eksponen-dan-akar-13",
+    "chapter_id": "bilangan-real",
+    "sub_chapter_id": "eksponen-dan-akar",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dalam kalibrasi dimensi presisi spindel mesin bubut CNC, nilai toleransi aksial dinyatakan oleh operasi aljabar bentuk akar campuran:\n$$\\frac{\\sqrt{54} - \\sqrt{24} + \\sqrt{96}}{\\sqrt{6}}$$\nHasil perhitungan paling sederhana dari ekspresi tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$3$"
+      },
+      {
+        "id": "B",
+        "text": "$4$"
+      },
+      {
+        "id": "C",
+        "text": "$5$"
+      },
+      {
+        "id": "D",
+        "text": "$6$"
+      },
+      {
+        "id": "E",
+        "text": "$5\\sqrt{6}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Faktorkan setiap bilangan di dalam tanda akar menjadi perkalian kuadrat sempurna dengan 6: 54 = 9*6, 24 = 4*6, 96 = 16*6.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Sederhanakan masing-masing bentuk akar pada pembilang:\n   - $\\sqrt{54} = \\sqrt{9 \\times 6} = 3\\sqrt{6}$\n   - $\\sqrt{24} = \\sqrt{4 \\times 6} = 2\\sqrt{6}$\n   - $\\sqrt{96} = \\sqrt{16 \\times 6} = 4\\sqrt{6}$\n\n2. Gabungkan suku-suku sejenis pada pembilang:\n   $$\\sqrt{54} - \\sqrt{24} + \\sqrt{96} = 3\\sqrt{6} - 2\\sqrt{6} + 4\\sqrt{6} = (3 - 2 + 4)\\sqrt{6} = 5\\sqrt{6}$$\n\n3. Bagi pembilang dengan penyebut:\n   $$\\frac{5\\sqrt{6}}{\\sqrt{6}} = 5$$\n\nJadi, hasil perhitungannya adalah **C** ($5$)."
+  },
+  {
+    "id": "matwa-eksponen-dan-akar-14",
+    "chapter_id": "bilangan-real",
+    "sub_chapter_id": "eksponen-dan-akar",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Massa satu atom karbon-12 terukur sebesar $1{,}9926 \\times 10^{-26}\\text{ kg}$. Dalam sebuah mikrosampel paduan grafit semikonduktor terdapat $6{,}0 \\times 10^{21}$ atom karbon. Massa total karbon dalam sampel tersebut jika dinyatakan dalam satuan miligram ($\\text{mg}$) adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$1{,}19556\\text{ mg}$"
+      },
+      {
+        "id": "B",
+        "text": "$11{,}9556\\text{ mg}$"
+      },
+      {
+        "id": "C",
+        "text": "$119{,}556\\text{ mg}$"
+      },
+      {
+        "id": "D",
+        "text": "$1195{,}56\\text{ mg}$"
+      },
+      {
+        "id": "E",
+        "text": "$0{,}119556\\text{ mg}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Kalikan massa satu atom dengan jumlah atom, lalu ubah dari kg ke mg dengan mengalikan 10^6.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Hitung massa total dalam satuan kilogram ($\\text{kg}$):\n   $$m_{\\text{total}} = (1{,}9926 \\times 10^{-26}\\text{ kg}) \\times (6{,}0 \\times 10^{21})$$\n   $$m_{\\text{total}} = (1{,}9926 \\times 6{,}0) \\times 10^{-26 + 21} = 11{,}9556 \\times 10^{-5}\\text{ kg}$$\n\n2. Konversikan dari satuan $\\text{kg}$ ke $\\text{mg}$ ($1\\text{ kg} = 10^6\\text{ mg}$):\n   $$m_{\\text{total}} = (11{,}9556 \\times 10^{-5}) \\times 10^6\\text{ mg}$$\n   $$m_{\\text{total}} = 11{,}9556 \\times 10^1\\text{ mg} = 119{,}556\\text{ mg}$$\n\nJadi, massa total karbon dalam sampel adalah **C** ($119{,}556\\text{ mg}$)."
+  },
+  {
+    "id": "matwa-eksponen-dan-akar-15",
+    "chapter_id": "bilangan-real",
+    "sub_chapter_id": "eksponen-dan-akar",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diketahui nilai $x = 27$ dan $y = 16$. Nilai numerik dari ekspresi aljabar eksponen rasional:\n$$\\frac{x^{\\frac{2}{3}} \\cdot y^{-\\frac{1}{4}}}{x^{-\\frac{1}{3}} + y^{\\frac{1}{2}}}$$\nadalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{27}{26}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{9}{13}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{27}{13}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{9}{26}$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{18}{13}$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Substitusikan x = 3^3 dan y = 2^4 untuk menyederhanakan tiap suku berpangkat pecahan terlebih dahulu.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Nyatakan $x = 27 = 3^3$ dan $y = 16 = 2^4$:\n   - $x^{2/3} = (3^3)^{2/3} = 3^{3 \\cdot \\frac{2}{3}} = 3^2 = 9$\n   - $y^{-1/4} = (2^4)^{-1/4} = 2^{4 \\cdot (-\\frac{1}{4})} = 2^{-1} = \\frac{1}{2}$\n   - $x^{-1/3} = (3^3)^{-1/3} = 3^{3 \\cdot (-\\frac{1}{3})} = 3^{-1} = \\frac{1}{3}$\n   - $y^{1/2} = (2^4)^{1/2} = 2^{4 \\cdot \\frac{1}{2}} = 2^2 = 4$\n\n2. Hitung pembilang:\n   $$\\text{Pembilang} = x^{2/3} \\cdot y^{-1/4} = 9 \\times \\frac{1}{2} = \\frac{9}{2}$$\n\n3. Hitung penyebut:\n   $$\\text{Penyebut} = x^{-1/3} + y^{1/2} = \\frac{1}{3} + 4 = \\frac{1}{3} + \\frac{12}{3} = \\frac{13}{3}$$\n\n4. Bagikan pembilang dengan penyebut:\n   $$\\frac{\\frac{9}{2}}{\\frac{13}{3}} = \\frac{9}{2} \\times \\frac{3}{13} = \\frac{27}{26}$$\n\nJadi, nilai numerik yang diperoleh adalah **A** ($\\frac{27}{26}$)."
+  },
+  {
+    "id": "matwa-eksponen-dan-akar-16",
+    "chapter_id": "bilangan-real",
+    "sub_chapter_id": "eksponen-dan-akar",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dalam analisis transfer impedansi rangkaian listrik bolak-balik (AC), rasio transfer tegangan dinyatakan dalam pecahan irasional:\n$$\\frac{6\\sqrt{2}}{\\sqrt{5} + \\sqrt{2}}$$\nBentuk rasional yang ekuivalen dengan pecahan tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$2\\sqrt{10} - 4$"
+      },
+      {
+        "id": "B",
+        "text": "$2\\sqrt{10} + 4$"
+      },
+      {
+        "id": "C",
+        "text": "$6\\sqrt{10} - 12$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{2\\sqrt{10} - 4}{3}$"
+      },
+      {
+        "id": "E",
+        "text": "$4\\sqrt{5} - 2$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Kalikan pembilang dan penyebut dengan bentuk sekawan penyebut yaitu (\\sqrt{5} - \\sqrt{2}).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Kalikan pembilang dan penyebut dengan sekawan $(\\sqrt{5} - \\sqrt{2})$:\n   $$\\frac{6\\sqrt{2}}{\\sqrt{5} + \\sqrt{2}} \\times \\frac{\\sqrt{5} - \\sqrt{2}}{\\sqrt{5} - \\sqrt{2}}$$\n\n2. Hitung penyebut dengan sifat $(a + b)(a - b) = a^2 - b^2$:\n   $$(\\sqrt{5})^2 - (\\sqrt{2})^2 = 5 - 2 = 3$$\n\n3. Hitung pembilang secara distributif:\n   $$6\\sqrt{2}(\\sqrt{5} - \\sqrt{2}) = 6\\sqrt{2 \\times 5} - 6(\\sqrt{2})^2 = 6\\sqrt{10} - 6(2) = 6\\sqrt{10} - 12$$\n\n4. Sederhanakan pecahan:\n   $$\\frac{6\\sqrt{10} - 12}{3} = \\frac{6\\sqrt{10}}{3} - \\frac{12}{3} = 2\\sqrt{10} - 4$$\n\nJadi, bentuk rasionalnya adalah **A** ($2\\sqrt{10} - 4$)."
+  },
+  {
+    "id": "matwa-eksponen-dan-akar-17",
+    "chapter_id": "bilangan-real",
+    "sub_chapter_id": "eksponen-dan-akar",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dua kultur mikroorganisme memiliki laju pertumbuhan populasi yang memenuhi persamaan eksponen:\n$$5^{x^2 - 3x - 10} = 7^{x^2 - 3x - 10}$$\nJumlah semua nilai $x$ real yang memenuhi persamaan tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$-3$"
+      },
+      {
+        "id": "B",
+        "text": "$2$"
+      },
+      {
+        "id": "C",
+        "text": "$3$"
+      },
+      {
+        "id": "D",
+        "text": "$5$"
+      },
+      {
+        "id": "E",
+        "text": "$-2$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Jika a^f(x) = b^f(x) dengan a != b dan a, b > 0, maka eksponen f(x) harus bernilai 0.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Cermati sifat dasar persamaan eksponen:\n   Jika $a^{f(x)} = b^{f(x)}$ dengan basis berbeda ($a \\neq b$, $a, b > 0$), maka satu-satunya kemungkinan kedua ruas bernilai sama adalah ketika eksponennya bernilai nol ($a^0 = b^0 = 1$):\n   $$f(x) = 0$$\n\n2. Terapkan pada persamaan yang diberikan:\n   $$x^2 - 3x - 10 = 0$$\n\n3. Berdasarkan teorema Vieta untuk persamaan kuadrat $Ax^2 + Bx + C = 0$, jumlah akar-akar $x_1 + x_2$ adalah:\n   $$x_1 + x_2 = -\\frac{B}{A} = -\\frac{-3}{1} = 3$$\n\n   (Secara faktorisasi: $(x - 5)(x + 2) = 0 \\implies x_1 = 5$ atau $x_2 = -2$, sehingga $5 + (-2) = 3$).\n\nJadi, jumlah semua nilai $x$ yang memenuhi adalah **C** ($3$)."
   },
   {
     "id": "matwa-eksponen-dan-akar-03",
@@ -43,11 +342,26 @@
     "difficulty": "HOTS",
     "question_text": "Diketahui dua bilangan berpangkat besar yang merepresentasikan jumlah iterasi algoritma kriptografi: $x = 49^{1012}$ dan $y = 7^{2025}$. Angka satuan dari hasil operasi aljabar $3y - 2x$ adalah ...",
     "options": [
-      { "id": "A", "text": "1" },
-      { "id": "B", "text": "3" },
-      { "id": "C", "text": "7" },
-      { "id": "D", "text": "9" },
-      { "id": "E", "text": "5" }
+      {
+        "id": "A",
+        "text": "1"
+      },
+      {
+        "id": "B",
+        "text": "3"
+      },
+      {
+        "id": "C",
+        "text": "7"
+      },
+      {
+        "id": "D",
+        "text": "9"
+      },
+      {
+        "id": "E",
+        "text": "5"
+      }
     ],
     "correct_answer": "D",
     "hint": "Ubah 49 ke bentuk 7^2 dan faktorkan pangkat persekutuan terkecil 7^2024. Cermati pola siklus angka satuan dari perpangkatan 7 berpangkat n modulo 10.",
@@ -61,38 +375,30 @@
     "difficulty": "HOTS",
     "question_text": "Jika $x_1$ dan $x_2$ adalah akar-akar real dari persamaan eksponen pemodelan pertumbuhan koloni bakteri:\n$$3^{2x+1} - 28 \\cdot 3^x + 9 = 0$$\nmaka nilai dari $x_1^2 + x_2^2$ adalah ...",
     "options": [
-      { "id": "A", "text": "3" },
-      { "id": "B", "text": "5" },
-      { "id": "C", "text": "8" },
-      { "id": "D", "text": "10" },
-      { "id": "E", "text": "13" }
+      {
+        "id": "A",
+        "text": "3"
+      },
+      {
+        "id": "B",
+        "text": "5"
+      },
+      {
+        "id": "C",
+        "text": "8"
+      },
+      {
+        "id": "D",
+        "text": "10"
+      },
+      {
+        "id": "E",
+        "text": "13"
+      }
     ],
     "correct_answer": "B",
     "hint": "Gunakan pemisalan u = 3^x untuk mengubah persamaan menjadi bentuk kuadrat 3u^2 - 28u + 9 = 0, lalu cari akar-akarnya.",
     "explanation": "Langkah-langkah penyelesaian:\n\n1. Uraikan suku pertama menggunakan sifat eksponen $3^{2x+1} = 3^1 \\cdot (3^x)^2$:\n   $$3 \\cdot (3^x)^2 - 28 \\cdot 3^x + 9 = 0$$\n\n2. Lakukan substitusi variabel $u = 3^x$ dengan syarat $u > 0$:\n   $$3u^2 - 28u + 9 = 0$$\n\n3. Faktorkan persamaan kuadrat tersebut:\n   $$(3u - 1)(u - 9) = 0$$\n   Sehingga diperoleh nilai $u$:\n   - $u_1 = \\frac{1}{3} = 3^{-1}$\n   - $u_2 = 9 = 3^2$\n\n4. Kembalikan ke variabel $x$:\n   - $3^x = 3^{-1} \\implies x_1 = -1$\n   - $3^x = 3^2 \\implies x_2 = 2$\n\n5. Hitung nilai $x_1^2 + x_2^2$:\n   $$x_1^2 + x_2^2 = (-1)^2 + 2^2 = 1 + 4 = 5$$\n\nJadi, nilai yang dicari adalah **5** (Opsi **B**)."
-  },
-  {
-    "id": "matwa-eksponen-dan-akar-05",
-    "chapter_id": "bilangan-real",
-    "sub_chapter_id": "eksponen-dan-akar",
-    "question_type": "MCMA",
-    "difficulty": "STANDAR",
-    "question_text": "Dalam analisis pemodelan komputasi laju pendinginan material semikonduktor dan peluruhan isotop di laboratorium teknologi material, dua parameter fisis tak nol $a > 0$ dan $b > 0$ direlasikan melalui ekspresi aljabar eksponen dan bentuk akar.\n\n<div class=\"flex justify-center my-3\"><svg viewBox=\"0 0 360 80\" class=\"w-full max-w-sm h-auto drop-shadow-sm\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"5\" y=\"5\" width=\"350\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><text x=\"180\" y=\"30\" fill=\"#38bdf8\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\" font-weight=\"bold\">VERIFIKASI RUMUS KOMPUTASI EKSPONEN & AKAR</text><text x=\"180\" y=\"52\" fill=\"#f8fafc\" font-size=\"11\" font-family=\"monospace\" text-anchor=\"middle\">Domain: a > 0, b > 0  |  Pengujian Identitas Aljabar</text></svg></div>\n\nSeorang peneliti sedang menguji keabsahan lima formula penyederhanaan berikut yang diajukan oleh tim analis data:\n(1) Bentuk $\\sqrt{a^3 \\cdot \\sqrt[3]{a^6}}$ dapat disederhanakan menjadi $a^{5/2}$\n(2) Bentuk $(a^{-2} b^3)^{-\\frac{1}{2}}$ ekuivalen dengan $\\frac{a}{\\sqrt{b^3}}$\n(3) Bentuk $\\frac{a^{2/3} - b^{2/3}}{a^{1/3} + b^{1/3}}$ ekuivalen dengan $a^{1/3} - b^{1/3}$\n(4) Bentuk $\\sqrt[3]{a^6 b^9}$ dapat disederhanakan menjadi $a^3 b^3$\n(5) Bentuk $(a^{1/2} + b^{1/2})^2 - 2\\sqrt{ab}$ dapat disederhanakan menjadi $a + b$\n\nPilihlah **SEMUA** pernyataan formula nomor yang bernilai **BENAR**!",
-    "options": [
-      { "id": "A", "text": "Pernyataan (1): $\\sqrt{a^3 \\cdot \\sqrt[3]{a^6}} = a^{5/2}$" },
-      { "id": "B", "text": "Pernyataan (2): $(a^{-2} b^3)^{-\\frac{1}{2}} = \\frac{a}{\\sqrt{b^3}}$" },
-      { "id": "C", "text": "Pernyataan (3): $\\frac{a^{2/3} - b^{2/3}}{a^{1/3} + b^{1/3}} = a^{1/3} - b^{1/3}$" },
-      { "id": "D", "text": "Pernyataan (4): $\\sqrt[3]{a^6 b^9} = a^3 b^3$" },
-      { "id": "E", "text": "Pernyataan (5): $(a^{1/2} + b^{1/2})^2 - 2\\sqrt{ab} = a + b$" }
-    ],
-    "correct_answer": [
-      "A",
-      "B",
-      "C",
-      "E"
-    ],
-    "hint": "Uraikan pangkat akar bertingkat ke bentuk pangkat rasional, gunakan faktorisasi selisih kuadrat pada pecahan, dan jabarkan kuadrat binomial.",
-    "explanation": "Mari kita uji kebenaran tiap formula secara sistematis:\n\n- **Pernyataan (1) - BENAR:**\n  $$\\sqrt[3]{a^6} = a^{6/3} = a^2$$\n  $$\\sqrt{a^3 \\cdot a^2} = \\sqrt{a^5} = a^{5/2}$$\n\n- **Pernyataan (2) - BENAR:**\n  $$(a^{-2} b^3)^{-\\frac{1}{2}} = a^{(-2)(-\\frac{1}{2})} \\cdot b^{3(-\\frac{1}{2})} = a^1 \\cdot b^{-\\frac{3}{2}} = \\frac{a}{b^{3/2}} = \\frac{a}{\\sqrt{b^3}}$$\n\n- **Pernyataan (3) - BENAR:**\n  Gunakan faktorisasi selisih dua kuadrat $x^2 - y^2 = (x - y)(x + y)$ dengan memisalkan $x = a^{1/3}$ dan $y = b^{1/3}$:\n  $$\\frac{(a^{1/3})^2 - (b^{1/3})^2}{a^{1/3} + b^{1/3}} = \\frac{(a^{1/3} - b^{1/3})(a^{1/3} + b^{1/3})}{a^{1/3} + b^{1/3}} = a^{1/3} - b^{1/3}$$\n\n- **Pernyataan (4) - SALAH:**\n  $$\\sqrt[3]{a^6 b^9} = a^{6/3} b^{9/3} = a^2 b^3 \\neq a^3 b^3$$\n\n- **Pernyataan (5) - BENAR:**\n  Ekspansikan bentuk kuadrat binomial:\n  $$(a^{1/2} + b^{1/2})^2 = (a^{1/2})^2 + 2(a^{1/2})(b^{1/2}) + (b^{1/2})^2 = a + 2\\sqrt{ab} + b$$\n  Sehingga:\n  $$(a^{1/2} + b^{1/2})^2 - 2\\sqrt{ab} = a + 2\\sqrt{ab} + b - 2\\sqrt{ab} = a + b$$\n\nOleh karena itu, opsi formula yang bernilai benar adalah **A, B, C, dan E**."
   },
   {
     "id": "matwa-eksponen-dan-akar-06",
@@ -102,11 +408,26 @@
     "difficulty": "HOTS",
     "question_text": "Diberikan bilangan real $x = 2^{1/3} + 2^{-1/3}$. Pilihlah **SEMUA** pernyataan aljabar di bawah ini yang bernilai **BENAR**!",
     "options": [
-      { "id": "A", "text": "Nilai ekspresi aljabar $2x^3 - 6x = 5$" },
-      { "id": "B", "text": "Nilai ekspresi aljabar $x^2 - 2^{2/3} - 2^{-2/3} = 2$" },
-      { "id": "C", "text": "Nilai $x$ berada pada interval terbuka $2 < x < 3$" },
-      { "id": "D", "text": "Nilai $x$ merupakan bilangan rasional" },
-      { "id": "E", "text": "Nilai dari $(2^{1/3} - 2^{-1/3})^2 = x^2 - 4$" }
+      {
+        "id": "A",
+        "text": "Nilai ekspresi aljabar $2x^3 - 6x = 5$"
+      },
+      {
+        "id": "B",
+        "text": "Nilai ekspresi aljabar $x^2 - 2^{2/3} - 2^{-2/3} = 2$"
+      },
+      {
+        "id": "C",
+        "text": "Nilai $x$ berada pada interval terbuka $2 < x < 3$"
+      },
+      {
+        "id": "D",
+        "text": "Nilai $x$ merupakan bilangan rasional"
+      },
+      {
+        "id": "E",
+        "text": "Nilai dari $(2^{1/3} - 2^{-1/3})^2 = x^2 - 4$"
+      }
     ],
     "correct_answer": [
       "A",
@@ -125,11 +446,26 @@
     "difficulty": "HOTS",
     "question_text": "Diberikan dua bentuk akar bersarang yang merepresentasikan parameter resistansi sirkuit:\n$$P = \\sqrt{8 - 2\\sqrt{15}} \\quad \\text{dan} \\quad Q = \\sqrt{8 + 2\\sqrt{15}}$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR**!",
     "options": [
-      { "id": "A", "text": "Nilai hasil kali $P \\cdot Q = 2$" },
-      { "id": "B", "text": "Nilai penjumlahan $P + Q = 2\\sqrt{5}$" },
-      { "id": "C", "text": "Nilai jumlah kuadrat $P^2 + Q^2 = 16$" },
-      { "id": "D", "text": "Bentuk sederhana dari $P$ adalah $\\sqrt{3} - \\sqrt{5}$" },
-      { "id": "E", "text": "Nilai pengurangan $Q - P = 2\\sqrt{3}$" }
+      {
+        "id": "A",
+        "text": "Nilai hasil kali $P \\cdot Q = 2$"
+      },
+      {
+        "id": "B",
+        "text": "Nilai penjumlahan $P + Q = 2\\sqrt{5}$"
+      },
+      {
+        "id": "C",
+        "text": "Nilai jumlah kuadrat $P^2 + Q^2 = 16$"
+      },
+      {
+        "id": "D",
+        "text": "Bentuk sederhana dari $P$ adalah $\\sqrt{3} - \\sqrt{5}$"
+      },
+      {
+        "id": "E",
+        "text": "Nilai pengurangan $Q - P = 2\\sqrt{3}$"
+      }
     ],
     "correct_answer": [
       "A",

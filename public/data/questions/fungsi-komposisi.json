@@ -66,6 +66,275 @@
     "explanation": "Langkah-langkah mencari nilai fungsi $f(a)$ dari fungsi komposisi:\n\n**Metode 1: Substitusi Nilai Pembuat Input (Praktis)**\n1. Kita mencari nilai $f(5)$, yang berarti input untuk fungsi $f$ adalah 5.\n   Karena $(f \\circ g)(x) = f(g(x))$, maka kita cari nilai $x$ sedemikian sehingga:\n   $$g(x) = 5 \\implies 2x + 3 = 5 \\implies 2x = 2 \\implies x = 1$$\n\n2. Substitusikan $x = 1$ ke dalam fungsi komposisi $(f \\circ g)(x)$:\n   $$f(5) = f(g(1)) = (f \\circ g)(1)$$\n   $$f(5) = 4(1)^2 + 10(1) + 8 = 4 + 10 + 8 = 22$$\n\n**Metode 2: Rekonstruksi Bentuk Umum $f(x)$ (Analitis)**\n1. Misalkan $u = g(x) = 2x + 3 \\implies 2x = u - 3 \\implies x = \\frac{u - 3}{2}$.\n2. Substitusikan $x$ ke $(f \\circ g)(x)$:\n   $$f(u) = 4\\left(\\frac{u - 3}{2}\\right)^2 + 10\\left(\\frac{u - 3}{2}\\right) + 8$$\n   $$f(u) = (u - 3)^2 + 5(u - 3) + 8 = (u^2 - 6u + 9) + (5u - 15) + 8 = u^2 - u + 2$$\n3. Hitung $f(5)$:\n   $$f(5) = 5^2 - 5 + 2 = 25 - 5 + 2 = 22$$\n\nKedua metode menghasilkan nilai yang konsisten, yaitu **22** (Opsi **A**)."
   },
   {
+    "id": "matwa-fungsi-komposisi-05",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "fungsi-komposisi",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan dua fungsi aljabar:\n$$f(x) = 2x - 3 \\quad \\text{dan} \\quad g(x) = x^2 + 1$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai sifat dan hasil komposisi kedua fungsi tersebut!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rumus fungsi komposisi $(f \\circ g)(x) = 2x^2 - 1$."
+      },
+      {
+        "id": "B",
+        "text": "Rumus fungsi komposisi $(g \\circ f)(x) = 4x^2 - 12x + 10$."
+      },
+      {
+        "id": "C",
+        "text": "Nilai dari $(f \\circ g)(2) = 7$ dan $(g \\circ f)(2) = 2$, yang membuktikan bahwa komposisi fungsi pada umumnya tidak bersifat komutatif."
+      },
+      {
+        "id": "D",
+        "text": "Operasi komposisi kedua fungsi tersebut bersifat komutatif sehingga berlaku $(f \\circ g)(x) = (g \\circ f)(x)$ untuk setiap bilangan real $x$."
+      },
+      {
+        "id": "E",
+        "text": "Nilai dari fungsi komposisi $(f \\circ g)(1) = 1$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "hint": "Substitusikan ekspresi $g(x)$ ke dalam setiap variabel $x$ pada $f(x)$ untuk mencari $(f \\circ g)(x)$, dan sebaliknya untuk $(g \\circ f)(x)$. Periksa apakah kedua bentuk rumus aljabar tersebut sama atau berbeda.",
+    "explanation": "Langkah-langkah evaluasi komposisi dua fungsi:\n\n1. **Evaluasi $(f \\circ g)(x)$:**\n   $$(f \\circ g)(x) = f(g(x)) = f(x^2 + 1) = 2(x^2 + 1) - 3 = 2x^2 + 2 - 3 = 2x^2 - 1$$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Evaluasi $(g \\circ f)(x)$:**\n   $$(g \\circ f)(x) = g(f(x)) = g(2x - 3) = (2x - 3)^2 + 1$$\n   $$= (4x^2 - 12x + 9) + 1 = 4x^2 - 12x + 10$$\n   Pernyataan B bernilai **BENAR**.\n\n3. **Evaluasi nilai untuk $x = 2$:**\n   - $(f \\circ g)(2) = 2(2)^2 - 1 = 2(4) - 1 = 7$.\n   - $(g \\circ f)(2) = 4(2)^2 - 12(2) + 10 = 16 - 24 + 10 = 2$.\n   Karena $(f \\circ g)(2) = 7 \\neq 2 = (g \\circ f)(2)$, operasi komposisi fungsi tidak komutatif.\n   Pernyataan C bernilai **BENAR**.\n\n4. **Evaluasi sifat komutatif (Pernyataan D):**\n   Karena $2x^2 - 1 \\neq 4x^2 - 12x + 10$, maka $(f \\circ g)(x) \\neq (g \\circ f)(x)$ secara umum. Pernyataan D bernilai **SALAH**.\n\nOleh karena itu, pernyataan yang benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Karena $g(1) = 1^2 + 1 = 2$, maka $(f \\circ g)(1) = f(g(1)) = f(2) = 2(2) - 3 = 1$."
+  },
+  {
+    "id": "matwa-fungsi-komposisi-11",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "fungsi-komposisi",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diketahui tiga fungsi aljabar: $f(x) = 2x + 1$, $g(x) = x^2 - 2$, dan $h(x) = 3x$. Nilai dari komposisi tiga fungsi $(f \\circ g \\circ h)(1)$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$11$"
+      },
+      {
+        "id": "B",
+        "text": "$13$"
+      },
+      {
+        "id": "C",
+        "text": "$15$"
+      },
+      {
+        "id": "D",
+        "text": "$17$"
+      },
+      {
+        "id": "E",
+        "text": "$19$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Hitung bertahap dari dalam ke luar: cari nilai h(1), lalu masukkan ke g(x), dan terakhir masukkan ke f(x).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Evaluasi fungsi terdalam $h(1)$:\n   $$h(1) = 3(1) = 3$$\n\n2. Evaluasi fungsi kedua $g(h(1)) = g(3)$:\n   $$g(3) = 3^2 - 2 = 9 - 2 = 7$$\n\n3. Evaluasi fungsi terluar $f(g(h(1))) = f(7)$:\n   $$f(7) = 2(7) + 1 = 14 + 1 = 15$$\n\nJadi, nilai $(f \\circ g \\circ h)(1)$ adalah **C** ($15$)."
+  },
+  {
+    "id": "matwa-fungsi-komposisi-12",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "fungsi-komposisi",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diketahui fungsi $g(x) = x - 4$ dan rumus fungsi komposisi $(f \\circ g)(x) = x^2 - 5x + 2$. Rumus fungsi $f(x)$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$f(x) = x^2 + 3x - 2$"
+      },
+      {
+        "id": "B",
+        "text": "$f(x) = x^2 - 3x - 2$"
+      },
+      {
+        "id": "C",
+        "text": "$f(x) = x^2 + 3x + 2$"
+      },
+      {
+        "id": "D",
+        "text": "$f(x) = x^2 - 13x + 38$"
+      },
+      {
+        "id": "E",
+        "text": "$f(x) = x^2 + 5x - 2$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Misalkan u = g(x) = x - 4 sehingga x = u + 4. Substitusikan x ke rumus fungsi komposisi.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Definisikan pemisalan variabel:\n   $$u = x - 4 \\implies x = u + 4$$\n\n2. Substitusikan $x = u + 4$ ke persamaan komposisi $(f \\circ g)(x) = f(g(x)) = f(u)$:\n   $$f(u) = (u + 4)^2 - 5(u + 4) + 2$$\n\n3. Ekspansikan suku-suku aljabar:\n   $$f(u) = (u^2 + 8u + 16) - (5u + 20) + 2$$\n   $$f(u) = u^2 + (8 - 5)u + (16 - 20 + 2)$$\n   $$f(u) = u^2 + 3u - 2$$\n\n4. Kembalikan variabel $u$ menjadi $x$:\n   $$f(x) = x^2 + 3x - 2$$\n\nJadi, rumus fungsi $f(x)$ adalah **A** ($f(x) = x^2 + 3x - 2$)."
+  },
+  {
+    "id": "matwa-fungsi-komposisi-13",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "fungsi-komposisi",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diketahui fungsi linear $f(x) = 3x - 2$ dan fungsi komposisi $(f \\circ g)(x) = 6x^2 + 9x - 8$. Rumus fungsi $g(x)$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$g(x) = 2x^2 + 3x - 2$"
+      },
+      {
+        "id": "B",
+        "text": "$g(x) = 2x^2 + 3x - 4$"
+      },
+      {
+        "id": "C",
+        "text": "$g(x) = 2x^2 + 3x + 2$"
+      },
+      {
+        "id": "D",
+        "text": "$g(x) = 3x^2 + 2x - 2$"
+      },
+      {
+        "id": "E",
+        "text": "$g(x) = 2x^2 - 3x - 2$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Tuliskan f(g(x)) = 3g(x) - 2. Samakan dengan 6x^2 + 9x - 8, lalu selesaikan untuk g(x).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Terapkan definisi komposisi pada fungsi luar $f(x)$:\n   $$(f \\circ g)(x) = f(g(x)) = 3g(x) - 2$$\n\n2. Samakan dengan bentuk yang diketahui pada soal:\n   $$3g(x) - 2 = 6x^2 + 9x - 8$$\n\n3. Pindahkan $-2$ ke ruas kanan:\n   $$3g(x) = 6x^2 + 9x - 8 + 2$$\n   $$3g(x) = 6x^2 + 9x - 6$$\n\n4. Bagi kedua ruas dengan $3$:\n   $$g(x) = \\frac{6x^2 + 9x - 6}{3} = 2x^2 + 3x - 2$$\n\nJadi, rumus fungsi $g(x)$ adalah **A** ($g(x) = 2x^2 + 3x - 2$)."
+  },
+  {
+    "id": "matwa-fungsi-komposisi-14",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "fungsi-komposisi",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan fungsi pecahan aljabar $f(x) = \\frac{x + 1}{x - 2}$ dengan $x \\neq 2$. Nilai dari komposisi diri $(f \\circ f)(3)$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{5}{2}$"
+      },
+      {
+        "id": "B",
+        "text": "$4$"
+      },
+      {
+        "id": "C",
+        "text": "$\\frac{7}{2}$"
+      },
+      {
+        "id": "D",
+        "text": "$2$"
+      },
+      {
+        "id": "E",
+        "text": "$\\frac{3}{2}$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Hitung f(3) terlebih dahulu, lalu hasil tersebut dimasukkan kembali sebagai masukan ke fungsi f(x).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Hitung nilai $f(3)$:\n   $$f(3) = \\frac{3 + 1}{3 - 2} = \\frac{4}{1} = 4$$\n\n2. Hitung $(f \\circ f)(3) = f(f(3)) = f(4)$:\n   $$f(4) = \\frac{4 + 1}{4 - 2} = \\frac{5}{2}$$\n\nJadi, nilai $(f \\circ f)(3)$ adalah **A** ($\\frac{5}{2}$)."
+  },
+  {
+    "id": "matwa-fungsi-komposisi-15",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "fungsi-komposisi",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah pabrik pulp dan kertas mengolah kayu gelondongan ($x\\text{ ton}$) menjadi lembaran kertas jadi ($y\\text{ ton}$) melalui dua tahap mesin konversi. Tahap I mengolah kayu menjadi bubur kertas ($m$) melalui formula $m = f(x) = 2x - 3$. Tahap II memproses bubur kertas menjadi lembaran kertas dengan formula $y = g(m) = m^2 - 4m + 5$. Jika bahan baku kayu yang tersedia adalah $5\\text{ ton}$, banyak lembaran kertas jadi yang dihasilkan adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$24\\text{ ton}$"
+      },
+      {
+        "id": "B",
+        "text": "$26\\text{ ton}$"
+      },
+      {
+        "id": "C",
+        "text": "$28\\text{ ton}$"
+      },
+      {
+        "id": "D",
+        "text": "$30\\text{ ton}$"
+      },
+      {
+        "id": "E",
+        "text": "$32\\text{ ton}$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Gunakan komposisi (g o f)(5). Hitung output tahap I: m = f(5), lalu masukkan m ke tahap II: g(m).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Hitung hasil olahan tahap I ($m$) untuk $x = 5\\text{ ton}$:\n   $$m = f(5) = 2(5) - 3 = 10 - 3 = 7\\text{ ton}$$\n\n2. Hitung hasil olahan tahap II ($y$) untuk masukan $m = 7\\text{ ton}$:\n   $$y = g(7) = (7)^2 - 4(7) + 5 = 49 - 28 + 5 = 26\\text{ ton}$$\n\nJadi, kertas jadi yang dihasilkan adalah **B** ($26\\text{ ton}$)."
+  },
+  {
+    "id": "matwa-fungsi-komposisi-16",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "fungsi-komposisi",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diketahui fungsi $f(x) = 2x - 5$ dan $g(x) = x^2 + 1$. Jika nilai komposisi $(f \\circ g)(a) = 29$, maka nilai konstanta $a$ positif yang memenuhi adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$2$"
+      },
+      {
+        "id": "B",
+        "text": "$3$"
+      },
+      {
+        "id": "C",
+        "text": "$4$"
+      },
+      {
+        "id": "D",
+        "text": "$5$"
+      },
+      {
+        "id": "E",
+        "text": "$6$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Susun persamaan f(g(a)) = 2(a^2 + 1) - 5 = 29, lalu cari nilai a positif.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Susun bentuk $(f \\circ g)(a)$:\n   $$(f \\circ g)(a) = f(g(a)) = f(a^2 + 1) = 2(a^2 + 1) - 5 = 2a^2 + 2 - 5 = 2a^2 - 3$$\n\n2. Samakan dengan nilai yang diketahui ($29$):\n   $$2a^2 - 3 = 29$$\n   $$2a^2 = 32$$\n   $$a^2 = 16$$\n\n3. Ambil akar kuadrat positif karena diminta nilai $a$ positif:\n   $$a = \\sqrt{16} = 4$$\n\nJadi, nilai $a$ yang memenuhi adalah **C** ($4$)."
+  },
+  {
+    "id": "matwa-fungsi-komposisi-17",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "fungsi-komposisi",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan dua fungsi linear $f(x) = 3x + 2$ dan $g(x) = 2x - 1$. Nilai dari ekspresi selisih komposisi fungsi:\n$$(f \\circ g)(x) - (g \\circ f)(x)$$\nadalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$-4$"
+      },
+      {
+        "id": "B",
+        "text": "$-2$"
+      },
+      {
+        "id": "C",
+        "text": "$0$"
+      },
+      {
+        "id": "D",
+        "text": "$2$"
+      },
+      {
+        "id": "E",
+        "text": "$4$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Tentukan masing-masing (f o g)(x) dan (g o f)(x), lalu kurangkan keduanya.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Tentukan $(f \\circ g)(x)$:\n   $$(f \\circ g)(x) = f(2x - 1) = 3(2x - 1) + 2 = 6x - 3 + 2 = 6x - 1$$\n\n2. Tentukan $(g \\circ f)(x)$:\n   $$(g \\circ f)(x) = g(3x + 2) = 2(3x + 2) - 1 = 6x + 4 - 1 = 6x + 3$$\n\n3. Hitung selisihnya:\n   $$(f \\circ g)(x) - (g \\circ f)(x) = (6x - 1) - (6x + 3) = 6x - 1 - 6x - 3 = -4$$\n\nJadi, selisihnya bernilai konstanta **A** ($-4$)."
+  },
+  {
     "id": "matwa-fungsi-komposisi-03",
     "chapter_id": "fungsi",
     "sub_chapter_id": "fungsi-komposisi",
@@ -130,44 +399,6 @@
     "correct_answer": "A",
     "hint": "Lakukan perhitungan mundur dari fungsi terluar ke fungsi terdalam: selesaikan $h(z) = 362.000$ untuk mendapatkan $z$, lalu selesaikan $g(y) = z$ untuk mendapatkan $y$, dan terakhir selesaikan $f(x) = y$ untuk memperoleh harga awal $x$.",
     "explanation": "Langkah-langkah analisis fungsi komposisi tiga tahap secara mundur (*backward analysis*):\n\n1. **Menghitung nilai $z$ pada fungsi terluar $h(z)$:**\n   Total pembayaran akhir:\n   $$h(z) = 1,02z + 5.000 = 362.000$$\n   $$1,02z = 362.000 - 5.000$$\n   $$1,02z = 357.000$$\n   $$z = \\frac{357.000}{1,02} = 350.000$$\n   Jadi, subtotal belanja setelah voucher adalah Rp350.000,00.\n\n2. **Menghitung nilai $y$ pada fungsi perantara $g(y)$:**\n   $$g(y) = y - 50.000 = z$$\n   $$y - 50.000 = 350.000$$\n   $$y = 350.000 + 50.000 = 400.000$$\n   Jadi, harga produk setelah diskon loyalitas VIP adalah Rp400.000,00.\n\n3. **Menghitung harga label awal $x$ pada fungsi pertama $f(x)$:**\n   $$f(x) = 0,80x = y$$\n   $$0,80x = 400.000$$\n   $$x = \\frac{400.000}{0,80} = 500.000$$\n\nJadi, harga label awal produk sebelum seluruh potongan promo adalah **Rp500.000,00** (Opsi **A**)."
-  },
-  {
-    "id": "matwa-fungsi-komposisi-05",
-    "chapter_id": "fungsi",
-    "sub_chapter_id": "fungsi-komposisi",
-    "question_type": "MCMA",
-    "difficulty": "STANDAR",
-    "question_text": "Diberikan dua fungsi aljabar:\n$$f(x) = 2x - 3 \\quad \\text{dan} \\quad g(x) = x^2 + 1$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai sifat dan hasil komposisi kedua fungsi tersebut!",
-    "options": [
-      {
-        "id": "A",
-        "text": "Rumus fungsi komposisi $(f \\circ g)(x) = 2x^2 - 1$."
-      },
-      {
-        "id": "B",
-        "text": "Rumus fungsi komposisi $(g \\circ f)(x) = 4x^2 - 12x + 10$."
-      },
-      {
-        "id": "C",
-        "text": "Nilai dari $(f \\circ g)(2) = 7$ dan $(g \\circ f)(2) = 2$, yang membuktikan bahwa komposisi fungsi pada umumnya tidak bersifat komutatif."
-      },
-      {
-        "id": "D",
-        "text": "Operasi komposisi kedua fungsi tersebut bersifat komutatif sehingga berlaku $(f \\circ g)(x) = (g \\circ f)(x)$ untuk setiap bilangan real $x$."
-      },
-      {
-        "id": "E",
-        "text": "Nilai dari fungsi komposisi $(f \\circ g)(1) = 1$."
-      }
-    ],
-    "correct_answer": [
-      "A",
-      "B",
-      "C",
-      "E"
-    ],
-    "hint": "Substitusikan ekspresi $g(x)$ ke dalam setiap variabel $x$ pada $f(x)$ untuk mencari $(f \\circ g)(x)$, dan sebaliknya untuk $(g \\circ f)(x)$. Periksa apakah kedua bentuk rumus aljabar tersebut sama atau berbeda.",
-    "explanation": "Langkah-langkah evaluasi komposisi dua fungsi:\n\n1. **Evaluasi $(f \\circ g)(x)$:**\n   $$(f \\circ g)(x) = f(g(x)) = f(x^2 + 1) = 2(x^2 + 1) - 3 = 2x^2 + 2 - 3 = 2x^2 - 1$$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Evaluasi $(g \\circ f)(x)$:**\n   $$(g \\circ f)(x) = g(f(x)) = g(2x - 3) = (2x - 3)^2 + 1$$\n   $$= (4x^2 - 12x + 9) + 1 = 4x^2 - 12x + 10$$\n   Pernyataan B bernilai **BENAR**.\n\n3. **Evaluasi nilai untuk $x = 2$:**\n   - $(f \\circ g)(2) = 2(2)^2 - 1 = 2(4) - 1 = 7$.\n   - $(g \\circ f)(2) = 4(2)^2 - 12(2) + 10 = 16 - 24 + 10 = 2$.\n   Karena $(f \\circ g)(2) = 7 \\neq 2 = (g \\circ f)(2)$, operasi komposisi fungsi tidak komutatif.\n   Pernyataan C bernilai **BENAR**.\n\n4. **Evaluasi sifat komutatif (Pernyataan D):**\n   Karena $2x^2 - 1 \\neq 4x^2 - 12x + 10$, maka $(f \\circ g)(x) \\neq (g \\circ f)(x)$ secara umum. Pernyataan D bernilai **SALAH**.\n\nOleh karena itu, pernyataan yang benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Karena $g(1) = 1^2 + 1 = 2$, maka $(f \\circ g)(1) = f(g(1)) = f(2) = 2(2) - 3 = 1$."
   },
   {
     "id": "matwa-fungsi-komposisi-06",

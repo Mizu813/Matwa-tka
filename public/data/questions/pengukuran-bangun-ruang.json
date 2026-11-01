@@ -66,6 +66,275 @@
     "explanation": "Langkah-langkah evaluasi bola di dalam kubus:\n\n1. **Menghitung Volume Kubus:**\n   $$V_{\\text{kubus}} = s^3 = 21^3 = 9.261\\text{ cm}^3$$\n\n2. **Menghitung Volume Bola:**\n   Karena bola menyinggung sisi kubus, diameter bola adalah $d = 21$ cm, sehingga jari-jari bola $r = \\frac{21}{2}$ cm.\n   $$V_{\\text{bola}} = \\frac{4}{3} \\pi r^3 = \\frac{4}{3} \\times \\frac{22}{7} \\times \\left(\\frac{21}{2}\\right)^3$$\n   $$V_{\\text{bola}} = \\frac{88}{21} \\times \\frac{9.261}{8} = 11 \\times 441 = 4.851\\text{ cm}^3$$\n\n3. **Menghitung Volume Ruang Kosong:**\n   $$V_{\\text{kosong}} = V_{\\text{kubus}} - V_{\\text{bola}} = 9.261 - 4.851 = 4.410\\text{ cm}^3$$\n\n*(Catatan: rasio volume bola terhadap kubus adalah $\\frac{\\pi}{6} = \\frac{11}{21}$, sehingga volume ruang kosong adalah $\\frac{10}{21}$ dari volume kubus: $\\frac{10}{21} \\times 9.261 = 4.410\\text{ cm}^3$)*.\n\nJadi, volume ruang kosong di dalam kubus adalah **4.410 cm kubik** (Opsi **A**)."
   },
   {
+    "id": "matwa-pengukuran-bangun-ruang-05",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-ruang",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Perhatikan gambar corong minyak berbentuk kerucut lingkaran tegak berikut:\n\n<div class=\"flex justify-center my-4 overflow-x-auto\"><svg viewBox=\"0 0 320 220\" class=\"w-full max-w-xs h-auto drop-shadow-md rounded-lg\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"320\" height=\"220\" fill=\"#0f172a\" rx=\"8\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Cone apex: (160, 30), base ellipse: center (160, 170), rx=70, ry=20 -->\n  <polygon points=\"160,30 90,170 230,170\" fill=\"#ec4899\" fill-opacity=\"0.15\"/>\n  <line x1=\"160\" y1=\"30\" x2=\"90\" y2=\"170\" stroke=\"#ec4899\" stroke-width=\"2\"/>\n  <line x1=\"160\" y1=\"30\" x2=\"230\" y2=\"170\" stroke=\"#ec4899\" stroke-width=\"2\"/>\n  <ellipse cx=\"160\" cy=\"170\" rx=\"70\" ry=\"20\" fill=\"none\" stroke=\"#ec4899\" stroke-width=\"2\"/>\n  <!-- Height & Radius -->\n  <line x1=\"160\" y1=\"30\" x2=\"160\" y2=\"170\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"3\"/>\n  <line x1=\"160\" y1=\"170\" x2=\"230\" y2=\"170\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/>\n  <circle cx=\"160\" cy=\"170\" r=\"3\" fill=\"#f59e0b\"/>\n  <!-- Labels -->\n  <text x=\"145\" y=\"105\" fill=\"#f59e0b\" font-size=\"11\" font-family=\"sans-serif\">t = 24 cm</text>\n  <text x=\"190\" y=\"165\" fill=\"#38bdf8\" font-size=\"11\" font-family=\"sans-serif\">r = 7 cm</text>\n  <text x=\"215\" y=\"95\" fill=\"#ec4899\" font-size=\"11\" font-family=\"sans-serif\">s = 25 cm</text>\n  <text x=\"160\" y=\"205\" fill=\"#94a3b8\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">Diameter d = 14 cm (r = 7 cm), s = 25 cm</text>\n</svg></div>\n\nSebuah corong minyak berbentuk kerucut lingkaran tegak memiliki diameter lingkaran alas $d = 14\\text{ cm}$ dan panjang garis pelukis $s = 25\\text{ cm}$. Pilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR**! (Gunakan $\\pi = \\frac{22}{7}$)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Panjang garis pelukis kerucut adalah $s = 25$ cm."
+      },
+      {
+        "id": "B",
+        "text": "Luas selimut kerucut adalah $550\\text{ cm}^2$ dan luas permukaan totalnya adalah $704\\text{ cm}^2$."
+      },
+      {
+        "id": "C",
+        "text": "Volume ruang di dalam corong kerucut tersebut adalah $1.232\\text{ cm}^3$."
+      },
+      {
+        "id": "D",
+        "text": "Luas selimut kerucut adalah $600\\text{ cm}^2$."
+      },
+      {
+        "id": "E",
+        "text": "Panjang garis pelukis kerucut $s$ memenuhi teorema Pythagoras $s = \\sqrt{r^2 + t^2}$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "hint": "Garis pelukis dihitung dengan Pythagoras: $s = \\sqrt{r^2 + t^2}$. Luas selimut $L_s = \\pi r s$, luas permukaan total $L = \\pi r (r + s)$, dan volume $V = \\frac{1}{3}\\pi r^2 t$.",
+    "explanation": "Langkah-langkah evaluasi kerucut lingkaran tegak:\n\n1. **Garis Pelukis ($s$):**\n   $$s = \\sqrt{r^2 + t^2} = \\sqrt{7^2 + 24^2} = \\sqrt{49 + 576} = \\sqrt{625} = 25\\text{ cm}$$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Luas Selimut Kerucut ($L_s$):**\n   $$L_s = \\pi r s = \\frac{22}{7} \\times 7 \\times 25 = 22 \\times 25 = 550\\text{ cm}^2$$\n   Pernyataan B bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\n3. **Luas Permukaan Total Kerucut ($L$):**\n   $$L = \\pi r (r + s) = \\frac{22}{7} \\times 7 \\times (7 + 25) = 22 \\times 32 = 704\\text{ cm}^2$$\n\n4. **Volume Kerucut ($V$):**\n   $$V = \\frac{1}{3} \\pi r^2 t = \\frac{1}{3} \\times \\frac{22}{7} \\times 7^2 \\times 24 = \\frac{1}{3} \\times 154 \\times 24 = 154 \\times 8 = 1.232\\text{ cm}^3$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Segitiga yang dibentuk jari-jari, tinggi, dan garis pelukis kerucut siku-siku sehingga $s^2 = r^2 + t^2$."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-ruang-11",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-ruang",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah tandon penampungan air berbentuk balok memiliki perbandingan dimensi ukuran panjang : lebar : tinggi $= 4 : 3 : 2$. Jika volume tandon tersebut terisi penuh sebesar $192\\text{ liter}$ ($192\\text{ dm}^3$), luas seluruh permukaan dinding tandon tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$184\\text{ dm}^2$"
+      },
+      {
+        "id": "B",
+        "text": "$196\\text{ dm}^2$"
+      },
+      {
+        "id": "C",
+        "text": "$208\\text{ dm}^2$"
+      },
+      {
+        "id": "D",
+        "text": "$216\\text{ dm}^2$"
+      },
+      {
+        "id": "E",
+        "text": "$224\\text{ dm}^2$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Volume balok V = 4x * 3x * 2x = 24x^3 = 192. Cari x, lalu hitung p, l, t dan Luas permukaan L = 2(pl + pt + lt).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Misalkan panjang $p = 4x$, lebar $l = 3x$, dan tinggi $t = 2x$ (dalam $\\text{dm}$):\n   $$V = p \\times l \\times t = (4x)(3x)(2x) = 24x^3$$\n\n2. Samakan dengan volume yang diketahui:\n   $$24x^3 = 192 \\implies x^3 = \\frac{192}{24} = 8 \\implies x = 2\\text{ dm}$$\n\n3. Tentukan ukuran dimensi balok:\n   - $p = 4(2) = 8\\text{ dm}$\n   - $l = 3(2) = 6\\text{ dm}$\n   - $t = 2(2) = 4\\text{ dm}$\n\n4. Hitung luas permukaan balok:\n   $$L = 2(pl + pt + lt) = 2(8 \\cdot 6 + 8 \\cdot 4 + 6 \\cdot 4)$$\n   $$L = 2(48 + 32 + 24) = 2(104) = 208\\text{ dm}^2$$\n\nJadi, luas permukaan tandon adalah **C** ($208\\text{ dm}^2$)."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-ruang-12",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-ruang",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah drum penampungan minyak berbentuk silinder tabung memiliki diameter alas $140\\text{ cm}$ dan tinggi $1\\text{ meter}$. Drum tersebut diisi minyak tanah dari sebuah selang dengan debit aliran tetap $22\\text{ liter/menit}$. Waktu yang dibutuhkan untuk mengisi drum kosong tersebut hingga penuh adalah ... (Gunakan $\\pi = \\frac{22}{7}$)",
+    "options": [
+      {
+        "id": "A",
+        "text": "$60\\text{ menit}$"
+      },
+      {
+        "id": "B",
+        "text": "$65\\text{ menit}$"
+      },
+      {
+        "id": "C",
+        "text": "$70\\text{ menit}$"
+      },
+      {
+        "id": "D",
+        "text": "$75\\text{ menit}$"
+      },
+      {
+        "id": "E",
+        "text": "$80\\text{ menit}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Konversikan dimensi ke satuan desimeter: r = 7 dm, t = 10 dm. Volume V = pi * r^2 * t (dalam liter). Waktu = Volume / Debit.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Konversikan satuan ukuran ke desimeter ($\\text{dm}$):\n   - Jari-jari $r = \\frac{140}{2}\\text{ cm} = 70\\text{ cm} = 7\\text{ dm}$\n   - Tinggi $t = 1\\text{ meter} = 10\\text{ dm}$\n\n2. Hitung volume drum dalam liter ($1\\text{ dm}^3 = 1\\text{ liter}$):\n   $$V = \\pi r^2 t = \\frac{22}{7} \\times 7^2 \\times 10 = 22 \\times 7 \\times 10 = 1.540\\text{ liter}$$\n\n3. Hitung waktu pengisian:\n   $$\\text{Waktu} = \\frac{\\text{Volume}}{\\text{Debit}} = \\frac{1.540\\text{ liter}}{22\\text{ liter/menit}} = 70\\text{ menit}$$\n\nJadi, waktu yang dibutuhkan adalah **C** ($70\\text{ menit}$)."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-ruang-13",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-ruang",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah kemasan cone es krim berbentuk kerucut memiliki jari-jari lingkaran alas $6\\text{ cm}$ dan tinggi kerucut $8\\text{ cm}$. Luas seluruh permukaan kerucut tersebut adalah ... (Gunakan $\\pi = 3{,}14$)",
+    "options": [
+      {
+        "id": "A",
+        "text": "$282{,}60\\text{ cm}^2$"
+      },
+      {
+        "id": "B",
+        "text": "$301{,}44\\text{ cm}^2$"
+      },
+      {
+        "id": "C",
+        "text": "$314{,}00\\text{ cm}^2$"
+      },
+      {
+        "id": "D",
+        "text": "$326{,}56\\text{ cm}^2$"
+      },
+      {
+        "id": "E",
+        "text": "$339{,}12\\text{ cm}^2$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Cari panjang garis pelukis s = sqrt(r^2 + t^2) = 10 cm. Luas permukaan kerucut = pi * r * (r + s).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Cari panjang garis pelukis kerucut ($s$):\n   $$s = \\sqrt{r^2 + t^2} = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10\\text{ cm}$$\n\n2. Gunakan rumus luas permukaan kerucut lengkap:\n   $$L = \\pi r (r + s)$$\n   $$L = 3{,}14 \\times 6 \\times (6 + 10)$$\n   $$L = 3{,}14 \\times 6 \\times 16 = 3{,}14 \\times 96 = 301{,}44\\text{ cm}^2$$\n\nJadi, luas permukaan kerucut adalah **B** ($301{,}44\\text{ cm}^2$)."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-ruang-14",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-ruang",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah monumen bersejarah berbentuk limas beraturan dengan alas persegi berukuran $12\\text{ meter} \\times 12\\text{ meter}$ dan tinggi puncak limas $15\\text{ meter}$. Volume ruang monumen tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$640\\text{ m}^3$"
+      },
+      {
+        "id": "B",
+        "text": "$680\\text{ m}^3$"
+      },
+      {
+        "id": "C",
+        "text": "$720\\text{ m}^3$"
+      },
+      {
+        "id": "D",
+        "text": "$750\\text{ m}^3$"
+      },
+      {
+        "id": "E",
+        "text": "$800\\text{ m}^3$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Volume limas = 1/3 * Luas alas * tinggi.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Hitung luas alas limas yang berbentuk persegi:\n   $$L_{\\text{alas}} = s^2 = 12 \\times 12 = 144\\text{ m}^2$$\n\n2. Hitung volume limas:\n   $$V = \\frac{1}{3} \\times L_{\\text{alas}} \\times t$$\n   $$V = \\frac{1}{3} \\times 144 \\times 15 = 144 \\times 5 = 720\\text{ m}^3$$\n\nJadi, volume monumen tersebut adalah **C** ($720\\text{ m}^3$)."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-ruang-15",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-ruang",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah bandul mekanik terbuat dari logam berbentuk setengah bola pejal (padat) dengan diameter $14\\text{ cm}$. Luas seluruh permukaan bandul logam tersebut adalah ... (Gunakan $\\pi = \\frac{22}{7}$)",
+    "options": [
+      {
+        "id": "A",
+        "text": "$308\\text{ cm}^2$"
+      },
+      {
+        "id": "B",
+        "text": "$462\\text{ cm}^2$"
+      },
+      {
+        "id": "C",
+        "text": "$616\\text{ cm}^2$"
+      },
+      {
+        "id": "D",
+        "text": "$770\\text{ cm}^2$"
+      },
+      {
+        "id": "E",
+        "text": "$924\\text{ cm}^2$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Setengah bola pejal memiliki dua permukaan: selimut setengah bola (2 * pi * r^2) dan penampang lingkaran alas (pi * r^2), sehingga total luas = 3 * pi * r^2.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Tentukan jari-jari bola:\n   $$r = \\frac{d}{2} = \\frac{14}{2} = 7\\text{ cm}$$\n\n2. Luas permukaan setengah bola padat terdiri dari selimut lengkung dan bidang alas datar:\n   $$L = 2\\pi r^2 + \\pi r^2 = 3\\pi r^2$$\n\n3. Masukkan nilai yang diketahui:\n   $$L = 3 \\times \\frac{22}{7} \\times 7^2 = 3 \\times 22 \\times 7 = 3 \\times 154 = 462\\text{ cm}^2$$\n\nJadi, luas seluruh permukaannya adalah **B** ($462\\text{ cm}^2$)."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-ruang-16",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-ruang",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dua buah wadah kaleng berbentuk silinder tabung memiliki tinggi yang sama. Jari-jari alas kaleng $A$ adalah $1{,}5\\text{ kali}$ dari jari-jari alas kaleng $B$. Perbandingan volume kaleng $A$ terhadap volume kaleng $B$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$3 : 2$"
+      },
+      {
+        "id": "B",
+        "text": "$9 : 4$"
+      },
+      {
+        "id": "C",
+        "text": "$4 : 9$"
+      },
+      {
+        "id": "D",
+        "text": "$5 : 2$"
+      },
+      {
+        "id": "E",
+        "text": "$27 : 8$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Jika tinggi tabung sama, perbandingan volume berbanding lurus dengan kuadrat jari-jarinya: V_A / V_B = (r_A / r_B)^2.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Rumus volume tabung $V = \\pi r^2 t$. Karena tinggi $t$ kedua kaleng sama:\n   $$\\frac{V_A}{V_B} = \\frac{\\pi r_A^2 t}{\\pi r_B^2 t} = \\left(\\frac{r_A}{r_B}\\right)^2$$\n\n2. Diketahui $r_A = 1{,}5 r_B = \\frac{3}{2} r_B$, maka $\\frac{r_A}{r_B} = \\frac{3}{2}$:\n   $$\\frac{V_A}{V_B} = \\left(\\frac{3}{2}\\right)^2 = \\frac{9}{4}$$\n\nJadi, perbandingannya adalah **B** ($9 : 4$)."
+  },
+  {
+    "id": "matwa-pengukuran-bangun-ruang-17",
+    "chapter_id": "geometri-dan-pengukuran",
+    "sub_chapter_id": "pengukuran-bangun-ruang",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Sebuah tenda perkemahan memiliki bentuk prisma tegak segitiga. Penampang depan tenda berbentuk segitiga siku-siku dengan panjang sisi siku-siku $3\\text{ meter}$ dan $4\\text{ meter}$. Jika panjang tenda ke belakang (tinggi prisma) adalah $6\\text{ meter}$, volume udara di dalam tenda tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$32\\text{ m}^3$"
+      },
+      {
+        "id": "B",
+        "text": "$36\\text{ m}^3$"
+      },
+      {
+        "id": "C",
+        "text": "$40\\text{ m}^3$"
+      },
+      {
+        "id": "D",
+        "text": "$48\\text{ m}^3$"
+      },
+      {
+        "id": "E",
+        "text": "$72\\text{ m}^3$"
+      }
+    ],
+    "correct_answer": "B",
+    "hint": "Volume prisma = Luas alas segitiga * tinggi prisma.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Hitung luas alas penampang segitiga siku-siku:\n   $$L_{\\text{alas}} = \\frac{1}{2} \\times a \\times t_{\\text{segitiga}} = \\frac{1}{2} \\times 3\\text{ m} \\times 4\\text{ m} = 6\\text{ m}^2$$\n\n2. Hitung volume prisma:\n   $$V = L_{\\text{alas}} \\times t_{\\text{prisma}} = 6\\text{ m}^2 \\times 6\\text{ m} = 36\\text{ m}^3$$\n\nJadi, volume udara di dalam tenda adalah **B** ($36\\text{ m}^3$)."
+  },
+  {
     "id": "matwa-pengukuran-bangun-ruang-03",
     "chapter_id": "geometri-dan-pengukuran",
     "sub_chapter_id": "pengukuran-bangun-ruang",
@@ -130,44 +399,6 @@
     "correct_answer": "A",
     "hint": "Ukuran alas kotak adalah $(60 - 2x) \\times (60 - 2x)$ dan tingginya adalah $x$. Fungsi volume $V(x) = x(60 - 2x)^2$. Gunakan turunan pertama $V'(x) = 0$ untuk menemukan nilai $x$ yang memaksimumkan volume.",
     "explanation": "Langkah-langkah optimasi volume kotak tanpa tutup:\n\n1. **Memodelkan fungsi volume kotak:**\n   - Panjang alas: $60 - 2x$\n   - Lebar alas: $60 - 2x$\n   - Tinggi kotak: $x$\n   $$V(x) = x(60 - 2x)^2 = x(3.600 - 240x + 4x^2) = 4x^3 - 240x^2 + 3.600x$$\n   dengan batas fisis domain $0 < x < 30$.\n\n2. **Mencari titik stasioner dengan turunan pertama ($V'(x) = 0$):**\n   $$V'(x) = 12x^2 - 480x + 3.600 = 0$$\n   Bagi kedua ruas dengan 12:\n   $$x^2 - 40x + 300 = 0$$\n   Faktorkan persamaan kuadrat:\n   $$(x - 10)(x - 30) = 0$$\n   Karena $x < 30$, maka nilai pembuat volume maksimum adalah $x = 10\\text{ cm}$.\n\n3. **Menghitung volume maksimum:**\n   - Sisi alas kotak: $60 - 2(10) = 40\\text{ cm}$\n   - Tinggi kotak: $10\\text{ cm}$\n   $$V_{\\text{maks}} = 40 \\times 40 \\times 10 = 16.000\\text{ cm}^3$$\n   Dalam satuan liter: $16.000\\text{ cm}^3 = 16\\text{ liter}$.\n\nJadi, volume maksimum kotak tersebut adalah **16.000 cm kubik (16 liter)** (Opsi **A**)."
-  },
-  {
-    "id": "matwa-pengukuran-bangun-ruang-05",
-    "chapter_id": "geometri-dan-pengukuran",
-    "sub_chapter_id": "pengukuran-bangun-ruang",
-    "question_type": "MCMA",
-    "difficulty": "STANDAR",
-    "question_text": "Perhatikan gambar corong minyak berbentuk kerucut lingkaran tegak berikut:\n\n<div class=\"flex justify-center my-4 overflow-x-auto\"><svg viewBox=\"0 0 320 220\" class=\"w-full max-w-xs h-auto drop-shadow-md rounded-lg\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"320\" height=\"220\" fill=\"#0f172a\" rx=\"8\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Cone apex: (160, 30), base ellipse: center (160, 170), rx=70, ry=20 -->\n  <polygon points=\"160,30 90,170 230,170\" fill=\"#ec4899\" fill-opacity=\"0.15\"/>\n  <line x1=\"160\" y1=\"30\" x2=\"90\" y2=\"170\" stroke=\"#ec4899\" stroke-width=\"2\"/>\n  <line x1=\"160\" y1=\"30\" x2=\"230\" y2=\"170\" stroke=\"#ec4899\" stroke-width=\"2\"/>\n  <ellipse cx=\"160\" cy=\"170\" rx=\"70\" ry=\"20\" fill=\"none\" stroke=\"#ec4899\" stroke-width=\"2\"/>\n  <!-- Height & Radius -->\n  <line x1=\"160\" y1=\"30\" x2=\"160\" y2=\"170\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"3\"/>\n  <line x1=\"160\" y1=\"170\" x2=\"230\" y2=\"170\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/>\n  <circle cx=\"160\" cy=\"170\" r=\"3\" fill=\"#f59e0b\"/>\n  <!-- Labels -->\n  <text x=\"145\" y=\"105\" fill=\"#f59e0b\" font-size=\"11\" font-family=\"sans-serif\">t = 24 cm</text>\n  <text x=\"190\" y=\"165\" fill=\"#38bdf8\" font-size=\"11\" font-family=\"sans-serif\">r = 7 cm</text>\n  <text x=\"215\" y=\"95\" fill=\"#ec4899\" font-size=\"11\" font-family=\"sans-serif\">s = 25 cm</text>\n  <text x=\"160\" y=\"205\" fill=\"#94a3b8\" font-size=\"10\" font-family=\"sans-serif\" text-anchor=\"middle\">Diameter d = 14 cm (r = 7 cm), s = 25 cm</text>\n</svg></div>\n\nSebuah corong minyak berbentuk kerucut lingkaran tegak memiliki diameter lingkaran alas $d = 14\\text{ cm}$ dan panjang garis pelukis $s = 25\\text{ cm}$. Pilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR**! (Gunakan $\\pi = \\frac{22}{7}$)",
-    "options": [
-      {
-        "id": "A",
-        "text": "Panjang garis pelukis kerucut adalah $s = 25$ cm."
-      },
-      {
-        "id": "B",
-        "text": "Luas selimut kerucut adalah $550\\text{ cm}^2$ dan luas permukaan totalnya adalah $704\\text{ cm}^2$."
-      },
-      {
-        "id": "C",
-        "text": "Volume ruang di dalam corong kerucut tersebut adalah $1.232\\text{ cm}^3$."
-      },
-      {
-        "id": "D",
-        "text": "Luas selimut kerucut adalah $600\\text{ cm}^2$."
-      },
-      {
-        "id": "E",
-        "text": "Panjang garis pelukis kerucut $s$ memenuhi teorema Pythagoras $s = \\sqrt{r^2 + t^2}$."
-      }
-    ],
-    "correct_answer": [
-      "A",
-      "B",
-      "C",
-      "E"
-    ],
-    "hint": "Garis pelukis dihitung dengan Pythagoras: $s = \\sqrt{r^2 + t^2}$. Luas selimut $L_s = \\pi r s$, luas permukaan total $L = \\pi r (r + s)$, dan volume $V = \\frac{1}{3}\\pi r^2 t$.",
-    "explanation": "Langkah-langkah evaluasi kerucut lingkaran tegak:\n\n1. **Garis Pelukis ($s$):**\n   $$s = \\sqrt{r^2 + t^2} = \\sqrt{7^2 + 24^2} = \\sqrt{49 + 576} = \\sqrt{625} = 25\\text{ cm}$$\n   Pernyataan A bernilai **BENAR**.\n\n2. **Luas Selimut Kerucut ($L_s$):**\n   $$L_s = \\pi r s = \\frac{22}{7} \\times 7 \\times 25 = 22 \\times 25 = 550\\text{ cm}^2$$\n   Pernyataan B bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\n3. **Luas Permukaan Total Kerucut ($L$):**\n   $$L = \\pi r (r + s) = \\frac{22}{7} \\times 7 \\times (7 + 25) = 22 \\times 32 = 704\\text{ cm}^2$$\n\n4. **Volume Kerucut ($V$):**\n   $$V = \\frac{1}{3} \\pi r^2 t = \\frac{1}{3} \\times \\frac{22}{7} \\times 7^2 \\times 24 = \\frac{1}{3} \\times 154 \\times 24 = 154 \\times 8 = 1.232\\text{ cm}^3$$\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Segitiga yang dibentuk jari-jari, tinggi, dan garis pelukis kerucut siku-siku sehingga $s^2 = r^2 + t^2$."
   },
   {
     "id": "matwa-pengukuran-bangun-ruang-06",

@@ -66,6 +66,274 @@
     "explanation": "Langkah-langkah penyelesaian:\n1. Buat tabel frekuensi kumulatif ($F_k$):\n   - Interval $11 - 20$: $f = 6 \\implies F_k = 6$\n   - Interval $21 - 30$: $f = 10 \\implies F_k = 16$\n   - Interval $31 - 40$: $f = 18 \\implies F_k = 34$\n   - Interval $41 - 50$: $f = 11 \\implies F_k = 45$\n   - Interval $51 - 60$: $f = 5 \\implies F_k = 50$\n2. Menentukan letak median:\n   - Total data: $N = 50$\n   - Letak median: $\\frac{N}{2} = \\frac{50}{2} = 25$\n   - Data ke-$25$ berada pada interval kelas $31 - 40$.\n3. Komponen rumus median:\n   - Tepi bawah kelas median: $T_b = 31 - 0,5 = 30,5$\n   - Panjang kelas: $p = 40,5 - 30,5 = 10$\n   - Frekuensi kumulatif sebelum kelas median: $F_k = 16$\n   - Frekuensi kelas median: $f_{med} = 18$\n4. Menghitung nilai median ($Me$):\n   $$Me = T_b + \\left(\\frac{\\frac{N}{2} - F_k}{f_{med}}\\right) \\times p$$\n   $$Me = 30,5 + \\left(\\frac{25 - 16}{18}\\right) \\times 10$$\n   $$Me = 30,5 + \\left(\\frac{9}{18}\\right) \\times 10 = 30,5 + 0,5 \\times 10 = 30,5 + 5 = 35,5\\text{ menit}$$\n\nJadi, median dari waktu tempuh perjalanan karyawan tersebut adalah $35,5\\text{ menit}$."
   },
   {
+    "id": "matwa-statistika-data-kelompok-07",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "statistika-data-kelompok",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Tabel berikut menyajikan data berat badan (dalam $\\text{kg}$) dari $30\\text{ atlet}$ angkat besi:\n\n| Berat Badan (kg) | Frekuensi |\n| :---: | :---: |\n| $55 - 59$ | $3$ |\n| $60 - 64$ | $7$ |\n| $65 - 69$ | $10$ |\n| $70 - 74$ | $7$ |\n| $75 - 79$ | $3$ |\n\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Panjang kelas (interval kelas) dari tabel distribusi tersebut adalah $5$."
+      },
+      {
+        "id": "B",
+        "text": "Nilai rata-rata berat badan seluruh atlet adalah tepat $67\\text{ kg}$."
+      },
+      {
+        "id": "C",
+        "text": "Kelas interval dengan frekuensi tertinggi memiliki tepi bawah $64,5$ dan titik tengah $67$."
+      },
+      {
+        "id": "D",
+        "text": "Rata-rata berat badan atlet tersebut adalah $69,5\\text{ kg}$."
+      },
+      {
+        "id": "E",
+        "text": "Panjang kelas (interval kelas) dari tabel distribusi tersebut adalah $4$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "hint": "Periksa simetri distribusi frekuensi di sekitar kelas ketiga ($65 - 69$). Hitung panjang kelas dari selisih dua batas bawah yang berurutan, misal $60 - 55 = 5$.",
+    "explanation": "Langkah-langkah evaluasi tabel distribusi:\n1. Menghitung panjang kelas ($p$):\n   - Selisih batas bawah berurutan: $60 - 55 = 5$ atau dari tepi kelas: $59,5 - 54,5 = 5$.\n   (Pernyataan A BENAR dan Pernyataan E SALAH).\n2. Evaluasi kelas dengan frekuensi tertinggi ($65 - 69$, frekuensi $10$):\n   - Tepi bawah: $65 - 0,5 = 64,5$.\n   - Titik tengah: $\\frac{65 + 69}{2} = 67$.\n   (Pernyataan C BENAR).\n3. Menghitung rata-rata ($\\bar{x}$):\n   - Titik tengah masing-masing kelas:\n     * $55 - 59$: $x_1 = 57, f_1 = 3 \\implies f_1 x_1 = 171$\n     * $60 - 64$: $x_2 = 62, f_2 = 7 \\implies f_2 x_2 = 434$\n     * $65 - 69$: $x_3 = 67, f_3 = 10 \\implies f_3 x_3 = 670$\n     * $70 - 74$: $x_4 = 72, f_4 = 7 \\implies f_4 x_4 = 504$\n     * $75 - 79$: $x_5 = 77, f_5 = 3 \\implies f_5 x_5 = 231$\n   - Total $\\sum f_i x_i = 171 + 434 + 670 + 504 + 231 = 2.010$.\n   - Rata-rata:\n     $$\\bar{x} = \\frac{2.010}{30} = 67\\text{ kg}$$\n   (Pernyataan B BENAR dan Pernyataan D SALAH).\n\nJadi, pernyataan yang bernilai BENAR adalah A, B, dan C."
+  },
+  {
+    "id": "matwa-statistika-data-kelompok-11",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "statistika-data-kelompok",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Tabel berikut menyajikan data distribusi berat badan (dalam $\\text{kg}$) dari $40\\text{ siswa}$:\n\n$$\\begin{array}{|c|c|}\n\\hline\n\\textbf{Berat Badan (kg)} & \\textbf{Frekuensi} \\\\\n\\hline\n41 - 45 & 6 \\\\\n46 - 50 & 10 \\\\\n51 - 55 & 14 \\\\\n56 - 60 & 7 \\\\\n61 - 65 & 3 \\\\\n\\hline\n\\end{array}$$\n\nNilai rata-rata (mean) dari data berat badan tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$50{,}875\\text{ kg}$"
+      },
+      {
+        "id": "B",
+        "text": "$51{,}250\\text{ kg}$"
+      },
+      {
+        "id": "C",
+        "text": "$51{,}875\\text{ kg}$"
+      },
+      {
+        "id": "D",
+        "text": "$52{,}125\\text{ kg}$"
+      },
+      {
+        "id": "E",
+        "text": "$52{,}500\\text{ kg}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Tentukan titik tengah ($x_i$) untuk setiap kelas interval, lalu gunakan rumus $\\bar{x} = \\frac{\\sum f_i x_i}{\\sum f_i}$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Menentukan titik tengah ($x_i$) dan perkalian $f_i x_i$:\n   - Kelas $41 - 45$: $x_1 = 43$, $f_1 x_1 = 6 \\times 43 = 258$\n   - Kelas $46 - 50$: $x_2 = 48$, $f_2 x_2 = 10 \\times 48 = 480$\n   - Kelas $51 - 55$: $x_3 = 53$, $f_3 x_3 = 14 \\times 53 = 742$\n   - Kelas $56 - 60$: $x_4 = 58$, $f_4 x_4 = 7 \\times 58 = 406$\n   - Kelas $61 - 65$: $x_5 = 63$, $f_5 x_5 = 3 \\times 63 = 189$\n2. Menjumlahkan $\\sum f_i x_i$:\n   $$\\sum f_i x_i = 258 + 480 + 742 + 406 + 189 = 2075$$\n3. Menghitung mean:\n   $$\\bar{x} = \\frac{2075}{40} = 51{,}875\\text{ kg}$$\n\nJadi, rata-rata berat badan siswa adalah $51{,}875\\text{ kg}$."
+  },
+  {
+    "id": "matwa-statistika-data-kelompok-12",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "statistika-data-kelompok",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Tabel berikut menunjukkan hasil tes seleksi masuk suatu lembaga:\n\n$$\\begin{array}{|c|c|}\n\\hline\n\\textbf{Skor Ujian} & \\textbf{Frekuensi} \\\\\n\\hline\n50 - 59 & 5 \\\\\n60 - 69 & 12 \\\\\n70 - 79 & 18 \\\\\n80 - 89 & 10 \\\\\n90 - 99 & 5 \\\\\n\\hline\n\\end{array}$$\n\nMedian dari data skor ujian tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$72{,}44$"
+      },
+      {
+        "id": "B",
+        "text": "$73{,}50$"
+      },
+      {
+        "id": "C",
+        "text": "$73{,}94$"
+      },
+      {
+        "id": "D",
+        "text": "$74{,}50$"
+      },
+      {
+        "id": "E",
+        "text": "$75{,}22$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Letak median berada pada $\\frac{1}{2}n = 25$. Gunakan rumus $Me = T_b + \\left(\\frac{\\frac{1}{2}n - F_k}{f_m}\\right) \\cdot c$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Total frekuensi $n = 5 + 12 + 18 + 10 + 5 = 50$.\n   - Letak median $= \\frac{1}{2} \\times 50 = 25$.\n2. Menentukan frekuensi kumulatif ($F_k$):\n   - $\\le 59$: $5$\n   - $\\le 69$: $17$\n   - $\\le 79$: $35$ (kelas median adalah $70 - 79$)\n3. Komponen rumus median:\n   - Tepi bawah kelas median $T_b = 70 - 0{,}5 = 69{,}5$\n   - Frekuensi kumulatif sebelum kelas median $F_k = 17$\n   - Frekuensi kelas median $f_m = 18$\n   - Panjang kelas $c = 10$\n4. Menghitung nilai median:\n   $$Me = 69{,}5 + \\left(\\frac{25 - 17}{18}\\right) \\times 10 = 69{,}5 + \\frac{8}{18} \\times 10 = 69{,}5 + \\frac{80}{18} = 69{,}5 + 4{,}44 = 73{,}94$$\n\nJadi, median dari skor ujian tersebut adalah $73{,}94$."
+  },
+  {
+    "id": "matwa-statistika-data-kelompok-13",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "statistika-data-kelompok",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Tabel berikut menyajikan waktu tempuh (dalam menit) sejumlah kendaraan:\n\n$$\\begin{array}{|c|c|}\n\\hline\n\\textbf{Waktu (menit)} & \\textbf{Frekuensi} \\\\\n\\hline\n20 - 24 & 4 \\\\\n25 - 29 & 8 \\\\\n30 - 34 & 14 \\\\\n35 - 39 & 10 \\\\\n40 - 44 & 4 \\\\\n\\hline\n\\end{array}$$\n\nModus dari waktu tempuh kendaraan tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$31{,}5\\text{ menit}$"
+      },
+      {
+        "id": "B",
+        "text": "$32{,}0\\text{ menit}$"
+      },
+      {
+        "id": "C",
+        "text": "$32{,}5\\text{ menit}$"
+      },
+      {
+        "id": "D",
+        "text": "$33{,}0\\text{ menit}$"
+      },
+      {
+        "id": "E",
+        "text": "$33{,}5\\text{ menit}$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Kelas modus adalah kelas dengan frekuensi terbanyak ($30 - 34$). Gunakan rumus $Mo = T_b + \\left(\\frac{d_1}{d_1 + d_2}\\right) \\cdot c$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Menentukan kelas modus:\n   - Frekuensi tertinggi adalah $14$, yaitu pada interval $30 - 34$.\n2. Menentukan komponen-komponen:\n   - Tepi bawah $T_b = 30 - 0{,}5 = 29{,}5$.\n   - Selisih dengan frekuensi kelas sebelumnya $d_1 = 14 - 8 = 6$.\n   - Selisih dengan frekuensi kelas sesudahnya $d_2 = 14 - 10 = 4$.\n   - Panjang kelas $c = 34 - 30 + 1 = 5$.\n3. Menghitung nilai modus:\n   $$Mo = T_b + \\left(\\frac{d_1}{d_1 + d_2}\\right) \\cdot c$$\n   $$Mo = 29{,}5 + \\left(\\frac{6}{6 + 4}\\right) \\times 5 = 29{,}5 + \\left(\\frac{6}{10}\\right) \\times 5 = 29{,}5 + 3 = 32{,}5\\text{ menit}$$\n\nJadi, modus waktu tempuh kendaraan adalah $32{,}5\\text{ menit}$."
+  },
+  {
+    "id": "matwa-statistika-data-kelompok-14",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "statistika-data-kelompok",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Perhatikan tabel distribusi frekuensi berikut:\n\n$$\\begin{array}{|c|c|}\n\\hline\n\\textbf{Skor} & \\textbf{Frekuensi} \\\\\n\\hline\n10 - 19 & 6 \\\\\n20 - 29 & 10 \\\\\n30 - 39 & 16 \\\\\n40 - 49 & 8 \\\\\n\\hline\n\\end{array}$$\n\nKuartil bawah ($Q_1$) dari data skor tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$21{,}5$"
+      },
+      {
+        "id": "B",
+        "text": "$22{,}0$"
+      },
+      {
+        "id": "C",
+        "text": "$23{,}0$"
+      },
+      {
+        "id": "D",
+        "text": "$23{,}5$"
+      },
+      {
+        "id": "E",
+        "text": "$24{,}5$"
+      }
+    ],
+    "correct_answer": "D",
+    "hint": "Letak kuartil bawah berada pada datum ke-$\\frac{1}{4}n$. Gunakan rumus $Q_1 = T_b + \\left(\\frac{\\frac{1}{4}n - F_k}{f_{Q1}}\\right) \\cdot c$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Total data $n = 6 + 10 + 16 + 8 = 40$.\n   - Letak $Q_1 = \\frac{1}{4} \\times 40 = 10$.\n2. Menentukan frekuensi kumulatif:\n   - Kelas $10 - 19$: $F_k = 6$\n   - Kelas $20 - 29$: $F_k = 16$ (memuat datum ke-10, sehingga kelas $Q_1$ adalah $20 - 29$)\n3. Menentukan parameter rumus:\n   - $T_b = 20 - 0{,}5 = 19{,}5$\n   - $F_k = 6$ (frekuensi kumulatif sebelum kelas $Q_1$)\n   - $f_{Q1} = 10$ (frekuensi kelas $Q_1$)\n   - $c = 10$\n4. Menghitung $Q_1$:\n   $$Q_1 = 19{,}5 + \\left(\\frac{10 - 6}{10}\\right) \\times 10 = 19{,}5 + 4 = 23{,}5$$\n\nJadi, nilai kuartil bawah ($Q_1$) adalah $23{,}5$."
+  },
+  {
+    "id": "matwa-statistika-data-kelompok-15",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "statistika-data-kelompok",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Berdasarkan data pada tabel soal sebelumnya:\n\n$$\\begin{array}{|c|c|}\n\\hline\n\\textbf{Skor} & \\textbf{Frekuensi} \\\\\n\\hline\n10 - 19 & 6 \\\\\n20 - 29 & 10 \\\\\n30 - 39 & 16 \\\\\n40 - 49 & 8 \\\\\n\\hline\n\\end{array}$$\n\nNilai kuartil atas ($Q_3$) dari data skor tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$36{,}50$"
+      },
+      {
+        "id": "B",
+        "text": "$37{,}25$"
+      },
+      {
+        "id": "C",
+        "text": "$38{,}25$"
+      },
+      {
+        "id": "D",
+        "text": "$38{,}75$"
+      },
+      {
+        "id": "E",
+        "text": "$39{,}50$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Letak kuartil atas adalah pada datum ke-$\\frac{3}{4}n = 30$. Gunakan rumus $Q_3 = T_b + \\left(\\frac{\\frac{3}{4}n - F_k}{f_{Q3}}\\right) \\cdot c$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Total data $n = 40$.\n   - Letak $Q_3 = \\frac{3}{4} \\times 40 = 30$.\n2. Menentukan frekuensi kumulatif:\n   - Kelas $10 - 19$: $F_k = 6$\n   - Kelas $20 - 29$: $F_k = 16$\n   - Kelas $30 - 39$: $F_k = 32$ (memuat datum ke-30, sehingga kelas $Q_3$ adalah $30 - 39$)\n3. Menentukan parameter rumus:\n   - $T_b = 30 - 0{,}5 = 29{,}5$\n   - $F_k = 16$\n   - $f_{Q3} = 16$\n   - $c = 10$\n4. Menghitung $Q_3$:\n   $$Q_3 = 29{,}5 + \\left(\\frac{30 - 16}{16}\\right) \\times 10 = 29{,}5 + \\frac{14}{16} \\times 10 = 29{,}5 + 8{,}75 = 38{,}25$$\n\nJadi, nilai kuartil atas ($Q_3$) adalah $38{,}25$."
+  },
+  {
+    "id": "matwa-statistika-data-kelompok-16",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "statistika-data-kelompok",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Dalam menghitung mean data kelompok menggunakan rata-rata sementara, seorang siswa menetapkan rata-rata sementara $x_0 = 55$ pada data dengan panjang kelas $c = 10$ dan total frekuensi $\\sum f_i = 50$. Jika diperoleh hasil perkalian frekuensi dengan kode penyimpangan $\\sum f_i u_i = 15$, maka nilai rata-rata sebenarnya (mean) adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$56$"
+      },
+      {
+        "id": "B",
+        "text": "$57$"
+      },
+      {
+        "id": "C",
+        "text": "$58$"
+      },
+      {
+        "id": "D",
+        "text": "$59$"
+      },
+      {
+        "id": "E",
+        "text": "$60$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Gunakan metode coding: $\\bar{x} = x_0 + \\left(\\frac{\\sum f_i u_i}{\\sum f_i}\\right) \\cdot c$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Rumus mean dengan metode coding (pengkodean):\n   $$\\bar{x} = x_0 + \\left(\\frac{\\sum f_i u_i}{\\sum f_i}\\right) \\cdot c$$\n2. Substitusi nilai-nilai yang diketahui:\n   $$\\bar{x} = 55 + \\left(\\frac{15}{50}\\right) \\times 10$$\n   $$\\bar{x} = 55 + \\frac{150}{50} = 55 + 3 = 58$$\n\nJadi, nilai rata-rata sebenarnya adalah $58$."
+  },
+  {
+    "id": "matwa-statistika-data-kelompok-17",
+    "chapter_id": "statistika",
+    "sub_chapter_id": "statistika-data-kelompok",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Tabel berikut menunjukkan distribusi nilai ujian dari $50\\text{ siswa}$:\n\n$$\\begin{array}{|c|c|}\n\\hline\n\\textbf{Nilai} & \\textbf{Frekuensi} \\\\\n\\hline\n31 - 40 & 7 \\\\\n41 - 50 & 13 \\\\\n51 - 60 & 15 \\\\\n61 - 70 & 10 \\\\\n71 - 80 & 5 \\\\\n\\hline\n\\end{array}$$\n\nNilai desil ke-6 ($D_6$) dari data distribusi frekuensi tersebut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$55{,}50$"
+      },
+      {
+        "id": "B",
+        "text": "$56{,}17$"
+      },
+      {
+        "id": "C",
+        "text": "$57{,}17$"
+      },
+      {
+        "id": "D",
+        "text": "$58{,}50$"
+      },
+      {
+        "id": "E",
+        "text": "$59{,}17$"
+      }
+    ],
+    "correct_answer": "C",
+    "hint": "Letak desil ke-6 adalah pada datum ke-$\\frac{6}{10}n$. Gunakan rumus $D_6 = T_b + \\left(\\frac{\\frac{6}{10}n - F_k}{f}\\right) \\cdot c$.",
+    "explanation": "Langkah-langkah penyelesaian:\n1. Total data $n = 50$.\n   - Letak $D_6 = \\frac{6}{10} \\times 50 = 30$.\n2. Menentukan frekuensi kumulatif ($F_k$):\n   - $\\le 40$: $7$\n   - $\\le 50$: $20$\n   - $\\le 60$: $35$ (memuat datum ke-30, sehingga kelas $D_6$ adalah $51 - 60$)\n3. Menentukan parameter:\n   - $T_b = 51 - 0{,}5 = 50{,}5$\n   - $F_k = 20$\n   - $f = 15$\n   - $c = 10$\n4. Menghitung $D_6$:\n   $$D_6 = 50{,}5 + \\left(\\frac{30 - 20}{15}\\right) \\times 10 = 50{,}5 + \\frac{10}{15} \\times 10 = 50{,}5 + 6{,}67 = 57{,}17$$\n\nJadi, nilai desil ke-6 ($D_6$) adalah $57{,}17$."
+  },
+  {
     "id": "matwa-statistika-data-kelompok-03",
     "chapter_id": "statistika",
     "sub_chapter_id": "statistika-data-kelompok",
@@ -205,43 +473,6 @@
     ],
     "hint": "Hitung median dengan rumus data kelompok. Ingat bahwa perpotongan ogive 'kurang dari' dan 'lebih dari' selalu bertepatan pada nilai median data di frekuensi kumulatif $\\frac{N}{2}$.",
     "explanation": "Langkah-langkah analisis distribusi data kelompok:\n1. Evaluasi Median ($Q_2$):\n   - Total data: $N = 50$.\n   - Letak median: $\\frac{N}{2} = 25$.\n   - Frekuensi kumulatif: Kelas 1 ($51-60$) $= 5$; Kelas 2 ($61-70$) $= 15$; Kelas 3 ($71-80$) $= 35$.\n   - Data ke-$25$ berada di kelas ke-3 ($71 - 80$).\n   - Komponen: $T_b = 70,5$, $p = 10$, $F_k = 15$, $f_{med} = 20$.\n     $$Me = 70,5 + \\left(\\frac{25 - 15}{20}\\right) \\times 10 = 70,5 + \\left(\\frac{10}{20}\\right) \\times 10 = 70,5 + 5 = 75,5$$\n   (Pernyataan A BENAR).\n2. Evaluasi Titik Potong Ogive Positif dan Ogive Negatif:\n   - Secara matematis, titik potong antara kurva ogive positif (frekuensi kumulatif kurang dari) dan ogive negatif (frekuensi kumulatif lebih dari) selalu terjadi pada nilai median data ($75,5$) dengan ordinat frekuensi kumulatif $\\frac{N}{2} = 25$.\n   (Pernyataan B BENAR).\n3. Evaluasi Peserta dengan Skor $> 80$:\n   - Peserta dengan skor $> 80$ berada di kelas $81 - 90$ ($10$ orang) dan $91 - 100$ ($5$ orang).\n   - Total peserta: $10 + 5 = 15\\text{ orang}$.\n   - Persentase: $\\frac{15}{50} \\times 100\\% = 30\\%$.\n   (Pernyataan C BENAR).\n4. Evaluasi Pernyataan D dan E:\n   - Frekuensi tertinggi adalah $20$ yang berada pada kelas $71 - 80$, bukan $61 - 70$. (Pernyataan D SALAH).\n   - Letak $Q_1 = \\frac{1}{4} \\times 50 = 12,5$, yang berada pada kelas ke-2 ($61 - 70$), bukan kelas $51 - 60$. (Pernyataan E SALAH).\n\nJadi, pernyataan yang bernilai BENAR adalah A, B, dan C."
-  },
-  {
-    "id": "matwa-statistika-data-kelompok-07",
-    "chapter_id": "statistika",
-    "sub_chapter_id": "statistika-data-kelompok",
-    "question_type": "MCMA",
-    "difficulty": "STANDAR",
-    "question_text": "Tabel berikut menyajikan data berat badan (dalam $\\text{kg}$) dari $30\\text{ atlet}$ angkat besi:\n\n| Berat Badan (kg) | Frekuensi |\n| :---: | :---: |\n| $55 - 59$ | $3$ |\n| $60 - 64$ | $7$ |\n| $65 - 69$ | $10$ |\n| $70 - 74$ | $7$ |\n| $75 - 79$ | $3$ |\n\nPilihlah seluruh pernyataan berikut yang bernilai BENAR!",
-    "options": [
-      {
-        "id": "A",
-        "text": "Panjang kelas (interval kelas) dari tabel distribusi tersebut adalah $5$."
-      },
-      {
-        "id": "B",
-        "text": "Nilai rata-rata berat badan seluruh atlet adalah tepat $67\\text{ kg}$."
-      },
-      {
-        "id": "C",
-        "text": "Kelas interval dengan frekuensi tertinggi memiliki tepi bawah $64,5$ dan titik tengah $67$."
-      },
-      {
-        "id": "D",
-        "text": "Rata-rata berat badan atlet tersebut adalah $69,5\\text{ kg}$."
-      },
-      {
-        "id": "E",
-        "text": "Panjang kelas (interval kelas) dari tabel distribusi tersebut adalah $4$."
-      }
-    ],
-    "correct_answer": [
-      "A",
-      "B",
-      "C"
-    ],
-    "hint": "Periksa simetri distribusi frekuensi di sekitar kelas ketiga ($65 - 69$). Hitung panjang kelas dari selisih dua batas bawah yang berurutan, misal $60 - 55 = 5$.",
-    "explanation": "Langkah-langkah evaluasi tabel distribusi:\n1. Menghitung panjang kelas ($p$):\n   - Selisih batas bawah berurutan: $60 - 55 = 5$ atau dari tepi kelas: $59,5 - 54,5 = 5$.\n   (Pernyataan A BENAR dan Pernyataan E SALAH).\n2. Evaluasi kelas dengan frekuensi tertinggi ($65 - 69$, frekuensi $10$):\n   - Tepi bawah: $65 - 0,5 = 64,5$.\n   - Titik tengah: $\\frac{65 + 69}{2} = 67$.\n   (Pernyataan C BENAR).\n3. Menghitung rata-rata ($\\bar{x}$):\n   - Titik tengah masing-masing kelas:\n     * $55 - 59$: $x_1 = 57, f_1 = 3 \\implies f_1 x_1 = 171$\n     * $60 - 64$: $x_2 = 62, f_2 = 7 \\implies f_2 x_2 = 434$\n     * $65 - 69$: $x_3 = 67, f_3 = 10 \\implies f_3 x_3 = 670$\n     * $70 - 74$: $x_4 = 72, f_4 = 7 \\implies f_4 x_4 = 504$\n     * $75 - 79$: $x_5 = 77, f_5 = 3 \\implies f_5 x_5 = 231$\n   - Total $\\sum f_i x_i = 171 + 434 + 670 + 504 + 231 = 2.010$.\n   - Rata-rata:\n     $$\\bar{x} = \\frac{2.010}{30} = 67\\text{ kg}$$\n   (Pernyataan B BENAR dan Pernyataan D SALAH).\n\nJadi, pernyataan yang bernilai BENAR adalah A, B, dan C."
   },
   {
     "id": "matwa-statistika-data-kelompok-08",

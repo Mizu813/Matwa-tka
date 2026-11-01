@@ -66,6 +66,275 @@
     "explanation": "Langkah-langkah evaluasi nilai invers fungsi akar:\n\n**Metode 1: Menggunakan Definisi Fungsi Invers (Praktis)**\n1. Misalkan nilai yang dicari adalah $k$:\n   $$f^{-1}(5) = k \\iff f(k) = 5$$\n\n2. Substitusikan $k$ ke dalam rumus fungsi $f(x)$:\n   $$\\sqrt{3k + 7} = 5$$\n\n3. Kuadratkan kedua ruas persamaan:\n   $$3k + 7 = 5^2$$\n   $$3k + 7 = 25$$\n   $$3k = 25 - 7$$\n   $$3k = 18 \\implies k = 6$$\n\n**Metode 2: Menentukan Rumus Invers Terlebih Dahulu**\n1. Nyatakan $y = \\sqrt{3x + 7}$ (dengan $y \\ge 0$):\n   $$y^2 = 3x + 7 \\implies 3x = y^2 - 7 \\implies x = \\frac{y^2 - 7}{3}$$\n2. Rumus fungsi inversnya adalah $f^{-1}(x) = \\frac{x^2 - 7}{3}$ untuk $x \\ge 0$.\n3. Substitusikan $x = 5$:\n   $$f^{-1}(5) = \\frac{5^2 - 7}{3} = \\frac{25 - 7}{3} = \\frac{18}{3} = 6$$\n\nJadi, nilai dari $f^{-1}(5)$ adalah **6** (Opsi **A**)."
   },
   {
+    "id": "matwa-fungsi-invers-05",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "fungsi-invers",
+    "question_type": "MCMA",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan fungsi linear:\n$$f(x) = \\frac{2}{3}x - 4$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai fungsi invers $f^{-1}(x)$ dan karakteristik grafiknya!",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rumus fungsi inversnya adalah $f^{-1}(x) = \\frac{3}{2}x + 6$."
+      },
+      {
+        "id": "B",
+        "text": "Grafik fungsi $f^{-1}(x)$ memotong sumbu-$X$ di titik $(-4, 0)$ dan memotong sumbu-$Y$ di titik $(0, 6)$."
+      },
+      {
+        "id": "C",
+        "text": "Grafik $y = f(x)$ dan grafik $y = f^{-1}(x)$ berpotongan tepat di satu titik pada garis cermin $y = x$, yaitu di titik $(-12, -12)$."
+      },
+      {
+        "id": "D",
+        "text": "Rumus fungsi inversnya adalah $f^{-1}(x) = \\frac{2}{3}x + 4$."
+      },
+      {
+        "id": "E",
+        "text": "Grafik fungsi $f(x)$ dan inversnya $f^{-1}(x)$ saling simetris terhadap garis cermin $y = x$."
+      }
+    ],
+    "correct_answer": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "hint": "Cari invers dengan menyatakan $x$ dari $y = \\frac{2}{3}x - 4$. Tentukan titik potong sumbu koordinat dengan memasukkan $y = 0$ dan $x = 0$. Titik potong kurva dengan inversnya selalu terletak pada garis $y = x$.",
+    "explanation": "Langkah-langkah analisis fungsi invers linear:\n\n1. **Menentukan Rumus Invers $f^{-1}(x)$:**\n   $$y = \\frac{2}{3}x - 4 \\implies y + 4 = \\frac{2}{3}x \\implies x = \\frac{3}{2}(y + 4) = \\frac{3}{2}y + 6$$\n   Maka rumus fungsi inversnya adalah $f^{-1}(x) = \\frac{3}{2}x + 6$.\n   Pernyataan A bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\n2. **Titik Potong Sumbu Koordinat Grafik $f^{-1}(x)$:**\n   - Titik potong sumbu-$X$ ($y = 0$):\n     $$\\frac{3}{2}x + 6 = 0 \\implies \\frac{3}{2}x = -6 \\implies x = -4 \\implies (-4, 0)$$\n   - Titik potong sumbu-$Y$ ($x = 0$):\n     $$y = \\frac{3}{2}(0) + 6 = 6 \\implies (0, 6)$$\n   (Perhatikan simetri: grafik $f(x)$ memotong sumbu di $(6, 0)$ dan $(0, -4)$, sehingga inversnya memotong di $(-4, 0)$ dan $(0, 6)$).\n   Pernyataan B bernilai **BENAR**.\n\n3. **Titik Potong $y = f(x)$ dan $y = f^{-1}(x)$:**\n   Kedua grafik berpotongan pada garis simetri cermin $y = x$:\n   $$x = \\frac{2}{3}x - 4 \\implies x - \\frac{2}{3}x = -4 \\implies \\frac{1}{3}x = -4 \\implies x = -12$$\n   Ordinatnya adalah $y = -12$. Jadi titik potongnya adalah $(-12, -12)$.\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Berdasarkan sifat geometris fungsi invers, kurva $f(x)$ dan $f^{-1}(x)$ adalah hasil pencerminan terhadap garis lurus $y = x$."
+  },
+  {
+    "id": "matwa-fungsi-invers-11",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "fungsi-invers",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan fungsi pecahan linear:\n$$f(x) = \\frac{4x - 1}{3x + 5}, \\quad x \\neq -\\frac{5}{3}$$\nRumus fungsi invers $f^{-1}(x)$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$f^{-1}(x) = \\frac{-5x - 1}{3x - 4}, \\quad x \\neq \\frac{4}{3}$"
+      },
+      {
+        "id": "B",
+        "text": "$f^{-1}(x) = \\frac{5x + 1}{3x - 4}, \\quad x \\neq \\frac{4}{3}$"
+      },
+      {
+        "id": "C",
+        "text": "$f^{-1}(x) = \\frac{3x + 5}{4x - 1}, \\quad x \\neq \\frac{1}{4}$"
+      },
+      {
+        "id": "D",
+        "text": "$f^{-1}(x) = \\frac{-5x + 1}{3x - 4}, \\quad x \\neq \\frac{4}{3}$"
+      },
+      {
+        "id": "E",
+        "text": "$f^{-1}(x) = \\frac{4x + 1}{3x - 5}, \\quad x \\neq \\frac{5}{3}$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Rumus cepat invers f(x) = (ax + b)/(cx + d) adalah f^(-1)(x) = (-dx + b)/(cx - a).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Menggunakan formula invers pecahan $f(x) = \\frac{ax + b}{cx + d} \\implies f^{-1}(x) = \\frac{-dx + b}{cx - a}$:\n   - $a = 4, \\quad b = -1, \\quad c = 3, \\quad d = 5$\n\n2. Terapkan rumus:\n   $$f^{-1}(x) = \\frac{-5x + (-1)}{3x - 4} = \\frac{-5x - 1}{3x - 4}, \\quad x \\neq \\frac{4}{3}$$\n\nJadi, rumus inversnya adalah **A** ($f^{-1}(x) = \\frac{-5x - 1}{3x - 4}, \\quad x \\neq \\frac{4}{3}$)."
+  },
+  {
+    "id": "matwa-fungsi-invers-12",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "fungsi-invers",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diketahui fungsi pecahan rasional $f(x) = \\frac{5x + 3}{2x - 1}$ dengan $x \\neq \\frac{1}{2}$. Nilai dari $f^{-1}(4)$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\frac{7}{3}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\frac{5}{3}$"
+      },
+      {
+        "id": "C",
+        "text": "$3$"
+      },
+      {
+        "id": "D",
+        "text": "$\\frac{1}{3}$"
+      },
+      {
+        "id": "E",
+        "text": "$2$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Gunakan sifat dasar fungsi invers: f^(-1)(k) = x ekuivalen dengan f(x) = k.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Berdasarkan sifat invers, $f^{-1}(4) = x \\iff f(x) = 4$:\n   $$\\frac{5x + 3}{2x - 1} = 4$$\n\n2. Kalikan silang:\n   $$5x + 3 = 4(2x - 1)$$\n   $$5x + 3 = 8x - 4$$\n\n3. Kumpulkan variabel $x$ pada satu ruas:\n   $$3 + 4 = 8x - 5x$$\n   $$7 = 3x \\implies x = \\frac{7}{3}$$\n\nJadi, nilai $f^{-1}(4)$ adalah **A** ($\\frac{7}{3}$)."
+  },
+  {
+    "id": "matwa-fungsi-invers-13",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "fungsi-invers",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan fungsi kuadrat dengan domain terbatas $f(x) = x^2 - 6x + 4$ untuk $x \\ge 3$. Rumus fungsi invers $f^{-1}(x)$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$f^{-1}(x) = 3 + \\sqrt{x + 5}, \\quad x \\ge -5$"
+      },
+      {
+        "id": "B",
+        "text": "$f^{-1}(x) = 3 - \\sqrt{x + 5}, \\quad x \\ge -5$"
+      },
+      {
+        "id": "C",
+        "text": "$f^{-1}(x) = -3 + \\sqrt{x + 5}, \\quad x \\ge -5$"
+      },
+      {
+        "id": "D",
+        "text": "$f^{-1}(x) = 3 + \\sqrt{x - 5}, \\quad x \\ge 5$"
+      },
+      {
+        "id": "E",
+        "text": "$f^{-1}(x) = \\sqrt{x + 9} - 3, \\quad x \\ge -9$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Ubah fungsi ke bentuk kuadrat sempurna y = (x - 3)^2 - 5, lalu nyatakan x dalam y.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Tuliskan $y = f(x)$ dan lengkapi kuadrat sempurna:\n   $$y = x^2 - 6x + 4$$\n   $$y = (x - 3)^2 - 9 + 4$$\n   $$y = (x - 3)^2 - 5$$\n\n2. Pindahkan konstanta dan tarik akar kuadrat:\n   $$(x - 3)^2 = y + 5$$\n   $$x - 3 = \\pm \\sqrt{y + 5}$$\n\n3. Karena domain awal $x \\ge 3$, maka $x - 3 \\ge 0$, sehingga pilih tanda positif ($+$):\n   $$x - 3 = \\sqrt{y + 5} \\implies x = 3 + \\sqrt{y + 5}$$\n\n4. Ganti variabel $y$ menjadi $x$:\n   $$f^{-1}(x) = 3 + \\sqrt{x + 5}, \\quad x \\ge -5$$\n\nJadi, fungsi inversnya adalah **A** ($f^{-1}(x) = 3 + \\sqrt{x + 5}, \\quad x \\ge -5$)."
+  },
+  {
+    "id": "matwa-fungsi-invers-14",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "fungsi-invers",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diketahui fungsi $f(x) = 2x - 7$ dan $g(x) = 3x + 1$. Rumus fungsi dari invers komposisi $(f \\circ g)^{-1}(x)$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$(f \\circ g)^{-1}(x) = \\frac{x + 5}{6}$"
+      },
+      {
+        "id": "B",
+        "text": "$(f \\circ g)^{-1}(x) = \\frac{x - 5}{6}$"
+      },
+      {
+        "id": "C",
+        "text": "$(f \\circ g)^{-1}(x) = \\frac{x + 6}{5}$"
+      },
+      {
+        "id": "D",
+        "text": "$(f \\circ g)^{-1}(x) = 6x - 5$"
+      },
+      {
+        "id": "E",
+        "text": "$(f \\circ g)^{-1}(x) = \\frac{x + 7}{6}$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Cari terlebih dahulu fungsi komposisi (f o g)(x), kemudian cari invers dari fungsi hasil komposisi tersebut.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Tentukan $(f \\circ g)(x)$:\n   $$(f \\circ g)(x) = f(3x + 1) = 2(3x + 1) - 7 = 6x + 2 - 7 = 6x - 5$$\n\n2. Cari invers dari $y = 6x - 5$:\n   $$y + 5 = 6x \\implies x = \\frac{y + 5}{6}$$\n\n3. Nyatakan dalam variabel $x$:\n   $$(f \\circ g)^{-1}(x) = \\frac{x + 5}{6}$$\n\nJadi, rumus fungsi invers komposisinya adalah **A** ($(f \\circ g)^{-1}(x) = \\frac{x + 5}{6}$)."
+  },
+  {
+    "id": "matwa-fungsi-invers-15",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "fungsi-invers",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Formula konversi temperatur dari skala derajat Celsius ($C$) ke skala derajat Fahrenheit ($F$) dirumuskan oleh fungsi $F = f(C) = \\frac{9}{5}C + 32$. Rumus fungsi invers $C = f^{-1}(F)$ serta nilai suhu dalam Celsius untuk pembacaan $86^\\circ\\text{F}$ berturut-turut adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$C = \\frac{5}{9}(F - 32)$ dan $30^\\circ\\text{C}$"
+      },
+      {
+        "id": "B",
+        "text": "$C = \\frac{5}{9}(F + 32)$ dan $35^\\circ\\text{C}$"
+      },
+      {
+        "id": "C",
+        "text": "$C = \\frac{9}{5}(F - 32)$ dan $30^\\circ\\text{C}$"
+      },
+      {
+        "id": "D",
+        "text": "$C = \\frac{5}{9}(F - 32)$ dan $28^\\circ\\text{C}$"
+      },
+      {
+        "id": "E",
+        "text": "$C = \\frac{5}{9}F - 32$ dan $32^\\circ\\text{C}$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Nyatakan C sebagai fungsi dari F: F - 32 = 9/5 C sehingga C = 5/9 (F - 32). Lalu substitusikan F = 86.",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Cari rumus invers $C = f^{-1}(F)$:\n   $$F = \\frac{9}{5}C + 32$$\n   $$F - 32 = \\frac{9}{5}C$$\n   $$C = \\frac{5}{9}(F - 32)$$\n\n2. Hitung nilai Celsius untuk $F = 86^\\circ\\text{F}$:\n   $$C = \\frac{5}{9}(86 - 32) = \\frac{5}{9}(54) = 5 \\times 6 = 30^\\circ\\text{C}$$\n\nJadi, rumus invers dan nilai suhunya berturut-turut adalah **A** ($C = \\frac{5}{9}(F - 32)$ dan $30^\\circ\\text{C}$)."
+  },
+  {
+    "id": "matwa-fungsi-invers-16",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "fungsi-invers",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diberikan fungsi eksponensial satu-satu $f(x) = 2^{3x - 1}$. Rumus fungsi invers $f^{-1}(x)$ untuk daerah asal $x > 0$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$f^{-1}(x) = \\frac{{}^2\\log x + 1}{3}$"
+      },
+      {
+        "id": "B",
+        "text": "$f^{-1}(x) = \\frac{{}^2\\log x - 1}{3}$"
+      },
+      {
+        "id": "C",
+        "text": "$f^{-1}(x) = 3 \\cdot {}^2\\log x + 1$"
+      },
+      {
+        "id": "D",
+        "text": "$f^{-1}(x) = \\frac{{}^3\\log x + 1}{2}$"
+      },
+      {
+        "id": "E",
+        "text": "$f^{-1}(x) = 2^{1 - 3x}$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Ubah bentuk eksponen y = 2^(3x - 1) ke bentuk logaritma: 3x - 1 = ^2log(y).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Nyatakan $y = 2^{3x - 1}$ ke bentuk logaritma:\n   $$3x - 1 = {}^2\\log y$$\n\n2. Selesaikan untuk $x$:\n   $$3x = {}^2\\log y + 1$$\n   $$x = \\frac{{}^2\\log y + 1}{3}$$\n\n3. Ganti variabel $y$ menjadi $x$:\n   $$f^{-1}(x) = \\frac{{}^2\\log x + 1}{3}$$\n\nJadi, rumus inversnya adalah **A** ($f^{-1}(x) = \\frac{{}^2\\log x + 1}{3}$)."
+  },
+  {
+    "id": "matwa-fungsi-invers-17",
+    "chapter_id": "fungsi",
+    "sub_chapter_id": "fungsi-invers",
+    "question_type": "PG",
+    "difficulty": "STANDAR",
+    "question_text": "Diketahui fungsi $f(x) = 3x - 4$ dan $g(x) = x^2 + 2x$. Nilai dari $(g \\circ f^{-1})(5)$ adalah ...",
+    "options": [
+      {
+        "id": "A",
+        "text": "$15$"
+      },
+      {
+        "id": "B",
+        "text": "$12$"
+      },
+      {
+        "id": "C",
+        "text": "$18$"
+      },
+      {
+        "id": "D",
+        "text": "$20$"
+      },
+      {
+        "id": "E",
+        "text": "$24$"
+      }
+    ],
+    "correct_answer": "A",
+    "hint": "Tentukan terlebih dahulu nilai f^(-1)(5) dengan menyelesaikan 3x - 4 = 5. Masukkan hasilnya ke g(x).",
+    "explanation": "Langkah-langkah penyelesaian:\n\n1. Cari nilai $f^{-1}(5) = k$ dengan syarat $f(k) = 5$:\n   $$3k - 4 = 5$$\n   $$3k = 9 \\implies k = 3$$\n   Jadi, $f^{-1}(5) = 3$.\n\n2. Evaluasi fungsi $g$ pada nilai input $3$:\n   $$(g \\circ f^{-1})(5) = g(f^{-1}(5)) = g(3)$$\n   $$g(3) = (3)^2 + 2(3) = 9 + 6 = 15$$\n\nJadi, nilai $(g \\circ f^{-1})(5)$ adalah **A** ($15$)."
+  },
+  {
     "id": "matwa-fungsi-invers-03",
     "chapter_id": "fungsi",
     "sub_chapter_id": "fungsi-invers",
@@ -130,44 +399,6 @@
     "correct_answer": "A",
     "hint": "Ubah fungsi kuadrat menjadi bentuk kuadrat sempurna $(x - p)^2 + q$. Karena domain asalnya dibatasi pada $x \\ge 3$, maka saat menarik akar kuadrat pilih tanda positif $(x - 3 = +\\sqrt{y + 4})$.",
     "explanation": "Langkah-langkah menentukan invers fungsi kuadrat dengan domain terbatas:\n\n1. **Ubah ke bentuk kuadrat sempurna:**\n   $$y = x^2 - 6x + 5$$\n   $$y = (x^2 - 6x + 9) - 9 + 5$$\n   $$y = (x - 3)^2 - 4$$\n\n2. **Tentukan daerah hasil (range) dari $f(x)$:**\n   Karena $x \\ge 3$, maka $(x - 3) \\ge 0$, sehingga $(x - 3)^2 \\ge 0$.\n   $$y = (x - 3)^2 - 4 \\ge -4$$\n   Daerah hasil $f(x)$ adalah interval $y \\ge -4$. Daerah hasil ini akan menjadi daerah asal (*domain*) bagi fungsi invers $f^{-1}(x)$.\n\n3. **Isolasi variabel $x$:**\n   $$(x - 3)^2 = y + 4$$\n   Karena $x \\ge 3$, maka $(x - 3) \\ge 0$. Oleh karena itu, kita memilih akar positif:\n   $$x - 3 = +\\sqrt{y + 4}$$\n   $$x = 3 + \\sqrt{y + 4}$$\n\n4. **Tuliskan rumus fungsi inversnya:**\n   $$f^{-1}(x) = 3 + \\sqrt{x + 4}$$\n   dengan daerah asal $\\{x \\in \\mathbb{R} \\mid x \\ge -4\\}$.\n\nJadi, jawaban yang benar adalah **A**."
-  },
-  {
-    "id": "matwa-fungsi-invers-05",
-    "chapter_id": "fungsi",
-    "sub_chapter_id": "fungsi-invers",
-    "question_type": "MCMA",
-    "difficulty": "STANDAR",
-    "question_text": "Diberikan fungsi linear:\n$$f(x) = \\frac{2}{3}x - 4$$\nPilihlah **SEMUA** pernyataan di bawah ini yang bernilai **BENAR** mengenai fungsi invers $f^{-1}(x)$ dan karakteristik grafiknya!",
-    "options": [
-      {
-        "id": "A",
-        "text": "Rumus fungsi inversnya adalah $f^{-1}(x) = \\frac{3}{2}x + 6$."
-      },
-      {
-        "id": "B",
-        "text": "Grafik fungsi $f^{-1}(x)$ memotong sumbu-$X$ di titik $(-4, 0)$ dan memotong sumbu-$Y$ di titik $(0, 6)$."
-      },
-      {
-        "id": "C",
-        "text": "Grafik $y = f(x)$ dan grafik $y = f^{-1}(x)$ berpotongan tepat di satu titik pada garis cermin $y = x$, yaitu di titik $(-12, -12)$."
-      },
-      {
-        "id": "D",
-        "text": "Rumus fungsi inversnya adalah $f^{-1}(x) = \\frac{2}{3}x + 4$."
-      },
-      {
-        "id": "E",
-        "text": "Grafik fungsi $f(x)$ dan inversnya $f^{-1}(x)$ saling simetris terhadap garis cermin $y = x$."
-      }
-    ],
-    "correct_answer": [
-      "A",
-      "B",
-      "C",
-      "E"
-    ],
-    "hint": "Cari invers dengan menyatakan $x$ dari $y = \\frac{2}{3}x - 4$. Tentukan titik potong sumbu koordinat dengan memasukkan $y = 0$ dan $x = 0$. Titik potong kurva dengan inversnya selalu terletak pada garis $y = x$.",
-    "explanation": "Langkah-langkah analisis fungsi invers linear:\n\n1. **Menentukan Rumus Invers $f^{-1}(x)$:**\n   $$y = \\frac{2}{3}x - 4 \\implies y + 4 = \\frac{2}{3}x \\implies x = \\frac{3}{2}(y + 4) = \\frac{3}{2}y + 6$$\n   Maka rumus fungsi inversnya adalah $f^{-1}(x) = \\frac{3}{2}x + 6$.\n   Pernyataan A bernilai **BENAR**, Pernyataan D bernilai **SALAH**.\n\n2. **Titik Potong Sumbu Koordinat Grafik $f^{-1}(x)$:**\n   - Titik potong sumbu-$X$ ($y = 0$):\n     $$\\frac{3}{2}x + 6 = 0 \\implies \\frac{3}{2}x = -6 \\implies x = -4 \\implies (-4, 0)$$\n   - Titik potong sumbu-$Y$ ($x = 0$):\n     $$y = \\frac{3}{2}(0) + 6 = 6 \\implies (0, 6)$$\n   (Perhatikan simetri: grafik $f(x)$ memotong sumbu di $(6, 0)$ dan $(0, -4)$, sehingga inversnya memotong di $(-4, 0)$ dan $(0, 6)$).\n   Pernyataan B bernilai **BENAR**.\n\n3. **Titik Potong $y = f(x)$ dan $y = f^{-1}(x)$:**\n   Kedua grafik berpotongan pada garis simetri cermin $y = x$:\n   $$x = \\frac{2}{3}x - 4 \\implies x - \\frac{2}{3}x = -4 \\implies \\frac{1}{3}x = -4 \\implies x = -12$$\n   Ordinatnya adalah $y = -12$. Jadi titik potongnya adalah $(-12, -12)$.\n   Pernyataan C bernilai **BENAR**.\n\nOleh karena itu, opsi yang bernilai benar adalah **A, B, dan C**.\n- **Pernyataan E (BENAR):** Berdasarkan sifat geometris fungsi invers, kurva $f(x)$ dan $f^{-1}(x)$ adalah hasil pencerminan terhadap garis lurus $y = x$."
   },
   {
     "id": "matwa-fungsi-invers-06",
